@@ -74,7 +74,7 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 /* 解説モード */
 .w { cursor: pointer; }
 .w:hover { text-decoration: underline; }
-.w.vocab-word { background: rgba(46, 125, 50, .13); border-radius: 3px; padding: 0 2px; }
+.w.vocab-word { border-bottom: 1px dotted rgba(46, 125, 50, .75); }
 .w.active { outline: 2px solid var(--accent-green); background: rgba(46, 125, 50, .3); }
 .tabs { display: flex; border-bottom: 1px solid var(--border); }
 .tab { flex: 1; border: none; border-radius: 0; background: none; padding: 10px; color: var(--muted); }
