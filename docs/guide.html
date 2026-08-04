@@ -36,6 +36,18 @@
       <li>Ankiを再起動する。</li>
       <li>解説モードで単語をクリック →「＋ Ankiに追加」を押し、「✅ 追加しました」と出れば完了。カードはデッキ「TOEFL Reading」に入ります(デッキ名は ⚙ ボタンで変更可)。</li>
     </ol>
+    <p><b>ポート番号は完全一致で判定されます。</b> ローカルで動作確認する場合、<code>http://localhost:8000</code> は <code>http://localhost</code> とは別のURLとして扱われるため、使っているポート番号を含めて追加してください:
+<pre>"webCorsOriginList": ["http://localhost", "http://localhost:8000"]</pre></p>
+
+    <h2>うまくいかないときは</h2>
+    <ul>
+      <li><b>「Ankiに接続できませんでした」と出る</b> — Ankiが起動しているか確認してください。起動していれば、次の項目が原因である可能性が高いです。</li>
+      <li><b>Ankiは起動しているのに接続できない</b> — 上記の <code>webCorsOriginList</code> に、いま開いているページのURL(ポート番号を含む)が入っているか確認してください。設定変更後はAnkiの再起動が必要です。</li>
+      <li><b>ポート8765を他のプログラムが使っていないか</b> — AnkiConnectはポート8765を使います。他の開発用サーバーなどがこのポートを先に占有していると、Ankiを起動してもAnkiConnectが待ち受けできず、接続に失敗します。ターミナルで <code>lsof -nP -iTCP:8765 -sTCP:LISTEN</code> を実行し、Anki以外のプログラムが出てきたらそれを終了してください。</li>
+      <li><b>「Ankiがエラーを返しました」と出る</b> — Ankiからの実際のエラー内容が表示されます。<code>model was not found: Basic</code> の場合、お使いのAnkiのノートタイプ名が「Basic」ではありません(日本語版では「基本」など)。その場合はAnki側で「Basic」という名前のノートタイプを用意してください。</li>
+      <li><b>Safariで動かない</b> — SafariはHTTPSページからローカル(<code>http://127.0.0.1</code>)への通信を混在コンテンツとして遮断します。公開版のサイトでAnki連携を使う場合はChromeまたはFirefoxをお使いください。</li>
+    </ul>
+
     <p><b>制約:</b> この機能はPCでAnkiを起動している間のみ動作します。スマートフォン(AnkiDroid / AnkiMobile)への直接追加はできません。PCのAnkiに追加後、Ankiの同期機能でスマートフォンへ反映してください。</p>
 
     <h1 id="report">免責事項・問題の報告</h1>
