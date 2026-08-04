@@ -177,13 +177,17 @@ function finishSolve() {
   qs("#to-study").addEventListener("click", () => startStudyMode());
 }
 
-/* ---------- 解説モード(Task 10で本実装に置換する仮実装) ---------- */
+/* ---------- 解説モード ---------- */
 
 function startStudyMode() {
   stopTimer();
-  qs("#header-status").textContent = "解説モード";
-  qs("#right-pane").innerHTML =
-    `<p class="hint" style="padding:20px">解説モードは未実装です(Task 10で実装)。</p>`;
+  qs("#header-status").innerHTML =
+    `<a href="#" id="resolve-link">✏️ もう一度解く</a>`;
+  qs("#resolve-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    startSolveMode();
+  });
+  renderStudy(state.passage);
 }
 
 document.addEventListener("DOMContentLoaded", init);
