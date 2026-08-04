@@ -28,9 +28,13 @@ async function ankiRequest(action, params) {
   return data.result;
 }
 
+function escapeRegExp(text) {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 function buildFront(word, entry, passageTitle) {
   const sentence = escapeHtml(entry.context_sentence)
-    .replace(new RegExp(`\\b(${word})\\b`, "i"), "<b>$1</b>");
+    .replace(new RegExp(`\\b(${escapeRegExp(word)})\\b`, "i"), "<b>$1</b>");
   return `<div style="font-size:1.2em"><b>${escapeHtml(word)}</b></div>` +
     `<div style="font-style:italic">"${sentence}"</div>` +
     `<div style="font-size:.8em;opacity:.7">出典: ${escapeHtml(passageTitle)}</div>`;
