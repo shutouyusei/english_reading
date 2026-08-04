@@ -38,6 +38,7 @@ function onWordClick(passage, surface, key, span) {
     studyState.history.unshift(studyState.selectedWord);
   }
   renderPanel(passage);
+  qs("#right-pane").scrollIntoView({ block: "nearest", behavior: "smooth" });
 }
 
 function renderPanel(passage) {

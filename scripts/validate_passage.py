@@ -16,7 +16,7 @@ VOCAB_FIELDS = ["etymology", "definition", "usage_in_passage", "related_terms", 
 CHOICE_KEYS = {"A", "B", "C", "D"}
 MAX_SAME_CORRECT = 3
 WORD_COUNT_TOLERANCE = 10
-TARGET_LENGTH_RANGE = (400, 600)
+TARGET_LENGTH_RANGE = (450, 500)
 
 
 def body_word_forms(body: str) -> set[str]:
@@ -43,7 +43,7 @@ def _validate_question(q: dict, forms: set[str]) -> list[str]:
         target = q.get("target_word")
         if not target:
             errors.append(f"question {qid}: Vocabulary question requires target_word")
-        elif not any(form in forms for form in candidates(target)):
+        elif target.lower() not in forms:
             errors.append(f"question {qid}: target_word {target!r} not found in body")
     return errors
 
@@ -53,7 +53,7 @@ def _validate_vocab(word: str, entry: dict, forms: set[str]) -> list[str]:
     for field in VOCAB_FIELDS:
         if field not in entry:
             errors.append(f"vocab {word!r}: missing field {field}")
-    if not any(form in forms for form in candidates(word)):
+    if word.lower() not in forms:
         errors.append(f"vocab {word!r}: not found in body")
     if word.lower() not in entry.get("context_sentence", "").lower():
         errors.append(f"vocab {word!r}: context_sentence does not contain the word")
@@ -102,7 +102,7 @@ def main() -> int:
     actual = len(WORD_RE.findall(passage.get("body", "")))
     low, high = TARGET_LENGTH_RANGE
     if not low <= actual <= high:
-        print(f"WARNING: body has {actual} words (target 450-500)", file=sys.stderr)
+        print(f"WARNING: body has {actual} words (target {low}-{high})", file=sys.stderr)
     if errors:
         for error in errors:
             print(f"ERROR: {error}", file=sys.stderr)

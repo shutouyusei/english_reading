@@ -54,12 +54,12 @@ button.anki { background: var(--accent-green); border-color: var(--accent-green)
 button:disabled { opacity: .4; cursor: not-allowed; }
 
 /* リーダー左右分割 */
-#reader-main { display: flex; min-height: calc(100vh - 110px); }
+#reader-main { display: flex; height: calc(100vh - 150px); }
 #passage-pane {
   flex: 1.2; padding: 18px 24px; border-right: 1px solid var(--border);
-  overflow-y: auto; background: #fff;
+  overflow-y: auto; background: #fff; min-height: 0;
 }
-#right-pane { flex: 1; overflow-y: auto; }
+#right-pane { flex: 1; overflow-y: auto; min-height: 0; }
 mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 
 /* 解答モード */
@@ -106,7 +106,7 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 }
 
 @media (max-width: 800px) {
-  #reader-main { flex-direction: column; }
+  #reader-main { flex-direction: column; height: auto; }
   #passage-pane { border-right: none; border-bottom: 1px solid var(--border); }
   .card { flex-direction: column; align-items: stretch; }
 }

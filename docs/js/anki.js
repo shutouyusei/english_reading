@@ -69,9 +69,13 @@ async function addToAnki(passage, word, entry) {
   } catch (err) {
     if (String(err.message).includes("duplicate")) {
       status.textContent = "ℹ️ このカードは追加済みです";
-    } else {
+    } else if (err instanceof TypeError) {
       status.innerHTML =
         `⚠ Ankiに接続できませんでした。Ankiが起動しているか確認してください。 ` +
+        `<a href="guide.html#anki">セットアップ手順</a>`;
+    } else {
+      status.innerHTML =
+        `⚠ Ankiがエラーを返しました: ${escapeHtml(err.message)} ` +
         `<a href="guide.html#anki">セットアップ手順</a>`;
     }
   }

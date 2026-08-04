@@ -76,6 +76,26 @@ class TestValidate(unittest.TestCase):
         passage["word_count"] = 100
         self.assertTrue(any("word_count" in e for e in validate(passage)))
 
+    def test_vocab_word_not_matchable_at_runtime_is_rejected(self):
+        # Runtime (findVocabKey in textmatch.js) only strips suffixes off the
+        # clicked body token -- it never adds them. So a vocab key that is a
+        # *longer* inflected form than anything derivable from the body
+        # (here "changed" vs. body word "change") can never be found by
+        # clicking the body word, even though the old both-sides matcher
+        # accepted it (candidates("changed") includes "change", which is in
+        # forms). The fixed one-sided matcher must reject it.
+        passage = make_passage()
+        entry = passage["vocab"].pop("disequilibria")
+        entry["context_sentence"] = "Scientists observe change reef ecosystems."
+        passage["body"] = passage["body"].replace(
+            "Scientists observe disequilibria in reef ecosystems.",
+            "Scientists observe change reef ecosystems.",
+        )
+        passage["questions"][2]["target_word"] = "change"
+        passage["vocab"]["changed"] = entry
+        errors = validate(passage)
+        self.assertTrue(any("'changed'" in e and "not found in body" in e for e in errors))
+
 
 if __name__ == "__main__":
     unittest.main()
