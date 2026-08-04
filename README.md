@@ -46,13 +46,20 @@ python3 -m unittest discover -s tests/python -v   # Pythonスクリプト
 node --test "tests/js/**/*.test.js"                # フロントエンド共通ロジック
 ```
 
-## 公開手順(初回のみ)
+## 公開URL
+
+https://shutouyusei.github.io/english_reading/
+
+Anki連携を公開版サイトで使う場合は、AnkiConnectの `webCorsOriginList` に
+`https://shutouyusei.github.io` を追加してください(手順はサイト内の
+[使い方・Anki設定](https://shutouyusei.github.io/english_reading/guide.html#anki))。
+
+### フォークして自分用に公開する場合
 
 1. GitHubにリポジトリを作成してpush
 2. Settings → Pages → Branch: `main`, Folder: `/docs` を選択
-3. `docs/guide.html` 内の `REPLACE_WITH_YOUR_REPO` を実リポジトリ名に置換
-4. Anki連携を使う場合、AnkiConnectの `webCorsOriginList` に
-   `https://<ユーザー名>.github.io` を追加(サイト内ガイド参照)
+3. `docs/guide.html` のIssueリンクを自分のリポジトリURLに変更
+4. AnkiConnectの `webCorsOriginList` に `https://<ユーザー名>.github.io` を追加
 
 ## クレジット
 
