@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>使い方・Anki設定 — TOEFL Reading</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">📖 TOEFL Reading</a>
+    <a href="index.html">パッセージ一覧</a>
+  </header>
+  <main class="prose">
+    <h1>使い方</h1>
+    <p>このサイトには2つのモードがあります。</p>
+    <ul>
+      <li><b>✏️ 解答モード</b> — 本番のTOEFLと同じ形式です。左にパッセージ、右に問題が1問ずつ表示され、回答するごとに次の問題へ進みます。経過時間はヘッダーでカウントアップ表示されます。このモードでは単語クリックは無効です。</li>
+      <li><b>📖 解説モード</b> — 本文中の<b>すべての単語</b>をクリックできます。収録語は語源・定義・文中での役割・関連語の日本語解説が右パネルに表示され、その場でAnkiに追加できます。未収録語はWeblioへのリンクが表示されます。「問題の解説」タブでは各問題の正誤と日本語解説を確認できます。</li>
+    </ul>
+    <p>問題を解かずに解説モードだけで読むこともできます。成績(スコア・所要時間)はお使いのブラウザ内(localStorage)にのみ保存され、サーバーには送信されません。</p>
+
+    <h1 id="anki">Anki連携のセットアップ</h1>
+    <p>解説モードの「＋ Ankiに追加」ボタンで、単語カードをPCのAnkiに直接追加できます。初回のみ以下の設定が必要です。</p>
+    <ol>
+      <li><a href="https://apps.ankiweb.net/" target="_blank" rel="noopener">Anki</a>(PC版)をインストールする。</li>
+      <li>Ankiのメニュー「ツール → アドオン → 新規アドオンを取得」でコード <code>2055492159</code> を入力し、<b>AnkiConnect</b> をインストールする。</li>
+      <li>「ツール → アドオン → AnkiConnect → 設定」を開き、<code>webCorsOriginList</code> にこのサイトのURLを追加する:
+<pre>{
+    "webCorsOriginList": [
+        "http://localhost",
+        "https://あなたのユーザー名.github.io"
+    ]
+}</pre>
+      (他の設定項目は変更不要。既存の値は残したまま追記してください)</li>
+      <li>Ankiを再起動する。</li>
+      <li>解説モードで単語をクリック →「＋ Ankiに追加」を押し、「✅ 追加しました」と出れば完了。カードはデッキ「TOEFL Reading」に入ります(デッキ名は ⚙ ボタンで変更可)。</li>
+    </ol>
+    <p><b>制約:</b> この機能はPCでAnkiを起動している間のみ動作します。スマートフォン(AnkiDroid / AnkiMobile)への直接追加はできません。PCのAnkiに追加後、Ankiの同期機能でスマートフォンへ反映してください。</p>
+
+    <h1 id="report">免責事項・問題の報告</h1>
+    <ul>
+      <li>本サイトのパッセージ・問題・解説は<b>すべてAIによって生成</b>されており、人間の専門家によるレビューを受けていません。</li>
+      <li>作成者は英語教育の専門家ではありません。</li>
+      <li>本サイトはETSおよびTOEFLとは無関係の非公式教材です。TOEFLはETSの登録商標です。</li>
+      <li>誤りを見つけた場合は <a href="https://github.com/REPLACE_WITH_YOUR_REPO/issues" target="_blank" rel="noopener">GitHub Issues</a> から報告してください(リポジトリ公開時にこのリンクを実URLへ更新)。</li>
+    </ul>
+  </main>
+  <footer class="site-footer">
+    <p>⚠️ コンテンツは全てAI生成です ・ 作成者は英語の専門家ではありません ・ ETSおよびTOEFLとは無関係の非公式教材です</p>
+    <p><a href="index.html">パッセージ一覧</a> ・ <a href="#report">問題を報告</a></p>
+  </footer>
+</body>
+</html>

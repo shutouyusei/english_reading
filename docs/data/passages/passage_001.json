@@ -1,0 +1,1846 @@
+{
+  "id": "passage_001",
+  "title": "Peatlands and the Paradox of Slow Decay",
+  "topic": "環境",
+  "body": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined. This disproportion arises not from exceptional productivity but from exceptionally slow decay. In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade. In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually. Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since.\n\nThe mechanism behind this arrested breakdown is chemical as much as physical. Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer. Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules. Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place.\n\nThe latch, however, is easily released. When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed. The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime. Drained peat also becomes combustible. The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them.\n\nRestoration therefore concentrates on hydrology rather than on planting. Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay. The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it. Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries. Restoration is correspondingly slow, since a bog that required eight thousand years to build cannot be reconstituted within a decade. The arithmetic of peatland management thus depends less on annual accounting than on the horizon over which the accounting is done.",
+  "word_count": 467,
+  "added": "2026-08-04",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 2, why does oxygen move through peat much more slowly than through dry soil?",
+      "target_word": null,
+      "choices": {
+        "A": "Sphagnum mosses consume the available oxygen as they grow.",
+        "B": "Water occupies the pore spaces that would otherwise contain air.",
+        "C": "The acidity of the peat chemically binds oxygen to organic molecules.",
+        "D": "A thin surface layer of bacteria blocks oxygen from descending."
+      },
+      "correct": "B",
+      "explanation": "第2段落に \"Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil\" とあり、原因は水が空気の入る隙間を満たしていることだと明示されている。Aは本文に記述がない。酵素を阻害するのはフェノール化合物であり、いずれにせよ酸素を結合するとは述べられていない。Dは因果が逆で、好気性細菌が表層に限られるのは酸素不足の結果である。"
+    },
+    {
+      "id": 2,
+      "type": "Vocabulary",
+      "question": "The word \"arrested\" in paragraph 2 is closest in meaning to",
+      "target_word": "arrested",
+      "choices": {
+        "A": "halted",
+        "B": "detected",
+        "C": "accelerated",
+        "D": "measured"
+      },
+      "correct": "A",
+      "explanation": "\"arrested breakdown\" は第1段落の \"decomposition stalls\" を言い換えた表現であり、分解が止まっている状態を指す。したがって halted が最も近い。B の detected（発見する）と D の measured（測定する）は arrest の法的・計測的な連想からの誤答で、文脈上の「止まる」という意味を持たない。C の accelerated は意味が正反対である。"
+    },
+    {
+      "id": 3,
+      "type": "Reference",
+      "question": "The word \"they\" in paragraph 2 (\"they actively acidify their surroundings\") refers to",
+      "target_word": null,
+      "choices": {
+        "A": "Sphagnum mosses",
+        "B": "aerobic bacteria",
+        "C": "northern bogs",
+        "D": "phenolic compounds"
+      },
+      "correct": "A",
+      "explanation": "コロンの前にある主節の主語は \"Sphagnum mosses\" で、\"the dominant peat-forming plants of northern bogs\" はその同格説明である。コロン以降の節はその苔がどのように制約を強めるかを具体化している。B の好気性細菌は前の文の主語だが、酸性化を行う主体としては述べられていない。C の northern bogs は所属を示す修飾句の一部にすぎない。D の phenolic compounds は they が放出する対象であり、they 自身ではない。"
+    },
+    {
+      "id": 4,
+      "type": "Inference",
+      "question": "What can be inferred from paragraph 3 about the rate at which peat stores and loses carbon?",
+      "target_word": null,
+      "choices": {
+        "A": "Carbon is lost from drained peat at roughly the same rate at which it originally accumulated.",
+        "B": "Peat that has been drained will eventually stop losing carbon once its surface stops subsiding.",
+        "C": "Loss of carbon after drainage proceeds far faster than the accumulation that preceded it.",
+        "D": "Peatlands release most of their carbon through fire rather than through microbial respiration."
+      },
+      "correct": "C",
+      "explanation": "第3段落に \"carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime\" とあり、一万年かけて蓄積した炭素が人間の一生のうちに放出されうる、つまり放出は蓄積より桁違いに速いと推論できる。A は本文の対比を無視している。B は表面沈下が止まれば炭素損失も止まるという因果を本文は述べていない。D は火災と微生物呼吸のどちらが主要かを本文は比較していない。"
+    },
+    {
+      "id": 5,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention the smoldering fires that blanket parts of Southeast Asia in haze?",
+      "target_word": null,
+      "choices": {
+        "A": "To argue that fire suppression should be the main priority of peatland policy",
+        "B": "To identify the original cause of drainage in tropical peatlands",
+        "C": "To contrast tropical peatlands with the northern bogs described earlier",
+        "D": "To illustrate an additional consequence of drainage that ordinary firefighting cannot address"
+      },
+      "correct": "D",
+      "explanation": "この文は \"Drained peat also becomes combustible.\" に続いて置かれており、also が示す通り排水がもたらす追加の帰結を具体化している。さらに \"burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them\" と、通常の消火が効かない理由まで説明している。A は政策の優先順位を本文は主張していない。B は火災は排水の結果であって原因ではないため因果が逆。C は南北の泥炭地の比較が本段落の論点ではない。"
+    }
+  ],
+  "vocab": {
+    "peatlands": {
+      "etymology": "peat（泥炭）+ land（土地）+ -s（複数）。peat は中世ラテン語 peta「泥炭の一片」に遡る。",
+      "definition": "泥炭が厚く堆積した湿地。",
+      "usage_in_passage": "冒頭 \"Peatlands occupy barely three percent of the global land surface\" で本文全体の主題を提示し、面積の小ささと貯蔵炭素量の大きさという逆説を立ち上げる。",
+      "related_terms": [
+        "bog",
+        "mire",
+        "wetland",
+        "fen"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "occupy": {
+      "etymology": "ラテン語 occupare = ob-（〜に向かって）+ capere（つかむ）。「先に取る」から「場所を占める」へ。",
+      "definition": "ある空間を占める。",
+      "usage_in_passage": "\"Peatlands occupy barely three percent\" と面積比を提示し、直後の yet による逆接を準備する。",
+      "related_terms": [
+        "inhabit",
+        "seize",
+        "possess",
+        "occupancy"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "barely": {
+      "etymology": "古英語 bær（むき出しの）+ -ly（副詞化）。「裸同然に」から「かろうじて」へ。",
+      "definition": "ほんのわずかしか〜ない。",
+      "usage_in_passage": "\"barely three percent\" と数値を最小方向に強調し、次に来る「全森林を超える炭素量」との落差を大きくする。",
+      "related_terms": [
+        "hardly",
+        "scarcely",
+        "merely",
+        "narrowly"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "carbon": {
+      "etymology": "ラテン語 carbo「炭・燃えさし」+ -on（元素名の接尾辞）。",
+      "definition": "炭素。有機物と二酸化炭素の主要構成元素。",
+      "usage_in_passage": "\"the carbon locked in their saturated soils\" が本文の中心概念で、蓄積（第1・2段落）と放出（第3段落）という論の軸をなす。",
+      "related_terms": [
+        "dioxide",
+        "organic",
+        "sequestration",
+        "emission"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "locked": {
+      "etymology": "古英語 loc「錠・囲い」+ -ed。",
+      "definition": "閉じ込められて動かせない状態にされた。",
+      "usage_in_passage": "\"the carbon locked in their saturated soils\" は炭素が循環から外れて固定されていることを錠前の比喩で表し、第2段落の enzymic latch、第3段落の \"easily released\" と一連の比喩を作る。",
+      "related_terms": [
+        "sealed",
+        "trapped",
+        "confined",
+        "immobilized"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "saturated": {
+      "etymology": "ラテン語 satur「満ちた」+ -ate（動詞化）+ -ed。",
+      "definition": "水を含みきって飽和した。",
+      "usage_in_passage": "\"saturated soils\" が分解を止める物理条件を最初に示し、第2段落の pore spaces の説明の伏線となる。",
+      "related_terms": [
+        "waterlogged",
+        "soaked",
+        "permeated",
+        "saturation"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "soils": {
+      "etymology": "古フランス語 soil < ラテン語 solum「地面」+ -s。",
+      "definition": "土壌。",
+      "usage_in_passage": "\"saturated soils\" として炭素の貯蔵場所を指し、後出の \"dry soil\" と対比される。",
+      "related_terms": [
+        "sediment",
+        "substrate",
+        "humus",
+        "ground"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "exceeds": {
+      "etymology": "ラテン語 ex-（外へ）+ cedere（行く）→「越え出る」+ -s。",
+      "definition": "数量が上回る。",
+      "usage_in_passage": "\"exceeds the amount held in every forest on the planet combined\" が第1文の逆接の核であり、面積比と貯蔵量の不均衡を成立させる。",
+      "related_terms": [
+        "surpass",
+        "outstrip",
+        "transcend",
+        "outweigh"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "disproportion": {
+      "etymology": "dis-（否定）+ pro-（前に）+ ラテン語 portio「割合」。",
+      "definition": "釣り合いの取れていない状態。",
+      "usage_in_passage": "\"This disproportion arises not from...\" と直前の対比全体を一語で受け直し、現象の提示から原因の説明へ論を橋渡しする指示的抽象名詞。",
+      "related_terms": [
+        "imbalance",
+        "discrepancy",
+        "asymmetry",
+        "mismatch"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "arises": {
+      "etymology": "古英語 ā-（強意の接頭辞）+ risan（立ち上がる）+ -s。",
+      "definition": "（結果として）生じる。",
+      "usage_in_passage": "\"arises not from X but from Y\" の構文で誤った原因を先に排除し、正しい原因を際立たせる。",
+      "related_terms": [
+        "emerge",
+        "originate",
+        "stem",
+        "derive"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "exceptional": {
+      "etymology": "ラテン語 ex-（外へ）+ capere（取る）→ except「除外する」+ -ion + -al。",
+      "definition": "並外れた、例外的な。",
+      "usage_in_passage": "\"not from exceptional productivity\" と否定される側に置かれ、読者が抱きがちな「生産量が多いから炭素が多い」という推測を封じる。",
+      "related_terms": [
+        "extraordinary",
+        "remarkable",
+        "singular",
+        "exception"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "productivity": {
+      "etymology": "ラテン語 pro-（前へ）+ ducere（導く）→ produce + -ivity（性質を表す）。",
+      "definition": "生産力。生態学では単位時間あたりの有機物生産量。",
+      "usage_in_passage": "泥炭地の炭素量の原因ではないものとして否定され、代わりに decay の遅さが原因として提示される。",
+      "related_terms": [
+        "biomass",
+        "yield",
+        "output",
+        "productive"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "exceptionally": {
+      "etymology": "exceptional + -ly。",
+      "definition": "並外れて、極度に。",
+      "usage_in_passage": "\"exceptionally slow decay\" と肯定される側の原因を強め、直前の exceptional productivity と語形をそろえることで否定と肯定の対比を音の上でも際立たせる。",
+      "related_terms": [
+        "extremely",
+        "remarkably",
+        "strikingly",
+        "unusually"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "decay": {
+      "etymology": "ラテン語 de-（下へ）+ cadere（落ちる）。「落ちぶれる」から「腐敗する」へ。",
+      "definition": "有機物が微生物によって分解されること。",
+      "usage_in_passage": "\"exceptionally slow decay\" が本文の主因であり、第2段落の enzymic latch はこの遅さの説明として導入される。",
+      "related_terms": [
+        "decomposition",
+        "rot",
+        "degradation",
+        "breakdown"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "terrestrial": {
+      "etymology": "ラテン語 terra「大地」+ -estris + -al。",
+      "definition": "陸上の。",
+      "usage_in_passage": "\"In most terrestrial ecosystems\" と一般則の適用範囲を示し、次文の泥炭地という例外を際立たせる。",
+      "related_terms": [
+        "terrain",
+        "subterranean",
+        "extraterrestrial",
+        "aquatic"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "ecosystems": {
+      "etymology": "ギリシャ語 oikos「家」→ eco- + system「組み合わさったもの」+ -s。",
+      "definition": "生態系。生物とその環境からなる機能単位。",
+      "usage_in_passage": "泥炭地を他の生態系と比較する枠組みを与え、比較のうえで例外性を示す論の型を作る。",
+      "related_terms": [
+        "habitat",
+        "biome",
+        "ecology",
+        "community"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "organic": {
+      "etymology": "ギリシャ語 organon「道具・器官」+ -ic。",
+      "definition": "生物に由来する、炭素化合物からなる。",
+      "usage_in_passage": "\"the organic matter that plants deposit each year\" で分解の対象物を特定し、炭素の出入りを追う準備をする。",
+      "related_terms": [
+        "organism",
+        "inorganic",
+        "biomass",
+        "biological"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "deposit": {
+      "etymology": "ラテン語 de-（下に）+ ponere「置く」。",
+      "definition": "堆積させる、置く。",
+      "usage_in_passage": "\"the organic matter that plants deposit each year\" と動詞で供給側を示し、第1段落末と第3段落の名詞 deposits（堆積層）と対をなす。",
+      "related_terms": [
+        "accumulate",
+        "sediment",
+        "deposition",
+        "settle"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "entirely": {
+      "etymology": "ラテン語 integer「手つかずの」→ 古フランス語 entier + -ly。",
+      "definition": "完全に。",
+      "usage_in_passage": "\"almost entirely consumed by microbes within a decade\" と通常の生態系での分解の徹底ぶりを強調し、泥炭地の stalls との落差を作る。",
+      "related_terms": [
+        "completely",
+        "wholly",
+        "thoroughly",
+        "entirety"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "consumed": {
+      "etymology": "ラテン語 con-（すっかり）+ sumere「取る」+ -ed。",
+      "definition": "食い尽くされる、消費される。",
+      "usage_in_passage": "微生物が有機物を残さず処理することを示し、直後の \"decomposition stalls\" と正面から対照される。",
+      "related_terms": [
+        "devour",
+        "absorb",
+        "expend",
+        "consumption"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "microbes": {
+      "etymology": "ギリシャ語 mikros「小さい」+ bios「生命」+ -s。",
+      "definition": "微生物。",
+      "usage_in_passage": "分解の主体として導入され、第2段落で \"the enzymes microbes secrete\" として再登場し、抑制の対象になる。",
+      "related_terms": [
+        "microbial",
+        "bacteria",
+        "microorganism",
+        "microscopic"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "decade": {
+      "etymology": "ギリシャ語 deka「10」+ -ade。",
+      "definition": "10年間。",
+      "usage_in_passage": "\"within a decade\" が通常の分解の時間尺度を与え、第3段落の \"ten thousand years\" や最終段落のメタンの寿命と比較される基準になる。",
+      "related_terms": [
+        "century",
+        "millennium",
+        "decadal",
+        "era"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "waterlogged": {
+      "etymology": "water + log（水を吸って丸太のように動かなくなる船の状態）+ -ed。",
+      "definition": "水浸しで排水されていない。",
+      "usage_in_passage": "\"In a waterlogged peatland, by contrast\" と例外が成立する条件を明示し、以降の説明の前提を固定する。",
+      "related_terms": [
+        "saturated",
+        "flooded",
+        "boggy",
+        "inundated"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "peatland": {
+      "etymology": "peat + land の単数形。",
+      "definition": "泥炭地。",
+      "usage_in_passage": "複数形 peatlands が一般論を指すのに対し、ここでは単数形で典型例を取り出し、個々の場所で何が起きるかを描写する。",
+      "related_terms": [
+        "bog",
+        "fen",
+        "mire",
+        "wetland"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "contrast": {
+      "etymology": "ラテン語 contra-（対して）+ stare「立つ」。",
+      "definition": "対照、際立った違い。",
+      "usage_in_passage": "\"by contrast\" は一般則から例外への転換を読者に予告する談話標識で、第1段落の論理構造を可視化している。",
+      "related_terms": [
+        "comparison",
+        "juxtaposition",
+        "divergence",
+        "opposition"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "decomposition": {
+      "etymology": "de-（分離）+ com-（共に）+ ponere「置く」→ compose の逆 + -ition。",
+      "definition": "分解。有機物が無機物に戻る過程。",
+      "usage_in_passage": "\"decomposition stalls\" が本文の中心現象を名詞で提示し、第2段落で \"arrested breakdown\" と言い換えられる。",
+      "related_terms": [
+        "decay",
+        "breakdown",
+        "degradation",
+        "mineralization"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "stalls": {
+      "etymology": "古英語 steall「立ち位置」→「立ち止まる」+ -s。",
+      "definition": "途中で止まる、進まなくなる。",
+      "usage_in_passage": "\"decomposition stalls\" は第2段落冒頭の \"arrested breakdown\" と言い換え関係にあり、語彙問題 arrested の解答根拠になる。",
+      "related_terms": [
+        "halt",
+        "stagnate",
+        "falter",
+        "stall"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "successive": {
+      "etymology": "ラテン語 sub-（下に）+ cedere「行く」→ succeed + -ive。",
+      "definition": "次々に続く。",
+      "usage_in_passage": "\"successive generations of vegetation accumulate\" と時間の積み重ねを示し、archive という比喩に厚みを与える。",
+      "related_terms": [
+        "consecutive",
+        "sequential",
+        "subsequent",
+        "succession"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "vegetation": {
+      "etymology": "ラテン語 vegetare「活気づける」+ -ation。",
+      "definition": "植生。ある地域の植物の総体。",
+      "usage_in_passage": "堆積する材料の実体を指し、直後の \"a dark, fibrous archive\" が何でできているかを読者に理解させる。",
+      "related_terms": [
+        "flora",
+        "foliage",
+        "biomass",
+        "undergrowth"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "accumulate": {
+      "etymology": "ラテン語 ad-（〜へ）+ cumulus「積み重ね」+ -ate。",
+      "definition": "少しずつ積み重なる。",
+      "usage_in_passage": "蓄積側の中心動詞で、第3段落の過去形 accumulated と対応し、蓄積と損失の速度差という設問4の論点を作る。",
+      "related_terms": [
+        "amass",
+        "aggregate",
+        "accrue",
+        "accumulation"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "fibrous": {
+      "etymology": "ラテン語 fibra「繊維」+ -ous。",
+      "definition": "繊維質の。",
+      "usage_in_passage": "\"a dark, fibrous archive\" と泥炭の見た目を描写しつつ、植物組織が分解されずに残っていることを含意する。",
+      "related_terms": [
+        "fiber",
+        "filament",
+        "stringy",
+        "coarse"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "deepen": {
+      "etymology": "deep + -en（形容詞を動詞化する接尾辞）。",
+      "definition": "深さを増す。",
+      "usage_in_passage": "\"may deepen by less than a millimeter annually\" と蓄積速度を数値化し、第3段落の沈下速度と桁で比較できるようにする。",
+      "related_terms": [
+        "thicken",
+        "intensify",
+        "heighten",
+        "broaden"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "millimeter": {
+      "etymology": "ラテン語 mille「千」+ ギリシャ語 metron「尺度」。1メートルの千分の一。",
+      "definition": "ミリメートル。",
+      "usage_in_passage": "年間の堆積量を示す単位で、第3段落の \"several centimeters a year\" という沈下速度と対比され、蓄積の遅さを際立たせる。",
+      "related_terms": [
+        "centimeter",
+        "micrometer",
+        "metric",
+        "kilometer"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "annually": {
+      "etymology": "ラテン語 annus「年」+ -al + -ly。",
+      "definition": "毎年、年あたり。",
+      "usage_in_passage": "堆積を年率で示し、最終段落の \"annual accounting\" という時間尺度の議論に接続する。",
+      "related_terms": [
+        "yearly",
+        "perennial",
+        "biannual",
+        "annual"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "peat": {
+      "etymology": "中世ラテン語 peta「泥炭の一片」。",
+      "definition": "泥炭。分解しきらない植物遺体が堆積したもの。",
+      "usage_in_passage": "\"Most northern peat began forming\" と不可算名詞で素材そのものを指し、場所を指す peatland と使い分けられている。",
+      "related_terms": [
+        "humus",
+        "turf",
+        "lignite",
+        "peatland"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "withdrew": {
+      "etymology": "with-（後方へ）+ draw「引く」の過去形。",
+      "definition": "退いた、後退した。",
+      "usage_in_passage": "\"as the last ice sheets withdrew\" と泥炭形成の開始時点を最終氷期の終わりに位置づけ、蓄積が地質学的な時間尺度をもつことを示す。",
+      "related_terms": [
+        "retreat",
+        "recede",
+        "retract",
+        "withdrawal"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "deposits": {
+      "etymology": "deposit の複数名詞形。",
+      "definition": "堆積層、堆積物。",
+      "usage_in_passage": "\"the deposits have been thickening\" と動詞から名詞へ転じ、第3段落では \"sealed for millennia\" される対象として再登場する。",
+      "related_terms": [
+        "sediment",
+        "stratum",
+        "layer",
+        "accumulation"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "thickening": {
+      "etymology": "thick + -en（動詞化）+ -ing。",
+      "definition": "厚みを増していくこと。",
+      "usage_in_passage": "現在完了進行形の中で用いられ、氷期の終わりから現在まで途切れず続く緩慢な蓄積を表す。",
+      "related_terms": [
+        "accumulating",
+        "deepening",
+        "swelling",
+        "thicken"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "imperceptibly": {
+      "etymology": "im-（否定）+ per-（通して）+ capere「取る」→ perceive + -ible + -ly。",
+      "definition": "知覚できないほどわずかに。",
+      "usage_in_passage": "\"almost imperceptibly\" と millimeter の数値を感覚のことばで言い換え、蓄積の遅さを二重に印象づける。",
+      "related_terms": [
+        "subtly",
+        "gradually",
+        "undetectably",
+        "perceptible"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "mechanism": {
+      "etymology": "ギリシャ語 mekhane「装置」+ -ism。",
+      "definition": "現象を成り立たせている仕組み。",
+      "usage_in_passage": "\"The mechanism behind this arrested breakdown\" が第2段落の主題文で、現象の記述から原因の説明へ論を切り替える。",
+      "related_terms": [
+        "process",
+        "apparatus",
+        "machinery",
+        "dynamics"
+      ],
+      "context_sentence": "The mechanism behind this arrested breakdown is chemical as much as physical."
+    },
+    "arrested": {
+      "etymology": "ラテン語 ad-（〜に）+ restare「とどまる」→ 古フランス語 arester + -ed。",
+      "definition": "途中で停止させられた。",
+      "usage_in_passage": "\"this arrested breakdown\" は第1段落の \"decomposition stalls\" を受け直した言い換えであり、語彙問題の対象語となっている。",
+      "related_terms": [
+        "halted",
+        "suspended",
+        "checked",
+        "impeded"
+      ],
+      "context_sentence": "The mechanism behind this arrested breakdown is chemical as much as physical."
+    },
+    "breakdown": {
+      "etymology": "break + down の複合名詞。",
+      "definition": "分解、崩壊。",
+      "usage_in_passage": "decomposition の平易な言い換えとして使われ、同じ概念を別の語で受けることで学術文特有の語彙変換を読者に要求する。",
+      "related_terms": [
+        "decomposition",
+        "disintegration",
+        "decay",
+        "dissolution"
+      ],
+      "context_sentence": "The mechanism behind this arrested breakdown is chemical as much as physical."
+    },
+    "pore": {
+      "etymology": "ギリシャ語 poros「通路」。",
+      "definition": "微細な孔、すきま。",
+      "usage_in_passage": "\"the pore spaces that would otherwise hold air\" が酸素不足の物理的原因を特定しており、設問1の直接の根拠になる。",
+      "related_terms": [
+        "porous",
+        "porosity",
+        "cavity",
+        "aperture"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "oxygen": {
+      "etymology": "ギリシャ語 oxys「酸っぱい」+ -gen「生む」。酸の素と誤解された命名。",
+      "definition": "酸素。",
+      "usage_in_passage": "好気的分解の必須条件として導入され、その欠乏が炭素保存の鍵、その侵入が炭素放出の引き金という本文全体の因果軸を担う。",
+      "related_terms": [
+        "aerobic",
+        "anaerobic",
+        "oxidation",
+        "respiration"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "diffuses": {
+      "etymology": "ラテン語 dis-（四方に）+ fundere「注ぐ」+ -es。",
+      "definition": "拡散して広がる。",
+      "usage_in_passage": "\"oxygen diffuses through peat far more slowly\" と酸素供給が律速段階であることを示す。",
+      "related_terms": [
+        "disperse",
+        "permeate",
+        "diffusion",
+        "spread"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "slowly": {
+      "etymology": "古英語 slaw「鈍い」+ -ly。",
+      "definition": "ゆっくりと。",
+      "usage_in_passage": "比較級 \"far more slowly than through dry soil\" の形で乾燥土壌との差を明示し、設問1の選択肢の判別に必要な情報を与える。",
+      "related_terms": [
+        "gradually",
+        "sluggishly",
+        "incrementally",
+        "slow"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "soil": {
+      "etymology": "古フランス語 soil < ラテン語 solum「地面」。",
+      "definition": "土壌。",
+      "usage_in_passage": "\"through dry soil\" と乾燥した土壌を比較の対照項に置き、泥炭の特殊性を相対的に示す。",
+      "related_terms": [
+        "sediment",
+        "loam",
+        "substrate",
+        "ground"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "aerobic": {
+      "etymology": "ギリシャ語 aer「空気」+ bios「生命」+ -ic。",
+      "definition": "酸素を必要とする。",
+      "usage_in_passage": "\"the aerobic bacteria responsible for rapid decay\" と分解の担い手を限定し、酸素の分布と分解の分布を結びつける。",
+      "related_terms": [
+        "anaerobic",
+        "oxygen",
+        "aeration",
+        "respiration"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "bacteria": {
+      "etymology": "ギリシャ語 bakterion「小さな杖」の複数形。桿菌の形状に由来。",
+      "definition": "細菌。",
+      "usage_in_passage": "分解者として具体化され、\"confined to a thin surface layer\" と活動範囲を限定されることで深部の保存が説明される。",
+      "related_terms": [
+        "microbe",
+        "bacterial",
+        "microorganism",
+        "fungi"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "rapid": {
+      "etymology": "ラテン語 rapidus「急な」< rapere「奪い去る」。",
+      "definition": "速い。",
+      "usage_in_passage": "\"rapid decay\" が第1段落の \"slow decay\" と正面から対をなし、酸素の有無が速度を決めるという主張を支える。",
+      "related_terms": [
+        "swift",
+        "brisk",
+        "expeditious",
+        "rapidity"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "confined": {
+      "etymology": "ラテン語 con-（共に）+ finis「境界」+ -ed。",
+      "definition": "一定の範囲に限られている。",
+      "usage_in_passage": "\"confined to a thin surface layer\" と分解活動の空間的限界を示し、深部の泥炭がなぜ残るのかという疑問に答えている。",
+      "related_terms": [
+        "restricted",
+        "limited",
+        "bounded",
+        "constrained"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "thin": {
+      "etymology": "古英語 thynne。",
+      "definition": "薄い。",
+      "usage_in_passage": "\"a thin surface layer\" と好気的分解が及ぶ層の薄さを強調し、泥炭全体の大部分が手つかずであることを含意する。",
+      "related_terms": [
+        "shallow",
+        "slender",
+        "sparse",
+        "narrow"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "sphagnum": {
+      "etymology": "近代ラテン語 sphagnum < ギリシャ語 sphagnos（ある種の苔）。",
+      "definition": "ミズゴケ属。泥炭を形成する主要な苔。",
+      "usage_in_passage": "第2段落で泥炭形成の主役として導入され、第4段落では \"Sphagnum, once reestablished\" と再生の主体として戻ってくる。本文の因果を貫く鍵語。",
+      "related_terms": [
+        "moss",
+        "bryophyte",
+        "hummock",
+        "bog"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "mosses": {
+      "etymology": "古英語 mos「沼・苔」+ -es。湿地と苔が同語源である点に注意。",
+      "definition": "苔類。",
+      "usage_in_passage": "\"Sphagnum mosses, the dominant peat-forming plants\" と同格構造で機能を説明し、直後の代名詞 they の先行詞となる（設問3）。",
+      "related_terms": [
+        "moss",
+        "lichen",
+        "bryophyte",
+        "fern"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "dominant": {
+      "etymology": "ラテン語 dominus「主人」+ -ant。",
+      "definition": "その群落で最も優勢な。",
+      "usage_in_passage": "生態学の術語として使われ、ミズゴケが例外的存在ではなく北方湿原の標準的な構成種であることを示す。",
+      "related_terms": [
+        "predominant",
+        "prevailing",
+        "principal",
+        "dominate"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "peat-forming": {
+      "etymology": "peat + form（ラテン語 forma「形」）+ -ing の複合形容詞。",
+      "definition": "泥炭を形成する働きをもつ。",
+      "usage_in_passage": "ミズゴケの生態的機能を一語に圧縮し、なぜこの植物が本文で重要なのかを即座に読者に伝える。",
+      "related_terms": [
+        "peatland",
+        "formation",
+        "generative",
+        "accumulating"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "bogs": {
+      "etymology": "古アイルランド語 bogach「柔らかい地面」< bog「柔らかい」+ -s。",
+      "definition": "貧栄養で酸性の湿原。",
+      "usage_in_passage": "\"northern bogs\" と舞台を限定し、最終段落の \"a bog that required eight thousand years to build\" と呼応して時間尺度の議論を締めくくる。",
+      "related_terms": [
+        "fen",
+        "mire",
+        "marsh",
+        "swamp"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "compound": {
+      "etymology": "ラテン語 com-（共に）+ ponere「置く」。",
+      "definition": "（動詞）既存の問題や条件をさらに強める、悪化させる。",
+      "usage_in_passage": "\"compound this constraint\" は物理的制約の上に化学的制約が上乗せされることを示す接続点で、同段落内の名詞 compounds と品詞が異なる点が読解の負荷になる。",
+      "related_terms": [
+        "aggravate",
+        "intensify",
+        "exacerbate",
+        "augment"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "constraint": {
+      "etymology": "ラテン語 con-（強意）+ stringere「締める」+ -t。",
+      "definition": "行動や過程を制限する条件。",
+      "usage_in_passage": "直前の酸素拡散の制限を一語で受け直す抽象名詞で、この語を介して物理的説明から化学的説明へ論が移る。",
+      "related_terms": [
+        "restriction",
+        "limitation",
+        "restraint",
+        "constrain"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "actively": {
+      "etymology": "ラテン語 agere「行う」→ act + -ive + -ly。",
+      "definition": "能動的に、自ら働きかけて。",
+      "usage_in_passage": "ミズゴケが環境に適応するのではなく環境そのものを作り変えることを強調し、後の self-reinforcing という評価の伏線になる。",
+      "related_terms": [
+        "deliberately",
+        "proactively",
+        "vigorously",
+        "passively"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "acidify": {
+      "etymology": "ラテン語 acidus「酸っぱい」+ -ify（〜化する）。",
+      "definition": "酸性にする。",
+      "usage_in_passage": "\"they actively acidify their surroundings\" と化学的抑制の第一段階を示す。酸性環境そのものが微生物活動を鈍らせる。",
+      "related_terms": [
+        "acidic",
+        "acidity",
+        "alkaline",
+        "neutralize"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "surroundings": {
+      "etymology": "sur-（上に・周囲に）+ round + -ing + -s。",
+      "definition": "周囲の環境。",
+      "usage_in_passage": "苔が自らの生育場所の化学的条件を変えるという、生物が環境を作る側に回る構図を表す。",
+      "related_terms": [
+        "environment",
+        "habitat",
+        "milieu",
+        "vicinity"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "phenolic": {
+      "etymology": "phenol（ギリシャ語 phaino「輝く」に由来する化合物名）+ -ic。",
+      "definition": "フェノール性の。芳香族水酸基をもつ。",
+      "usage_in_passage": "\"phenolic compounds that inhibit the enzymes\" と抑制物質を化学的に特定し、enzymic latch という比喩に具体的な実体を与える。",
+      "related_terms": [
+        "phenol",
+        "polyphenol",
+        "tannin",
+        "aromatic"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "compounds": {
+      "etymology": "compound の複数名詞形。ラテン語 com- + ponere。",
+      "definition": "化合物。",
+      "usage_in_passage": "同じ段落で動詞 compound が先に使われており、名詞としての compounds が続く。同形異義の使い分けを文法的に判断する必要がある箇所。",
+      "related_terms": [
+        "substance",
+        "molecule",
+        "chemical",
+        "mixture"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "inhibit": {
+      "etymology": "ラテン語 in-（〜に）+ habere「持つ」→「抑えておく」。",
+      "definition": "働きを妨げる、阻害する。",
+      "usage_in_passage": "酵素活性の抑制という因果の中心動詞で、この一語が latch の比喩の内容そのものになっている。",
+      "related_terms": [
+        "suppress",
+        "impede",
+        "hinder",
+        "inhibition"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "enzymes": {
+      "etymology": "ギリシャ語 en-（中に）+ zyme「酵母」+ -s。",
+      "definition": "酵素。化学反応を触媒するタンパク質。",
+      "usage_in_passage": "分解を実行する道具として導入され、これを止めることが「掛け金」の意味であると読者に理解させる。",
+      "related_terms": [
+        "enzymic",
+        "catalyst",
+        "protein",
+        "substrate"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "secrete": {
+      "etymology": "ラテン語 se-（離して）+ cernere「分ける」→ secernere。",
+      "definition": "体外へ分泌する。",
+      "usage_in_passage": "\"the enzymes microbes secrete\" は関係代名詞が省略された節で、微生物と酵素の主従関係を示している。",
+      "related_terms": [
+        "excrete",
+        "exude",
+        "discharge",
+        "secretion"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "dismantle": {
+      "etymology": "古フランス語 des-（除去）+ mantel「外套」→「外套を剥ぐ」。",
+      "definition": "組み立てられたものを分解する。",
+      "usage_in_passage": "\"dismantle complex organic molecules\" と分解を機械の解体になぞらえ、直後の latch や brake という機械的比喩と語感をそろえている。",
+      "related_terms": [
+        "disassemble",
+        "decompose",
+        "deconstruct",
+        "dismantling"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "molecules": {
+      "etymology": "ラテン語 moles「塊」+ -cula（指小辞）→「小さな塊」。",
+      "definition": "分子。",
+      "usage_in_passage": "分解の対象を化学的階層で特定し、微生物レベルの話を分子レベルへ具体化する。",
+      "related_terms": [
+        "molecular",
+        "compound",
+        "atom",
+        "macromolecule"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "ecologists": {
+      "etymology": "ギリシャ語 oikos「家」→ eco- + logos「学」+ -ist + -s。",
+      "definition": "生態学者。",
+      "usage_in_passage": "\"Ecologists call this ... the enzymic latch\" と専門用語の導入を学界の慣用として提示し、著者個人の造語ではないことを示す。",
+      "related_terms": [
+        "ecology",
+        "ecological",
+        "biologist",
+        "naturalist"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "self-reinforcing": {
+      "etymology": "self + re-（再び）+ 古フランス語 enforcier「力を加える」+ -ing。",
+      "definition": "自らの原因を強め続ける、正のフィードバックをもつ。",
+      "usage_in_passage": "苔が作る酸性・フェノール環境がさらに分解を抑え、その結果さらに苔が優占するという循環を一語で表し、なぜこの状態が数千年続くのかを説明する。",
+      "related_terms": [
+        "feedback",
+        "self-sustaining",
+        "cyclical",
+        "autocatalytic"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "arrangement": {
+      "etymology": "古フランス語 a-（〜へ）+ rangier「並べる」+ -ment。",
+      "definition": "要素の組み合わせ方、仕組み。",
+      "usage_in_passage": "段落冒頭の mechanism を言い換えた抽象名詞で、酸素不足・酸性化・酵素阻害という複数条件の総体を一語でまとめて指し示す。",
+      "related_terms": [
+        "configuration",
+        "setup",
+        "structure",
+        "arrange"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "enzymic": {
+      "etymology": "enzyme + -ic。",
+      "definition": "酵素に関する。",
+      "usage_in_passage": "\"the enzymic latch\" という術語の前半で、抑制がかかる場所が酵素であることを名指す。",
+      "related_terms": [
+        "enzyme",
+        "enzymatic",
+        "catalytic",
+        "biochemical"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "latch": {
+      "etymology": "古英語 læccan「つかむ」。",
+      "definition": "掛け金。扉を閉じたまま保つ小さな金具。",
+      "usage_in_passage": "比喩の中核。小さな化学的掛け金が巨大な炭素貯蔵を保持するというイメージが、第3段落冒頭 \"The latch, however, is easily released\" で反転され、段落間の橋渡しになる。",
+      "related_terms": [
+        "lock",
+        "catch",
+        "bolt",
+        "clasp"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "metaphor": {
+      "etymology": "ギリシャ語 meta-（越えて）+ pherein「運ぶ」→「意味を移し運ぶもの」。",
+      "definition": "隠喩。",
+      "usage_in_passage": "著者が latch を比喩だと明示することで、術語を字義通りに受け取らないよう読者に注意を促す学術的な配慮を示す。",
+      "related_terms": [
+        "analogy",
+        "simile",
+        "figurative",
+        "imagery"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "captures": {
+      "etymology": "ラテン語 capere「取る」→ capture + -s。",
+      "definition": "（本質を）うまく言い表す。",
+      "usage_in_passage": "\"a metaphor that captures how...\" と比喩の説明力を評価する動詞で、物理的な「捕える」から抽象的な「捉える」への意味の拡張が読解のポイントになる。",
+      "related_terms": [
+        "encapsulate",
+        "convey",
+        "embody",
+        "capture"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "modest": {
+      "etymology": "ラテン語 modus「尺度」+ -estus →「節度のある」。",
+      "definition": "控えめな、規模の小さい。",
+      "usage_in_passage": "\"a modest chemical brake\" と原因の小ささを述べ、直後の \"an entire carbon reservoir\" という結果の大きさとの落差を作る。",
+      "related_terms": [
+        "slight",
+        "moderate",
+        "minor",
+        "unassuming"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "brake": {
+      "etymology": "中英語 brake「制動装置」。",
+      "definition": "動きを止める装置。",
+      "usage_in_passage": "latch と同系統の機械的比喩で、化学的な抑制作用を読者に直感的に把握させる。",
+      "related_terms": [
+        "restraint",
+        "curb",
+        "check",
+        "throttle"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "reservoir": {
+      "etymology": "フランス語 réservoir < ラテン語 reservare「取っておく」。",
+      "definition": "貯蔵庫、貯留プール。",
+      "usage_in_passage": "\"an entire carbon reservoir\" と泥炭を炭素循環上のプールとして位置づけ、第3段落でそれが大気へ移動するという構図を準備する。",
+      "related_terms": [
+        "repository",
+        "sink",
+        "stockpile",
+        "basin"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "drained": {
+      "etymology": "古英語 dreahnian「濾す・乾かす」+ -ed。",
+      "definition": "排水された。",
+      "usage_in_passage": "第3段落の因果の起点であり、以降の沈下・燃焼・炭素放出はすべてこの一語から派生する。第4段落の対策はこの操作の逆転として提示される。",
+      "related_terms": [
+        "drainage",
+        "dewater",
+        "desiccate",
+        "drain"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "pasture": {
+      "etymology": "ラテン語 pascere「食べさせる」+ -ura。",
+      "definition": "牧草地。",
+      "usage_in_passage": "排水が行われる動機の一つとして家畜飼育を挙げ、泥炭破壊が悪意ではなく経済的合理性から生じることを示す。",
+      "related_terms": [
+        "grazing",
+        "meadow",
+        "rangeland",
+        "pastoral"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "forestry": {
+      "etymology": "forest + -ry（技術・産業を表す接尾辞）。",
+      "definition": "林業。",
+      "usage_in_passage": "排水の第二の動機として挙げられ、pasture, fuel extraction と並ぶ三つの用途の中間に置かれる。",
+      "related_terms": [
+        "silviculture",
+        "logging",
+        "timber",
+        "plantation"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "extraction": {
+      "etymology": "ラテン語 ex-（外へ）+ trahere「引く」+ -ion。",
+      "definition": "掘り出して取り出すこと。",
+      "usage_in_passage": "\"fuel extraction\" と泥炭自体を燃料として採掘する用途を示す。泥炭は使われる前から燃料であるという点が第3段落後半の可燃性の議論につながる。",
+      "related_terms": [
+        "extract",
+        "mining",
+        "removal",
+        "harvesting"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "penetrates": {
+      "etymology": "ラテン語 penitus「奥深く」+ -trare + -s。",
+      "definition": "内部まで入り込む。",
+      "usage_in_passage": "\"oxygen penetrates layers that have been sealed for millennia\" と、第2段落で説明された酸素遮断が破られる瞬間を描き、latch の解放を具体化する。",
+      "related_terms": [
+        "infiltrate",
+        "permeate",
+        "pierce",
+        "penetration"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "sealed": {
+      "etymology": "ラテン語 sigillum「印章」→ seal + -ed。",
+      "definition": "外界から遮断された。",
+      "usage_in_passage": "現在完了形 \"have been sealed for millennia\" が用いられ、遮断が一時的でなく千年単位で継続してきた状態であることを示す。",
+      "related_terms": [
+        "airtight",
+        "enclosed",
+        "insulated",
+        "impermeable"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "millennia": {
+      "etymology": "ラテン語 mille「千」+ annus「年」→ millennium の複数形。",
+      "definition": "千年単位の長い期間。",
+      "usage_in_passage": "保存期間の長さを示し、直後の \"within a single human lifetime\" という損失の速さと衝突させることで設問4の推論を成立させる。",
+      "related_terms": [
+        "millennium",
+        "epoch",
+        "era",
+        "century"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "microbial": {
+      "etymology": "microbe + -ial。",
+      "definition": "微生物による。",
+      "usage_in_passage": "\"microbial respiration resumes\" と、第2段落で抑え込まれていた作用が名前を変えて再登場することを示す。",
+      "related_terms": [
+        "microbe",
+        "bacterial",
+        "microorganism",
+        "fungal"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "respiration": {
+      "etymology": "ラテン語 re-（繰り返し）+ spirare「呼吸する」+ -ion。",
+      "definition": "呼吸。有機物を酸化して二酸化炭素を生じる代謝。",
+      "usage_in_passage": "炭素が大気へ戻る生理学的機構を名指し、最終段落では同じ現象が oxidation という化学の語で言い直される。",
+      "related_terms": [
+        "respire",
+        "metabolism",
+        "oxidation",
+        "aerobic"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "resumes": {
+      "etymology": "ラテン語 re-（再び）+ sumere「取る」+ -s。",
+      "definition": "中断していたものが再開する。",
+      "usage_in_passage": "「一度止まっていたものが再び動き出す」という含意が、latch が外れるという比喩と正確に対応している。",
+      "related_terms": [
+        "restart",
+        "recommence",
+        "revive",
+        "resumption"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "subsides": {
+      "etymology": "ラテン語 sub-（下へ）+ sidere「座る」+ -s。",
+      "definition": "地表が沈み込む。",
+      "usage_in_passage": "\"The surface subsides\" と排水の物理的帰結を示し、目に見えない炭素損失の可視的な指標を読者に与える。",
+      "related_terms": [
+        "sink",
+        "settle",
+        "subsidence",
+        "collapse"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "centimeters": {
+      "etymology": "ラテン語 centum「百」+ ギリシャ語 metron「尺度」+ -s。",
+      "definition": "センチメートル。",
+      "usage_in_passage": "\"several centimeters a year\" が第1段落の \"less than a millimeter annually\" と桁で対比され、損失が蓄積より一桁以上速いという設問4の推論の数値的根拠になる。",
+      "related_terms": [
+        "millimeter",
+        "meter",
+        "decimeter",
+        "metric"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "accumulated": {
+      "etymology": "accumulate の過去形・過去分詞。",
+      "definition": "長期にわたって蓄積された。",
+      "usage_in_passage": "\"carbon that accumulated over ten thousand years\" と蓄積の時間尺度を示し、直後の \"within a single human lifetime\" と正面から衝突させる。",
+      "related_terms": [
+        "amassed",
+        "accrued",
+        "stored",
+        "accumulation"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "thousand": {
+      "etymology": "古英語 thusend。",
+      "definition": "千。",
+      "usage_in_passage": "\"ten thousand years\" と蓄積期間を具体化し、最終段落の \"eight thousand years\" と呼応して数値の一貫性を保つ。",
+      "related_terms": [
+        "millennium",
+        "myriad",
+        "hundred",
+        "million"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "atmosphere": {
+      "etymology": "ギリシャ語 atmos「蒸気」+ sphaira「球」。",
+      "definition": "大気。",
+      "usage_in_passage": "炭素の行き先を示し、生態学の記述を気候問題の議論へ接続する転回点となる。",
+      "related_terms": [
+        "atmospheric",
+        "troposphere",
+        "climate",
+        "air"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "lifetime": {
+      "etymology": "life + time の複合語。",
+      "definition": "一生涯。",
+      "usage_in_passage": "\"within a single human lifetime\" と人間の時間尺度を導入し、地質学的尺度との非対称を読者自身の実感に引き寄せる。",
+      "related_terms": [
+        "lifespan",
+        "generation",
+        "longevity",
+        "duration"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "combustible": {
+      "etymology": "ラテン語 com-（強意）+ urere「焼く」→ comburere + -ible（〜されうる）。",
+      "definition": "燃えやすい。",
+      "usage_in_passage": "\"Drained peat also becomes combustible.\" という短い一文が新たな帰結を導入し、also が示す追加関係が設問5の解答根拠になる。",
+      "related_terms": [
+        "flammable",
+        "ignitable",
+        "combustion",
+        "incendiary"
+      ],
+      "context_sentence": "Drained peat also becomes combustible."
+    },
+    "smoldering": {
+      "etymology": "中英語 smolder「くすぶる」+ -ing。",
+      "definition": "炎を上げずに内部でくすぶる。",
+      "usage_in_passage": "通常の山火事と異なる燃え方を一語で示し、続く \"burn downward\" と \"conventional firefighting has so little effect\" の理由を先取りする。",
+      "related_terms": [
+        "smolder",
+        "simmer",
+        "ember",
+        "glow"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "periodically": {
+      "etymology": "ギリシャ語 peri-（周りを）+ hodos「道」→ period + -ical + -ly。",
+      "definition": "周期的に、繰り返し。",
+      "usage_in_passage": "火災が一度きりの事故ではなく反復する構造的問題であることを示す。",
+      "related_terms": [
+        "recurrently",
+        "intermittently",
+        "cyclically",
+        "sporadically"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "blanket": {
+      "etymology": "古フランス語 blanquette < blanc「白い」。白い毛織物から。",
+      "definition": "（動詞）一面を覆いつくす。",
+      "usage_in_passage": "\"blanket parts of Southeast Asia in haze\" と煙害の広がりを毛布の比喩で表し、名詞から動詞への転用が読解上の負荷になる。",
+      "related_terms": [
+        "cover",
+        "envelop",
+        "shroud",
+        "enshroud"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "haze": {
+      "etymology": "18世紀英語 hazy からの逆成とされ、語源は不詳。",
+      "definition": "煙や塵による霞。",
+      "usage_in_passage": "泥炭火災の影響を人の生活の側から具体化し、環境問題としての切実さを与える。",
+      "related_terms": [
+        "smog",
+        "mist",
+        "smoke",
+        "fog"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "burn": {
+      "etymology": "古英語 beornan「燃える」/ bærnan「燃やす」。",
+      "definition": "燃える。",
+      "usage_in_passage": "\"burn downward through dried deposits\" と燃焼の方向を明示することで、通常の森林火災との決定的な違いを一語で作り出す。",
+      "related_terms": [
+        "combust",
+        "scorch",
+        "ignite",
+        "incinerate"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "downward": {
+      "etymology": "down + -ward（方向を表す接尾辞、古英語 -weard「〜の方へ」）。",
+      "definition": "下方へ向かって。",
+      "usage_in_passage": "樹冠を横に走る通常の火災と対比され、なぜ消火が効かないのかという設問5の論理を支える方向表現。",
+      "related_terms": [
+        "descending",
+        "subsurface",
+        "beneath",
+        "upward"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "dried": {
+      "etymology": "dry + -ed。",
+      "definition": "乾燥した。",
+      "usage_in_passage": "\"dried deposits\" と、燃えるのは排水によって乾いた堆積層だと明示し、火災が排水の帰結であるという因果を読者に確認させる。",
+      "related_terms": [
+        "desiccated",
+        "parched",
+        "arid",
+        "dehydrated"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "canopy": {
+      "etymology": "ギリシャ語 konops「蚊」→ konopeion「蚊帳」→ 天蓋。",
+      "definition": "林冠。森林の樹木の枝葉が作る上層。",
+      "usage_in_passage": "\"rather than across the canopy\" と一般的な森林火災のイメージを対照項として置き、泥炭火災の特異性を浮かび上がらせる。",
+      "related_terms": [
+        "crown",
+        "overstory",
+        "foliage",
+        "understory"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "precisely": {
+      "etymology": "ラテン語 prae-（前もって）+ caedere「切る」→ precise + -ly。",
+      "definition": "まさに、ほかでもなく。",
+      "usage_in_passage": "\"which is precisely why\" と因果関係を強調して段落を締めくくり、直前の描写が単なる情景ではなく論拠であることを明示する。",
+      "related_terms": [
+        "exactly",
+        "specifically",
+        "accurately",
+        "precise"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "conventional": {
+      "etymology": "ラテン語 con-（共に）+ venire「来る」→ convention「取り決め」+ -al。",
+      "definition": "従来通りの、標準的な。",
+      "usage_in_passage": "\"conventional firefighting\" と既存手法の限界を示し、第4段落で対策の発想を転換する必要性を準備する。",
+      "related_terms": [
+        "traditional",
+        "customary",
+        "orthodox",
+        "convention"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "firefighting": {
+      "etymology": "fire + fight + -ing の複合名詞。",
+      "definition": "消火活動。",
+      "usage_in_passage": "対症療法の限界を示す語で、第4段落冒頭の \"concentrates on hydrology rather than on planting\" という発想転換の伏線となる。",
+      "related_terms": [
+        "extinguish",
+        "suppression",
+        "containment",
+        "blaze"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "restoration": {
+      "etymology": "ラテン語 re-（元へ）+ staurare「立てる」+ -ion。",
+      "definition": "損なわれた状態を元に戻すこと。",
+      "usage_in_passage": "第4段落の主題語であり、本文が問題の記述から対策の検討へ転じることを一語で告げる。",
+      "related_terms": [
+        "rehabilitation",
+        "recovery",
+        "renewal",
+        "restore"
+      ],
+      "context_sentence": "Restoration therefore concentrates on hydrology rather than on planting."
+    },
+    "concentrates": {
+      "etymology": "ラテン語 con-（共に）+ centrum「中心」+ -ate + -s。",
+      "definition": "一点に集中する。",
+      "usage_in_passage": "\"concentrates on hydrology rather than on planting\" と対策の焦点を限定し、植林こそ再生だという直感に反する主張を提示する。",
+      "related_terms": [
+        "focus",
+        "prioritize",
+        "center",
+        "concentration"
+      ],
+      "context_sentence": "Restoration therefore concentrates on hydrology rather than on planting."
+    },
+    "hydrology": {
+      "etymology": "ギリシャ語 hydor「水」+ logos「学」。",
+      "definition": "水文学。水の分布と動きに関する研究や条件。",
+      "usage_in_passage": "再生の鍵が植栽ではなく水位の管理であることを示し、第2段落の「水が酸素を締め出す」という機構と論理的に一貫する。",
+      "related_terms": [
+        "hydrological",
+        "aquifer",
+        "hydraulic",
+        "irrigation"
+      ],
+      "context_sentence": "Restoration therefore concentrates on hydrology rather than on planting."
+    },
+    "drainage": {
+      "etymology": "drain + -age（行為・設備を表す接尾辞）。",
+      "definition": "排水、排水設備。",
+      "usage_in_passage": "\"Blocking drainage ditches\" と第3段落の drained を受け直し、対策が原因の単純な逆操作であることを示す。",
+      "related_terms": [
+        "drain",
+        "runoff",
+        "ditch",
+        "culvert"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "ditches": {
+      "etymology": "古英語 dic「溝・堤」+ -es。dike と同語源。",
+      "definition": "排水溝。",
+      "usage_in_passage": "対策の具体的な施工対象を示し、泥炭地再生が高度な技術ではなく物理的な水路封鎖から始まることを伝える。",
+      "related_terms": [
+        "trench",
+        "channel",
+        "canal",
+        "furrow"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "recover": {
+      "etymology": "ラテン語 re-（再び）+ recuperare「取り戻す」。",
+      "definition": "元の水準に戻る。",
+      "usage_in_passage": "\"allows the water table to recover\" と地下水位の回復が再生の第一段階であることを示す。",
+      "related_terms": [
+        "restore",
+        "rebound",
+        "regain",
+        "recovery"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "reestablished": {
+      "etymology": "re-（再び）+ ラテン語 stabilis「安定した」→ establish + -ed。",
+      "definition": "再び定着した。",
+      "usage_in_passage": "\"Sphagnum, once reestablished\" と第2段落の主役が戻ることで化学的条件も戻るという循環を示し、self-reinforcing の性質が再生でも働くことを含意する。",
+      "related_terms": [
+        "recolonize",
+        "reintroduce",
+        "establish",
+        "reinstate"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "gradually": {
+      "etymology": "ラテン語 gradus「段階」+ -al + -ly。",
+      "definition": "段階を追って徐々に。",
+      "usage_in_passage": "回復に時間がかかることを予告し、最終段落の \"Restoration is correspondingly slow\" と呼応する。",
+      "related_terms": [
+        "incrementally",
+        "progressively",
+        "steadily",
+        "gradual"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "restores": {
+      "etymology": "ラテン語 re-（元へ）+ staurare「立てる」+ -s。",
+      "definition": "元の状態に戻す。",
+      "usage_in_passage": "ミズゴケが化学条件を回復させること、すなわち enzymic latch の再形成を意味し、第2段落の機構がそのまま再生の原理になることを示す。",
+      "related_terms": [
+        "reinstate",
+        "revive",
+        "renew",
+        "restoration"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "suppress": {
+      "etymology": "ラテン語 sub-（下に）+ premere「押す」→ supprimere。",
+      "definition": "働きを押さえ込む。",
+      "usage_in_passage": "\"the chemical conditions that suppress decay\" と、再生の目的が分解の再抑制であることを明示し、第2段落の inhibit と同じ役割を担う。",
+      "related_terms": [
+        "inhibit",
+        "restrain",
+        "curb",
+        "suppression"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "remedy": {
+      "etymology": "ラテン語 re-（再び）+ mederi「癒す」→ remedium。",
+      "definition": "問題を正すための手立て。",
+      "usage_in_passage": "\"The remedy is not without ambiguity\" と対策を示した直後に留保を導入する転換点で、単純な解決を提示しない学術文の慎重さを表す。",
+      "related_terms": [
+        "cure",
+        "treatment",
+        "solution",
+        "redress"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "ambiguity": {
+      "etymology": "ラテン語 ambi-（両方に）+ agere「駆る」→「両方向に動く」+ -ity。",
+      "definition": "解釈が一つに定まらないこと、両義性。",
+      "usage_in_passage": "二重否定 \"not without ambiguity\" の形で用いられ、対策が善悪どちらとも言い切れないことを控えめに示す。",
+      "related_terms": [
+        "ambiguous",
+        "uncertainty",
+        "equivocal",
+        "vagueness"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "rewetted": {
+      "etymology": "re-（再び）+ wet + -ed。",
+      "definition": "再び湛水された。",
+      "usage_in_passage": "対策後の泥炭を指す語で、直後にその副作用としてメタン放出が導入され、論が肯定から留保へ折り返す。",
+      "related_terms": [
+        "rewetting",
+        "saturate",
+        "inundate",
+        "flood"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "emits": {
+      "etymology": "ラテン語 e-（外へ）+ mittere「送る」+ -s。",
+      "definition": "気体などを放出する。",
+      "usage_in_passage": "副作用を述べる中心動詞で、第3段落の \"returned to the atmosphere\" と同じ方向の移動を別の語で表す。",
+      "related_terms": [
+        "release",
+        "discharge",
+        "exude",
+        "emission"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "methane": {
+      "etymology": "methyl（ギリシャ語 methy「酒」+ hyle「木」）+ -ane（飽和炭化水素を表す接尾辞）。",
+      "definition": "メタン。強力な温室効果をもつ気体。",
+      "usage_in_passage": "二酸化炭素と対比される第二の温室効果ガスとして導入され、対策が短期的には温暖化を悪化させうるという逆説の原因になる。",
+      "related_terms": [
+        "hydrocarbon",
+        "greenhouse",
+        "emission",
+        "biogas"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "warming": {
+      "etymology": "warm + -ing。",
+      "definition": "（地球の）温暖化。",
+      "usage_in_passage": "名詞として気候影響を指し、\"aggravate warming before they alleviate it\" という時間差の構文の目的語となって、短期と長期の評価の分岐点を作る。",
+      "related_terms": [
+        "greenhouse",
+        "climate",
+        "heating",
+        "temperature"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "decades": {
+      "etymology": "ギリシャ語 deka「10」+ -ade + -s。",
+      "definition": "数十年。",
+      "usage_in_passage": "\"over two decades\" とメタンの温暖化効果を評価する時間窓を明示し、最終文の horizon の議論の伏線となる。",
+      "related_terms": [
+        "decade",
+        "century",
+        "timescale",
+        "period"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "surpasses": {
+      "etymology": "古フランス語 sur-（越えて）+ passer「通る」+ -es。",
+      "definition": "程度や量で上回る。",
+      "usage_in_passage": "メタンの温暖化効果が二酸化炭素を上回ることを示し、再生が逆効果になりうるという主張の根拠を与える。",
+      "related_terms": [
+        "exceed",
+        "outstrip",
+        "eclipse",
+        "transcend"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "dioxide": {
+      "etymology": "ギリシャ語 di-「2つ」+ oxide「酸化物」。酸素原子2個を含む。",
+      "definition": "二酸化物。",
+      "usage_in_passage": "\"carbon dioxide\" として炭素放出の化学形を特定し、メタンとの比較を化学的に厳密なものにする。",
+      "related_terms": [
+        "oxide",
+        "monoxide",
+        "carbonate",
+        "oxygen"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "restored": {
+      "etymology": "restore の過去分詞。",
+      "definition": "再生処理が施された。",
+      "usage_in_passage": "\"some restored sites\" と、対策済みの場所でも短期的には悪化しうるという逆説を示し、対策への単純な期待を退ける。",
+      "related_terms": [
+        "rehabilitated",
+        "renewed",
+        "revived",
+        "restoration"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "consequently": {
+      "etymology": "ラテン語 con-（共に）+ sequi「従う」+ -ent + -ly。",
+      "definition": "その結果として。",
+      "usage_in_passage": "因果を明示する接続副詞で、メタン放出から温暖化の一時的悪化へという論理の連結を読者に見えるようにする。",
+      "related_terms": [
+        "therefore",
+        "hence",
+        "accordingly",
+        "consequence"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "aggravate": {
+      "etymology": "ラテン語 ad-（〜へ）+ gravis「重い」+ -ate →「重くする」。",
+      "definition": "状態をさらに悪化させる。",
+      "usage_in_passage": "\"aggravate warming before they alleviate it\" と対義語 alleviate と並置され、害が先で益が後という時間順序を一文で示す。",
+      "related_terms": [
+        "worsen",
+        "exacerbate",
+        "intensify",
+        "compound"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "alleviate": {
+      "etymology": "ラテン語 ad-（〜へ）+ levis「軽い」+ -ate →「軽くする」。",
+      "definition": "苦痛や問題を和らげる。",
+      "usage_in_passage": "aggravate と語源上も「重い／軽い」で対をなし、短期の害と長期の益という本文の評価軸を対称的に表現する。",
+      "related_terms": [
+        "mitigate",
+        "ease",
+        "relieve",
+        "ameliorate"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "researchers": {
+      "etymology": "re-（再び）+ 古フランス語 cerchier「探す」→ search + -er + -s。",
+      "definition": "研究者。",
+      "usage_in_passage": "\"Most researchers nevertheless regard\" と学界の多数意見として評価を提示し、著者自身の断定を避ける学術的な語り方を示す。",
+      "related_terms": [
+        "scholar",
+        "investigator",
+        "scientist",
+        "academic"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "nevertheless": {
+      "etymology": "never + the + less の融合。「それだけ少なくなることは決してなく」。",
+      "definition": "それにもかかわらず。",
+      "usage_in_passage": "直前に認めた副作用を踏まえたうえで結論を維持する譲歩の標識で、この語の後に本文の最終的な立場が来る。",
+      "related_terms": [
+        "nonetheless",
+        "notwithstanding",
+        "however",
+        "regardless"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "regard": {
+      "etymology": "古フランス語 re-（再び）+ garder「見る」→「よく見る」。",
+      "definition": "〜とみなす、評価する。",
+      "usage_in_passage": "\"regard the trade-off as favorable\" と regard A as B の構文で判断を表し、事実の記述と評価を文法的に区別している。",
+      "related_terms": [
+        "consider",
+        "deem",
+        "view",
+        "esteem"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "trade-off": {
+      "etymology": "trade「交換」+ off。一方を手放して他方を得る関係。",
+      "definition": "一方を犠牲にして他方を得る二律背反。",
+      "usage_in_passage": "メタン増と二酸化炭素減という関係を一語で名付け、以降の議論をその評価に絞り込む。",
+      "related_terms": [
+        "compromise",
+        "balance",
+        "concession",
+        "dilemma"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "favorable": {
+      "etymology": "ラテン語 favere「好意を示す」+ -able。",
+      "definition": "都合のよい、有利な。",
+      "usage_in_passage": "評価の結論を示し、直後の because 節でその根拠（大気中の残留時間の差）が説明される。",
+      "related_terms": [
+        "advantageous",
+        "beneficial",
+        "propitious",
+        "unfavorable"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "persists": {
+      "etymology": "ラテン語 per-（通して）+ sistere「立つ」+ -s。",
+      "definition": "長く残り続ける。",
+      "usage_in_passage": "\"methane persists in the atmosphere for roughly a decade\" と、温室効果の強さとは別に「どれだけ残るか」という新しい評価軸を導入する。",
+      "related_terms": [
+        "endure",
+        "remain",
+        "linger",
+        "persistence"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "roughly": {
+      "etymology": "rough「粗い」+ -ly。",
+      "definition": "おおよそ、概算で。",
+      "usage_in_passage": "数値が概算であることを明示し、断定を避ける学術的な慎重さを保つヘッジ表現。",
+      "related_terms": [
+        "approximately",
+        "nearly",
+        "about",
+        "circa"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "whereas": {
+      "etymology": "where + as の複合接続詞。",
+      "definition": "〜であるのに対し。",
+      "usage_in_passage": "メタンと二酸化炭素の大気中残留時間を直接対比する従属接続詞で、trade-off が有利と判断される理由を一文に圧縮する。",
+      "related_terms": [
+        "while",
+        "conversely",
+        "although",
+        "whilst"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "oxidation": {
+      "etymology": "oxygen（ギリシャ語 oxys「酸っぱい」+ -gen）+ -ation。",
+      "definition": "酸化。酸素と結びつく化学変化。",
+      "usage_in_passage": "排水された泥炭で継続する過程を指し、第3段落の microbial respiration と同じ現象を化学の語彙で言い直すことで論の統一を保つ。",
+      "related_terms": [
+        "oxidize",
+        "combustion",
+        "respiration",
+        "reduction"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "linger": {
+      "etymology": "中英語 lengen「長引かせる」の反復形。",
+      "definition": "去らずに長くとどまる。",
+      "usage_in_passage": "二酸化炭素が数世紀残ることを示し、trade-off を有利と判断する根拠を完成させる。persists と対をなす語選択。",
+      "related_terms": [
+        "persist",
+        "remain",
+        "dwell",
+        "endure"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "centuries": {
+      "etymology": "ラテン語 centum「百」+ -uria → century の複数形。",
+      "definition": "数世紀。",
+      "usage_in_passage": "メタンの \"a decade\" と桁で対比され、どの時間尺度で評価するかという最終文の論点を決定づける。",
+      "related_terms": [
+        "century",
+        "decade",
+        "millennia",
+        "epoch"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "correspondingly": {
+      "etymology": "ラテン語 cor-（共に）+ respondere「応じる」+ -ing + -ly。",
+      "definition": "それに応じて同じように。",
+      "usage_in_passage": "\"Restoration is correspondingly slow\" と、蓄積が遅いのだから再生も遅いという対応関係を示し、第1段落の millimeter の記述を回収する。",
+      "related_terms": [
+        "accordingly",
+        "similarly",
+        "proportionately",
+        "likewise"
+      ],
+      "context_sentence": "Restoration is correspondingly slow, since a bog that required eight thousand years to build cannot be reconstituted within a decade."
+    },
+    "cannot": {
+      "etymology": "can + not の融合形。",
+      "definition": "〜することができない。",
+      "usage_in_passage": "\"cannot be reconstituted within a decade\" と不可能性を明示し、対策への過度な期待を戒める。",
+      "related_terms": [
+        "unable",
+        "incapable",
+        "impossible",
+        "inability"
+      ],
+      "context_sentence": "Restoration is correspondingly slow, since a bog that required eight thousand years to build cannot be reconstituted within a decade."
+    },
+    "reconstituted": {
+      "etymology": "re-（再び）+ con-（共に）+ ラテン語 statuere「立てる」→ constitute + -ed。",
+      "definition": "元の構成に作り直された。",
+      "usage_in_passage": "泥炭地を人為的に「作り直す」ことの難しさを示し、restoration という語が意味するものの限界を明確にする。",
+      "related_terms": [
+        "reconstruct",
+        "reassemble",
+        "reform",
+        "constitute"
+      ],
+      "context_sentence": "Restoration is correspondingly slow, since a bog that required eight thousand years to build cannot be reconstituted within a decade."
+    },
+    "arithmetic": {
+      "etymology": "ギリシャ語 arithmos「数」+ -tikos。",
+      "definition": "計算、数の勘定。",
+      "usage_in_passage": "\"The arithmetic of peatland management\" と政策判断を計算問題に見立てる比喩で、最終文の結論を導く枠組みを与える。",
+      "related_terms": [
+        "calculation",
+        "computation",
+        "numeracy",
+        "accounting"
+      ],
+      "context_sentence": "The arithmetic of peatland management thus depends less on annual accounting than on the horizon over which the accounting is done."
+    },
+    "depends": {
+      "etymology": "ラテン語 de-（下に）+ pendere「ぶら下がる」+ -s。",
+      "definition": "〜次第で決まる。",
+      "usage_in_passage": "\"depends less on X than on Y\" の構文で結論の力点を年次計算から評価期間へ移し、本文全体を締めくくる。",
+      "related_terms": [
+        "rely",
+        "hinge",
+        "contingent",
+        "dependence"
+      ],
+      "context_sentence": "The arithmetic of peatland management thus depends less on annual accounting than on the horizon over which the accounting is done."
+    },
+    "horizon": {
+      "etymology": "ギリシャ語 horizein「境界を定める」→ horizon「限界となる線」。",
+      "definition": "（ここでは）評価が及ぶ時間的な範囲。",
+      "usage_in_passage": "本来は空間の語である horizon を時間の比喩に転用し、「何年で採算を見るか」という段落全体の論点を一語に凝縮して本文を閉じる。",
+      "related_terms": [
+        "timeframe",
+        "perspective",
+        "scope",
+        "outlook"
+      ],
+      "context_sentence": "The arithmetic of peatland management thus depends less on annual accounting than on the horizon over which the accounting is done."
+    }
+  }
+}
