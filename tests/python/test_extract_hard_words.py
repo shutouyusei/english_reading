@@ -1,5 +1,8 @@
 """Tests for extract_hard_words.py."""
+import json
+import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -40,6 +43,20 @@ class TestExtractHardWords(unittest.TestCase):
     def test_words_shorter_than_four_letters_are_ignored(self):
         body = "An apex zoo."
         self.assertEqual(extract_hard_words(body, self.COMMON), ["apex"])
+
+
+class TestMainMissingBody(unittest.TestCase):
+    def test_missing_body_returns_error_exit(self):
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+            json.dump({"id": "passage_999"}, f)
+            path = f.name
+        proc = subprocess.run(
+            [sys.executable, "scripts/extract_hard_words.py", path],
+            capture_output=True, text=True,
+            cwd=Path(__file__).resolve().parents[2],
+        )
+        self.assertEqual(proc.returncode, 1)
+        self.assertIn("body", proc.stderr)
 
 
 if __name__ == "__main__":

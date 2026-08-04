@@ -57,6 +57,9 @@ def main() -> int:
     except (OSError, json.JSONDecodeError) as exc:
         print(f"ERROR: cannot read passage: {exc}", file=sys.stderr)
         return 1
+    if "body" not in passage:
+        print("ERROR: passage has no 'body' field", file=sys.stderr)
+        return 1
     common = load_common_words(COMMON_WORDS_PATH)
     for word in extract_hard_words(passage["body"], common):
         print(word)
