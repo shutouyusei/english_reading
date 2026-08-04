@@ -18,7 +18,7 @@
         "D": "A thin surface layer of bacteria blocks oxygen from descending."
       },
       "correct": "B",
-      "explanation": "第2段落に \"Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil\" とあり、原因は水が空気の入る隙間を満たしていることだと明示されている。Aは本文に記述がない。Cは酸性化について述べているが、酸性化の効果は酵素の阻害であって酸素の結合ではない。Dは因果が逆で、好気性細菌が表層に限られるのは酸素不足の結果である。"
+      "explanation": "第2段落に \"Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil\" とあり、原因は水が空気の入る隙間を満たしていることだと明示されている。Aは本文に記述がない。酵素を阻害するのはフェノール化合物であり、いずれにせよ酸素を結合するとは述べられていない。Dは因果が逆で、好気性細菌が表層に限られるのは酸素不足の結果である。"
     },
     {
       "id": 2,
