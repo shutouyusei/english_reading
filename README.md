@@ -58,7 +58,9 @@ Anki連携を公開版サイトで使う場合は、AnkiConnectの `webCorsOrigi
 
 1. GitHubにリポジトリを作成してpush
 2. Settings → Pages → Branch: `main`, Folder: `/docs` を選択
-3. `docs/guide.html` のIssueリンクを自分のリポジトリURLに変更
+3. `docs/guide.html` 内の2箇所を自分のURLに変更
+   - Anki設定手順の `https://shutouyusei.github.io`(訪問者が許可すべきサイトのオリジン)
+   - 免責セクションのIssueリンク `https://github.com/shutouyusei/english_reading/issues`
 4. AnkiConnectの `webCorsOriginList` に `https://<ユーザー名>.github.io` を追加
 
 ## クレジット

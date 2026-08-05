@@ -25,18 +25,18 @@
     <ol>
       <li><a href="https://apps.ankiweb.net/" target="_blank" rel="noopener">Anki</a>(PC版)をインストールする。</li>
       <li>Ankiのメニュー「ツール → アドオン → 新規アドオンを取得」でコード <code>2055492159</code> を入力し、<b>AnkiConnect</b> をインストールする。</li>
-      <li>「ツール → アドオン → AnkiConnect → 設定」を開き、<code>webCorsOriginList</code> にこのサイトのURLを追加する:
+      <li>「ツール → アドオン → AnkiConnect → 設定」を開き、<code>webCorsOriginList</code> に<b>このサイトのURL</b>(<code>https://shutouyusei.github.io</code>)を追加する。下をそのままコピーして貼り付けてください:
 <pre>{
     "webCorsOriginList": [
         "http://localhost",
-        "https://あなたのユーザー名.github.io"
+        "https://shutouyusei.github.io"
     ]
 }</pre>
-      (他の設定項目は変更不要。既存の値は残したまま追記してください)</li>
+      (他の設定項目は変更不要。既存の値は残したまま追記してください。ここに入れるのは<b>ご自身のユーザー名ではなく、上記のURLそのまま</b>です)</li>
       <li>Ankiを再起動する。</li>
       <li>解説モードで単語をクリック →「＋ Ankiに追加」を押し、「✅ 追加しました」と出れば完了。カードはデッキ「TOEFL Reading」に入ります(デッキ名は ⚙ ボタンで変更可)。</li>
     </ol>
-    <p><b>ポート番号は完全一致で判定されます。</b> ローカルで動作確認する場合、<code>http://localhost:8000</code> は <code>http://localhost</code> とは別のURLとして扱われるため、使っているポート番号を含めて追加してください:
+    <p><b>ポート番号まで含めて完全一致で判定されます。</b> このリポジトリをフォークして自分のGitHub Pagesで動かす場合や、手元の開発サーバー(<code>http://localhost:8000</code> など)で開く場合は、そのURLを同じ形式で追加してください。<code>http://localhost:8000</code> は <code>http://localhost</code> とは別のURLとして扱われます:
 <pre>"webCorsOriginList": ["http://localhost", "http://localhost:8000"]</pre></p>
 
     <h2>うまくいかないときは</h2>
