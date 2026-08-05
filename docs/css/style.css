@@ -14,6 +14,10 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
+  /* ヘッダーとフッターの実高から本文領域が決まるようにする(固定値を持たない) */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 a { color: var(--accent); }
 
@@ -27,10 +31,27 @@ a { color: var(--accent); }
   padding: 16px 20px; border-top: 1px solid var(--border);
   font-size: .8em; color: var(--muted); text-align: center;
 }
+/* 免責フッターの折りたたみ(js/footer.js が組み立てる) */
+.footer-full { position: relative; }
+.footer-toggle {
+  position: absolute; top: -6px; right: 0;
+  border: none; background: none; color: var(--muted);
+  padding: 2px 6px; font-size: 1.1em; line-height: 1; cursor: pointer;
+}
+.footer-toggle:hover { color: var(--text); }
+.footer-mini { margin: 0; }
+.footer-expand {
+  border: none; background: none; padding: 0;
+  font: inherit; color: inherit; cursor: pointer;
+  text-decoration: underline dotted;
+}
+.footer-expand:hover { color: var(--text); }
+.site-footer.collapsed .footer-full { display: none; }
+.site-footer:not(.collapsed) .footer-mini { display: none; }
 
 /* 一覧・ガイド */
-.page { max-width: 860px; margin: 0 auto; padding: 20px; }
-.prose { max-width: 720px; margin: 0 auto; padding: 20px; }
+.page { max-width: 860px; margin: 0 auto; padding: 20px; flex: 1; width: 100%; }
+.prose { max-width: 720px; margin: 0 auto; padding: 20px; flex: 1; width: 100%; }
 .prose pre { background: #eef1f5; padding: 12px; border-radius: 8px; overflow-x: auto; }
 .card {
   display: flex; justify-content: space-between; align-items: center; gap: 16px;
@@ -54,7 +75,7 @@ button.anki { background: var(--accent-green); border-color: var(--accent-green)
 button:disabled { opacity: .4; cursor: not-allowed; }
 
 /* リーダー左右分割 */
-#reader-main { display: flex; height: calc(100vh - 150px); }
+#reader-main { display: flex; flex: 1; min-height: 0; }
 #passage-pane {
   flex: 1.2; padding: 18px 24px; border-right: 1px solid var(--border);
   overflow-y: auto; background: #fff; min-height: 0;
@@ -106,7 +127,9 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 }
 
 @media (max-width: 800px) {
-  #reader-main { flex-direction: column; height: auto; }
+  /* 縦積みでは各ペインを個別スクロールさせず、ページ全体をスクロールさせる */
+  #reader-main { flex-direction: column; flex: none; }
+  #passage-pane, #right-pane { overflow-y: visible; }
   #passage-pane { border-right: none; border-bottom: 1px solid var(--border); }
   .card { flex-direction: column; align-items: stretch; }
 }
