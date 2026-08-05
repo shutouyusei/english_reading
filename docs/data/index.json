@@ -1,6 +1,13 @@
 {
   "passages": [
     {
+      "id": "passage_002",
+      "title": "The Constraints of Fresco",
+      "topic": "芸術",
+      "word_count": 467,
+      "added": "2026-08-06"
+    },
+    {
       "id": "passage_001",
       "title": "Peatlands and the Paradox of Slow Decay",
       "topic": "環境",
