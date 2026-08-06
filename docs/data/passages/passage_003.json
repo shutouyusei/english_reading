@@ -1,0 +1,1318 @@
+{
+  "id": "passage_003",
+  "title": "The Economics of the Medieval Book",
+  "topic": "歴史",
+  "body": "Before paper reached northern Europe, every book was written on the skins of animals, and this single fact governed what medieval libraries could contain. A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase. Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks.\n\nThe preparation of the skins was itself protracted. After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly. The two sides were never quite alike. The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering. Nothing about this labor could be hurried, and a failure at any stage ruined material that had taken a year of grazing to produce. Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine.\n\nOne consequence was that parchment was rarely discarded. A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne. Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete. What survives from the ancient world was thus filtered not only by taste but by the price of a sheep.\n\nThe arrival of paper altered this arithmetic decisively. Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany. Printing, when it came, is often credited with the sudden abundance of books in the fifteenth century, yet a press without cheap sheets to feed it would have changed little. The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable. Skin did not vanish overnight. Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise.",
+  "word_count": 476,
+  "added": "2026-08-07",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 1, why did book-producing monasteries need to be landholders?",
+      "target_word": null,
+      "choices": {
+        "A": "Because church law required monasteries to farm the land they occupied",
+        "B": "Because the animals whose skins became pages had to be raised and grazed",
+        "C": "Because scribes were recruited from the families of neighboring tenants",
+        "D": "Because libraries had to be housed in buildings large enough to store hides"
+      },
+      "correct": "B",
+      "explanation": "第1段落に \"the raw material alone represented a herd rather than a purchase. Monasteries that produced books therefore had to be landholders first\" とあり、羊や子牛の群れを飼うための土地が必要だったことが理由である。A、C、Dはいずれも本文に記述がない。"
+    },
+    {
+      "id": 2,
+      "type": "Vocabulary",
+      "question": "The word \"protracted\" in paragraph 2 is closest in meaning to",
+      "target_word": "protracted",
+      "choices": {
+        "A": "expensive",
+        "B": "unreliable",
+        "C": "lengthy",
+        "D": "secretive"
+      },
+      "correct": "C",
+      "explanation": "直後に工程が段階的に描かれ、\"Nothing about this labor could be hurried\" と急げないことが明言されている。したがって protracted は時間的な長さを指し、C の lengthy が最も近い。A の expensive は第1段落の論点であって、この文が述べているのは所要時間である。"
+    },
+    {
+      "id": 3,
+      "type": "Inference",
+      "question": "What can be inferred from paragraph 3 about the ancient texts that survive today?",
+      "target_word": null,
+      "choices": {
+        "A": "They were copied more often than the texts that were lost",
+        "B": "They were valued more highly by medieval scholars than other works",
+        "C": "They were written on higher-quality parchment than the texts that vanished",
+        "D": "Their survival depended partly on circumstances unrelated to their merit"
+      },
+      "correct": "D",
+      "explanation": "本文は \"the accident that preserved them was economic rather than scholarly\" と述べ、末尾で \"filtered not only by taste but by the price of a sheep\" と結んでいる。つまり残存は作品の価値だけで決まったのではない。BとCは本文が否定する「学術的・質的な理由」であり、Aは書写回数に関する記述が本文にない。"
+    },
+    {
+      "id": 4,
+      "type": "Reference",
+      "question": "The word \"it\" in paragraph 3 (\"whatever it had previously borne\") refers to",
+      "target_word": null,
+      "choices": {
+        "A": "the recycled sheet",
+        "B": "the text that had lost its audience",
+        "C": "the monastery short of skins",
+        "D": "the ancient world"
+      },
+      "correct": "A",
+      "explanation": "当該部分は \"the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne\" であり、以前に文字を担っていたのは再利用されたその紙葉自体である。Bの失われた読者を持つテキストは紙葉が担っていた内容の側であって、担い手ではない。"
+    },
+    {
+      "id": 5,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author state that \"a press without cheap sheets to feed it would have changed little\"?",
+      "target_word": null,
+      "choices": {
+        "A": "To argue that printing was invented later than most historians believe",
+        "B": "To qualify the common view that printing alone produced the abundance of books",
+        "C": "To suggest that early presses were mechanically unreliable",
+        "D": "To explain why paper mills were built beside rivers"
+      },
+      "correct": "B",
+      "explanation": "この文は直前の \"Printing... is often credited with the sudden abundance of books\" を yet で受けており、印刷術のみを原因とする通説に留保を付ける役割を担う。続く一文が両者を \"a single development\" と位置づけることからも、目的は通説の修正である。Aの発明年代やCの機械的信頼性は論じられていない。"
+    }
+  ],
+  "vocab": {
+    "governed": {
+      "etymology": "ラテン語 gubernare(舵を取る) < ギリシャ語 kybernan → govern + -ed",
+      "definition": "支配した、決定づけた。",
+      "usage_in_passage": "冒頭の \"this single fact governed what medieval libraries could contain\" が本文の主張を一文で提示する。材料という物質的条件が知的な事柄を左右したという逆説を導入する。",
+      "related_terms": [
+        "government",
+        "dictated",
+        "determined",
+        "regulated"
+      ],
+      "context_sentence": "Before paper reached northern Europe, every book was written on the skins of animals, and this single fact governed what medieval libraries could contain."
+    },
+    "medieval": {
+      "etymology": "ラテン語 medium(中間の) + aevum(時代) → 「中世の」",
+      "definition": "中世の。",
+      "usage_in_passage": "議論の時代を限定し、紙が普及する以前という前提を設定する。",
+      "related_terms": [
+        "medieval",
+        "mediaeval",
+        "feudal",
+        "antiquity"
+      ],
+      "context_sentence": "Before paper reached northern Europe, every book was written on the skins of animals, and this single fact governed what medieval libraries could contain."
+    },
+    "consume": {
+      "etymology": "ラテン語 con-(すっかり) + sumere(取る) → 「使い尽くす」",
+      "definition": "消費する、使い果たす。",
+      "usage_in_passage": "\"A large volume might consume the hides of two hundred sheep\" で、本を作ることが家畜を消尽する行為であることを直截に示す。",
+      "related_terms": [
+        "consumption",
+        "expend",
+        "exhaust",
+        "deplete"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "hundred": {
+      "etymology": "古英語 hundred。ゲルマン系の数詞",
+      "definition": "百。",
+      "usage_in_passage": "\"two hundred sheep or calves\" という具体的な数字が、抽象的な「高価だった」という説明よりも強く規模を伝える。",
+      "related_terms": [
+        "hundreds",
+        "thousand",
+        "dozen",
+        "score"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "sheep": {
+      "etymology": "古英語 scēap。ゲルマン系で、単複同形",
+      "definition": "羊。",
+      "usage_in_passage": "第1段落で材料の供給源として登場し、最終段落の \"the price of a sheep\" で古典文献の残存を左右した要因として回収される。",
+      "related_terms": [
+        "lamb",
+        "ewe",
+        "flock",
+        "livestock"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "calves": {
+      "etymology": "古英語 cealf(子牛)の複数形。ゲルマン系",
+      "definition": "子牛。",
+      "usage_in_passage": "羊と並ぶ皮の供給源として挙げられ、上質の犢皮紙(ヴェラム)が子牛から作られたことを示唆する。",
+      "related_terms": [
+        "calf",
+        "cattle",
+        "vellum",
+        "livestock"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "herd": {
+      "etymology": "古英語 heord(群れ)。ゲルマン系",
+      "definition": "家畜の群れ。",
+      "usage_in_passage": "\"the raw material alone represented a herd rather than a purchase\" が本文の中心的な比喩。本の原価が買い物ではなく畜産であったことを示す。",
+      "related_terms": [
+        "herds",
+        "flock",
+        "drove",
+        "livestock"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "monasteries": {
+      "etymology": "ギリシャ語 monos(一人) → monastērion + -es",
+      "definition": "修道院。",
+      "usage_in_passage": "書物生産の担い手として、また第3段落では羊皮紙を再利用する経済主体として現れる。",
+      "related_terms": [
+        "monastery",
+        "monks",
+        "abbey",
+        "convent"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "landholders": {
+      "etymology": "land + hold + -er + -s。ゲルマン系の複合語",
+      "definition": "土地所有者。",
+      "usage_in_passage": "\"had to be landholders first and scholars second\" という語順自体が主張を運ぶ。学問より先に土地が要るという優先順位が本文の逆説を要約している。",
+      "related_terms": [
+        "landholding",
+        "landowners",
+        "proprietors",
+        "estates"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "scholars": {
+      "etymology": "後期ラテン語 scholaris < ギリシャ語 skholē(余暇、学校) + -s",
+      "definition": "学者。",
+      "usage_in_passage": "landholders と対置され、修道院の性格が知的というより経済的であったことを際立たせる。",
+      "related_terms": [
+        "scholar",
+        "scholarly",
+        "academics",
+        "learning"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "reflected": {
+      "etymology": "ラテン語 re-(戻って) + flectere(曲げる) → 「反映する」",
+      "definition": "映し出した、表していた。",
+      "usage_in_passage": "\"the size of a collection reflected the extent of the pastures\" で、蔵書量が牧草地の広さの関数であったことを示す。",
+      "related_terms": [
+        "reflect",
+        "reflection",
+        "mirrored",
+        "indicated"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "extent": {
+      "etymology": "ラテン語 ex-(外に) + tendere(伸ばす) → extend の名詞形",
+      "definition": "広がり、範囲。",
+      "usage_in_passage": "牧草地の面積を指し、直後の \"the learning of the monks\" と並置されることで、物質と知性が同等に蔵書を規定したことを示す。",
+      "related_terms": [
+        "extend",
+        "extensive",
+        "scope",
+        "magnitude"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "pastures": {
+      "etymology": "ラテン語 pascere(牧草を食べさせる) → pastura + -s",
+      "definition": "牧草地。",
+      "usage_in_passage": "図書館の規模を決める物理的資源として、学識と並べて提示される。",
+      "related_terms": [
+        "pasture",
+        "grazing",
+        "meadow",
+        "grassland"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "attached": {
+      "etymology": "古フランス語 estachier(杭で留める)。ゲルマン語 stake と同系",
+      "definition": "付属した、属していた。",
+      "usage_in_passage": "\"the pastures attached to it\" が、修道院と土地が制度上一体であったことを示す。",
+      "related_terms": [
+        "attach",
+        "attachment",
+        "affiliated",
+        "annexed"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "faithfully": {
+      "etymology": "ラテン語 fides(信頼) → faith + -ful + -ly",
+      "definition": "忠実に、正確に。",
+      "usage_in_passage": "\"as faithfully as it reflected the learning of the monks\" で、二つの対応関係が同程度に強いことを述べ、物質的条件を学識と同格に置く。",
+      "related_terms": [
+        "faith",
+        "faithful",
+        "accurately",
+        "precisely"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "monks": {
+      "etymology": "ギリシャ語 monakhos(独りで暮らす者) → 古英語 munuc + -s",
+      "definition": "修道士。",
+      "usage_in_passage": "\"the learning of the monks\" が、通常なら蔵書量の説明として第一に挙がる要因であり、本文はそれを土地と並列に格下げしている。",
+      "related_terms": [
+        "monk",
+        "monastic",
+        "monastery",
+        "friars"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "preparation": {
+      "etymology": "ラテン語 prae-(前もって) + parare(整える) + -ation",
+      "definition": "下ごしらえ、加工。",
+      "usage_in_passage": "第2段落の主題語。\"The preparation of the skins was itself protracted\" が、材料費だけでなく加工の時間も制約であったことを示す。",
+      "related_terms": [
+        "prepare",
+        "preparatory",
+        "processing",
+        "treatment"
+      ],
+      "context_sentence": "The preparation of the skins was itself protracted."
+    },
+    "protracted": {
+      "etymology": "ラテン語 pro-(前へ) + trahere(引く) → 「引き延ばされた」",
+      "definition": "長引いた、時間のかかる。",
+      "usage_in_passage": "語彙問題の対象語。直後に工程が順を追って描かれ、\"Nothing about this labor could be hurried\" が語義の手がかりとなる。",
+      "related_terms": [
+        "protraction",
+        "prolonged",
+        "lengthy",
+        "drawn-out"
+      ],
+      "context_sentence": "The preparation of the skins was itself protracted."
+    },
+    "loosened": {
+      "etymology": "古ノルド語 lauss(緩い) → loose + -en + -ed。ゲルマン系",
+      "definition": "緩めた、剥がれやすくした。",
+      "usage_in_passage": "\"After the hair was loosened in a bath of lime\" が加工の第一段階を示し、石灰が毛を抜くために使われたことを説明する。",
+      "related_terms": [
+        "loose",
+        "slackened",
+        "released",
+        "detached"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "lime": {
+      "etymology": "古英語 lim(粘着物)。ゲルマン系",
+      "definition": "石灰。",
+      "usage_in_passage": "毛を緩めるための薬剤として登場する。強アルカリの性質が皮を傷めずに毛だけを外す働きをする。",
+      "related_terms": [
+        "limestone",
+        "alkali",
+        "calcium",
+        "caustic"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "stretched": {
+      "etymology": "古英語 streccan(伸ばす)。ゲルマン系",
+      "definition": "張った、引き伸ばした。",
+      "usage_in_passage": "\"the hide was stretched on a frame\" が、平滑な面を得るための張力処理を示し、次の scraped と対になる。",
+      "related_terms": [
+        "stretch",
+        "taut",
+        "extended",
+        "tension"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "scraped": {
+      "etymology": "古ノルド語 skrapa(こする)。ゲルマン系",
+      "definition": "削った、こそげ取った。",
+      "usage_in_passage": "第2段落では皮を薄くする工程として、第3段落では \"scraped a second time\" として文字を消す工程として再登場し、同じ動作が製造と再利用の両方を担うことを示す。",
+      "related_terms": [
+        "scrape",
+        "scraping",
+        "abraded",
+        "shaved"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "repeatedly": {
+      "etymology": "ラテン語 re-(再び) + petere(求める) → repeat + -ed + -ly",
+      "definition": "繰り返し。",
+      "usage_in_passage": "一度では済まない作業量を示し、protracted の語義を具体的に裏づける。",
+      "related_terms": [
+        "repeat",
+        "repetition",
+        "recurrently",
+        "persistently"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "dried": {
+      "etymology": "古英語 dryge(乾いた) → dry + -ed。ゲルマン系",
+      "definition": "乾いた。",
+      "usage_in_passage": "\"while it dried under tension\" で、乾燥と張力が同時に働くことが平滑な面を生むという工程の要点を示す。",
+      "related_terms": [
+        "dry",
+        "drying",
+        "desiccated",
+        "cured"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "tension": {
+      "etymology": "ラテン語 tendere(張る) → tensio + -on",
+      "definition": "張力。",
+      "usage_in_passage": "乾燥中に皮を張り続けることが、縮みや歪みを防ぐ鍵であったことを示す。",
+      "related_terms": [
+        "tense",
+        "tensile",
+        "strain",
+        "stress"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "yielded": {
+      "etymology": "古英語 gieldan(支払う、産出する)。ゲルマン系",
+      "definition": "生み出した、産した。",
+      "usage_in_passage": "\"a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly\" で、相反する二つの要件を同時に満たす必要を示す。",
+      "related_terms": [
+        "yield",
+        "produced",
+        "generated",
+        "afforded"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "folded": {
+      "etymology": "古英語 fealdan(折る)。ゲルマン系",
+      "definition": "折られた。",
+      "usage_in_passage": "sewn とともに、羊皮紙が単なる書写面ではなく製本に耐える素材でなければならなかったことを示す。",
+      "related_terms": [
+        "fold",
+        "folding",
+        "creased",
+        "doubled"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "sewn": {
+      "etymology": "古英語 siwian(縫う)の過去分詞。ゲルマン系",
+      "definition": "縫われた。",
+      "usage_in_passage": "折丁を綴じる製本工程を指し、紙葉に求められる強度の理由を与える。",
+      "related_terms": [
+        "sew",
+        "stitched",
+        "bound",
+        "quire"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "thin": {
+      "etymology": "古英語 þynne(薄い)。ゲルマン系",
+      "definition": "薄い。",
+      "usage_in_passage": "strong と対置され、\"strong enough... yet thin enough\" という譲歩構文が加工の難しさを表現する。",
+      "related_terms": [
+        "thinner",
+        "slender",
+        "fine",
+        "slim"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "cleanly": {
+      "etymology": "古英語 clǣne(清潔な) → clean + -ly。ゲルマン系",
+      "definition": "きれいに、にじまずに。",
+      "usage_in_passage": "\"thin enough to take ink cleanly\" で、厚すぎるとインクが乗らないという実務上の要件を示す。",
+      "related_terms": [
+        "clean",
+        "cleanliness",
+        "neatly",
+        "crisply"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "alike": {
+      "etymology": "古英語 gelīc(似た) → a- + like。ゲルマン系",
+      "definition": "同じような、似ている。",
+      "usage_in_passage": "\"The two sides were never quite alike\" が短い一文で段落の焦点を転換し、表裏の差という新しい論点を導入する。",
+      "related_terms": [
+        "like",
+        "likeness",
+        "similar",
+        "identical"
+      ],
+      "context_sentence": "The two sides were never quite alike."
+    },
+    "borne": {
+      "etymology": "古英語 beran(運ぶ、担う)の過去分詞。ゲルマン系",
+      "definition": "担っていた、備えていた。",
+      "usage_in_passage": "第2段落では \"The face that had borne hair\" として毛のあった面を、第3段落では \"whatever it had previously borne\" として以前の文字を指し、同じ語が物理面と内容の両方を担う。",
+      "related_terms": [
+        "bear",
+        "bore",
+        "carried",
+        "supported"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "darker": {
+      "etymology": "古英語 deorc(暗い) → dark + 比較級 -er。ゲルマン系",
+      "definition": "より色が濃い。",
+      "usage_in_passage": "coarser と並んで毛side の特徴を述べ、写字生が配慮せざるを得なかった差異を具体化する。",
+      "related_terms": [
+        "dark",
+        "darkness",
+        "duller",
+        "shaded"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "coarser": {
+      "etymology": "古英語 coarse(粗い) + 比較級 -er",
+      "definition": "より粗い、きめが粗い。",
+      "usage_in_passage": "darker と対になり、表裏の差が視覚と触覚の両面に及ぶことを示す。",
+      "related_terms": [
+        "coarse",
+        "coarseness",
+        "rougher",
+        "grainier"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "lain": {
+      "etymology": "古英語 licgan(横たわる)の過去分詞。ゲルマン系",
+      "definition": "接していた、面していた。",
+      "usage_in_passage": "\"the face that had lain against the flesh\" で、肉に接していた側を指し、毛側との対比を完成させる。",
+      "related_terms": [
+        "lie",
+        "lay",
+        "rested",
+        "abutted"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "flesh": {
+      "etymology": "古英語 flǣsc(肉)。ゲルマン系",
+      "definition": "肉、肉側。",
+      "usage_in_passage": "皮の内側を指す専門的な用法で、hair side と対をなす製本学の用語である。",
+      "related_terms": [
+        "fleshy",
+        "meat",
+        "tissue",
+        "hide"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "scribes": {
+      "etymology": "ラテン語 scribere(書く) → scriba + -s",
+      "definition": "写字生。",
+      "usage_in_passage": "第2段落で表裏を揃える工夫の主体として、また材料への敬意を示す主体として登場する。",
+      "related_terms": [
+        "scribe",
+        "script",
+        "copyists",
+        "clerks"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "arranged": {
+      "etymology": "古フランス語 arengier(列に並べる) < a- + rank",
+      "definition": "配置した、並べ替えた。",
+      "usage_in_passage": "\"scribes arranged the folded leaves so that like met like\" が、材料の欠点を編集で補う工夫を示す。",
+      "related_terms": [
+        "arrange",
+        "arrangement",
+        "ordered",
+        "organized"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "invisible": {
+      "etymology": "ラテン語 in-(否定) + videre(見る) + -ible",
+      "definition": "目に見えない、気づかれない。",
+      "usage_in_passage": "obvious と対置され、この工夫が読者には意識されないまま機能していたことを示す。",
+      "related_terms": [
+        "visible",
+        "vision",
+        "imperceptible",
+        "unnoticed"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "obvious": {
+      "etymology": "ラテン語 ob-(前に) + via(道) → 「道の前にある」",
+      "definition": "明白な。",
+      "usage_in_passage": "invisible と対をなし、同じ事実が観察者の知識次第で見えたり見えなかったりすることを示す。",
+      "related_terms": [
+        "obviously",
+        "evident",
+        "apparent",
+        "manifest"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "examines": {
+      "etymology": "ラテン語 examinare(秤で量る) < examen(秤の針)",
+      "definition": "詳しく調べる。",
+      "usage_in_passage": "\"anyone who examines the order of a gathering\" が、専門的な観察によってのみ現れる証拠であることを示す。",
+      "related_terms": [
+        "examine",
+        "examination",
+        "inspects",
+        "scrutinizes"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "gathering": {
+      "etymology": "古英語 gaderian(集める) → gather + -ing。ゲルマン系",
+      "definition": "折丁。数枚の紙葉を折り重ねた製本の単位。",
+      "usage_in_passage": "写本学の用語として使われ、表裏を揃える工夫が製本単位ごとに行われたことを示す。",
+      "related_terms": [
+        "gather",
+        "quire",
+        "signature",
+        "folio"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "hurried": {
+      "etymology": "中英語 horyen(急がせる)。ゲルマン系 + -ed",
+      "definition": "急がされた。",
+      "usage_in_passage": "\"Nothing about this labor could be hurried\" が protracted を言い換え、時間が短縮不能な制約であることを確認する。",
+      "related_terms": [
+        "hurry",
+        "rushed",
+        "hastened",
+        "expedited"
+      ],
+      "context_sentence": "Nothing about this labor could be hurried, and a failure at any stage ruined material that had taken a year of grazing to produce."
+    },
+    "ruined": {
+      "etymology": "ラテン語 ruere(崩れ落ちる) → ruina + -ed",
+      "definition": "台無しにした。",
+      "usage_in_passage": "\"a failure at any stage ruined material that had taken a year of grazing\" が、失敗の代償を時間の単位で測り直し、第1段落の経済的主張と結びつける。",
+      "related_terms": [
+        "ruin",
+        "ruinous",
+        "spoiled",
+        "destroyed"
+      ],
+      "context_sentence": "Nothing about this labor could be hurried, and a failure at any stage ruined material that had taken a year of grazing to produce."
+    },
+    "grazing": {
+      "etymology": "古英語 grasian(草を食べる) < græs(草) + -ing。ゲルマン系",
+      "definition": "放牧。",
+      "usage_in_passage": "\"a year of grazing\" が、一枚の失敗が一年分の飼育を無にすることを示し、材料と時間の等価性を示す。",
+      "related_terms": [
+        "graze",
+        "pasture",
+        "foraging",
+        "herding"
+      ],
+      "context_sentence": "Nothing about this labor could be hurried, and a failure at any stage ruined material that had taken a year of grazing to produce."
+    },
+    "accordingly": {
+      "etymology": "ラテン語 ad-(に) + cor(心) → accord + -ing + -ly",
+      "definition": "それに応じて、したがって。",
+      "usage_in_passage": "工程の説明から写字生の態度へ論を移す接続語として機能する。",
+      "related_terms": [
+        "accord",
+        "according",
+        "consequently",
+        "therefore"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "treated": {
+      "etymology": "ラテン語 tractare(扱う) < trahere(引く) + -ed",
+      "definition": "扱った。",
+      "usage_in_passage": "\"treated the surface with a respect\" が、材料の希少性が心理や慣習にまで及んだことを示す。",
+      "related_terms": [
+        "treat",
+        "treatment",
+        "handled",
+        "regarded"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "accustomed": {
+      "etymology": "ラテン語 ad-(に) + consuetudo(習慣) → accustom + -ed",
+      "definition": "慣れきった。",
+      "usage_in_passage": "\"modern readers, accustomed to abundant paper\" が現代の読者を議論に引き込み、豊かさが理解を妨げるという指摘を成立させる。",
+      "related_terms": [
+        "accustom",
+        "custom",
+        "habituated",
+        "inured"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "abundant": {
+      "etymology": "ラテン語 ab-(あふれて) + undare(波打つ) → 「あふれるほどの」",
+      "definition": "豊富な。",
+      "usage_in_passage": "中世の希少性と現代の潤沢さを対比し、第4段落の abundance の伏線となる。",
+      "related_terms": [
+        "abundance",
+        "plentiful",
+        "ample",
+        "copious"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "imagine": {
+      "etymology": "ラテン語 imago(像) → imaginari",
+      "definition": "想像する。",
+      "usage_in_passage": "\"may find difficult to imagine\" が段落を締め、歴史的条件の理解しにくさを読者の側の問題として提示する。",
+      "related_terms": [
+        "image",
+        "imagination",
+        "envision",
+        "conceive"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "consequence": {
+      "etymology": "ラテン語 con-(共に) + sequi(従う) + -ence",
+      "definition": "結果、帰結。",
+      "usage_in_passage": "\"One consequence was that parchment was rarely discarded\" が第3段落の主題文で、希少性から再利用という行動が導かれることを示す。",
+      "related_terms": [
+        "consequent",
+        "consequently",
+        "outcome",
+        "result"
+      ],
+      "context_sentence": "One consequence was that parchment was rarely discarded."
+    },
+    "parchment": {
+      "etymology": "古代都市ペルガモン(Pergamum)に由来するラテン語 pergamina",
+      "definition": "羊皮紙。",
+      "usage_in_passage": "本文の中心的な物質。第4段落末尾では紙と対比され、耐久性ゆえに文書用として残ったことが述べられる。",
+      "related_terms": [
+        "vellum",
+        "hide",
+        "skin",
+        "manuscript"
+      ],
+      "context_sentence": "One consequence was that parchment was rarely discarded."
+    },
+    "rarely": {
+      "etymology": "古ノルド語由来の rare + -ly",
+      "definition": "めったに〜しない。",
+      "usage_in_passage": "\"parchment was rarely discarded\" が、次に述べる再利用の慣行を導入する。",
+      "related_terms": [
+        "rare",
+        "rarity",
+        "seldom",
+        "infrequently"
+      ],
+      "context_sentence": "One consequence was that parchment was rarely discarded."
+    },
+    "discarded": {
+      "etymology": "dis-(離して) + card(カード) → 元は「札を捨てる」の意",
+      "definition": "捨てられた。",
+      "usage_in_passage": "希少な材料が廃棄されなかったという事実が、パリンプセストという現象の前提となる。",
+      "related_terms": [
+        "discard",
+        "disposed",
+        "jettisoned",
+        "abandoned"
+      ],
+      "context_sentence": "One consequence was that parchment was rarely discarded."
+    },
+    "audience": {
+      "etymology": "ラテン語 audire(聞く) → audientia",
+      "definition": "読者、聴衆。",
+      "usage_in_passage": "\"A text that had lost its audience\" が、再利用の判断基準が内容の価値ではなく需要であったことを示す。",
+      "related_terms": [
+        "audible",
+        "readership",
+        "public",
+        "listeners"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "recycled": {
+      "etymology": "re-(再び) + ラテン語 cyclus < ギリシャ語 kyklos(輪) + -ed",
+      "definition": "再利用された。",
+      "usage_in_passage": "\"the recycled sheet\" が、参照問題の対象となる代名詞 it の先行詞であり、段落の焦点を紙葉そのものに定める。",
+      "related_terms": [
+        "recycle",
+        "reused",
+        "repurposed",
+        "reclaimed"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "palimpsest": {
+      "etymology": "ギリシャ語 palin(再び) + psēstos(こすられた) → 「再びこすられたもの」",
+      "definition": "パリンプセスト。文字を消して再利用した羊皮紙。",
+      "usage_in_passage": "語源そのものが工程の説明になっている専門用語で、第3段落の議論全体を一語に凝縮している。",
+      "related_terms": [
+        "palimpsests",
+        "manuscript",
+        "parchment",
+        "erasure"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "faint": {
+      "etymology": "古フランス語 faindre(見せかける) < ラテン語 fingere(形づくる)",
+      "definition": "かすかな。",
+      "usage_in_passage": "\"the faint traces\" が、消去が完全ではなかったという事実を示し、後世の解読を可能にした条件を与える。",
+      "related_terms": [
+        "faintly",
+        "dim",
+        "indistinct",
+        "vague"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "traces": {
+      "etymology": "ラテン語 trahere(引く) → tractus → 古フランス語 trace + -s",
+      "definition": "痕跡。",
+      "usage_in_passage": "消し切れずに残った文字を指し、経済的判断が意図せず保存装置として働いたという逆説の物的基盤となる。",
+      "related_terms": [
+        "trace",
+        "vestiges",
+        "remnants",
+        "residue"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "recovered": {
+      "etymology": "ラテン語 re-(再び) + recuperare(取り戻す)",
+      "definition": "回収した、復元した。",
+      "usage_in_passage": "\"Scholars have recovered lost works of antiquity\" が、痕跡が実際に成果を生んだことを示す。",
+      "related_terms": [
+        "recover",
+        "recovery",
+        "retrieved",
+        "restored"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "antiquity": {
+      "etymology": "ラテン語 antiquus(古い) + -ity",
+      "definition": "古代。",
+      "usage_in_passage": "\"lost works of antiquity\" が、失われたはずの古典が中世の紙葉の下に眠っていたという劇的な事実を提示する。",
+      "related_terms": [
+        "antique",
+        "ancient",
+        "classical",
+        "antiquated"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "beneath": {
+      "etymology": "古英語 beneoðan(下に)。ゲルマン系",
+      "definition": "〜の下に。",
+      "usage_in_passage": "\"from beneath later devotional texts\" が、層状の物理関係を示し、時代の重なりを空間的に表現する。",
+      "related_terms": [
+        "below",
+        "under",
+        "underneath",
+        "underlying"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "devotional": {
+      "etymology": "ラテン語 de-(完全に) + vovere(誓う) → devotion + -al",
+      "definition": "信心の、礼拝用の。",
+      "usage_in_passage": "上書きした側のテキストの性格を示し、中世の関心が古典より信仰にあったことを含意する。",
+      "related_terms": [
+        "devotion",
+        "devout",
+        "liturgical",
+        "pious"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "accident": {
+      "etymology": "ラテン語 ad-(に) + cadere(落ちる) → 「偶然起きたこと」",
+      "definition": "偶然。",
+      "usage_in_passage": "\"the accident that preserved them was economic rather than scholarly\" が第3段落の核心。保存が意図の産物ではなかったことを示す。",
+      "related_terms": [
+        "accidental",
+        "chance",
+        "happenstance",
+        "contingency"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "preserved": {
+      "etymology": "ラテン語 prae-(前もって) + servare(守る)",
+      "definition": "保存した。",
+      "usage_in_passage": "accident を主語に取ることで、保存の主体が人間の判断ではなく状況であったという転倒を作る。",
+      "related_terms": [
+        "preserve",
+        "preservation",
+        "conserved",
+        "retained"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "scholarly": {
+      "etymology": "scholar + -ly",
+      "definition": "学術的な。",
+      "usage_in_passage": "economic と対置され、何が古典を残したのかという問いに経済という答えを与える。",
+      "related_terms": [
+        "scholar",
+        "scholars",
+        "academic",
+        "erudite"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "monastery": {
+      "etymology": "ギリシャ語 monos(一人) → monastērion",
+      "definition": "修道院。",
+      "usage_in_passage": "\"a monastery short of skins reused what it judged obsolete\" が、抽象的な経済法則を一つの具体的な判断に落とし込む。",
+      "related_terms": [
+        "monasteries",
+        "monks",
+        "abbey",
+        "cloister"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "reused": {
+      "etymology": "re-(再び) + use + -d",
+      "definition": "再利用した。",
+      "usage_in_passage": "判断の動詞として、修道院が能動的に選択した結果であることを示す。",
+      "related_terms": [
+        "reuse",
+        "recycled",
+        "repurposed",
+        "reclaimed"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "obsolete": {
+      "etymology": "ラテン語 ob-(離れて) + solere(習慣とする) → 「使われなくなった」",
+      "definition": "時代遅れの、用済みの。",
+      "usage_in_passage": "\"what it judged obsolete\" が、価値判断の誤りが後世に取り返しのつかない損失をもたらしたことを含意する。",
+      "related_terms": [
+        "obsolescence",
+        "outdated",
+        "antiquated",
+        "defunct"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "survives": {
+      "etymology": "ラテン語 super-(超えて) + vivere(生きる) + -s",
+      "definition": "生き残る、現存する。",
+      "usage_in_passage": "\"What survives from the ancient world\" が主語となり、段落の結論を一般命題へ引き上げる。",
+      "related_terms": [
+        "survive",
+        "survival",
+        "endures",
+        "persists"
+      ],
+      "context_sentence": "What survives from the ancient world was thus filtered not only by taste but by the price of a sheep."
+    },
+    "ancient": {
+      "etymology": "ラテン語 ante(前に) → antianus → 古フランス語 ancien",
+      "definition": "古代の。",
+      "usage_in_passage": "\"the ancient world\" として、失われた文献の出所を指す。",
+      "related_terms": [
+        "antiquity",
+        "antique",
+        "archaic",
+        "classical"
+      ],
+      "context_sentence": "What survives from the ancient world was thus filtered not only by taste but by the price of a sheep."
+    },
+    "taste": {
+      "etymology": "古フランス語 taster(触れる、味わう) < ラテン語 taxare",
+      "definition": "趣味、好尚。",
+      "usage_in_passage": "\"filtered not only by taste but by the price of a sheep\" で、選別の通常の基準として提示され、経済的要因と対置される。",
+      "related_terms": [
+        "tasteful",
+        "preference",
+        "judgment",
+        "discernment"
+      ],
+      "context_sentence": "What survives from the ancient world was thus filtered not only by taste but by the price of a sheep."
+    },
+    "arrival": {
+      "etymology": "ラテン語 ad-(に) + ripa(岸) → arrive + -al",
+      "definition": "到来。",
+      "usage_in_passage": "\"The arrival of paper altered this arithmetic decisively\" が第4段落の主題文で、前段までの前提が崩れる転換点を示す。",
+      "related_terms": [
+        "arrive",
+        "advent",
+        "onset",
+        "appearance"
+      ],
+      "context_sentence": "The arrival of paper altered this arithmetic decisively."
+    },
+    "altered": {
+      "etymology": "ラテン語 alter(他の) → alterare + -ed",
+      "definition": "変えた。",
+      "usage_in_passage": "第1段落から続いた経済の論理が書き換えられることを示し、本文の構成を前後二部に分ける。",
+      "related_terms": [
+        "alter",
+        "alteration",
+        "modified",
+        "transformed"
+      ],
+      "context_sentence": "The arrival of paper altered this arithmetic decisively."
+    },
+    "arithmetic": {
+      "etymology": "ギリシャ語 arithmos(数) → arithmētikē",
+      "definition": "計算、算術。",
+      "usage_in_passage": "比喩として用いられ、書物生産が一貫して数の問題であったという本文の見方を一語で示す。",
+      "related_terms": [
+        "arithmetical",
+        "calculation",
+        "computation",
+        "reckoning"
+      ],
+      "context_sentence": "The arrival of paper altered this arithmetic decisively."
+    },
+    "decisively": {
+      "etymology": "ラテン語 de-(離して) + caedere(切る) → decide + -ive + -ly",
+      "definition": "決定的に。",
+      "usage_in_passage": "変化が漸進的ではなく断絶的であったことを示し、第4段落の議論の強さを設定する。",
+      "related_terms": [
+        "decisive",
+        "decision",
+        "conclusively",
+        "definitively"
+      ],
+      "context_sentence": "The arrival of paper altered this arithmetic decisively."
+    },
+    "manufactured": {
+      "etymology": "ラテン語 manus(手) + facere(作る) → 「手で作る」",
+      "definition": "製造された。",
+      "usage_in_passage": "\"Manufactured from rags rather than livestock\" が、材料の出所が畜産から手工業へ移ったことを示す。",
+      "related_terms": [
+        "manufacture",
+        "produced",
+        "fabricated",
+        "made"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "rags": {
+      "etymology": "古ノルド語 rögg(房)。ゲルマン系 + -s",
+      "definition": "ぼろ布。",
+      "usage_in_passage": "livestock と対置され、紙の原料が土地を要さない廃品であったことを示す。これが第1段落の制約を無効にする。",
+      "related_terms": [
+        "rag",
+        "cloth",
+        "textile",
+        "linen"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "livestock": {
+      "etymology": "live + stock。ゲルマン系の複合語",
+      "definition": "家畜。",
+      "usage_in_passage": "第1段落の herd を言い換え、旧来の材料体系を一語で指し示す。",
+      "related_terms": [
+        "stock",
+        "cattle",
+        "herd",
+        "husbandry"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "artisans": {
+      "etymology": "ラテン語 ars(技) → イタリア語 artigiano + -s",
+      "definition": "職人。",
+      "usage_in_passage": "\"artisans who owned no land\" が、生産の担い手が地主から無産の職人へ移ったことを示し、社会構造の変化を含意する。",
+      "related_terms": [
+        "artisan",
+        "craftsmen",
+        "artisanal",
+        "tradesmen"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "fell": {
+      "etymology": "古英語 feallan(落ちる)の過去形。ゲルマン系",
+      "definition": "下がった。",
+      "usage_in_passage": "\"its cost fell as mills multiplied\" が、価格低下と生産設備の増加を因果として結ぶ。",
+      "related_terms": [
+        "fall",
+        "fallen",
+        "declined",
+        "dropped"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "mills": {
+      "etymology": "ラテン語 molere(挽く) → molina → 古英語 mylen + -s",
+      "definition": "製紙工場、水車場。",
+      "usage_in_passage": "川沿いという立地が動力源の必要を示し、紙が工業製品であったことを伝える。",
+      "related_terms": [
+        "mill",
+        "milling",
+        "factory",
+        "workshop"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "multiplied": {
+      "etymology": "ラテン語 multus(多い) + plicare(折る) → 「幾重にもする」",
+      "definition": "増加した。",
+      "usage_in_passage": "設備の増加が価格低下を生むという市場の論理を示す。",
+      "related_terms": [
+        "multiply",
+        "multiple",
+        "proliferated",
+        "increased"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "sudden": {
+      "etymology": "ラテン語 sub-(下から) + ire(行く) → 「不意に来る」",
+      "definition": "突然の。",
+      "usage_in_passage": "\"the sudden abundance of books\" が通説の描く変化の劇的さを示し、直後の yet がそれに留保を付ける。",
+      "related_terms": [
+        "suddenly",
+        "abrupt",
+        "unexpected",
+        "swift"
+      ],
+      "context_sentence": "Printing, when it came, is often credited with the sudden abundance of books in the fifteenth century, yet a press without cheap sheets to feed it would have changed little."
+    },
+    "abundance": {
+      "etymology": "ラテン語 ab-(あふれて) + undare(波打つ) + -ance",
+      "definition": "豊富さ。",
+      "usage_in_passage": "第2段落の abundant paper と呼応し、紙の潤沢さが書物の潤沢さに転化したという因果を示す。",
+      "related_terms": [
+        "abundant",
+        "plenty",
+        "profusion",
+        "surplus"
+      ],
+      "context_sentence": "Printing, when it came, is often credited with the sudden abundance of books in the fifteenth century, yet a press without cheap sheets to feed it would have changed little."
+    },
+    "fifteenth": {
+      "etymology": "five + -teen + -th。ゲルマン系の数詞",
+      "definition": "15番目の。",
+      "usage_in_passage": "\"the fifteenth century\" が印刷術の登場した時代を特定し、議論に年代の錨を打つ。",
+      "related_terms": [
+        "fifteen",
+        "fifth",
+        "century",
+        "quattrocento"
+      ],
+      "context_sentence": "Printing, when it came, is often credited with the sudden abundance of books in the fifteenth century, yet a press without cheap sheets to feed it would have changed little."
+    },
+    "innovations": {
+      "etymology": "ラテン語 in-(中に) + novus(新しい) → innovare + -ation + -s",
+      "definition": "革新。",
+      "usage_in_passage": "\"The two innovations are properly understood as a single development\" が本文の結論で、紙と印刷を分離して論じる通念を退ける。",
+      "related_terms": [
+        "innovate",
+        "innovative",
+        "inventions",
+        "advances"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "properly": {
+      "etymology": "ラテン語 proprius(固有の) → proper + -ly",
+      "definition": "正しくは、適切に。",
+      "usage_in_passage": "\"are properly understood as\" が、通説に対する訂正を穏やかな断定として提示する。",
+      "related_terms": [
+        "proper",
+        "propriety",
+        "correctly",
+        "rightly"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "understood": {
+      "etymology": "under + stand の過去分詞。ゲルマン系",
+      "definition": "理解された。",
+      "usage_in_passage": "受動態で用いることで、著者個人の意見ではなく妥当な解釈として結論を提示する。",
+      "related_terms": [
+        "understand",
+        "understanding",
+        "comprehended",
+        "construed"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "duplication": {
+      "etymology": "ラテン語 duo(二) + plicare(折る) → duplicare + -ation",
+      "definition": "複製。",
+      "usage_in_passage": "印刷術を機能で言い換えた語で、それが単独では意味をなさないという最終文の主張を成立させる。",
+      "related_terms": [
+        "duplicate",
+        "replication",
+        "reproduction",
+        "copying"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "consequential": {
+      "etymology": "ラテン語 con-(共に) + sequi(従う) + -ential",
+      "definition": "重大な、影響力のある。",
+      "usage_in_passage": "\"became consequential only because a new material had already made the page expendable\" が、二つの発明の従属関係を明示する。",
+      "related_terms": [
+        "consequence",
+        "consequently",
+        "significant",
+        "momentous"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "expendable": {
+      "etymology": "ラテン語 ex-(外に) + pendere(量る、支払う) + -able",
+      "definition": "使い捨てにできる。",
+      "usage_in_passage": "本文全体の結語となる語。第1段落の「一冊が家畜二百頭」という状態からの距離を一語で測っている。",
+      "related_terms": [
+        "expend",
+        "expenditure",
+        "disposable",
+        "dispensable"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "vanish": {
+      "etymology": "ラテン語 vanus(空の) → evanescere → 古フランス語 esvanir",
+      "definition": "消え去る。",
+      "usage_in_passage": "\"Skin did not vanish overnight\" が、決定的な変化にも例外があることを示し、結論を単純化から救う。",
+      "related_terms": [
+        "vanished",
+        "disappear",
+        "evaporate",
+        "fade"
+      ],
+      "context_sentence": "Skin did not vanish overnight."
+    },
+    "overnight": {
+      "etymology": "over + night。ゲルマン系の複合語",
+      "definition": "一夜にして。",
+      "usage_in_passage": "decisively と対をなし、変化の速さに関する主張を後段で微調整する。",
+      "related_terms": [
+        "night",
+        "abruptly",
+        "suddenly",
+        "immediately"
+      ],
+      "context_sentence": "Skin did not vanish overnight."
+    },
+    "charters": {
+      "etymology": "ラテン語 charta(紙、文書) → 古フランス語 chartre + -s",
+      "definition": "特許状、証書。",
+      "usage_in_passage": "\"Charters and other documents intended to outlast their makers\" が、羊皮紙が残った領域を具体的に示す。",
+      "related_terms": [
+        "charter",
+        "deeds",
+        "documents",
+        "diploma"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "outlast": {
+      "etymology": "out-(超えて) + last(続く)。ゲルマン系の複合語",
+      "definition": "より長く持続する。",
+      "usage_in_passage": "文書が作成者より長く残ることを求められたという要件が、材料選択の理由を説明する。",
+      "related_terms": [
+        "last",
+        "outlive",
+        "survive",
+        "endure"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "makers": {
+      "etymology": "古英語 macian(作る) → make + -er + -s。ゲルマン系",
+      "definition": "作成者。",
+      "usage_in_passage": "\"outlast their makers\" が、文書の想定寿命を人の一生を超える尺度で測ることを示す。",
+      "related_terms": [
+        "make",
+        "maker",
+        "creators",
+        "authors"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "drawn": {
+      "etymology": "古英語 dragan(引く)の過去分詞。ゲルマン系",
+      "definition": "(文書が)作成された。",
+      "usage_in_passage": "\"were still drawn on parchment\" は法律文書を作成する意の慣用で、単に「描かれた」ではない点に注意が要る。",
+      "related_terms": [
+        "draw",
+        "drew",
+        "drafted",
+        "executed"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "captured": {
+      "etymology": "ラテン語 capere(取る) → captura + -ed",
+      "definition": "獲得した、席巻した。",
+      "usage_in_passage": "\"long after paper had captured the ordinary book\" が、市場を奪う比喩によって二つの材料の棲み分けを描く。",
+      "related_terms": [
+        "capture",
+        "captive",
+        "seized",
+        "conquered"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "ordinary": {
+      "etymology": "ラテン語 ordo(順序) → ordinarius",
+      "definition": "ありふれた、通常の。",
+      "usage_in_passage": "charters との対比で、日常的な書物と特別な文書という用途の分化を示す。",
+      "related_terms": [
+        "order",
+        "ordinarily",
+        "commonplace",
+        "routine"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "preference": {
+      "etymology": "ラテン語 prae-(前に) + ferre(運ぶ) → prefer + -ence",
+      "definition": "選好。",
+      "usage_in_passage": "\"a preference that reveals what each material was thought to promise\" が、慣行を証拠として読む本文の方法を最後に明示する。",
+      "related_terms": [
+        "prefer",
+        "preferable",
+        "predilection",
+        "inclination"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "reveals": {
+      "etymology": "ラテン語 re-(戻して) + velum(覆い) → 「覆いを取る」",
+      "definition": "明らかにする。",
+      "usage_in_passage": "材料の選択が当時の人々の期待を映す証拠になるという、本文の解釈の枠組みを示す。",
+      "related_terms": [
+        "reveal",
+        "revelation",
+        "discloses",
+        "exposes"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "promise": {
+      "etymology": "ラテン語 pro-(前に) + mittere(送る) → promissum",
+      "definition": "約束するもの、期待されるもの。",
+      "usage_in_passage": "\"what each material was thought to promise\" が本文を締めくくり、耐久性という第1段落からの主題に回帰する。",
+      "related_terms": [
+        "promising",
+        "pledge",
+        "assurance",
+        "guarantee"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    }
+  }
+}

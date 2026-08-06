@@ -1,6 +1,13 @@
 {
   "passages": [
     {
+      "id": "passage_003",
+      "title": "The Economics of the Medieval Book",
+      "topic": "歴史",
+      "word_count": 476,
+      "added": "2026-08-07"
+    },
+    {
       "id": "passage_002",
       "title": "The Constraints of Fresco",
       "topic": "芸術",
