@@ -1,0 +1,1150 @@
+{
+  "id": "passage_004",
+  "title": "Reading the Air Trapped in Ice",
+  "topic": "科学",
+  "body": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago. The evidence comes from Antarctica, where snow that fell in a single season has never melted and has instead been buried by the snow of the seasons that followed. As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely. Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures.\n\nA core drilled from such a sheet is therefore a sequence of samples rather than a single specimen. Bubbles near the top hold air from the industrial era; those a kilometer down hold air from the last glacial maximum. Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday. The concentrations of carbon dioxide and methane that emerge are not inferred from proxies. They are direct measurements of ancient atmosphere. This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it.\n\nDating the layers demands more ingenuity. Near the surface, annual accumulation is visible, and the layers can be counted much as one counts the rings of a tree. Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age. Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology. A large eruption is in this sense a stopwatch pressed once and read in both hemispheres.\n\nOne complication deserves emphasis. Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it. The offset can exceed several thousand years where accumulation is slow, and it must be estimated and subtracted before gas and temperature can be compared. Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate. Much of the technical literature on ice cores concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything.",
+  "word_count": 473,
+  "added": "2026-08-09",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 1, how does ancient air become trapped in an ice sheet?",
+      "target_word": null,
+      "choices": {
+        "A": "Meltwater refreezes around pockets of air near the surface",
+        "B": "Gas rises from the bedrock and is captured by the overlying ice",
+        "C": "The spaces between snow crystals shrink and eventually close as the layers are compressed",
+        "D": "Wind drives air into cracks that later fill with snow"
+      },
+      "correct": "C",
+      "explanation": "第1段落に \"the spaces between them shrink until they close entirely. Whatever air occupied those spaces at the moment of closure is sealed off\" とあり、圧縮によって隙間が閉じることで空気が封じ込められる。Aは本文が \"has never melted\" と述べる点と矛盾し、BとDは本文に記述がない。"
+    },
+    {
+      "id": 2,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author state that the measurements \"are not inferred from proxies\"?",
+      "target_word": null,
+      "choices": {
+        "A": "To emphasize that ice cores yield the ancient atmosphere itself rather than an indirect indicator of it",
+        "B": "To argue that other methods of studying past climate have been abandoned",
+        "C": "To explain why the instruments must be calibrated before each use",
+        "D": "To indicate that the gas concentrations are still a matter of dispute"
+      },
+      "correct": "A",
+      "explanation": "直後の \"They are direct measurements of ancient atmosphere\" が言い換えとして続いており、間接指標との対比によって証拠の直接性を強調するのが目的である。Bのように他手法の放棄は述べられておらず、Dは \"direct measurements\" という断定と矛盾する。"
+    },
+    {
+      "id": 3,
+      "type": "Vocabulary",
+      "question": "The word \"anchors\" in paragraph 3 is closest in meaning to",
+      "target_word": "anchors",
+      "choices": {
+        "A": "compares",
+        "B": "conceals",
+        "C": "interrupts",
+        "D": "fixes"
+      },
+      "correct": "D",
+      "explanation": "火山灰の層が \"appears simultaneously in cores from opposite ends of the earth\" ことで、離れた記録を共通の年代尺度に固定する働きを述べている。したがって D の fixes が最も近い。A の compares は記録同士を比べるだけで、基準に固定するという意味を持たない。"
+    },
+    {
+      "id": 4,
+      "type": "Inference",
+      "question": "It can be inferred from paragraph 4 that a researcher who ignored the age offset might",
+      "target_word": null,
+      "choices": {
+        "A": "underestimate the total depth of the ice sheet",
+        "B": "conclude wrongly that temperature rose before carbon dioxide did",
+        "C": "fail to detect the sulfate layers left by volcanic eruptions",
+        "D": "overstate the amount of methane present during glacial periods"
+      },
+      "correct": "B",
+      "explanation": "本文は \"an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process\" と述べている。空気が氷より新しい分を補正しなければ、二酸化炭素の上昇が実際より遅く見え、温暖化が先行したという誤った結論に至りうる。A、C、Dは補正の対象と無関係である。"
+    },
+    {
+      "id": 5,
+      "type": "Reference",
+      "question": "The word \"them\" in paragraph 4 (\"the corrections that make them mean anything\") refers to",
+      "target_word": null,
+      "choices": {
+        "A": "the corrections",
+        "B": "the ice cores",
+        "C": "the measurements",
+        "D": "the technical publications"
+      },
+      "correct": "C",
+      "explanation": "当該文は \"concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything\" という構造で、補正が意味を与える対象は測定値である。Aは補正自身を指すことになり文意が循環し、Dは補正が扱う対象ではない。"
+    }
+  ],
+  "vocab": {
+    "atmosphere": {
+      "etymology": "ギリシャ語 atmos(蒸気) + sphaira(球) → 「蒸気の球」",
+      "definition": "大気。",
+      "usage_in_passage": "冒頭 \"The atmosphere leaves no fossils\" が本文の問題設定。化石を残さないはずの対象をどう知るのか、という問いが全体を貫く。",
+      "related_terms": [
+        "atmospheric",
+        "air",
+        "climate",
+        "troposphere"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "fossils": {
+      "etymology": "ラテン語 fodere(掘る) → fossilis「掘り出されたもの」+ -s",
+      "definition": "化石。",
+      "usage_in_passage": "通常の古生物学的証拠を指し、それが存在しないという事実が氷床コアの価値を際立たせる。",
+      "related_terms": [
+        "fossil",
+        "fossilized",
+        "remains",
+        "specimen"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "climate": {
+      "etymology": "ギリシャ語 klima(傾き、地帯) → ラテン語 clima",
+      "definition": "気候。",
+      "usage_in_passage": "\"climate scientists\" として研究主体を、末尾では \"a fact about the climate\" として研究対象を指す。",
+      "related_terms": [
+        "climatic",
+        "weather",
+        "meteorology",
+        "atmosphere"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "scientists": {
+      "etymology": "ラテン語 scire(知る) → science + -ist + -s",
+      "definition": "科学者。",
+      "usage_in_passage": "\"can state with confidence\" の主語となり、主張の確からしさを担保する存在として提示される。",
+      "related_terms": [
+        "science",
+        "scientific",
+        "researchers",
+        "investigators"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "confidence": {
+      "etymology": "ラテン語 con-(強意) + fidere(信じる) → confidere + -ence",
+      "definition": "確信、自信。",
+      "usage_in_passage": "\"state with confidence\" が、化石が無いにもかかわらず断定できるという逆説を作り、その根拠を示す義務を本文に課す。",
+      "related_terms": [
+        "confident",
+        "certainty",
+        "assurance",
+        "conviction"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "hundred": {
+      "etymology": "古英語 hundred。ゲルマン系の数詞",
+      "definition": "百。",
+      "usage_in_passage": "\"eight hundred thousand years ago\" で復元可能な時間の長さを、第4段落では \"a hundred meters\" で気泡が閉じる深さを示す。",
+      "related_terms": [
+        "hundreds",
+        "thousand",
+        "century",
+        "numeral"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "thousand": {
+      "etymology": "古英語 þūsend。ゲルマン系の数詞",
+      "definition": "千。",
+      "usage_in_passage": "八十万年という桁を示し、氷床コアが扱う時間規模を読者に印象づける。",
+      "related_terms": [
+        "thousands",
+        "hundred",
+        "millennium",
+        "numeral"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "fell": {
+      "etymology": "古英語 feallan(落ちる)の過去形。ゲルマン系",
+      "definition": "(雪が)降った。",
+      "usage_in_passage": "\"snow that fell in a single season\" が、後の層序の議論の出発点となる一回の降雪を指す。",
+      "related_terms": [
+        "fall",
+        "fallen",
+        "descended",
+        "precipitated"
+      ],
+      "context_sentence": "The evidence comes from Antarctica, where snow that fell in a single season has never melted and has instead been buried by the snow of the seasons that followed."
+    },
+    "melted": {
+      "etymology": "古英語 meltan(溶ける)。ゲルマン系",
+      "definition": "溶けた。",
+      "usage_in_passage": "\"has never melted\" が南極の記録が連続している理由であり、Q1の誤答選択肢を排除する根拠にもなる。",
+      "related_terms": [
+        "melt",
+        "molten",
+        "thawed",
+        "liquefied"
+      ],
+      "context_sentence": "The evidence comes from Antarctica, where snow that fell in a single season has never melted and has instead been buried by the snow of the seasons that followed."
+    },
+    "buried": {
+      "etymology": "古英語 byrgan(埋める) → bury + -ed。ゲルマン系",
+      "definition": "埋められた。",
+      "usage_in_passage": "第1段落では雪が後続の雪に埋もれる過程を、第4段落では気泡が百メートル下に埋もれるまで閉じない事実を述べ、同じ語が記録の生成と誤差の原因の両方を担う。",
+      "related_terms": [
+        "bury",
+        "burial",
+        "interred",
+        "covered"
+      ],
+      "context_sentence": "The evidence comes from Antarctica, where snow that fell in a single season has never melted and has instead been buried by the snow of the seasons that followed."
+    },
+    "accumulated": {
+      "etymology": "ラテン語 ad-(に) + cumulus(積み重ね) → accumulare + -ed",
+      "definition": "蓄積した。",
+      "usage_in_passage": "\"the accumulated weight compresses the layers beneath\" が圧密の原動力を示す。",
+      "related_terms": [
+        "accumulate",
+        "accumulation",
+        "amassed",
+        "piled"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "compresses": {
+      "etymology": "ラテン語 com-(共に) + premere(押す) → 「押し縮める」",
+      "definition": "圧縮する。",
+      "usage_in_passage": "積雪の重みが下層に働く力を示し、結晶が氷へ変わる過程を導入する。",
+      "related_terms": [
+        "compress",
+        "compression",
+        "condenses",
+        "squeezes"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "beneath": {
+      "etymology": "古英語 beneoðan(下に)。ゲルマン系",
+      "definition": "〜の下の。",
+      "usage_in_passage": "圧縮される対象が下層であることを示し、深さと時代が対応する構造を暗示する。",
+      "related_terms": [
+        "below",
+        "under",
+        "underneath",
+        "underlying"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "loose": {
+      "etymology": "古ノルド語 lauss(緩い)。ゲルマン系",
+      "definition": "ばらばらの、緩い。",
+      "usage_in_passage": "\"the loose crystals at the surface\" が変化の前の状態を示し、solid ice との対比を作る。",
+      "related_terms": [
+        "loosen",
+        "slack",
+        "unpacked",
+        "granular"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "gradually": {
+      "etymology": "ラテン語 gradus(段階) → gradual + -ly",
+      "definition": "徐々に。",
+      "usage_in_passage": "雪から氷への転換が瞬間的ではないことを示し、気泡が閉じるまでに時間差が生じる第4段落の伏線となる。",
+      "related_terms": [
+        "gradual",
+        "progressively",
+        "incrementally",
+        "steadily"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "welded": {
+      "etymology": "中世スウェーデン語 välla(沸かして接合する)由来。ゲルマン系",
+      "definition": "融合した、接合した。",
+      "usage_in_passage": "\"welded into solid ice\" が、粒どうしが圧力で一体化する現象を金属加工の比喩で表す。",
+      "related_terms": [
+        "weld",
+        "welding",
+        "fused",
+        "bonded"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "shrink": {
+      "etymology": "古英語 scrincan(縮む)。ゲルマン系",
+      "definition": "縮む。",
+      "usage_in_passage": "\"the spaces between them shrink until they close entirely\" が空気封入の直接の仕組みで、Q1の正解根拠となる。",
+      "related_terms": [
+        "shrank",
+        "shrinkage",
+        "contract",
+        "diminish"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "entirely": {
+      "etymology": "ラテン語 integer(手つかずの) → entire + -ly",
+      "definition": "完全に。",
+      "usage_in_passage": "隙間が部分的にではなく完全に閉じることを示し、封入の不可逆性を強調する。",
+      "related_terms": [
+        "entire",
+        "entirety",
+        "completely",
+        "wholly"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "occupied": {
+      "etymology": "ラテン語 ob-(に) + capere(取る) → occupare + -ed",
+      "definition": "占めていた。",
+      "usage_in_passage": "\"Whatever air occupied those spaces at the moment of closure\" が、保存されるのが封入時点の空気であるという限定を与える。",
+      "related_terms": [
+        "occupy",
+        "occupation",
+        "inhabited",
+        "filled"
+      ],
+      "context_sentence": "Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures."
+    },
+    "closure": {
+      "etymology": "ラテン語 claudere(閉じる) → clausura + -ure",
+      "definition": "閉鎖、閉じること。",
+      "usage_in_passage": "\"at the moment of closure\" が時刻を定める語で、第4段落の年代のずれはこの瞬間と氷の形成時点の差から生じる。",
+      "related_terms": [
+        "close",
+        "closed",
+        "sealing",
+        "enclosure"
+      ],
+      "context_sentence": "Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures."
+    },
+    "sealed": {
+      "etymology": "ラテン語 signum(印) → sigillum → seal + -ed",
+      "definition": "密封された。",
+      "usage_in_passage": "同一文で二度用いられ、封入が起きることと持続することの両方を述べる。",
+      "related_terms": [
+        "seal",
+        "sealing",
+        "airtight",
+        "enclosed"
+      ],
+      "context_sentence": "Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures."
+    },
+    "endures": {
+      "etymology": "ラテン語 in-(中に) + durus(硬い) → indurare → endure + -s",
+      "definition": "存続する、持ちこたえる。",
+      "usage_in_passage": "\"for as long as the ice endures\" が保存期間の条件を示し、氷が失われれば記録も失われることを含意する。",
+      "related_terms": [
+        "endure",
+        "endurance",
+        "persists",
+        "survives"
+      ],
+      "context_sentence": "Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures."
+    },
+    "drilled": {
+      "etymology": "中低ドイツ語 drillen(穴を開ける)。ゲルマン系",
+      "definition": "掘削した。",
+      "usage_in_passage": "第2段落では試料採取の手段として、第4段落では \"the cores are drilled to investigate\" として研究目的を示す文脈で用いられる。",
+      "related_terms": [
+        "drill",
+        "drilling",
+        "bored",
+        "extracted"
+      ],
+      "context_sentence": "A core drilled from such a sheet is therefore a sequence of samples rather than a single specimen."
+    },
+    "specimen": {
+      "etymology": "ラテン語 specere(見る) → specimen「見本」",
+      "definition": "標本、試料。",
+      "usage_in_passage": "\"a sequence of samples rather than a single specimen\" が、コアの本質が単一の物体ではなく時系列であることを示す。",
+      "related_terms": [
+        "specimens",
+        "sample",
+        "example",
+        "exemplar"
+      ],
+      "context_sentence": "A core drilled from such a sheet is therefore a sequence of samples rather than a single specimen."
+    },
+    "bubbles": {
+      "etymology": "中英語 bobel(泡)。擬音語的なゲルマン系の語 + -s",
+      "definition": "気泡。",
+      "usage_in_passage": "本文の中心的な対象。第2段落では深さごとの年代差を、第4段落では閉鎖の遅れによる誤差を担う。",
+      "related_terms": [
+        "bubble",
+        "bubbly",
+        "cavities",
+        "pockets"
+      ],
+      "context_sentence": "Bubbles near the top hold air from the industrial era; those a kilometer down hold air from the last glacial maximum."
+    },
+    "kilometer": {
+      "etymology": "ギリシャ語 khilioi(千) + metron(尺度)",
+      "definition": "キロメートル。",
+      "usage_in_passage": "\"those a kilometer down\" が深さと年代の対応を具体的な数字で示す。",
+      "related_terms": [
+        "kilometre",
+        "meter",
+        "metric",
+        "distance"
+      ],
+      "context_sentence": "Bubbles near the top hold air from the industrial era; those a kilometer down hold air from the last glacial maximum."
+    },
+    "glacial": {
+      "etymology": "ラテン語 glacies(氷) → glacialis",
+      "definition": "氷期の、氷河の。",
+      "usage_in_passage": "\"the last glacial maximum\" が、深部の気泡が対応する時代を特定し、コアの射程を示す。",
+      "related_terms": [
+        "glacier",
+        "glaciation",
+        "icy",
+        "interglacial"
+      ],
+      "context_sentence": "Bubbles near the top hold air from the industrial era; those a kilometer down hold air from the last glacial maximum."
+    },
+    "extracting": {
+      "etymology": "ラテン語 ex-(外に) + trahere(引く) → extract + -ing",
+      "definition": "抽出すること。",
+      "usage_in_passage": "\"Extracting the gas is mechanically simple\" が、測定の技術的容易さを述べ、第4段落の「難しいのは補正だ」という結論の対比項となる。",
+      "related_terms": [
+        "extract",
+        "extraction",
+        "obtaining",
+        "isolating"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "mechanically": {
+      "etymology": "ギリシャ語 mēkhanē(装置) → mechanical + -ly",
+      "definition": "機械的に、装置の面では。",
+      "usage_in_passage": "分析化学的な難しさではなく物理的な操作の話であることを限定し、simple の意味範囲を絞る。",
+      "related_terms": [
+        "mechanical",
+        "mechanism",
+        "physically",
+        "technically"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "crushing": {
+      "etymology": "古フランス語 croissir(砕く) + -ing",
+      "definition": "砕くこと。",
+      "usage_in_passage": "\"crushing a fragment of ice in a vacuum releases it\" が気体回収の実際の手順を示す。",
+      "related_terms": [
+        "crush",
+        "crushed",
+        "pulverizing",
+        "grinding"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "fragment": {
+      "etymology": "ラテン語 frangere(壊す) → fragmentum",
+      "definition": "破片。",
+      "usage_in_passage": "測定に要する試料が小片で足りることを示し、貴重なコアを損なわずに分析できることを含意する。",
+      "related_terms": [
+        "fragments",
+        "shard",
+        "piece",
+        "splinter"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "vacuum": {
+      "etymology": "ラテン語 vacuus(空の) → vacuum「空虚」",
+      "definition": "真空。",
+      "usage_in_passage": "外気の混入を防ぐ条件として示され、測定の信頼性を担保する。",
+      "related_terms": [
+        "vacuous",
+        "void",
+        "evacuated",
+        "airless"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "collected": {
+      "etymology": "ラテン語 com-(共に) + legere(集める) → colligere + -ed",
+      "definition": "採取された。",
+      "usage_in_passage": "\"the same instruments used on air collected yesterday\" が、古代と現代の空気が同一の手法で測れることを示し、証拠の直接性を裏づける。",
+      "related_terms": [
+        "collect",
+        "collection",
+        "gathered",
+        "sampled"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "concentrations": {
+      "etymology": "ラテン語 com-(共に) + centrum(中心) → concentrate + -ion + -s",
+      "definition": "濃度。",
+      "usage_in_passage": "測定される量を特定し、二酸化炭素とメタンという具体的な気体名につなぐ。",
+      "related_terms": [
+        "concentrate",
+        "concentrated",
+        "levels",
+        "density"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "carbon": {
+      "etymology": "ラテン語 carbo(炭)",
+      "definition": "炭素。",
+      "usage_in_passage": "\"carbon dioxide\" として、第4段落では温暖化との時間関係が論点になる主役の気体を構成する。",
+      "related_terms": [
+        "carbonate",
+        "carbonic",
+        "charcoal",
+        "graphite"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "dioxide": {
+      "etymology": "ギリシャ語 di-(二つの) + oxide(酸化物)",
+      "definition": "二酸化物。",
+      "usage_in_passage": "carbon と結合して二酸化炭素を指し、本文で最も重要な測定対象となる。",
+      "related_terms": [
+        "oxide",
+        "carbon",
+        "gas",
+        "monoxide"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "methane": {
+      "etymology": "ギリシャ語 methy(酒) → methyl + -ane(飽和炭化水素を表す接尾辞)",
+      "definition": "メタン。",
+      "usage_in_passage": "二酸化炭素と並ぶ測定対象として挙げられ、測定の網羅性を示す。",
+      "related_terms": [
+        "methyl",
+        "hydrocarbon",
+        "gas",
+        "ethane"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "emerge": {
+      "etymology": "ラテン語 e-(外に) + mergere(沈める) → 「浮かび上がる」",
+      "definition": "現れる、得られる。",
+      "usage_in_passage": "\"The concentrations ... that emerge\" が測定結果を指し、直後の否定文で性格づけられる。",
+      "related_terms": [
+        "emergence",
+        "emergent",
+        "arise",
+        "surface"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "inferred": {
+      "etymology": "ラテン語 in-(中に) + ferre(運ぶ) → inferre「推論する」",
+      "definition": "推論された。",
+      "usage_in_passage": "\"are not inferred from proxies\" が本文の主張の核心で、Q2の設問対象。否定形で用いることで直接測定との差を際立たせる。",
+      "related_terms": [
+        "infer",
+        "inference",
+        "deduced",
+        "surmised"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "proxies": {
+      "etymology": "ラテン語 procuratio(代理) → procuracy → proxy + -es",
+      "definition": "代理指標。直接測れない量を推定するための代用データ。",
+      "usage_in_passage": "気候学の専門用語として登場し、直後の tree ring や shell の例で具体化される。",
+      "related_terms": [
+        "proxy",
+        "surrogate",
+        "substitute",
+        "indicator"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "measurements": {
+      "etymology": "ラテン語 mensura(測ること) → measure + -ment + -s",
+      "definition": "測定値。",
+      "usage_in_passage": "第2段落では \"direct measurements\" として証拠の強さを、第4段落では \"not the measurements themselves\" として補正との対比を担う。Q5の指示対象でもある。",
+      "related_terms": [
+        "measure",
+        "measured",
+        "readings",
+        "quantification"
+      ],
+      "context_sentence": "They are direct measurements of ancient atmosphere."
+    },
+    "ancient": {
+      "etymology": "ラテン語 ante(前に) → antianus → 古フランス語 ancien",
+      "definition": "古代の。",
+      "usage_in_passage": "\"direct measurements of ancient atmosphere\" が、時間的に遠いものを直接測るという本文の主張を一句に凝縮する。",
+      "related_terms": [
+        "antiquity",
+        "antique",
+        "archaic",
+        "primeval"
+      ],
+      "context_sentence": "They are direct measurements of ancient atmosphere."
+    },
+    "distinguishes": {
+      "etymology": "ラテン語 dis-(分けて) + stinguere(刺す) → distinguere",
+      "definition": "区別する。",
+      "usage_in_passage": "\"This distinguishes them from most of what is known about the deep past\" が、氷床コアを他の古気候研究から切り分け、その特異性を明示する。",
+      "related_terms": [
+        "distinguish",
+        "distinct",
+        "differentiates",
+        "separates"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "substitutes": {
+      "etymology": "ラテン語 sub-(下に) + statuere(立てる) → 「代わりに置くもの」+ -s",
+      "definition": "代用物。",
+      "usage_in_passage": "proxies の平易な言い換えとして機能し、続くコロン以下の二つの例を導く。",
+      "related_terms": [
+        "substitute",
+        "substitution",
+        "surrogates",
+        "proxies"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "width": {
+      "etymology": "古英語 wid(広い) → wide + -th。ゲルマン系",
+      "definition": "幅。",
+      "usage_in_passage": "\"the width of a tree ring standing for a summer\" が代理指標の第一例で、量が別の量を代弁する構造を示す。",
+      "related_terms": [
+        "wide",
+        "widen",
+        "breadth",
+        "thickness"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "chemistry": {
+      "etymology": "アラビア語 al-kīmiyā → alchemy → chemist + -ry",
+      "definition": "化学組成。",
+      "usage_in_passage": "\"the chemistry of a shell standing for the temperature\" が代理指標の第二例で、同位体分析による水温復元を指す。",
+      "related_terms": [
+        "chemical",
+        "chemically",
+        "composition",
+        "isotopes"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "shell": {
+      "etymology": "古英語 sciell(殻)。ゲルマン系",
+      "definition": "(貝の)殻。",
+      "usage_in_passage": "海洋生物の殻を指し、古水温の代理指標として提示される。",
+      "related_terms": [
+        "shells",
+        "carapace",
+        "fossil",
+        "mollusk"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "ingenuity": {
+      "etymology": "ラテン語 ingenium(生まれつきの才) → ingenious + -ity",
+      "definition": "工夫、創意。",
+      "usage_in_passage": "\"Dating the layers demands more ingenuity\" が第3段落の主題文で、測定の容易さと年代決定の難しさを対比する。",
+      "related_terms": [
+        "ingenious",
+        "inventiveness",
+        "resourcefulness",
+        "cleverness"
+      ],
+      "context_sentence": "Dating the layers demands more ingenuity."
+    },
+    "accumulation": {
+      "etymology": "ラテン語 ad-(に) + cumulus(積み重ね) + -ation",
+      "definition": "堆積、積雪量。",
+      "usage_in_passage": "第3段落では年層の可視性の条件として、第4段落では気泡の閉鎖深度と誤差の大きさを左右する変数として現れる。",
+      "related_terms": [
+        "accumulate",
+        "accumulated",
+        "deposition",
+        "buildup"
+      ],
+      "context_sentence": "Near the surface, annual accumulation is visible, and the layers can be counted much as one counts the rings of a tree."
+    },
+    "visible": {
+      "etymology": "ラテン語 videre(見る) + -ible",
+      "definition": "目に見える。",
+      "usage_in_passage": "\"annual accumulation is visible\" が、浅部で年層を数えられる理由を示す。",
+      "related_terms": [
+        "vision",
+        "visual",
+        "discernible",
+        "apparent"
+      ],
+      "context_sentence": "Near the surface, annual accumulation is visible, and the layers can be counted much as one counts the rings of a tree."
+    },
+    "deeper": {
+      "etymology": "古英語 dēop(深い) → deep + 比較級 -er。ゲルマン系",
+      "definition": "より深い。",
+      "usage_in_passage": "\"Deeper down the layers thin under pressure\" が段落内の転換点で、単純な計数が破綻する領域へ議論を移す。",
+      "related_terms": [
+        "deep",
+        "depth",
+        "lower",
+        "profound"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "thin": {
+      "etymology": "古英語 þynne(薄い)。ゲルマン系",
+      "definition": "薄くなる。",
+      "usage_in_passage": "ここでは動詞として用いられ、圧力による層の薄化が計数を不可能にする過程を示す。",
+      "related_terms": [
+        "thinner",
+        "thinning",
+        "attenuate",
+        "narrow"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "impossible": {
+      "etymology": "ラテン語 im-(否定) + posse(できる) → possible の否定",
+      "definition": "不可能な。",
+      "usage_in_passage": "計数という単純な方法の限界を明示し、モデル化という代替手段の必要を根拠づける。",
+      "related_terms": [
+        "possible",
+        "impossibility",
+        "unfeasible",
+        "unattainable"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "researchers": {
+      "etymology": "re-(再び) + 古フランス語 cerchier(探す) → research + -er + -s",
+      "definition": "研究者。",
+      "usage_in_passage": "\"researchers must instead model how the ice has flowed\" が、深部での年代決定が観察から計算へ移ることを示す。",
+      "related_terms": [
+        "research",
+        "scientists",
+        "investigators",
+        "scholars"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "calibrating": {
+      "etymology": "ラテン語 qua libra(どの秤で) 由来とされる calibre → calibrate + -ing",
+      "definition": "較正すること。",
+      "usage_in_passage": "モデルが恣意的にならないよう既知の年代に合わせる作業を指し、次の火山噴火の話題を導く。",
+      "related_terms": [
+        "calibrate",
+        "calibration",
+        "adjusting",
+        "standardizing"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "calculations": {
+      "etymology": "ラテン語 calculus(小石、計算用の石) → calculare + -ation + -s",
+      "definition": "計算。",
+      "usage_in_passage": "深部の年代がモデルによる推算であることを示し、観察に基づく浅部との方法上の差を明確にする。",
+      "related_terms": [
+        "calculate",
+        "calculus",
+        "computations",
+        "estimates"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "markers": {
+      "etymology": "ゲルマン系の mark(印) + -er + -s",
+      "definition": "指標、目印。",
+      "usage_in_passage": "\"markers of known age\" が較正の基準を指し、直後で火山灰がその具体例として示される。",
+      "related_terms": [
+        "mark",
+        "marked",
+        "indicators",
+        "benchmarks"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "volcanic": {
+      "etymology": "ローマ神話の火の神 Vulcanus → volcano + -ic",
+      "definition": "火山の。",
+      "usage_in_passage": "\"Volcanic eruptions are especially useful\" が、較正手段として最良の例を導入する。",
+      "related_terms": [
+        "volcano",
+        "volcanism",
+        "eruptive",
+        "magmatic"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "eruptions": {
+      "etymology": "ラテン語 e-(外に) + rumpere(破る) → eruptio + -s",
+      "definition": "噴火。",
+      "usage_in_passage": "全球に同時に痕跡を残す事象として、離れたコアを結びつける役割を担う。",
+      "related_terms": [
+        "erupt",
+        "eruption",
+        "outburst",
+        "explosion"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "deposits": {
+      "etymology": "ラテン語 de-(下に) + ponere(置く) → deponere + -s",
+      "definition": "堆積させる。",
+      "usage_in_passage": "\"each deposits a distinctive film of sulfate\" が、噴火が物理的な印を残す仕組みを示す。",
+      "related_terms": [
+        "deposit",
+        "deposition",
+        "lays",
+        "sediments"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "distinctive": {
+      "etymology": "ラテン語 dis-(分けて) + stinguere(刺す) → distinct + -ive",
+      "definition": "他と区別できる、特徴的な。",
+      "usage_in_passage": "硫酸塩の層が個々の噴火を識別できる指紋として働くことを示し、較正の精度を担保する。",
+      "related_terms": [
+        "distinct",
+        "distinguish",
+        "characteristic",
+        "identifiable"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "sulfate": {
+      "etymology": "ラテン語 sulphur(硫黄) + 塩を表す -ate",
+      "definition": "硫酸塩。",
+      "usage_in_passage": "火山噴火が残す化学的痕跡の正体を特定し、指標の物質的根拠を与える。",
+      "related_terms": [
+        "sulfur",
+        "sulfuric",
+        "sulfide",
+        "salt"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "simultaneously": {
+      "etymology": "ラテン語 simul(同時に) + -taneous + -ly",
+      "definition": "同時に。",
+      "usage_in_passage": "同じ層が両半球に現れることが、離れた記録を結ぶ論拠になっている。",
+      "related_terms": [
+        "simultaneous",
+        "concurrently",
+        "synchronously",
+        "together"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "opposite": {
+      "etymology": "ラテン語 ob-(に対して) + ponere(置く) → oppositus",
+      "definition": "反対の。",
+      "usage_in_passage": "\"cores from opposite ends of the earth\" が、指標の全球的な有効性を空間的に表現する。",
+      "related_terms": [
+        "oppose",
+        "opposition",
+        "contrary",
+        "reverse"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "anchors": {
+      "etymology": "ギリシャ語 ankyra(錨) → 古英語 ancor + -s",
+      "definition": "固定する、基準に結びつける。",
+      "usage_in_passage": "語彙問題の対象語。錨の比喩で、浮動しうる年代モデルを既知の一点に留める働きを表す。",
+      "related_terms": [
+        "anchor",
+        "anchored",
+        "moor",
+        "fasten"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "chronology": {
+      "etymology": "ギリシャ語 khronos(時) + -logia(学問) → 「時の秩序」",
+      "definition": "年代体系。",
+      "usage_in_passage": "\"a common chronology\" が、複数のコアを比較可能にする共通の時間軸を指す。",
+      "related_terms": [
+        "chronological",
+        "chronicle",
+        "timeline",
+        "dating"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "eruption": {
+      "etymology": "ラテン語 e-(外に) + rumpere(破る) → eruptio",
+      "definition": "噴火。",
+      "usage_in_passage": "\"A large eruption is in this sense a stopwatch\" が、比喩によって前文の技術的説明を直観的に言い換える。",
+      "related_terms": [
+        "erupt",
+        "eruptions",
+        "explosion",
+        "outburst"
+      ],
+      "context_sentence": "A large eruption is in this sense a stopwatch pressed once and read in both hemispheres."
+    },
+    "stopwatch": {
+      "etymology": "stop + watch。ゲルマン系の複合語",
+      "definition": "ストップウォッチ。",
+      "usage_in_passage": "噴火を「一度押されて両半球で読まれる計時器」に喩え、同時性という抽象的性質を身近な道具に置き換える。",
+      "related_terms": [
+        "watch",
+        "timer",
+        "chronometer",
+        "clock"
+      ],
+      "context_sentence": "A large eruption is in this sense a stopwatch pressed once and read in both hemispheres."
+    },
+    "hemispheres": {
+      "etymology": "ギリシャ語 hēmi-(半分) + sphaira(球) + -s",
+      "definition": "半球。",
+      "usage_in_passage": "\"read in both hemispheres\" が比喩の中で全球性を担い、opposite ends of the earth を言い換える。",
+      "related_terms": [
+        "hemisphere",
+        "sphere",
+        "spherical",
+        "global"
+      ],
+      "context_sentence": "A large eruption is in this sense a stopwatch pressed once and read in both hemispheres."
+    },
+    "complication": {
+      "etymology": "ラテン語 com-(共に) + plicare(折る) → 「折り重なってもつれること」+ -ation",
+      "definition": "厄介な問題、複雑化させる要因。",
+      "usage_in_passage": "\"One complication deserves emphasis\" が第4段落の主題文で、それまでの明快な説明に留保を加える転換点となる。",
+      "related_terms": [
+        "complicate",
+        "complex",
+        "difficulty",
+        "obstacle"
+      ],
+      "context_sentence": "One complication deserves emphasis."
+    },
+    "deserves": {
+      "etymology": "ラテン語 de-(強意) + servire(仕える) → deservire「値する」",
+      "definition": "〜に値する。",
+      "usage_in_passage": "著者が読者の注意を明示的に要求する語で、この段落の重要性を格上げする。",
+      "related_terms": [
+        "deserve",
+        "deserving",
+        "merits",
+        "warrants"
+      ],
+      "context_sentence": "One complication deserves emphasis."
+    },
+    "emphasis": {
+      "etymology": "ギリシャ語 en-(中に) + phainein(示す) → emphasis",
+      "definition": "強調。",
+      "usage_in_passage": "deserves と結びついて、続く内容が見落とされやすい要点であることを予告する。",
+      "related_terms": [
+        "emphasize",
+        "emphatic",
+        "stress",
+        "accent"
+      ],
+      "context_sentence": "One complication deserves emphasis."
+    },
+    "roughly": {
+      "etymology": "古英語 rūh(粗い) → rough + -ly。ゲルマン系",
+      "definition": "おおよそ。",
+      "usage_in_passage": "\"roughly a hundred meters\" が、閉鎖深度が場所により変動する概数であることを示し、後の誤差の可変性につながる。",
+      "related_terms": [
+        "rough",
+        "approximately",
+        "about",
+        "circa"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "meters": {
+      "etymology": "ギリシャ語 metron(尺度) → ラテン語 metrum + -s",
+      "definition": "メートル。",
+      "usage_in_passage": "気泡が閉じるまでの深さを定量化し、時間差が生じる物理的理由を与える。",
+      "related_terms": [
+        "meter",
+        "metric",
+        "metre",
+        "kilometer"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "invariably": {
+      "etymology": "ラテン語 in-(否定) + variare(変える) → invariable + -ly",
+      "definition": "例外なく、必ず。",
+      "usage_in_passage": "\"the air in any layer is invariably younger than the ice enclosing it\" が誤差の方向が常に一定であることを示し、補正が原理的に可能である根拠となる。",
+      "related_terms": [
+        "invariable",
+        "variable",
+        "consistently",
+        "unfailingly"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "younger": {
+      "etymology": "古英語 geong(若い) → young + 比較級 -er。ゲルマン系",
+      "definition": "より新しい。",
+      "usage_in_passage": "氷と空気の年代差という第4段落の核心を一語で表し、Q4の推論の出発点となる。",
+      "related_terms": [
+        "young",
+        "youth",
+        "newer",
+        "recent"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "enclosing": {
+      "etymology": "ラテン語 in-(中に) + claudere(閉じる) → enclose + -ing",
+      "definition": "取り囲んでいる。",
+      "usage_in_passage": "\"the ice enclosing it\" が、比較される二つの対象(空気と氷)の物理的関係を明示する。",
+      "related_terms": [
+        "enclose",
+        "enclosure",
+        "surrounding",
+        "encasing"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "offset": {
+      "etymology": "off + set。ゲルマン系の複合語",
+      "definition": "ずれ、差分。",
+      "usage_in_passage": "空気と氷の年代差を名詞化した語で、以降 \"The offset can exceed several thousand years\" として定量的な議論の対象になる。",
+      "related_terms": [
+        "set",
+        "discrepancy",
+        "difference",
+        "displacement"
+      ],
+      "context_sentence": "The offset can exceed several thousand years where accumulation is slow, and it must be estimated and subtracted before gas and temperature can be compared."
+    },
+    "exceed": {
+      "etymology": "ラテン語 ex-(超えて) + cedere(行く) → excedere",
+      "definition": "超える。",
+      "usage_in_passage": "誤差が数千年に達しうることを示し、無視できない大きさであることを印象づける。",
+      "related_terms": [
+        "exceeds",
+        "excess",
+        "surpass",
+        "outstrip"
+      ],
+      "context_sentence": "The offset can exceed several thousand years where accumulation is slow, and it must be estimated and subtracted before gas and temperature can be compared."
+    },
+    "subtracted": {
+      "etymology": "ラテン語 sub-(下から) + trahere(引く) → subtrahere",
+      "definition": "差し引かれた。",
+      "usage_in_passage": "\"estimated and subtracted\" が補正の具体的な操作を示し、単なる注意喚起ではなく手順であることを明確にする。",
+      "related_terms": [
+        "subtract",
+        "subtraction",
+        "deducted",
+        "removed"
+      ],
+      "context_sentence": "The offset can exceed several thousand years where accumulation is slow, and it must be estimated and subtracted before gas and temperature can be compared."
+    },
+    "distort": {
+      "etymology": "ラテン語 dis-(離れて) + torquere(ねじる) → distorquere",
+      "definition": "歪める。",
+      "usage_in_passage": "\"would distort the very relationship the cores are drilled to investigate\" が、補正を怠った場合の帰結を述べ、Q4の根拠となる。",
+      "related_terms": [
+        "distortion",
+        "warp",
+        "skew",
+        "misrepresent"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "investigate": {
+      "etymology": "ラテン語 in-(中に) + vestigare(跡を追う) → 「足跡をたどる」",
+      "definition": "調査する。",
+      "usage_in_passage": "コアが掘られる目的そのものを指し、その目的が誤差によって損なわれるという皮肉を成立させる。",
+      "related_terms": [
+        "investigation",
+        "investigator",
+        "examine",
+        "probe"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "apparent": {
+      "etymology": "ラテン語 ad-(に) + parere(現れる) → apparens",
+      "definition": "見かけ上の。",
+      "usage_in_passage": "\"an apparent lag\" が、観測される遅れが実在するとは限らないことを示す限定語で、この一語が段落全体の警告を成り立たせる。",
+      "related_terms": [
+        "appear",
+        "appearance",
+        "seeming",
+        "ostensible"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "warming": {
+      "etymology": "古英語 wearm(暖かい) → warm + -ing。ゲルマン系",
+      "definition": "温暖化。",
+      "usage_in_passage": "\"a lag between warming and rising carbon dioxide\" が、気候科学で論争的な因果関係の順序を提示する。",
+      "related_terms": [
+        "warm",
+        "warmth",
+        "heating",
+        "thawing"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "artifact": {
+      "etymology": "ラテン語 ars(技) + factum(作られたもの) → 「人の手が作ったもの」",
+      "definition": "人為的な産物。ここでは測定手法が生む見かけ上の現象。",
+      "usage_in_passage": "\"an artifact of the sealing process rather than a fact about the climate\" が、artifact と fact を対置して本文の警告を凝縮する。",
+      "related_terms": [
+        "artifice",
+        "artificial",
+        "byproduct",
+        "artefact"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "sealing": {
+      "etymology": "ラテン語 sigillum(小さな印) → seal + -ing",
+      "definition": "封入(の過程)。",
+      "usage_in_passage": "第1段落で説明された物理過程を名詞化し、それ自体が誤差の源になりうることを示す。",
+      "related_terms": [
+        "seal",
+        "sealed",
+        "enclosure",
+        "closure"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "comparatively": {
+      "etymology": "ラテン語 com-(共に) + par(等しい) → compare + -ative + -ly",
+      "definition": "比較的。",
+      "usage_in_passage": "\"which are comparatively straightforward\" が測定の易しさを補正の難しさとの対比で述べ、最終文の主張を準備する。",
+      "related_terms": [
+        "compare",
+        "comparison",
+        "relatively",
+        "moderately"
+      ],
+      "context_sentence": "Much of the technical literature on ice cores concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything."
+    },
+    "straightforward": {
+      "etymology": "straight + forward。ゲルマン系の複合語",
+      "definition": "単純明快な。",
+      "usage_in_passage": "測定手順の平易さを表し、専門文献の大半が補正に費やされるという結論の意外性を高める。",
+      "related_terms": [
+        "straight",
+        "forward",
+        "uncomplicated",
+        "simple"
+      ],
+      "context_sentence": "Much of the technical literature on ice cores concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything."
+    },
+    "corrections": {
+      "etymology": "ラテン語 com-(強意) + regere(正す) → corrigere + -ion + -s",
+      "definition": "補正。",
+      "usage_in_passage": "本文の結語を担う語。測定値そのものではなく補正こそが科学の実質だという主張で締めくくられる。",
+      "related_terms": [
+        "correct",
+        "correction",
+        "adjustments",
+        "calibration"
+      ],
+      "context_sentence": "Much of the technical literature on ice cores concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything."
+    }
+  }
+}
