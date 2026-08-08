@@ -19,6 +19,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+/* リーダー画面のみビューポート高に固定する。min-height だけでは上限にならず、
+   #reader-main が内容分まで伸びてペインの overflow が発動しないため。 */
+body.reader-page { height: 100vh; overflow: hidden; }
 a { color: var(--accent); }
 
 .site-header {
@@ -128,6 +131,7 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 
 @media (max-width: 800px) {
   /* 縦積みでは各ペインを個別スクロールさせず、ページ全体をスクロールさせる */
+  body.reader-page { height: auto; overflow: visible; }
   #reader-main { flex-direction: column; flex: none; }
   #passage-pane, #right-pane { overflow-y: visible; }
   #passage-pane { border-right: none; border-bottom: 1px solid var(--border); }
