@@ -2,6 +2,7 @@
 
 async function initList() {
   const container = document.querySelector("#passage-list");
+  await Store.init();
   let index;
   try {
     // GitHub Pages は max-age=600 を返すため、そのままだと新しいパッセージが
@@ -23,7 +24,7 @@ async function initList() {
 }
 
 function cardHtml(meta) {
-  const result = loadResult(meta.id);
+  const result = Store.latest(meta.id);
   const badge = result
     ? `<span class="badge done">✅ ${result.score}/${result.total} ・ ${formatMinSec(result.elapsedSec)}</span>`
     : `<span class="badge">未挑戦</span>`;
@@ -34,18 +35,10 @@ function cardHtml(meta) {
         <p class="meta">${escapeHtml(meta.topic)} ・ ${meta.word_count} words ・ ${meta.added} ${badge}</p>
       </div>
       <div class="card-actions">
-        <a class="button primary" href="reader.html?id=${meta.id}&mode=solve">✏️ 問題を解く</a>
-        <a class="button" href="reader.html?id=${meta.id}&mode=study">📖 解説モードで読む</a>
+        <a class="button primary" href="${window.READER_URL}?id=${meta.id}&mode=solve">✏️ 問題を解く</a>
+        <a class="button" href="${window.READER_URL}?id=${meta.id}&mode=study">📖 解説モードで読む</a>
       </div>
     </div>`;
-}
-
-function loadResult(id) {
-  try {
-    return JSON.parse(localStorage.getItem(`results.${id}`));
-  } catch (_) {
-    return null;
-  }
 }
 
 function formatMinSec(sec) {

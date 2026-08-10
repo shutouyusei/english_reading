@@ -13,6 +13,7 @@ function qs(sel) {
 }
 
 async function init() {
+  await Store.init();
   const params = new URLSearchParams(location.search);
   const id = params.get("id") || "";
   const mode = params.get("mode") === "study" ? "study" : "solve";
@@ -156,17 +157,17 @@ function finishSolve() {
   const wrong = questions
     .filter((q, i) => state.answers[i] !== q.correct)
     .map((q) => `Q${q.id} (${q.type})`);
-  const result = {
-    solved: true,
+  const attempt = {
+    passageId: state.passage.id,
     score,
     total: questions.length,
     elapsedSec: sec,
     answers: state.answers,
-    date: new Date().toISOString().slice(0, 10),
+    finishedAt: new Date().toISOString(),
   };
-  try {
-    localStorage.setItem(`results.${state.passage.id}`, JSON.stringify(result));
-  } catch (_) { /* プライベートモード等では保存しない */ }
+  Store.saveAttempt(attempt).catch((err) => {
+    qs("#header-status").textContent = `⚠ 保存に失敗しました: ${err.message}`;
+  });
   qs("#header-status").textContent = `⏱ ${formatElapsed(sec)} で終了`;
   qs("#right-pane").innerHTML = `
     <div class="result-card">

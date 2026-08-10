@@ -42,7 +42,7 @@ function onWordClick(passage, surface, key, span) {
 }
 
 function renderPanel(passage) {
-  const result = loadStudyResult(passage.id);
+  const result = Store.latest(passage.id);
   const quizLabel = result ? `問題の解説 (${result.score}/${result.total})` : "問題の解説";
   qs("#right-pane").innerHTML = `
     <div class="tabs">
@@ -59,14 +59,6 @@ function renderPanel(passage) {
     renderVocabTab(passage);
   } else {
     renderQuizTab(passage, result);
-  }
-}
-
-function loadStudyResult(id) {
-  try {
-    return JSON.parse(localStorage.getItem(`results.${id}`));
-  } catch (_) {
-    return null;
   }
 }
 
