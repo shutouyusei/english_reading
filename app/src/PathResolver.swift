@@ -12,5 +12,14 @@ func resolveContentPath(root: URL, requestPath: String) -> URL? {
     guard targetPath == rootPath || targetPath.hasPrefix(rootPath + "/") else {
         return nil
     }
+
+    // 字句チェックを通っても、シンボリックリンクで外へ出られる場合がある。
+    // 実体のパスでもう一度確かめる。
+    let realRoot = rootStandardized.resolvingSymlinksInPath().path
+    let realTarget = target.resolvingSymlinksInPath().path
+    guard realTarget == realRoot || realTarget.hasPrefix(realRoot + "/") else {
+        return nil
+    }
+
     return target
 }

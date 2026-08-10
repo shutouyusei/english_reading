@@ -40,6 +40,22 @@ struct TestPathResolver {
               resolveContentPath(root: root, requestPath: "/app/ui/../../docs/index.html")?.path
               == "/tmp/repo/docs/index.html")
 
+        // 実在するシンボリックリンクでの脱出を拒否する
+        let fm = FileManager.default
+        let tmpRoot = URL(fileURLWithPath: NSTemporaryDirectory())
+            .appendingPathComponent("pathresolver-test-\(ProcessInfo.processInfo.processIdentifier)")
+        let outside = tmpRoot.appendingPathComponent("outside")
+        let inside = tmpRoot.appendingPathComponent("inside")
+        try? fm.createDirectory(at: outside, withIntermediateDirectories: true)
+        try? fm.createDirectory(at: inside, withIntermediateDirectories: true)
+        try? "secret".write(to: outside.appendingPathComponent("secret.txt"),
+                            atomically: true, encoding: .utf8)
+        try? fm.createSymbolicLink(at: inside.appendingPathComponent("escape"),
+                                   withDestinationURL: outside)
+        check("シンボリックリンクによる脱出を拒否する",
+              resolveContentPath(root: inside, requestPath: "/escape/secret.txt") == nil)
+        try? fm.removeItem(at: tmpRoot)
+
         exit(failures == 0 ? 0 : 1)
     }
 }
