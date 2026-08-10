@@ -21,7 +21,8 @@ async function init() {
     return;
   }
   try {
-    const res = await fetch(`data/passages/${id}.json`);
+    // 公開後に内容を訂正した場合も確実に反映させる(理由は app.js の同種の記述を参照)。
+    const res = await fetch(`data/passages/${id}.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.passage = await res.json();
   } catch (err) {
