@@ -2,7 +2,11 @@
 
 async function initList() {
   const container = document.querySelector("#passage-list");
-  await Store.init();
+  try {
+    await Store.init();
+  } catch (err) {
+    console.warn("学習記録を読み込めませんでした:", err);
+  }
   let index;
   try {
     // GitHub Pages は max-age=600 を返すため、そのままだと新しいパッセージが

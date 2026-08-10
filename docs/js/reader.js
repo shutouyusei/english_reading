@@ -13,7 +13,11 @@ function qs(sel) {
 }
 
 async function init() {
-  await Store.init();
+  try {
+    await Store.init();
+  } catch (err) {
+    console.warn("学習記録を読み込めませんでした:", err);
+  }
   const params = new URLSearchParams(location.search);
   const id = params.get("id") || "";
   const mode = params.get("mode") === "study" ? "study" : "solve";

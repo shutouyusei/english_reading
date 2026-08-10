@@ -107,7 +107,7 @@ function renderQuizTab(passage, result) {
   const body = qs("#panel-body");
   if (!result) {
     body.innerHTML = `<p class="hint">まだ解いていません。` +
-      `<a href="reader.html?id=${passage.id}&mode=solve">問題を解く</a></p>`;
+      `<a href="${window.READER_URL}?id=${passage.id}&mode=solve">問題を解く</a></p>`;
     return;
   }
   body.innerHTML = passage.questions.map((q, i) => {
