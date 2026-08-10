@@ -88,13 +88,8 @@ final class StoreHandler: NSObject, WKScriptMessageHandlerWithReply {
     }
 
     private func loadAll() -> [[String: Any]] {
-        guard let text = try? String(contentsOf: attemptsFile, encoding: .utf8) else { return [] }
-        return text.split(separator: "\n").compactMap { line in
-            guard let data = line.data(using: .utf8),
-                  let object = try? JSONSerialization.jsonObject(with: data) as? [String: Any]
-            else { return nil }
-            return object
-        }
+        guard let data = try? Data(contentsOf: attemptsFile) else { return [] }
+        return parseAttemptsLog(data)
     }
 
     /// 既存行は一切読み書きせず、末尾に1行足すだけ。
