@@ -12,7 +12,7 @@ async function initList() {
     // GitHub Pages は max-age=600 を返すため、そのままだと新しいパッセージが
     // 最大10分間表示されない。no-cache で毎回サーバーに更新を問い合わせる
     // (変更が無ければ 304 が返るので転送量はほとんど増えない)。
-    const res = await fetch("data/index.json", { cache: "no-cache" });
+    const res = await fetch(`${window.DATA_BASE || ""}data/index.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     index = await res.json();
   } catch (err) {
