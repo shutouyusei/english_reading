@@ -1,0 +1,1066 @@
+{
+  "id": "passage_005",
+  "title": "The Strength of Weak Ties",
+  "topic": "社会",
+  "body": "Common sense suggests that the people who help us most are the people who know us best. A study of how professional men in a Boston suburb had found their jobs produced the opposite result. Those who learned of an opening through a personal contact had usually heard it not from a close friend or relative but from someone they saw rarely, in several cases someone they had nearly forgotten. The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society. It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work.\n\nThe argument turns on redundancy. Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices. Whatever reaches them is therefore likely to reach us anyway, and often has already. An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new. The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual.\n\nThe consequences extend well beyond employment. If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them. Remove those links and the clusters become islands. The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy. A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent.\n\nThe practical implications are less comfortable than they first appear. Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands. Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense. What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents. Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does.",
+  "word_count": 460,
+  "added": "2026-08-11",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 2, why is information from a close friend often less useful?",
+      "target_word": null,
+      "choices": {
+        "A": "Close friends usually belong to the same circle and so know much the same things",
+        "B": "Close friends tend to give advice rather than concrete information",
+        "C": "Close friends are contacted too infrequently to be reached in time",
+        "D": "Close friends are reluctant to share news that might create competition"
+      },
+      "correct": "A",
+      "explanation": "第2段落に \"Close friends tend to move in the same circle as we do... Whatever reaches them is therefore likely to reach us anyway\" とあり、情報が重複することが理由である。Bの助言の性質とDの競争心は本文に記述がなく、Cは close friends ではなく acquaintance の説明と混同している。"
+    },
+    {
+      "id": 2,
+      "type": "Vocabulary",
+      "question": "The word \"sparse\" in paragraph 3 is closest in meaning to",
+      "target_word": "sparse",
+      "choices": {
+        "A": "recently formed",
+        "B": "carefully chosen",
+        "C": "difficult to maintain",
+        "D": "few and scattered"
+      },
+      "correct": "D",
+      "explanation": "\"dense clusters\" と対置され、クラスター間をつなぐ数少ない結びつきを指している。直後の \"Remove those links and the clusters become islands\" も、その数が限られていることを前提にした記述である。したがって D が最も近い。Cの「維持が難しい」は次の文の fragile が述べる別の性質であって、sparse の語義ではない。"
+    },
+    {
+      "id": 3,
+      "type": "Reference",
+      "question": "The word \"they\" in paragraph 2 (\"precisely because they are casual\") refers to",
+      "target_word": null,
+      "choices": {
+        "A": "the circles that acquaintances belong to",
+        "B": "the casual ties",
+        "C": "the notices that close friends read",
+        "D": "the distances that relationships span"
+      },
+      "correct": "B",
+      "explanation": "当該文は \"casual ties tend to span the greater distance precisely because they are casual\" であり、casual であるのは ties 自身である。Dの distance は they が span する対象であって主語ではない。"
+    },
+    {
+      "id": 4,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention rumors, techniques, and contagions in paragraph 3?",
+      "target_word": null,
+      "choices": {
+        "A": "To compare the speed at which different kinds of information travel",
+        "B": "To identify the three subjects that sociologists most often study",
+        "C": "To show that the same structural principle governs many different kinds of spread",
+        "D": "To warn that weak ties can spread harmful things as well as useful ones"
+      },
+      "correct": "C",
+      "explanation": "三つは \"anything that must travel between clusters\" の例として並置されており、いずれもクラスター間を結ぶ疎な結びつきを通らねばならないという同一の構造的制約を示すために挙げられている。Aの速度比較は行われておらず、Bのような研究分野の列挙でもない。Dの警告は本文の主眼ではなく、contagion は構造が内容の善悪を選ばないことを示す一例にすぎない。"
+    },
+    {
+      "id": 5,
+      "type": "Inference",
+      "question": "It can be inferred from paragraph 4 that a program aimed at strengthening bonds within an isolated neighborhood would probably",
+      "target_word": null,
+      "choices": {
+        "A": "reduce the density of the networks that already exist there",
+        "B": "be resisted by residents who prefer their existing networks",
+        "C": "succeed only if residents were first relocated elsewhere",
+        "D": "fail to supply the outward connections that residents actually lack"
+      },
+      "correct": "D",
+      "explanation": "本文は住民の網が \"often unusually dense\" であり、欠けているのは \"the sparse, outward-reaching kind\" だと述べる。したがって内部の結束を強める施策は不足分を補わない。最終文の \"address a problem that does not exist while neglecting the one that does\" がこの推論を裏づける。BとCは本文に根拠がなく、Aは結束を強める施策の効果として逆である。"
+    }
+  ],
+  "vocab": {
+    "suburb": {
+      "etymology": "ラテン語 sub-(下に、近くに) + urbs(都市) → suburbium「都市の周縁」",
+      "definition": "郊外。",
+      "usage_in_passage": "\"professional men in a Boston suburb\" が調査対象を特定し、都市部の貧困を扱う第4段落との社会階層の対比を暗に用意する。",
+      "related_terms": [
+        "suburban",
+        "urban",
+        "outskirts",
+        "periphery"
+      ],
+      "context_sentence": "A study of how professional men in a Boston suburb had found their jobs produced the opposite result."
+    },
+    "opposite": {
+      "etymology": "ラテン語 ob-(に対して) + ponere(置く) → oppositus",
+      "definition": "正反対の。",
+      "usage_in_passage": "\"produced the opposite result\" が、冒頭の常識的な想定が実証によって覆されたことを示し、本文の出発点を作る。",
+      "related_terms": [
+        "oppose",
+        "opposition",
+        "contrary",
+        "reverse"
+      ],
+      "context_sentence": "A study of how professional men in a Boston suburb had found their jobs produced the opposite result."
+    },
+    "rarely": {
+      "etymology": "古ノルド語由来の rare + -ly",
+      "definition": "めったに〜しない。",
+      "usage_in_passage": "\"someone they saw rarely\" が弱い紐帯の定義を接触頻度で与え、以降の議論の土台になる。",
+      "related_terms": [
+        "rare",
+        "rarity",
+        "seldom",
+        "infrequently"
+      ],
+      "context_sentence": "Those who learned of an opening through a personal contact had usually heard it not from a close friend or relative but from someone they saw rarely, in several cases someone they had nearly forgotten."
+    },
+    "forgotten": {
+      "etymology": "古英語 forgietan(忘れる)の過去分詞。ゲルマン系",
+      "definition": "忘れられた。",
+      "usage_in_passage": "\"someone they had nearly forgotten\" が発見の意外性を極端な例で示し、counterintuitive という次の語を準備する。",
+      "related_terms": [
+        "forget",
+        "forgot",
+        "overlooked",
+        "neglected"
+      ],
+      "context_sentence": "Those who learned of an opening through a personal contact had usually heard it not from a close friend or relative but from someone they saw rarely, in several cases someone they had nearly forgotten."
+    },
+    "counterintuitive": {
+      "etymology": "counter-(反して) + ラテン語 intueri(見つめる) → intuitive の否定的複合",
+      "definition": "直観に反する。",
+      "usage_in_passage": "\"counterintuitive enough to require an explanation\" が、この発見が説明を要する理由を述べ、第2段落の理論的説明へ橋渡しする。",
+      "related_terms": [
+        "intuitive",
+        "intuition",
+        "paradoxical",
+        "unexpected"
+      ],
+      "context_sentence": "The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society."
+    },
+    "explanation": {
+      "etymology": "ラテン語 ex-(外に) + planus(平らな) → explanare「平らにして示す」+ -ation",
+      "definition": "説明。",
+      "usage_in_passage": "同一文で二度用いられ、説明が求められたことと、その説明が学問を変えたことを一文で結ぶ。",
+      "related_terms": [
+        "explain",
+        "explanatory",
+        "account",
+        "interpretation"
+      ],
+      "context_sentence": "The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society."
+    },
+    "reshaped": {
+      "etymology": "re-(再び) + shape(古英語 sceppan)。ゲルマン系 + -ed",
+      "definition": "作り変えた。",
+      "usage_in_passage": "\"reshaped how sociologists think about the architecture of a society\" が、個別の発見が理論全体に及ぼした影響の大きさを示す。",
+      "related_terms": [
+        "shape",
+        "reshape",
+        "transformed",
+        "recast"
+      ],
+      "context_sentence": "The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society."
+    },
+    "sociologists": {
+      "etymology": "ラテン語 socius(仲間) + ギリシャ語 -logia(学問) + -ist + -s",
+      "definition": "社会学者。",
+      "usage_in_passage": "この知見の受け手を特定し、議論が学術的な文脈に属することを示す。",
+      "related_terms": [
+        "sociology",
+        "sociological",
+        "social",
+        "researchers"
+      ],
+      "context_sentence": "The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society."
+    },
+    "inverted": {
+      "etymology": "ラテン語 in-(中へ) + vertere(回す) → invertere「ひっくり返す」",
+      "definition": "逆転させた。",
+      "usage_in_passage": "\"It also inverted a long habit of treating intimacy as the measure\" が、発見の影響が事実の訂正にとどまらず価値尺度の転倒に及ぶことを示す。",
+      "related_terms": [
+        "invert",
+        "inversion",
+        "reversed",
+        "overturned"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "habit": {
+      "etymology": "ラテン語 habere(持つ) → habitus「身についたもの」",
+      "definition": "習慣、癖。",
+      "usage_in_passage": "ここでは思考の習慣を指し、個人の癖ではなく学問的な前提の意で用いられている。",
+      "related_terms": [
+        "habitual",
+        "custom",
+        "practice",
+        "convention"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "treating": {
+      "etymology": "ラテン語 tractare(扱う) < trahere(引く) + -ing",
+      "definition": "扱うこと、みなすこと。",
+      "usage_in_passage": "\"treating intimacy as the measure of a relationship's worth\" が、転倒される前の従来の見方を定式化する。",
+      "related_terms": [
+        "treat",
+        "treatment",
+        "regarding",
+        "considering"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "intimacy": {
+      "etymology": "ラテン語 intimus(最も内side の) → intimate + -acy",
+      "definition": "親密さ。",
+      "usage_in_passage": "本文が価値の尺度から外す当のもので、第3段落の \"intimate bonds\" と呼応する。",
+      "related_terms": [
+        "intimate",
+        "closeness",
+        "familiarity",
+        "affection"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "relationship's": {
+      "etymology": "relation(< ラテン語 referre 関係づける) + -ship + 所有の -'s",
+      "definition": "関係の。",
+      "usage_in_passage": "\"a relationship's worth\" が、評価の対象を人ではなく関係そのものに定める。",
+      "related_terms": [
+        "relationship",
+        "relation",
+        "relative",
+        "connection"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "implied": {
+      "etymology": "ラテン語 in-(中に) + plicare(折る) → implicare「含み込む」",
+      "definition": "含意した。",
+      "usage_in_passage": "発見が明言していないことまで導くという論理関係を示し、次の節を推論として位置づける。",
+      "related_terms": [
+        "imply",
+        "implication",
+        "suggested",
+        "entailed"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "bonds": {
+      "etymology": "中英語 band「縛るもの」。bind と同系のゲルマン語 + -s",
+      "definition": "絆、結びつき。",
+      "usage_in_passage": "第1段落では \"the bonds a person values least\"、第3段落では \"intimate bonds\" として現れ、本文の中心語である ties の言い換えとして機能する。",
+      "related_terms": [
+        "bond",
+        "bind",
+        "ties",
+        "attachments"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "consequential": {
+      "etymology": "ラテン語 con-(共に) + sequi(従う) + -ential",
+      "definition": "重大な、影響力のある。",
+      "usage_in_passage": "\"doing the most consequential work\" が、価値が低いと見なされる関係こそ効果が大きいという逆説を締めくくる。",
+      "related_terms": [
+        "consequence",
+        "consequently",
+        "significant",
+        "momentous"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "redundancy": {
+      "etymology": "ラテン語 re-(再び) + undare(波打つ) → redundare「あふれる」+ -ancy",
+      "definition": "冗長性、重複。",
+      "usage_in_passage": "\"The argument turns on redundancy\" が第2段落の主題語で、なぜ親しい相手の情報が役立たないのかを一語で説明する。",
+      "related_terms": [
+        "redundant",
+        "duplication",
+        "overlap",
+        "surplus"
+      ],
+      "context_sentence": "The argument turns on redundancy."
+    },
+    "tend": {
+      "etymology": "ラテン語 tendere(伸ばす、向かう)",
+      "definition": "〜する傾向がある。",
+      "usage_in_passage": "\"Close friends tend to move in the same circle\" が、断定ではなく傾向として述べることで例外の存在を認めつつ議論を進める。",
+      "related_terms": [
+        "tendency",
+        "tends",
+        "incline",
+        "gravitate"
+      ],
+      "context_sentence": "Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices."
+    },
+    "circle": {
+      "etymology": "ラテン語 circus(輪)の縮小形 circulus",
+      "definition": "交友圏、仲間内。",
+      "usage_in_passage": "本文の鍵となる比喩。同一の circle にいるかどうかが情報の新しさを決めるという構造を作る。",
+      "related_terms": [
+        "circles",
+        "circular",
+        "clique",
+        "cluster"
+      ],
+      "context_sentence": "Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices."
+    },
+    "attend": {
+      "etymology": "ラテン語 ad-(に) + tendere(向ける) → attendere",
+      "definition": "出席する。",
+      "usage_in_passage": "同じ集まりに出るという具体例で、circle の共有が何を意味するかを示す。",
+      "related_terms": [
+        "attendance",
+        "attendee",
+        "participate",
+        "frequent"
+      ],
+      "context_sentence": "Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices."
+    },
+    "gatherings": {
+      "etymology": "古英語 gaderian(集める) → gather + -ing + -s。ゲルマン系",
+      "definition": "集まり、会合。",
+      "usage_in_passage": "情報が流通する場を指し、同席することが情報の重複を生む経路であることを示す。",
+      "related_terms": [
+        "gather",
+        "assembly",
+        "meetings",
+        "congregations"
+      ],
+      "context_sentence": "Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices."
+    },
+    "anyway": {
+      "etymology": "any + way。ゲルマン系の複合語",
+      "definition": "どのみち、いずれにせよ。",
+      "usage_in_passage": "\"likely to reach us anyway\" が、親しい相手を経由する情報の限界価値がゼロに近いことを口語的に言い切る。",
+      "related_terms": [
+        "anyhow",
+        "regardless",
+        "nonetheless",
+        "besides"
+      ],
+      "context_sentence": "Whatever reaches them is therefore likely to reach us anyway, and often has already."
+    },
+    "acquaintance": {
+      "etymology": "ラテン語 ad-(に) + cognoscere(知る) → 古フランス語 acointer + -ance",
+      "definition": "知人。親しい友人ではない知り合い。",
+      "usage_in_passage": "\"An acquaintance seen twice a year\" が弱い紐帯を人物として具体化し、close friend との対比を完成させる。",
+      "related_terms": [
+        "acquaint",
+        "acquainted",
+        "associate",
+        "contact"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "twice": {
+      "etymology": "古英語 twiges(二度)。ゲルマン系",
+      "definition": "二回。",
+      "usage_in_passage": "接触頻度を数値で示し、\"seen rarely\" を具体化する。",
+      "related_terms": [
+        "two",
+        "twofold",
+        "double",
+        "biannually"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "belongs": {
+      "etymology": "be- + long(古英語 langian 属する)。ゲルマン系",
+      "definition": "属する。",
+      "usage_in_passage": "\"belongs to a different circle\" が、弱い紐帯の価値の源が別の集団への所属にあることを明示する。",
+      "related_terms": [
+        "belong",
+        "belonging",
+        "pertains",
+        "affiliated"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "circulating": {
+      "etymology": "ラテン語 circulus(輪) → circulare + -ing",
+      "definition": "流通している。",
+      "usage_in_passage": "情報が集団の内部を巡るという運動のイメージを与え、集団間の移動を扱う第3段落へつなぐ。",
+      "related_terms": [
+        "circulate",
+        "circulation",
+        "circular",
+        "spreading"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "genuinely": {
+      "etymology": "ラテン語 genuinus(生来の) → genuine + -ly",
+      "definition": "本当に、正真正銘。",
+      "usage_in_passage": "\"genuinely new\" が、重複でない情報だけが価値を持つという議論の要点を強調する。",
+      "related_terms": [
+        "genuine",
+        "authentically",
+        "truly",
+        "actually"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "depends": {
+      "etymology": "ラテン語 de-(下に) + pendere(吊るす) → dependere「ぶら下がる」",
+      "definition": "依存する、左右される。",
+      "usage_in_passage": "\"depends less on its warmth than on the distance it spans\" が本文の中心命題で、評価軸の置き換えを宣言する。",
+      "related_terms": [
+        "depend",
+        "dependent",
+        "relies",
+        "hinges"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "warmth": {
+      "etymology": "古英語 wearm(暖かい) + -th。ゲルマン系",
+      "definition": "親密さ、温かみ。",
+      "usage_in_passage": "distance と対置され、退けられる旧来の評価軸を代表する語として機能する。",
+      "related_terms": [
+        "warm",
+        "warmly",
+        "affection",
+        "intimacy"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "spans": {
+      "etymology": "古英語 spann(手幅)。ゲルマン系",
+      "definition": "またがる、隔たりを埋める。",
+      "usage_in_passage": "関係を距離を渡す橋として捉え直す動詞で、次文の span と合わせて本文の核心的比喩を成す。",
+      "related_terms": [
+        "span",
+        "spanned",
+        "bridge",
+        "straddle"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "casual": {
+      "etymology": "ラテン語 casus(偶然、出来事) → casualis",
+      "definition": "何気ない、形式ばらない。",
+      "usage_in_passage": "同一文で二度用いられ、\"casual ties tend to span the greater distance precisely because they are casual\" という循環的に見えて実は因果を述べる構文を作る。",
+      "related_terms": [
+        "casually",
+        "informal",
+        "offhand",
+        "incidental"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "ties": {
+      "etymology": "古英語 tēag(結ぶもの)。ゲルマン系 + -s",
+      "definition": "紐帯、結びつき。",
+      "usage_in_passage": "表題語であり本文の中心概念。強弱という属性とともに、情報の通り道として一貫して扱われる。",
+      "related_terms": [
+        "tie",
+        "bond",
+        "link",
+        "connection"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "span": {
+      "etymology": "古英語 spann(手幅)。ゲルマン系",
+      "definition": "またがる、渡る。",
+      "usage_in_passage": "動詞として距離を越える働きを示し、関係の価値を長さで測るという本文の枠組みを支える。",
+      "related_terms": [
+        "spans",
+        "spanned",
+        "bridge",
+        "traverse"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "precisely": {
+      "etymology": "ラテン語 prae-(前もって) + caedere(切る) → precise + -ly",
+      "definition": "まさに、ほかでもなく。",
+      "usage_in_passage": "\"precisely because they are casual\" が、弱さが欠点ではなく機能の源であるという逆説を強調する。",
+      "related_terms": [
+        "precise",
+        "precision",
+        "exactly",
+        "specifically"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "consequences": {
+      "etymology": "ラテン語 con-(共に) + sequi(従う) + -ence + -s",
+      "definition": "帰結、影響。",
+      "usage_in_passage": "\"The consequences extend well beyond employment\" が第3段落の主題文で、就職という具体例から一般理論へ議論を広げる。",
+      "related_terms": [
+        "consequence",
+        "consequential",
+        "outcomes",
+        "ramifications"
+      ],
+      "context_sentence": "The consequences extend well beyond employment."
+    },
+    "extend": {
+      "etymology": "ラテン語 ex-(外に) + tendere(伸ばす)",
+      "definition": "及ぶ、広がる。",
+      "usage_in_passage": "議論の適用範囲が拡大することを示し、以降の rumor・technique・contagion の列挙を導く。",
+      "related_terms": [
+        "extends",
+        "extension",
+        "expand",
+        "reach"
+      ],
+      "context_sentence": "The consequences extend well beyond employment."
+    },
+    "divided": {
+      "etymology": "ラテン語 dividere(分ける) + -ed",
+      "definition": "分割された。",
+      "usage_in_passage": "\"If a community is divided into dense clusters\" が、社会をネットワーク構造として抽象化する条件節を作る。",
+      "related_terms": [
+        "divide",
+        "division",
+        "partitioned",
+        "segmented"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "dense": {
+      "etymology": "ラテン語 densus(密な)",
+      "definition": "密な、結びつきの多い。",
+      "usage_in_passage": "sparse と対をなす本文の構造的キーワード。第4段落では貧困地区の網の性質を述べる語として再登場する。",
+      "related_terms": [
+        "density",
+        "densely",
+        "compact",
+        "thick"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "clusters": {
+      "etymology": "古英語 clyster(房)。ゲルマン系 + -s",
+      "definition": "集団、クラスター。",
+      "usage_in_passage": "ネットワーク分析の用語として circle を抽象化し、集団間の橋という議論を可能にする。",
+      "related_terms": [
+        "cluster",
+        "clustered",
+        "groups",
+        "cliques"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "rumor": {
+      "etymology": "ラテン語 rumor(うわさ、騒音)",
+      "definition": "うわさ。",
+      "usage_in_passage": "technique・contagion と並置され、構造的制約が内容の性質を問わず働くことを示す三例の一つ。",
+      "related_terms": [
+        "rumors",
+        "gossip",
+        "hearsay",
+        "report"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "technique": {
+      "etymology": "ギリシャ語 tekhnē(技術) → technicus → フランス語 technique",
+      "definition": "技術、手法。",
+      "usage_in_passage": "有益な情報の代表として、うわさや伝染と同じ経路を通ることを示す。",
+      "related_terms": [
+        "technical",
+        "technology",
+        "method",
+        "skill"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "contagion": {
+      "etymology": "ラテン語 con-(共に) + tangere(触れる) → contagio「接触による伝播」",
+      "definition": "伝染、感染。",
+      "usage_in_passage": "望ましくないものの例として加わり、構造が価値中立であることを示す。Q4の設問対象となる三例の一つ。",
+      "related_terms": [
+        "contagious",
+        "contact",
+        "infection",
+        "epidemic"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "sparse": {
+      "etymology": "ラテン語 spargere(まき散らす) → sparsus「まばらな」",
+      "definition": "まばらな、数の少ない。",
+      "usage_in_passage": "語彙問題の対象語。dense と対置され、クラスター間をつなぐ数少ない結びつきを指す。第4段落の \"the sparse, outward-reaching kind\" で議論の結論を担う。",
+      "related_terms": [
+        "sparsely",
+        "sparsity",
+        "scattered",
+        "scanty"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "geometry": {
+      "etymology": "ギリシャ語 gē(大地) + metron(測ること) → geōmetria",
+      "definition": "幾何学的構造。",
+      "usage_in_passage": "\"The same geometry that makes a bridging tie valuable also makes it fragile\" が、価値と脆さが同一の構造から生じるという逆説を数学的な語で表現する。",
+      "related_terms": [
+        "geometric",
+        "metric",
+        "structure",
+        "topology"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "valuable": {
+      "etymology": "ラテン語 valere(価値がある) → value + -able",
+      "definition": "価値のある。",
+      "usage_in_passage": "fragile と同一文で対置され、長所と弱点が分離できないことを示す。",
+      "related_terms": [
+        "value",
+        "valued",
+        "precious",
+        "worthwhile"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "fragile": {
+      "etymology": "ラテン語 frangere(壊す) → fragilis",
+      "definition": "壊れやすい。",
+      "usage_in_passage": "橋渡しの紐帯が維持されにくいという実務的な難点を導入し、第4段落の政策論への布石となる。",
+      "related_terms": [
+        "fragility",
+        "frail",
+        "brittle",
+        "delicate"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "neither": {
+      "etymology": "古英語 nāhwæþer(どちらも〜ない)。ゲルマン系",
+      "definition": "どちらも〜ない。",
+      "usage_in_passage": "\"maintained by neither habit nor affection\" が、弱い紐帯を支える力が存在しないことを二重否定で示す。",
+      "related_terms": [
+        "either",
+        "nor",
+        "none",
+        "not"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "affection": {
+      "etymology": "ラテン語 ad-(に) + facere(作る) → afficere「心を動かす」+ -ion",
+      "definition": "愛着、情愛。",
+      "usage_in_passage": "habit と並び、関係を維持する二つの力として挙げられ、そのどちらも欠くことが脆さの原因だと示す。",
+      "related_terms": [
+        "affect",
+        "affectionate",
+        "fondness",
+        "attachment"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "lapse": {
+      "etymology": "ラテン語 labi(滑る) → lapsus「滑り落ちること」",
+      "definition": "自然消滅する、途絶える。",
+      "usage_in_passage": "橋渡しの紐帯が意図せず失われる過程を示し、islands という前文の比喩が現実化する経路を与える。",
+      "related_terms": [
+        "lapsed",
+        "elapse",
+        "expire",
+        "dissolve"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "busy": {
+      "etymology": "古英語 bisig(忙しい)。ゲルマン系",
+      "definition": "忙しい。",
+      "usage_in_passage": "紐帯が切れる原因を悪意ではなく日常の多忙に帰し、構造の脆さが避けがたいことを示す。",
+      "related_terms": [
+        "busily",
+        "occupied",
+        "engaged",
+        "preoccupied"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "composed": {
+      "etymology": "ラテン語 com-(共に) + ponere(置く) → componere + -ed",
+      "definition": "構成された。",
+      "usage_in_passage": "\"A society composed entirely of intimate bonds\" が思考実験の設定を作り、極端な仮定から逆説を引き出す。",
+      "related_terms": [
+        "compose",
+        "composition",
+        "constituted",
+        "comprised"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "entirely": {
+      "etymology": "ラテン語 integer(手つかずの) → entire + -ly",
+      "definition": "完全に、すべて。",
+      "usage_in_passage": "仮定を極端にすることで、親密さのみからなる社会の機能不全を鮮明にする。",
+      "related_terms": [
+        "entire",
+        "entirety",
+        "wholly",
+        "completely"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "intimate": {
+      "etymology": "ラテン語 intimus(最も内なる) → intimatus",
+      "definition": "親密な。",
+      "usage_in_passage": "第1段落の intimacy を形容詞で受け直し、思考実験の対象を定める。",
+      "related_terms": [
+        "intimacy",
+        "close",
+        "familiar",
+        "confidential"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "paradoxically": {
+      "etymology": "ギリシャ語 para-(反して) + doxa(通念) → paradox + -ic + -ally",
+      "definition": "逆説的に。",
+      "usage_in_passage": "挿入句として置かれ、直観に反する結論であることを読者に明示する標識となる。",
+      "related_terms": [
+        "paradox",
+        "paradoxical",
+        "ironically",
+        "counterintuitively"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "researchers": {
+      "etymology": "re-(再び) + 古フランス語 cerchier(探す) → research + -er + -s",
+      "definition": "研究者。",
+      "usage_in_passage": "思考実験を実証研究で裏づける主体として登場し、主張に経験的根拠を与える。",
+      "related_terms": [
+        "research",
+        "researched",
+        "investigators",
+        "scholars"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "spread": {
+      "etymology": "古英語 sprǣdan(広げる)。ゲルマン系",
+      "definition": "普及、伝播。",
+      "usage_in_passage": "\"the spread of innovations\" が、本文の理論が適用される具体的な研究領域を示す。",
+      "related_terms": [
+        "spreading",
+        "diffusion",
+        "propagation",
+        "dissemination"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "innovations": {
+      "etymology": "ラテン語 in-(中に) + novus(新しい) → innovare + -ation + -s",
+      "definition": "技術革新、新しいもの。",
+      "usage_in_passage": "普及研究の対象として挙げられ、technique の再登場として第3段落内で呼応する。",
+      "related_terms": [
+        "innovate",
+        "innovative",
+        "inventions",
+        "novelties"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "repeatedly": {
+      "etymology": "ラテン語 re-(再び) + petere(求める) → repeat + -ed + -ly",
+      "definition": "繰り返し、何度も。",
+      "usage_in_passage": "単一の研究ではなく複数の知見が一致することを示し、主張の頑健さを補強する。",
+      "related_terms": [
+        "repeat",
+        "repetition",
+        "recurrently",
+        "consistently"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "adoption": {
+      "etymology": "ラテン語 ad-(に) + optare(選ぶ) → adoptare + -ion",
+      "definition": "採用、受け入れ。",
+      "usage_in_passage": "\"adoption stalls\" が、普及研究における観測可能な結果変数を示す。",
+      "related_terms": [
+        "adopt",
+        "adopted",
+        "uptake",
+        "acceptance"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "stalls": {
+      "etymology": "古英語 steall(場所、囲い) → stall。ゲルマン系",
+      "definition": "行き詰まる、止まる。",
+      "usage_in_passage": "橋渡しの紐帯が欠けたときに起きる現象を動詞で示し、理論の予測が観測されることを述べる。",
+      "related_terms": [
+        "stall",
+        "stalled",
+        "halt",
+        "stagnate"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "absent": {
+      "etymology": "ラテン語 ab-(離れて) + esse(ある) → absens",
+      "definition": "欠けている。",
+      "usage_in_passage": "条件節を締める語で、橋渡しの不在が停滞の原因であることを示す。",
+      "related_terms": [
+        "absence",
+        "absentee",
+        "lacking",
+        "missing"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "implications": {
+      "etymology": "ラテン語 in-(中に) + plicare(折る) → implicare + -ation + -s",
+      "definition": "含意、波及する意味。",
+      "usage_in_passage": "\"The practical implications are less comfortable than they first appear\" が第4段落の主題文で、理論から政策へ議論を移す。",
+      "related_terms": [
+        "imply",
+        "implied",
+        "ramifications",
+        "consequences"
+      ],
+      "context_sentence": "The practical implications are less comfortable than they first appear."
+    },
+    "comfortable": {
+      "etymology": "ラテン語 com-(強意) + fortis(強い) → comfort + -able",
+      "definition": "心地よい、都合のよい。",
+      "usage_in_passage": "否定形で用いられ、理論の応用が楽観的な結論を許さないことを予告する。",
+      "related_terms": [
+        "comfort",
+        "comforting",
+        "reassuring",
+        "agreeable"
+      ],
+      "context_sentence": "The practical implications are less comfortable than they first appear."
+    },
+    "weak": {
+      "etymology": "古ノルド語 veikr(弱い)。ゲルマン系",
+      "definition": "弱い。",
+      "usage_in_passage": "表題の \"weak ties\" として本文の中心概念を名指し、casual の言い換えとして機能する。",
+      "related_terms": [
+        "weakness",
+        "weaken",
+        "faint",
+        "slight"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "conclude": {
+      "etymology": "ラテン語 con-(共に) + claudere(閉じる) → concludere「締めくくる」",
+      "definition": "結論する。",
+      "usage_in_passage": "\"one might conclude that anyone can accumulate them freely\" が、直後に but で否定される誤った推論を提示する。",
+      "related_terms": [
+        "conclusion",
+        "concluding",
+        "infer",
+        "deduce"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "accumulate": {
+      "etymology": "ラテン語 ad-(に) + cumulus(積み重ね) → accumulare",
+      "definition": "蓄積する。",
+      "usage_in_passage": "弱い紐帯を意のままに増やせるという想定を示し、それが構造的に制約されることを次節で否定する。",
+      "related_terms": [
+        "accumulation",
+        "accumulated",
+        "amass",
+        "gather"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "freely": {
+      "etymology": "古英語 frēo(自由な) → free + -ly。ゲルマン系",
+      "definition": "自由に、制限なく。",
+      "usage_in_passage": "否定される想定の核心にある語で、直後の constrained と正面から対立する。",
+      "related_terms": [
+        "free",
+        "freedom",
+        "liberally",
+        "unrestrictedly"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "circles": {
+      "etymology": "ラテン語 circulus(輪) + -s",
+      "definition": "交友圏。",
+      "usage_in_passage": "第2段落の circle を複数形で受け直し、到達可能な範囲が限られるという新しい論点を導く。",
+      "related_terms": [
+        "circle",
+        "circular",
+        "cliques",
+        "clusters"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "constrained": {
+      "etymology": "ラテン語 con-(共に) + stringere(締めつける) → constringere + -ed",
+      "definition": "制約された。",
+      "usage_in_passage": "\"constrained by where that person already stands\" が、弱い紐帯の獲得が個人の努力ではなく立ち位置に依存することを示す。",
+      "related_terms": [
+        "constrain",
+        "constraint",
+        "restricted",
+        "limited"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "poverty": {
+      "etymology": "ラテン語 pauper(貧しい) → paupertas → 古フランス語 poverte",
+      "definition": "貧困。",
+      "usage_in_passage": "\"Studies of urban poverty\" が、抽象的な理論が現実の不平等に接続する地点を示す。",
+      "related_terms": [
+        "poor",
+        "impoverished",
+        "destitution",
+        "deprivation"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "isolated": {
+      "etymology": "ラテン語 insula(島) → イタリア語 isolato「島にされた」",
+      "definition": "孤立した。",
+      "usage_in_passage": "第3段落の \"the clusters become islands\" という比喩を語源のレベルで引き継ぎ、理論と現実を結ぶ。",
+      "related_terms": [
+        "isolate",
+        "isolation",
+        "secluded",
+        "insular"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "neighborhoods": {
+      "etymology": "古英語 nēahgebūr(近くに住む者) → neighbor + -hood + -s。ゲルマン系",
+      "definition": "近隣地域。",
+      "usage_in_passage": "議論の単位を個人からコミュニティへ移し、政策的含意を扱う準備をする。",
+      "related_terms": [
+        "neighbor",
+        "neighboring",
+        "districts",
+        "communities"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "deficient": {
+      "etymology": "ラテン語 de-(離れて) + facere(作る) → deficere「欠ける」+ -ent",
+      "definition": "不足している。",
+      "usage_in_passage": "\"are not deficient in social connection\" が、通俗的な想定を明示的に否定し、問題の所在を組み替える。",
+      "related_terms": [
+        "deficiency",
+        "deficit",
+        "lacking",
+        "inadequate"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "unusually": {
+      "etymology": "un-(否定) + ラテン語 usus(慣習) → usual + -ly",
+      "definition": "異常なほど、際立って。",
+      "usage_in_passage": "\"often unusually dense\" が、孤立した地域の網が弱いどころか平均より強いという意外な事実を強調する。",
+      "related_terms": [
+        "unusual",
+        "usually",
+        "exceptionally",
+        "remarkably"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "outward-reaching": {
+      "etymology": "out + -ward(方向) + reach + -ing。ゲルマン系の複合語",
+      "definition": "外へ向かう、外部とつながる。",
+      "usage_in_passage": "\"the sparse, outward-reaching kind\" が、欠けているものの性質を一語で定義し、Q5の推論の鍵となる。",
+      "related_terms": [
+        "outward",
+        "reach",
+        "outgoing",
+        "external"
+      ],
+      "context_sentence": "What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents."
+    },
+    "disadvantage": {
+      "etymology": "dis-(否定) + ラテン語 ab ante(前に) → advantage の否定",
+      "definition": "不利、ハンディキャップ。",
+      "usage_in_passage": "\"the resulting disadvantage compounds\" が、構造的欠落が時間とともに悪化することを示す。",
+      "related_terms": [
+        "advantage",
+        "disadvantaged",
+        "handicap",
+        "detriment"
+      ],
+      "context_sentence": "What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents."
+    },
+    "compounds": {
+      "etymology": "ラテン語 com-(共に) + ponere(置く) → componere → compound",
+      "definition": "累積して悪化する。",
+      "usage_in_passage": "利子が複利で増えるという経済用語の含意を持ち、不利が自己強化的であることを示す。",
+      "related_terms": [
+        "compound",
+        "compounded",
+        "accumulate",
+        "aggravate"
+      ],
+      "context_sentence": "What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents."
+    },
+    "isolation": {
+      "etymology": "ラテン語 insula(島) → isolate + -ion",
+      "definition": "孤立。",
+      "usage_in_passage": "\"the contacts that would carry news of opportunity are exactly the contacts that isolation prevents\" が悪循環を定式化し、本文で最も鋭い一文を成す。",
+      "related_terms": [
+        "isolate",
+        "isolated",
+        "seclusion",
+        "insularity"
+      ],
+      "context_sentence": "What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents."
+    },
+    "assumption": {
+      "etymology": "ラテン語 ad-(に) + sumere(取る) → assumere + -ption",
+      "definition": "前提、想定。",
+      "usage_in_passage": "\"Programs designed on the assumption that such communities need more solidarity\" が、誤った前提に立つ政策を批判の対象として特定する。",
+      "related_terms": [
+        "assume",
+        "assumed",
+        "presumption",
+        "premise"
+      ],
+      "context_sentence": "Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does."
+    },
+    "solidarity": {
+      "etymology": "ラテン語 solidus(堅固な) → フランス語 solidarité",
+      "definition": "連帯。",
+      "usage_in_passage": "善意の政策が目指しがちな価値を名指し、それが的外れになりうるという本文の結論を担う。",
+      "related_terms": [
+        "solid",
+        "solidify",
+        "unity",
+        "cohesion"
+      ],
+      "context_sentence": "Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does."
+    },
+    "exist": {
+      "etymology": "ラテン語 ex-(外に) + sistere(立つ) → existere",
+      "definition": "存在する。",
+      "usage_in_passage": "\"address a problem that does not exist\" が、政策の空転を簡潔に言い切る。",
+      "related_terms": [
+        "existence",
+        "existing",
+        "occur",
+        "subsist"
+      ],
+      "context_sentence": "Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does."
+    },
+    "neglecting": {
+      "etymology": "ラテン語 nec-(否定) + legere(選ぶ) → neglegere「顧みない」+ -ing",
+      "definition": "見過ごすこと。",
+      "usage_in_passage": "本文の最終語に近い位置で、存在しない問題への対処と実在する問題の放置という二重の失敗を対句で締めくくる。",
+      "related_terms": [
+        "neglect",
+        "neglected",
+        "overlooking",
+        "disregarding"
+      ],
+      "context_sentence": "Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does."
+    }
+  }
+}
