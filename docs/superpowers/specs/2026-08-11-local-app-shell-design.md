@@ -64,8 +64,8 @@ english_reading/
 │   ├── css/style.css
 │   ├── js/
 │   │   ├── textmatch.js         # 共通エンジン(変更なし)
-│   │   ├── reader-core.js       # 共通エンジン(reader.js から抽出・改名)
-│   │   ├── vocab.js             # 共通エンジン(変更なし)
+│   │   ├── reader.js            # 共通エンジン(保存呼び出しのみ Store 経由に変更)
+│   │   ├── vocab.js             # 共通エンジン(保存呼び出しのみ Store 経由に変更)
 │   │   ├── anki.js              # 共通(変更なし)
 │   │   ├── app.js               # 一覧ページ
 │   │   ├── footer.js            # 共通(変更なし)
@@ -204,7 +204,9 @@ swiftc -O app/src/main.swift -o app/build/TOEFLReading.app/Contents/MacOS/TOEFLR
 
 ### 含むもの
 
-- `docs/js/reader.js` から保存呼び出しを切り離し `reader-core.js` にする
+- `docs/js/reader.js` `docs/js/vocab.js` `docs/js/app.js` から localStorage への
+  直接アクセスを取り除き、`window.Store` 経由にする
+  (ファイル名は変更しない。保存層が分離できれば改名の必要はないため)
 - `app.js` のリンク先を `window.READER_URL` から取るようにする
 - `store.web.js` / `store.native.js` の2実装
 - `app/src/main.swift`、`app/ui/index.html`、`app/ui/reader.html`、`app/build.sh`
