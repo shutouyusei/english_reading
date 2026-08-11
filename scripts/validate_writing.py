@@ -26,7 +26,7 @@ def validate_prompt(data: dict, filename_stem: str) -> list[str]:
     errors: list[str] = []
     if data["id"] != filename_stem:
         errors.append(f"id {data['id']!r} does not match filename {filename_stem!r}")
-    if not isinstance(data["target_minutes"], int) or data["target_minutes"] <= 0:
+    if not isinstance(data["target_minutes"], int) or isinstance(data["target_minutes"], bool) or data["target_minutes"] <= 0:
         errors.append(f"target_minutes must be a positive integer, got {data['target_minutes']!r}")
     if not DATE_RE.match(str(data["added"])):
         errors.append(f"added must be YYYY-MM-DD, got {data['added']!r}")
@@ -45,14 +45,34 @@ def validate_prompt(data: dict, filename_stem: str) -> list[str]:
 
 def _validate_email(data: dict) -> list[str]:
     errors: list[str] = []
-    for name in EMAIL_ONLY_FIELDS:
-        if data[name] is None:
-            errors.append(f"email prompt requires {name}")
+
+    # Validate situation
+    situation = data["situation"]
+    if situation is None:
+        errors.append("email prompt requires situation")
+    elif not isinstance(situation, str) or not situation.strip():
+        errors.append("situation must be a non-empty string")
+
+    # Validate recipient
+    recipient = data["recipient"]
+    if recipient is None:
+        errors.append("email prompt requires recipient")
+    elif not isinstance(recipient, str) or not recipient.strip():
+        errors.append("recipient must be a non-empty string")
+
+    # Validate must_include
+    must_include = data["must_include"]
+    if must_include is None:
+        errors.append("email prompt requires must_include")
+    elif not isinstance(must_include, list) or not must_include:
+        errors.append("must_include must be a non-empty list")
+    elif not all(isinstance(item, str) and item.strip() for item in must_include):
+        errors.append("must_include entries must be non-empty strings")
+
+    # Validate discussion is null
     if data["discussion"] is not None:
         errors.append("email prompt must have discussion == null")
-    must_include = data["must_include"]
-    if must_include is not None and (not isinstance(must_include, list) or not must_include):
-        errors.append("must_include must be a non-empty list")
+
     return errors
 
 
