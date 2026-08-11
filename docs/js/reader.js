@@ -153,7 +153,7 @@ function renderQuestion() {
   });
 }
 
-function finishSolve() {
+async function finishSolve() {
   stopTimer();
   const questions = state.passage.questions;
   const score = questions.filter((q, i) => state.answers[i] === q.correct).length;
@@ -169,10 +169,17 @@ function finishSolve() {
     answers: state.answers,
     finishedAt: new Date().toISOString(),
   };
-  Store.saveAttempt(attempt).catch((err) => {
-    qs("#header-status").textContent = `⚠ 保存に失敗しました: ${err.message}`;
-  });
-  qs("#header-status").textContent = `⏱ ${formatElapsed(sec)} で終了`;
+  // 保存を待ってから結果を描画する。待たないと、直後に復習へ進んだとき
+  // Store.latest() がまだ古く「まだ解いていません」と表示されうる。
+  let saveError = null;
+  try {
+    await Store.saveAttempt(attempt);
+  } catch (err) {
+    saveError = err;
+  }
+  qs("#header-status").textContent = saveError
+    ? `⚠ 保存に失敗しました: ${saveError.message}`
+    : `⏱ ${formatElapsed(sec)} で終了`;
   qs("#right-pane").innerHTML = `
     <div class="result-card">
       <p class="score">${score} / ${questions.length} 正解</p>
