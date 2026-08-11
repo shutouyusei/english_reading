@@ -84,6 +84,13 @@ test("再採点では gradedAt が新しい方を採る(ファイル順に依存
   assert.equal(Essays.get("e_1").grade.summary, "再採点");
 });
 
+test("再採点では gradedAt が新しい方を採る(古い採点が先に来ても)", async () => {
+  const { Essays } = loadEssays([essayOld, gradeFirst, gradeRegraded]);
+  await Essays.init();
+  assert.equal(Essays.get("e_1").grade.overall, 4);
+  assert.equal(Essays.get("e_1").grade.summary, "再採点");
+});
+
 test("採点行が先に現れても突き合わせられる", async () => {
   const { Essays } = loadEssays([gradeFirst, essayOld]);
   await Essays.init();
