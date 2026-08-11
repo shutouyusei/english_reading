@@ -39,11 +39,31 @@ Claude Codeのサブスクリプション枠で動作):
 4. `python3 scripts/validate_passage.py <file>` — スキーマ検証
 5. `python3 scripts/update_index.py` — マニフェスト更新
 
+## ローカルアプリ(macOS)
+
+リスニング・スピーキング等の学習機能を載せるための、ブラウザに依存しない
+ネイティブアプリ。学習記録を実ファイルとして残す。
+
+```bash
+bash app/build.sh          # ビルド(swiftc のみ。npm も Xcode も不要)
+open app/build/TOEFLReading.app
+```
+
+- 解答履歴は `~/Documents/TOEFLReading/attempts.jsonl` に**追記**される(上書きしない)
+- パッセージは起動のたびにディスクから読むため、`/new-passage` で追加した分は
+  **再ビルドせずに**反映される
+- アプリはリポジトリの位置を実行ファイルからの相対で解決する。リポジトリを
+  移動した場合は環境変数 `TOEFL_REPO_ROOT` を指定して起動する
+- macOS 専用。署名していないため配布には向かない(個人利用を前提)
+
+公開版(GitHub Pages)はリーディングのみで、保存はブラウザ内にとどまる。
+
 ## テスト
 
 ```bash
 python3 -m unittest discover -s tests/python -v   # Pythonスクリプト
 node --test "tests/js/**/*.test.js"                # フロントエンド共通ロジック
+bash app/tests/run.sh                              # Swift(パス解決)
 ```
 
 ## 公開URL
