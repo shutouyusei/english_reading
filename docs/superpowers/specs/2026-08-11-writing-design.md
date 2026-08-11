@@ -60,8 +60,12 @@ Reading 用の `docs/js/` には一切触らない。ライティングはロー
 |---|---|
 | `app/ui/index.html` | 「✍️ ライティング」へのリンクを1本追加 |
 | `app/src/main.swift` | `EssaysHandler` と `GradeHandler` を `userContentController` に登録 |
-| `app/build.sh` | `ClaudeRunner.swift` と `EssaysLog.swift` を `swiftc` の引数に追加 |
-| `app/tests/run.sh` | ClaudeRunner のテストを追加 |
+| `app/src/AttemptsLog.swift` | `JSONLinesLog.swift` に改名し、関数名を `parseJSONLines` にする |
+| `app/tests/test_attempts_log.swift` | 改名に追随(`test_jsonlines_log.swift`) |
+| `app/build.sh` | `ClaudeRunner.swift` を `swiftc` の引数に追加、改名を反映 |
+| `app/tests/run.sh` | ClaudeRunner のテストを追加、改名を反映 |
+
+`essays.jsonl` の1行パースは `attempts.jsonl` と完全に同じ処理になる。専用の `EssaysLog.swift` を作るとコードが逐語的に重複するため、既存の `parseAttemptsLog` を `parseJSONLines` に一般化して両方から使う。触っているファイルの範囲内に収まる改名なので、この計画で行う。
 
 `docs/js/` 以下(Reading の共有エンジン)には一切触らない。
 
@@ -78,7 +82,6 @@ Reading 用の `docs/js/` には一切触らない。ライティングはロー
 | `app/prompts/grade-email.md` | メール問題の採点プロンプト | プロンプト |
 | `app/prompts/grade-discussion.md` | ディスカッション問題の採点プロンプト | プロンプト |
 | `app/src/ClaudeRunner.swift` | `claude -p` の起動と JSON 取り出し | 150 |
-| `app/src/EssaysLog.swift` | `essays.jsonl` のパース | 40 |
 | `scripts/validate_writing.py` | 問題 JSON の検証 | 120 |
 | `.claude/commands/new-writing.md` | `/new-writing` 生成コマンド | コマンド |
 
@@ -295,13 +298,15 @@ Return ONLY a JSON object matching this shape:
 **起動引数** — 実測で確定した4フラグを必ず付ける:
 
 ```
--p <ユーザープロンプト>
+-p
 --output-format json
 --system-prompt <システムプロンプト>
 --tools ""
 --strict-mcp-config
 --setting-sources ""
 ```
+
+**ユーザープロンプトは標準入力で渡す。** 引数に載せない。エッセイ本文に引用符・改行・バックスラッシュが入っても壊れず、引数長の上限も踏まない。`printf '%s' "..." | claude -p ...` が通ることを実測で確認済み。
 
 **タイムアウト** 180 秒。実測 15〜19 秒に対して十分な余裕を取る。超えたらプロセスを終了させ、タイムアウトのエラーを返す。
 
@@ -368,7 +373,7 @@ JS 側はプロンプトの中身も問題 JSON の場所も知らない。`repo
 
 グロブ形式は必須。`node --test tests/js/` は Node 25.9.0 で壊れている。
 
-**Swift(`app/tests/run.sh`)** — `ClaudeRunner` と `EssaysLog`
+**Swift(`app/tests/run.sh`)** — `ClaudeRunner` と `JSONLinesLog`
 
 - `extractGradeJSON`: 素の JSON を取り出せる
 - `extractGradeJSON`: ```json フェンス付きを取り出せる
@@ -377,7 +382,7 @@ JS 側はプロンプトの中身も問題 JSON の場所も知らない。`repo
 - **起動引数の組み立てに `--tools` と `""` が隣接して含まれる**(73倍問題の回帰防止)
 - 実行ファイル探索: `TOEFL_CLAUDE_BIN` が最優先される
 - 実行ファイル探索: 候補が無ければ `nil`
-- `parseEssaysLog`: 不正な1行を飛ばして残りを読む(`AttemptsLog` と同じ性質)
+- `parseJSONLines`: 不正な1行を飛ばして残りを読む(既存の `parseAttemptsLog` の性質を引き継ぐ)
 
 `--tools ""` の検査をテストに入れるのは、これが最も起きやすく、かつ静かに枠を食う失敗だから。引数組み立てを純粋関数に切り出して検査する。
 
