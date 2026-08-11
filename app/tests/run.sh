@@ -12,4 +12,9 @@ ATTEMPTS_LOG_OUT="$TMP/test_attempts_log"
 swiftc -O app/src/AttemptsLog.swift app/tests/test_attempts_log.swift -o "$ATTEMPTS_LOG_OUT"
 "$ATTEMPTS_LOG_OUT"
 
+# 起動から一覧描画までの通し確認。WKWebView を実際に動かすため単体テストより遅い。
+SMOKE_OUT="$TMP/test_smoke_app"
+swiftc -O app/src/PathResolver.swift app/tests/test_smoke_app.swift -o "$SMOKE_OUT"
+REPO="$(pwd)" "$SMOKE_OUT"
+
 echo "Swift tests: all passed"

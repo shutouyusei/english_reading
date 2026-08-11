@@ -38,8 +38,18 @@ final class ContentSchemeHandler: NSObject, WKURLSchemeHandler {
             return
         }
         let mime = Self.mimeTypes[file.pathExtension.lowercased()] ?? "application/octet-stream"
-        let response = URLResponse(url: task.request.url!, mimeType: mime,
-                                   expectedContentLength: data.count, textEncodingName: "utf-8")
+        // 素の URLResponse ではステータスコードを持てず、fetch() から見ると status が 0 になり
+        // res.ok が false になる(HTMLパーサ経由の読み込みは影響を受けないため気づきにくい)。
+        // fetch() でデータを取得できるよう HTTPURLResponse で 200 を返す。
+        guard let response = HTTPURLResponse(
+            url: task.request.url!, statusCode: 200, httpVersion: "HTTP/1.1",
+            headerFields: ["Content-Type": "\(mime); charset=utf-8"]
+        ) else {
+            task.didFailWithError(NSError(
+                domain: "TOEFLReading", code: 500,
+                userInfo: [NSLocalizedDescriptionKey: "応答を組み立てられません: \(path)"]))
+            return
+        }
         task.didReceive(response)
         task.didReceive(data)
         task.didFinish()
