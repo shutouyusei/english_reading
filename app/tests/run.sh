@@ -8,9 +8,9 @@ PATH_RESOLVER_OUT="$TMP/test_path_resolver"
 swiftc -O app/src/PathResolver.swift app/tests/test_path_resolver.swift -o "$PATH_RESOLVER_OUT"
 "$PATH_RESOLVER_OUT"
 
-ATTEMPTS_LOG_OUT="$TMP/test_attempts_log"
-swiftc -O app/src/AttemptsLog.swift app/tests/test_attempts_log.swift -o "$ATTEMPTS_LOG_OUT"
-"$ATTEMPTS_LOG_OUT"
+JSONLINES_LOG_OUT="$TMP/test_jsonlines_log"
+swiftc -O app/src/JSONLinesLog.swift app/tests/test_jsonlines_log.swift -o "$JSONLINES_LOG_OUT"
+"$JSONLINES_LOG_OUT"
 
 # 起動から一覧描画までの通し確認。WKWebView を実際に動かすため単体テストより遅い。
 SMOKE_OUT="$TMP/test_smoke_app"

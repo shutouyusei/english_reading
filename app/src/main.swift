@@ -99,7 +99,7 @@ final class StoreHandler: NSObject, WKScriptMessageHandlerWithReply {
 
     private func loadAll() -> [[String: Any]] {
         guard let data = try? Data(contentsOf: attemptsFile) else { return [] }
-        return parseAttemptsLog(data)
+        return parseJSONLines(data)
     }
 
     /// 既存行は一切読み書きせず、末尾に1行足すだけ。
