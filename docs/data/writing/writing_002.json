@@ -1,0 +1,27 @@
+{
+  "id": "writing_002",
+  "type": "discussion",
+  "title": "Should cities restrict private cars downtown?",
+  "added": "2026-08-11",
+  "target_minutes": 10,
+  "instructions": "Your professor has posted a question and two classmates have replied. Write a response that contributes something new to the discussion. Aim for at least 100 words. State a clear position and support it.",
+  "situation": null,
+  "recipient": null,
+  "must_include": null,
+  "discussion": {
+    "professor_post": {
+      "name": "Dr. Chen",
+      "text": "Several European cities have restricted or banned private cars in their downtown cores, citing air quality and pedestrian safety. Critics argue that such policies burden people who depend on cars for work or family obligations. In your view, should cities restrict private cars downtown? Explain your reasoning."
+    },
+    "student_posts": [
+      {
+        "name": "Marcus",
+        "text": "Restrictions are the only measure that has actually worked. Incentives like cheaper transit tickets have been tried for decades and car traffic kept rising. If we are serious about air quality, we have to make driving downtown genuinely inconvenient."
+      },
+      {
+        "name": "Priya",
+        "text": "Marcus overlooks the people who have no realistic alternative. A nurse finishing a night shift at 3 a.m. cannot wait for a bus that does not run. Before restricting cars, a city has to prove its transit system covers those hours and those routes."
+      }
+    ]
+  }
+}
