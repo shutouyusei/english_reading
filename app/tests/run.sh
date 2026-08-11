@@ -12,6 +12,10 @@ JSONLINES_LOG_OUT="$TMP/test_jsonlines_log"
 swiftc -O app/src/JSONLinesLog.swift app/tests/test_jsonlines_log.swift -o "$JSONLINES_LOG_OUT"
 "$JSONLINES_LOG_OUT"
 
+CLAUDE_RUNNER_OUT="$TMP/test_claude_runner"
+swiftc -O app/src/ClaudeRunner.swift app/tests/test_claude_runner.swift -o "$CLAUDE_RUNNER_OUT"
+"$CLAUDE_RUNNER_OUT"
+
 # 起動から一覧描画までの通し確認。WKWebView を実際に動かすため単体テストより遅い。
 SMOKE_OUT="$TMP/test_smoke_app"
 swiftc -O app/src/PathResolver.swift app/tests/test_smoke_app.swift -o "$SMOKE_OUT"
