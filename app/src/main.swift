@@ -117,6 +117,159 @@ final class StoreHandler: NSObject, WKScriptMessageHandlerWithReply {
     }
 }
 
+// MARK: - ライティングの保存(追記専用)
+
+final class EssaysHandler: NSObject, WKScriptMessageHandlerWithReply {
+    private let dataDir: URL
+    private var essaysFile: URL { dataDir.appendingPathComponent("essays.jsonl") }
+
+    init(dataDir: URL) {
+        self.dataDir = dataDir
+        super.init()
+        try? FileManager.default.createDirectory(at: dataDir, withIntermediateDirectories: true)
+    }
+
+    func userContentController(_ userContentController: WKUserContentController,
+                               didReceive message: WKScriptMessage,
+                               replyHandler: @escaping (Any?, String?) -> Void) {
+        guard let body = message.body as? [String: Any],
+              let action = body["action"] as? String else {
+            replyHandler(nil, "要求の形式が不正です")
+            return
+        }
+        switch action {
+        case "loadAll":
+            replyHandler(loadAll(), nil)
+        case "saveEssay":
+            save(body["essay"], kind: "essay", replyHandler: replyHandler)
+        case "saveGrade":
+            save(body["grade"], kind: "grade", replyHandler: replyHandler)
+        default:
+            replyHandler(nil, "未知の action: \(action)")
+        }
+    }
+
+    private func loadAll() -> [[String: Any]] {
+        guard let data = try? Data(contentsOf: essaysFile) else { return [] }
+        return parseJSONLines(data)
+    }
+
+    /// 行の種別は Swift 側で付ける。JS から渡させると付け忘れが起きうる。
+    private func save(_ payload: Any?, kind: String,
+                      replyHandler: @escaping (Any?, String?) -> Void) {
+        guard var row = payload as? [String: Any] else {
+            replyHandler(nil, "\(kind) の中身が含まれていません")
+            return
+        }
+        row["kind"] = kind
+        do {
+            try append(row)
+            replyHandler(nil, nil)
+        } catch {
+            replyHandler(nil, "書き込みに失敗しました: \(error.localizedDescription)")
+        }
+    }
+
+    /// 既存行は一切読み書きせず、末尾に1行足すだけ。
+    private func append(_ row: [String: Any]) throws {
+        var line = try JSONSerialization.data(withJSONObject: row, options: [.sortedKeys])
+        line.append(0x0A)
+        if FileManager.default.fileExists(atPath: essaysFile.path) {
+            let handle = try FileHandle(forWritingTo: essaysFile)
+            defer { try? handle.close() }
+            try handle.seekToEnd()
+            try handle.write(contentsOf: line)
+        } else {
+            try line.write(to: essaysFile)
+        }
+    }
+}
+
+// MARK: - 採点(claude -p を起動する)
+
+final class GradeHandler: NSObject, WKScriptMessageHandlerWithReply {
+    private let root: URL
+    /// 採点は十数秒かかる。メインスレッドで走らせると画面が固まる。
+    private let queue = DispatchQueue(label: "local.toefl.grade", qos: .userInitiated)
+
+    init(root: URL) {
+        self.root = root
+        super.init()
+    }
+
+    func userContentController(_ userContentController: WKUserContentController,
+                               didReceive message: WKScriptMessage,
+                               replyHandler: @escaping (Any?, String?) -> Void) {
+        guard let body = message.body as? [String: Any],
+              body["action"] as? String == "grade",
+              let promptId = body["promptId"] as? String,
+              let promptType = body["promptType"] as? String,
+              let essayText = body["essayText"] as? String else {
+            replyHandler(nil, "採点要求の形式が不正です")
+            return
+        }
+        queue.async {
+            let outcome = self.grade(promptId: promptId, promptType: promptType,
+                                     essayText: essayText)
+            DispatchQueue.main.async {
+                switch outcome {
+                case .success(let grade): replyHandler(grade, nil)
+                case .failure(let error): replyHandler(nil, error.japaneseMessage)
+                }
+            }
+        }
+    }
+
+    private func grade(promptId: String, promptType: String,
+                       essayText: String) -> Result<[String: Any], ClaudeRunnerError> {
+        guard let binary = resolveClaudeBinary() else { return .failure(.binaryNotFound) }
+
+        let promptPath = root.appendingPathComponent("docs/data/writing/\(promptId).json")
+        let templateName = promptType == "discussion" ? "grade-discussion" : "grade-email"
+        let templatePath = root.appendingPathComponent("app/prompts/\(templateName).md")
+
+        guard let promptData = try? Data(contentsOf: promptPath),
+              let prompt = (try? JSONSerialization.jsonObject(with: promptData)) as? [String: Any],
+              let templateText = try? String(contentsOf: templatePath, encoding: .utf8),
+              let parts = splitPromptFile(templateText) else {
+            return .failure(.launchFailed("問題または採点プロンプトを読み込めません"))
+        }
+
+        let userPrompt = renderTemplate(parts.user, values: [
+            "instructions": prompt["instructions"] as? String ?? "",
+            "situation": prompt["situation"] as? String ?? "",
+            "recipient": prompt["recipient"] as? String ?? "",
+            "must_include": (prompt["must_include"] as? [String])?.joined(separator: "\n") ?? "",
+            "discussion": Self.describeDiscussion(prompt["discussion"]),
+            "essay": essayText,
+        ])
+
+        let started = Date()
+        return runClaude(binary: binary, systemPrompt: parts.system, userPrompt: userPrompt)
+            .map { grade in
+                var enriched = grade
+                enriched["runnerMs"] = Int(Date().timeIntervalSince(started) * 1000)
+                return enriched
+            }
+    }
+
+    /// ディスカッションの投稿群を、そのままプロンプトに貼れる平文にする。
+    private static func describeDiscussion(_ value: Any?) -> String {
+        guard let discussion = value as? [String: Any] else { return "" }
+        var lines: [String] = []
+        if let professor = discussion["professor_post"] as? [String: Any] {
+            lines.append("\(professor["name"] as? String ?? "Professor"):")
+            lines.append(professor["text"] as? String ?? "")
+        }
+        for post in (discussion["student_posts"] as? [[String: Any]]) ?? [] {
+            lines.append("")
+            lines.append("\(post["name"] as? String ?? "Student"):")
+            lines.append(post["text"] as? String ?? "")
+        }
+        return lines.joined(separator: "\n")
+    }
+}
+
 // MARK: - アプリ
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
@@ -133,6 +286,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         configuration.setURLSchemeHandler(ContentSchemeHandler(root: root), forURLScheme: "app")
         configuration.userContentController.addScriptMessageHandler(
             StoreHandler(dataDir: dataDir), contentWorld: .page, name: "store")
+        configuration.userContentController.addScriptMessageHandler(
+            EssaysHandler(dataDir: dataDir), contentWorld: .page, name: "essays")
+        configuration.userContentController.addScriptMessageHandler(
+            GradeHandler(root: root), contentWorld: .page, name: "grader")
 
         let webView = WKWebView(frame: .zero, configuration: configuration)
         webView.autoresizingMask = [.width, .height]

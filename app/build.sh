@@ -23,7 +23,8 @@ cat > "$APP/Contents/Info.plist" <<'PLIST'
 </plist>
 PLIST
 
-swiftc -O app/src/PathResolver.swift app/src/JSONLinesLog.swift app/src/main.swift \
+swiftc -O app/src/PathResolver.swift app/src/JSONLinesLog.swift \
+  app/src/ClaudeRunner.swift app/src/main.swift \
   -o "$APP/Contents/MacOS/TOEFLReading"
 
 echo "ビルド完了: $APP"
