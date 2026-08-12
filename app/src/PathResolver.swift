@@ -23,3 +23,12 @@ func resolveContentPath(root: URL, requestPath: String) -> URL? {
 
     return target
 }
+
+/// 問題IDから問題JSONの実ファイルを解決する。
+/// ID は画面(JS)から来るため、リポジトリ配下に収まることを必ず確かめる。
+/// docs/data/writing/ 自体を「ルート」として resolveContentPath に渡すことで、
+/// .. を使って同フォルダの外(リポジトリ内の他ファイルも含む)へ出る経路を塞ぐ。
+func writingPromptPath(root: URL, promptId: String) -> URL? {
+    let writingDir = root.appendingPathComponent("docs/data/writing")
+    return resolveContentPath(root: writingDir, requestPath: "\(promptId).json")
+}

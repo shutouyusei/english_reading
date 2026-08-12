@@ -224,7 +224,11 @@ final class GradeHandler: NSObject, WKScriptMessageHandlerWithReply {
                        essayText: String) -> Result<[String: Any], ClaudeRunnerError> {
         guard let binary = resolveClaudeBinary() else { return .failure(.binaryNotFound) }
 
-        let promptPath = root.appendingPathComponent("docs/data/writing/\(promptId).json")
+        // promptId は JS から来るため、リポジトリ外や docs/data/writing の外を
+        // 指せないことを resolveContentPath 経由の writingPromptPath で確かめる。
+        guard let promptPath = writingPromptPath(root: root, promptId: promptId) else {
+            return .failure(.launchFailed("問題ID \"\(promptId)\" のパスが不正です"))
+        }
         let templateName = promptType == "discussion" ? "grade-discussion" : "grade-email"
         let templatePath = root.appendingPathComponent("app/prompts/\(templateName).md")
 

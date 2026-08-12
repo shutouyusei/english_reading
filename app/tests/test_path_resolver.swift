@@ -56,6 +56,21 @@ struct TestPathResolver {
               resolveContentPath(root: inside, requestPath: "/escape/secret.txt") == nil)
         try? fm.removeItem(at: tmpRoot)
 
+        // writingPromptPath: 問題IDからのパス解決(ディレクトリ脱出防止)
+        check("通常のIDは docs/data/writing 配下に解決される",
+              writingPromptPath(root: root, promptId: "writing_001")?.path
+              == "/tmp/repo/docs/data/writing/writing_001.json")
+
+        check("親ディレクトリへ3段階上る ID は docs/data/writing の外へ出るため拒否する",
+              writingPromptPath(root: root, promptId: "../../../etc/hosts") == nil)
+
+        check("先頭スラッシュを含む ID は docs/data/writing 配下に留まる(脱出しない)",
+              writingPromptPath(root: root, promptId: "/etc/hosts")?.path
+              == "/tmp/repo/docs/data/writing/etc/hosts.json")
+
+        check("途中に .. を含む ID は docs/data/writing の外へ出るため拒否する",
+              writingPromptPath(root: root, promptId: "a/../../b") == nil)
+
         exit(failures == 0 ? 0 : 1)
     }
 }
