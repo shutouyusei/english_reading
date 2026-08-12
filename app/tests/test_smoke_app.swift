@@ -65,6 +65,14 @@ final class SmokeSchemeHandler: NSObject, WKURLSchemeHandler {
 final class SmokeStoreStub: NSObject, WKScriptMessageHandlerWithReply {
     private(set) var savedAttempts: [[String: Any]] = []
 
+    /// essays ブリッジが実際に配線されているかを見分けるための行を仕込む。
+    /// store/essays 両ハンドラの loadAll は同じ savedAttempts を返すため、
+    /// 読み込み側(store.native.js)は passageId を持たない行を無視して
+    /// 読解一覧の確認には影響しない。
+    func seed(_ rows: [[String: Any]]) {
+        savedAttempts.append(contentsOf: rows)
+    }
+
     func userContentController(_ userContentController: WKUserContentController,
                                didReceive message: WKScriptMessage,
                                replyHandler: @escaping (Any?, String?) -> Void) {
@@ -93,6 +101,15 @@ final class SmokeDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         handler = SmokeSchemeHandler(root: repoRoot)
         store = SmokeStoreStub()
+        // writing_001 に採点なしのエッセイ行を1件仕込む。essays ハンドラが
+        // 実際に配線されていなければ Essays.init() が黙って失敗し、
+        // このカードは「未着手」のままになる(=下の確認で検出できる)。
+        store.seed([[
+            "kind": "essay",
+            "essayId": "smoke-essay-1",
+            "promptId": "writing_001",
+            "writtenAt": "2026-01-01T00:00:00Z",
+        ]])
 
         let configuration = WKWebViewConfiguration()
         configuration.setURLSchemeHandler(handler, forURLScheme: "app")
@@ -160,7 +177,16 @@ final class SmokeDelegate: NSObject, NSApplicationDelegate {
                 check("ライティングの index.json がスキーム経由で配信された",
                       self.handler.servedPaths.contains("/docs/data/writing/index.json"),
                       self.handler.servedPaths.joined(separator: ", "))
-                exit(failures == 0 ? 0 : 1)
+
+                self.webView.evaluateJavaScript(
+                    "document.querySelector('#writing-list').textContent"
+                ) { text, _ in
+                    let body = (text as? String) ?? ""
+                    check("essays ブリッジ経由の記録が反映され、採点待ちバッジが出る",
+                          body.contains("採点待ち"),
+                          body.trimmingCharacters(in: .whitespacesAndNewlines).prefix(120).description)
+                    exit(failures == 0 ? 0 : 1)
+                }
             }
         }
     }

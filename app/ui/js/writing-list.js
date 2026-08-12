@@ -48,7 +48,13 @@ function badgeHtml(entry, attempts) {
   if (!entry) return `<span class="badge">未着手</span>`;
   const count = attempts > 1 ? ` ・ ${attempts}回` : "";
   if (!entry.grade) return `<span class="badge">⏳ 採点待ち${count}</span>`;
-  return `<span class="badge done">✅ ${entry.grade.overall}/5${count}</span>`;
+  // 採点はグレーディングAIが返すJSONそのままで型保証が無いため、
+  // 0〜5の有限数でなければ採点待ち扱いに倒す。
+  const overall = entry.grade.overall;
+  if (typeof overall !== "number" || !Number.isFinite(overall) || overall < 0 || overall > 5) {
+    return `<span class="badge">⏳ 採点待ち${count}</span>`;
+  }
+  return `<span class="badge done">✅ ${escapeText(overall)}/5${count}</span>`;
 }
 
 document.addEventListener("DOMContentLoaded", initWritingList);
