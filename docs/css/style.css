@@ -147,6 +147,8 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 }
 #prompt-pane .post-professor { border-left-color: #2e7d32; }
 #prompt-pane .post-name { font-weight: 600; margin: 0 0 4px; }
+.attempts { list-style: none; margin: -6px 0 12px; padding: 0 18px; }
+.attempts li { margin: 2px 0; }
 #essay-input {
   width: 100%;
   min-height: 320px;

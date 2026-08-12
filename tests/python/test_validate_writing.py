@@ -77,8 +77,8 @@ class ValidEmailTest(unittest.TestCase):
         self.assertTrue(any("recipient must be a non-empty string" in e for e in errors), errors)
 
     def test_email_with_recipient_not_string_fails(self):
-        errors = validate_prompt(email_prompt(recipient=None), "writing_001")
-        self.assertTrue(any("email prompt requires recipient" in e for e in errors), errors)
+        errors = validate_prompt(email_prompt(recipient=123), "writing_001")
+        self.assertTrue(any("recipient must be a non-empty string" in e for e in errors), errors)
 
     def test_email_with_must_include_not_list_fails(self):
         errors = validate_prompt(email_prompt(must_include="include this"), "writing_001")

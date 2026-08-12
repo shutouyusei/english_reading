@@ -31,10 +31,10 @@ class BuildIndexTest(unittest.TestCase):
             "target_minutes": 7, "added": "2026-08-11",
         }])
 
-    def test_sorted_by_id(self):
-        index = build_index([DISCUSSION, EMAIL])
+    def test_sorted_newest_first(self):
+        index = build_index([EMAIL, DISCUSSION])
         self.assertEqual([p["id"] for p in index["prompts"]],
-                         ["writing_001", "writing_002"])
+                         ["writing_002", "writing_001"])
 
     def test_empty_input_gives_empty_list(self):
         self.assertEqual(build_index([]), {"prompts": []})

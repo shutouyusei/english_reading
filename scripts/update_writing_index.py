@@ -12,7 +12,7 @@ INDEX_PATH = WRITING_DIR / "index.json"
 def build_index(prompts: list[dict]) -> dict:
     """Reduce full prompt objects to the summary rows the list screen needs."""
     rows = [{name: prompt[name] for name in SUMMARY_FIELDS} for prompt in prompts]
-    rows.sort(key=lambda row: row["id"])
+    rows.sort(key=lambda row: (row["added"], row["id"]), reverse=True)
     return {"prompts": rows}
 
 

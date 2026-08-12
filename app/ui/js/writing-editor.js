@@ -6,7 +6,6 @@
 
 const state = {
   prompt: null,
-  essayId: null,
   startedAt: null,
   timerId: null,
   elapsedSec: 0,
@@ -49,7 +48,11 @@ async function initEditor() {
 
 function promptHtml(prompt) {
   if (prompt.type === "discussion") {
-    const posts = [prompt.discussion.professor_post, ...prompt.discussion.student_posts];
+    const discussion = prompt.discussion;
+    if (!discussion || !discussion.professor_post || !Array.isArray(discussion.student_posts)) {
+      return `<p class="error">問題データが壊れています(discussion フィールドが不正です)。</p>`;
+    }
+    const posts = [discussion.professor_post, ...discussion.student_posts];
     return `
       <h2>${esc(prompt.title)}</h2>
       <p class="hint">${esc(prompt.instructions)}</p>
@@ -71,6 +74,7 @@ function promptHtml(prompt) {
 // --- 執筆 ---
 
 function showWriting(initialText = "") {
+  document.querySelector("#header-status").textContent = "";
   document.querySelector("#right-pane").innerHTML = `
     <div class="pane-header">
       <span id="timer">0分0秒</span>
@@ -82,12 +86,14 @@ function showWriting(initialText = "") {
 
   const input = document.querySelector("#essay-input");
   const button = document.querySelector("#submit-button");
-  input.addEventListener("input", () => {
+  const syncCounter = () => {
     const words = countWords(input.value);
     document.querySelector("#word-count").textContent = words;
     // 空文字を Claude に投げても意味のある採点は返らない。枠を無駄にしない。
     button.disabled = words === 0;
-  });
+  };
+  input.addEventListener("input", syncCounter);
+  syncCounter(); // 下書き復元(書き直す)で埋まっているテキストにも反映する
   button.addEventListener("click", () => submitEssay(input.value));
   input.focus();
   startTimer();
@@ -136,7 +142,6 @@ async function submitEssay(text) {
     showError(essay, `保存できませんでした: ${err.message}`);
     return;
   }
-  state.essayId = essay.essayId;
   await runGrading(essay);
 }
 
@@ -170,6 +175,7 @@ async function runGrading(essay) {
 }
 
 function showGrading() {
+  document.querySelector("#header-status").textContent = "";
   const startedAt = Date.now();
   document.querySelector("#right-pane").innerHTML = `
     <div class="grading">
@@ -177,6 +183,9 @@ function showGrading() {
       <p class="meta">通常15〜20秒かかります。<span id="grading-elapsed">0</span> 秒経過</p>
       <p class="hint">この画面を閉じても、書いた文章は保存済みです。<br>
         一覧から「採点待ち」として再開できます。</p>
+      <div class="card-actions">
+        <a class="button" href="writing.html">一覧へ</a>
+      </div>
     </div>`;
   const tick = setInterval(() => {
     const label = document.querySelector("#grading-elapsed");
@@ -247,6 +256,7 @@ function showUngraded(essay) {
 }
 
 function showError(essay, message) {
+  document.querySelector("#header-status").textContent = "";
   document.querySelector("#right-pane").innerHTML = `
     <div class="pane-header"><h3>採点できませんでした</h3></div>
     <p class="error">${esc(message)}</p>
