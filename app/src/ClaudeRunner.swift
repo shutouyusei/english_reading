@@ -6,7 +6,17 @@ enum ClaudeRunnerError: Error {
     case launchFailed(String)
     case timedOut(seconds: Int)
     case claudeReportedError(String)
-    case unreadableOutput
+    /// stage: どちらの JSON を読もうとして失敗したか。
+    /// excerpt: 読み取れなかった文字列の先頭最大200文字(診断用)。
+    case unreadableOutput(stage: UnreadableStage, excerpt: String)
+
+    /// unreadableOutput の失敗箇所を区別する。
+    /// 外側(Claude Code のラッパー自体)と内側(result 文字列の中身)は
+    /// 原因がまったく異なるため、まとめて捨てずに区別できるようにしておく。
+    enum UnreadableStage {
+        case outerWrapper
+        case innerResult
+    }
 }
 
 extension ClaudeRunnerError {
@@ -22,8 +32,12 @@ extension ClaudeRunnerError {
         case .claudeReportedError(let detail):
             return "Claude Code がエラーを返しました。ターミナルで claude を実行して"
                  + "ログイン状態を確認してください。(\(detail))"
-        case .unreadableOutput:
-            return "採点結果を読み取れませんでした。もう一度お試しください。"
+        case .unreadableOutput(let stage, let excerpt):
+            let stageDescription = stage == .outerWrapper
+                ? "Claude Code からの応答全体"
+                : "採点結果の JSON 部分"
+            return "採点結果を読み取れませんでした(\(stageDescription)を JSON として解釈できません: "
+                 + "\(excerpt))。もう一度お試しください。"
         }
     }
 }
@@ -87,28 +101,53 @@ func splitPromptFile(_ text: String) -> (system: String, user: String)? {
 }
 
 /// {{key}} を values の値で置き換える。
-/// 値が無いまま残った {{...}} は消す。埋まらなかった項目をプロンプトに漏らさないため。
+/// 値の無いプレースホルダはテンプレート側であらかじめ取り除く。置換が終わった
+/// 後の文字列(エッセイなど利用者の入力を含みうる)に正規表現を掛けると、
+/// 本文中にたまたま {{...}} 形の文字列が含まれていた場合に生徒の回答を
+/// 無断で書き換えてしまうため、対象を置換前のテンプレートだけに限定する。
 func renderTemplate(_ template: String, values: [String: String]) -> String {
-    var result = template
+    let strippedTemplate = removeUnresolvedPlaceholders(from: template, knownKeys: Set(values.keys))
+    var result = strippedTemplate
     for (key, value) in values {
         result = result.replacingOccurrences(of: "{{\(key)}}", with: value)
     }
-    return result.replacingOccurrences(
-        of: "\\{\\{[A-Za-z_]+\\}\\}", with: "", options: .regularExpression)
+    return result
+}
+
+/// テンプレート中の {{key}} のうち、values に用意されていないものだけを取り除く。
+private func removeUnresolvedPlaceholders(from template: String, knownKeys: Set<String>) -> String {
+    guard let regex = try? NSRegularExpression(pattern: "\\{\\{([A-Za-z_]+)\\}\\}") else {
+        return template
+    }
+    let nsTemplate = template as NSString
+    let matches = regex.matches(in: template, range: NSRange(location: 0, length: nsTemplate.length))
+    var result = template
+    // 後ろから消していけば、まだ処理していない前方のマッチ範囲がずれない。
+    for match in matches.reversed() {
+        let key = nsTemplate.substring(with: match.range(at: 1))
+        guard !knownKeys.contains(key) else { continue }
+        if let range = Range(match.range(at: 0), in: result) {
+            result.removeSubrange(range)
+        }
+    }
+    return result
 }
 
 /// claude --output-format json の出力から採点結果を取り出す。
 /// 外側は Claude Code のラッパー。内側の result 文字列が採点結果の JSON。
 func extractGradeJSON(fromWrapper data: Data) -> Result<[String: Any], ClaudeRunnerError> {
     guard let wrapper = (try? JSONSerialization.jsonObject(with: data)) as? [String: Any] else {
-        return .failure(.unreadableOutput)
+        let excerpt = String(data: data, encoding: .utf8) ?? "(UTF-8として読めないデータ)"
+        return .failure(.unreadableOutput(stage: .outerWrapper, excerpt: String(excerpt.prefix(200))))
     }
     if let isError = wrapper["is_error"] as? Bool, isError {
         return .failure(.claudeReportedError((wrapper["result"] as? String) ?? "詳細不明"))
     }
-    guard let body = wrapper["result"] as? String,
-          let grade = parseGradeBody(body) else {
-        return .failure(.unreadableOutput)
+    guard let body = wrapper["result"] as? String else {
+        return .failure(.unreadableOutput(stage: .innerResult, excerpt: "result フィールドが文字列ではない"))
+    }
+    guard let grade = parseGradeBody(body) else {
+        return .failure(.unreadableOutput(stage: .innerResult, excerpt: String(body.prefix(200))))
     }
     return .success(grade)
 }
@@ -160,12 +199,31 @@ func runClaude(binary: String, systemPrompt: String, userPrompt: String,
         lock.lock(); stderrData.append(chunk); lock.unlock()
     }
 
+    // 読み出しハンドラを止め、パイプに残っているデータを回収する。
+    // GCD の読み出しソースは readabilityHandler を nil にするまで生き続け、
+    // EOF 後も発火しうる。パイプ・バッファ・プロセスを握ったまま残ってしまうため、
+    // この関数を抜けるどの経路でも必ずこれを通す。
+    func stopReadingAndDrain() -> (stdout: Data, stderr: String) {
+        stdoutPipe.fileHandleForReading.readabilityHandler = nil
+        stderrPipe.fileHandleForReading.readabilityHandler = nil
+        let stdoutTail = stdoutPipe.fileHandleForReading.readDataToEndOfFile()
+        let stderrTail = stderrPipe.fileHandleForReading.readDataToEndOfFile()
+        lock.lock()
+        stdoutData.append(stdoutTail)
+        stderrData.append(stderrTail)
+        let output = stdoutData
+        let errorText = String(data: stderrData, encoding: .utf8) ?? ""
+        lock.unlock()
+        return (output, errorText)
+    }
+
     let finished = DispatchSemaphore(value: 0)
     process.terminationHandler = { _ in finished.signal() }
 
     do {
         try process.run()
     } catch {
+        _ = stopReadingAndDrain()
         return .failure(.launchFailed(error.localizedDescription))
     }
 
@@ -173,18 +231,19 @@ func runClaude(binary: String, systemPrompt: String, userPrompt: String,
     try? stdinPipe.fileHandleForWriting.close()
 
     if finished.wait(timeout: .now() + .seconds(timeoutSeconds)) == .timedOut {
+        // SIGTERM でまず止める。短い猶予の後もまだ生きていたら SIGKILL で確実に刈り取る。
+        // ここで待たずに返すと子プロセスがゾンビのまま残り、読み出しソースも
+        // プロセスの生死と無関係にアプリの寿命いっぱい生き残ってしまう。
         process.terminate()
+        if finished.wait(timeout: .now() + .seconds(2)) == .timedOut {
+            kill(process.processIdentifier, SIGKILL)
+            _ = finished.wait(timeout: .now() + .seconds(5))
+        }
+        _ = stopReadingAndDrain()
         return .failure(.timedOut(seconds: timeoutSeconds))
     }
 
-    stdoutPipe.fileHandleForReading.readabilityHandler = nil
-    stderrPipe.fileHandleForReading.readabilityHandler = nil
-    let tail = stdoutPipe.fileHandleForReading.readDataToEndOfFile()
-    lock.lock()
-    stdoutData.append(tail)
-    let output = stdoutData
-    let errorText = String(data: stderrData, encoding: .utf8) ?? ""
-    lock.unlock()
+    let (output, errorText) = stopReadingAndDrain()
 
     if process.terminationStatus != 0 {
         let detail = errorText.isEmpty

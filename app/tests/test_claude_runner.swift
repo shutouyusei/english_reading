@@ -107,6 +107,15 @@ struct TestClaudeRunner {
         let leftover = renderTemplate("keep {{known}} drop {{unknown}}",
                                       values: ["known": "X"])
         check("値の無いプレースホルダは消える", leftover == "keep X drop ", leftover)
+
+        // 回帰テスト: 生徒のエッセイ本文に {{...}} 形の文字列が含まれていても、
+        // それはテンプレートではなく置換された「値」なので消してはならない。
+        let essayWithBraces = renderTemplate(
+            "ESSAY:\n{{essay}}",
+            values: ["essay": "I wrote {{example}} on the board by mistake."])
+        check("エッセイ本文中の {{...}} 風の文字列は消されずに残る",
+              essayWithBraces == "ESSAY:\nI wrote {{example}} on the board by mistake.",
+              essayWithBraces)
     }
 
     static func testExtraction() {
@@ -136,16 +145,20 @@ struct TestClaudeRunner {
 
         let notJSON = #"{"result":"I cannot do that.","is_error":false}"#
         if case .failure(let error) = extractGradeJSON(fromWrapper: Data(notJSON.utf8)),
-           case .unreadableOutput = error {
-            check("内側が JSON でなければ unreadableOutput", true)
+           case .unreadableOutput(let stage, let excerpt) = error {
+            check("内側が JSON でなければ unreadableOutput(innerResult)",
+                  stage == .innerResult, "\(stage) excerpt=\(excerpt)")
         } else {
-            check("内側が JSON でなければ unreadableOutput", false)
+            check("内側が JSON でなければ unreadableOutput(innerResult)", false)
         }
 
-        if case .failure = extractGradeJSON(fromWrapper: Data("not json at all".utf8)) {
-            check("外側が JSON でなければ失敗する", true)
+        if case .failure(let error) = extractGradeJSON(fromWrapper: Data("not json at all".utf8)),
+           case .unreadableOutput(let stage, let excerpt) = error {
+            check("外側が JSON でなければ unreadableOutput(outerWrapper)",
+                  stage == .outerWrapper && excerpt == "not json at all",
+                  "\(stage) excerpt=\(excerpt)")
         } else {
-            check("外側が JSON でなければ失敗する", false)
+            check("外側が JSON でなければ unreadableOutput(outerWrapper)", false)
         }
 
         check("すべてのエラーに日本語の説明がある",
@@ -153,6 +166,8 @@ struct TestClaudeRunner {
                .launchFailed("x"),
                .timedOut(seconds: 180),
                .claudeReportedError("x"),
-               .unreadableOutput].allSatisfy { !$0.japaneseMessage.isEmpty })
+               .unreadableOutput(stage: .outerWrapper, excerpt: "x"),
+               .unreadableOutput(stage: .innerResult, excerpt: "x")]
+                .allSatisfy { !$0.japaneseMessage.isEmpty })
     }
 }
