@@ -2,29 +2,28 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>TOEFL Reading</title>
+  <title>ライティング — TOEFL Reading</title>
   <link rel="stylesheet" href="../../docs/css/style.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html">📖 TOEFL Reading</a>
-    <span>ローカル版</span>
+    <span>✍️ ライティング</span>
   </header>
   <main class="page">
-    <p class="card-actions"><a class="button" href="writing.html">✍️ ライティングへ</a></p>
-    <p>解いた記録は <code>~/Documents/TOEFLReading/attempts.jsonl</code> に追記されます。</p>
-    <div id="passage-list"><p class="hint">読み込み中…</p></div>
+    <p>書いた文章と採点結果は <code>~/Documents/TOEFLReading/essays.jsonl</code> に追記されます。</p>
+    <div id="writing-list"><p class="hint">読み込み中…</p></div>
   </main>
   <footer class="site-footer">
     <p>⚠️ コンテンツは全てAI生成です ・ 作成者は英語の専門家ではありません ・ ETSおよびTOEFLとは無関係の非公式教材です</p>
   </footer>
-  <script src="../../docs/js/textmatch.js"></script>
   <script src="../../docs/js/footer.js"></script>
-  <script src="js/store.native.js"></script>
+  <script src="js/escape.js"></script>
+  <script src="js/essays.native.js"></script>
   <script>
-    window.READER_URL = "reader.html";
+    window.EDITOR_URL = "writing-editor.html";
     window.DATA_BASE = "../../docs/";
   </script>
-  <script src="../../docs/js/app.js"></script>
+  <script src="js/writing-list.js"></script>
 </body>
 </html>

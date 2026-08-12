@@ -98,6 +98,8 @@ final class SmokeDelegate: NSObject, NSApplicationDelegate {
         configuration.setURLSchemeHandler(handler, forURLScheme: "app")
         configuration.userContentController.addScriptMessageHandler(
             store, contentWorld: .page, name: "store")
+        configuration.userContentController.addScriptMessageHandler(
+            store, contentWorld: .page, name: "essays")
 
         webView = WKWebView(frame: NSRect(x: 0, y: 0, width: 1200, height: 800),
                             configuration: configuration)
@@ -106,7 +108,7 @@ final class SmokeDelegate: NSObject, NSApplicationDelegate {
         // 読み込み完了を待ってから確認する
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) { self.verify() }
         // 何かが固まっても試験が終わらなくならないようにする
-        DispatchQueue.main.asyncAfter(deadline: .now() + 25) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 40) {
             print("FAIL - 制限時間内に完了しなかった")
             exit(1)
         }
@@ -138,10 +140,37 @@ final class SmokeDelegate: NSObject, NSApplicationDelegate {
                     check("index.json がスキーム経由で配信された",
                           self.handler.servedPaths.contains("/docs/data/index.json"),
                           self.handler.servedPaths.joined(separator: ", "))
-                    exit(failures == 0 ? 0 : 1)
+                    self.verifyWritingList()
                 }
             }
         }
+    }
+
+    /// ライティング一覧が描画されるかを、同じ WebView で続けて確かめる。
+    private func verifyWritingList() {
+        let expected = writingPromptCountOnDisk()
+        webView.load(URLRequest(url: URL(string: "app://local/app/ui/writing.html")!))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            self.webView.evaluateJavaScript("document.querySelectorAll('.card').length") { result, error in
+                let count = (result as? Int) ?? -1
+                check("ライティング一覧のカードが描画される", count > 0,
+                      "カード数=\(count) error=\(error?.localizedDescription ?? "なし")")
+                check("ライティングのカード数がディスク上の問題数と一致する", count == expected,
+                      "描画=\(count) ディスク=\(expected)")
+                check("ライティングの index.json がスキーム経由で配信された",
+                      self.handler.servedPaths.contains("/docs/data/writing/index.json"),
+                      self.handler.servedPaths.joined(separator: ", "))
+                exit(failures == 0 ? 0 : 1)
+            }
+        }
+    }
+
+    private func writingPromptCountOnDisk() -> Int {
+        let indexPath = repoRoot.appendingPathComponent("docs/data/writing/index.json")
+        guard let data = try? Data(contentsOf: indexPath),
+              let object = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let prompts = object["prompts"] as? [[String: Any]] else { return -1 }
+        return prompts.count
     }
 
     private func passageCountOnDisk() -> Int {
