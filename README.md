@@ -58,6 +58,36 @@ open app/build/TOEFLReading.app
 
 公開版(GitHub Pages)はリーディングのみで、保存はブラウザ内にとどまる。
 
+## ライティング
+
+ローカルアプリのみ。メール問題(TOEFL Essentials型。状況を読んで、相手への返信を
+6〜10文字で書く)と学術ディスカッション問題(教授の投稿 + 2人の学生の返信があり、
+自分の意見を加える)の2形式。
+
+採点は Claude Code 付属の `claude` CLI を経由する。Anthropic APIキーは不要。
+Claude Code がインストール・ログイン済みなら、ローカルアプリから採点ボタンで
+自動起動。採点にかかる時間は**16〜22秒**が中央値だが、120秒以上かかることと、
+通信失敗が稀に起こるため、UI ではエッセイを採点前に保存し、失敗時には
+再採点できる画面を出す。
+
+エッセイはディスク上に以下のパスで**追記**のみされる。再採点も別行として
+追記される。`gradedAt` の値で最新の採点が判定される:
+
+```
+~/Documents/TOEFLReading/essays.jsonl
+```
+
+問題を追加するには、Claude Code で `/new-writing` を実行。データは
+`docs/data/writing/` に保存され、ローカルアプリが再ビルド無しで読み込む。
+
+`claude` コマンドが PATH に無い環境(Finder から起動した `.app` が
+`/usr/bin:/bin:/usr/sbin:/sbin` のみを見る場合など)では、環境変数
+`TOEFL_CLAUDE_BIN` に full path を設定して起動する:
+
+```bash
+TOEFL_CLAUDE_BIN=/path/to/claude open app/build/TOEFLReading.app
+```
+
 ## テスト
 
 ```bash
