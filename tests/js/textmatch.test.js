@@ -1,7 +1,7 @@
 "use strict";
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { candidates, findVocabKey, tokenize, escapeHtml } =
+const { candidates, findVocabKey, tokenize } =
   require("../../docs/js/textmatch.js");
 
 test("candidates lowers case and strips naive suffixes", () => {
@@ -24,9 +24,4 @@ test("tokenize preserves every character and flags words", () => {
     parts.filter((p) => p.isWord).map((p) => p.text),
     ["Coral", "reefs", "and", "algae"]
   );
-});
-
-test("escapeHtml escapes special characters", () => {
-  assert.equal(escapeHtml('<b>"A" & \'B\'</b>'),
-    "&lt;b&gt;&quot;A&quot; &amp; &#39;B&#39;&lt;/b&gt;");
 });

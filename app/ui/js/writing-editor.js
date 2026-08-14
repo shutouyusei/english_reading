@@ -270,7 +270,7 @@ function showError(essay, message) {
     .addEventListener("click", () => runGrading(essay));
 }
 
-// HTML エスケープは app/ui/js/escape.js の window.escapeText を使う。
-const esc = (text) => escapeText(text);
+// HTML エスケープは docs/js/escape.js の escapeHtml を使う。
+const esc = (text) => escapeHtml(text);
 
 document.addEventListener("DOMContentLoaded", initEditor);

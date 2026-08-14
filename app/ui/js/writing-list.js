@@ -18,7 +18,7 @@ async function initWritingList() {
     index = await res.json();
   } catch (err) {
     container.innerHTML =
-      `<p class="error">一覧を読み込めませんでした(${escapeText(err.message)})。</p>`;
+      `<p class="error">一覧を読み込めませんでした(${escapeHtml(err.message)})。</p>`;
     return;
   }
 
@@ -35,7 +35,7 @@ function promptCardHtml(meta) {
   return `
     <div class="card">
       <div class="card-main">
-        <h3>${escapeText(meta.title)}</h3>
+        <h3>${escapeHtml(meta.title)}</h3>
         <p class="meta">${TYPE_LABELS[meta.type] || meta.type} ・ 目安 ${meta.target_minutes} 分 ・ ${meta.added} ${badgeHtml(entry, entries.length)}</p>
       </div>
       <div class="card-actions">
@@ -57,7 +57,7 @@ function pastAttemptsHtml(entries) {
 }
 
 function attemptRowHtml(entry) {
-  const date = escapeText(String(entry.essay.writtenAt).slice(0, 10));
+  const date = escapeHtml(String(entry.essay.writtenAt).slice(0, 10));
   return `<li class="meta">${date} ・ ${attemptScoreLabel(entry.grade)} ・ ${attemptElapsedLabel(entry.essay)}</li>`;
 }
 
@@ -69,7 +69,7 @@ function attemptScoreLabel(grade) {
   if (typeof overall !== "number" || !Number.isFinite(overall) || overall < 0 || overall > 5) {
     return "⏳ 採点待ち";
   }
-  return `${escapeText(overall)}/5`;
+  return `${escapeHtml(overall)}/5`;
 }
 
 function attemptElapsedLabel(essay) {
@@ -89,7 +89,7 @@ function badgeHtml(entry, attempts) {
   if (typeof overall !== "number" || !Number.isFinite(overall) || overall < 0 || overall > 5) {
     return `<span class="badge">⏳ 採点待ち${count}</span>`;
   }
-  return `<span class="badge done">✅ ${escapeText(overall)}/5${count}</span>`;
+  return `<span class="badge done">✅ ${escapeHtml(overall)}/5${count}</span>`;
 }
 
 document.addEventListener("DOMContentLoaded", initWritingList);

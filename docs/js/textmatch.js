@@ -42,12 +42,6 @@ function tokenize(text) {
   return parts;
 }
 
-function escapeHtml(text) {
-  return String(text).replace(/[&<>"']/g, (ch) => (
-    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]
-  ));
-}
-
 if (typeof module !== "undefined") {
-  module.exports = { candidates, findVocabKey, tokenize, escapeHtml };
+  module.exports = { candidates, findVocabKey, tokenize };
 }
