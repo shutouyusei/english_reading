@@ -11,6 +11,57 @@ func check(_ name: String, _ condition: Bool) {
     }
 }
 
+/// JSONLinesFile はファイルへ実際に書くため、使い捨てのディレクトリを1つ作って
+/// その中だけで確かめる。既存の学習ログには触れない。
+func testJSONLinesFile() {
+    let tempDir = URL(fileURLWithPath: NSTemporaryDirectory())
+        .appendingPathComponent("jsonl-test-\(UUID().uuidString)")
+    defer { try? FileManager.default.removeItem(at: tempDir) }
+
+    let log = JSONLinesFile(directory: tempDir, filename: "rows.jsonl")
+
+    check("ファイルがまだ無いときは空配列を返す", log.loadAll().isEmpty)
+
+    do {
+        try log.append(["id": "a", "score": 1])
+    } catch {
+        check("1行目を書ける(ファイルが無い状態から)", false)
+        return
+    }
+    let afterFirst = log.loadAll()
+    check("1行目を書ける(ファイルが無い状態から)",
+          afterFirst.count == 1 && afterFirst.first?["id"] as? String == "a")
+
+    // 核心: 2行目を足しても1行目が消えない(追記であって上書きではない)。
+    do {
+        try log.append(["id": "b", "score": 2])
+        try log.append(["id": "c", "score": 3])
+    } catch {
+        check("既存ファイルの末尾に追記できる", false)
+        return
+    }
+    let afterThird = log.loadAll()
+    check("既存ファイルの末尾に追記できる",
+          afterThird.count == 3 &&
+          afterThird.map { $0["id"] as? String } == ["a", "b", "c"])
+
+    // 各行が改行で区切られていること。区切りが無いと次回の読み出しで1行に潰れる。
+    let raw = (try? String(contentsOf: tempDir.appendingPathComponent("rows.jsonl"),
+                           encoding: .utf8)) ?? ""
+    check("各行が改行で終わっている",
+          raw.hasSuffix("\n") && raw.split(separator: "\n").count == 3)
+
+    // 保存先ディレクトリがまだ無くても、初回の append で作られる。
+    let nestedDir = tempDir.appendingPathComponent("not-created-yet")
+    let nested = JSONLinesFile(directory: nestedDir, filename: "rows.jsonl")
+    do {
+        try nested.append(["id": "z"])
+        check("保存先ディレクトリが無くても書ける", nested.loadAll().count == 1)
+    } catch {
+        check("保存先ディレクトリが無くても書ける", false)
+    }
+}
+
 @main
 struct TestJSONLinesLog {
     static func main() {
@@ -58,6 +109,8 @@ struct TestJSONLinesLog {
               mixedResult.count == 2 &&
               mixedResult.first?["kind"] as? String == "essay" &&
               mixedResult.last?["kind"] as? String == "grade")
+
+        testJSONLinesFile()
 
         exit(failures == 0 ? 0 : 1)
     }
