@@ -13,8 +13,20 @@ description: TOEFLライティングの問題を1問生成して docs/data/writi
    `docs/superpowers/specs/2026-08-11-writing-design.md` の「問題データ」節に従う。
    - `email`: `situation` / `recipient` は必須の非空文字列、`must_include` は非空文字列の非空リスト。`discussion` は null
    - `discussion`: `situation` / `recipient` / `must_include` は null にし、`discussion.student_posts` はちょうど2件
-   - 日本語は `must_include` の項目のみ。それ以外は全て英語（人名・地名・教授名を含む全ての名前も英語）
+   - **全て英語で書く。** 人名・地名・会社名も英語。日本語は使わない
    - `target_minutes` は email なら 7、discussion なら 10
+
+   **分量と形の目安**(`writing_001` / `writing_002` を手本にすること):
+
+   - `email` の `situation` は **40〜60 words、3〜4文**に抑える。日常で起きうる具体的な出来事を1つだけ書く
+     (例: 借りたレンタカーで、断ったはずの保険が請求に入っていた)。背景説明を盛らない
+   - `must_include` は **3項目**。動詞で始まる短い命令形にする
+     (`explain what happened…` / `state what you would like…` / `ask when…`)。
+     採点プロンプトにそのまま埋め込まれるので、採点の観点として読める表現にする
+   - `discussion` は逆に読み応えを持たせる。`professor_post` は **150〜200 words**
+     で、具体例と対立する2つの立場の両方に触れ、最後に問いを置く。
+     `student_posts` は各 **120〜150 words** で、片方がもう片方に言及して噛み合わせる。
+     短い相槌ではなく、それぞれが独立した主張になっていること
 5. 検証する: `python3 scripts/validate_writing.py docs/data/writing/writing_NNN.json`
    エラーが出たら直してから次へ進む。
 6. 一覧を更新する: `python3 scripts/update_writing_index.py`

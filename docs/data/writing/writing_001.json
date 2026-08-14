@@ -1,16 +1,16 @@
 {
   "id": "writing_001",
   "type": "email",
-  "title": "Midterm rescheduled to Saturday",
+  "title": "A charge you did not agree to",
   "added": "2026-08-11",
   "target_minutes": 7,
-  "instructions": "Read the situation and write an email to the person indicated. Your email should be 6-10 sentences. Use an appropriate level of politeness.",
-  "situation": "Your professor has announced that next week's midterm exam will be moved from Thursday afternoon to Saturday morning. You work a fixed shift every Saturday morning and cannot change it on short notice. You would like to take the exam at a different time.",
-  "recipient": "Professor Alvarez",
+  "instructions": "Read the situation and write an email to the person or company indicated. Your email should be 6-10 sentences. Use an appropriate level of politeness.",
+  "situation": "Last month you rented a car from Coastal Auto Rentals for a weekend trip. The trip itself went well. However, when you collected the car, the staff added an insurance option that you had already declined when you booked online, and it appears on your final bill.",
+  "recipient": "Coastal Auto Rentals customer service",
   "must_include": [
-    "土曜日に受験できない理由",
-    "代替日程の具体的な提案",
-    "丁寧な依頼の表現"
+    "explain what happened when you collected the car",
+    "state what you would like the company to do",
+    "ask when you can expect a reply"
   ],
   "discussion": null
 }

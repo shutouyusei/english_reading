@@ -4,23 +4,23 @@
   "title": "Should cities restrict private cars downtown?",
   "added": "2026-08-11",
   "target_minutes": 10,
-  "instructions": "Your professor has posted a question and two classmates have replied. Write a response that contributes something new to the discussion. Aim for at least 100 words. State a clear position and support it.",
+  "instructions": "Your professor has posted a question and two classmates have replied. Write a response that contributes something new to the discussion. Aim for at least 100 words. State a clear position and support it with reasons or examples.",
   "situation": null,
   "recipient": null,
   "must_include": null,
   "discussion": {
     "professor_post": {
       "name": "Dr. Chen",
-      "text": "Several European cities have restricted or banned private cars in their downtown cores, citing air quality and pedestrian safety. Critics argue that such policies burden people who depend on cars for work or family obligations. In your view, should cities restrict private cars downtown? Explain your reasoning."
+      "text": "Over the past decade a number of European cities have restricted or banned private cars in their downtown cores. Oslo removed most street parking from its centre; Madrid limited entry to residents and delivery vehicles; Ghent redrew its street network so that driving across the centre became impractical. Supporters point to measurable gains: cleaner air, fewer pedestrian injuries, and busier shops on streets that were previously given over to parking. Critics answer that these policies shift the burden onto people who have the least room to adapt — shift workers, tradespeople carrying equipment, families with young children, and anyone whose disability makes public transport difficult. They also note that the retail gains often benefit chain stores that can absorb a transition period, while small businesses that depend on customers driving in do not survive it. For this week's discussion: should cities restrict private cars in their downtown areas? Take a clear position and explain your reasoning. If you support restrictions, say what a city owes the people the policy makes worse off. If you oppose them, say what you would do instead about air quality and pedestrian safety."
     },
     "student_posts": [
       {
         "name": "Marcus",
-        "text": "Restrictions are the only measure that has actually worked. Incentives like cheaper transit tickets have been tried for decades and car traffic kept rising. If we are serious about air quality, we have to make driving downtown genuinely inconvenient."
+        "text": "I think restrictions are the only measure that has actually been shown to work. Cities have spent forty years trying to persuade drivers out of their cars with cheaper transit fares, park-and-ride schemes and public information campaigns, and traffic volumes kept rising anyway. The pattern is consistent: as long as driving downtown remains convenient, people drive downtown. Oslo did not reduce car traffic by asking nicely — it removed the parking spaces, and the traffic followed. I would also push back on the idea that this is unfair to ordinary people. Car ownership rises with income almost everywhere, so a policy that inconveniences drivers is not, on average, a policy that targets the poor. The people who suffer most from downtown traffic are the ones breathing it on the pavement."
       },
       {
         "name": "Priya",
-        "text": "Marcus overlooks the people who have no realistic alternative. A nurse finishing a night shift at 3 a.m. cannot wait for a bus that does not run. Before restricting cars, a city has to prove its transit system covers those hours and those routes."
+        "text": "Marcus is right that incentives alone have failed, but I think he moves too quickly past who actually gets hurt. A nurse finishing a shift at three in the morning cannot wait for a bus that stopped running at midnight. A plumber cannot carry a day's tools onto a tram. Someone with a mobility impairment may find the nearest accessible station is a kilometre from where they need to be. These are not edge cases; in most cities they add up to a substantial minority. My position is that restrictions can be justified, but only after a city has demonstrated that the alternative genuinely covers those hours and those routes — not on paper, but measured. Ghent rebuilt its bus network first and then restricted cars. Doing it in the other order is how you lose public support for a policy that might have worked."
       }
     ]
   }
