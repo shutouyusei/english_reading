@@ -110,6 +110,13 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
   color: var(--muted); margin-top: 10px;
 }
 .word { margin: 0 0 6px; font-size: 1.2em; }
+/* システム辞書の本文。改行と発音記号をそのまま活かす。
+   語によっては1800字を超えるため、パネル全体を押し下げないよう高さを止める。 */
+.dict-text {
+  white-space: pre-wrap;
+  max-height: 16em; overflow-y: auto;
+  border-left: 2px solid var(--border); padding-left: 10px;
+}
 .btn-row { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
 .hint { color: var(--muted); font-size: .85em; }
 .error { color: var(--danger); padding: 20px; }

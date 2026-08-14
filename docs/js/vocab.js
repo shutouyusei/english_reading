@@ -75,9 +75,11 @@ function renderVocabTab(passage) {
   if (!entry) {
     body.innerHTML = `
       <h3 class="word">${escapeHtml(word)}</h3>
-      <p>未収録の単語です。</p>
+      <div id="dict-body"><p class="hint">辞書を調べています…</p></div>
       <p><a href="${weblio}" target="_blank" rel="noopener">Weblioで調べる ↗</a></p>
       ${historyHtml()}`;
+    // 収録語でなければ辞書が最後の頼み。引けなければ従来どおりの案内に戻す。
+    fillDictionary(word, `<p>未収録の単語です。</p>`);
     return;
   }
   body.innerHTML = `
@@ -86,6 +88,7 @@ function renderVocabTab(passage) {
     <div class="label">定義</div><p>${escapeHtml(entry.definition)}</p>
     <div class="label">この文章での役割</div><p>${escapeHtml(entry.usage_in_passage)}</p>
     <div class="label">関連語</div><p>${entry.related_terms.map(escapeHtml).join(" ・ ")}</p>
+    <div id="dict-body"></div>
     <div class="btn-row">
       <button id="anki-add" class="anki">＋ Ankiに追加</button>
       <a class="button" href="${weblio}" target="_blank" rel="noopener">Weblio ↗</a>
@@ -95,6 +98,34 @@ function renderVocabTab(passage) {
     ${historyHtml()}`;
   qs("#anki-add").addEventListener("click", () => addToAnki(passage, word, entry));
   qs("#anki-settings-open").addEventListener("click", () => openAnkiSettings());
+  // 収録語には既に解説がある。辞書は引けたときだけ足す。
+  fillDictionary(word, "");
+}
+
+/* ---------- システム辞書(アプリ版のみ) ---------- */
+
+/// 辞書引きは Swift 側への往復があるため、枠だけ先に出して後から埋める。
+/// 引けなかったときは emptyHtml に差し替える。
+async function fillDictionary(word, emptyHtml) {
+  let result = null;
+  try {
+    result = await Dict.define(word);
+  } catch (err) {
+    // 辞書層そのものが読み込めていない場合もここに来る。
+    // 黙って諦めないと「調べています…」の表示が残り続ける。
+    console.warn("辞書を引けませんでした:", err);
+  }
+  // 待っている間に別の語へ移っていたら、古い結果を書き込まない
+  if (studyState.selectedWord !== word || studyState.activeTab !== "vocab") return;
+  const target = qs("#dict-body");
+  if (!target) return;
+  target.innerHTML = result ? dictionaryHtml(result) : emptyHtml;
+}
+
+function dictionaryHtml(result) {
+  const source = result.source ? `（${escapeHtml(result.source)}）` : "";
+  return `<div class="label">辞書${source}</div>` +
+    `<p class="dict-text">${escapeHtml(result.definition)}</p>`;
 }
 
 function historyHtml() {

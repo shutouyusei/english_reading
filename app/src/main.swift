@@ -47,7 +47,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
-    /// app:// の配信と、JS から呼べる3つの窓口(store / essays / grader)を繋ぐ。
+    /// app:// の配信と、JS から呼べる4つの窓口(store / essays / grader / dictionary)を繋ぐ。
     private func makeConfiguration(root: URL, dataDir: URL) -> WKWebViewConfiguration {
         let configuration = WKWebViewConfiguration()
         configuration.setURLSchemeHandler(ContentSchemeHandler(root: root), forURLScheme: "app")
@@ -57,6 +57,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             EssaysHandler(dataDir: dataDir), contentWorld: .page, name: "essays")
         configuration.userContentController.addScriptMessageHandler(
             GradeHandler(root: root), contentWorld: .page, name: "grader")
+        // 辞書はアプリ版だけの機能。公開サイト側は dict.web.js が常に null を返す。
+        configuration.userContentController.addScriptMessageHandler(
+            DictionaryHandler(), contentWorld: .page, name: "dictionary")
         return configuration
     }
 

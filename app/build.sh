@@ -25,7 +25,9 @@ PLIST
 
 swiftc -O app/src/PathResolver.swift app/src/JSONLinesLog.swift \
   app/src/ClaudeRunner.swift app/src/ContentSchemeHandler.swift \
-  app/src/LogHandlers.swift app/src/GradeHandler.swift app/src/main.swift \
+  app/src/LogHandlers.swift app/src/GradeHandler.swift \
+  app/src/SystemDictionary.swift app/src/DictionaryHandler.swift \
+  app/src/main.swift \
   -o "$APP/Contents/MacOS/TOEFLReading"
 
 echo "ビルド完了: $APP"

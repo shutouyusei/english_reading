@@ -16,6 +16,17 @@ CLAUDE_RUNNER_OUT="$TMP/test_claude_runner"
 swiftc -O app/src/ClaudeRunner.swift app/tests/test_claude_runner.swift -o "$CLAUDE_RUNNER_OUT"
 "$CLAUDE_RUNNER_OUT"
 
+SYSTEM_DICTIONARY_OUT="$TMP/test_system_dictionary"
+swiftc -O app/src/SystemDictionary.swift app/tests/test_system_dictionary.swift \
+  -o "$SYSTEM_DICTIONARY_OUT"
+"$SYSTEM_DICTIONARY_OUT"
+
+# JS から Swift の辞書引きまでを WKWebView 越しに通す。
+DICTIONARY_HANDLER_OUT="$TMP/test_dictionary_handler"
+swiftc -O app/src/SystemDictionary.swift app/src/DictionaryHandler.swift \
+  app/tests/test_dictionary_handler.swift -o "$DICTIONARY_HANDLER_OUT"
+"$DICTIONARY_HANDLER_OUT"
+
 # 起動から一覧描画までの通し確認。WKWebView を実際に動かすため単体テストより遅い。
 SMOKE_OUT="$TMP/test_smoke_app"
 swiftc -O app/src/PathResolver.swift app/tests/test_smoke_app.swift -o "$SMOKE_OUT"
