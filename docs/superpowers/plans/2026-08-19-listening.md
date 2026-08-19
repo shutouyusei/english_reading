@@ -2696,7 +2696,6 @@ MSG
 
 **Files:**
 - Modify: `README.md`
-- Create: `docs/superpowers/plans/2026-08-19-listening-verification.md`(確認結果の記録)
 
 **Interfaces:**
 - Consumes: これまでのすべて
