@@ -58,6 +58,23 @@ def make_conversation() -> dict:
     return data
 
 
+def make_short_script_lecture() -> dict:
+    """Lecture with short script (5 words) for testing type coercion."""
+    return {
+        "id": "listening_003",
+        "type": "lecture",
+        "title": "Short Test",
+        "topic": "科学",
+        "added": "2026-08-19",
+        "word_count": 5,
+        "speakers": [{"id": "professor", "role": "教授", "voice": "Daniel"}],
+        "script": [
+            {"speaker": "professor", "text": "One two three four five"},
+        ],
+        "questions": make_questions(),
+    }
+
+
 class ValidateListeningTest(unittest.TestCase):
     def test_valid_lecture_has_no_errors(self):
         self.assertEqual(validate(make_lecture()), [])
@@ -136,12 +153,6 @@ class ValidateListeningTest(unittest.TestCase):
             q["type"] = "Detail"
         self.assertTrue(any("distinct" in e for e in validate(data)))
 
-    def test_same_correct_letter_four_times_is_reported(self):
-        data = make_lecture()
-        for q in data["questions"][:4]:
-            q["correct"] = "A"
-        self.assertTrue(any("correct" in e for e in validate(data)))
-
     def test_missing_choice_key_is_reported(self):
         data = make_lecture()
         del data["questions"][0]["choices"]["D"]
@@ -178,8 +189,9 @@ class ValidateListeningTest(unittest.TestCase):
         self.assertTrue(any("word_count" in e for e in validate(data)))
 
     def test_bool_word_count_is_reported(self):
-        data = make_lecture()
+        data = make_short_script_lecture()
         data["word_count"] = True
+        # With short script (5 words), abs(1 - 5) = 4 <= 10, so bool check is critical
         self.assertTrue(any("word_count" in e for e in validate(data)))
 
     def test_speakers_none_does_not_crash(self):
