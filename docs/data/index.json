@@ -1,6 +1,13 @@
 {
   "passages": [
     {
+      "id": "passage_007",
+      "title": "Who Owns the Yardstick",
+      "topic": "歴史",
+      "word_count": 460,
+      "added": "2026-08-15"
+    },
+    {
       "id": "passage_006",
       "title": "How Bacteria Take a Vote",
       "topic": "科学",
