@@ -79,7 +79,14 @@ final class SpeechSynthesizer {
 
         let workDir = URL(fileURLWithPath: NSTemporaryDirectory())
             .appendingPathComponent("speech-\(UUID().uuidString)")
-        try? FileManager.default.createDirectory(at: workDir, withIntermediateDirectories: true)
+        do {
+            try FileManager.default.createDirectory(at: workDir, withIntermediateDirectories: true)
+        } catch {
+            // ここを try? で握りつぶすと、後続の say がファイルを作れず
+            // 「say がファイルを作りませんでした」という見当違いの診断になる。
+            // 本当の原因(作業用ディレクトリを作れない)をそのまま伝える。
+            throw SpeechError.cacheUnwritable(error.localizedDescription)
+        }
         defer { try? FileManager.default.removeItem(at: workDir) }
 
         var parts: [URL] = []
@@ -124,7 +131,9 @@ final class SpeechSynthesizer {
         process.arguments = ["-v", "?"]
         let pipe = Pipe()
         process.standardOutput = pipe
-        process.standardError = Pipe()
+        // 標準エラーは読まないので捨てる。Pipe() のままだと 64KB を超える書き込みで
+        // ブロックしうる。nullDevice ならその心配がない。
+        process.standardError = FileHandle.nullDevice
         guard (try? process.run()) != nil else { return [] }
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         process.waitUntilExit()
@@ -159,7 +168,8 @@ final class SpeechSynthesizer {
         ]
         let errorPipe = Pipe()
         process.standardError = errorPipe
-        process.standardOutput = Pipe()
+        // 標準出力は読まないので捨てる。理由は availableVoiceNames() と同様。
+        process.standardOutput = FileHandle.nullDevice
 
         do {
             try process.run()
@@ -185,7 +195,36 @@ final class SpeechSynthesizer {
         }
     }
 
+    /// 同期の橋渡し。AVFoundation の非推奨でない結合処理は async 版しかないため、
+    /// ここで async 処理を起こして待つ。
+    ///
+    /// `Task.detached` と、結合本体を `nonisolated` にしていることの両方が要る。
+    /// もし将来 `SpeechSynthesizer` が `@MainActor` になった場合、非 detached の
+    /// `Task { }` や actor-isolated な async 関数だと、下で `semaphore.wait()`
+    /// がメインスレッドを塞いでいる間に、その Task 自身がメインスレッドの空きを
+    /// 必要としてしまい、デッドロックする(実機で再現・検証済み)。
+    /// `Task.detached` + `nonisolated` の組み合わせは呼び出し元のアクター文脈を
+    /// 一切引き継がないため、このブロッキング待ちと衝突しない。
     private func merge(_ parts: [URL], into destination: URL) throws {
+        let semaphore = DispatchSemaphore(value: 0)
+        var outcome: SpeechError?
+        Task.detached {
+            do {
+                try await Self.mergeAsync(parts, into: destination)
+            } catch let error as SpeechError {
+                outcome = error
+            } catch {
+                outcome = .mergeFailed(error.localizedDescription)
+            }
+            semaphore.signal()
+        }
+        semaphore.wait()
+        if let outcome {
+            throw outcome
+        }
+    }
+
+    private nonisolated static func mergeAsync(_ parts: [URL], into destination: URL) async throws {
         let composition = AVMutableComposition()
         guard let track = composition.addMutableTrack(
             withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid) else {
@@ -195,32 +234,33 @@ final class SpeechSynthesizer {
         var cursor = CMTime.zero
         for part in parts {
             let asset = AVURLAsset(url: part)
-            guard let source = asset.tracks(withMediaType: .audio).first else {
-                throw SpeechError.mergeFailed("音声トラックが見つかりません: \(part.lastPathComponent)")
-            }
+            let tracks: [AVAssetTrack]
             do {
-                try track.insertTimeRange(
-                    CMTimeRange(start: .zero, duration: asset.duration), of: source, at: cursor)
+                tracks = try await asset.loadTracks(withMediaType: .audio)
             } catch {
                 throw SpeechError.mergeFailed(error.localizedDescription)
             }
-            cursor = CMTimeAdd(cursor, asset.duration)
+            guard let source = tracks.first else {
+                throw SpeechError.mergeFailed("音声トラックが見つかりません: \(part.lastPathComponent)")
+            }
+            do {
+                let duration = try await asset.load(.duration)
+                try track.insertTimeRange(
+                    CMTimeRange(start: .zero, duration: duration), of: source, at: cursor)
+                cursor = CMTimeAdd(cursor, duration)
+            } catch {
+                throw SpeechError.mergeFailed(error.localizedDescription)
+            }
         }
 
         guard let export = AVAssetExportSession(
             asset: composition, presetName: AVAssetExportPresetAppleM4A) else {
             throw SpeechError.mergeFailed("書き出しを準備できません")
         }
-        export.outputURL = destination
-        export.outputFileType = .m4a
-
-        // 書き出しは非同期。呼び出し側は同期で待つ。
-        let semaphore = DispatchSemaphore(value: 0)
-        export.exportAsynchronously { semaphore.signal() }
-        semaphore.wait()
-
-        guard export.status == .completed else {
-            throw SpeechError.mergeFailed(export.error?.localizedDescription ?? "原因不明")
+        do {
+            try await export.export(to: destination, as: .m4a)
+        } catch {
+            throw SpeechError.mergeFailed(error.localizedDescription)
         }
     }
 }

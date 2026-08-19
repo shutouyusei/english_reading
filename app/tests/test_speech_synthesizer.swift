@@ -68,6 +68,14 @@ struct TestSpeechSynthesizer {
         // 上回って「1秒あたりのバイト数」を押し上げてしまい、AAC 圧縮の
         // 検出(下の bytesPerSecond の検査)が短い音声では成立しない
         // (実測: 環境依存だが概ね32KB程度のオーバーヘッド)。
+        //
+        // もう一つ役割がある: 下の「結合後の長さが1発話より長い」検査は、
+        // singleDuration が2発話それぞれ単独の長さより長いからこそ、
+        // 結合後に一方のトラックが欠けても(=長さが2発話のどちらか単独と
+        // 同程度になっても)確実に不合格にできる。singleDuration がもし
+        // 2発話のどちらかより短いと、片方が欠落しても「単独より長い」を
+        // 満たしてしまい、結合の検査が黙って骨抜きになる。このテキストを
+        // 将来「整理」で短くする際は、この余裕(実測で約1.4秒)を保つこと。
         let single: URL
         do {
             single = try synthesizer.synthesize(
@@ -107,6 +115,8 @@ struct TestSpeechSynthesizer {
         }
         check("複数発話を結合できる", FileManager.default.fileExists(atPath: merged.path))
         let mergedDuration = durationSeconds(of: merged)
+        // single のテキスト長がここでの判別力を支えている。上の single 定義の
+        // コメントを参照。
         check("結合後の長さが1発話より長い", mergedDuration > singleDuration,
               "結合=\(mergedDuration) 単独=\(singleDuration)")
 
