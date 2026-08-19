@@ -11,14 +11,25 @@ import WebKit
 /// 数秒かかることがある(1本の台本でも実測5秒前後)。これをメインスレッドで
 /// そのまま実行すると WKWebView 全体が固まり、「音声を準備しています…」の
 /// 画面が操作不能なまま止まって見える。そこで形の検査だけをメインスレッドで
-/// 即座に行い、キャッシュ照会と synthesize は `DispatchQueue.global` の
-/// バックグラウンドキューへ渡す。Swift Concurrency の `Task` を使わないのは、
-/// `synthesize` の内部(`SpeechSynthesizer.merge`)がセマフォで待つ同期処理であり、
-/// それを協調スレッドプール上のスレッドで行うと `activeProcessorCount` を
-/// 超える同時呼び出しでスレッド枯渇に陥るため。`DispatchQueue.global` の
-/// worker スレッドは協調スレッドプールに属さないため、この崖から外れる。
+/// 即座に行い、キャッシュ照会と synthesize は専用の直列キューへ渡す。
+///
+/// 直列キューにしているのは並行性のためではなく、同じ id への同時要求を
+/// 直列化して競合を防ぐため。`SpeechSynthesizer.move` はキャッシュ先の
+/// 存在確認と削除、moveItem の3手順が別々の呼び出しで、途中に他の要求が
+/// 割り込むと「存在確認は通ったが削除前に別要求が moveItem を終えていた」
+/// という競合で `.cacheUnwritable` を誤って投げうる。`GradeHandler` も同型の
+/// 「重い処理をメインから逃がす」構造で直列キューを使っており、ここも合わせる。
+///
+/// Swift Concurrency の `Task` を使わないのは、`synthesize` の内部
+/// (`SpeechSynthesizer.merge`)がセマフォで待つ同期処理であり、それを協調
+/// スレッドプール上のスレッドで行うと `activeProcessorCount` を超える同時
+/// 呼び出しでスレッド枯渇に陥るため。`DispatchQueue` の worker スレッドは
+/// 協調スレッドプールに属さないため、この崖から外れる。
 final class SpeechHandler: NSObject, WKScriptMessageHandlerWithReply {
     private let synthesizer: SpeechSynthesizer
+    /// 同じ id への同時要求を直列化する。生成は I/O とサブプロセス律速で、
+    /// プレイヤーは同時に1つしか鳴らさないため、直列化のコストはない。
+    private let queue = DispatchQueue(label: "local.toefl.speech", qos: .userInitiated)
 
     init(synthesizer: SpeechSynthesizer) {
         self.synthesizer = synthesizer
@@ -59,9 +70,9 @@ final class SpeechHandler: NSObject, WKScriptMessageHandlerWithReply {
         let force = body["force"] as? Bool ?? false
 
         // ここから先(キャッシュ照会と synthesize)はメインスレッドを塞がないよう
-        // バックグラウンドキューで行い、応答だけをメインスレッドへ戻す。
+        // 直列キューで行い、応答だけをメインスレッドへ戻す。
         let synthesizer = self.synthesizer
-        DispatchQueue.global(qos: .userInitiated).async {
+        queue.async {
             if !force, let cached = synthesizer.cachedURL(for: id) {
                 let url = Self.audioURL(for: cached)
                 DispatchQueue.main.async {

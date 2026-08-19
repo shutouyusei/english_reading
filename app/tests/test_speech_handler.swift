@@ -28,7 +28,11 @@ final class HandlerDelegate: NSObject, NSApplicationDelegate {
 
         webView = WKWebView(frame: NSRect(x: 0, y: 0, width: 400, height: 300),
                             configuration: configuration)
-        webView.loadHTMLString("<meta charset='utf-8'><p>test</p>", baseURL: nil)
+        // baseURL を audio:// にしないと、ページの起源が null になり fetch() が
+        // クロスオリジン扱いで失敗する(実測: "TypeError: Load failed")。
+        // audio:// を起源にすることで、返ってきた audio:// の URL を同一起源として fetch できる。
+        webView.loadHTMLString("<meta charset='utf-8'><p>test</p>",
+                               baseURL: URL(string: "audio://local/"))
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { self.verify() }
         DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
@@ -56,9 +60,13 @@ final class HandlerDelegate: NSObject, NSApplicationDelegate {
             const r = await window.webkit.messageHandlers.speech.postMessage({
                 action: "prepare", id: "listening_900",
                 utterances: [{ voice: "Samantha", text: "Hello there, this is a test." }] });
-            return r.url;
+            // audio:// スキームが実際に登録・配信されているかも合わせて確かめる。
+            // ハンドラが返す URL の形だけでなく、その URL からファイルが読めることまで見る。
+            const res = await fetch(r.url);
+            return res.ok ? r.url : "取得できない";
             """) { url in
-            check("prepare が audio:// の URL を返す", url.hasPrefix("audio://"), url)
+            check("prepare が audio://local/ の URL を返し、fetch で読み込める",
+                  url.hasPrefix("audio://local/"), url)
             check("URL に id が入っている", url.contains("listening_900"), url)
             check("実ファイルが作られている",
                   FileManager.default.fileExists(
@@ -94,7 +102,7 @@ final class HandlerDelegate: NSObject, NSApplicationDelegate {
                 utterances: [{ voice: "Samantha", text: "Hello there, this is a test." }] });
             return r.url;
             """) { url in
-            check("force でも URL を返す", url.hasPrefix("audio://"), url)
+            check("force でも audio://local/ の URL を返す", url.hasPrefix("audio://local/"), url)
             let after = self.modificationDate(of: cached)
             check("force を付けるとキャッシュを作り直す", after != before,
                   "before=\(String(describing: before)) after=\(String(describing: after))")
@@ -138,11 +146,40 @@ final class HandlerDelegate: NSObject, NSApplicationDelegate {
                         .appendingPathComponent("escape.m4a")
                     check("キャッシュの外にファイルが作られていない",
                           !FileManager.default.fileExists(atPath: escaped.path))
-                    try? FileManager.default.removeItem(at: cacheDir)
                     try? FileManager.default.removeItem(at: escaped)
+                    self.verifyIdEdgeCases()
+                }
+            }
+        }
+    }
+
+    /// 制約は `/`、`\`、`.`、`..`、空文字を名指しで禁止している。
+    /// allowlist はどれも弾くはずだが、テストが固定していなければ回帰に気づけない。
+    private func verifyIdEdgeCases() {
+        checkRejectedId("") {
+            self.checkRejectedId(".") {
+                self.checkRejectedId("..") {
+                    try? FileManager.default.removeItem(at: cacheDir)
                     exit(failures == 0 ? 0 : 1)
                 }
             }
+        }
+    }
+
+    private func checkRejectedId(_ id: String, then next: @escaping () -> Void) {
+        let idLiteral = id.replacingOccurrences(of: "\\", with: "\\\\")
+            .replacingOccurrences(of: "\"", with: "\\\"")
+        run("""
+            try {
+                await window.webkit.messageHandlers.speech.postMessage({
+                    action: "prepare", id: "\(idLiteral)",
+                    utterances: [{ voice: "Samantha", text: "x" }] });
+                return "エラーにならなかった";
+            } catch (e) { return "エラー: " + e.message; }
+            """) { text in
+            let label = id.isEmpty ? "(空文字)" : id
+            check("id が \"\(label)\" だとエラーになる", text.hasPrefix("エラー:"), text)
+            next()
         }
     }
 }
