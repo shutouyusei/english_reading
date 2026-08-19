@@ -73,14 +73,13 @@ docs/data/listening/listening_NNN.json
 scripts/validate_listening.py
 scripts/update_listening_index.py
 app/src/SpeechSynthesizer.swift          say の呼び出しと結合
-app/src/AudioSchemeHandler.swift         audio:// の配信
 app/src/SpeechHandler.swift              JS からの生成要求を受ける窓口
 app/ui/listening.html                    一覧
 app/ui/listening-player.html             解答・復習
 app/ui/js/speech.native.js               window.Speech
 app/ui/js/listening.native.js            window.ListeningStore
-app/ui/js/listening.js                   一覧と解答・復習のロジック
-app/ui/js/script.js                      台本の描画
+app/ui/js/listening-list.js              一覧のロジック
+app/ui/js/listening-player.js            解答・復習のロジック
 ```
 
 変更:
@@ -220,15 +219,15 @@ enum SpeechError: Error {
 }
 ```
 
-### `app/src/AudioSchemeHandler.swift`
+### `audio://` の配信
 
-`ContentSchemeHandler` と同じ作りで、ルートだけがキャッシュディレクトリになる。
+新しいハンドラは書かない。`ContentSchemeHandler` は既にルートを引数で受け取り、
+`m4a` の MIME(`audio/mp4`)も持っているため、**キャッシュディレクトリを根にした
+2つ目のインスタンスを `audio` スキームへ登録する**だけでよい。
 
 - `audio://local/<ファイル名>` を `<cacheDirectory>/<ファイル名>` へ解決する
-- `..` を含む要求や、解決後のパスがルート外を指す要求は 404 で拒否する
-- `Content-Type: audio/mp4` を返す
-- `HTTPURLResponse` を返す(素の `URLResponse` を返すと fetch のステータスが0になる不具合が
-  過去にあったため。`2026-08-11-local-app-shell-design.md` 参照)
+- ルート外への脱出は既存の `resolveContentPath` が拒否する(`app://` と同じ強度)
+- `HTTPURLResponse` で 200 を返す挙動もそのまま引き継がれる
 
 ### `app/src/SpeechHandler.swift`
 
@@ -313,8 +312,8 @@ window.Speech = {
 - リスニングは台本を連結したテキストと空の語彙辞書を渡す
 - 公開版の挙動は変わらない(既存のJSテストで確認する)
 
-台本は話者ごとに行が分かれるため、行の描画だけは `app/ui/js/script.js` に分ける。
-単語のクリック処理と右ペインの描画は `vocab.js` を共用する。
+台本は話者ごとに行が分かれる。話者名の表示は `vocab.js` の行描画に取り込み、
+読解では話者が `null` なので何も出ないようにする。単語のクリック処理と右ペインの描画も `vocab.js` を共用する。
 
 ### `app/src/LogHandlers.swift`
 
@@ -342,7 +341,7 @@ window.Speech = {
 | 事象 | 挙動 |
 |---|---|
 | `say` が失敗した | 画面にエラー内容を出し、**台本だけで復習モードに入れる**。解答モードには入れない |
-| 指定した声が環境に無い | `say` が既定の声で生成する。画面に「指定の音声が見つからないため既定の音声を使用」と出す |
+| 指定した声が環境に無い | `say` が失敗する。**どの声が見つからないか**を画面に出し、台本での復習へ進める。黙って別の声に差し替えない(気づかないまま違う音声で学習することになるため) |
 | キャッシュが壊れて再生できない | ファイルを削除して1度だけ再生成する。それでも失敗したらエラー表示 |
 | キャッシュ先に書けない | エラーを表示する。黙って無音にはしない |
 | 台本JSONが読めない | 一覧へ戻る導線つきのエラーを表示(読解の `renderError` と同じ) |
@@ -354,7 +353,7 @@ window.Speech = {
 | 層 | 対象 |
 |---|---|
 | Swift 単体 | `SpeechSynthesizer`: 1発話の生成、複数発話の結合、失敗時に半端なファイルを残さない、エラーに日本語の説明がある |
-| Swift 単体 | `AudioSchemeHandler`: 正常な要求を配信する、`..` を含む要求を拒否する、ルート外への解決を拒否する |
+| Swift 単体 | `audio://` の経路: キャッシュ内を解決する、`..` を含む要求を拒否する、ルート外への解決を拒否する |
 | Swift 結合 | `SpeechHandler` を実 WKWebView 越しに叩き、`prepare` が URL を返すことを確認(辞書機能と同じ手法) |
 | Python | `validate_listening.py` の各規則。正常データと、規則ごとの違反データ |
 | JS | `listening.native.js`(並べ替え・キャッシュ更新)、台本の描画 |
