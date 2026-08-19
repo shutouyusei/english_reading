@@ -37,9 +37,17 @@ struct TestAudioScheme {
               resolveContentPath(root: audioDir, requestPath: "/../secret.txt") == nil)
         check("多重の `..` でも出られない",
               resolveContentPath(root: audioDir, requestPath: "/../../etc/passwd") == nil)
-        check("絶対パスを与えてもルート配下に閉じ込められる",
-              resolveContentPath(root: audioDir, requestPath: "/etc/passwd")?.path
-                  .hasPrefix(audioDir.path) == true)
+
+        // シンボリックリンク検査: 音声キャッシュ内のリンクが親へ指していても拒否される
+        let linkTarget = audioDir.appendingPathComponent("symlink_to_secret")
+        do {
+            try FileManager.default.createSymbolicLink(at: linkTarget, withDestinationURL: secret)
+            check("キャッシュ内のシンボリックリンクが親を指していても拒否される",
+                  resolveContentPath(root: audioDir, requestPath: "/symlink_to_secret") == nil)
+        } catch {
+            check("キャッシュ内のシンボリックリンクが親を指していても拒否される",
+                  false, "symlink creation failed: \(error)")
+        }
 
         exit(failures == 0 ? 0 : 1)
     }
