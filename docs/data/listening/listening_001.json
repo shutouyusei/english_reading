@@ -1,0 +1,201 @@
+{
+  "id": "listening_001",
+  "type": "lecture",
+  "title": "Why Some Memories Fade",
+  "topic": "科学",
+  "added": "2026-08-19",
+  "word_count": 676,
+  "speakers": [
+    {
+      "id": "professor",
+      "role": "教授",
+      "voice": "Daniel"
+    }
+  ],
+  "script": [
+    {
+      "speaker": "professor",
+      "text": "Okay, so last time we looked at how a memory gets laid down in the first place. Today I want to turn the question around. Why do memories go away?"
+    },
+    {
+      "speaker": "professor",
+      "text": "Now, the first thing to say is that forgetting is not simply a malfunction. Your brain is not a hard drive with a few bad sectors. It never set out to keep everything."
+    },
+    {
+      "speaker": "professor",
+      "text": "There are three main explanations on the table, and I want you to keep them separate in your head."
+    },
+    {
+      "speaker": "professor",
+      "text": "The first is decay. The second is interference. The third is retrieval failure."
+    },
+    {
+      "speaker": "professor",
+      "text": "Let us start with decay. The idea is that a memory trace weakens on its own as time passes, rather like a photograph left in a sunlit window. It is an appealing picture, and for a long time it was the standard one."
+    },
+    {
+      "speaker": "professor",
+      "text": "But I have to tell you, I am not persuaded by it. Here is the problem. If time by itself did the damage, then equal amounts of time should do equal amounts of damage."
+    },
+    {
+      "speaker": "professor",
+      "text": "And they do not. There is a classic experiment in which two groups learn the same list of nonsense syllables."
+    },
+    {
+      "speaker": "professor",
+      "text": "One group then sleeps for eight hours. The other stays awake and goes about an ordinary day."
+    },
+    {
+      "speaker": "professor",
+      "text": "Same amount of time, very different results. The sleeping group remembers far more."
+    },
+    {
+      "speaker": "professor",
+      "text": "So the clock is not the thing doing the erasing. Something that happens during waking hours is."
+    },
+    {
+      "speaker": "professor",
+      "text": "Which brings us to interference. On this account, memories do not fade on their own. They compete with each other, and similar memories compete hardest."
+    },
+    {
+      "speaker": "professor",
+      "text": "Think about where you parked your car this morning. You have parked in that same lot perhaps two hundred times. Every one of those older memories is pulling at the same cue."
+    },
+    {
+      "speaker": "professor",
+      "text": "That is why you can remember your first day at a new school perfectly and have no idea what you did last Tuesday. The first day had no competitors. Last Tuesday had dozens."
+    },
+    {
+      "speaker": "professor",
+      "text": "Now, here is the part I want you to focus on, because the third explanation changes the picture."
+    },
+    {
+      "speaker": "professor",
+      "text": "Retrieval failure says the memory has not weakened and it has not been overwritten. It is intact. You simply cannot reach it."
+    },
+    {
+      "speaker": "professor",
+      "text": "You already know what this feels like. It is the tip of the tongue state. You know the word has a certain rhythm, you know how it begins, and still it will not come."
+    },
+    {
+      "speaker": "professor",
+      "text": "And we can show it in the laboratory. Give people a long list of animals and ask them to recall as many as they can. They stall out at a certain number."
+    },
+    {
+      "speaker": "professor",
+      "text": "Then give them category names. Say the word farm, or the word ocean. Items they had just failed to produce come back immediately."
+    },
+    {
+      "speaker": "professor",
+      "text": "That result matters. Nothing was added to their memory in those few seconds. All we did was hand them a better key."
+    },
+    {
+      "speaker": "professor",
+      "text": "So the item was in there the whole time, waiting for the right cue."
+    },
+    {
+      "speaker": "professor",
+      "text": "And this is where it gets interesting. If much of forgetting is really a cue problem, then forgetting may not be a flaw at all. It may be doing useful work."
+    },
+    {
+      "speaker": "professor",
+      "text": "There is a well documented case of a man who essentially could not forget. He could hold enormous strings of numbers for years. Journalists loved him."
+    },
+    {
+      "speaker": "professor",
+      "text": "But he had a serious difficulty. He could not read a passage and tell you what it meant. Every word dragged up a vivid image, and the images crowded out the general point."
+    },
+    {
+      "speaker": "professor",
+      "text": "He could not see the forest, because he could not stop seeing individual leaves. To generalise, you have to let details go."
+    },
+    {
+      "speaker": "professor",
+      "text": "So let me leave you with a caution. These three explanations are not rivals competing for a single prize. Most memory researchers now think all three are at work, and that the real question is which one dominates under which conditions."
+    },
+    {
+      "speaker": "professor",
+      "text": "For Thursday, read the chapter on sleep and consolidation. Pay attention to the section on what the brain prunes overnight. That will connect directly to what we did today."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "type": "Gist-Content",
+      "question": "What is the lecture mainly about?",
+      "choices": {
+        "A": "The stages through which a new memory is first laid down",
+        "B": "Practical techniques for memorising long lists of words",
+        "C": "The main explanations for why remembered material becomes unavailable",
+        "D": "The effects of a single night of lost sleep on health"
+      },
+      "correct": "C",
+      "explanation": "教授は冒頭で「Today I want to turn the question around. Why do memories go away?」と主題を宣言し、続けて「There are three main explanations on the table」と述べて decay、interference、retrieval failure の三つを順に説明する。講義全体がこの三つの枠組みで進むので C が主題。A は「last time we looked at how a memory gets laid down in the first place」と、前回扱った内容として明示的に切り離されている。B の記憶術は一切示されず、単語リストの実験は retrieval failure の証拠として出てくるだけ。D の睡眠は decay 説を崩す実験の条件として一度触れられるだけで、健康への影響は話題にならない。"
+    },
+    {
+      "id": 2,
+      "type": "Detail",
+      "question": "What does the professor say the experiment with nonsense syllables shows?",
+      "choices": {
+        "A": "The passage of time by itself is not what removes a memory",
+        "B": "People need a full eight hours of sleep before they can learn a list",
+        "C": "The sleeping group had more opportunity to rehearse the list",
+        "D": "Nonsense syllables are harder to remember than ordinary words"
+      },
+      "correct": "A",
+      "explanation": "二つの群は同じ時間が経過したのに結果が違う。教授は「Same amount of time, very different results」と述べ、そこから「So the clock is not the thing doing the erasing」と結論づけている。つまり時間そのものが忘却の原因ではない、というのがこの実験の含意で、A が正解。B は睡眠時間が学習の前提条件だという主張だが、台本では睡眠は学習後の条件であり、必要な睡眠量の話は出てこない。C は逆で、眠っている群がリハーサルできるはずがなく、教授は覚醒中に起きる何かが原因だと述べている。D は実在語との比較が台本に存在しない。"
+    },
+    {
+      "id": 3,
+      "type": "Function",
+      "question": "Why does the professor mention where the students parked their car this morning?",
+      "choices": {
+        "A": "To suggest that students should pay closer attention to daily routines",
+        "B": "To show that some memory traces decay more quickly than others",
+        "C": "To argue that memories of places are stored separately from memories of words",
+        "D": "To illustrate how repeated similar memories compete with one another"
+      },
+      "correct": "D",
+      "explanation": "この例は interference の説明の直後に置かれ、「They compete with each other, and similar memories compete hardest」を具体化するために使われている。駐車場の例では「You have parked in that same lot perhaps two hundred times. Every one of those older memories is pulling at the same cue」と、似た記憶が同じ手がかりを奪い合う様子が描かれる。よって D。B は decay 説の内容だが、教授はこの段落を「memories do not fade on their own」と始めて decay を明確に否定している。A の学習アドバイスは述べられていない。C の貯蔵場所の違いという主張は台本のどこにもない。"
+    },
+    {
+      "id": 4,
+      "type": "Detail",
+      "question": "According to the professor, what happens when people are given category names such as farm or ocean?",
+      "choices": {
+        "A": "They begin to confuse the animals they have already recalled",
+        "B": "They immediately produce items they had failed to recall a moment earlier",
+        "C": "They learn several new animal names within a few seconds",
+        "D": "They need more time to recall the remaining items"
+      },
+      "correct": "B",
+      "explanation": "「Then give them category names. Say the word farm, or the word ocean. Items they had just failed to produce come back immediately」とあり、B がそのまま該当する。C は次の行の「Nothing was added to their memory in those few seconds」と正面から矛盾する。教授はここで新たな学習ではなく手がかりの提供が起きただけだと強調している。A の混同は述べられていない。D は「come back immediately」と逆の内容。"
+    },
+    {
+      "id": 5,
+      "type": "Attitude",
+      "question": "What is the professor's attitude toward the decay explanation?",
+      "choices": {
+        "A": "He regards it as the best supported of the three explanations",
+        "B": "He thinks it applies only to memories of physical locations",
+        "C": "He finds it appealing but doubts that the evidence supports it",
+        "D": "He believes researchers have never taken it seriously"
+      },
+      "correct": "C",
+      "explanation": "教授は decay について「It is an appealing picture, and for a long time it was the standard one」と魅力は認めつつ、直後に「But I have to tell you, I am not persuaded by it」と自分は納得していないと明言し、睡眠実験を反証として挙げる。この二面性が C。A は「I am not persuaded by it」と矛盾する。D は「for a long time it was the standard one」に反し、長く標準的な説だったと述べられている。B の場所の記憶に限るという限定は台本にない。"
+    },
+    {
+      "id": 6,
+      "type": "Inference",
+      "question": "What does the case of the man who could not forget suggest about forgetting?",
+      "choices": {
+        "A": "Letting go of detail is part of what allows people to grasp general meaning",
+        "B": "Training the memory makes people better at summarising what they read",
+        "C": "People with ordinary memories cannot retain long strings of numbers at all",
+        "D": "His trouble was caused by the same interference that affects everyone else"
+      },
+      "correct": "A",
+      "explanation": "この男性は膨大な数字列を保持できた一方で「He could not read a passage and tell you what it meant」であり、原因は「the images crowded out the general point」だと説明される。教授はこれを「To generalise, you have to let details go」とまとめており、細部を捨てることが一般化の条件だという含意になる。よって A。B はこの事例が示す内容の逆で、記憶力が飛び抜けていても要約はできなかった。C は普通の人が数字列を全く保持できないという言い過ぎで、台本は普通の記憶力について何も述べていない。D は彼の問題が忘れられないことだった点と食い違い、教授は干渉ではなくイメージの過剰を原因として挙げている。"
+    }
+  ]
+}
