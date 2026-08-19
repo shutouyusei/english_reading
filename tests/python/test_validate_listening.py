@@ -152,6 +152,67 @@ class ValidateListeningTest(unittest.TestCase):
         data["questions"][2]["explanation"] = ""
         self.assertTrue(any("explanation" in e for e in validate(data)))
 
+    def test_invalid_correct_letter_is_reported(self):
+        data = make_lecture()
+        data["questions"][0]["correct"] = "E"
+        self.assertTrue(any("correct" in e for e in validate(data)))
+
+    def test_invalid_added_format_is_reported(self):
+        data = make_lecture()
+        data["added"] = "2026/08/19"
+        self.assertTrue(any("added" in e for e in validate(data)))
+
+    def test_empty_title_is_reported(self):
+        data = make_lecture()
+        data["title"] = "   "
+        self.assertTrue(any("title" in e for e in validate(data)))
+
+    def test_duplicate_speaker_id_is_reported(self):
+        data = make_conversation()
+        data["speakers"][1]["id"] = "student"
+        self.assertTrue(any("duplicate" in e for e in validate(data)))
+
+    def test_non_integer_word_count_is_reported(self):
+        data = make_lecture()
+        data["word_count"] = "12"
+        self.assertTrue(any("word_count" in e for e in validate(data)))
+
+    def test_bool_word_count_is_reported(self):
+        data = make_lecture()
+        data["word_count"] = True
+        self.assertTrue(any("word_count" in e for e in validate(data)))
+
+    def test_speakers_none_does_not_crash(self):
+        data = make_lecture()
+        data["speakers"] = None
+        errors = validate(data)
+        self.assertTrue(any("speakers" in e for e in errors))
+        self.assertIsInstance(errors, list)
+
+    def test_same_correct_letter_three_times_is_allowed(self):
+        data = make_lecture()
+        # Fixture has corrects = [A, B, C, D, A, B]
+        # Set questions 0, 1 to A to get exactly 3 A's (0, 1, 4)
+        data["questions"][0]["correct"] = "A"
+        data["questions"][1]["correct"] = "A"
+        # Questions 2, 3, 5 are set to other letters
+        data["questions"][2]["correct"] = "B"
+        data["questions"][3]["correct"] = "C"
+        data["questions"][5]["correct"] = "D"
+        # Now we have exactly 3 A's (questions 0, 1, 4) - should not error
+        self.assertFalse(any("correct" in e for e in validate(data)))
+
+    def test_same_correct_letter_four_times_is_reported(self):
+        data = make_lecture()
+        # Set questions 0, 1, 2 to A to get 4 A's total (0, 1, 2, 4 from fixture)
+        data["questions"][0]["correct"] = "A"
+        data["questions"][1]["correct"] = "A"
+        data["questions"][2]["correct"] = "A"
+        data["questions"][3]["correct"] = "B"
+        data["questions"][5]["correct"] = "C"
+        # Now we have 4 A's - should error
+        self.assertTrue(any("correct" in e for e in validate(data)))
+
 
 if __name__ == "__main__":
     unittest.main()

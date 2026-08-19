@@ -69,7 +69,11 @@ def _validate_script(data: dict) -> list[str]:
     if not isinstance(script, list) or not script:
         return ["script must be a non-empty list"]
 
-    known = {str(s.get("id")) for s in data["speakers"] if isinstance(s, dict)}
+    speakers = data.get("speakers", [])
+    if isinstance(speakers, list):
+        known = {str(s.get("id")) for s in speakers if isinstance(s, dict)}
+    else:
+        known = set()
     for index, line in enumerate(script):
         if not isinstance(line, dict):
             errors.append(f"script[{index}] must be an object")
