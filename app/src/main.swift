@@ -65,6 +65,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         // 辞書はアプリ版だけの機能。公開サイト側は dict.web.js が常に null を返す。
         configuration.userContentController.addScriptMessageHandler(
             DictionaryHandler(), contentWorld: .page, name: "dictionary")
+        // 音声生成。保存層は listening という名前で別に登録するため、ここは speech とする。
+        configuration.userContentController.addScriptMessageHandler(
+            SpeechHandler(synthesizer: SpeechSynthesizer(
+                cacheDirectory: dataDir.appendingPathComponent("audio"))),
+            contentWorld: .page, name: "speech")
         return configuration
     }
 
