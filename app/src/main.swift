@@ -59,6 +59,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         configuration.userContentController.addScriptMessageHandler(
             StoreHandler(dataDir: dataDir), contentWorld: .page, name: "store")
         configuration.userContentController.addScriptMessageHandler(
+            StoreHandler(dataDir: dataDir, filename: "listening.jsonl"),
+            contentWorld: .page, name: "listening")
+        configuration.userContentController.addScriptMessageHandler(
             EssaysHandler(dataDir: dataDir), contentWorld: .page, name: "essays")
         configuration.userContentController.addScriptMessageHandler(
             GradeHandler(root: root), contentWorld: .page, name: "grader")

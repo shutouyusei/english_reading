@@ -13,8 +13,10 @@ private func messageAction(_ message: WKScriptMessage) -> (body: [String: Any], 
 final class StoreHandler: NSObject, WKScriptMessageHandlerWithReply {
     private let log: JSONLinesFile
 
-    init(dataDir: URL) {
-        self.log = JSONLinesFile(directory: dataDir, filename: "attempts.jsonl")
+    /// 保存先のファイル名を差し替えられるようにしてある。読解は attempts.jsonl、
+    /// リスニングは listening.jsonl を使い、同じ実装を2つのインスタンスで共有する。
+    init(dataDir: URL, filename: String = "attempts.jsonl") {
+        self.log = JSONLinesFile(directory: dataDir, filename: filename)
         super.init()
     }
 
