@@ -27,6 +27,11 @@ swiftc -O app/src/SystemDictionary.swift app/src/DictionaryHandler.swift \
   app/tests/test_dictionary_handler.swift -o "$DICTIONARY_HANDLER_OUT"
 "$DICTIONARY_HANDLER_OUT"
 
+SPEECH_SYNTHESIZER_OUT="$TMP/test_speech_synthesizer"
+swiftc -O app/src/SpeechSynthesizer.swift app/tests/test_speech_synthesizer.swift \
+  -o "$SPEECH_SYNTHESIZER_OUT"
+"$SPEECH_SYNTHESIZER_OUT"
+
 # 起動から一覧描画までの通し確認。WKWebView を実際に動かすため単体テストより遅い。
 SMOKE_OUT="$TMP/test_smoke_app"
 swiftc -O app/src/PathResolver.swift app/tests/test_smoke_app.swift -o "$SMOKE_OUT"
