@@ -47,10 +47,15 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
-    /// app:// の配信と、JS から呼べる4つの窓口(store / essays / grader / dictionary)を繋ぐ。
+    /// app:// と audio:// の配信、および JS から呼べる窓口を繋ぐ。
     private func makeConfiguration(root: URL, dataDir: URL) -> WKWebViewConfiguration {
         let configuration = WKWebViewConfiguration()
         configuration.setURLSchemeHandler(ContentSchemeHandler(root: root), forURLScheme: "app")
+        // 音声キャッシュはリポジトリの外にある。app:// のルートを広げると
+        // 「リポジトリ外を読めない」保証が崩れるため、根を分けて別スキームで配る。
+        configuration.setURLSchemeHandler(
+            ContentSchemeHandler(root: dataDir.appendingPathComponent("audio")),
+            forURLScheme: "audio")
         configuration.userContentController.addScriptMessageHandler(
             StoreHandler(dataDir: dataDir), contentWorld: .page, name: "store")
         configuration.userContentController.addScriptMessageHandler(

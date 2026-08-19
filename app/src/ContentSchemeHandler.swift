@@ -1,8 +1,9 @@
 import Foundation
 import WebKit
 
-/// app:// への要求を、リポジトリ内の実ファイルで応答する。
-/// ローカルの HTML/JS/CSS/JSON をすべてこの経路で配る。
+/// 指定したルート配下の実ファイルを、あるスキームへの要求に対して返す。
+/// app:// はリポジトリルート、audio:// は音声キャッシュを根にして使う。
+/// どちらの場合も resolveContentPath がルート外への脱出を拒否する。
 final class ContentSchemeHandler: NSObject, WKURLSchemeHandler {
     private let root: URL
     private static let mimeTypes: [String: String] = [
