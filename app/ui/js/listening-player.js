@@ -260,12 +260,54 @@ async function finishSolve() {
   qs("#to-study").addEventListener("click", () => startStudyMode());
 }
 
-/* ---------- 解説モード(Task 11 で実装する) ---------- */
+/* ---------- 解説モード ---------- */
 
-function startStudyMode() {
-  qs("#header-status").textContent = "";
-  qs("#passage-pane").innerHTML = `<p class="hint">解説モードは未実装です。</p>`;
-  qs("#right-pane").innerHTML = "";
+/** 台本から学習ソースを作る。語彙辞書は空なので、全語が辞書引きの経路に入る。 */
+function buildListeningSource(item) {
+  const roles = new Map(item.speakers.map((s) => [s.id, s.role]));
+  return {
+    id: item.id,
+    title: item.title,
+    lines: item.script.map((line) => ({
+      speaker: roles.get(line.speaker) || line.speaker,
+      text: line.text,
+    })),
+    vocab: {},
+    questions: item.questions,
+    latestResult: ListeningStore.latest(item.id),
+    solveUrl: `listening-player.html?id=${encodeURIComponent(item.id)}&mode=solve`,
+  };
+}
+
+async function startStudyMode() {
+  const item = playerState.item;
+  qs("#header-status").innerHTML =
+    `<a href="#" id="resolve-link">🎧 もう一度解く</a>`;
+  qs("#resolve-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    startSolveMode();
+  });
+
+  renderStudy(buildListeningSource(item));
+  await renderReviewPlayer(item);
+}
+
+/** 復習では自由に聴き直せる。既定のコントロールをそのまま出す。 */
+async function renderReviewPlayer(item) {
+  const pane = qs("#passage-pane");
+  const bar = document.createElement("div");
+  bar.className = "review-audio";
+  bar.innerHTML = `<p class="hint">音声を準備しています…</p>`;
+  pane.insertBefore(bar, pane.firstChild);
+
+  try {
+    const { url } = await Speech.prepare(item.id, utterancesOf(item));
+    bar.innerHTML = `<audio controls src="${url}"></audio>`;
+  } catch (err) {
+    // 台本は既に出ている。音声だけが使えないことを伝えて、復習は続けられるようにする。
+    bar.innerHTML =
+      `<p class="error">音声を準備できませんでした: ${escapeHtml(err.message)}</p>`;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", init);

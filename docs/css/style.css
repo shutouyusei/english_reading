@@ -124,6 +124,14 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 .audio-stage { padding: 40px 20px; text-align: center; }
 .audio-stage audio { display: none; }
 
+/* 復習モードの音声バー。台本の上に固定して、スクロールしても届くようにする。 */
+.review-audio {
+  position: sticky; top: 0; z-index: 1;
+  background: #fff; border-bottom: 1px solid var(--border);
+  padding: 8px 0; margin-bottom: 8px;
+}
+.review-audio audio { width: 100%; }
+
 .btn-row { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
 .hint { color: var(--muted); font-size: .85em; }
 .error { color: var(--danger); padding: 20px; }
