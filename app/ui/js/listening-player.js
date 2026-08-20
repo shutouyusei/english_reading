@@ -262,6 +262,24 @@ async function finishSolve() {
 
 /* ---------- 解説モード ---------- */
 
+/** 解答モード中の再生を止める。#quit-link は再生中も含めて解答フロー全体で
+    押せるが、renderStudy() が #passage-pane を丸ごと作り直しても、外れた
+    <audio id="player"> はクロージャに掴まれたまま鳴り続け、ended/error の
+    リスナも生き残る。何もしないと、外れた要素が自然終了したときに
+    ended リスナが renderQuestion() を呼んで #right-pane を古い設問カードで
+    上書きしたり、error が起きて renderAudioFailure() が復習中の台本ごと
+    #passage-pane を消したりする。playbackDone を先に立てておくのは、
+    audio.removeAttribute("src") 自体が error イベントを起こしうるため、
+    その error ハンドラより先に無害化しておく必要があるため
+    (renderPlayer() の ended ハンドラと同じ考え方)。 */
+function stopSolvePlayback() {
+  playerState.playbackDone = true;
+  const audio = qs("#player");
+  if (!audio) return;
+  audio.pause();
+  audio.removeAttribute("src");
+}
+
 /** 台本から学習ソースを作る。語彙辞書は空なので、全語が辞書引きの経路に入る。 */
 function buildListeningSource(item) {
   const roles = new Map(item.speakers.map((s) => [s.id, s.role]));
@@ -280,6 +298,7 @@ function buildListeningSource(item) {
 }
 
 async function startStudyMode() {
+  stopSolvePlayback();
   const item = playerState.item;
   qs("#header-status").innerHTML =
     `<a href="#" id="resolve-link">🎧 もう一度解く</a>`;
