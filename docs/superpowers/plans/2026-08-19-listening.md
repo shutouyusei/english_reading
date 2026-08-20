@@ -2710,7 +2710,9 @@ node --test tests/js/*.test.js
 sh app/tests/run.sh
 sh app/build.sh
 ```
-Expected: Python 67件、JS 63件、Swift 全通過、ビルド成功
+Expected: Swift 全通過、ビルド成功。Python と JS の件数は Task 1〜11 が
+テストを足すため増える(この計画を書いた時点の見込みは Python 67 / JS 63 だが、
+実際の到達値は各タスクの実装次第。**件数の一致ではなく、失敗0であることを確認すること**)
 
 - [ ] **Step 2: 読解とライティングが壊れていないことを確認する**
 
