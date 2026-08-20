@@ -200,7 +200,8 @@ function startStudyMode() {
     e.preventDefault();
     startSolveMode();
   });
-  renderStudy(state.passage);
+  const solveUrl = `${window.READER_URL}?id=${state.passage.id}&mode=solve`;
+  renderStudy(buildStudySource(state.passage, Store.latest(state.passage.id), solveUrl));
 }
 
 document.addEventListener("DOMContentLoaded", init);

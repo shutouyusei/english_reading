@@ -2,18 +2,46 @@
 
 const studyState = { selectedWord: null, history: [], activeTab: "vocab" };
 
-function renderStudy(passage) {
-  renderPassageClickable(passage);
-  renderPanel(passage);
+/* 学習ソース: 読解のパッセージとリスニングの台本の共通の形。
+   { id, title, lines: [{speaker, text}], vocab, questions, latestResult, solveUrl }
+   この層より下は「どちらの教材か」を知らない。 */
+
+/** 読解のパッセージから学習ソースを作る。 */
+function buildStudySource(passage, latestResult, solveUrl) {
+  const lines = passage.body
+    .split("\n\n")
+    .map((text) => text.trim())
+    .filter((text) => text.length > 0)
+    .map((text) => ({ speaker: null, text }));
+  return {
+    id: passage.id,
+    title: passage.title,
+    lines,
+    vocab: passage.vocab,
+    questions: passage.questions,
+    latestResult,
+    solveUrl,
+  };
 }
 
-function renderPassageClickable(passage) {
-  const keys = new Set(Object.keys(passage.vocab).map((w) => w.toLowerCase()));
+function renderStudy(source) {
+  renderClickableLines(source);
+  renderPanel(source);
+}
+
+function renderClickableLines(source) {
+  const keys = new Set(Object.keys(source.vocab).map((w) => w.toLowerCase()));
   const pane = qs("#passage-pane");
   pane.innerHTML = "";
-  for (const para of passage.body.split("\n\n")) {
+  for (const line of source.lines) {
     const p = document.createElement("p");
-    for (const part of tokenize(para)) {
+    if (line.speaker) {
+      const label = document.createElement("b");
+      label.className = "speaker";
+      label.textContent = `${line.speaker}: `;
+      p.appendChild(label);
+    }
+    for (const part of tokenize(line.text)) {
       if (!part.isWord) {
         p.appendChild(document.createTextNode(part.text));
         continue;
@@ -22,14 +50,14 @@ function renderPassageClickable(passage) {
       const key = findVocabKey(part.text, keys);
       span.textContent = part.text;
       span.className = key ? "w vocab-word" : "w";
-      span.addEventListener("click", () => onWordClick(passage, part.text, key, span));
+      span.addEventListener("click", () => onWordClick(source, part.text, key, span));
       p.appendChild(span);
     }
     pane.appendChild(p);
   }
 }
 
-function onWordClick(passage, surface, key, span) {
+function onWordClick(source, surface, key, span) {
   document.querySelectorAll(".w.active").forEach((el) => el.classList.remove("active"));
   span.classList.add("active");
   studyState.selectedWord = key || surface.toLowerCase();
@@ -37,12 +65,12 @@ function onWordClick(passage, surface, key, span) {
   if (!studyState.history.includes(studyState.selectedWord)) {
     studyState.history.unshift(studyState.selectedWord);
   }
-  renderPanel(passage);
+  renderPanel(source);
   qs("#right-pane").scrollIntoView({ block: "nearest", behavior: "smooth" });
 }
 
-function renderPanel(passage) {
-  const result = Store.latest(passage.id);
+function renderPanel(source) {
+  const result = source.latestResult;
   const quizLabel = result ? `問題の解説 (${result.score}/${result.total})` : "問題の解説";
   qs("#right-pane").innerHTML = `
     <div class="tabs">
@@ -53,16 +81,16 @@ function renderPanel(passage) {
   document.querySelectorAll(".tab").forEach((btn) =>
     btn.addEventListener("click", () => {
       studyState.activeTab = btn.dataset.tab;
-      renderPanel(passage);
+      renderPanel(source);
     }));
   if (studyState.activeTab === "vocab") {
-    renderVocabTab(passage);
+    renderVocabTab(source);
   } else {
-    renderQuizTab(passage, result);
+    renderQuizTab(source, result);
   }
 }
 
-function renderVocabTab(passage) {
+function renderVocabTab(source) {
   const body = qs("#panel-body");
   const word = studyState.selectedWord;
   if (!word) {
@@ -70,7 +98,7 @@ function renderVocabTab(passage) {
       `<p class="hint">本文中の単語をクリックすると、ここに解説が表示されます。</p>`;
     return;
   }
-  const entry = passage.vocab[word];
+  const entry = source.vocab[word];
   const weblio = `https://ejje.weblio.jp/content/${encodeURIComponent(word)}`;
   if (!entry) {
     body.innerHTML = `
@@ -96,7 +124,7 @@ function renderVocabTab(passage) {
     </div>
     <p id="anki-status" class="hint"></p>
     ${historyHtml()}`;
-  qs("#anki-add").addEventListener("click", () => addToAnki(passage, word, entry));
+  qs("#anki-add").addEventListener("click", () => addToAnki(source, word, entry));
   qs("#anki-settings-open").addEventListener("click", () => openAnkiSettings());
   // 収録語には既に解説がある。辞書は引けたときだけ足す。
   fillDictionary(word, "");
@@ -134,14 +162,14 @@ function historyHtml() {
   return `<p class="hint">最近調べた語: ${words}</p>`;
 }
 
-function renderQuizTab(passage, result) {
+function renderQuizTab(source, result) {
   const body = qs("#panel-body");
   if (!result) {
     body.innerHTML = `<p class="hint">まだ解いていません。` +
-      `<a href="${window.READER_URL}?id=${passage.id}&mode=solve">問題を解く</a></p>`;
+      `<a href="${source.solveUrl}">問題を解く</a></p>`;
     return;
   }
-  body.innerHTML = passage.questions.map((q, i) => {
+  body.innerHTML = source.questions.map((q, i) => {
     const user = result.answers ? result.answers[i] : null;
     const ok = user === q.correct;
     return `
