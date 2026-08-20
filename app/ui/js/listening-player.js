@@ -7,6 +7,7 @@ const playerState = {
   startedAt: null,
   audioUrl: null,
   retriedAudio: false,   // 壊れたキャッシュの作り直しは1回だけ
+  playbackDone: false,   // ended 後は audio 要素の error リスナを無害化する
 };
 
 function qs(sel) {
@@ -18,13 +19,40 @@ function renderError(message) {
     `<p class="error">${escapeHtml(message)} <a href="listening.html">一覧に戻る</a></p>`;
 }
 
-/** 台本を say に渡せる形にする。話者ごとに声が変わる。 */
+/** 音声関連の失敗を画面に出す。黙って無視せず、常に解説モードへの導線を残す。
+    ヘッダの「中断して解説モードへ」と同じ行き先なので、文言もそちらへ揃える。 */
+function renderAudioFailure(message) {
+  qs("#passage-pane").innerHTML = `
+    <p class="error">${escapeHtml(message)}</p>
+    <p><a href="#" id="to-study-on-error">台本を見て復習する</a></p>`;
+  qs("#to-study-on-error").addEventListener("click", (e) => {
+    e.preventDefault();
+    startStudyMode();
+  });
+}
+
+function formatElapsed(sec) {
+  return `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`;
+}
+
+/** 台本を say に渡せる形にする。話者ごとに声が変わる。
+    連続する同じ話者の行は1つの発話に畳む。say の呼び出し回数と結合処理を
+    減らせるうえ、行と行の間に不要な無音(実測で1行あたり約0.2秒)が
+    入らなくなる。話者が交互に変わる会話では、隣り合う行の話者が異なる
+    ため畳まれずそのまま残る。 */
 function utterancesOf(item) {
   const voices = new Map(item.speakers.map((s) => [s.id, s.voice]));
-  return item.script.map((line) => ({
-    voice: voices.get(line.speaker) || "",
-    text: line.text,
-  }));
+  const utterances = [];
+  for (const line of item.script) {
+    const voice = voices.get(line.speaker) || "";
+    const last = utterances[utterances.length - 1];
+    if (last && last.speaker === line.speaker) {
+      last.text = `${last.text}\n\n${line.text}`;
+    } else {
+      utterances.push({ speaker: line.speaker, voice, text: line.text });
+    }
+  }
+  return utterances.map(({ voice, text }) => ({ voice, text }));
 }
 
 async function init() {
@@ -63,8 +91,11 @@ async function startSolveMode() {
   qs("#passage-pane").innerHTML =
     `<p class="hint">音声を準備しています…</p>`;
   qs("#right-pane").innerHTML = "";
+  // #q-status は renderQuestion が textContent だけを書き換える場所。
+  // innerHTML で丸ごと上書きすると quit-link ごと消えてしまうため、
+  // 中に空の入れ物を用意しておく。
   qs("#header-status").innerHTML =
-    `<a href="#" id="quit-link">中断して解説モードへ</a>`;
+    `<span id="q-status"></span> <a href="#" id="quit-link">中断して解説モードへ</a>`;
   qs("#quit-link").addEventListener("click", (e) => {
     e.preventDefault();
     startStudyMode();
@@ -75,13 +106,7 @@ async function startSolveMode() {
     playerState.audioUrl = url;
   } catch (err) {
     // 音声が用意できないことを黙って無視しない。解説モードへは進める。
-    qs("#passage-pane").innerHTML = `
-      <p class="error">音声を準備できませんでした: ${escapeHtml(err.message)}</p>
-      <p><a href="#" id="to-study-on-error">台本を見て復習する</a></p>`;
-    qs("#to-study-on-error").addEventListener("click", (e) => {
-      e.preventDefault();
-      startStudyMode();
-    });
+    renderAudioFailure(`音声を準備できませんでした: ${err.message}`);
     return;
   }
   renderPlayer();
@@ -104,7 +129,11 @@ function renderPlayer() {
 
   button.addEventListener("click", () => {
     if (audio.paused) {
-      audio.play();
+      // play() は NotAllowedError などで reject しうる。拾わないと、
+      // ボタンを押しても何も起きないまま黙って失敗する経路になる。
+      audio.play().catch((err) => {
+        renderAudioFailure(`音声を再生できませんでした: ${err.message}`);
+      });
     } else {
       audio.pause();
     }
@@ -119,17 +148,25 @@ function renderPlayer() {
     state.textContent = "一時停止中";
   });
   audio.addEventListener("ended", () => {
+    // 以後この audio 要素をいじらせない。error リスナは残り続けるため、
+    // 設問・結果画面に進んだ後に error が起きて renderPlayer() が
+    // 呼び直されると、二重状態(結果の上に再生画面が出る等)になりうる。
+    playerState.playbackDone = true;
     button.disabled = true;
     button.textContent = "再生終了";
     state.textContent = "設問に進んでください";
     playerState.startedAt = Date.now();
+    audio.removeAttribute("src");
     renderQuestion();
   });
   // キャッシュが壊れていることがある。1度だけ作り直してから諦める。
   audio.addEventListener("error", async () => {
+    // 再生が既に終わっている(設問・結果画面に進んでいる)なら、
+    // この要素はもう使わない。ここで renderPlayer() を呼び直すと
+    // #passage-pane が再生可能な音声要素で上書きされてしまう。
+    if (playerState.playbackDone) return;
     if (playerState.retriedAudio) {
-      qs("#passage-pane").innerHTML =
-        `<p class="error">音声を再生できませんでした。一覧に戻ってやり直してください。</p>`;
+      renderAudioFailure("音声を再生できませんでした。");
       return;
     }
     playerState.retriedAudio = true;
@@ -139,8 +176,7 @@ function renderPlayer() {
       playerState.audioUrl = url;
       renderPlayer();
     } catch (err) {
-      qs("#passage-pane").innerHTML =
-        `<p class="error">音声を作り直せませんでした: ${escapeHtml(err.message)}</p>`;
+      renderAudioFailure(`音声を作り直せませんでした: ${err.message}`);
     }
   });
 }
@@ -150,8 +186,10 @@ function renderQuestion() {
   const questions = playerState.item.questions;
   const question = questions[idx];
   const isLast = idx === questions.length - 1;
-  qs("#header-status").innerHTML =
-    `Question ${idx + 1} of ${questions.length}`;
+  // innerHTML で書き換えると startSolveMode が入れた quit-link を消してしまうため、
+  // 中の span だけを書き換える(docs/js/reader.js の #q-pos と同じ形)。
+  const statusEl = qs("#q-status");
+  if (statusEl) statusEl.textContent = `Question ${idx + 1} of ${questions.length}`;
   const choices = ["A", "B", "C", "D"].map((letter) => {
     const selected = playerState.answers[idx] === letter ? " selected" : "";
     return `<button class="choice${selected}" data-letter="${letter}">` +
@@ -211,11 +249,12 @@ async function finishSolve() {
   }
   qs("#header-status").textContent = saveError
     ? `⚠ 保存に失敗しました: ${saveError.message}`
-    : "採点しました";
+    : `⏱ ${formatElapsed(elapsedSec)} で終了`;
   qs("#right-pane").innerHTML = `
     <div class="result-card">
       <p class="score">${score} / ${questions.length} 正解</p>
-      <p class="hint">${wrong.length ? `誤答: ${wrong.join(", ")}` : "🎉 全問正解"}</p>
+      <p class="hint">所要時間 ${formatElapsed(elapsedSec)}${
+        wrong.length ? ` ｜ 誤答: ${wrong.join(", ")}` : " ｜ 🎉 全問正解"}</p>
       <button id="to-study" class="primary">📖 解説モードで復習する</button>
     </div>`;
   qs("#to-study").addEventListener("click", () => startStudyMode());
