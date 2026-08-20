@@ -5,24 +5,42 @@
 const WORDS_PER_MINUTE = 150;
 const TYPE_LABELS = { lecture: "講義", conversation: "会話" };
 
+// word_count が欠けている・数値でない行が来ても「約NaN分」にならないようにする。
 function estimatedMinutes(wordCount) {
+  if (typeof wordCount !== "number" || !Number.isFinite(wordCount) || wordCount < 0) {
+    return null;
+  }
   return Math.max(1, Math.round(wordCount / WORDS_PER_MINUTE));
+}
+
+function minutesLabel(wordCount) {
+  const minutes = estimatedMinutes(wordCount);
+  return minutes === null ? "分数不明" : `約${minutes}分`;
+}
+
+// スコアも学習記録側でスキーマ保証が無いデータのため、writing-list.js の
+// badgeHtml と同じ流儀で、検証済みの数値であっても escapeHtml を通す。
+function badgeHtml(latest) {
+  if (!latest) return `<span class="badge">未着手</span>`;
+  const score = latest.score;
+  const total = latest.total;
+  const valid = typeof score === "number" && Number.isFinite(score) &&
+                typeof total === "number" && Number.isFinite(total);
+  if (!valid) return `<span class="badge">未着手</span>`;
+  return `<span class="badge done">${escapeHtml(score)}/${escapeHtml(total)}</span>`;
 }
 
 function cardHtml(item) {
   const latest = ListeningStore.latest(item.id);
-  const badge = latest
-    ? `<span class="badge done">${latest.score}/${latest.total}</span>`
-    : `<span class="badge">未着手</span>`;
   const label = TYPE_LABELS[item.type] || item.type;
   return `
     <div class="card">
       <div>
         <h3>${escapeHtml(item.title)}</h3>
-        <p class="meta">${escapeHtml(label)} ・ ${escapeHtml(item.topic)} ・ 約${estimatedMinutes(item.word_count)}分</p>
+        <p class="meta">${escapeHtml(label)} ・ ${escapeHtml(item.topic)} ・ ${minutesLabel(item.word_count)}</p>
       </div>
       <div class="card-actions">
-        ${badge}
+        ${badgeHtml(latest)}
         <a class="button primary" href="listening-player.html?id=${encodeURIComponent(item.id)}&mode=solve">聴く</a>
         <a class="button" href="listening-player.html?id=${encodeURIComponent(item.id)}&mode=study">解説</a>
       </div>
