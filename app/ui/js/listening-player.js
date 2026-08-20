@@ -88,6 +88,13 @@ async function startSolveMode() {
   const item = playerState.item;
   playerState.current = 0;
   playerState.answers = item.questions.map(() => null);
+  // 前のセッションの再生状態を引き継がない。解説モードを経由して
+  // 戻ってきた場合(「もう一度解く」)は、playbackDone が立ったままだと
+  // 新しいセッションの本物の error まで renderPlayer() の error リスナに
+  // 握りつぶされる。retriedAudio も戻さないと、次のセッションで
+  // キャッシュ作り直しの機会が無くなる。
+  playerState.playbackDone = false;
+  playerState.retriedAudio = false;
   qs("#passage-pane").innerHTML =
     `<p class="hint">音声を準備しています…</p>`;
   qs("#right-pane").innerHTML = "";
@@ -268,14 +275,20 @@ async function finishSolve() {
     リスナも生き残る。何もしないと、外れた要素が自然終了したときに
     ended リスナが renderQuestion() を呼んで #right-pane を古い設問カードで
     上書きしたり、error が起きて renderAudioFailure() が復習中の台本ごと
-    #passage-pane を消したりする。playbackDone を先に立てておくのは、
-    audio.removeAttribute("src") 自体が error イベントを起こしうるため、
-    その error ハンドラより先に無害化しておく必要があるため
+    #passage-pane を消したりする。
+    #player が無い経路(一覧の「解説」から直接入るなど)では何もしない。
+    ここで playbackDone を立ててしまうと、解答セッションに一度も触れて
+    いないのに次の startSolveMode() まで立ったままになり、本物の再生
+    エラーまで renderPlayer() の error リスナに握りつぶされる
+    (startSolveMode() 側で毎回リセットしているので通常は起きないが、
+    無関係な画面遷移でフラグを触らないという原則を先に置いておく)。
+    #player がある場合は、audio.removeAttribute("src") 自体が error
+    イベントを起こしうるため、そのハンドラより先に立てて無害化しておく
     (renderPlayer() の ended ハンドラと同じ考え方)。 */
 function stopSolvePlayback() {
-  playerState.playbackDone = true;
   const audio = qs("#player");
   if (!audio) return;
+  playerState.playbackDone = true;
   audio.pause();
   audio.removeAttribute("src");
 }
