@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "id": "listening_002",
+      "type": "conversation",
+      "title": "A Slot in the Student Gallery",
+      "topic": "芸術",
+      "word_count": 440,
+      "added": "2026-08-20"
+    },
+    {
       "id": "listening_001",
       "type": "lecture",
       "title": "Why Some Memories Fade",
