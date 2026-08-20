@@ -119,6 +119,11 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
   max-height: 16em; overflow-y: auto;
   border-left: 2px solid var(--border); padding-left: 10px;
 }
+
+/* リスニングの再生画面。本文が無いので中央に寄せる。 */
+.audio-stage { padding: 40px 20px; text-align: center; }
+.audio-stage audio { display: none; }
+
 .btn-row { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
 .hint { color: var(--muted); font-size: .85em; }
 .error { color: var(--danger); padding: 20px; }
