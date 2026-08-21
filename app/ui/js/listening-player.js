@@ -183,9 +183,19 @@ function renderPlayer() {
   });
   // キャッシュが壊れていることがある。1度だけ作り直してから諦める。
   audio.addEventListener("error", async () => {
-    // 再生が既に終わっている(設問・結果画面に進んでいる)なら、
-    // この要素はもう使わない。ここで renderPlayer() を呼び直すと
-    // #passage-pane が再生可能な音声要素で上書きされてしまう。
+    // この closure が捕まえている audio が、今まさに画面上で生きている
+    // #player と別物なら、renderPlayer() の再描画で既に差し替えられた
+    // 古い・外れた要素からの通知なので無視する。再試行成功後に
+    // renderPlayer() が新しい #player を作った後、この古い要素に遅れて
+    // 届く error が、新しく描画したばかりのプレイヤーを
+    // renderAudioFailure() で消してしまう事故を防ぐ。要素の同一性で
+    // 判定するため、フラグを介さず正確に「今の #player かどうか」だけを見る。
+    if (audio !== qs("#player")) return;
+    // ここから先は同じ要素(まだ #player のまま)からの通知。
+    // 再生が既に終わっている(設問・結果画面に進んでいる)場合、ended
+    // リスナ(:176)の audio.removeAttribute("src") 自体が誘発する error を
+    // 無視したい。ended は要素を差し替えないため同一性チェックでは
+    // 弾けず、playbackDone フラグが要る。
     if (playerState.playbackDone) return;
     if (playerState.retriedAudio) {
       renderAudioFailure("音声を再生できませんでした。");
@@ -196,12 +206,6 @@ function renderPlayer() {
       const { url } = await Speech.prepare(
         playerState.item.id, utterancesOf(playerState.item), { force: true });
       playerState.audioUrl = url;
-      // renderPlayer() はこの (古い) audio 要素を #passage-pane ごと差し替える。
-      // 差し替え後にこの要素へ遅れて届く error は、新しく描画したばかりの
-      // プレイヤーを renderAudioFailure() で消してしまいうる。ended リスナ
-      // (:176)・stopSolvePlayback() (:313) と同じ考え方で、差し替え前に
-      // playbackDone を立てて古い要素の error リスナを無害化しておく。
-      playerState.playbackDone = true;
       renderPlayer();
     } catch (err) {
       renderAudioFailure(`音声を作り直せませんでした: ${err.message}`);
