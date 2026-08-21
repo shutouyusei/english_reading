@@ -56,6 +56,8 @@ def _validate_speakers(data: dict) -> list[str]:
             f"speakers must have {expected} entries for type {data['type']!r}, got {len(speakers)}"
         )
     seen: set[str] = set()
+    seen_voices: set[str] = set()
+    is_conversation = data["type"] == "conversation"
     for index, speaker in enumerate(speakers):
         if not isinstance(speaker, dict):
             errors.append(f"speakers[{index}] must be an object")
@@ -67,6 +69,16 @@ def _validate_speakers(data: dict) -> list[str]:
         if speaker_id in seen:
             errors.append(f"duplicate speaker id {speaker_id!r}")
         seen.add(speaker_id)
+        # 同じ声を2人の話者に割り当てると、音声上で話者が区別できなくなる
+        # (.claude/commands/new-listening.md:56)。lecture は話者が1人なので対象外。
+        if is_conversation:
+            voice = str(speaker.get("voice", ""))
+            if voice and voice in seen_voices:
+                errors.append(
+                    f"speakers[{index}].voice {voice!r} is reused; "
+                    "a conversation needs a distinct voice per speaker"
+                )
+            seen_voices.add(voice)
     return errors
 
 

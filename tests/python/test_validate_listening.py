@@ -183,6 +183,17 @@ class ValidateListeningTest(unittest.TestCase):
         data["speakers"][1]["id"] = "student"
         self.assertTrue(any("duplicate" in e for e in validate(data)))
 
+    def test_conversation_with_same_voice_for_both_speakers_is_reported(self):
+        data = make_conversation()
+        data["speakers"][1]["voice"] = data["speakers"][0]["voice"]
+        errors = validate(data)
+        self.assertTrue(any("voice" in e for e in errors), errors)
+
+    def test_lecture_single_speaker_voice_is_not_checked_for_reuse(self):
+        # lecture は話者が1人なので、声の重複チェックの対象外(そもそも重複しようがない)。
+        data = make_lecture()
+        self.assertEqual(validate(data), [])
+
     def test_non_integer_word_count_is_reported(self):
         data = make_lecture()
         data["word_count"] = "12"

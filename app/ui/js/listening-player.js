@@ -84,7 +84,22 @@ async function init() {
 
 /* ---------- 解答モード ---------- */
 
+/** 解説モード中の再生を止める。stopSolvePlayback() と対称の理由:
+    startSolveMode() は #passage-pane を丸ごと作り直すが、renderReviewPlayer()
+    が挿入した <audio id="review-player"> を放置すると、外れた要素は
+    クロージャに掴まれたまま鳴り続けうる(下の stopSolvePlayback() のコメント
+    にある一般則と同じ)。解答は原則1回きりのセッションなので、その音が
+    かぶって聞こえるのは特に困る。#review-player が無い経路(音声の準備が
+    失敗した、またはまだ準備中)では何もしない。 */
+function stopReviewPlayback() {
+  const audio = qs("#review-player");
+  if (!audio) return;
+  audio.pause();
+  audio.removeAttribute("src");
+}
+
 async function startSolveMode() {
+  stopReviewPlayback();
   const item = playerState.item;
   playerState.current = 0;
   playerState.answers = item.questions.map(() => null);
@@ -124,7 +139,7 @@ function renderPlayer() {
   qs("#passage-pane").innerHTML = `
     <div class="audio-stage">
       <p class="hint">音声は一度だけ再生されます。メモを取りながら聴いてください。</p>
-      <audio id="player" src="${playerState.audioUrl}" controlslist="nodownload noplaybackrate"></audio>
+      <audio id="player" src="${playerState.audioUrl}"></audio>
       <div class="btn-row">
         <button id="play-btn" class="primary">▶ 再生する</button>
         <span id="play-state" class="hint"></span>
@@ -181,6 +196,12 @@ function renderPlayer() {
       const { url } = await Speech.prepare(
         playerState.item.id, utterancesOf(playerState.item), { force: true });
       playerState.audioUrl = url;
+      // renderPlayer() はこの (古い) audio 要素を #passage-pane ごと差し替える。
+      // 差し替え後にこの要素へ遅れて届く error は、新しく描画したばかりの
+      // プレイヤーを renderAudioFailure() で消してしまいうる。ended リスナ
+      // (:176)・stopSolvePlayback() (:313) と同じ考え方で、差し替え前に
+      // playbackDone を立てて古い要素の error リスナを無害化しておく。
+      playerState.playbackDone = true;
       renderPlayer();
     } catch (err) {
       renderAudioFailure(`音声を作り直せませんでした: ${err.message}`);
@@ -271,8 +292,9 @@ async function finishSolve() {
 
 /** 解答モード中の再生を止める。#quit-link は再生中も含めて解答フロー全体で
     押せるが、renderStudy() が #passage-pane を丸ごと作り直しても、外れた
-    <audio id="player"> はクロージャに掴まれたまま鳴り続け、ended/error の
-    リスナも生き残る。何もしないと、外れた要素が自然終了したときに
+    <audio id="player"> は(#passage-pane 配下の <audio> 全般と同様)
+    クロージャに掴まれたまま鳴り続けうる。#player はさらに ended/error の
+    リスナが付いているため、それらも生き残る。何もしないと、外れた要素が自然終了したときに
     ended リスナが renderQuestion() を呼んで #right-pane を古い設問カードで
     上書きしたり、error が起きて renderAudioFailure() が復習中の台本ごと
     #passage-pane を消したりする。
@@ -334,7 +356,7 @@ async function renderReviewPlayer(item) {
 
   try {
     const { url } = await Speech.prepare(item.id, utterancesOf(item));
-    bar.innerHTML = `<audio controls src="${url}"></audio>`;
+    bar.innerHTML = `<audio id="review-player" controls src="${url}"></audio>`;
   } catch (err) {
     // 台本は既に出ている。音声だけが使えないことを伝えて、復習は続けられるようにする。
     bar.innerHTML =

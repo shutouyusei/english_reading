@@ -117,6 +117,11 @@ final class SmokeDelegate: NSObject, NSApplicationDelegate {
             store, contentWorld: .page, name: "store")
         configuration.userContentController.addScriptMessageHandler(
             store, contentWorld: .page, name: "essays")
+        // 本番の main.swift でも listening は store と同じ StoreHandler 実装を
+        // 別ファイル名で登録しているだけ(app/src/main.swift 参照)。ここでも
+        // store スタブを共有してよい。
+        configuration.userContentController.addScriptMessageHandler(
+            store, contentWorld: .page, name: "listening")
 
         webView = WKWebView(frame: NSRect(x: 0, y: 0, width: 1200, height: 800),
                             configuration: configuration)
@@ -185,6 +190,35 @@ final class SmokeDelegate: NSObject, NSApplicationDelegate {
                     check("essays ブリッジ経由の記録が反映され、採点待ちバッジが出る",
                           body.contains("採点待ち"),
                           body.trimmingCharacters(in: .whitespacesAndNewlines).prefix(120).description)
+                    self.verifyListeningList()
+                }
+            }
+        }
+    }
+
+    /// リスニング一覧が描画されるかを、同じ WebView で続けて確かめる。
+    /// 読解・ライティングと違い、これまで実 WKWebView を通した確認が無かった画面。
+    private func verifyListeningList() {
+        let expected = listeningItemCountOnDisk()
+        webView.load(URLRequest(url: URL(string: "app://local/app/ui/listening.html")!))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            self.webView.evaluateJavaScript("document.querySelectorAll('.card').length") { result, error in
+                let count = (result as? Int) ?? -1
+                check("リスニング一覧のカードが描画される", count > 0,
+                      "カード数=\(count) error=\(error?.localizedDescription ?? "なし")")
+                check("リスニングのカード数がディスク上の件数と一致する", count == expected,
+                      "描画=\(count) ディスク=\(expected)")
+                check("リスニングの index.json がスキーム経由で配信された",
+                      self.handler.servedPaths.contains("/docs/data/listening/index.json"),
+                      self.handler.servedPaths.joined(separator: ", "))
+
+                self.webView.evaluateJavaScript(
+                    "document.querySelector('#listening-list').textContent"
+                ) { text, _ in
+                    let body = (text as? String) ?? ""
+                    check("エラー文言が表示されていない",
+                          !body.contains("読み込めませんでした") && !body.contains("読み込み中"),
+                          body.trimmingCharacters(in: .whitespacesAndNewlines).prefix(60).description)
                     exit(failures == 0 ? 0 : 1)
                 }
             }
@@ -205,6 +239,14 @@ final class SmokeDelegate: NSObject, NSApplicationDelegate {
               let object = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
               let passages = object["passages"] as? [[String: Any]] else { return -1 }
         return passages.count
+    }
+
+    private func listeningItemCountOnDisk() -> Int {
+        let indexPath = repoRoot.appendingPathComponent("docs/data/listening/index.json")
+        guard let data = try? Data(contentsOf: indexPath),
+              let object = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let items = object["items"] as? [[String: Any]] else { return -1 }
+        return items.count
     }
 }
 
