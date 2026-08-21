@@ -225,6 +225,57 @@ class ValidateListeningTest(unittest.TestCase):
         # Now we have 4 A's - should error
         self.assertTrue(any("correct" in e for e in validate(data)))
 
+    # --- 解説の引用が台本に実在するか ---
+    # 台本を直したあとに解説の引用を直し忘れる欠陥を塞ぐ。listening_002 で実際に起きた。
+    # 素の台本は "Today we look at how reefs respond to repeated stress over many years."
+
+    def test_explanation_quoting_the_script_is_allowed(self):
+        data = make_lecture()
+        data["questions"][0]["explanation"] = "冒頭の「Today we look at how reefs respond」が根拠。"
+        self.assertEqual(validate(data), [])
+
+    def test_explanation_quoting_text_absent_from_script_is_reported(self):
+        data = make_lecture()
+        data["questions"][0]["explanation"] = "最後に「I will go down there now.」と述べている。"
+        errors = validate(data)
+        self.assertTrue(any("does not appear in the script" in e for e in errors), errors)
+        self.assertTrue(any("questions[0]" in e for e in errors), errors)
+
+    def test_japanese_only_quotation_is_not_checked(self):
+        data = make_lecture()
+        data["questions"][0]["explanation"] = "ここでの「取るに足らない」は程度を表す。"
+        self.assertEqual(validate(data), [])
+
+    def test_double_bracket_quotation_is_checked_too(self):
+        data = make_lecture()
+        data["questions"][0]["explanation"] = "『a line nobody ever says』とある。"
+        self.assertTrue(any("does not appear in the script" in e for e in validate(data)))
+
+    def test_quotation_spanning_two_script_lines_is_allowed(self):
+        data = make_lecture()
+        data["questions"][0]["explanation"] = "「repeated stress over many years」とある。"
+        self.assertEqual(validate(data), [])
+
+    def test_period_added_to_a_quoted_fragment_is_allowed(self):
+        data = make_lecture()
+        data["questions"][0]["explanation"] = "「Today we look at how reefs respond.」が根拠。"
+        self.assertEqual(validate(data), [])
+
+    def test_quote_check_reports_the_offending_question(self):
+        data = make_lecture()
+        data["questions"][4]["explanation"] = "「no such sentence」を根拠にしている。"
+        errors = validate(data)
+        self.assertTrue(any("questions[4]" in e for e in errors), errors)
+        self.assertFalse(any("questions[0]" in e for e in errors), errors)
+
+    def test_malformed_script_line_does_not_crash_the_quote_check(self):
+        data = make_lecture()
+        data["script"] = ["not an object"]
+        data["questions"][0]["explanation"] = "「no such sentence」とある。"
+        errors = validate(data)
+        self.assertIsInstance(errors, list)
+        self.assertTrue(any("script[0]" in e for e in errors), errors)
+
 
 if __name__ == "__main__":
     unittest.main()

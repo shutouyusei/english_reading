@@ -24,13 +24,20 @@ QUESTION_COUNT = 6
 MIN_DISTINCT_TYPES = 3
 MAX_SAME_CORRECT = 3
 WORD_COUNT_TOLERANCE = 10
+# 解説中の 「…」 と 『…』 で囲まれた引用。入れ子は想定しない。
+QUOTE_RE = re.compile(r"「([^「」]*)」|『([^『』]*)』")
 ID_RE = re.compile(r"^listening_\d{3}$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def script_text(script: list[dict]) -> str:
-    """台本を1つの文字列に連結する。語数はこの文字列から数える。"""
-    return " ".join(str(line.get("text", "")) for line in script)
+    """台本を1つの文字列に連結する。語数はこの文字列から数える。
+
+    形の壊れた行(辞書でないもの)は読み飛ばす。_validate_script がそれを
+    別途 script[i] must be an object として報告するので、ここで落ちると
+    本来の診断が出ないまま AttributeError の traceback だけが残る。
+    """
+    return " ".join(str(line.get("text", "")) for line in script if isinstance(line, dict))
 
 
 def count_words(script: list[dict]) -> int:
@@ -138,6 +145,49 @@ def _validate_questions(data: dict) -> list[str]:
     return errors
 
 
+def _normalize_quote(text: str) -> str:
+    """突き合わせる前の正規化。空白の詰め方の違いだけを吸収する。
+
+    凝った正規化をすると本物の食い違いまで隠してしまうため、ここは空白だけに留める。
+    """
+    return " ".join(text.split())
+
+
+def _validate_explanation_quotes(data: dict) -> list[str]:
+    """解説が台本に無い英文を引用していないか確かめる。
+
+    解説は台本の該当箇所を引用して根拠を示す約束になっている。台本を直したあとに
+    解説側の引用を直し忘れると、学習者は一度も流れていない文言を「その選択肢が誤りである
+    理由」として読まされることになる(listening_002 で実際に起きた)。
+    ここが唯一の自動的な歯止めなので、人手のレビューに頼らず機械で塞ぐ。
+
+    ラテン文字で始まる引用だけを見る。「取るに足らない」のような日本語だけの引用は
+    語義の言い換えであって台本の引用ではないため、台本に無くて当然である。
+    """
+    script = data.get("script")
+    questions = data.get("questions")
+    if not isinstance(script, list) or not isinstance(questions, list):
+        return []
+
+    haystack = _normalize_quote(script_text(script))
+    errors: list[str] = []
+    for index, question in enumerate(questions):
+        if not isinstance(question, dict):
+            continue
+        for match in QUOTE_RE.finditer(str(question.get("explanation", ""))):
+            quote = _normalize_quote(match.group(1) or match.group(2) or "")
+            if not quote or not (quote[0].isascii() and quote[0].isalpha()):
+                continue
+            # 文の途中を引用して末尾にピリオドを補った形も認める。
+            if quote in haystack or quote.rstrip(".") in haystack:
+                continue
+            errors.append(
+                f"questions[{index}] explanation quotes {quote!r}, "
+                "which does not appear in the script"
+            )
+    return errors
+
+
 def validate(data: dict) -> list[str]:
     """Return a list of problems. An empty list means the item is valid."""
     missing = [f"missing field {name}" for name in REQUIRED_FIELDS if name not in data]
@@ -161,6 +211,7 @@ def validate(data: dict) -> list[str]:
     errors.extend(_validate_speakers(data))
     errors.extend(_validate_script(data))
     errors.extend(_validate_questions(data))
+    errors.extend(_validate_explanation_quotes(data))
 
     if isinstance(data["script"], list) and data["script"]:
         actual = count_words(data["script"])
