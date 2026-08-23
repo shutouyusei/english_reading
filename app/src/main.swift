@@ -69,6 +69,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         configuration.userContentController.addScriptMessageHandler(
             DictionaryHandler(), contentWorld: .page, name: "dictionary")
         // 音声生成。保存層は listening という名前で別に登録するため、ここは speech とする。
+        // Anki への追加。WKWebView から直接 fetch すると出自 app://local が
+        // AnkiConnect の許可リストに無く CORS で応答が遮断されるため、Swift 経由にする。
+        configuration.userContentController.addScriptMessageHandler(
+            AnkiHandler(), contentWorld: .page, name: "anki")
         configuration.userContentController.addScriptMessageHandler(
             SpeechHandler(synthesizer: SpeechSynthesizer(
                 cacheDirectory: dataDir.appendingPathComponent("audio"))),

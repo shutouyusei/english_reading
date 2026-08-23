@@ -18,7 +18,16 @@ function saveAnkiSettings(settings) {
   } catch (_) { /* プライベートモード等では保存しない */ }
 }
 
+/* アプリ版では window.AnkiBridge(anki.native.js)が居る。そちらは Swift 経由で
+   AnkiConnect を叩く。ブラウザから直接 fetch すると、ページの出自(アプリ版では
+   app://local、公開版では https://…)を AnkiConnect が許可リストに持たないため
+   Access-Control-Allow-Origin が返らず、応答が遮断されて "Load failed" になる。
+   ネイティブ経由なら同一生成元ポリシーの外なので、Anki 側の設定に依存しない。
+   ブリッジが無い公開版は従来どおり fetch する。 */
 async function ankiRequest(action, params) {
+  if (window.AnkiBridge) {
+    return window.AnkiBridge.request(action, params || {});
+  }
   const res = await fetch(ANKI_URL, {
     method: "POST",
     body: JSON.stringify({ action, version: 6, params }),

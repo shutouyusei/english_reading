@@ -43,6 +43,10 @@ AUDIO_SCHEME_OUT="$TMP/test_audio_scheme"
 swiftc -O app/src/PathResolver.swift app/tests/test_audio_scheme.swift -o "$AUDIO_SCHEME_OUT"
 "$AUDIO_SCHEME_OUT"
 
+ANKI_CLIENT_OUT="$TMP/test_anki_client"
+swiftc -O app/src/AnkiClient.swift app/tests/test_anki_client.swift -o "$ANKI_CLIENT_OUT"
+"$ANKI_CLIENT_OUT"
+
 # 起動から一覧描画までの通し確認。WKWebView を実際に動かすため単体テストより遅い。
 SMOKE_OUT="$TMP/test_smoke_app"
 swiftc -O app/src/PathResolver.swift app/tests/test_smoke_app.swift -o "$SMOKE_OUT"
