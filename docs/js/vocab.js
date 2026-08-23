@@ -153,7 +153,38 @@ async function fillDictionary(word, emptyHtml) {
 function dictionaryHtml(result) {
   const source = result.source ? `（${escapeHtml(result.source)}）` : "";
   return `<div class="label">辞書${source}</div>` +
-    `<p class="dict-text">${escapeHtml(result.definition)}</p>`;
+    `<div class="dict-entry">${dictionaryBodyHtml(result.definition)}</div>`;
+}
+
+/// 辞書が返すのは改行を1つも含まない一続きのテキスト。dictformat.js が
+/// 見出し・品詞・語義・例文に切り分けたものを、ここで表示に組み直す。
+/// 整形層が読み込まれていなければ、そのまま1塊で出す(辞書は補助なので止めない)。
+function dictionaryBodyHtml(definition) {
+  const format = window.DictFormat && window.DictFormat.formatDefinition;
+  const blocks = format ? format(definition) : [{ kind: "text", text: definition }];
+  return Array.from(blocks).map(dictionaryBlockHtml).join("");
+}
+
+function dictionaryBlockHtml(block) {
+  if (block.kind === "head") {
+    const pron = block.pron
+      ? ` <span class="dict-pron">/${escapeHtml(block.pron)}/</span>` : "";
+    return `<p class="dict-word">${escapeHtml(block.word)}${pron}</p>`;
+  }
+  if (block.kind === "pos") {
+    return `<p class="dict-pos">${escapeHtml(block.text)}</p>`;
+  }
+  if (block.kind === "sense") {
+    const sub = block.level === 2 ? " sub" : "";
+    return `<p class="dict-sense${sub}">` +
+      `<span class="dict-num">${escapeHtml(block.label)}</span>` +
+      `<span>${escapeHtml(block.text)}</span></p>`;
+  }
+  if (block.kind === "example") {
+    const sub = block.level === 2 ? " sub" : "";
+    return `<p class="dict-ex${sub}">${escapeHtml(block.text)}</p>`;
+  }
+  return `<p class="dict-note">${escapeHtml(block.text)}</p>`;
 }
 
 function historyHtml() {

@@ -112,13 +112,39 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
   color: var(--muted); margin-top: 10px;
 }
 .word { margin: 0 0 6px; font-size: 1.2em; }
-/* システム辞書の本文。改行と発音記号をそのまま活かす。
-   語によっては1800字を超えるため、パネル全体を押し下げないよう高さを止める。 */
-.dict-text {
-  white-space: pre-wrap;
-  max-height: 16em; overflow-y: auto;
-  border-left: 2px solid var(--border); padding-left: 10px;
+/* システム辞書。辞書が返すのは改行を1つも含まない一続きのテキストで、
+   語によっては2万字を超える(the=14,070字, set=15,910字, take=26,310字)。
+   dictformat.js が切り分けた塊をここで組み直す。
+   パネル全体を押し下げないよう、高さは止めて中でスクロールさせる。
+   #panel-body p が id を含むため、打ち消すにはクラス2つ分の詳細度が要る。 */
+.dict-entry {
+  max-height: 22em; overflow-y: auto;
+  border-left: 2px solid var(--border); padding-left: 12px;
 }
+#panel-body .dict-entry p { margin: 0; }
+#panel-body .dict-entry > :first-child { margin-top: 0; }
+#panel-body .dict-entry .dict-word { font-size: 1.05em; font-weight: 700; }
+#panel-body .dict-entry .dict-pron { font-weight: 400; color: var(--muted); }
+#panel-body .dict-entry .dict-pos {
+  margin: 14px 0 2px; font-size: .8em; font-weight: 700;
+  letter-spacing: .05em; color: var(--accent-green);
+}
+#panel-body .dict-entry .dict-sense { display: flex; gap: 8px; margin-top: 6px; }
+#panel-body .dict-entry .dict-sense.sub { padding-left: 18px; }
+#panel-body .dict-entry .dict-num {
+  flex: 0 0 auto; min-width: 1.5em; text-align: right;
+  color: var(--muted); font-weight: 700; font-variant-numeric: tabular-nums;
+}
+/* 例文の ▸ は切り分けのときに外している。目印はここで戻す。
+   折り返した2行目が ▸ の下に潜らないよう、ぶら下げインデントにする。 */
+#panel-body .dict-entry .dict-ex {
+  margin: 2px 0 2px 26px; color: var(--muted); font-size: .95em;
+  padding-left: 1.2em; text-indent: -1.2em;
+}
+#panel-body .dict-entry .dict-ex::before { content: "▸ "; }
+/* 枝番(a. b.)の中の例文は、枝番の字下げに合わせてもう一段下げる */
+#panel-body .dict-entry .dict-ex.sub { margin-left: 44px; }
+#panel-body .dict-entry .dict-note { margin-top: 4px; color: var(--muted); }
 
 /* リスニングの再生画面。本文が無いので中央に寄せる。 */
 .audio-stage { padding: 40px 20px; text-align: center; }
