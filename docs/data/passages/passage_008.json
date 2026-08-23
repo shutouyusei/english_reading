@@ -1,0 +1,1138 @@
+{
+  "id": "passage_008",
+  "title": "Why Rivers Refuse to Run Straight",
+  "topic": "環境",
+  "body": "A river crossing a flat plain almost never runs straight. Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends. The tendency is so reliable that engineers who straighten a river must plan for it to bend again. The explanation is not that something blocks the water. It is that a straight channel is unstable, and that the instability feeds on itself.\n\nConsider a channel with a slight curve, however that curve arose. Moving water carries momentum, and momentum resists turning. The flow therefore presses against the outer bank of the curve, where it runs faster and scours sediment away. Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying. The curve consequently becomes more pronounced. A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further. Small departures from straightness do not fade; they amplify.\n\nThe mechanism has a second component that is not visible from the surface. Because the water surface stands slightly higher against the outer bank, pressure at the bed drives a return current inward. The result is a helical motion: the water spirals along the channel, moving outward near the surface and inward near the bottom. That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar. Erosion and deposition are therefore not separate events at opposite banks but two ends of one circulation.\n\nAmplification cannot continue without limit. As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting. Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path. The severed bend survives as a crescent of standing water. What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel.\n\nThat ratio holds because the same balance of forces sets it at every scale, and it is why engineering against meandering is so costly. A straightened channel is steeper than the one it replaced, since it covers the same drop in less distance. Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed. Rivers held between levees do not stop behaving like rivers. They simply do their work where the design did not expect it.",
+  "word_count": 486,
+  "added": "2026-08-21",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 2, why does sediment accumulate along the inner bank of a curve?",
+      "choices": {
+        "A": "The inner bank is composed of softer material than the outer bank.",
+        "B": "Momentum pushes suspended material toward the inside of the turn.",
+        "C": "The water there moves more slowly and cannot keep as much material suspended.",
+        "D": "Deposits from upstream are carried preferentially along the inner side."
+      },
+      "correct": "C",
+      "target_word": null,
+      "explanation": "第2段落に「Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying」とあり、堆積の理由は流速の低下による運搬能力の減少である。Aは岸の材質に触れていない(本文は一様な堆積物の河床を前提にしている)。Bは運動量の効果を逆向きに述べており、本文では運動量が水を外岸へ押しつける。Dは上流からの供給の話で、本文にない。"
+    },
+    {
+      "id": 2,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention that engineers who straighten a river must plan for it to bend again?",
+      "choices": {
+        "A": "To signal that meandering arises from the channel itself rather than from an external obstruction",
+        "B": "To argue that river engineering is generally a waste of public money",
+        "C": "To introduce the helical circulation described in the third paragraph",
+        "D": "To show that straightened rivers are more prone to flooding than natural ones"
+      },
+      "correct": "A",
+      "target_word": null,
+      "explanation": "この一文の直後に「The explanation is not that something blocks the water. It is that a straight channel is unstable」と続き、蛇行の原因が外的な障害物ではなく水路自体の不安定性にあることを示すための導入になっている。Bは費用対効果の主張で、第5段落は費用に触れるがこの箇所の意図ではない。Cの螺旋流はまだ登場していない。Dの洪水は本文全体で扱われていない。"
+    },
+    {
+      "id": 3,
+      "type": "Vocabulary",
+      "question": "The word \"amplify\" in paragraph 2 is closest in meaning to",
+      "choices": {
+        "A": "reverse direction",
+        "B": "grow stronger",
+        "C": "spread outward",
+        "D": "settle into place"
+      },
+      "correct": "B",
+      "target_word": "amplify",
+      "explanation": "直前が「Small departures from straightness do not fade」であり、fade(消えていく)と対比される語が入る。段落全体が「曲がりが深まるほど侵食が速まり、さらに曲がりが深まる」という自己増幅を述べているので「強まる」が最も近い。Aの「向きが逆になる」は本文の因果と合わない。Cの「外へ広がる」は空間的な拡散であり増幅ではない。Dの「落ち着く」は fade 側の意味で、対比が壊れる。"
+    },
+    {
+      "id": 4,
+      "type": "Reference",
+      "question": "The phrase \"That bottom current\" in paragraph 3 refers to",
+      "choices": {
+        "A": "the faster flow that scours the outer bank",
+        "B": "the tilt of the water surface against the outer bank",
+        "C": "the spiral motion of the water as a whole",
+        "D": "the inward flow near the bed driven by pressure"
+      },
+      "correct": "D",
+      "target_word": null,
+      "explanation": "直前の文が「pressure at the bed drives a return current inward」と述べ、続けて螺旋運動を「moving outward near the surface and inward near the bottom」と説明している。That bottom current が指すのは、この河床付近を内側へ向かう流れである。Aは外岸を削る速い流れで、これは表層側の話。Bは水面の傾きという原因であって流れそのものではない。Cは螺旋全体を指すが、指示語は「bottom」と限定しているので下層の成分のみを指す。"
+    },
+    {
+      "id": 5,
+      "type": "Inference",
+      "question": "What can be inferred from paragraph 5 about a river confined between levees?",
+      "choices": {
+        "A": "It will gradually lose the energy needed to move sediment.",
+        "B": "It will tend to deepen its bed instead of forming new bends.",
+        "C": "It will develop bends with a longer spacing than an unconfined river.",
+        "D": "It will come to rest at a gradient close to that of the original channel."
+      },
+      "correct": "B",
+      "target_word": null,
+      "explanation": "第5段落は「Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed」と述べる。堤防で蛇行を封じれば後者の経路が塞がれるため、余剰エネルギーは下方侵食へ向かう。Aは逆で、直線化した水路はより急でエネルギーが増す。Cは間隔が川幅の約11倍という比が規模によらず成り立つという記述に反する。Dは「余剰エネルギーが仕事として消費される」という論旨を、勾配が自然に元へ戻ると読み違えている。"
+    }
+  ],
+  "vocab": {
+    "plain": {
+      "etymology": "ラテン語 planus(平らな)",
+      "definition": "平原。平坦な土地。",
+      "usage_in_passage": "冒頭の \"A river crossing a flat plain\" が舞台を限定する。障害物の無い平地を置くことで、蛇行の原因を地形の凹凸に帰す説明をあらかじめ封じている。",
+      "related_terms": [
+        "prairie",
+        "lowland",
+        "flat",
+        "plateau"
+      ],
+      "context_sentence": "A river crossing a flat plain almost never runs straight."
+    },
+    "uniform": {
+      "etymology": "ラテン語 unus(一つ) + forma(形) → 形が一つ",
+      "definition": "均質な。どこも同じ性質の。",
+      "usage_in_passage": "\"a uniform bed of sediment\" として、河床に硬軟の差が無いことを明示する。第1段落の「何かが水を塞いでいるのではない」という主張の前提になる。",
+      "related_terms": [
+        "homogeneous",
+        "consistent",
+        "even",
+        "varied"
+      ],
+      "context_sentence": "Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends."
+    },
+    "sediment": {
+      "etymology": "ラテン語 sedere(座る) → 沈んで落ち着いたもの",
+      "definition": "堆積物。水中を運ばれて沈む砂や泥。",
+      "usage_in_passage": "本文全体の主役の一つ。外岸で削られ(scours sediment away)、内岸で落とされ(drops what it was carrying)、螺旋流で横断的に運ばれる。侵食と堆積を繋ぐ物質として機能する。",
+      "related_terms": [
+        "silt",
+        "deposit",
+        "alluvium",
+        "bedrock"
+      ],
+      "context_sentence": "Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends."
+    },
+    "deflect": {
+      "etymology": "ラテン語 de-(離れて) + flectere(曲げる)",
+      "definition": "向きを逸らす。",
+      "usage_in_passage": "\"nothing solid to deflect it\" で外的要因を排除し、後に \"A deeper curve deflects the flow more strongly\" として自己増幅の担い手に転じる。同じ語が原因の否定と肯定の両方に使われている。",
+      "related_terms": [
+        "divert",
+        "redirect",
+        "veer",
+        "straighten"
+      ],
+      "context_sentence": "Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends."
+    },
+    "bends": {
+      "etymology": "古英語 bendan(弓を張る、曲げる)",
+      "definition": "曲がり。湾曲部。bend の複数形。",
+      "usage_in_passage": "\"a train of regular bends\" が観察される現象そのもの。第4段落では隣り合う bends が接近して首を切られる主体になる。",
+      "related_terms": [
+        "curves",
+        "meanders",
+        "loops",
+        "straights"
+      ],
+      "context_sentence": "Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends."
+    },
+    "tendency": {
+      "etymology": "ラテン語 tendere(伸びる、向かう) + -ency",
+      "definition": "傾向。そうなりやすい性質。",
+      "usage_in_passage": "\"The tendency is so reliable\" と述べることで、蛇行が偶発ではなく法則的であることを示し、次文の「技術者は曲がり直すことを見込まねばならない」に繋げる。",
+      "related_terms": [
+        "inclination",
+        "propensity",
+        "disposition",
+        "exception"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "reliable": {
+      "etymology": "re-(再び) + ラテン語 ligare(縛る) → 頼りにできる",
+      "definition": "当てにできる。確実に起きる。",
+      "usage_in_passage": "傾向の強さを表す。\"so reliable that engineers ... must plan for it\" と結果節を導き、現象の再現性を実務上の帰結で裏づける。",
+      "related_terms": [
+        "dependable",
+        "consistent",
+        "predictable",
+        "erratic"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "engineers": {
+      "etymology": "ラテン語 ingenium(才覚) → 工夫する人",
+      "definition": "技術者。engineer の複数形。",
+      "usage_in_passage": "第1段落で導入され第5段落で回収される。人間の意図が河川の物理に対してどう振る舞うかという副主題を担う。",
+      "related_terms": [
+        "designers",
+        "builders",
+        "surveyors",
+        "planners"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "straighten": {
+      "etymology": "straight(真っ直ぐな) + -en(〜にする)",
+      "definition": "真っ直ぐにする。直線化する。",
+      "usage_in_passage": "\"engineers who straighten a river\" は本文が批判する介入。第5段落の \"A straightened channel is steeper\" でその代償が明かされる。",
+      "related_terms": [
+        "channelize",
+        "align",
+        "flatten",
+        "curve"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "bend": {
+      "etymology": "古英語 bendan(曲げる)",
+      "definition": "曲がる。湾曲する。",
+      "usage_in_passage": "\"must plan for it to bend again\" の again が要点で、直線化しても元へ戻るという再帰性を示す。",
+      "related_terms": [
+        "curve",
+        "meander",
+        "bow",
+        "straighten"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "explanation": {
+      "etymology": "ラテン語 ex-(外へ) + planus(平らな) → 平らに広げて示す",
+      "definition": "説明。理由づけ。",
+      "usage_in_passage": "\"The explanation is not that something blocks the water.\" と否定形で置かれ、読者が持ちがちな誤った説明を先に退ける。論の転換点。",
+      "related_terms": [
+        "account",
+        "reason",
+        "interpretation",
+        "assumption"
+      ],
+      "context_sentence": "The explanation is not that something blocks the water."
+    },
+    "unstable": {
+      "etymology": "un-(否定) + ラテン語 stabilis(安定した)",
+      "definition": "不安定な。わずかな乱れが増幅する状態の。",
+      "usage_in_passage": "\"a straight channel is unstable\" が本文の中心主張。直線が保たれないのは外力ではなく、直線という状態そのものの性質だと述べる。",
+      "related_terms": [
+        "precarious",
+        "volatile",
+        "unsteady",
+        "stable"
+      ],
+      "context_sentence": "It is that a straight channel is unstable, and that the instability feeds on itself."
+    },
+    "instability": {
+      "etymology": "in-(否定) + stabilis(安定した) + -ity",
+      "definition": "不安定性。",
+      "usage_in_passage": "\"the instability feeds on itself\" が自己増幅を一言で表す。第2段落の因果の連鎖はこの一句の展開にあたる。",
+      "related_terms": [
+        "volatility",
+        "imbalance",
+        "fluctuation",
+        "equilibrium"
+      ],
+      "context_sentence": "It is that a straight channel is unstable, and that the instability feeds on itself."
+    },
+    "slight": {
+      "etymology": "古ノルド語 slettr(平ら、取るに足らない)",
+      "definition": "わずかな。ごく小さい。",
+      "usage_in_passage": "\"a channel with a slight curve\" として、増幅の出発点が微小でよいことを示す。小さな原因が大きな結果を生むという論の要。",
+      "related_terms": [
+        "minor",
+        "faint",
+        "marginal",
+        "pronounced"
+      ],
+      "context_sentence": "Consider a channel with a slight curve, however that curve arose."
+    },
+    "curve": {
+      "etymology": "ラテン語 curvus(曲がった)",
+      "definition": "曲線。曲がり。",
+      "usage_in_passage": "第2段落の主語として繰り返され、\"The curve consequently becomes more pronounced\" → \"A deeper curve deflects the flow more strongly\" と、結果が次の原因になる循環を目に見える形にしている。",
+      "related_terms": [
+        "arc",
+        "bend",
+        "curvature",
+        "line"
+      ],
+      "context_sentence": "Consider a channel with a slight curve, however that curve arose."
+    },
+    "arose": {
+      "etymology": "古英語 arisan(立ち上がる) の過去形",
+      "definition": "生じた。arise の過去形。",
+      "usage_in_passage": "\"however that curve arose\" と起源を問わないことを明言する。最初の曲がりの由来は重要でなく、増幅の仕組みだけが本質だという立場を示す。",
+      "related_terms": [
+        "emerged",
+        "originated",
+        "occurred",
+        "vanished"
+      ],
+      "context_sentence": "Consider a channel with a slight curve, however that curve arose."
+    },
+    "carries": {
+      "etymology": "ラテン語 carrus(荷車) → 運ぶ",
+      "definition": "運ぶ。保持する。",
+      "usage_in_passage": "\"Moving water carries momentum\" で物理量を、\"what it was carrying\" で堆積物を運ぶ。同じ動詞が運動量と物質の両方に使われ、二つが結びついていることを示唆する。",
+      "related_terms": [
+        "transports",
+        "conveys",
+        "bears",
+        "releases"
+      ],
+      "context_sentence": "Moving water carries momentum, and momentum resists turning."
+    },
+    "momentum": {
+      "etymology": "ラテン語 movimentum ← movere(動かす)",
+      "definition": "運動量。動いている物体が持つ「進み続けようとする量」。",
+      "usage_in_passage": "\"momentum resists turning\" が全機構の出発点。水が曲がりたがらないからこそ外岸に押しつけられる、という因果の最初の環である。",
+      "related_terms": [
+        "inertia",
+        "impetus",
+        "velocity",
+        "friction"
+      ],
+      "context_sentence": "Moving water carries momentum, and momentum resists turning."
+    },
+    "resists": {
+      "etymology": "ラテン語 re-(逆らって) + sistere(立つ)",
+      "definition": "抵抗する。逆らう。",
+      "usage_in_passage": "\"momentum resists turning\" は擬人的だが正確で、外力なしには進路が変わらないという慣性の性質を一語で表している。",
+      "related_terms": [
+        "opposes",
+        "withstands",
+        "counters",
+        "yields"
+      ],
+      "context_sentence": "Moving water carries momentum, and momentum resists turning."
+    },
+    "outer": {
+      "etymology": "out(外) の比較級",
+      "definition": "外側の。",
+      "usage_in_passage": "\"the outer bank\" は侵食の側。inner bank との対比が第2・第3段落の構成軸になっている。",
+      "related_terms": [
+        "exterior",
+        "outward",
+        "convex",
+        "inner"
+      ],
+      "context_sentence": "The flow therefore presses against the outer bank of the curve, where it runs faster and scours sediment away."
+    },
+    "scours": {
+      "etymology": "ラテン語 ex-(すっかり) + curare(手入れする) → こすり洗う",
+      "definition": "削り取る。洗掘する。",
+      "usage_in_passage": "\"scours sediment away\" が外岸で起きる侵食。単に「削る」ではなく水流が擦り取る動きを含む語で、速い流れの作用にふさわしい。",
+      "related_terms": [
+        "erodes",
+        "abrades",
+        "excavates",
+        "deposits"
+      ],
+      "context_sentence": "The flow therefore presses against the outer bank of the curve, where it runs faster and scours sediment away."
+    },
+    "inner": {
+      "etymology": "in(内) の比較級",
+      "definition": "内側の。",
+      "usage_in_passage": "\"the inner bank\" は堆積の側。第3段落で point bar が築かれる場所として再登場し、螺旋流の終着点になる。",
+      "related_terms": [
+        "interior",
+        "inward",
+        "concave",
+        "outer"
+      ],
+      "context_sentence": "Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying."
+    },
+    "slower": {
+      "etymology": "古英語 slaw(遅い) の比較級",
+      "definition": "より遅い。",
+      "usage_in_passage": "\"slower water cannot hold as much material in suspension\" が堆積の理由そのもの。設問1の根拠にあたる。",
+      "related_terms": [
+        "sluggish",
+        "gradual",
+        "decelerated",
+        "faster"
+      ],
+      "context_sentence": "Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying."
+    },
+    "cannot": {
+      "etymology": "can(できる) + not",
+      "definition": "〜できない。",
+      "usage_in_passage": "\"cannot hold as much material in suspension\" と能力の限界として書かれる。堆積が意図でなく物理的制約の結果であることを示す。",
+      "related_terms": [
+        "unable",
+        "incapable",
+        "fails to",
+        "can"
+      ],
+      "context_sentence": "Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying."
+    },
+    "suspension": {
+      "etymology": "ラテン語 sub-(下に) + pendere(吊るす) → 吊られた状態",
+      "definition": "懸濁。粒子が沈まずに水中に漂っている状態。",
+      "usage_in_passage": "\"hold as much material in suspension\" が運搬能力を表す鍵語。流速が落ちると吊るしておけなくなり沈む、という一連の理屈を支える。",
+      "related_terms": [
+        "colloid",
+        "turbidity",
+        "dispersion",
+        "sedimentation"
+      ],
+      "context_sentence": "Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying."
+    },
+    "consequently": {
+      "etymology": "ラテン語 con-(共に) + sequi(続く) → 結果として",
+      "definition": "その結果。したがって。",
+      "usage_in_passage": "\"The curve consequently becomes more pronounced\" と因果を明示する接続語。第2段落は consequently → which → which と連鎖し、正のフィードバックを文の構造そのもので表している。",
+      "related_terms": [
+        "therefore",
+        "hence",
+        "accordingly",
+        "nevertheless"
+      ],
+      "context_sentence": "The curve consequently becomes more pronounced."
+    },
+    "pronounced": {
+      "etymology": "ラテン語 pro-(前へ) + nuntiare(告げる) → はっきり示された",
+      "definition": "顕著な。はっきりした。",
+      "usage_in_passage": "\"becomes more pronounced\" は曲がりが深くなること。程度の増大を表し、次の文の「深い曲がりはより強く流れを逸らす」に接続する。",
+      "related_terms": [
+        "marked",
+        "conspicuous",
+        "distinct",
+        "subtle"
+      ],
+      "context_sentence": "The curve consequently becomes more pronounced."
+    },
+    "deeper": {
+      "etymology": "古英語 deop(深い) の比較級",
+      "definition": "より深い。ここでは曲がりの度合いが大きい。",
+      "usage_in_passage": "\"A deeper curve deflects the flow more strongly\" が増幅の第2周目。結果(深い曲がり)が原因(強い偏向)に変わる瞬間を捉えている。",
+      "related_terms": [
+        "greater",
+        "sharper",
+        "more acute",
+        "shallower"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "deflects": {
+      "etymology": "ラテン語 de-(離れて) + flectere(曲げる)",
+      "definition": "逸らす。",
+      "usage_in_passage": "第1段落では否定された外的な deflect が、ここでは曲がり自身の作用として肯定的に使われる。原因の所在が外から内へ移ったことを語の再利用で示している。",
+      "related_terms": [
+        "diverts",
+        "turns",
+        "bends",
+        "aligns"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "strongly": {
+      "etymology": "古英語 strang(強い) + -ly",
+      "definition": "強く。",
+      "usage_in_passage": "\"deflects the flow more strongly\" の more が増幅の度合いを担う。第2段落の連鎖はすべて比較級で書かれており、量的な増大が主題であることを形式が示している。",
+      "related_terms": [
+        "forcefully",
+        "intensely",
+        "markedly",
+        "weakly"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "quickens": {
+      "etymology": "古英語 cwic(生きている、速い) + -en",
+      "definition": "速める。加速する。",
+      "usage_in_passage": "\"which quickens the erosion\" が連鎖の中間項。曲がり → 偏向 → 侵食加速 → さらに深い曲がり、という環を閉じる位置にある。",
+      "related_terms": [
+        "accelerates",
+        "hastens",
+        "speeds",
+        "slows"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "erosion": {
+      "etymology": "ラテン語 e-(外へ) + rodere(かじる) → かじり取ること",
+      "definition": "侵食。水や風が地表を削り取る作用。",
+      "usage_in_passage": "本文の二大作用の一方。deposition と対をなし、第3段落で「別々の出来事ではなく一つの循環の両端」と統合される。",
+      "related_terms": [
+        "abrasion",
+        "weathering",
+        "scouring",
+        "accretion"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "deepens": {
+      "etymology": "deep(深い) + -en",
+      "definition": "深める。",
+      "usage_in_passage": "\"which deepens the curve further\" が環の終点であり同時に始点。further の一語が「同じことがまた起きる」という反復性を示す。",
+      "related_terms": [
+        "intensifies",
+        "increases",
+        "sharpens",
+        "flattens"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "departures": {
+      "etymology": "古フランス語 departir(分かれる) → 離れること",
+      "definition": "逸脱。基準からのずれ。departure の複数形。",
+      "usage_in_passage": "\"Small departures from straightness do not fade; they amplify.\" は第2段落の結論。個々の因果ではなく系全体の性質として述べ直している。",
+      "related_terms": [
+        "deviations",
+        "divergences",
+        "variations",
+        "conformity"
+      ],
+      "context_sentence": "Small departures from straightness do not fade; they amplify."
+    },
+    "straightness": {
+      "etymology": "straight(真っ直ぐ) + -ness(性質)",
+      "definition": "真っ直ぐであること。",
+      "usage_in_passage": "\"departures from straightness\" として、直線が基準状態であることを言葉の上でも示す。その基準が不安定だというのが本文の主張である。",
+      "related_terms": [
+        "linearity",
+        "directness",
+        "alignment",
+        "curvature"
+      ],
+      "context_sentence": "Small departures from straightness do not fade; they amplify."
+    },
+    "fade": {
+      "etymology": "古フランス語 fader(色あせる) ← ラテン語 fatuus(気の抜けた)",
+      "definition": "薄れて消える。",
+      "usage_in_passage": "\"do not fade; they amplify\" の対比が設問3の鍵。安定な系ならば擾乱は fade するが、この系では逆だと述べている。",
+      "related_terms": [
+        "diminish",
+        "dissipate",
+        "subside",
+        "intensify"
+      ],
+      "context_sentence": "Small departures from straightness do not fade; they amplify."
+    },
+    "amplify": {
+      "etymology": "ラテン語 amplus(広い) + facere(する) → 大きくする",
+      "definition": "増幅する。次第に強まる。",
+      "usage_in_passage": "fade と対置され、正のフィードバックを一語で言い切る。第2段落全体がこの語の証明になっている。",
+      "related_terms": [
+        "intensify",
+        "magnify",
+        "escalate",
+        "dampen"
+      ],
+      "context_sentence": "Small departures from straightness do not fade; they amplify."
+    },
+    "mechanism": {
+      "etymology": "ギリシャ語 mēkhanē(仕掛け) + -ism",
+      "definition": "仕組み。作用の仕方。",
+      "usage_in_passage": "\"The mechanism has a second component\" と述べて第3段落を開く。第2段落で説明した平面的な仕組みに、立体的な循環を付け加える合図になっている。",
+      "related_terms": [
+        "process",
+        "apparatus",
+        "workings",
+        "outcome"
+      ],
+      "context_sentence": "The mechanism has a second component that is not visible from the surface."
+    },
+    "visible": {
+      "etymology": "ラテン語 videre(見る) + -ible",
+      "definition": "目に見える。",
+      "usage_in_passage": "\"not visible from the surface\" が第3段落の位置づけを決める。水面を見ているだけでは分からない層があると予告し、螺旋流の導入を用意する。",
+      "related_terms": [
+        "apparent",
+        "observable",
+        "evident",
+        "hidden"
+      ],
+      "context_sentence": "The mechanism has a second component that is not visible from the surface."
+    },
+    "inward": {
+      "etymology": "in(内) + -ward(〜の方へ)",
+      "definition": "内側へ向かって。",
+      "usage_in_passage": "\"drives a return current inward\" と \"inward near the bottom\" の二か所で使われ、螺旋の下半分の向きを定める。設問4の指示対象を決める語でもある。",
+      "related_terms": [
+        "inbound",
+        "centripetal",
+        "toward the centre",
+        "outward"
+      ],
+      "context_sentence": "Because the water surface stands slightly higher against the outer bank, pressure at the bed drives a return current inward."
+    },
+    "helical": {
+      "etymology": "ギリシャ語 helix(螺旋) + -al",
+      "definition": "螺旋状の。",
+      "usage_in_passage": "\"a helical motion\" が第3段落の中心概念。上流から下流へ進みながら断面内で回るという二重の動きを一語で表す。",
+      "related_terms": [
+        "spiral",
+        "corkscrew",
+        "coiled",
+        "linear"
+      ],
+      "context_sentence": "The result is a helical motion: the water spirals along the channel, moving outward near the surface and inward near the bottom."
+    },
+    "spirals": {
+      "etymology": "ギリシャ語 speira(巻いたもの)",
+      "definition": "螺旋を描いて進む。",
+      "usage_in_passage": "\"the water spirals along the channel\" が helical motion の言い換え。along が「流下しながら」を担い、静止した渦ではないことを示す。",
+      "related_terms": [
+        "coils",
+        "winds",
+        "circulates",
+        "flows straight"
+      ],
+      "context_sentence": "The result is a helical motion: the water spirals along the channel, moving outward near the surface and inward near the bottom."
+    },
+    "outward": {
+      "etymology": "out(外) + -ward(〜の方へ)",
+      "definition": "外側へ向かって。",
+      "usage_in_passage": "\"moving outward near the surface\" が螺旋の上半分。inward と対にして、深さによって向きが逆になることを示す。",
+      "related_terms": [
+        "outbound",
+        "centrifugal",
+        "away from the centre",
+        "inward"
+      ],
+      "context_sentence": "The result is a helical motion: the water spirals along the channel, moving outward near the surface and inward near the bottom."
+    },
+    "sweeps": {
+      "etymology": "古英語 swapan(掃く)",
+      "definition": "掃くように運ぶ。",
+      "usage_in_passage": "\"That bottom current sweeps eroded material ... across the channel floor\" として、河床を横切る輸送を表す。掃く比喩が、面に沿った移動であることを的確に伝える。",
+      "related_terms": [
+        "carries",
+        "brushes",
+        "transports",
+        "deposits"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "eroded": {
+      "etymology": "ラテン語 e-(外へ) + rodere(かじる) の過去分詞",
+      "definition": "侵食された。削り取られた。",
+      "usage_in_passage": "\"eroded material\" は外岸から剥がされた物質。この語が侵食と堆積を同じ物質の履歴として結びつけている。",
+      "related_terms": [
+        "worn",
+        "scoured",
+        "abraded",
+        "deposited"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "delivers": {
+      "etymology": "ラテン語 de-(離して) + liberare(自由にする) → 手渡す",
+      "definition": "届ける。運んで渡す。",
+      "usage_in_passage": "\"delivers it to the inner bank\" と、輸送に目的地があることを示す。第3段落の結論「侵食と堆積は一つの循環の両端」を語の選択が先取りしている。",
+      "related_terms": [
+        "conveys",
+        "transfers",
+        "supplies",
+        "removes"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "gently": {
+      "etymology": "ラテン語 gentilis(同族の) → 穏やかな + -ly",
+      "definition": "緩やかに。",
+      "usage_in_passage": "\"the gently sloping deposit\" が point bar の形状。外岸の急な崖と対比され、両岸の非対称が視覚的に伝わる。",
+      "related_terms": [
+        "gradually",
+        "softly",
+        "mildly",
+        "steeply"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "sloping": {
+      "etymology": "古英語 aslupan(滑る) → 傾く",
+      "definition": "傾斜した。",
+      "usage_in_passage": "point bar の断面を描写する。緩やかに傾くという形が、遅い流れが少しずつ積んだ結果であることを示している。",
+      "related_terms": [
+        "inclined",
+        "graded",
+        "tilted",
+        "level"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "deposit": {
+      "etymology": "ラテン語 de-(下に) + ponere(置く)",
+      "definition": "堆積物。積もったもの。",
+      "usage_in_passage": "\"the gently sloping deposit that geologists call a point bar\" と、日常語から専門語への橋渡しに使われている。",
+      "related_terms": [
+        "accumulation",
+        "sediment",
+        "bar",
+        "erosion"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "geologists": {
+      "etymology": "ギリシャ語 gē(大地) + logos(学) + -ist",
+      "definition": "地質学者。geologist の複数形。",
+      "usage_in_passage": "専門語 point bar を導入する際の出典として置かれる。読者が知らない用語であることを前提にした丁寧な書き方になっている。",
+      "related_terms": [
+        "earth scientists",
+        "geomorphologists",
+        "researchers",
+        "laypeople"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "deposition": {
+      "etymology": "ラテン語 de-(下に) + ponere(置く) + -tion",
+      "definition": "堆積作用。運ばれた物質が積もること。",
+      "usage_in_passage": "erosion と並べられ、\"not separate events at opposite banks but two ends of one circulation\" と統合される。第3段落全体の結論を担う語。",
+      "related_terms": [
+        "accretion",
+        "sedimentation",
+        "accumulation",
+        "erosion"
+      ],
+      "context_sentence": "Erosion and deposition are therefore not separate events at opposite banks but two ends of one circulation."
+    },
+    "opposite": {
+      "etymology": "ラテン語 ob-(向かって) + ponere(置く) → 向かい合わせに置かれた",
+      "definition": "反対側の。",
+      "usage_in_passage": "\"separate events at opposite banks\" という素朴な見方を提示したうえで否定する。両岸が別々に見えるという直観を退けるための語。",
+      "related_terms": [
+        "contrary",
+        "facing",
+        "reverse",
+        "adjacent"
+      ],
+      "context_sentence": "Erosion and deposition are therefore not separate events at opposite banks but two ends of one circulation."
+    },
+    "circulation": {
+      "etymology": "ラテン語 circulus(円) + -ation",
+      "definition": "循環。巡り。",
+      "usage_in_passage": "\"two ends of one circulation\" が第3段落の到達点。侵食と堆積を別々の現象ではなく一つの流れの両端として捉え直す。",
+      "related_terms": [
+        "cycle",
+        "current",
+        "rotation",
+        "stagnation"
+      ],
+      "context_sentence": "Erosion and deposition are therefore not separate events at opposite banks but two ends of one circulation."
+    },
+    "amplification": {
+      "etymology": "ラテン語 amplus(広い) + facere(する) + -tion",
+      "definition": "増幅。",
+      "usage_in_passage": "\"Amplification cannot continue without limit.\" が第4段落を開き、それまでの正のフィードバックに歯止めがかかることを予告する。論の折り返し点。",
+      "related_terms": [
+        "intensification",
+        "escalation",
+        "growth",
+        "damping"
+      ],
+      "context_sentence": "Amplification cannot continue without limit."
+    },
+    "lengthens": {
+      "etymology": "length(長さ) + -en",
+      "definition": "長くなる。",
+      "usage_in_passage": "\"the river lengthens and its gradient ... declines\" と、長さの増加が勾配の低下を招く因果を示す。増幅を止める仕組みの第一。",
+      "related_terms": [
+        "extends",
+        "elongates",
+        "stretches",
+        "shortens"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "gradient": {
+      "etymology": "ラテン語 gradus(歩み、段) + -ent → 傾きの度合い",
+      "definition": "勾配。一定距離あたりの高低差。",
+      "usage_in_passage": "本文中で \"the drop in elevation over a given distance of channel\" と自ら定義されている。第5段落で直線化が勾配を急にするという議論の土台になる。",
+      "related_terms": [
+        "slope",
+        "incline",
+        "steepness",
+        "plateau"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "elevation": {
+      "etymology": "ラテン語 e-(外へ) + levare(持ち上げる) + -tion",
+      "definition": "標高。高さ。",
+      "usage_in_passage": "gradient の定義の中に現れる。高低差というエネルギーの源を指し示す語である。",
+      "related_terms": [
+        "altitude",
+        "height",
+        "relief",
+        "depth"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "declines": {
+      "etymology": "ラテン語 de-(下へ) + clinare(傾く)",
+      "definition": "低下する。減る。",
+      "usage_in_passage": "\"its gradient ... declines, which reduces the energy available for cutting\" と、増幅を止める負のフィードバックを導入する。第2段落の連鎖と対称をなす。",
+      "related_terms": [
+        "diminishes",
+        "decreases",
+        "wanes",
+        "rises"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "cutting": {
+      "etymology": "中英語 cutten(切る)",
+      "definition": "削り込むこと。侵食。",
+      "usage_in_passage": "\"the energy available for cutting\" と \"cutting downward\" の二か所で使われ、横方向の蛇行と縦方向の下刻という、エネルギーの二つの行き先を繋いでいる。",
+      "related_terms": [
+        "incision",
+        "downcutting",
+        "carving",
+        "filling"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "meanwhile": {
+      "etymology": "mean(中間の) + while(間) → その間に",
+      "definition": "その一方で。同時に。",
+      "usage_in_passage": "勾配低下という第一の抑制に、切断という第二の抑制を並置する接続語。二つが同時進行することを示す。",
+      "related_terms": [
+        "simultaneously",
+        "concurrently",
+        "in the interim",
+        "afterwards"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "neighbouring": {
+      "etymology": "古英語 neahgebur(近くに住む者) + -ing。米つづりは neighboring",
+      "definition": "隣り合った。",
+      "usage_in_passage": "\"neighbouring bends migrate toward one another\" として、個々の曲がりではなく曲がり同士の関係が次の段階を決めることを示す。",
+      "related_terms": [
+        "adjacent",
+        "nearby",
+        "adjoining",
+        "distant"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "migrate": {
+      "etymology": "ラテン語 migrare(移り住む)",
+      "definition": "移動する。位置を変える。",
+      "usage_in_passage": "曲がりが固定された地形ではなく、時間とともに動く存在であることを示す。地形を静物ではなく過程として捉える本文の姿勢が表れている。",
+      "related_terms": [
+        "shift",
+        "move",
+        "travel",
+        "remain"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "narrow": {
+      "etymology": "古英語 nearu(狭い)",
+      "definition": "狭い。",
+      "usage_in_passage": "\"the narrow neck between them\" として、切断が起きる条件を示す。曲がりが接近した結果としてできる細い部分である。",
+      "related_terms": [
+        "slender",
+        "constricted",
+        "thin",
+        "broad"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "neck": {
+      "etymology": "古英語 hnecca(首)",
+      "definition": "首。ここでは曲がりに挟まれた細い陸地。",
+      "usage_in_passage": "身体の比喩で地形を表す。細く、切れやすい部分という含意が、次の breached に自然に繋がる。",
+      "related_terms": [
+        "isthmus",
+        "strip",
+        "spit",
+        "basin"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "breached": {
+      "etymology": "古英語 brecan(破る) → 破られた箇所",
+      "definition": "破られた。突破された。",
+      "usage_in_passage": "\"until the narrow neck between them is breached\" が切断の瞬間。受動態で書かれ、川がそうしようとしたのではなく物理的に至った結果であることを示す。",
+      "related_terms": [
+        "ruptured",
+        "broken through",
+        "penetrated",
+        "sealed"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "abandons": {
+      "etymology": "古フランス語 a bandon(思いのままに) → 見捨てる",
+      "definition": "見捨てる。放棄する。",
+      "usage_in_passage": "\"the river abandons the loop for a shorter path\" と擬人的に書かれるが、実際は勾配の急な経路が選ばれるという物理の帰結である。",
+      "related_terms": [
+        "forsakes",
+        "deserts",
+        "relinquishes",
+        "retains"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "loop": {
+      "etymology": "中英語 loupe(輪)",
+      "definition": "輪。環状の曲がり。",
+      "usage_in_passage": "切り離される対象。次文の crescent(三日月)が、その残骸の形を具体的に描く。",
+      "related_terms": [
+        "bend",
+        "curve",
+        "meander",
+        "straight"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "shorter": {
+      "etymology": "古英語 sceort(短い) の比較級",
+      "definition": "より短い。",
+      "usage_in_passage": "\"a shorter path\" が切断後の経路。短いということは同じ落差をより急に下ることを意味し、第5段落の議論と同じ理屈が働いている。",
+      "related_terms": [
+        "briefer",
+        "more direct",
+        "curtailed",
+        "longer"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "severed": {
+      "etymology": "ラテン語 separare(分ける) → 古フランス語 sevrer",
+      "definition": "切り離された。",
+      "usage_in_passage": "\"The severed bend survives as a crescent of standing water\" と、切断後の運命を述べる。過去分詞が、それが受けた作用の痕跡であることを示す。",
+      "related_terms": [
+        "detached",
+        "cut off",
+        "isolated",
+        "joined"
+      ],
+      "context_sentence": "The severed bend survives as a crescent of standing water."
+    },
+    "survives": {
+      "etymology": "ラテン語 super-(超えて) + vivere(生きる)",
+      "definition": "生き残る。残存する。",
+      "usage_in_passage": "本流から切り離されても地形として残ることを示す。動的な過程の中に、その履歴が痕跡として保存されるという視点を与える。",
+      "related_terms": [
+        "persists",
+        "endures",
+        "remains",
+        "vanishes"
+      ],
+      "context_sentence": "The severed bend survives as a crescent of standing water."
+    },
+    "crescent": {
+      "etymology": "ラテン語 crescere(成長する) → 満ちてゆく月",
+      "definition": "三日月形。",
+      "usage_in_passage": "切り離された曲がりの形を一語で描く。専門語 oxbow lake を使わずに形状で伝えており、読者の視覚に直接訴える。",
+      "related_terms": [
+        "arc",
+        "sickle",
+        "oxbow",
+        "circle"
+      ],
+      "context_sentence": "The severed bend survives as a crescent of standing water."
+    },
+    "landscape": {
+      "etymology": "オランダ語 landschap(land + -schap) → 一続きの土地",
+      "definition": "景観。地形の全体像。",
+      "usage_in_passage": "\"What looks like a landscape in disorder\" として、見た目の無秩序と背後の規則性の対比を立てる。段落の結論を導く仕掛け。",
+      "related_terms": [
+        "terrain",
+        "scenery",
+        "topography",
+        "detail"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "disorder": {
+      "etymology": "dis-(否定) + order(秩序)",
+      "definition": "無秩序。乱雑さ。",
+      "usage_in_passage": "\"a landscape in disorder\" が退けられる見方。直後の \"in fact a system held near a characteristic scale\" が、それが規則的な系であることを示す。",
+      "related_terms": [
+        "chaos",
+        "randomness",
+        "confusion",
+        "regularity"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "characteristic": {
+      "etymology": "ギリシャ語 kharaktēr(刻印) + -istic",
+      "definition": "特徴的な。その系に固有の。",
+      "usage_in_passage": "\"a system held near a characteristic scale\" が本文の到達点。蛇行が任意の形ではなく、決まった尺度の周りに保たれていると述べる。",
+      "related_terms": [
+        "distinctive",
+        "typical",
+        "defining",
+        "arbitrary"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "enormous": {
+      "etymology": "ラテン語 e-(外れて) + norma(基準) → 常軌を外れた",
+      "definition": "非常に大きな。",
+      "usage_in_passage": "\"across an enormous range of sizes\" が比の普遍性を強調する。跨げる小川から下流のミシシッピまでという幅で、同じ法則が働くことを示す。",
+      "related_terms": [
+        "immense",
+        "vast",
+        "tremendous",
+        "minute"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "roughly": {
+      "etymology": "古英語 ruh(粗い) + -ly",
+      "definition": "おおよそ。",
+      "usage_in_passage": "\"roughly eleven times the width\" と概数で示す。厳密な定数ではなく傾向であることを正直に伝える語で、科学的な書き方の一部である。",
+      "related_terms": [
+        "approximately",
+        "about",
+        "around",
+        "exactly"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "eleven": {
+      "etymology": "古英語 endleofan(一つ余る)",
+      "definition": "11。",
+      "usage_in_passage": "曲がりの間隔が川幅の約11倍という比。本文で唯一の具体的な数値であり、規則性の主張を検証可能な形にしている。",
+      "related_terms": [
+        "ratio",
+        "multiple",
+        "factor",
+        "proportion"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "width": {
+      "etymology": "wide(広い) + -th(名詞化)",
+      "definition": "幅。",
+      "usage_in_passage": "比の基準となる量。川幅で規格化することで、大小さまざまな川を同じ尺度で語れるようにしている。",
+      "related_terms": [
+        "breadth",
+        "span",
+        "gauge",
+        "length"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "meandering": {
+      "etymology": "ギリシャ語 Maiandros(小アジアの蛇行する川の名) → 一般名詞化",
+      "definition": "蛇行。曲がりくねること。",
+      "usage_in_passage": "\"engineering against meandering is so costly\" として、第5段落の主題を示す。語源が実在の川の名であることは、この現象の古さを物語る。",
+      "related_terms": [
+        "winding",
+        "sinuosity",
+        "curving",
+        "channelization"
+      ],
+      "context_sentence": "That ratio holds because the same balance of forces sets it at every scale, and it is why engineering against meandering is so costly."
+    },
+    "costly": {
+      "etymology": "cost(費用) + -ly",
+      "definition": "費用のかかる。代償の大きい。",
+      "usage_in_passage": "\"so costly\" が第5段落の主張。金銭だけでなく、抑え込んだ力が別の場所に現れるという意味での代償も含意する。",
+      "related_terms": [
+        "expensive",
+        "burdensome",
+        "onerous",
+        "cheap"
+      ],
+      "context_sentence": "That ratio holds because the same balance of forces sets it at every scale, and it is why engineering against meandering is so costly."
+    },
+    "straightened": {
+      "etymology": "straight + -en + -ed",
+      "definition": "直線化された。",
+      "usage_in_passage": "\"A straightened channel is steeper than the one it replaced\" が第5段落の論証の起点。人為的な介入が物理量を変えてしまうことを示す。",
+      "related_terms": [
+        "channelized",
+        "realigned",
+        "artificial",
+        "natural"
+      ],
+      "context_sentence": "A straightened channel is steeper than the one it replaced, since it covers the same drop in less distance."
+    },
+    "steeper": {
+      "etymology": "古英語 steap(切り立った) の比較級",
+      "definition": "より急な。",
+      "usage_in_passage": "\"steeper ... since it covers the same drop in less distance\" と理由まで添えられる。勾配の定義から必然的に導かれることを読者に確認させている。",
+      "related_terms": [
+        "sharper",
+        "more inclined",
+        "precipitous",
+        "gentler"
+      ],
+      "context_sentence": "A straightened channel is steeper than the one it replaced, since it covers the same drop in less distance."
+    },
+    "replaced": {
+      "etymology": "re-(再び) + place(置く)",
+      "definition": "取って代わった。置き換えた。",
+      "usage_in_passage": "\"the one it replaced\" が比較の相手、すなわち元の蛇行した水路を指す。人工と自然を対比させる語。",
+      "related_terms": [
+        "supplanted",
+        "substituted",
+        "superseded",
+        "preserved"
+      ],
+      "context_sentence": "A straightened channel is steeper than the one it replaced, since it covers the same drop in less distance."
+    },
+    "surplus": {
+      "etymology": "ラテン語 super-(上に) + plus(より多く) → 余り",
+      "definition": "余剰。余った分。",
+      "usage_in_passage": "\"Steeper water carries surplus energy, and the surplus goes into cutting downward\" と二度使われ、余ったエネルギーが必ずどこかへ行くという保存の考え方を示す。第5段落の核心。",
+      "related_terms": [
+        "excess",
+        "overflow",
+        "residue",
+        "deficit"
+      ],
+      "context_sentence": "Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed."
+    },
+    "downward": {
+      "etymology": "down(下) + -ward(〜の方へ)",
+      "definition": "下方へ。",
+      "usage_in_passage": "\"cutting downward\" が余剰エネルギーの行き先の一つ。横に曲がれないなら縦に掘るという二者択一が、設問5の推論の根拠になる。",
+      "related_terms": [
+        "vertically",
+        "incising",
+        "deepening",
+        "upward"
+      ],
+      "context_sentence": "Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed."
+    },
+    "rebuilding": {
+      "etymology": "re-(再び) + build(建てる) + -ing",
+      "definition": "作り直すこと。",
+      "usage_in_passage": "\"rebuilding the bends that were removed\" がもう一つの行き先。取り除いた曲がりが戻ってくるという第1段落の予告を、機構の言葉で裏づけている。",
+      "related_terms": [
+        "restoring",
+        "reconstructing",
+        "re-forming",
+        "demolishing"
+      ],
+      "context_sentence": "Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed."
+    },
+    "levees": {
+      "etymology": "フランス語 lever(持ち上げる) → 盛り土",
+      "definition": "堤防。levee の複数形。",
+      "usage_in_passage": "\"Rivers held between levees\" が最終段落の情景。物理的に閉じ込めても川の性質は変わらないという結論の舞台になる。",
+      "related_terms": [
+        "embankments",
+        "dikes",
+        "floodwalls",
+        "floodplain"
+      ],
+      "context_sentence": "Rivers held between levees do not stop behaving like rivers."
+    },
+    "behaving": {
+      "etymology": "be-(強意) + have(持つ、振る舞う) + -ing",
+      "definition": "振る舞うこと。",
+      "usage_in_passage": "\"do not stop behaving like rivers\" が本文の締めくくり。川を制御可能な対象ではなく、固有の性質を持つ系として見る視点を最後に置いている。",
+      "related_terms": [
+        "acting",
+        "functioning",
+        "operating",
+        "ceasing"
+      ],
+      "context_sentence": "Rivers held between levees do not stop behaving like rivers."
+    }
+  }
+}
