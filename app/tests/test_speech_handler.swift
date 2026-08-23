@@ -17,6 +17,7 @@ let cacheDir = URL(fileURLWithPath: NSTemporaryDirectory())
 
 final class HandlerDelegate: NSObject, NSApplicationDelegate {
     private var webView: WKWebView!
+    private var window: NSWindow!
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         let configuration = WKWebViewConfiguration()
@@ -28,11 +29,22 @@ final class HandlerDelegate: NSObject, NSApplicationDelegate {
 
         webView = WKWebView(frame: NSRect(x: 0, y: 0, width: 400, height: 300),
                             configuration: configuration)
-        // baseURL を audio:// にしないと、ページの起源が null になり fetch() が
-        // クロスオリジン扱いで失敗する(実測: "TypeError: Load failed")。
-        // audio:// を起源にすることで、返ってきた audio:// の URL を同一起源として fetch できる。
-        webView.loadHTMLString("<meta charset='utf-8'><p>test</p>",
-                               baseURL: URL(string: "audio://local/"))
+        // loadHTMLString ではなく、audio:// スキーム越しに実ファイルとして読み込む。
+        // <audio> の読み込みは fetch() と別経路(AVFoundation のリソースローダ)を通り、
+        // loadHTMLString で作ったページ(実ネットワーク要求を経ていない)からは
+        // カスタムスキームの <audio> が読み込めないことがある。本番の main.swift も
+        // 常に webView.load(URLRequest) で実ページを読み込んでおり、ここも同じ形にする。
+        try? FileManager.default.createDirectory(at: cacheDir, withIntermediateDirectories: true)
+        try? "<meta charset='utf-8'><p>test</p>".write(
+            to: cacheDir.appendingPathComponent("index.html"), atomically: true, encoding: .utf8)
+        webView.load(URLRequest(url: URL(string: "audio://local/index.html")!))
+        // 窓に載っていない WKWebView は非表示扱いになり、メディアの読み込みが
+        // 抑制されることがある(実測: <audio> が networkState=3 のまま進まない)。
+        // 実機の main.swift は必ず窓に載せているので、ここでも合わせる。
+        window = NSWindow(contentRect: NSRect(x: -4000, y: -4000, width: 400, height: 300),
+                          styleMask: [.titled], backing: .buffered, defer: false)
+        window.contentView = webView
+        window.orderFront(nil)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { self.verify() }
         DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
@@ -71,6 +83,34 @@ final class HandlerDelegate: NSObject, NSApplicationDelegate {
             check("実ファイルが作られている",
                   FileManager.default.fileExists(
                     atPath: cacheDir.appendingPathComponent("listening_900.m4a").path))
+
+            self.verifyAudioElementPlayable(url: url)
+        }
+    }
+
+    /// fetch() は Range ヘッダを送らないため、<audio> だけが踏む経路を見逃す。
+    /// 実際に <audio> へ読み込み、readyState/duration が音声を読めたことを
+    /// 示す値になるかを確かめる。ここでの回帰は「音声が一切鳴らない」という
+    /// 症状に直結するため、fetch() の確認とは別に必ず持っておく。
+    private func verifyAudioElementPlayable(url: String) {
+        let literal = url.replacingOccurrences(of: "\\", with: "\\\\")
+            .replacingOccurrences(of: "\"", with: "\\\"")
+        run("""
+            const a = new Audio();
+            const done = new Promise((resolve) => {
+                a.addEventListener("loadedmetadata", () => resolve("ok"));
+                a.addEventListener("error", () => resolve("error:" + (a.error && a.error.code)));
+                setTimeout(() => resolve("timeout"), 8000);
+            });
+            document.body.appendChild(a);
+            a.src = "\(literal)";
+            const outcome = await done;
+            return outcome + "|readyState=" + a.readyState + "|duration=" + a.duration;
+            """) { result in
+            check("<audio> 要素が Range 要求越しに読み込める(fetch では検出できない経路)",
+                  result.hasPrefix("ok|"), result)
+            check("読み込み後、時間長が数値として読める(NaN ではない)",
+                  result.contains("duration=") && !result.contains("duration=NaN"), result)
 
             // 2回目はキャッシュを返す(生成し直さない)。生成し直すと say と
             // AVFoundation の書き出しに数秒かかるため、更新日時だけでなく

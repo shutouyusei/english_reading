@@ -23,7 +23,7 @@ cat > "$APP/Contents/Info.plist" <<'PLIST'
 </plist>
 PLIST
 
-swiftc -O app/src/PathResolver.swift app/src/JSONLinesLog.swift \
+swiftc -O app/src/PathResolver.swift app/src/ByteRange.swift app/src/JSONLinesLog.swift \
   app/src/ClaudeRunner.swift app/src/ContentSchemeHandler.swift \
   app/src/LogHandlers.swift app/src/GradeHandler.swift \
   app/src/AnkiClient.swift app/src/AnkiHandler.swift \

@@ -34,7 +34,7 @@ swiftc -O app/src/SpeechSynthesizer.swift app/tests/test_speech_synthesizer.swif
 
 # JS から Swift の音声生成までを WKWebView 越しに通す。
 SPEECH_HANDLER_OUT="$TMP/test_speech_handler"
-swiftc -O app/src/PathResolver.swift app/src/ContentSchemeHandler.swift \
+swiftc -O app/src/PathResolver.swift app/src/ByteRange.swift app/src/ContentSchemeHandler.swift \
   app/src/SpeechSynthesizer.swift app/src/SpeechHandler.swift \
   app/tests/test_speech_handler.swift -o "$SPEECH_HANDLER_OUT"
 "$SPEECH_HANDLER_OUT"
@@ -42,6 +42,10 @@ swiftc -O app/src/PathResolver.swift app/src/ContentSchemeHandler.swift \
 AUDIO_SCHEME_OUT="$TMP/test_audio_scheme"
 swiftc -O app/src/PathResolver.swift app/tests/test_audio_scheme.swift -o "$AUDIO_SCHEME_OUT"
 "$AUDIO_SCHEME_OUT"
+
+BYTE_RANGE_OUT="$TMP/test_byte_range"
+swiftc -O app/src/ByteRange.swift app/tests/test_byte_range.swift -o "$BYTE_RANGE_OUT"
+"$BYTE_RANGE_OUT"
 
 ANKI_CLIENT_OUT="$TMP/test_anki_client"
 swiftc -O app/src/AnkiClient.swift app/tests/test_anki_client.swift -o "$ANKI_CLIENT_OUT"
