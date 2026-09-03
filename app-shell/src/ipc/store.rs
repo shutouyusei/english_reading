@@ -37,10 +37,13 @@ mod tests {
     }
 
     fn uuid_like() -> String {
+        use std::sync::atomic::{AtomicU64, Ordering};
+        static COUNTER: AtomicU64 = AtomicU64::new(0);
         format!(
-            "{}-{:?}",
+            "{}-{:?}-{}",
             std::process::id(),
-            SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_nanos()
+            SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_nanos(),
+            COUNTER.fetch_add(1, Ordering::Relaxed)
         )
     }
 

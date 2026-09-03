@@ -77,6 +77,43 @@ pub fn format_resolve_script(request_id: &str, result: Option<&Value>, error: Op
     format!("window.__toeflIpcResolve({request_id_json}, {result_json}, {error_json})")
 }
 
+use std::path::Path;
+use toefl_core::anki_client::AnkiClient;
+use toefl_core::jsonlines_log::JsonLinesFile;
+
+/// リクエストを実行し、`window.__toeflIpcResolve(...)` を呼ぶJS文字列を返す。
+/// grader/anki を含め全ハンドラがここで同期的に実行される想定 — 呼び出し側
+/// (main.rs)が必ずバックグラウンドスレッドから呼ぶことでUIスレッドを塞がない
+/// (docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md のエラー処理節)。
+pub fn dispatch(request: &IpcRequest, root: &Path, data_dir: &Path) -> String {
+    let result = match request.handler {
+        Handler::Store => {
+            let log = JsonLinesFile::new(data_dir, "attempts.jsonl");
+            store::handle_log_store(&request.payload, &log)
+        }
+        Handler::Listening => {
+            let log = JsonLinesFile::new(data_dir, "listening.jsonl");
+            store::handle_log_store(&request.payload, &log)
+        }
+        Handler::Essays => {
+            let log = JsonLinesFile::new(data_dir, "essays.jsonl");
+            essays::handle_essays(&request.payload, &log)
+        }
+        Handler::Grader => grader::handle_grader(&request.payload, root).map(Some),
+        Handler::Anki => {
+            let client = AnkiClient::default();
+            anki::handle_anki(&request.payload, &client).map(Some)
+        }
+        Handler::Dictionary => placeholder::handle_dictionary(&request.payload).map(Some),
+        Handler::Speech => placeholder::handle_speech(&request.payload).map(Some),
+    };
+
+    match result {
+        Ok(value) => format_resolve_script(&request.request_id, value.as_ref(), None),
+        Err(message) => format_resolve_script(&request.request_id, None, Some(&message)),
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -163,5 +200,55 @@ mod tests {
             .expect("prefix/suffix should match");
         let parsed: Value = serde_json::from_str(error_part).unwrap();
         assert_eq!(parsed, Value::String(message.to_string()));
+    }
+
+    #[test]
+    fn dispatches_store_loadall_to_empty_array() {
+        let dir = std::env::temp_dir().join(format!("ipc-dispatch-test-{}", uuid_like()));
+        std::fs::create_dir_all(&dir).unwrap();
+        let request = parse_ipc_request(r#"{"requestId":"1","handler":"store","action":"loadAll"}"#).unwrap();
+        let script = dispatch(&request, &dir, &dir);
+        assert_eq!(script, r#"window.__toeflIpcResolve("1", [], null)"#);
+        let _ = std::fs::remove_dir_all(&dir);
+    }
+
+    #[test]
+    fn dispatches_listening_to_its_own_file_separately_from_store() {
+        let dir = std::env::temp_dir().join(format!("ipc-dispatch-test-{}", uuid_like()));
+        std::fs::create_dir_all(&dir).unwrap();
+        let save = parse_ipc_request(
+            r#"{"requestId":"1","handler":"listening","action":"saveAttempt","attempt":{"listeningId":"l1"}}"#,
+        )
+        .unwrap();
+        dispatch(&save, &dir, &dir);
+
+        let store_load = parse_ipc_request(r#"{"requestId":"2","handler":"store","action":"loadAll"}"#).unwrap();
+        assert_eq!(dispatch(&store_load, &dir, &dir), r#"window.__toeflIpcResolve("2", [], null)"#);
+
+        let listening_load =
+            parse_ipc_request(r#"{"requestId":"3","handler":"listening","action":"loadAll"}"#).unwrap();
+        let script = dispatch(&listening_load, &dir, &dir);
+        assert!(script.contains("l1"));
+        let _ = std::fs::remove_dir_all(&dir);
+    }
+
+    #[test]
+    fn dispatches_dictionary_to_placeholder_error() {
+        let request =
+            parse_ipc_request(r#"{"requestId":"9","handler":"dictionary","action":"define","word":"x"}"#).unwrap();
+        let script = dispatch(&request, Path::new("/tmp"), Path::new("/tmp"));
+        assert!(script.contains("この機能はまだ利用できません"));
+    }
+
+    fn uuid_like() -> String {
+        use std::sync::atomic::{AtomicU64, Ordering};
+        use std::time::{SystemTime, UNIX_EPOCH};
+        static COUNTER: AtomicU64 = AtomicU64::new(0);
+        format!(
+            "{}-{:?}-{}",
+            std::process::id(),
+            SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_nanos(),
+            COUNTER.fetch_add(1, Ordering::Relaxed)
+        )
     }
 }
