@@ -42,19 +42,20 @@ Claude Codeのサブスクリプション枠で動作):
 ## ローカルアプリ(macOS)
 
 リスニング・スピーキング等の学習機能を載せるための、ブラウザに依存しない
-ネイティブアプリ。学習記録を実ファイルとして残す。
+ネイティブアプリ(`app-shell/`、Rust + tao + wry)。学習記録を実ファイルとして残す。
 
 ```bash
-bash app/build.sh          # ビルド(swiftc のみ。npm も Xcode も不要)
-open app/build/TOEFLReading.app
+bash app-shell/build.sh    # ビルド(cargo のみ)
+TOEFL_REPO_ROOT="$(pwd)" app-shell/target/release/app_shell
 ```
 
 - 解答履歴は `~/Documents/TOEFLReading/attempts.jsonl` に**追記**される(上書きしない)
 - パッセージは起動のたびにディスクから読むため、`/new-passage` で追加した分は
   **再ビルドせずに**反映される
-- アプリはリポジトリの位置を実行ファイルからの相対で解決する。リポジトリを
-  移動した場合は環境変数 `TOEFL_REPO_ROOT` を指定して起動する
-- macOS 専用。署名していないため配布には向かない(個人利用を前提)
+- リポジトリルートは環境変数 `TOEFL_REPO_ROOT` で指定する(未設定時は起動時の
+  カレントディレクトリを使う)
+- macOS・Linux 対応(Windows は設計のみで未検証)。署名していないため配布には
+  向かない(個人利用を前提)
 - リスニングもローカルアプリのみ。音声は macOS の `say` コマンドで初回再生時に
   生成し、`~/Documents/TOEFLReading/audio/` にキャッシュする(2回目以降は
   再生成しない)。音声ファイルはリポジトリにはコミットしない
@@ -88,7 +89,7 @@ Claude Code がインストール・ログイン済みなら、ローカルア�
 `TOEFL_CLAUDE_BIN` に full path を設定して起動する:
 
 ```bash
-TOEFL_CLAUDE_BIN=/path/to/claude open app/build/TOEFLReading.app
+TOEFL_CLAUDE_BIN=/path/to/claude TOEFL_REPO_ROOT="$(pwd)" app-shell/target/release/app_shell
 ```
 
 ## テスト
@@ -96,7 +97,8 @@ TOEFL_CLAUDE_BIN=/path/to/claude open app/build/TOEFLReading.app
 ```bash
 python3 -m unittest discover -s tests/python -v   # Pythonスクリプト
 node --test "tests/js/**/*.test.js"                # フロントエンド共通ロジック
-bash app/tests/run.sh                              # Swift(パス解決)
+(cd core && cargo test)                            # Rust core
+(cd app-shell && cargo test)                       # Rust app-shell
 ```
 
 ## 公開URL

@@ -107,7 +107,7 @@ python3 scripts/update_listening_index.py
 ## 7. 音声を確認する
 アプリをビルドして起動し、実際に再生する。
 ```
-sh app/build.sh && open app/build/TOEFLReading.app
+sh app-shell/build.sh && TOEFL_REPO_ROOT="$(pwd)" app-shell/target/release/app_shell
 ```
 確かめること:
 - 音声が生成され、最後まで再生できる
