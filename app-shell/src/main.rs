@@ -1,3 +1,5 @@
+mod platform;
+
 use tao::event::{Event, WindowEvent};
 use tao::event_loop::{ControlFlow, EventLoop};
 use tao::window::WindowBuilder;
