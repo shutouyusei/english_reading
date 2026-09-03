@@ -1,3 +1,4 @@
+mod ipc;
 mod platform;
 
 use tao::event::{Event, WindowEvent};
