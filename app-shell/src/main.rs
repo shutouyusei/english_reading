@@ -1,3 +1,4 @@
+mod content;
 mod ipc;
 mod platform;
 
