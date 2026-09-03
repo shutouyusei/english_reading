@@ -74,7 +74,11 @@ pub fn default_claude_binary_candidates() -> Vec<String> {
 
 /// claude の実行ファイルを見つける。
 /// TOEFL_CLAUDE_BIN が設定されていればそれだけを見る。設定されているのに
-/// 実在しない場合、黙って別のものを使うと利用者が誤った箇所を疑うため None を返す。
+/// 実在しない、または実行権限が無い場合、黙って別のものを使うと利用者が
+/// 誤った箇所を疑うため None を返す。file_exists には単なる存在確認では
+/// なく実行可能性の確認を渡すこと(存在だけ見ると、ディレクトリや実行権限の
+/// 無いファイルを「見つかった」と誤判定し、後続の spawn 失敗という分かり
+/// にくいエラーになる)。
 pub fn resolve_claude_binary(
     environment: &HashMap<String, String>,
     file_exists: impl Fn(&str) -> bool,
@@ -86,6 +90,18 @@ pub fn resolve_claude_binary(
         }
     }
     candidates.iter().find(|c| file_exists(c)).cloned()
+}
+
+/// パスが実行可能な通常ファイルかどうかを調べる、resolve_claude_binary 用の
+/// 既定の判定。存在確認だけの std::fs::metadata(p).is_ok() と違い、
+/// 実行権限ビット(いずれかの owner/group/other の x)も確認する。
+#[cfg(unix)]
+pub fn is_executable_file(path: &str) -> bool {
+    use std::os::unix::fs::PermissionsExt;
+    match std::fs::metadata(path) {
+        Ok(meta) => meta.is_file() && meta.permissions().mode() & 0o111 != 0,
+        Err(_) => false,
+    }
 }
 
 /// claude -p に渡す引数。
@@ -125,22 +141,13 @@ pub fn split_prompt_file(text: &str) -> Option<(String, String)> {
 }
 
 /// {{key}} を values の値で置き換える。
-/// 値の無いプレースホルダはテンプレート側であらかじめ取り除く。置換が終わった
-/// 後の文字列(エッセイなど利用者の入力を含みうる)に対して除去処理を掛けると、
-/// 本文中にたまたま {{...}} 形の文字列が含まれていた場合に生徒の回答を
-/// 無断で書き換えてしまうため、対象を置換前のテンプレートだけに限定する。
+/// 値の無いプレースホルダはテンプレートから取り除く。テンプレートを1回だけ
+/// 走査しながら置換結果を直接書き出すため、代入された値(エッセイなど利用者の
+/// 入力を含みうる)がその後の走査で再度プレースホルダとしてマッチされることは
+/// ない。逐次 String::replace を key ごとに繰り返す実装だと、本文中にたまたま
+/// 別キーの {{...}} 形の文字列が含まれていた場合、先に代入された値の中身を
+/// 後続キーの置換が書き換えてしまう(生徒の回答が無断で汚染される)ため避ける。
 pub fn render_template(template: &str, values: &HashMap<String, String>) -> String {
-    let known_keys: std::collections::HashSet<&str> = values.keys().map(|k| k.as_str()).collect();
-    let stripped = remove_unresolved_placeholders(template, &known_keys);
-    let mut result = stripped;
-    for (key, value) in values {
-        result = result.replace(&format!("{{{{{key}}}}}"), value);
-    }
-    result
-}
-
-/// テンプレート中の {{key}} のうち、values に用意されていないものだけを取り除く。
-fn remove_unresolved_placeholders(template: &str, known_keys: &std::collections::HashSet<&str>) -> String {
     let mut result = String::with_capacity(template.len());
     let mut rest = template;
     while let Some(open) = rest.find("{{") {
@@ -148,16 +155,20 @@ fn remove_unresolved_placeholders(template: &str, known_keys: &std::collections:
             result.push_str(rest);
             return result;
         };
+        result.push_str(&rest[..open]);
         let key = &rest[open + 2..open + 2 + close_rel];
         let is_placeholder = !key.is_empty()
             && key
                 .chars()
                 .all(|c| c.is_ascii_alphabetic() || c == '_');
 
-        if is_placeholder && !known_keys.contains(key) {
-            result.push_str(&rest[..open]);
+        if is_placeholder {
+            if let Some(value) = values.get(key) {
+                result.push_str(value);
+            }
+            // 値が無いプレースホルダは何も書き出さず取り除く。
         } else {
-            result.push_str(&rest[..open + 2 + close_rel + 2]);
+            result.push_str(&rest[open..open + 2 + close_rel + 2]);
         }
         rest = &rest[open + 2 + close_rel + 2..];
     }
@@ -243,28 +254,49 @@ pub fn run_claude(
         .map_err(|e| ClaudeRunnerError::LaunchFailed(e.to_string()))?;
 
     let mut stdin = child.stdin.take().expect("stdinをpipeで開いた");
+    let mut stdout = child.stdout.take().expect("stdoutをpipeで開いた");
+    let mut stderr = child.stderr.take().expect("stderrをpipeで開いた");
+    // kill 用にメインスレッドが握っておく共有ハンドル。wait はこの Mutex 越しに行う。
+    let child = std::sync::Arc::new(std::sync::Mutex::new(child));
+    let child_kill = std::sync::Arc::clone(&child);
     let user_prompt = user_prompt.to_string();
     let writer = std::thread::spawn(move || {
         let _ = stdin.write_all(user_prompt.as_bytes());
         // 書き終えたら閉じる。stdin がドロップされることで EOF が子プロセスに伝わる。
     });
 
+    // stdout と stderr は別スレッドでそれぞれ並行に読む。片方のパイプの
+    // バッファが満杯になっても、もう片方の読み出しがブロックされないように
+    // するため(同一スレッドで順に read_to_end すると、子プロセスが先に
+    // 書き込むのが後回しにされた側のパイプで、書き込みブロック→双方が
+    // 進めないデッドロックに陥りうる)。
+    let stdout_reader = std::thread::spawn(move || {
+        let mut out_buf = Vec::new();
+        let _ = stdout.read_to_end(&mut out_buf);
+        out_buf
+    });
+    let stderr_reader = std::thread::spawn(move || {
+        let mut err_buf = Vec::new();
+        let _ = stderr.read_to_end(&mut err_buf);
+        err_buf
+    });
+
     let (tx, rx) = mpsc::channel();
     std::thread::spawn(move || {
-        let mut stdout = child.stdout.take().expect("stdoutをpipeで開いた");
-        let mut stderr = child.stderr.take().expect("stderrをpipeで開いた");
-        let mut out_buf = Vec::new();
-        let mut err_buf = Vec::new();
-        let _ = stdout.read_to_end(&mut out_buf);
-        let _ = stderr.read_to_end(&mut err_buf);
-        let status = child.wait();
-        let _ = tx.send((status, out_buf, err_buf, child));
+        let out_buf = stdout_reader.join().unwrap_or_default();
+        let err_buf = stderr_reader.join().unwrap_or_default();
+        let status = child.lock().map(|mut c| c.wait());
+        let status = match status {
+            Ok(status) => status,
+            Err(_) => Err(std::io::Error::other("子プロセスのロックを取得できません")),
+        };
+        let _ = tx.send((status, out_buf, err_buf));
     });
 
     let _ = writer.join();
 
     match rx.recv_timeout(Duration::from_secs(timeout_seconds)) {
-        Ok((status, out_buf, err_buf, _child)) => {
+        Ok((status, out_buf, err_buf)) => {
             let status = status.map_err(|e| ClaudeRunnerError::LaunchFailed(e.to_string()))?;
             if !status.success() {
                 let err_text = String::from_utf8_lossy(&err_buf);
@@ -277,9 +309,15 @@ pub fn run_claude(
             }
             extract_grade_json(&out_buf)
         }
-        Err(_) => Err(ClaudeRunnerError::TimedOut {
-            seconds: timeout_seconds,
-        }),
+        Err(_) => {
+            // タイムアウトしても上のスレッドはプロセス終了を待ち続けるため、
+            // 放置するとハングした claude プロセスがバックグラウンドに残り続ける。
+            // 応答は諦めるが、プロセス自体はここで確実に終わらせる。
+            let _ = child_kill.lock().map(|mut c| c.kill());
+            Err(ClaudeRunnerError::TimedOut {
+                seconds: timeout_seconds,
+            })
+        }
     }
 }
 
@@ -437,6 +475,92 @@ mod tests {
             &values(&[("essay", "I wrote {{example}} on the board by mistake.")]),
         );
         assert_eq!(rendered, "ESSAY:\nI wrote {{example}} on the board by mistake.");
+    }
+
+    // 回帰テスト: 値の中に「別の既知キー」の {{...}} が偶然含まれていても、
+    // 後続キーの置換でその中身を書き換えてはならない(逐次 String::replace
+    // による多重置換のバグを防ぐ)。HashMap の反復順は不定なため、
+    // どちらのキーが先に処理されても壊れないことを固定文字列で確認する。
+    #[test]
+    fn does_not_let_one_substituted_value_be_rewritten_by_another_known_key() {
+        let rendered = render_template(
+            "MUST_INCLUDE:{{must_include}}\nESSAY:{{essay}}",
+            &values(&[
+                ("must_include", "cats"),
+                ("essay", "I love {{must_include}} and dogs."),
+            ]),
+        );
+        assert_eq!(
+            rendered,
+            "MUST_INCLUDE:cats\nESSAY:I love {{must_include}} and dogs."
+        );
+    }
+
+    #[test]
+    fn is_executable_file_true_for_a_file_with_execute_bit() {
+        use std::os::unix::fs::PermissionsExt;
+        let dir = std::env::temp_dir().join(format!("toefl-exec-test-{}", std::process::id()));
+        std::fs::create_dir_all(&dir).unwrap();
+        let path = dir.join("runnable");
+        std::fs::write(&path, "#!/bin/sh\n").unwrap();
+        std::fs::set_permissions(&path, std::fs::Permissions::from_mode(0o755)).unwrap();
+        assert!(is_executable_file(path.to_str().unwrap()));
+        std::fs::remove_dir_all(&dir).unwrap();
+    }
+
+    #[test]
+    fn is_executable_file_false_without_execute_bit() {
+        use std::os::unix::fs::PermissionsExt;
+        let dir = std::env::temp_dir().join(format!("toefl-noexec-test-{}", std::process::id()));
+        std::fs::create_dir_all(&dir).unwrap();
+        let path = dir.join("not_runnable");
+        std::fs::write(&path, "not a script").unwrap();
+        std::fs::set_permissions(&path, std::fs::Permissions::from_mode(0o644)).unwrap();
+        assert!(!is_executable_file(path.to_str().unwrap()));
+        std::fs::remove_dir_all(&dir).unwrap();
+    }
+
+    #[test]
+    fn is_executable_file_false_for_missing_path() {
+        assert!(!is_executable_file("/nonexistent/toefl-does-not-exist"));
+    }
+
+    #[test]
+    fn is_executable_file_false_for_a_directory() {
+        let dir = std::env::temp_dir().join(format!("toefl-dir-test-{}", std::process::id()));
+        std::fs::create_dir_all(&dir).unwrap();
+        assert!(!is_executable_file(dir.to_str().unwrap()));
+        std::fs::remove_dir_all(&dir).unwrap();
+    }
+
+    // 回帰テスト: タイムアウトしたら、応答を待つスレッドが握っている子プロセスを
+    // 確実に kill する。/bin/sleep をタイムアウトより長く走らせ、
+    // run_claude が TimedOut を返した後にプロセスが実際に終了していることを
+    // (ゾンビ化せず wait できることで)確認する。
+    #[test]
+    fn run_claude_kills_the_child_process_on_timeout() {
+        // run_claude は claude_arguments (-p --output-format json ...) を渡すため、
+        // 実バイナリの代わりに「引数を無視してタイムアウトより長く眠る」
+        // シェルスクリプトを claude 役に据える。
+        let dir = std::env::temp_dir().join(format!("toefl-timeout-test-{}", std::process::id()));
+        std::fs::create_dir_all(&dir).unwrap();
+        let script = dir.join("fake_claude.sh");
+        std::fs::write(&script, "#!/bin/sh\nsleep 10\n").unwrap();
+        {
+            use std::os::unix::fs::PermissionsExt;
+            std::fs::set_permissions(&script, std::fs::Permissions::from_mode(0o755)).unwrap();
+        }
+
+        let start = std::time::Instant::now();
+        let result = run_claude(script.to_str().unwrap(), "SYS", "essay", 1);
+        let elapsed = start.elapsed();
+        assert!(matches!(result, Err(ClaudeRunnerError::TimedOut { seconds: 1 })));
+        // kill せずに放置すると 10 秒眠り続けるスクリプトなので、
+        // タイムアウト(1秒)から十分近い時間で戻ってくることは
+        // 子プロセスが実際に kill されたことの傍証になる。
+        assert!(elapsed < Duration::from_secs(5), "elapsed={elapsed:?}");
+
+        std::fs::remove_dir_all(&dir).unwrap();
     }
 
     #[test]

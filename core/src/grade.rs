@@ -1,5 +1,6 @@
 use crate::claude_runner::{
-    render_template, resolve_claude_binary, run_claude, split_prompt_file, ClaudeRunnerError,
+    is_executable_file, render_template, resolve_claude_binary, run_claude, split_prompt_file,
+    ClaudeRunnerError,
 };
 use crate::path_resolver::writing_prompt_path;
 use serde_json::{Map, Value};
@@ -41,7 +42,7 @@ pub fn grade_essay(
 ) -> Result<Map<String, Value>, ClaudeRunnerError> {
     let binary = resolve_claude_binary(
         &std::env::vars().collect(),
-        |p| std::fs::metadata(p).is_ok(),
+        is_executable_file,
         &crate::claude_runner::default_claude_binary_candidates(),
     )
     .ok_or(ClaudeRunnerError::BinaryNotFound)?;
