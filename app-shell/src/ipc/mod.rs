@@ -1,4 +1,5 @@
 mod essays;
+mod grader;
 mod store;
 
 use serde_json::{Map, Value};
