@@ -1,3 +1,8 @@
+> **失効**: 本ドキュメントは
+> [`2026-09-03-cross-platform-shell-design.md`](./2026-09-03-cross-platform-shell-design.md)
+> に統合され、`app-linux/` という個別crateの計画は撤回された。以下は
+> 経緯として残すのみで、実装の根拠として参照しないこと。
+
 # Linux版ネイティブインターフェース設計
 
 日付: 2026-09-02
