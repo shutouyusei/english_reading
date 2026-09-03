@@ -1,3 +1,4 @@
+mod anki;
 mod essays;
 mod grader;
 mod store;
