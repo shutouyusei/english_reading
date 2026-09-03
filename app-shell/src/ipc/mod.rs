@@ -1,3 +1,5 @@
+mod store;
+
 use serde_json::{Map, Value};
 
 #[derive(Debug, PartialEq, Clone, Copy)]
