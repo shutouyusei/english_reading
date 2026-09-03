@@ -29,15 +29,23 @@ window.__toeflIpcResolve = function (requestId, result, error) {
   }
 };
 
+/* wry は macOS(WKWebView)上で window.ipc.postMessage を、内部的に
+   window.webkit.messageHandlers.ipc 経由で実装している。window.webkit を
+   丸ごと上書きするとその内部チャンネルを壊し、window.ipc.postMessage の
+   呼び出しがここに回り込んで無限再帰になる(実際にこの不具合が起きた)。
+   既存のハンドラ(ipcなど)はそのまま素通しし、未知のハンドラ名だけ
+   合成する。 */
+const _existingHandlers = (window.webkit && window.webkit.messageHandlers) || {};
+
 window.webkit = {
-  messageHandlers: new Proxy(
-    {},
-    {
-      get(_target, handlerName) {
-        return {
-          postMessage: (payload) => window.__toeflIpc.call(handlerName, payload),
-        };
-      },
-    }
-  ),
+  messageHandlers: new Proxy(_existingHandlers, {
+    get(target, handlerName) {
+      if (handlerName in target) {
+        return target[handlerName];
+      }
+      return {
+        postMessage: (payload) => window.__toeflIpc.call(handlerName, payload),
+      };
+    },
+  }),
 };
