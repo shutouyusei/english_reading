@@ -39,7 +39,7 @@ Claude Codeのサブスクリプション枠で動作):
 4. `python3 scripts/validate_passage.py <file>` — スキーマ検証
 5. `python3 scripts/update_index.py` — マニフェスト更新
 
-## ローカルアプリ(macOS)
+## ローカルアプリ(macOS / Linux)
 
 リスニング・スピーキング等の学習機能を載せるための、ブラウザに依存しない
 ネイティブアプリ(`app-shell/`、Rust + tao + wry)。学習記録を実ファイルとして残す。
@@ -49,7 +49,22 @@ bash app-shell/build.sh    # ビルド(cargo のみ)
 TOEFL_REPO_ROOT="$(pwd)" app-shell/target/release/app_shell
 ```
 
-- 解答履歴は `~/Documents/TOEFLReading/attempts.jsonl` に**追記**される(上書きしない)
+### Linux のビルド前準備
+
+wry(WebKitGTK)と tao(GTK3)が必要とするシステムライブラリを先に入れる。
+Ubuntu 24.04 で確認済み:
+
+```bash
+sudo apt install -y pkg-config libgtk-3-dev libwebkit2gtk-4.1-dev \
+  libsoup-3.0-dev libjavascriptcoregtk-4.1-dev libdbus-1-dev libxdo-dev
+```
+
+これらが無いと `cargo build` が `dbus-1` や `gobject-2.0` の
+`pkg-config` エラーで止まる。X11 セッションの GNOME で動作確認済み
+(Wayland は未検証)。
+
+- 解答履歴は `attempts.jsonl` に**追記**される(上書きしない)。保存先は macOS が
+  `~/Documents/TOEFLReading/`、Linux が `~/.local/share/toefl-reading/`
 - パッセージは起動のたびにディスクから読むため、`/new-passage` で追加した分は
   **再ビルドせずに**反映される
 - リポジトリルートは環境変数 `TOEFL_REPO_ROOT` で指定する(未設定時は起動時の
@@ -57,8 +72,8 @@ TOEFL_REPO_ROOT="$(pwd)" app-shell/target/release/app_shell
 - macOS・Linux 対応(Windows は設計のみで未検証)。署名していないため配布には
   向かない(個人利用を前提)
 - リスニングもローカルアプリのみ。音声は macOS の `say` コマンドで初回再生時に
-  生成し、`~/Documents/TOEFLReading/audio/` にキャッシュする(2回目以降は
-  再生成しない)。音声ファイルはリポジトリにはコミットしない
+  生成し、上記保存先の `audio/` にキャッシュする(2回目以降は再生成しない)。
+  音声ファイルはリポジトリにはコミットしない。Linux での音声生成は未実装
 
 公開版(GitHub Pages)はリーディングのみで、保存はブラウザ内にとどまる。
 
