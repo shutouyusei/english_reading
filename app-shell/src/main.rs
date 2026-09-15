@@ -73,13 +73,24 @@ fn main() -> wry::Result<()> {
         }
     };
 
-    let webview = WebViewBuilder::new()
+    let builder = WebViewBuilder::new()
         .with_url("app://local/app/ui/index.html")
         .with_ipc_handler(ipc_handler)
         .with_custom_protocol("app".into(), app_protocol)
-        .with_custom_protocol("audio".into(), audio_protocol)
-        .build(&window)
-        .expect("WebViewを作成できません");
+        .with_custom_protocol("audio".into(), audio_protocol);
+
+    // Linux: tao のウィンドウは GTK なので、WebView も GTK ウィジェットとして
+    // 同じウィンドウに載せる。`build(&window)` は X11 の子ウィンドウ経路で、
+    // GTK ループを自前で回す前提のため、tao と組み合わせると何も描画されない。
+    #[cfg(target_os = "linux")]
+    let webview = {
+        use tao::platform::unix::WindowExtUnix;
+        use wry::WebViewBuilderExtUnix;
+        let vbox = window.default_vbox().expect("GTK の既定コンテナを取得できません");
+        builder.build_gtk(vbox).expect("WebViewを作成できません")
+    };
+    #[cfg(not(target_os = "linux"))]
+    let webview = builder.build(&window).expect("WebViewを作成できません");
 
     *webview_holder.borrow_mut() = Some(webview);
 
