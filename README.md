@@ -1,4 +1,4 @@
-# TOEFL Reading Vocab App
+# TOEFL Study App
 
 A static study site for TOEFL-style reading. You answer the questions, click any word you
 do not know to read an English note on it (etymology, definition, role in the passage,
