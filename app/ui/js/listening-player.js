@@ -79,7 +79,7 @@ async function init() {
     renderError(`Could not load the question (${err.message}).`);
     return;
   }
-  document.title = `${playerState.item.title} — TOEFL Reading`;
+  document.title = `${playerState.item.title} — TOEFL Study`;
   qs("#header-title").textContent = playerState.item.title;
   if (mode === "study") startStudyMode(); else startSolveMode();
 }

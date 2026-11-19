@@ -196,3 +196,12 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
   font: inherit;
   line-height: 1.7;
 }
+
+/* Dashboard (app home) */
+.dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+.skill-card { flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 0; }
+.skill-card.disabled { opacity: .55; }
+.skill-progress { margin: 0; font-size: 1.15em; font-weight: 600; }
+.activity { list-style: none; margin: 0 0 16px; padding: 0; }
+.activity li { display: flex; gap: 14px; padding: 6px 0; border-bottom: 1px solid var(--border); }
+.activity-title { flex: 1; color: var(--text); }

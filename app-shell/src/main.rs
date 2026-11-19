@@ -25,7 +25,7 @@ fn main() -> wry::Result<()> {
 
     let event_loop = EventLoopBuilder::<UserEvent>::with_user_event().build();
     let window = WindowBuilder::new()
-        .with_title("TOEFL Reading")
+        .with_title("TOEFL Study")
         .with_inner_size(tao::dpi::LogicalSize::new(1100.0, 780.0))
         .build(&event_loop)
         .expect("cannot create the window");

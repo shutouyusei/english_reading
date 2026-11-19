@@ -2,32 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>TOEFL Reading</title>
+  <title>TOEFL Study</title>
   <link rel="stylesheet" href="../../docs/css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">📖 TOEFL Reading</a>
+    <a class="brand" href="index.html">TOEFL Study</a>
     <span>Local app</span>
   </header>
   <main class="page">
-    <p class="card-actions"><a class="button" href="writing.html">✍️ Writing</a></p>
-    <p class="card-actions"><a class="button" href="listening.html">🎧 Listening</a></p>
-    <p>Attempts are appended to <code>attempts.jsonl</code> in the app's data folder (<code>~/Documents/TOEFLReading/</code> on macOS, <code>~/.local/share/toefl-reading/</code> on Linux).</p>
-    <div id="passage-list"><p class="hint">Loading…</p></div>
+    <div id="skill-cards" class="dashboard-grid"><p class="hint">Loading…</p></div>
+    <h2>Recent activity</h2>
+    <div id="recent-activity"></div>
+    <p class="hint">Records are saved in the app's data folder (<code>~/Documents/TOEFLReading/</code> on macOS, <code>~/.local/share/toefl-reading/</code> on Linux).</p>
   </main>
   <footer class="site-footer">
     <p>⚠️ All content is AI-generated. The author is not an English-teaching professional. Unofficial material, not affiliated with ETS or TOEFL.</p>
   </footer>
   <script src="../../docs/js/escape.js"></script>
-  <script src="../../docs/js/textmatch.js"></script>
   <script src="../../docs/js/footer.js"></script>
   <script src="js/native-ipc-shim.js"></script>
   <script src="js/store.native.js"></script>
-  <script>
-    window.READER_URL = "reader.html";
-    window.DATA_BASE = "../../docs/";
-  </script>
-  <script src="../../docs/js/app.js"></script>
+  <script src="js/listening.native.js"></script>
+  <script src="js/essays.native.js"></script>
+  <script>window.DATA_BASE = "../../docs/";</script>
+  <script src="js/dashboard.js"></script>
 </body>
 </html>
