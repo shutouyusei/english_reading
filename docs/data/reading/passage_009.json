@@ -1,0 +1,1072 @@
+{
+  "id": "passage_009",
+  "title": "The Bystander Who Didn't Move",
+  "topic": "社会",
+  "body": "On a March night in 1964, a young woman named Kitty Genovese was attacked outside her apartment building in New York City. Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference. Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction. Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble.\n\nDarley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion. At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent. When a participant believed they were the only listener, nearly all of them left the room to summon assistance within a minute. When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all. The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience.\n\nThe explanation the researchers settled on was a diffusion of responsibility. When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous. When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it. No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first. A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong.\n\nThe bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences. Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd. This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced.",
+  "word_count": 494,
+  "added": "2026-08-24",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to the passage, what did later journalists find regarding the original reporting on the Kitty Genovese case?",
+      "target_word": null,
+      "choices": {
+        "A": "It had correctly described how many witnesses failed to act.",
+        "B": "It had exaggerated the number of witnesses and how little they did.",
+        "C": "It had understated the number of people who called for help.",
+        "D": "It had failed to identify Darley and Latané's later research."
+      },
+      "correct": "B",
+      "explanation": "第1段落に \"journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction\" とあり、目撃者数と不作為の両方が誇張されていたと述べられている。"
+    },
+    {
+      "id": 2,
+      "type": "Inference",
+      "question": "What can be inferred about the purpose of designing the experiment so that bystanders could not see or be seen by one another?",
+      "target_word": null,
+      "choices": {
+        "A": "To make the emergency sound more realistic to participants.",
+        "B": "To prevent participants from communicating during the discussion.",
+        "C": "To rule out embarrassment or fear of looking foolish as the explanation for inaction.",
+        "D": "To ensure that every participant heard the same recorded voice."
+      },
+      "correct": "C",
+      "explanation": "第2段落末尾 \"The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish\" から、この実験設計が社会的体面による説明を排除するためだったと読み取れる。"
+    },
+    {
+      "id": 3,
+      "type": "Vocabulary",
+      "question": "The word \"induced\" in the passage is closest in meaning to",
+      "target_word": "induced",
+      "choices": {
+        "A": "prevented",
+        "B": "brought about",
+        "C": "measured",
+        "D": "documented"
+      },
+      "correct": "B",
+      "explanation": "最終段落 \"the diffusion ... can be reversed as readily as it can be induced\" の induce は「引き起こす、誘発する」の意味で、brought about が最も近い。"
+    },
+    {
+      "id": 4,
+      "type": "Reference",
+      "question": "In the sentence \"each share can shrink to the point that no one feels compelled to move first,\" what does \"each share\" refer to?",
+      "target_word": null,
+      "choices": {
+        "A": "Each witness's portion of the responsibility to help.",
+        "B": "Each bystander's share of the intercom recording.",
+        "C": "Each researcher's share of the experimental results.",
+        "D": "Each profession's share of emergency training."
+      },
+      "correct": "A",
+      "explanation": "同段落前半で「責任が多くの人の間で分割される(divided among many)」と述べており、each share はその分割された各人の責任の取り分を指す。"
+    },
+    {
+      "id": 5,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention emergency response training that instructs a witness to single out one bystander directly?",
+      "target_word": null,
+      "choices": {
+        "A": "To show that the bystander effect cannot be reversed in practice.",
+        "B": "To provide an example of how understanding diffusion of responsibility has been applied to shorten response times.",
+        "C": "To argue that Darley and Latané's original experiments were flawed.",
+        "D": "To introduce a new, unrelated theory of workplace misconduct."
+      },
+      "correct": "B",
+      "explanation": "最終段落は、責任を特定の一人に割り当てる訓練が応答時間を大きく短縮したと述べ、拡散した責任が意図的に「逆転」できることの具体例として挙げている。"
+    }
+  ],
+  "vocab": {
+    "dozens": {
+      "etymology": "dozen(12) + s(複数)。「12個の集まり」が複数形で「多数」の意味に転用される。",
+      "definition": "数十、多数(具体的には「12」単位を指すが、口語では単に「たくさん」の意味で使われる)。",
+      "usage_in_passage": "\"dozens of neighbors\" で「多数の隣人」を指し、目撃者の人数の多さを強調している。",
+      "related_terms": [
+        "scores",
+        "numerous",
+        "multitude"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "neighbors": {
+      "etymology": "neigh(近い、古英語 neah)+ bor(住む人、古英語 gebur)。「近くに住む人」が原義。",
+      "definition": "近隣に住む人、隣人。",
+      "usage_in_passage": "事件の目撃者として登場する「隣人たち」を指し、後の議論(傍観者効果)の対象となる集団。",
+      "related_terms": [
+        "neighborhood",
+        "resident",
+        "vicinity"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "cries": {
+      "etymology": "cry(叫ぶ)+ s(複数/三単現)。動詞 cry の名詞形・活用形。",
+      "definition": "叫び声、悲鳴。",
+      "usage_in_passage": "\"heard her cries\" で被害者の叫び声を指し、それに対して隣人が反応しなかったという主張の根拠になっている。",
+      "related_terms": [
+        "scream",
+        "shout",
+        "wail"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "byword": {
+      "etymology": "by(そばの、付随的な)+ word(言葉)。「口の端に上る言葉」から「典型例、代名詞」の意味に発展。",
+      "definition": "(悪い意味での)典型、代名詞、象徴的な言葉。",
+      "usage_in_passage": "\"became a byword for urban indifference\" で、この事件が「都市の無関心」を象徴する言葉になったことを表す。",
+      "related_terms": [
+        "symbol",
+        "synonym",
+        "epitome"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "indifference": {
+      "etymology": "in(否定)+ different(異なる、区別する)+ ence(名詞化)。「区別しない態度」から「無関心」の意味。",
+      "definition": "無関心、無頓着。",
+      "usage_in_passage": "事件が象徴するようになった「都市の無関心」という社会現象を指す語で、本文全体が検証する通念そのもの。",
+      "related_terms": [
+        "apathy",
+        "unconcern",
+        "detachment"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "decades": {
+      "etymology": "deca(10、ギリシャ語)+ ade(集合を表す接尾辞)。「10年の集まり」。",
+      "definition": "数十年。",
+      "usage_in_passage": "\"decades later\" で、最初の報道から長い年月を経て真相が明らかになったことを示す。",
+      "related_terms": [
+        "century",
+        "era",
+        "generation"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "journalists": {
+      "etymology": "journal(日刊の、ラテン語 diurnalis)+ ist(〜する人)。「日々の記録をつける人」が原義。",
+      "definition": "報道記者、ジャーナリスト。",
+      "usage_in_passage": "元の報道の誇張を後になって明らかにした人々として登場する。",
+      "related_terms": [
+        "reporter",
+        "correspondent",
+        "press"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "exaggerated": {
+      "etymology": "ex(外へ)+ agger(積み上げる、ラテン語 aggerare)+ ed(過去分詞)。「積み上げすぎる」が原義。",
+      "definition": "誇張した、大げさに述べた。",
+      "usage_in_passage": "元の報道が目撃者数と不作為の両方を「誇張していた」ことを示し、通説の前提が崩れることを表す。",
+      "related_terms": [
+        "overstated",
+        "inflated",
+        "embellished"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "witnesses": {
+      "etymology": "wit(知る、古英語 witan)+ ness(状態、名詞化)+ es(複数)。「知っている者」が原義。",
+      "definition": "目撃者。",
+      "usage_in_passage": "事件を目にした人々を指し、後の実験でその人数が反応に与える影響が調べられる中心概念。",
+      "related_terms": [
+        "bystander",
+        "onlooker",
+        "observer"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "inaction": {
+      "etymology": "in(否定)+ action(行動)。",
+      "definition": "不作為、何もしないこと。",
+      "usage_in_passage": "目撃者が何も行動しなかったという、誇張されていた主張の内容を指す。",
+      "related_terms": [
+        "passivity",
+        "inertia",
+        "nonintervention"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "psychologists": {
+      "etymology": "psycho(心、ギリシャ語 psykhe)+ logy(学問)+ ist(〜する人)。「心を研究する人」。",
+      "definition": "心理学者。",
+      "usage_in_passage": "本文の中心となる実験を行った研究者(ダーリーとラタネ)を指す。",
+      "related_terms": [
+        "researcher",
+        "scientist",
+        "behaviorist"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "overturn": {
+      "etymology": "over(覆す)+ turn(向きを変える)。",
+      "definition": "(通説・判断などを)覆す、ひっくり返す。",
+      "usage_in_passage": "「人が多いほど助けやすい」という通念を実験が覆したことを示す、本文全体の論旨を要約する語。",
+      "related_terms": [
+        "reverse",
+        "refute",
+        "upend"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "comfortable": {
+      "etymology": "com(強意)+ fort(強い、ラテン語 fortis)+ able(できる)。原義は「力づける」から転じて「心地よい」。",
+      "definition": "心地よい、都合の良い、安心できる。",
+      "usage_in_passage": "「人が多いほど安全だろう」という、検証されないまま信じられていた「都合の良い思い込み」を形容する。",
+      "related_terms": [
+        "convenient",
+        "reassuring",
+        "complacent"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "assumption": {
+      "etymology": "as(〜へ)+ sumere(取る、ラテン語)+ tion(名詞化)。「取り上げて前提とすること」。",
+      "definition": "思い込み、前提、仮定。",
+      "usage_in_passage": "「人が多いほど助けが得やすい」という、実験によって覆される前提そのものを指す。",
+      "related_terms": [
+        "presumption",
+        "premise",
+        "supposition"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "bystander": {
+      "etymology": "by(そばに)+ stand(立つ)+ er(人)。「そばに立っている人」が原義。",
+      "definition": "傍観者、居合わせた人。",
+      "usage_in_passage": "緊急事態に居合わせながら行動しない(あるいは行動する)人を指す、本文の中心概念であり論文タイトルにもなる語。",
+      "related_terms": [
+        "onlooker",
+        "witness",
+        "spectator"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "trouble": {
+      "etymology": "古フランス語 trubler(かき乱す)に由来。",
+      "definition": "困難、面倒な状況。",
+      "usage_in_passage": "\"someone in trouble\" で助けを必要としている人を指す。",
+      "related_terms": [
+        "difficulty",
+        "distress",
+        "predicament"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "experiments": {
+      "etymology": "ex(外へ)+ periri(試す、ラテン語)+ ment(名詞化)。「試してみること」。",
+      "definition": "実験。",
+      "usage_in_passage": "ダーリーとラタネが行った、傍観者効果を検証する一連の実験を指す。",
+      "related_terms": [
+        "trial",
+        "study",
+        "test"
+      ],
+      "context_sentence": "Darley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion."
+    },
+    "participant": {
+      "etymology": "parti(部分)+ cip(取る、ラテン語 capere)+ ant(〜する人)。「一部を担う人」から「参加者」。",
+      "definition": "実験参加者、参加者。",
+      "usage_in_passage": "実験に参加し、緊急事態への反応を観察される対象者を指す。",
+      "related_terms": [
+        "subject",
+        "volunteer",
+        "respondent"
+      ],
+      "context_sentence": "Darley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion."
+    },
+    "communicating": {
+      "etymology": "com(共に)+ municare(共有する、ラテン語)+ ing。「共に分かち合うこと」が原義。",
+      "definition": "意思疎通する、連絡を取り合う。",
+      "usage_in_passage": "参加者が他の参加者とインターホン越しに「連絡を取り合っている」と信じていた状況を表す。",
+      "related_terms": [
+        "conversing",
+        "interacting",
+        "corresponding"
+      ],
+      "context_sentence": "Darley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion."
+    },
+    "intercom": {
+      "etymology": "inter(相互の)+ com(munication の略)。20世紀の合成語。",
+      "definition": "インターホン、内部通信装置。",
+      "usage_in_passage": "実験で参加者同士が(実際には録音を通じて)会話していると信じ込まされた装置。",
+      "related_terms": [
+        "intercom system",
+        "loudspeaker",
+        "telephone"
+      ],
+      "context_sentence": "Darley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion."
+    },
+    "prearranged": {
+      "etymology": "pre(前もって)+ arrange(取り決める)+ ed。",
+      "definition": "あらかじめ取り決められた。",
+      "usage_in_passage": "実験のシナリオがあらかじめ仕組まれた瞬間に緊急事態が起きることを示す。",
+      "related_terms": [
+        "prescheduled",
+        "predetermined",
+        "scripted"
+      ],
+      "context_sentence": "At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent."
+    },
+    "simulate": {
+      "etymology": "similis(似た、ラテン語)+ ate(動詞化)。「似せて作る」が原義。",
+      "definition": "(実際にはないものを)模擬する、装う。",
+      "usage_in_passage": "録音された声が「医療上の緊急事態を装った」ことを示し、実験が作り物であることを明らかにする。",
+      "related_terms": [
+        "fake",
+        "imitate",
+        "mimic"
+      ],
+      "context_sentence": "At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent."
+    },
+    "choking": {
+      "etymology": "古英語 aceocian に由来し、「喉を締める」が原義。",
+      "definition": "窒息する、むせる。",
+      "usage_in_passage": "緊急事態を演じる声が「むせながら」助けを求めた様子を描写する。",
+      "related_terms": [
+        "gasping",
+        "suffocating",
+        "gagging"
+      ],
+      "context_sentence": "At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent."
+    },
+    "silent": {
+      "etymology": "silere(静かにする、ラテン語)+ ent(形容詞化)。",
+      "definition": "静かな、沈黙した。",
+      "usage_in_passage": "\"falling silent\" で、助けを求める声が最後に途絶えたことを表す。",
+      "related_terms": [
+        "quiet",
+        "mute",
+        "hushed"
+      ],
+      "context_sentence": "At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent."
+    },
+    "listener": {
+      "etymology": "listen(聞く)+ er(人)。",
+      "definition": "聞き手、聴取者。",
+      "usage_in_passage": "自分だけが録音を聞いていると信じた参加者を指し、単独条件での高い援助率と対比される。",
+      "related_terms": [
+        "hearer",
+        "audience member",
+        "monitor"
+      ],
+      "context_sentence": "When a participant believed they were the only listener, nearly all of them left the room to summon assistance within a minute."
+    },
+    "summon": {
+      "etymology": "sub(下から)+ monere(促す、ラテン語)。「呼び出す、促す」が原義。",
+      "definition": "(助けなどを)呼ぶ、召喚する。",
+      "usage_in_passage": "\"summon assistance\" で、援助を求めるために行動を起こしたことを示す。",
+      "related_terms": [
+        "call",
+        "fetch",
+        "request"
+      ],
+      "context_sentence": "When a participant believed they were the only listener, nearly all of them left the room to summon assistance within a minute."
+    },
+    "listeners": {
+      "etymology": "listen(聞く)+ er(人)+ s(複数)。",
+      "definition": "聞き手たち。",
+      "usage_in_passage": "自分以外にも複数の聞き手がいると信じた参加者たちを指し、傍観者効果が生じる条件を表す。",
+      "related_terms": [
+        "audience",
+        "witnesses",
+        "observers"
+      ],
+      "context_sentence": "When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all."
+    },
+    "intervened": {
+      "etymology": "inter(間に)+ venire(来る、ラテン語)+ ed。「間に入り込む」が原義。",
+      "definition": "介入した、割って入った。",
+      "usage_in_passage": "緊急事態に対して実際に行動を起こした参加者の割合を表す。",
+      "related_terms": [
+        "intruded",
+        "interceded",
+        "stepped in"
+      ],
+      "context_sentence": "When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all."
+    },
+    "fell": {
+      "etymology": "動詞 fall(落ちる)の過去形。",
+      "definition": "落ちた、低下した。",
+      "usage_in_passage": "\"fell sharply\" で、介入した人数と反応速度がともに急激に低下したことを表す。",
+      "related_terms": [
+        "dropped",
+        "declined",
+        "plummeted"
+      ],
+      "context_sentence": "When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all."
+    },
+    "sharply": {
+      "etymology": "sharp(鋭い)+ ly(副詞化)。",
+      "definition": "急激に、鋭く。",
+      "usage_in_passage": "介入率と反応速度の低下の度合いが大きかったことを強調する副詞。",
+      "related_terms": [
+        "steeply",
+        "abruptly",
+        "markedly"
+      ],
+      "context_sentence": "When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all."
+    },
+    "explanations": {
+      "etymology": "explain(説明する)+ ation(名詞化)+ s。",
+      "definition": "説明、解釈。",
+      "usage_in_passage": "傍観者効果が起きる理由として考えられる複数の「説明」を指し、この文ではその一部が否定される。",
+      "related_terms": [
+        "accounts",
+        "interpretations",
+        "rationales"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "involving": {
+      "etymology": "in(中に)+ volvere(巻き込む、ラテン語)+ ing。「巻き込む」が原義。",
+      "definition": "〜を伴う、関与する。",
+      "usage_in_passage": "社会的な恥ずかしさを「伴う」説明を指し、後の文でその説明が排除されることが示される。",
+      "related_terms": [
+        "entailing",
+        "concerning",
+        "implicating"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "embarrassment": {
+      "etymology": "古フランス語 embarrasser(邪魔する)に由来。",
+      "definition": "恥ずかしさ、当惑。",
+      "usage_in_passage": "他人の目を気にして行動しない、という説明の中身を指すが、実験結果によって排除される。",
+      "related_terms": [
+        "awkwardness",
+        "humiliation",
+        "self-consciousness"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "foolish": {
+      "etymology": "fool(愚か者、古フランス語 fol)+ ish(〜のような)。",
+      "definition": "愚かに見える、ばかげた。",
+      "usage_in_passage": "「人前で愚かに見えることへの恐れ」が傍観者効果の原因かと思われたが、実験設計上その可能性が排除されている。",
+      "related_terms": [
+        "silly",
+        "ridiculous",
+        "absurd"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "audience": {
+      "etymology": "audire(聞く、ラテン語)+ ence(名詞化)。「聞く人々」が原義。",
+      "definition": "聴衆、観衆。",
+      "usage_in_passage": "\"before an audience\" で、他人に見られているという状況を指すが、実験では実際には互いに見えなかったことと対比される。",
+      "related_terms": [
+        "spectators",
+        "onlookers",
+        "crowd"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "explanation": {
+      "etymology": "explain(説明する)+ ation(名詞化)。",
+      "definition": "説明。",
+      "usage_in_passage": "次段落で提示される「責任の分散」という、研究者が最終的にたどり着いた説明を指す。",
+      "related_terms": [
+        "account",
+        "rationale",
+        "interpretation"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "researchers": {
+      "etymology": "re(繰り返し)+ search(探す、古フランス語 cerchier)+ er(人)+ s。",
+      "definition": "研究者。",
+      "usage_in_passage": "実験を行い、結論に至った研究者(ダーリーとラタネ)を指す。",
+      "related_terms": [
+        "scientists",
+        "scholars",
+        "investigators"
+      ],
+      "context_sentence": "The explanation the researchers settled on was a diffusion of responsibility."
+    },
+    "settled": {
+      "etymology": "settle(落ち着く、定める)+ ed。",
+      "definition": "(意見・結論などを)定めた、落ち着かせた。",
+      "usage_in_passage": "\"settled on\" で、研究者たちが最終的に到達した結論を示す。",
+      "related_terms": [
+        "decided",
+        "concluded",
+        "resolved"
+      ],
+      "context_sentence": "The explanation the researchers settled on was a diffusion of responsibility."
+    },
+    "diffusion": {
+      "etymology": "dis(分散して)+ fundere(注ぐ、ラテン語)+ sion(名詞化)。「あちこちに注ぎ広げること」が原義。",
+      "definition": "拡散、分散。",
+      "usage_in_passage": "\"diffusion of responsibility\"(責任の分散)として、本文の中心概念となる用語。",
+      "related_terms": [
+        "dispersal",
+        "spread",
+        "dissemination"
+      ],
+      "context_sentence": "The explanation the researchers settled on was a diffusion of responsibility."
+    },
+    "witness": {
+      "etymology": "wit(知る、古英語)+ ness(名詞化)。単数形。",
+      "definition": "目撃者。",
+      "usage_in_passage": "単独の目撃者が緊急事態に直面した場合を指し、責任の所在が明確であることが述べられる。",
+      "related_terms": [
+        "bystander",
+        "onlooker",
+        "eyewitness"
+      ],
+      "context_sentence": "When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous."
+    },
+    "confronts": {
+      "etymology": "con(共に)+ frontem(額、正面、ラテン語)+ s。「正面から向き合う」が原義。",
+      "definition": "直面する。",
+      "usage_in_passage": "単独の目撃者が緊急事態に「直面する」場面を描写する。",
+      "related_terms": [
+        "faces",
+        "encounters",
+        "meets"
+      ],
+      "context_sentence": "When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous."
+    },
+    "obligation": {
+      "etymology": "ob(〜に向けて)+ ligare(縛る、ラテン語)+ tion(名詞化)。「縛られていること」が原義。",
+      "definition": "義務、責任。",
+      "usage_in_passage": "単独の目撃者にかかる「助ける義務」の全体を指し、責任が分散する前の基準として提示される。",
+      "related_terms": [
+        "duty",
+        "responsibility",
+        "obligation to act"
+      ],
+      "context_sentence": "When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous."
+    },
+    "unambiguous": {
+      "etymology": "un(否定)+ ambiguous(あいまいな)。",
+      "definition": "あいまいでない、明確な。",
+      "usage_in_passage": "単独の目撃者が助けなかった場合、その不作為の責任の所在が「明確」であることを表す。",
+      "related_terms": [
+        "clear",
+        "unequivocal",
+        "explicit"
+      ],
+      "context_sentence": "When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous."
+    },
+    "presumed": {
+      "etymology": "pre(前もって)+ sumere(取る、ラテン語)+ ed。「前もって取り決める」が原義。",
+      "definition": "〜と推定される、想定される。",
+      "usage_in_passage": "複数の目撃者がいると「想定される」場合の心理過程を説明する。",
+      "related_terms": [
+        "assumed",
+        "supposed",
+        "believed"
+      ],
+      "context_sentence": "When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it."
+    },
+    "conscious": {
+      "etymology": "con(共に)+ scire(知る、ラテン語)+ ous(形容詞化)。「共に知っている」が原義。",
+      "definition": "意識的な。",
+      "usage_in_passage": "\"without conscious deliberation\" で、この推論が本人も気づかないうちに無意識に行われることを示す。",
+      "related_terms": [
+        "deliberate",
+        "aware",
+        "intentional"
+      ],
+      "context_sentence": "When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it."
+    },
+    "deliberation": {
+      "etymology": "de(強意)+ librare(秤にかける、ラテン語)+ tion(名詞化)。「慎重に検討すること」。",
+      "definition": "熟慮、検討。",
+      "usage_in_passage": "\"conscious deliberation\" として、目撃者が意識的に検討する過程を指すが、それが無いままに推論が働くとされる。",
+      "related_terms": [
+        "consideration",
+        "reflection",
+        "reasoning"
+      ],
+      "context_sentence": "When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it."
+    },
+    "respond": {
+      "etymology": "re(返す)+ spondere(誓う、応じる、ラテン語)。「応じて誓う」が原義。",
+      "definition": "対応する、応じる。",
+      "usage_in_passage": "他の誰かが「対応するのに適している」と考える心理を示す語。",
+      "related_terms": [
+        "react",
+        "reply",
+        "answer"
+      ],
+      "context_sentence": "When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it."
+    },
+    "necessarily": {
+      "etymology": "necesse(必要な、ラテン語)+ ly(副詞化)。",
+      "definition": "必ずしも(〜でない)、必然的に。",
+      "usage_in_passage": "\"No individual necessarily decides\" で、誰も意識的に「助けない」と決めているわけではないことを強調する。",
+      "related_terms": [
+        "inevitably",
+        "invariably",
+        "certainly"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "decides": {
+      "etymology": "de(離れて)+ caedere(切る、ラテン語)。「切り離して決める」が原義。",
+      "definition": "決める、決定する。",
+      "usage_in_passage": "個人が意識的に「助けない」と決めるわけではない、という論点を支える動詞。",
+      "related_terms": [
+        "determines",
+        "resolves",
+        "chooses"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "entirely": {
+      "etymology": "entire(全体の)+ ly(副詞化)。",
+      "definition": "完全に、まるごと。",
+      "usage_in_passage": "単独の目撃者であれば責任が「まるごと」その一人にかかることを表す。",
+      "related_terms": [
+        "wholly",
+        "completely",
+        "fully"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "divided": {
+      "etymology": "di(分けて)+ videre(分ける、ラテン語)+ ed。",
+      "definition": "分割された。",
+      "usage_in_passage": "複数の目撃者の間で責任が「分割される」という、本文の核心的な主張を表す。",
+      "related_terms": [
+        "split",
+        "distributed",
+        "shared"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "shrink": {
+      "etymology": "古英語 scrincan(縮む)に由来。",
+      "definition": "縮む、小さくなる。",
+      "usage_in_passage": "分割された責任の各人の取り分が「縮んでいく」様子を表す。",
+      "related_terms": [
+        "diminish",
+        "dwindle",
+        "contract"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "compelled": {
+      "etymology": "com(強意)+ pellere(押す、ラテン語)+ ed。「強く押される」が原義。",
+      "definition": "駆り立てられた、強いられた。",
+      "usage_in_passage": "\"feels compelled to move first\" で、最初に行動しようという強い気持ちを表す。",
+      "related_terms": [
+        "obliged",
+        "forced",
+        "impelled"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "pluralistic": {
+      "etymology": "plural(複数の)+ istic(〜的な)。",
+      "definition": "多元的な、集団的な。",
+      "usage_in_passage": "\"pluralistic ignorance\"(多元的無知)として、責任の分散とは別のもう一つの心理過程を表す専門用語の一部。",
+      "related_terms": [
+        "collective",
+        "communal",
+        "group"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "ignorance": {
+      "etymology": "ig(否定)+ norare(知る、ラテン語)+ ance(名詞化)。「知らないこと」。",
+      "definition": "無知、気づいていないこと。",
+      "usage_in_passage": "\"pluralistic ignorance\" で、集団の全員が実は不安を感じているのに、互いにそれに気づかない状態を指す。",
+      "related_terms": [
+        "unawareness",
+        "obliviousness",
+        "incomprehension"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "compounds": {
+      "etymology": "com(共に)+ ponere(置く、ラテン語)。「一緒に置く」から「悪化させる」の意味に発展。",
+      "definition": "(問題などを)悪化させる、複雑にする。",
+      "usage_in_passage": "多元的無知が「遅れを悪化させる」ことを示す動詞。",
+      "related_terms": [
+        "worsens",
+        "aggravates",
+        "intensifies"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "delay": {
+      "etymology": "de(強意)+ laier(残す、古フランス語)。",
+      "definition": "遅れ、遅延。",
+      "usage_in_passage": "援助行動が起きるまでの「遅れ」を指し、多元的無知がそれをさらに悪化させる。",
+      "related_terms": [
+        "postponement",
+        "lag",
+        "holdup"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "bystanders": {
+      "etymology": "bystander の複数形。",
+      "definition": "傍観者たち。",
+      "usage_in_passage": "互いの様子をうかがう(glance at one another)集団としての傍観者を指す。",
+      "related_terms": [
+        "onlookers",
+        "witnesses",
+        "spectators"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "glance": {
+      "etymology": "古フランス語 glacier(滑る)に由来し、「さっと視線を滑らせる」が原義。",
+      "definition": "ちらりと見る。",
+      "usage_in_passage": "傍観者が互いの反応を「ちらりと見て」状況の深刻さを判断しようとする様子を描く。",
+      "related_terms": [
+        "glimpse",
+        "peek",
+        "look"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "cues": {
+      "etymology": "演劇用語 cue(合図)に由来。",
+      "definition": "手がかり、合図。",
+      "usage_in_passage": "\"cues about how serious a situation is\" で、状況の深刻さを判断するための手がかりを指す。",
+      "related_terms": [
+        "signals",
+        "hints",
+        "indicators"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "outwardly": {
+      "etymology": "outward(外面の)+ ly(副詞化)。",
+      "definition": "表面上は、外見上は。",
+      "usage_in_passage": "\"outwardly calm faces\" で、内心とは裏腹に表面上は平静に見える顔つきを表す。",
+      "related_terms": [
+        "externally",
+        "seemingly",
+        "ostensibly"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "calm": {
+      "etymology": "古フランス語 calme に由来。",
+      "definition": "落ち着いた、平静な。",
+      "usage_in_passage": "傍観者たちの表面上の「落ち着いた」表情を表し、直後の「内心は不安」との対比を作る。",
+      "related_terms": [
+        "composed",
+        "tranquil",
+        "unruffled"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "privately": {
+      "etymology": "private(私的な)+ ly(副詞化)。",
+      "definition": "内心では、私的に。",
+      "usage_in_passage": "\"privately uncertain\" で、各人が内心では確信を持てずにいることを表す。",
+      "related_terms": [
+        "internally",
+        "inwardly",
+        "secretly"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "uncertain": {
+      "etymology": "un(否定)+ certain(確かな)。",
+      "definition": "確信が持てない、不確かな。",
+      "usage_in_passage": "傍観者が内心では状況について確信を持てずにいる様子を表す。",
+      "related_terms": [
+        "unsure",
+        "doubtful",
+        "hesitant"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "publicly": {
+      "etymology": "public(公の)+ ly(副詞化)。",
+      "definition": "表向きは、公然と。",
+      "usage_in_passage": "\"publicly composed\" で、他人の前では平静を装っている様子を表す。",
+      "related_terms": [
+        "outwardly",
+        "openly",
+        "visibly"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "composed": {
+      "etymology": "com(共に)+ ponere(置く、ラテン語)+ ed。「きちんと配置された」から「落ち着いた」の意味に発展。",
+      "definition": "落ち着いた、冷静な。",
+      "usage_in_passage": "傍観者が公の場では冷静さを保っているように見える様子を表す。",
+      "related_terms": [
+        "calm",
+        "collected",
+        "unruffled"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "convince": {
+      "etymology": "con(完全に)+ vincere(打ち負かす、ラテン語)。「完全に説き伏せる」が原義。",
+      "definition": "納得させる、確信させる。",
+      "usage_in_passage": "全員が平静を装うことで、互いに「何も問題ない」と思い込ませてしまう過程を表す。",
+      "related_terms": [
+        "persuade",
+        "assure",
+        "satisfy"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "replicated": {
+      "etymology": "re(再び)+ plicare(折りたたむ、ラテン語)+ ed。「繰り返し折りたたむ」から「再現する」の意味に発展。",
+      "definition": "再現された、追試された。",
+      "usage_in_passage": "傍観者効果が数百の研究で「再現されてきた」ことを述べ、この現象の頑健性を示す。",
+      "related_terms": [
+        "reproduced",
+        "confirmed",
+        "duplicated"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "hundreds": {
+      "etymology": "hundred(100)+ s(複数)。",
+      "definition": "何百もの。",
+      "usage_in_passage": "傍観者効果を検証した研究の数の多さを示す。",
+      "related_terms": [
+        "numerous studies",
+        "many",
+        "countless"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "emergencies": {
+      "etymology": "e(外へ)+ mergere(現れる、ラテン語)+ ency(名詞化)+ ies。「突然現れ出ること」が原義。",
+      "definition": "緊急事態。",
+      "usage_in_passage": "傍観者効果の研究対象が当初の医療緊急事態を超えて広がったことを示す基準点。",
+      "related_terms": [
+        "crises",
+        "urgent situations",
+        "emergency cases"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "everyday": {
+      "etymology": "every(すべての)+ day(日)。",
+      "definition": "日常の、日々の。",
+      "usage_in_passage": "傍観者効果の応用範囲が「日常的な」援助要請にまで広がったことを示す。",
+      "related_terms": [
+        "daily",
+        "routine",
+        "ordinary"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "workplace": {
+      "etymology": "work(仕事)+ place(場所)。",
+      "definition": "職場。",
+      "usage_in_passage": "傍観者効果が「職場」での不正行為への対応にも当てはまることを示す。",
+      "related_terms": [
+        "office",
+        "workplace setting",
+        "organization"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "misconduct": {
+      "etymology": "mis(誤った)+ conduct(行い)。",
+      "definition": "不正行為、非行。",
+      "usage_in_passage": "職場における不正行為を傍観者効果の応用範囲の一例として挙げている。",
+      "related_terms": [
+        "wrongdoing",
+        "malpractice",
+        "impropriety"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "harassment": {
+      "etymology": "harass(苦しめる、古フランス語 harer)+ ment(名詞化)。",
+      "definition": "嫌がらせ、ハラスメント。",
+      "usage_in_passage": "オンライン上の嫌がらせも、多くの目撃者がいる状況として傍観者効果の対象になることを示す。",
+      "related_terms": [
+        "bullying",
+        "abuse",
+        "intimidation"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "witnessed": {
+      "etymology": "witness(目撃する)+ ed。",
+      "definition": "目撃された。",
+      "usage_in_passage": "オンラインハラスメントが大勢の聴衆に「目撃された」状況を表す。",
+      "related_terms": [
+        "observed",
+        "seen",
+        "viewed"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "audiences": {
+      "etymology": "audience(聴衆)+ s(複数)。",
+      "definition": "聴衆、視聴者たち。",
+      "usage_in_passage": "オンライン上の嫌がらせを見ている「大勢の視聴者」を指し、傍観者効果が生じる現代的な場面を示す。",
+      "related_terms": [
+        "viewers",
+        "onlookers",
+        "spectators"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "visible": {
+      "etymology": "videre(見る、ラテン語)+ ible(できる)。",
+      "definition": "目に見える、明らかな。",
+      "usage_in_passage": "傍観者効果の理解が実務上の訓練という「目に見える」形で応用されていることを示す。",
+      "related_terms": [
+        "evident",
+        "apparent",
+        "observable"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "professions": {
+      "etymology": "profess(公言する、ラテン語 profiteri)+ ion(名詞化)+ s。",
+      "definition": "職業、専門職。",
+      "usage_in_passage": "傍観者効果を踏まえた訓練が「多くの職業」で標準となっていることを示す。",
+      "related_terms": [
+        "occupations",
+        "careers",
+        "vocations"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "instruct": {
+      "etymology": "in(中へ)+ struere(積み上げる、ラテン語)。「知識を積み上げさせる」が原義。",
+      "definition": "指示する、教える。",
+      "usage_in_passage": "救急対応の講習が目撃者に特定の行動を「指示する」内容を表す。",
+      "related_terms": [
+        "direct",
+        "train",
+        "teach"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "specifying": {
+      "etymology": "specify(明記する)+ ing。specus(種類、ラテン語)に由来。",
+      "definition": "specifying(明記する、特定する)+ ing。",
+      "usage_in_passage": "\"pointing and specifying a task\" で、特定の人物に特定の任務を指定する行為を表す。",
+      "related_terms": [
+        "designating",
+        "identifying",
+        "naming"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "crowd": {
+      "etymology": "古英語 crudan(押し合う)に由来。",
+      "definition": "群衆。",
+      "usage_in_passage": "「群衆全体への一般的な呼びかけ」ではなく特定の個人に指示することの対比として使われる。",
+      "related_terms": [
+        "mob",
+        "throng",
+        "multitude"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "adjustment": {
+      "etymology": "ad(〜へ)+ just(正しい)+ ment(名詞化)。",
+      "definition": "調整、修正。",
+      "usage_in_passage": "特定の人物を名指しするという「一つの調整」が、応答時間短縮の効果を持つことを示す。",
+      "related_terms": [
+        "modification",
+        "change",
+        "tweak"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "assigning": {
+      "etymology": "ad(〜へ)+ signare(印をつける、ラテン語)+ ing。",
+      "definition": "割り当てる、指定する。",
+      "usage_in_passage": "責任を特定の一人に「割り当てる」ことが、単に依頼するのとは異なる効果を持つことを示す。",
+      "related_terms": [
+        "allocating",
+        "designating",
+        "delegating"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "merely": {
+      "etymology": "mere(単なる)+ ly(副詞化)。",
+      "definition": "単に、ただ〜だけ。",
+      "usage_in_passage": "「単に依頼するだけ」と「責任を割り当てること」との対比を作る副詞。",
+      "related_terms": [
+        "simply",
+        "just",
+        "solely"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "shorten": {
+      "etymology": "short(短い)+ en(動詞化)。",
+      "definition": "短縮する。",
+      "usage_in_passage": "責任の指定という工夫が援助までの応答時間を「短縮する」ことを示す。",
+      "related_terms": [
+        "reduce",
+        "abbreviate",
+        "cut down"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "markedly": {
+      "etymology": "marked(著しい)+ ly(副詞化)。",
+      "definition": "著しく、はっきりと。",
+      "usage_in_passage": "応答時間の短縮が「著しい」ものであったことを強調する。",
+      "related_terms": [
+        "notably",
+        "significantly",
+        "considerably"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "confirming": {
+      "etymology": "con(完全に)+ firmare(確かにする、ラテン語)+ ing。",
+      "definition": "確認する、裏付ける。",
+      "usage_in_passage": "この結果が、責任の拡散という当初の発見が「逆転可能」であることを裏付けていると述べる。",
+      "related_terms": [
+        "verifying",
+        "substantiating",
+        "validating"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "reversed": {
+      "etymology": "re(逆に)+ vertere(向く、ラテン語)+ ed。",
+      "definition": "逆転された、覆された。",
+      "usage_in_passage": "責任の拡散という現象が、意図的な工夫によって「逆転できる」ことを示す本文の結論部分。",
+      "related_terms": [
+        "reverted",
+        "undone",
+        "inverted"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "readily": {
+      "etymology": "ready(用意ができた)+ ly(副詞化)。",
+      "definition": "たやすく、すぐに。",
+      "usage_in_passage": "\"as readily as it can be induced\" で、拡散が引き起こされるのと同じくらい簡単に逆転できることを示す。",
+      "related_terms": [
+        "easily",
+        "promptly",
+        "effortlessly"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "induced": {
+      "etymology": "in(中へ)+ ducere(導く、ラテン語)+ ed。",
+      "definition": "引き起こされた、誘発された。",
+      "usage_in_passage": "責任の拡散という現象が実験によって「引き起こされた」ことを、逆転可能性と対比して述べる、本文最後の語。",
+      "related_terms": [
+        "brought about",
+        "triggered",
+        "provoked"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    }
+  }
+}
