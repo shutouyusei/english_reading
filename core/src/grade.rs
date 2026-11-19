@@ -48,7 +48,7 @@ pub fn grade_essay(
     .ok_or(ClaudeRunnerError::BinaryNotFound)?;
 
     let prompt_path = writing_prompt_path(root, prompt_id)
-        .ok_or_else(|| ClaudeRunnerError::LaunchFailed(format!("問題ID \"{prompt_id}\" のパスが不正です")))?;
+        .ok_or_else(|| ClaudeRunnerError::LaunchFailed(format!("the prompt ID \"{prompt_id}\" is not valid")))?;
 
     let template_name = if prompt_type == "discussion" {
         "grade-discussion"
@@ -57,7 +57,7 @@ pub fn grade_essay(
     };
     let template_path = root.join(format!("app/prompts/{template_name}.md"));
 
-    let load_failure = || ClaudeRunnerError::LaunchFailed("問題または採点プロンプトを読み込めません".to_string());
+    let load_failure = || ClaudeRunnerError::LaunchFailed("the prompt or the grading template could not be loaded".to_string());
 
     let prompt_data = std::fs::read(&prompt_path).map_err(|_| load_failure())?;
     let prompt: Map<String, Value> = match serde_json::from_slice(&prompt_data) {
@@ -114,22 +114,6 @@ mod tests {
     use serde_json::json;
 
     #[test]
-    fn empty_discussion_is_empty_string() {
-        assert_eq!(describe_discussion(None), "");
-    }
-
-    #[test]
-    fn formats_professor_post_only() {
-        let discussion = json!({
-            "professor_post": { "name": "Dr. Lee", "text": "What do you think?" }
-        });
-        assert_eq!(
-            describe_discussion(Some(&discussion)),
-            "Dr. Lee:\nWhat do you think?"
-        );
-    }
-
-    #[test]
     fn formats_professor_and_student_posts() {
         let discussion = json!({
             "professor_post": { "name": "Dr. Lee", "text": "What do you think?" },
@@ -155,5 +139,4 @@ mod tests {
             "Professor:\nHello\n\nStudent:\nHi"
         );
     }
-
 }

@@ -5,7 +5,7 @@ async function initList() {
   try {
     await Store.init();
   } catch (err) {
-    console.warn("学習記録を読み込めませんでした:", err);
+    console.warn("Could not load study records:", err);
   }
   let index;
   try {
@@ -17,11 +17,11 @@ async function initList() {
     index = await res.json();
   } catch (err) {
     container.innerHTML =
-      `<p class="error">一覧を読み込めませんでした(${escapeHtml(err.message)})。</p>`;
+      `<p class="error">Could not load the passage list (${escapeHtml(err.message)}).</p>`;
     return;
   }
   if (!index.passages.length) {
-    container.innerHTML = `<p class="hint">パッセージがまだありません。</p>`;
+    container.innerHTML = `<p class="hint">No passages yet.</p>`;
     return;
   }
   container.innerHTML = index.passages.map(cardHtml).join("");
@@ -30,23 +30,23 @@ async function initList() {
 function cardHtml(meta) {
   const result = Store.latest(meta.id);
   const badge = result
-    ? `<span class="badge done">✅ ${result.score}/${result.total} ・ ${formatMinSec(result.elapsedSec)}</span>`
-    : `<span class="badge">未挑戦</span>`;
+    ? `<span class="badge done">✅ ${result.score}/${result.total} · ${formatMinSec(result.elapsedSec)}</span>`
+    : `<span class="badge">Not attempted</span>`;
   return `
     <div class="card">
       <div class="card-main">
         <h3>${escapeHtml(meta.title)}</h3>
-        <p class="meta">${escapeHtml(meta.topic)} ・ ${meta.word_count} words ・ ${meta.added} ${badge}</p>
+        <p class="meta">${escapeHtml(meta.topic)} · ${meta.word_count} words · ${meta.added} ${badge}</p>
       </div>
       <div class="card-actions">
-        <a class="button primary" href="${window.READER_URL}?id=${meta.id}&mode=solve">✏️ 問題を解く</a>
-        <a class="button" href="${window.READER_URL}?id=${meta.id}&mode=study">📖 解説モードで読む</a>
+        <a class="button primary" href="${window.READER_URL}?id=${meta.id}&mode=solve">✏️ Solve</a>
+        <a class="button" href="${window.READER_URL}?id=${meta.id}&mode=study">📖 Read in study mode</a>
       </div>
     </div>`;
 }
 
 function formatMinSec(sec) {
-  return `${Math.floor(sec / 60)}分${sec % 60}秒`;
+  return `${Math.floor(sec / 60)}m ${sec % 60}s`;
 }
 
 document.addEventListener("DOMContentLoaded", initList);

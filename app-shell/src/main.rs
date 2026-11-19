@@ -15,7 +15,7 @@ enum UserEvent {
 
 fn main() -> wry::Result<()> {
     let env: std::collections::HashMap<String, String> = std::env::vars().collect();
-    let current_dir = std::env::current_dir().expect("カレントディレクトリを取得できません");
+    let current_dir = std::env::current_dir().expect("cannot get the current directory");
     let repo_root = platform::resolve_repo_root(&env, &current_dir);
 
     let home = home_dir();
@@ -28,7 +28,7 @@ fn main() -> wry::Result<()> {
         .with_title("TOEFL Reading")
         .with_inner_size(tao::dpi::LogicalSize::new(1100.0, 780.0))
         .build(&event_loop)
-        .expect("ウィンドウを作成できません");
+        .expect("cannot create the window");
 
     let webview_holder: Rc<RefCell<Option<wry::WebView>>> = Rc::new(RefCell::new(None));
 
@@ -47,7 +47,7 @@ fn main() -> wry::Result<()> {
                     let _ = proxy.send_event(UserEvent::EvaluateScript(script));
                 }
                 Err(_) => {
-                    eprintln!("IPCメッセージを解析できません: {raw}");
+                    eprintln!("cannot parse the IPC message: {raw}");
                 }
             });
         }
@@ -86,11 +86,11 @@ fn main() -> wry::Result<()> {
     let webview = {
         use tao::platform::unix::WindowExtUnix;
         use wry::WebViewBuilderExtUnix;
-        let vbox = window.default_vbox().expect("GTK の既定コンテナを取得できません");
-        builder.build_gtk(vbox).expect("WebViewを作成できません")
+        let vbox = window.default_vbox().expect("cannot get the default GTK container");
+        builder.build_gtk(vbox).expect("cannot create the WebView")
     };
     #[cfg(not(target_os = "linux"))]
-    let webview = builder.build(&window).expect("WebViewを作成できません");
+    let webview = builder.build(&window).expect("cannot create the WebView");
 
     *webview_holder.borrow_mut() = Some(webview);
 
@@ -119,17 +119,17 @@ fn build_http_response(
     for (key, value) in headers {
         builder = builder.header(key, value);
     }
-    builder.body(std::borrow::Cow::from(body)).expect("応答の組み立てに失敗しました")
+    builder.body(std::borrow::Cow::from(body)).expect("failed to build the response")
 }
 
 #[cfg(any(target_os = "macos", target_os = "linux"))]
 fn home_dir() -> std::path::PathBuf {
-    std::env::var("HOME").map(std::path::PathBuf::from).expect("HOME が設定されていません")
+    std::env::var("HOME").map(std::path::PathBuf::from).expect("HOME is not set")
 }
 
 #[cfg(target_os = "windows")]
 fn home_dir() -> std::path::PathBuf {
     std::env::var("USERPROFILE")
         .map(std::path::PathBuf::from)
-        .expect("USERPROFILE が設定されていません")
+        .expect("USERPROFILE is not set")
 }

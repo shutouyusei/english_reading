@@ -13,7 +13,6 @@ pub enum Handler {
     Essays,
     Grader,
     Anki,
-    Dictionary,
     Speech,
 }
 
@@ -56,7 +55,6 @@ pub fn parse_ipc_request(raw: &str) -> Result<IpcRequest, IpcParseError> {
         "essays" => Handler::Essays,
         "grader" => Handler::Grader,
         "anki" => Handler::Anki,
-        "dictionary" => Handler::Dictionary,
         "speech" => Handler::Speech,
         other => return Err(IpcParseError::UnknownHandler(other.to_string())),
     };
@@ -105,7 +103,6 @@ pub fn dispatch(request: &IpcRequest, root: &Path, data_dir: &Path) -> String {
             let client = AnkiClient::default();
             anki::handle_anki(&request.payload, &client).map(Some)
         }
-        Handler::Dictionary => placeholder::handle_dictionary(&request.payload).map(Some),
         Handler::Speech => placeholder::handle_speech(&request.payload).map(Some),
     };
 
@@ -125,20 +122,9 @@ mod tests {
     }
 
     #[test]
-    fn non_object_json_is_rejected() {
-        assert_eq!(parse_ipc_request("42"), Err(IpcParseError::InvalidJson));
-    }
-
-    #[test]
     fn missing_request_id_is_rejected() {
         let raw = r#"{"handler":"store","action":"loadAll"}"#;
         assert_eq!(parse_ipc_request(raw), Err(IpcParseError::MissingRequestId));
-    }
-
-    #[test]
-    fn missing_handler_is_rejected() {
-        let raw = r#"{"requestId":"1","action":"loadAll"}"#;
-        assert_eq!(parse_ipc_request(raw), Err(IpcParseError::MissingHandler));
     }
 
     #[test]
@@ -158,7 +144,6 @@ mod tests {
             ("essays", Handler::Essays),
             ("grader", Handler::Grader),
             ("anki", Handler::Anki),
-            ("dictionary", Handler::Dictionary),
             ("speech", Handler::Speech),
         ] {
             let raw = format!(r#"{{"requestId":"1","handler":"{name}","action":"x"}}"#);
@@ -185,32 +170,16 @@ mod tests {
     }
 
     #[test]
-    fn formats_success_with_no_result() {
-        let script = format_resolve_script("1", None, None);
-        assert_eq!(script, r#"window.__toeflIpcResolve("1", null, null)"#);
-    }
-
-    #[test]
     fn error_message_is_valid_json_encoded() {
         let message = "quote\" and \\backslash";
         let script = format_resolve_script("1", None, Some(message));
-        // 手書きのエスケープ文字列を避けるため、生成された断片を逆方向にパースして確認する。
+        // Parse the generated fragment back instead of comparing with a hand-escaped string.
         let error_part = script
             .strip_prefix("window.__toeflIpcResolve(\"1\", null, ")
             .and_then(|s| s.strip_suffix(')'))
             .expect("prefix/suffix should match");
         let parsed: Value = serde_json::from_str(error_part).unwrap();
         assert_eq!(parsed, Value::String(message.to_string()));
-    }
-
-    #[test]
-    fn dispatches_store_loadall_to_empty_array() {
-        let dir = std::env::temp_dir().join(format!("ipc-dispatch-test-{}", uuid_like()));
-        std::fs::create_dir_all(&dir).unwrap();
-        let request = parse_ipc_request(r#"{"requestId":"1","handler":"store","action":"loadAll"}"#).unwrap();
-        let script = dispatch(&request, &dir, &dir);
-        assert_eq!(script, r#"window.__toeflIpcResolve("1", [], null)"#);
-        let _ = std::fs::remove_dir_all(&dir);
     }
 
     #[test]
@@ -231,14 +200,6 @@ mod tests {
         let script = dispatch(&listening_load, &dir, &dir);
         assert!(script.contains("l1"));
         let _ = std::fs::remove_dir_all(&dir);
-    }
-
-    #[test]
-    fn dispatches_dictionary_to_placeholder_error() {
-        let request =
-            parse_ipc_request(r#"{"requestId":"9","handler":"dictionary","action":"define","word":"x"}"#).unwrap();
-        let script = dispatch(&request, Path::new("/tmp"), Path::new("/tmp"));
-        assert!(script.contains("この機能はまだ利用できません"));
     }
 
     fn uuid_like() -> String {

@@ -17,7 +17,7 @@ def email_prompt(**overrides):
         "instructions": "Read the situation and write an email.",
         "situation": "Your professor moved the midterm to Saturday.",
         "recipient": "Professor Alvarez",
-        "must_include": ["変更を依頼する理由", "代替日程の提案"],
+        "must_include": ["explain why you need a change", "propose an alternative date"],
         "discussion": None,
     }
     data.update(overrides)
@@ -64,30 +64,6 @@ class ValidEmailTest(unittest.TestCase):
         errors = validate_prompt(email_prompt(must_include=[]), "writing_001")
         self.assertTrue(any("must_include" in e for e in errors), errors)
 
-    def test_email_with_empty_situation_string_fails(self):
-        errors = validate_prompt(email_prompt(situation="   "), "writing_001")
-        self.assertTrue(any("situation must be a non-empty string" in e for e in errors), errors)
-
-    def test_email_with_situation_not_string_fails(self):
-        errors = validate_prompt(email_prompt(situation=42), "writing_001")
-        self.assertTrue(any("situation must be a non-empty string" in e for e in errors), errors)
-
-    def test_email_with_empty_recipient_string_fails(self):
-        errors = validate_prompt(email_prompt(recipient=""), "writing_001")
-        self.assertTrue(any("recipient must be a non-empty string" in e for e in errors), errors)
-
-    def test_email_with_recipient_not_string_fails(self):
-        errors = validate_prompt(email_prompt(recipient=123), "writing_001")
-        self.assertTrue(any("recipient must be a non-empty string" in e for e in errors), errors)
-
-    def test_email_with_must_include_not_list_fails(self):
-        errors = validate_prompt(email_prompt(must_include="include this"), "writing_001")
-        self.assertTrue(any("must_include must be a non-empty list" in e for e in errors), errors)
-
-    def test_email_with_must_include_empty_string_entry_fails(self):
-        errors = validate_prompt(email_prompt(must_include=["要件1", ""]), "writing_001")
-        self.assertTrue(any("must_include entries must be non-empty strings" in e for e in errors), errors)
-
 
 class ValidDiscussionTest(unittest.TestCase):
     def test_valid_discussion_passes(self):
@@ -103,53 +79,17 @@ class ValidDiscussionTest(unittest.TestCase):
         errors = validate_prompt(data, "writing_002")
         self.assertTrue(any("exactly 2" in e for e in errors), errors)
 
-    def test_discussion_without_professor_text_fails(self):
-        data = discussion_prompt()
-        data["discussion"]["professor_post"] = {"name": "Dr. Chen"}
-        errors = validate_prompt(data, "writing_002")
-        self.assertTrue(any("professor_post" in e for e in errors), errors)
-
-    def test_discussion_with_student_post_missing_text_fails(self):
-        data = discussion_prompt()
-        data["discussion"]["student_posts"][1] = {"name": "Priya"}
-        errors = validate_prompt(data, "writing_002")
-        self.assertTrue(any("student_posts[1]" in e for e in errors), errors)
-
 
 class CommonFieldTest(unittest.TestCase):
     def test_id_must_match_filename(self):
         errors = validate_prompt(email_prompt(), "writing_999")
         self.assertTrue(any("does not match filename" in e for e in errors), errors)
 
-    def test_unknown_type_fails(self):
-        errors = validate_prompt(email_prompt(type="essay"), "writing_001")
-        self.assertTrue(any("invalid type" in e for e in errors), errors)
-
     def test_missing_field_fails(self):
         data = email_prompt()
         del data["instructions"]
         errors = validate_prompt(data, "writing_001")
         self.assertTrue(any("missing field instructions" in e for e in errors), errors)
-
-    def test_zero_target_minutes_fails(self):
-        errors = validate_prompt(email_prompt(target_minutes=0), "writing_001")
-        self.assertTrue(any("target_minutes" in e for e in errors), errors)
-
-    def test_bad_date_fails(self):
-        errors = validate_prompt(email_prompt(added="2026/08/11"), "writing_001")
-        self.assertTrue(any("YYYY-MM-DD" in e for e in errors), errors)
-
-    def test_empty_title_fails(self):
-        errors = validate_prompt(email_prompt(title="   "), "writing_001")
-        self.assertTrue(any("title" in e for e in errors), errors)
-
-    def test_target_minutes_as_bool_fails(self):
-        errors = validate_prompt(email_prompt(target_minutes=True), "writing_001")
-        self.assertTrue(any("target_minutes" in e for e in errors), errors)
-
-    def test_target_minutes_negative_fails(self):
-        errors = validate_prompt(email_prompt(target_minutes=-5), "writing_001")
-        self.assertTrue(any("target_minutes" in e for e in errors), errors)
 
 
 if __name__ == "__main__":

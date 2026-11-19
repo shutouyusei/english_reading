@@ -9,7 +9,7 @@
    on Anki's configuration. */
 
 window.AnkiBridge = {
-  /** Run an AnkiConnect action and return its result. Throws with a Japanese reason on failure. */
+  /** Run an AnkiConnect action and return its result. Throws with the reason on failure. */
   async request(action, params) {
     const reply = await window.webkit.messageHandlers.anki.postMessage({
       action: "request",

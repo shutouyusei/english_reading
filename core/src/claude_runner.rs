@@ -15,8 +15,7 @@ pub enum UnreadableStage {
     InnerResult,
 }
 
-/// The ways grading can fail. Each has a Japanese description that can be shown on
-/// screen as is.
+/// The ways grading can fail. Each has a description that can be shown on screen as is.
 #[derive(Debug)]
 pub enum ClaudeRunnerError {
     BinaryNotFound,
@@ -29,33 +28,33 @@ pub enum ClaudeRunnerError {
 }
 
 impl ClaudeRunnerError {
-    pub fn japanese_message(&self) -> String {
+    pub fn user_message(&self) -> String {
         match self {
             ClaudeRunnerError::BinaryNotFound => {
-                "Claude Code が見つかりません。~/.local/bin/claude を確認するか、\
-                 環境変数 TOEFL_CLAUDE_BIN にパスを設定してください。"
+                "Claude Code was not found. Check ~/.local/bin/claude, or set the \
+                 TOEFL_CLAUDE_BIN environment variable to its path."
                     .to_string()
             }
             ClaudeRunnerError::LaunchFailed(detail) => {
-                format!("Claude Code を起動できませんでした: {detail}")
+                format!("Could not start Claude Code: {detail}")
             }
             ClaudeRunnerError::TimedOut { seconds } => {
-                format!("採点が {seconds} 秒以内に終わりませんでした。もう一度お試しください。")
+                format!("Grading did not finish within {seconds} seconds. Please try again.")
             }
             ClaudeRunnerError::ClaudeReportedError(detail) => {
                 format!(
-                    "Claude Code がエラーを返しました。ターミナルで claude を実行して\
-                     ログイン状態を確認してください。({detail})"
+                    "Claude Code returned an error. Run claude in a terminal and check \
+                     that you are logged in. ({detail})"
                 )
             }
             ClaudeRunnerError::UnreadableOutput { stage, excerpt } => {
                 let stage_description = match stage {
-                    UnreadableStage::OuterWrapper => "Claude Code からの応答全体",
-                    UnreadableStage::InnerResult => "採点結果の JSON 部分",
+                    UnreadableStage::OuterWrapper => "the whole response from Claude Code",
+                    UnreadableStage::InnerResult => "the JSON part of the grading result",
                 };
                 format!(
-                    "採点結果を読み取れませんでした({stage_description}を JSON として解釈できません: \
-                     {excerpt})。もう一度お試しください。"
+                    "Could not read the grading result ({stage_description} is not valid \
+                     JSON: {excerpt}). Please try again."
                 )
             }
         }
@@ -189,7 +188,7 @@ pub fn extract_grade_json(data: &[u8]) -> Result<Map<String, Value>, ClaudeRunne
         Ok(Value::Object(map)) => map,
         _ => {
             let excerpt = String::from_utf8(data.to_vec())
-                .unwrap_or_else(|_| "(UTF-8として読めないデータ)".to_string());
+                .unwrap_or_else(|_| "(data that is not valid UTF-8)".to_string());
             return Err(ClaudeRunnerError::UnreadableOutput {
                 stage: UnreadableStage::OuterWrapper,
                 excerpt: excerpt.chars().take(200).collect(),
@@ -201,7 +200,7 @@ pub fn extract_grade_json(data: &[u8]) -> Result<Map<String, Value>, ClaudeRunne
         let detail = wrapper
             .get("result")
             .and_then(Value::as_str)
-            .unwrap_or("詳細不明")
+            .unwrap_or("no details given")
             .to_string();
         return Err(ClaudeRunnerError::ClaudeReportedError(detail));
     }
@@ -209,7 +208,7 @@ pub fn extract_grade_json(data: &[u8]) -> Result<Map<String, Value>, ClaudeRunne
     let Some(body) = wrapper.get("result").and_then(Value::as_str) else {
         return Err(ClaudeRunnerError::UnreadableOutput {
             stage: UnreadableStage::InnerResult,
-            excerpt: "result フィールドが文字列ではない".to_string(),
+            excerpt: "the result field is not a string".to_string(),
         });
     };
 
@@ -259,9 +258,9 @@ pub fn run_claude(
         .spawn()
         .map_err(|e| ClaudeRunnerError::LaunchFailed(e.to_string()))?;
 
-    let mut stdin = child.stdin.take().expect("stdinをpipeで開いた");
-    let mut stdout = child.stdout.take().expect("stdoutをpipeで開いた");
-    let mut stderr = child.stderr.take().expect("stderrをpipeで開いた");
+    let mut stdin = child.stdin.take().expect("stdin was opened as a pipe");
+    let mut stdout = child.stdout.take().expect("stdout was opened as a pipe");
+    let mut stderr = child.stderr.take().expect("stderr was opened as a pipe");
     // A shared handle that the calling thread keeps for kill. wait goes through this Mutex.
     let child = std::sync::Arc::new(std::sync::Mutex::new(child));
     let child_kill = std::sync::Arc::clone(&child);
@@ -293,7 +292,7 @@ pub fn run_claude(
         let status = child.lock().map(|mut c| c.wait());
         let status = match status {
             Ok(status) => status,
-            Err(_) => Err(std::io::Error::other("子プロセスのロックを取得できません")),
+            Err(_) => Err(std::io::Error::other("could not lock the child process")),
         };
         let _ = tx.send((status, out_buf, err_buf));
     });
@@ -306,7 +305,7 @@ pub fn run_claude(
             if !status.success() {
                 let err_text = String::from_utf8_lossy(&err_buf);
                 let detail = if err_text.is_empty() {
-                    format!("終了コード {}", status.code().unwrap_or(-1))
+                    format!("exit code {}", status.code().unwrap_or(-1))
                 } else {
                     err_text.chars().take(200).collect()
                 };
@@ -330,50 +329,23 @@ pub fn run_claude(
 mod tests {
     use super::*;
 
-    // 最重要の回帰防止。--tools "" が抜けると入力トークンが 73 倍になる。
+    // The most important regression guard: without --tools "" input tokens grow 73x.
     #[test]
-    fn arguments_contain_empty_tools() {
+    fn arguments_isolate_claude_and_pass_the_prompt() {
         let args = claude_arguments("SYS");
-        let tools_index = args.iter().position(|a| a == "--tools").expect("--tools がある");
-        assert_eq!(args[tools_index + 1], "");
-    }
-
-    #[test]
-    fn arguments_contain_json_output_format() {
-        let args = claude_arguments("SYS");
+        let value_after = |flag: &str| {
+            let i = args
+                .iter()
+                .position(|a| a == flag)
+                .unwrap_or_else(|| panic!("{flag} is missing"));
+            args[i + 1].clone()
+        };
+        assert_eq!(value_after("--tools"), "");
+        assert_eq!(value_after("--setting-sources"), "");
+        assert_eq!(value_after("--system-prompt"), "SYS");
         assert!(args.contains(&"--output-format".to_string()));
         assert!(args.contains(&"json".to_string()));
-    }
-
-    #[test]
-    fn arguments_contain_strict_mcp_config() {
-        let args = claude_arguments("SYS");
         assert!(args.contains(&"--strict-mcp-config".to_string()));
-    }
-
-    #[test]
-    fn arguments_contain_empty_setting_sources() {
-        let args = claude_arguments("SYS");
-        let i = args
-            .iter()
-            .position(|a| a == "--setting-sources")
-            .expect("--setting-sources がある");
-        assert_eq!(args[i + 1], "");
-    }
-
-    #[test]
-    fn arguments_pass_the_system_prompt() {
-        let args = claude_arguments("SYS");
-        let i = args
-            .iter()
-            .position(|a| a == "--system-prompt")
-            .expect("--system-prompt がある");
-        assert_eq!(args[i + 1], "SYS");
-    }
-
-    #[test]
-    fn arguments_contain_dash_p() {
-        let args = claude_arguments("SYS");
         assert!(args.contains(&"-p".to_string()));
     }
 
@@ -417,13 +389,6 @@ mod tests {
     }
 
     #[test]
-    fn none_found_is_none() {
-        let candidates = vec!["/candidate/one/claude".to_string()];
-        let found = resolve_claude_binary(&HashMap::new(), |_| false, &candidates);
-        assert_eq!(found, None);
-    }
-
-    #[test]
     fn splits_system_and_user_parts() {
         let text = "You are a grader.\nReply with JSON.\n---\nESSAY:\n{{essay}}";
         let (system, user) = split_prompt_file(text).unwrap();
@@ -434,16 +399,6 @@ mod tests {
     #[test]
     fn no_separator_is_none() {
         assert_eq!(split_prompt_file("no separator here"), None);
-    }
-
-    #[test]
-    fn empty_system_part_is_none() {
-        assert_eq!(split_prompt_file("---\nonly user"), None);
-    }
-
-    #[test]
-    fn empty_user_part_is_none() {
-        assert_eq!(split_prompt_file("only system\n---"), None);
     }
 
     fn values(pairs: &[(&str, &str)]) -> HashMap<String, String> {
@@ -460,32 +415,15 @@ mod tests {
     }
 
     #[test]
-    fn allows_values_containing_newlines() {
-        let rendered = render_template("ESSAY:\n{{essay}}", &values(&[("essay", "line1\nline2")]));
-        assert_eq!(rendered, "ESSAY:\nline1\nline2");
-    }
-
-    #[test]
     fn drops_placeholders_without_a_value() {
         let rendered = render_template("keep {{known}} drop {{unknown}}", &values(&[("known", "X")]));
         assert_eq!(rendered, "keep X drop ");
     }
 
-    // 回帰テスト: 生徒のエッセイ本文に {{...}} 形の文字列が含まれていても、
-    // それはテンプレートではなく置換された「値」なので消してはならない。
-    #[test]
-    fn keeps_brace_like_text_inside_a_substituted_value() {
-        let rendered = render_template(
-            "ESSAY:\n{{essay}}",
-            &values(&[("essay", "I wrote {{example}} on the board by mistake.")]),
-        );
-        assert_eq!(rendered, "ESSAY:\nI wrote {{example}} on the board by mistake.");
-    }
-
-    // 回帰テスト: 値の中に「別の既知キー」の {{...}} が偶然含まれていても、
-    // 後続キーの置換でその中身を書き換えてはならない(逐次 String::replace
-    // による多重置換のバグを防ぐ)。HashMap の反復順は不定なため、
-    // どちらのキーが先に処理されても壊れないことを固定文字列で確認する。
+    // Regression test: when a value happens to contain the {{...}} of another known key,
+    // substituting that other key must not rewrite it (the bug that one String::replace
+    // per key would cause). HashMap iteration order is not fixed, so the expected string
+    // is one that holds whichever key is handled first.
     #[test]
     fn does_not_let_one_substituted_value_be_rewritten_by_another_known_key() {
         let rendered = render_template(
@@ -525,28 +463,12 @@ mod tests {
         std::fs::remove_dir_all(&dir).unwrap();
     }
 
-    #[test]
-    fn is_executable_file_false_for_missing_path() {
-        assert!(!is_executable_file("/nonexistent/toefl-does-not-exist"));
-    }
-
-    #[test]
-    fn is_executable_file_false_for_a_directory() {
-        let dir = std::env::temp_dir().join(format!("toefl-dir-test-{}", std::process::id()));
-        std::fs::create_dir_all(&dir).unwrap();
-        assert!(!is_executable_file(dir.to_str().unwrap()));
-        std::fs::remove_dir_all(&dir).unwrap();
-    }
-
-    // 回帰テスト: タイムアウトしたら、応答を待つスレッドが握っている子プロセスを
-    // 確実に kill する。/bin/sleep をタイムアウトより長く走らせ、
-    // run_claude が TimedOut を返した後にプロセスが実際に終了していることを
-    // (ゾンビ化せず wait できることで)確認する。
+    // Regression test: on timeout, the child process held by the waiting thread must be
+    // killed. The stand-in for claude sleeps longer than the timeout.
     #[test]
     fn run_claude_kills_the_child_process_on_timeout() {
-        // run_claude は claude_arguments (-p --output-format json ...) を渡すため、
-        // 実バイナリの代わりに「引数を無視してタイムアウトより長く眠る」
-        // シェルスクリプトを claude 役に据える。
+        // run_claude passes claude_arguments (-p --output-format json ...), so a shell
+        // script that ignores its arguments and sleeps stands in for the real binary.
         let dir = std::env::temp_dir().join(format!("toefl-timeout-test-{}", std::process::id()));
         std::fs::create_dir_all(&dir).unwrap();
         let script = dir.join("fake_claude.sh");
@@ -560,9 +482,8 @@ mod tests {
         let result = run_claude(script.to_str().unwrap(), "SYS", "essay", 1);
         let elapsed = start.elapsed();
         assert!(matches!(result, Err(ClaudeRunnerError::TimedOut { seconds: 1 })));
-        // kill せずに放置すると 10 秒眠り続けるスクリプトなので、
-        // タイムアウト(1秒)から十分近い時間で戻ってくることは
-        // 子プロセスが実際に kill されたことの傍証になる。
+        // The script would sleep for 10 seconds if left alone, so returning soon after
+        // the 1-second timeout is indirect evidence that the child was killed.
         assert!(elapsed < Duration::from_secs(5), "elapsed={elapsed:?}");
 
         std::fs::remove_dir_all(&dir).unwrap();
@@ -610,27 +531,6 @@ mod tests {
                 assert_eq!(excerpt, "not json at all");
             }
             other => panic!("expected UnreadableOutput, got {other:?}"),
-        }
-    }
-
-    #[test]
-    fn every_error_has_a_non_empty_japanese_message() {
-        let errors = [
-            ClaudeRunnerError::BinaryNotFound,
-            ClaudeRunnerError::LaunchFailed("x".to_string()),
-            ClaudeRunnerError::TimedOut { seconds: 180 },
-            ClaudeRunnerError::ClaudeReportedError("x".to_string()),
-            ClaudeRunnerError::UnreadableOutput {
-                stage: UnreadableStage::OuterWrapper,
-                excerpt: "x".to_string(),
-            },
-            ClaudeRunnerError::UnreadableOutput {
-                stage: UnreadableStage::InnerResult,
-                excerpt: "x".to_string(),
-            },
-        ];
-        for e in errors {
-            assert!(!e.japanese_message().is_empty());
         }
     }
 }

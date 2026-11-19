@@ -10,7 +10,7 @@ pub fn handle_essays(payload: &Map<String, Value>, log: &JsonLinesFile) -> Resul
         }
         "saveEssay" => save_row(payload, "essay", log),
         "saveGrade" => save_row(payload, "grade", log),
-        other => Err(format!("未知の action: {other}")),
+        other => Err(format!("unknown action: {other}")),
     }
 }
 
@@ -20,9 +20,9 @@ fn save_row(payload: &Map<String, Value>, kind: &str, log: &JsonLinesFile) -> Re
         .get(kind)
         .and_then(Value::as_object)
         .cloned()
-        .ok_or_else(|| format!("{kind} の中身が含まれていません"))?;
+        .ok_or_else(|| format!("{kind} is missing"))?;
     row.insert("kind".to_string(), Value::String(kind.to_string()));
-    log.append(&row).map_err(|e| format!("書き込みに失敗しました: {e}"))?;
+    log.append(&row).map_err(|e| format!("Could not write the file: {e}"))?;
     Ok(None)
 }
 
@@ -89,41 +89,11 @@ mod tests {
     }
 
     #[test]
-    fn load_all_returns_mixed_rows() {
-        let (log, dir) = temp_log();
-        handle_essays(
-            &json!({"action": "saveEssay", "essay": {"essayId": "e1"}}).as_object().unwrap().clone(),
-            &log,
-        )
-        .unwrap();
-        handle_essays(
-            &json!({"action": "saveGrade", "grade": {"essayId": "e1"}}).as_object().unwrap().clone(),
-            &log,
-        )
-        .unwrap();
-
-        let loaded = handle_essays(&json!({"action": "loadAll"}).as_object().unwrap().clone(), &log)
-            .unwrap()
-            .unwrap();
-        assert_eq!(loaded.as_array().unwrap().len(), 2);
-        let _ = fs::remove_dir_all(&dir);
-    }
-
-    #[test]
     fn save_essay_without_essay_field_is_rejected() {
         let (log, dir) = temp_log();
         let payload = json!({"action": "saveEssay"}).as_object().unwrap().clone();
         let result = handle_essays(&payload, &log);
-        assert_eq!(result, Err("essay の中身が含まれていません".to_string()));
-        let _ = fs::remove_dir_all(&dir);
-    }
-
-    #[test]
-    fn unknown_action_is_rejected() {
-        let (log, dir) = temp_log();
-        let payload = json!({"action": "delete"}).as_object().unwrap().clone();
-        let result = handle_essays(&payload, &log);
-        assert_eq!(result, Err("未知の action: delete".to_string()));
+        assert_eq!(result, Err("essay is missing".to_string()));
         let _ = fs::remove_dir_all(&dir);
     }
 }

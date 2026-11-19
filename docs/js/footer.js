@@ -4,7 +4,7 @@
    the existing footer HTML. With JS disabled the footer stays shown in full. */
 
 const FOOTER_KEY = "settings.footer";
-const FOOTER_MINI_LABEL = "⚠️ AI生成コンテンツ(非公式)";
+const FOOTER_MINI_LABEL = "⚠️ AI-generated content (unofficial)";
 
 function footerCollapsed() {
   try {
@@ -41,15 +41,15 @@ function initFooter() {
   const full = document.createElement("div");
   full.className = "footer-full";
   while (footer.firstChild) full.appendChild(footer.firstChild);
-  const collapseBtn = makeFooterButton("footer-toggle", "✕", "免責表示を1行に縮める");
+  const collapseBtn = makeFooterButton("footer-toggle", "✕", "Collapse the disclaimer to one line");
   full.appendChild(collapseBtn);
 
   const mini = document.createElement("p");
   mini.className = "footer-mini";
-  const expandBtn = makeFooterButton("footer-expand", FOOTER_MINI_LABEL, "免責表示を開く");
+  const expandBtn = makeFooterButton("footer-expand", FOOTER_MINI_LABEL, "Show the full disclaimer");
   mini.appendChild(expandBtn);
   // linksHtml is our own static HTML (it contains no user input)
-  mini.insertAdjacentHTML("beforeend", ` ・ ${linksHtml}`);
+  mini.insertAdjacentHTML("beforeend", ` · ${linksHtml}`);
 
   footer.append(full, mini);
 

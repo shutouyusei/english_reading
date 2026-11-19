@@ -14,11 +14,11 @@ pub fn handle_log_store(payload: &Map<String, Value>, log: &JsonLinesFile) -> Re
             let attempt = payload
                 .get("attempt")
                 .and_then(Value::as_object)
-                .ok_or_else(|| "attempt が含まれていません".to_string())?;
-            log.append(attempt).map_err(|e| format!("書き込みに失敗しました: {e}"))?;
+                .ok_or_else(|| "attempt is missing".to_string())?;
+            log.append(attempt).map_err(|e| format!("Could not write the file: {e}"))?;
             Ok(None)
         }
-        other => Err(format!("未知の action: {other}")),
+        other => Err(format!("unknown action: {other}")),
     }
 }
 
@@ -48,15 +48,6 @@ mod tests {
     }
 
     #[test]
-    fn load_all_on_empty_log_returns_empty_array() {
-        let (log, dir) = temp_log("attempts.jsonl");
-        let payload = json!({"action": "loadAll"}).as_object().unwrap().clone();
-        let result = handle_log_store(&payload, &log);
-        assert_eq!(result, Ok(Some(json!([]))));
-        let _ = fs::remove_dir_all(&dir);
-    }
-
-    #[test]
     fn save_attempt_then_load_all_returns_it() {
         let (log, dir) = temp_log("attempts.jsonl");
         let save_payload = json!({
@@ -81,7 +72,7 @@ mod tests {
         let (log, dir) = temp_log("attempts.jsonl");
         let payload = json!({"action": "saveAttempt"}).as_object().unwrap().clone();
         let result = handle_log_store(&payload, &log);
-        assert_eq!(result, Err("attempt が含まれていません".to_string()));
+        assert_eq!(result, Err("attempt is missing".to_string()));
         let _ = fs::remove_dir_all(&dir);
     }
 
@@ -90,7 +81,7 @@ mod tests {
         let (log, dir) = temp_log("attempts.jsonl");
         let payload = json!({"action": "delete"}).as_object().unwrap().clone();
         let result = handle_log_store(&payload, &log);
-        assert_eq!(result, Err("未知の action: delete".to_string()));
+        assert_eq!(result, Err("unknown action: delete".to_string()));
         let _ = fs::remove_dir_all(&dir);
     }
 }

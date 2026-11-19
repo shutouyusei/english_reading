@@ -18,7 +18,7 @@ async function initEditor() {
   try {
     await Essays.init();
   } catch (err) {
-    console.warn("学習記録を読み込めませんでした:", err);
+    console.warn("Could not load study records:", err);
   }
 
   try {
@@ -29,7 +29,7 @@ async function initEditor() {
     state.prompt = await res.json();
   } catch (err) {
     promptPane.innerHTML =
-      `<p class="error">問題を読み込めませんでした(${esc(err.message)})。</p>`;
+      `<p class="error">Could not load the prompt (${esc(err.message)}).</p>`;
     return;
   }
 
@@ -50,7 +50,7 @@ function promptHtml(prompt) {
   if (prompt.type === "discussion") {
     const discussion = prompt.discussion;
     if (!discussion || !discussion.professor_post || !Array.isArray(discussion.student_posts)) {
-      return `<p class="error">問題データが壊れています(discussion フィールドが不正です)。</p>`;
+      return `<p class="error">The prompt data is broken (invalid discussion field).</p>`;
     }
     const posts = [discussion.professor_post, ...discussion.student_posts];
     return `
@@ -66,8 +66,8 @@ function promptHtml(prompt) {
     <h2>${esc(prompt.title)}</h2>
     <p class="hint">${esc(prompt.instructions)}</p>
     <div class="post"><p>${esc(prompt.situation)}</p></div>
-    <p class="meta">宛先: ${esc(prompt.recipient)}</p>
-    <p class="meta">押さえる点:</p>
+    <p class="meta">To: ${esc(prompt.recipient)}</p>
+    <p class="meta">Points to cover:</p>
     <ul>${prompt.must_include.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
 }
 
@@ -77,12 +77,12 @@ function showWriting(initialText = "") {
   document.querySelector("#header-status").textContent = "";
   document.querySelector("#right-pane").innerHTML = `
     <div class="pane-header">
-      <span id="timer">0分0秒</span>
-      <span class="meta">目安 ${state.prompt.target_minutes} 分</span>
+      <span id="timer">0m 0s</span>
+      <span class="meta">Target ${state.prompt.target_minutes} min</span>
     </div>
-    <textarea id="essay-input" placeholder="ここに英語で書きます">${esc(initialText)}</textarea>
+    <textarea id="essay-input" placeholder="Write your essay here">${esc(initialText)}</textarea>
     <p class="meta"><span id="word-count">0</span> words</p>
-    <button id="submit-button" class="button primary" disabled>採点する</button>`;
+    <button id="submit-button" class="button primary" disabled>Grade</button>`;
 
   const input = document.querySelector("#essay-input");
   const button = document.querySelector("#submit-button");
@@ -121,7 +121,7 @@ function stopTimer() {
 }
 
 function formatMinSec(sec) {
-  return `${Math.floor(sec / 60)}分${sec % 60}秒`;
+  return `${Math.floor(sec / 60)}m ${sec % 60}s`;
 }
 
 // --- Submit and grade ---
@@ -139,7 +139,7 @@ async function submitEssay(text) {
   try {
     await Essays.saveEssay(essay);
   } catch (err) {
-    showError(essay, `保存できませんでした: ${err.message}`);
+    showError(essay, `Could not save: ${err.message}`);
     return;
   }
   await runGrading(essay);
@@ -168,7 +168,7 @@ async function runGrading(essay) {
   try {
     await Essays.saveGrade(row);
   } catch (err) {
-    showError(essay, `採点結果を保存できませんでした: ${err.message}`);
+    showError(essay, `Could not save the grading result: ${err.message}`);
     return;
   }
   showResult(essay, row);
@@ -179,12 +179,12 @@ function showGrading() {
   const startedAt = Date.now();
   document.querySelector("#right-pane").innerHTML = `
     <div class="grading">
-      <p>採点しています…</p>
-      <p class="meta">通常15〜20秒かかります。<span id="grading-elapsed">0</span> 秒経過</p>
-      <p class="hint">この画面を閉じても、書いた文章は保存済みです。<br>
-        一覧から「採点待ち」として再開できます。</p>
+      <p>Grading…</p>
+      <p class="meta">Usually takes 15-20 seconds. <span id="grading-elapsed">0</span>s elapsed</p>
+      <p class="hint">Your essay is already saved, so you can close this screen.<br>
+        It stays in the list as "Awaiting grading".</p>
       <div class="card-actions">
-        <a class="button" href="writing.html">一覧へ</a>
+        <a class="button" href="writing.html">Back to the list</a>
       </div>
     </div>`;
   const tick = setInterval(() => {
@@ -214,15 +214,15 @@ function showResult(essay, grade) {
   const criteria = Array.isArray(grade.criteria) ? grade.criteria : [];
   const corrections = Array.isArray(grade.corrections) ? grade.corrections : [];
   document.querySelector("#header-status").textContent =
-    `${overall === null ? "?" : overall}/5 ・ ${formatMinSec(essay.elapsedSec)}`;
+    `${overall === null ? "?" : overall}/5 · ${formatMinSec(essay.elapsedSec)}`;
   document.querySelector("#right-pane").innerHTML = `
-    <div class="pane-header"><h3>総合 ${overallLabel} / 5</h3></div>
+    <div class="pane-header"><h3>Overall ${overallLabel} / 5</h3></div>
     ${criteria.map((c) => `
       <div class="criterion">
         <p class="criterion-name">${esc(c && c.name)} <strong>${esc(c && c.score)}/5</strong></p>
         <p>${esc(c && c.comment)}</p>
       </div>`).join("")}
-    <h3>添削</h3>
+    <h3>Corrections</h3>
     ${corrections.length
       ? corrections.map((c) => `
         <div class="correction">
@@ -230,12 +230,12 @@ function showResult(essay, grade) {
           <p class="revised">→ ${esc(c && c.revised)}</p>
           <p class="meta">${esc(c && c.reason)}</p>
         </div>`).join("")
-      : `<p class="hint">直すべき箇所は見つかりませんでした。</p>`}
-    <h3>講評</h3>
+      : `<p class="hint">Nothing to correct.</p>`}
+    <h3>Summary</h3>
     <p>${esc(grade.summary || "")}</p>
     <div class="card-actions">
-      <button id="rewrite-button" class="button primary">もう一度書く</button>
-      <a class="button" href="writing.html">一覧へ</a>
+      <button id="rewrite-button" class="button primary">Write again</button>
+      <a class="button" href="writing.html">Back to the list</a>
     </div>`;
   document.querySelector("#rewrite-button")
     .addEventListener("click", () => { state.elapsedSec = 0; showWriting(); });
@@ -243,12 +243,12 @@ function showResult(essay, grade) {
 
 function showUngraded(essay) {
   document.querySelector("#right-pane").innerHTML = `
-    <div class="pane-header"><h3>採点待ち</h3></div>
-    <p class="meta">${formatMinSec(essay.elapsedSec)} で執筆 ・ ${countWords(essay.text)} words</p>
+    <div class="pane-header"><h3>Awaiting grading</h3></div>
+    <p class="meta">Written in ${formatMinSec(essay.elapsedSec)} · ${countWords(essay.text)} words</p>
     <pre class="essay-text">${esc(essay.text)}</pre>
     <div class="card-actions">
-      <button id="grade-button" class="button primary">採点する</button>
-      <button id="rewrite-button" class="button">書き直す</button>
+      <button id="grade-button" class="button primary">Grade</button>
+      <button id="rewrite-button" class="button">Revise</button>
     </div>`;
   document.querySelector("#grade-button")
     .addEventListener("click", () => runGrading(essay));
@@ -259,13 +259,13 @@ function showUngraded(essay) {
 function showError(essay, message) {
   document.querySelector("#header-status").textContent = "";
   document.querySelector("#right-pane").innerHTML = `
-    <div class="pane-header"><h3>採点できませんでした</h3></div>
+    <div class="pane-header"><h3>Could not grade</h3></div>
     <p class="error">${esc(message)}</p>
-    <p class="hint">書いた文章は保存されています。</p>
+    <p class="hint">Your essay is saved.</p>
     <pre class="essay-text">${esc(essay.text)}</pre>
     <div class="card-actions">
-      <button id="retry-button" class="button primary">再採点</button>
-      <a class="button" href="writing.html">一覧へ</a>
+      <button id="retry-button" class="button primary">Grade again</button>
+      <a class="button" href="writing.html">Back to the list</a>
     </div>`;
   document.querySelector("#retry-button")
     .addEventListener("click", () => runGrading(essay));

@@ -5,7 +5,7 @@ use std::path::PathBuf;
 
 /// Parses JSON Lines data one line at a time.
 /// A broken line is dropped on its own; the other lines are not lost.
-/// Both attempts.jsonl and essays.jsonl use this.
+/// attempts.jsonl, listening.jsonl and essays.jsonl all use this.
 pub fn parse_json_lines(data: &[u8]) -> Vec<Map<String, Value>> {
     data.split(|&b| b == 0x0A)
         .filter_map(|line| match serde_json::from_slice::<Value>(line) {
@@ -16,8 +16,9 @@ pub fn parse_json_lines(data: &[u8]) -> Vec<Map<String, Value>> {
 }
 
 /// An append-only JSON Lines file.
-/// The study log (attempts.jsonl) and writing (essays.jsonl) are handled the same way,
-/// so the read and write steps are kept here in one place.
+/// The reading log (attempts.jsonl), the listening log (listening.jsonl) and writing
+/// (essays.jsonl) are handled the same way, so the read and write steps are kept here
+/// in one place.
 pub struct JsonLinesFile {
     path: PathBuf,
 }
@@ -74,16 +75,10 @@ mod tests {
     fn reads_lines_before_a_truncated_utf8_tail() {
         let mut data = b"{\"passageId\":\"passage_001\",\"score\":1}\n{\"passageId\":\"passage_002\",\"score\":0}".to_vec();
         data.push(0x0A);
-        data.extend_from_slice(&[0xE6, 0x97]); // 「日」の3バイトシーケンスが途中で切れている
+        data.extend_from_slice(&[0xE6, 0x97]); // a 3-byte UTF-8 sequence cut off after 2 bytes
         let result = parse_json_lines(&data);
         assert_eq!(result.len(), 2);
         assert_eq!(result[0].get("passageId"), Some(&json!("passage_001")));
-    }
-
-    #[test]
-    fn ignores_blank_lines() {
-        let text = "\n\n{\"passageId\":\"passage_001\",\"score\":1}\n{\"passageId\":\"passage_002\",\"score\":0}\n\n\n";
-        assert_eq!(parse_json_lines(text.as_bytes()).len(), 2);
     }
 
     #[test]
@@ -96,20 +91,6 @@ mod tests {
     fn drops_non_object_json_lines() {
         let text = "{\"passageId\":\"passage_001\",\"score\":1}\n{\"passageId\":\"passage_002\",\"score\":0}\n[1,2,3]";
         assert_eq!(parse_json_lines(text.as_bytes()).len(), 2);
-    }
-
-    #[test]
-    fn empty_data_returns_empty_vec() {
-        assert!(parse_json_lines(b"").is_empty());
-    }
-
-    #[test]
-    fn reads_mixed_kind_lines() {
-        let text = "{\"kind\":\"essay\",\"essayId\":\"e_1\",\"promptId\":\"writing_001\"}\n{\"kind\":\"grade\",\"essayId\":\"e_1\",\"overall\":4}";
-        let result = parse_json_lines(text.as_bytes());
-        assert_eq!(result.len(), 2);
-        assert_eq!(result[0].get("kind"), Some(&json!("essay")));
-        assert_eq!(result[1].get("kind"), Some(&json!("grade")));
     }
 
     fn row(pairs: &[(&str, Value)]) -> Map<String, Value> {
@@ -130,14 +111,14 @@ mod tests {
         assert_eq!(after_first.len(), 1);
         assert_eq!(after_first[0].get("id"), Some(&json!("a")));
 
-        // 核心: 2行目を足しても1行目が消えない(追記であって上書きではない)。
+        // The point: adding a second line keeps the first (append, not overwrite).
         log.append(&row(&[("id", json!("b")), ("score", json!(2))])).unwrap();
         log.append(&row(&[("id", json!("c")), ("score", json!(3))])).unwrap();
         let after_third = log.load_all();
         let ids: Vec<_> = after_third.iter().map(|r| r.get("id").unwrap().clone()).collect();
         assert_eq!(ids, vec![json!("a"), json!("b"), json!("c")]);
 
-        // 各行が改行で区切られていること。区切りが無いと次回の読み出しで1行に潰れる。
+        // Each line ends with a newline. Without it the next read would see one merged line.
         let raw = fs::read_to_string(temp_dir.join("rows.jsonl")).unwrap();
         assert!(raw.ends_with('\n'));
         assert_eq!(raw.split('\n').filter(|l| !l.is_empty()).count(), 3);

@@ -8,5 +8,5 @@ cd "$(dirname "$0")/.."
 cargo build --release --manifest-path app-shell/Cargo.toml
 
 BIN="app-shell/target/release/app_shell"
-echo "ビルド完了: $BIN"
-echo "起動: TOEFL_REPO_ROOT=\"\$(pwd)\" \"$BIN\""
+echo "Build finished: $BIN"
+echo "Run: TOEFL_REPO_ROOT=\"\$(pwd)\" \"$BIN\""

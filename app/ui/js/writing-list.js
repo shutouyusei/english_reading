@@ -1,13 +1,13 @@
 "use strict";
 
-const TYPE_LABELS = { email: "メール", discussion: "ディスカッション" };
+const TYPE_LABELS = { email: "Email", discussion: "Discussion" };
 
 async function initWritingList() {
   const container = document.querySelector("#writing-list");
   try {
     await Essays.init();
   } catch (err) {
-    console.warn("学習記録を読み込めませんでした:", err);
+    console.warn("Could not load study records:", err);
   }
 
   let index;
@@ -18,12 +18,12 @@ async function initWritingList() {
     index = await res.json();
   } catch (err) {
     container.innerHTML =
-      `<p class="error">一覧を読み込めませんでした(${escapeHtml(err.message)})。</p>`;
+      `<p class="error">Could not load the list (${escapeHtml(err.message)}).</p>`;
     return;
   }
 
   if (!index.prompts.length) {
-    container.innerHTML = `<p class="hint">ライティングの問題がまだありません。</p>`;
+    container.innerHTML = `<p class="hint">No writing prompts yet.</p>`;
     return;
   }
   container.innerHTML = index.prompts.map(promptCardHtml).join("");
@@ -36,10 +36,10 @@ function promptCardHtml(meta) {
     <div class="card">
       <div class="card-main">
         <h3>${escapeHtml(meta.title)}</h3>
-        <p class="meta">${TYPE_LABELS[meta.type] || meta.type} ・ 目安 ${meta.target_minutes} 分 ・ ${meta.added} ${badgeHtml(entry, entries.length)}</p>
+        <p class="meta">${TYPE_LABELS[meta.type] || meta.type} · target ${meta.target_minutes} min · ${meta.added} ${badgeHtml(entry, entries.length)}</p>
       </div>
       <div class="card-actions">
-        <a class="button primary" href="${window.EDITOR_URL}?id=${encodeURIComponent(meta.id)}">✏️ 書く</a>
+        <a class="button primary" href="${window.EDITOR_URL}?id=${encodeURIComponent(meta.id)}">✏️ Write</a>
       </div>
     </div>
     ${pastAttemptsHtml(entries)}`;
@@ -59,16 +59,16 @@ function pastAttemptsHtml(entries) {
 
 function attemptRowHtml(entry) {
   const date = escapeHtml(String(entry.essay.writtenAt).slice(0, 10));
-  return `<li class="meta">${date} ・ ${attemptScoreLabel(entry.grade)} ・ ${attemptElapsedLabel(entry.essay)}</li>`;
+  return `<li class="meta">${date} · ${attemptScoreLabel(entry.grade)} · ${attemptElapsedLabel(entry.essay)}</li>`;
 }
 
 // The grade is the JSON the grading AI returned, as is, with no type guarantee, so,
 // like badgeHtml, anything but a finite number from 0 to 5 is treated as awaiting grading.
 function attemptScoreLabel(grade) {
-  if (!grade) return "⏳ 採点待ち";
+  if (!grade) return "⏳ Awaiting grading";
   const overall = grade.overall;
   if (typeof overall !== "number" || !Number.isFinite(overall) || overall < 0 || overall > 5) {
-    return "⏳ 採点待ち";
+    return "⏳ Awaiting grading";
   }
   return `${escapeHtml(overall)}/5`;
 }
@@ -77,18 +77,18 @@ function attemptElapsedLabel(essay) {
   const sec = typeof essay.elapsedSec === "number" && Number.isFinite(essay.elapsedSec) && essay.elapsedSec >= 0
     ? Math.floor(essay.elapsedSec)
     : 0;
-  return `${Math.floor(sec / 60)}分${sec % 60}秒`;
+  return `${Math.floor(sec / 60)}m ${sec % 60}s`;
 }
 
 function badgeHtml(entry, attempts) {
-  if (!entry) return `<span class="badge">未着手</span>`;
-  const count = attempts > 1 ? ` ・ ${attempts}回` : "";
-  if (!entry.grade) return `<span class="badge">⏳ 採点待ち${count}</span>`;
+  if (!entry) return `<span class="badge">Not attempted</span>`;
+  const count = attempts > 1 ? ` · ${attempts} attempts` : "";
+  if (!entry.grade) return `<span class="badge">⏳ Awaiting grading${count}</span>`;
   // The grade is the JSON the grading AI returned, as is, with no type guarantee, so
   // anything but a finite number from 0 to 5 is treated as awaiting grading.
   const overall = entry.grade.overall;
   if (typeof overall !== "number" || !Number.isFinite(overall) || overall < 0 || overall > 5) {
-    return `<span class="badge">⏳ 採点待ち${count}</span>`;
+    return `<span class="badge">⏳ Awaiting grading${count}</span>`;
   }
   return `<span class="badge done">✅ ${escapeHtml(overall)}/5${count}</span>`;
 }

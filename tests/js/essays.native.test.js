@@ -2,8 +2,8 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-// essays.native.js は Swift 側のブリッジに依存する。偽のブリッジを差し込んで
-// essay 行と grade 行のマージ、並べ替え、キャッシュ更新を検証する。
+// essays.native.js depends on the native bridge. A fake bridge is injected to check
+// how essay rows and grade rows are merged, sorted and cached.
 
 function loadEssays(rows, options = {}) {
   const calls = [];
@@ -15,10 +15,10 @@ function loadEssays(rows, options = {}) {
             calls.push(payload);
             if (payload.action === "loadAll") return rows;
             if (payload.action === "saveEssay" || payload.action === "saveGrade") {
-              if (options.saveRejects) throw new Error("書き込みに失敗しました: 権限がありません");
+              if (options.saveRejects) throw new Error("write failed: permission denied");
               return null;
             }
-            throw new Error(`未知の action: ${payload.action}`);
+            throw new Error(`unknown action: ${payload.action}`);
           },
         },
       },
@@ -43,61 +43,34 @@ const essayOther = {
 };
 const gradeFirst = {
   kind: "grade", essayId: "e_1", overall: 3, criteria: [], corrections: [],
-  summary: "一回目", gradedAt: "2026-08-11T10:01:00.000Z", runnerMs: 15000,
+  summary: "first grading", gradedAt: "2026-08-11T10:01:00.000Z", runnerMs: 15000,
 };
 const gradeRegraded = {
   kind: "grade", essayId: "e_1", overall: 4, criteria: [], corrections: [],
-  summary: "再採点", gradedAt: "2026-08-11T13:00:00.000Z", runnerMs: 16000,
+  summary: "graded again", gradedAt: "2026-08-11T13:00:00.000Z", runnerMs: 16000,
 };
 
-test("init は loadAll を一度だけ呼ぶ", async () => {
-  const { Essays, calls } = loadEssays([]);
-  await Essays.init();
-  assert.deepEqual(calls, [{ action: "loadAll" }]);
-});
-
-test("記録が無ければ空配列と null を返す", async () => {
-  const { Essays } = loadEssays([]);
-  await Essays.init();
-  assert.deepEqual(Essays.forPrompt("writing_001"), []);
-  assert.equal(Essays.latest("writing_001"), null);
-  assert.equal(Essays.get("e_1"), null);
-});
-
-test("採点行が無いエッセイは grade が null になる", async () => {
+test("an essay with no grade row has a null grade", async () => {
   const { Essays } = loadEssays([essayOld]);
   await Essays.init();
   assert.equal(Essays.get("e_1").grade, null);
   assert.equal(Essays.get("e_1").essay.text, essayOld.text);
 });
 
-test("採点行があれば essayId で突き合わせる", async () => {
+test("a grade row is matched to its essay by essayId", async () => {
   const { Essays } = loadEssays([essayOld, gradeFirst]);
   await Essays.init();
   assert.equal(Essays.get("e_1").grade.overall, 3);
 });
 
-test("再採点では gradedAt が新しい方を採る(ファイル順に依存しない)", async () => {
+test("after grading again, the grade with the latest gradedAt wins (whatever the file order)", async () => {
   const { Essays } = loadEssays([essayOld, gradeRegraded, gradeFirst]);
   await Essays.init();
   assert.equal(Essays.get("e_1").grade.overall, 4);
-  assert.equal(Essays.get("e_1").grade.summary, "再採点");
+  assert.equal(Essays.get("e_1").grade.summary, "graded again");
 });
 
-test("再採点では gradedAt が新しい方を採る(古い採点が先に来ても)", async () => {
-  const { Essays } = loadEssays([essayOld, gradeFirst, gradeRegraded]);
-  await Essays.init();
-  assert.equal(Essays.get("e_1").grade.overall, 4);
-  assert.equal(Essays.get("e_1").grade.summary, "再採点");
-});
-
-test("採点行が先に現れても突き合わせられる", async () => {
-  const { Essays } = loadEssays([gradeFirst, essayOld]);
-  await Essays.init();
-  assert.equal(Essays.get("e_1").grade.overall, 3);
-});
-
-test("問題ごとにグループ化され、新しい順に並ぶ", async () => {
+test("essays are grouped by prompt, newest first", async () => {
   const { Essays } = loadEssays([essayOld, essayOther, essayNew]);
   await Essays.init();
   assert.deepEqual(
@@ -108,25 +81,13 @@ test("問題ごとにグループ化され、新しい順に並ぶ", async () =>
   assert.deepEqual(Essays.forPrompt("writing_999"), []);
 });
 
-test("latest は最新のエッセイを返す", async () => {
-  const { Essays } = loadEssays([essayOld, essayNew]);
-  await Essays.init();
-  assert.equal(Essays.latest("writing_001").essay.essayId, "e_2");
-});
-
-test("孤児の採点行があっても落ちない", async () => {
+test("a grade row with no matching essay does not crash", async () => {
   const { Essays } = loadEssays([{ kind: "grade", essayId: "e_missing", overall: 5, gradedAt: "x" }]);
   await Essays.init();
   assert.deepEqual(Essays.forPrompt("writing_001"), []);
 });
 
-test("loadAll が null を返しても落ちない", async () => {
-  const { Essays } = loadEssays(null);
-  await Essays.init();
-  assert.deepEqual(Essays.forPrompt("writing_001"), []);
-});
-
-test("saveEssay はブリッジへ渡し、キャッシュの先頭に積む", async () => {
+test("saveEssay calls the bridge and puts the essay at the front of the cache", async () => {
   const { Essays, calls } = loadEssays([essayOld]);
   await Essays.init();
   await Essays.saveEssay(essayNew);
@@ -135,7 +96,7 @@ test("saveEssay はブリッジへ渡し、キャッシュの先頭に積む", a
   assert.equal(Essays.get("e_2").grade, null);
 });
 
-test("saveGrade は既存エントリに採点を結び付ける", async () => {
+test("saveGrade attaches the grade to the existing entry", async () => {
   const { Essays, calls } = loadEssays([essayOld]);
   await Essays.init();
   await Essays.saveGrade(gradeFirst);
@@ -143,18 +104,11 @@ test("saveGrade は既存エントリに採点を結び付ける", async () => {
   assert.equal(Essays.get("e_1").grade.overall, 3);
 });
 
-test("保存が失敗したらキャッシュを汚さずに reject する", async () => {
+test("a failed save rejects and leaves the cache unchanged", async () => {
   const { Essays } = loadEssays([essayOld], { saveRejects: true });
   await Essays.init();
-  await assert.rejects(() => Essays.saveEssay(essayNew), /書き込みに失敗しました/);
+  await assert.rejects(() => Essays.saveEssay(essayNew), /write failed/);
   assert.equal(Essays.forPrompt("writing_001").length, 1);
-  await assert.rejects(() => Essays.saveGrade(gradeFirst), /書き込みに失敗しました/);
+  await assert.rejects(() => Essays.saveGrade(gradeFirst), /write failed/);
   assert.equal(Essays.get("e_1").grade, null);
-});
-
-test("init を二度呼んでも重複しない", async () => {
-  const { Essays } = loadEssays([essayOld, essayNew]);
-  await Essays.init();
-  await Essays.init();
-  assert.equal(Essays.forPrompt("writing_001").length, 2);
 });

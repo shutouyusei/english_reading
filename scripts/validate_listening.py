@@ -16,7 +16,7 @@ QUESTION_FIELDS = ["id", "type", "question", "choices", "correct", "explanation"
 QUESTION_TYPES = {
     "Gist-Content", "Gist-Purpose", "Detail", "Function", "Attitude", "Inference",
 }
-TOPICS = {"科学", "社会", "歴史", "芸術", "環境"}
+TOPICS = {"Science", "Society", "History", "Arts", "Environment"}
 CHOICE_KEYS = {"A", "B", "C", "D"}
 SPEAKER_COUNT = {"lecture": 1, "conversation": 2}
 LENGTH_RANGE = {"lecture": (500, 700), "conversation": (300, 450)}
@@ -24,8 +24,10 @@ QUESTION_COUNT = 6
 MIN_DISTINCT_TYPES = 3
 MAX_SAME_CORRECT = 3
 WORD_COUNT_TOLERANCE = 10
-# Quotes enclosed in 「…」 and 『…』 inside an explanation. Nesting is not expected.
-QUOTE_RE = re.compile(r"「([^「」]*)」|『([^『』]*)』")
+# Double-quoted text inside an explanation: straight "..." or curly “...”.
+# Nesting is not expected. Single quotes are deliberately not matched (see
+# _validate_explanation_quotes).
+QUOTE_RE = re.compile('"([^"]*)"|“([^“”]*)”')
 ID_RE = re.compile(r"^listening_\d{3}$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -166,7 +168,7 @@ def _normalize_quote(text: str) -> str:
 
 
 def _validate_explanation_quotes(data: dict) -> list[str]:
-    """Check that no explanation quotes English text that is not in the script.
+    """Check that every double-quoted text in an explanation appears in the script.
 
     An explanation is supposed to quote the relevant part of the script as evidence. If the
     script is fixed and the quote in the explanation is not, the learner is made to read
@@ -174,8 +176,9 @@ def _validate_explanation_quotes(data: dict) -> list[str]:
     in listening_002). This is the only automatic guard, so it is closed by machine instead
     of relying on human review.
 
-    Only quotes that start with a Latin letter are checked. A Japanese-only quote such as
-    「取るに足らない」 paraphrases a meaning and does not quote the script, so its absence
+    Quotation rule for explanations: double quotes ("..." or the curly pair) are reserved
+    for verbatim quotes of the script, and every one of them is checked here. Paraphrases
+    and single terms go in single quotes ('...'), which are not checked, so their absence
     from the script is expected.
     """
     script = data.get("script")
@@ -190,7 +193,7 @@ def _validate_explanation_quotes(data: dict) -> list[str]:
             continue
         for match in QUOTE_RE.finditer(str(question.get("explanation", ""))):
             quote = _normalize_quote(match.group(1) or match.group(2) or "")
-            if not quote or not (quote[0].isascii() and quote[0].isalpha()):
+            if not quote:
                 continue
             # Also accept a mid-sentence quote with a period added at the end.
             if quote in haystack or quote.rstrip(".") in haystack:

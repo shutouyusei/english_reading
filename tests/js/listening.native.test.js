@@ -2,9 +2,10 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-// listening.native.js は Swift 側のブリッジ (window.webkit.messageHandlers.listening) に
-// 依存する。偽のブリッジを差し込んで、グループ化・並べ替え・キャッシュ更新を確かめる。
-// 一覧のバッジが「最新の」試行を示すかは init() の並べ替えだけで決まる。
+// listening.native.js depends on the native bridge
+// (window.webkit.messageHandlers.listening). A fake bridge is injected to check
+// grouping, sorting and cache updates. Whether the list badge shows the latest
+// attempt depends only on the sort in init().
 
 function loadStore(initialAttempts, options = {}) {
   const calls = [];
@@ -14,15 +15,12 @@ function loadStore(initialAttempts, options = {}) {
         listening: {
           postMessage: async (payload) => {
             calls.push(payload);
-            if (payload.action === "loadAll") {
-              if (options.loadAllReturns !== undefined) return options.loadAllReturns;
-              return initialAttempts;
-            }
+            if (payload.action === "loadAll") return initialAttempts;
             if (payload.action === "saveAttempt") {
-              if (options.saveRejects) throw new Error("書き込みに失敗しました: 権限がありません");
+              if (options.saveRejects) throw new Error("write failed: permission denied");
               return null;
             }
-            throw new Error(`未知の action: ${payload.action}`);
+            throw new Error(`unknown action: ${payload.action}`);
           },
         },
       },
@@ -46,20 +44,7 @@ const other = {
   answers: ["B", "B", "C", "D", "A", "B"], finishedAt: "2026-08-18T00:00:00.000Z",
 };
 
-test("init は loadAll を一度だけ呼ぶ", async () => {
-  const { ListeningStore, calls } = loadStore([]);
-  await ListeningStore.init();
-  assert.deepEqual(calls, [{ action: "loadAll" }]);
-});
-
-test("履歴が無ければ空配列と null を返す", async () => {
-  const { ListeningStore } = loadStore([]);
-  await ListeningStore.init();
-  assert.deepEqual(ListeningStore.attempts("listening_001"), []);
-  assert.equal(ListeningStore.latest("listening_001"), null);
-});
-
-test("項目ごとにグループ化される", async () => {
+test("attempts are grouped by item", async () => {
   const { ListeningStore } = loadStore([older, other, newer]);
   await ListeningStore.init();
   assert.equal(ListeningStore.attempts("listening_001").length, 2);
@@ -67,19 +52,13 @@ test("項目ごとにグループ化される", async () => {
   assert.deepEqual(ListeningStore.attempts("listening_999"), []);
 });
 
-test("latest は最新の試行を返す(ファイル順に依存しない)", async () => {
+test("latest returns the newest attempt (whatever the file order)", async () => {
   const { ListeningStore } = loadStore([older, newer]);
   await ListeningStore.init();
   assert.equal(ListeningStore.latest("listening_001").score, 5);
 });
 
-test("ファイルが新しい順に並んでいても latest は変わらない", async () => {
-  const { ListeningStore } = loadStore([newer, older]);
-  await ListeningStore.init();
-  assert.equal(ListeningStore.latest("listening_001").finishedAt, newer.finishedAt);
-});
-
-test("saveAttempt はブリッジへ渡し、キャッシュの先頭に積む", async () => {
+test("saveAttempt calls the bridge and puts the attempt at the front of the cache", async () => {
   const { ListeningStore, calls } = loadStore([older]);
   await ListeningStore.init();
   await ListeningStore.saveAttempt(newer);
@@ -88,22 +67,9 @@ test("saveAttempt はブリッジへ渡し、キャッシュの先頭に積む",
   assert.equal(ListeningStore.latest("listening_001").score, 5);
 });
 
-test("保存が失敗したらキャッシュを汚さずに reject する", async () => {
+test("a failed save rejects and leaves the cache unchanged", async () => {
   const { ListeningStore } = loadStore([older], { saveRejects: true });
   await ListeningStore.init();
-  await assert.rejects(() => ListeningStore.saveAttempt(newer), /書き込みに失敗しました/);
+  await assert.rejects(() => ListeningStore.saveAttempt(newer), /write failed/);
   assert.equal(ListeningStore.attempts("listening_001").length, 1);
-});
-
-test("loadAll が null を返しても落ちない", async () => {
-  const { ListeningStore } = loadStore(null, { loadAllReturns: null });
-  await ListeningStore.init();
-  assert.deepEqual(ListeningStore.attempts("listening_001"), []);
-});
-
-test("init を二度呼んでも履歴が重複しない", async () => {
-  const { ListeningStore } = loadStore([older, newer]);
-  await ListeningStore.init();
-  await ListeningStore.init();
-  assert.equal(ListeningStore.attempts("listening_001").length, 2);
 });

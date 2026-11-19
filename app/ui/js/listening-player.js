@@ -16,7 +16,7 @@ function qs(sel) {
 
 function renderError(message) {
   qs("#reader-main").innerHTML =
-    `<p class="error">${escapeHtml(message)} <a href="listening.html">一覧に戻る</a></p>`;
+    `<p class="error">${escapeHtml(message)} <a href="listening.html">Back to the list</a></p>`;
 }
 
 /** Show audio-related failures on screen. Never ignore them silently; always leave a
@@ -25,7 +25,7 @@ function renderError(message) {
 function renderAudioFailure(message) {
   qs("#passage-pane").innerHTML = `
     <p class="error">${escapeHtml(message)}</p>
-    <p><a href="#" id="to-study-on-error">台本を見て復習する</a></p>`;
+    <p><a href="#" id="to-study-on-error">Review with the script</a></p>`;
   qs("#to-study-on-error").addEventListener("click", (e) => {
     e.preventDefault();
     startStudyMode();
@@ -61,13 +61,13 @@ async function init() {
   try {
     await ListeningStore.init();
   } catch (err) {
-    console.warn("学習記録を読み込めませんでした:", err);
+    console.warn("Could not load study records:", err);
   }
   const params = new URLSearchParams(location.search);
   const id = params.get("id") || "";
   const mode = params.get("mode") === "study" ? "study" : "solve";
   if (!/^listening_\d+$/.test(id)) {
-    renderError("問題が指定されていません。");
+    renderError("No question was specified.");
     return;
   }
   try {
@@ -76,7 +76,7 @@ async function init() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     playerState.item = await res.json();
   } catch (err) {
-    renderError(`問題を読み込めませんでした(${err.message})。`);
+    renderError(`Could not load the question (${err.message}).`);
     return;
   }
   document.title = `${playerState.item.title} — TOEFL Reading`;
@@ -114,13 +114,13 @@ async function startSolveMode() {
   playerState.playbackDone = false;
   playerState.retriedAudio = false;
   qs("#passage-pane").innerHTML =
-    `<p class="hint">音声を準備しています…</p>`;
+    `<p class="hint">Preparing audio…</p>`;
   qs("#right-pane").innerHTML = "";
   // #q-status is the place where renderQuestion rewrites only textContent.
   // Overwriting everything with innerHTML would wipe out quit-link too, so an
   // empty container is put inside.
   qs("#header-status").innerHTML =
-    `<span id="q-status"></span> <a href="#" id="quit-link">中断して解説モードへ</a>`;
+    `<span id="q-status"></span> <a href="#" id="quit-link">Quit and go to study mode</a>`;
   qs("#quit-link").addEventListener("click", (e) => {
     e.preventDefault();
     startStudyMode();
@@ -131,7 +131,7 @@ async function startSolveMode() {
     playerState.audioUrl = url;
   } catch (err) {
     // Do not silently ignore that the audio could not be prepared. Study mode is still reachable.
-    renderAudioFailure(`音声を準備できませんでした: ${err.message}`);
+    renderAudioFailure(`Could not prepare the audio: ${err.message}`);
     return;
   }
   renderPlayer();
@@ -141,10 +141,10 @@ function renderPlayer() {
   // As in the real test, the audio plays only once. Pausing is possible, rewinding is not.
   qs("#passage-pane").innerHTML = `
     <div class="audio-stage">
-      <p class="hint">音声は一度だけ再生されます。メモを取りながら聴いてください。</p>
+      <p class="hint">The audio plays only once. Take notes as you listen.</p>
       <audio id="player" src="${playerState.audioUrl}"></audio>
       <div class="btn-row">
-        <button id="play-btn" class="primary">▶ 再生する</button>
+        <button id="play-btn" class="primary">▶ Play</button>
         <span id="play-state" class="hint"></span>
       </div>
     </div>`;
@@ -157,20 +157,20 @@ function renderPlayer() {
       // play() can reject, e.g. with NotAllowedError. If it is not caught, pressing
       // the button fails silently with nothing happening.
       audio.play().catch((err) => {
-        renderAudioFailure(`音声を再生できませんでした: ${err.message}`);
+        renderAudioFailure(`Could not play the audio: ${err.message}`);
       });
     } else {
       audio.pause();
     }
   });
   audio.addEventListener("play", () => {
-    button.textContent = "⏸ 一時停止";
-    state.textContent = "再生中";
+    button.textContent = "⏸ Pause";
+    state.textContent = "Playing";
   });
   audio.addEventListener("pause", () => {
     if (audio.ended) return;
-    button.textContent = "▶ 続きから";
-    state.textContent = "一時停止中";
+    button.textContent = "▶ Resume";
+    state.textContent = "Paused";
   });
   audio.addEventListener("ended", () => {
     // Nothing may touch this audio element from here on. The error listener stays
@@ -179,8 +179,8 @@ function renderPlayer() {
     // state (e.g. the player showing on top of the result).
     playerState.playbackDone = true;
     button.disabled = true;
-    button.textContent = "再生終了";
-    state.textContent = "設問に進んでください";
+    button.textContent = "Playback finished";
+    state.textContent = "Go on to the questions";
     playerState.startedAt = Date.now();
     audio.removeAttribute("src");
     renderQuestion();
@@ -203,7 +203,7 @@ function renderPlayer() {
     // flag is needed.
     if (playerState.playbackDone) return;
     if (playerState.retriedAudio) {
-      renderAudioFailure("音声を再生できませんでした。");
+      renderAudioFailure("Could not play the audio.");
       return;
     }
     playerState.retriedAudio = true;
@@ -213,7 +213,7 @@ function renderPlayer() {
       playerState.audioUrl = url;
       renderPlayer();
     } catch (err) {
-      renderAudioFailure(`音声を作り直せませんでした: ${err.message}`);
+      renderAudioFailure(`Could not rebuild the audio: ${err.message}`);
     }
   });
 }
@@ -239,7 +239,7 @@ function renderQuestion() {
       <div class="nav-row">
         <button id="back-btn" ${idx === 0 ? "disabled" : ""}>← Back</button>
         <button id="next-btn" class="primary" ${playerState.answers[idx] ? "" : "disabled"}>
-          ${isLast ? "採点する" : "Next →"}</button>
+          ${isLast ? "Grade" : "Next →"}</button>
       </div>
     </div>`;
   document.querySelectorAll(".choice").forEach((btn) =>
@@ -285,14 +285,14 @@ async function finishSolve() {
     saveError = err;
   }
   qs("#header-status").textContent = saveError
-    ? `⚠ 保存に失敗しました: ${saveError.message}`
-    : `⏱ ${formatElapsed(elapsedSec)} で終了`;
+    ? `⚠ Could not save: ${saveError.message}`
+    : `⏱ Finished in ${formatElapsed(elapsedSec)}`;
   qs("#right-pane").innerHTML = `
     <div class="result-card">
-      <p class="score">${score} / ${questions.length} 正解</p>
-      <p class="hint">所要時間 ${formatElapsed(elapsedSec)}${
-        wrong.length ? ` ｜ 誤答: ${wrong.join(", ")}` : " ｜ 🎉 全問正解"}</p>
-      <button id="to-study" class="primary">📖 解説モードで復習する</button>
+      <p class="score">${score} / ${questions.length} correct</p>
+      <p class="hint">Time ${formatElapsed(elapsedSec)}${
+        wrong.length ? ` | Wrong: ${wrong.join(", ")}` : " | 🎉 All correct"}</p>
+      <button id="to-study" class="primary">📖 Review in study mode</button>
     </div>`;
   qs("#to-study").addEventListener("click", () => startStudyMode());
 }
@@ -327,8 +327,8 @@ function stopSolvePlayback() {
   audio.removeAttribute("src");
 }
 
-/** Build the study source from the script. The vocab dictionary is empty, so every
-    word goes through the dictionary-lookup path. */
+/** Build the study source from the script. Listening items carry no vocab notes,
+    so vocab is empty. */
 function buildListeningSource(item) {
   const roles = new Map(item.speakers.map((s) => [s.id, s.role]));
   return {
@@ -349,7 +349,7 @@ async function startStudyMode() {
   stopSolvePlayback();
   const item = playerState.item;
   qs("#header-status").innerHTML =
-    `<a href="#" id="resolve-link">🎧 もう一度解く</a>`;
+    `<a href="#" id="resolve-link">🎧 Solve again</a>`;
   qs("#resolve-link").addEventListener("click", (e) => {
     e.preventDefault();
     startSolveMode();
@@ -364,7 +364,7 @@ async function renderReviewPlayer(item) {
   const pane = qs("#passage-pane");
   const bar = document.createElement("div");
   bar.className = "review-audio";
-  bar.innerHTML = `<p class="hint">音声を準備しています…</p>`;
+  bar.innerHTML = `<p class="hint">Preparing audio…</p>`;
   pane.insertBefore(bar, pane.firstChild);
 
   try {
@@ -374,7 +374,7 @@ async function renderReviewPlayer(item) {
     // The script is already shown. Say that only the audio is unavailable, so the
     // review can continue.
     bar.innerHTML =
-      `<p class="error">音声を準備できませんでした: ${escapeHtml(err.message)}</p>`;
+      `<p class="error">Could not prepare the audio: ${escapeHtml(err.message)}</p>`;
   }
 }
 

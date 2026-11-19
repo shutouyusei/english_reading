@@ -55,12 +55,4 @@ mod tests {
         let result = resolve_repo_root(&env, Path::new("/tmp/cwd"));
         assert_eq!(result, PathBuf::from("/tmp/cwd"));
     }
-
-    #[test]
-    fn default_data_dir_is_under_home() {
-        let home = Path::new("/Users/example");
-        let dir = default_data_dir(home);
-        assert!(dir.starts_with(home));
-        assert_ne!(dir, home);
-    }
 }

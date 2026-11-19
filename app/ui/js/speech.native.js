@@ -24,7 +24,7 @@ window.Speech = {
       utterances,
       force,
     });
-    if (!reply || !reply.url) throw new Error("音声のURLを受け取れませんでした");
+    if (!reply || !reply.url) throw new Error("No audio URL was returned");
 
     // Change the query string so WebKit does not reuse the old content after a rebuild.
     // The audio:// handler in app-shell looks only at the path, so the suffix is harmless.

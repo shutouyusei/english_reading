@@ -46,19 +46,19 @@ function buildFront(word, entry, passageTitle) {
     .replace(new RegExp(`\\b(${escapeRegExp(word)})\\b`, "i"), "<b>$1</b>");
   return `<div style="font-size:1.2em"><b>${escapeHtml(word)}</b></div>` +
     `<div style="font-style:italic">"${sentence}"</div>` +
-    `<div style="font-size:.8em;opacity:.7">出典: ${escapeHtml(passageTitle)}</div>`;
+    `<div style="font-size:.8em;opacity:.7">Source: ${escapeHtml(passageTitle)}</div>`;
 }
 
 function buildBack(entry) {
-  return `<b>定義:</b> ${escapeHtml(entry.definition)}<br>` +
-    `<b>語源:</b> ${escapeHtml(entry.etymology)}<br>` +
-    `<b>文中での役割:</b> ${escapeHtml(entry.usage_in_passage)}<br>` +
-    `<b>関連語:</b> ${entry.related_terms.map(escapeHtml).join(", ")}`;
+  return `<b>Definition:</b> ${escapeHtml(entry.definition)}<br>` +
+    `<b>Etymology:</b> ${escapeHtml(entry.etymology)}<br>` +
+    `<b>Role in the passage:</b> ${escapeHtml(entry.usage_in_passage)}<br>` +
+    `<b>Related words:</b> ${entry.related_terms.map(escapeHtml).join(", ")}`;
 }
 
 async function addToAnki(passage, word, entry) {
   const status = document.querySelector("#anki-status");
-  status.textContent = "Ankiに追加中…";
+  status.textContent = "Adding to Anki…";
   const deck = ankiSettings().deck;
   try {
     await ankiRequest("createDeck", { deck });
@@ -74,18 +74,18 @@ async function addToAnki(passage, word, entry) {
         tags: ["toefl-reading", passage.id],
       },
     });
-    status.textContent = `✅ デッキ「${deck}」に追加しました`;
+    status.textContent = `✅ Added to deck "${deck}"`;
   } catch (err) {
     if (String(err.message).includes("duplicate")) {
-      status.textContent = "ℹ️ このカードは追加済みです";
+      status.textContent = "ℹ️ This card is already in Anki";
     } else if (err instanceof TypeError) {
       status.innerHTML =
-        `⚠ Ankiに接続できませんでした。Ankiが起動しているか確認してください。 ` +
-        `<a href="guide.html#anki">セットアップ手順</a>`;
+        `⚠ Could not connect to Anki. Check that Anki is running. ` +
+        `<a href="guide.html#anki">Setup steps</a>`;
     } else {
       status.innerHTML =
-        `⚠ Ankiがエラーを返しました: ${escapeHtml(err.message)} ` +
-        `<a href="guide.html#anki">セットアップ手順</a>`;
+        `⚠ Anki returned an error: ${escapeHtml(err.message)} ` +
+        `<a href="guide.html#anki">Setup steps</a>`;
     }
   }
 }
@@ -96,13 +96,13 @@ function openAnkiSettings() {
   root.innerHTML = `
     <div class="modal-backdrop">
       <div class="modal">
-        <h3>Anki設定</h3>
-        <label>追加先デッキ名
+        <h3>Anki settings</h3>
+        <label>Deck name
           <input id="deck-input" value="${escapeHtml(current)}">
         </label>
         <div class="btn-row">
-          <button id="settings-save" class="primary">保存</button>
-          <button id="settings-cancel">キャンセル</button>
+          <button id="settings-save" class="primary">Save</button>
+          <button id="settings-cancel">Cancel</button>
         </div>
       </div>
     </div>`;

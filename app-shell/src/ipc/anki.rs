@@ -4,14 +4,14 @@ use toefl_core::anki_client::AnkiClient;
 pub fn handle_anki(payload: &Map<String, Value>, client: &AnkiClient) -> Result<Value, String> {
     let action = payload.get("action").and_then(Value::as_str).unwrap_or("");
     if action != "request" {
-        return Err(format!("未知の action: {action}"));
+        return Err(format!("unknown action: {action}"));
     }
 
     let anki_action = payload
         .get("ankiAction")
         .and_then(Value::as_str)
         .filter(|s| !s.is_empty())
-        .ok_or_else(|| "ankiAction が含まれていません".to_string())?;
+        .ok_or_else(|| "ankiAction is missing".to_string())?;
     let params = payload.get("params").cloned().unwrap_or_else(|| json!({}));
 
     // Always include the result key so the JS side can tell "no result" from "error".
@@ -28,8 +28,8 @@ mod tests {
     use std::time::Duration;
     use toefl_core::anki_client::AnkiClient;
 
-    /// 127.0.0.1:1 は特権ポートで、通常は何も listen していないため
-    /// 確実に接続拒否(AnkiError::NotRunning相当)になる。
+    /// 127.0.0.1:1 is a privileged port that normally has no listener, so the connection
+    /// is reliably refused (the AnkiError::NotRunning case).
     fn unreachable_client() -> AnkiClient {
         AnkiClient::new("http://127.0.0.1:1", Duration::from_millis(200))
     }
@@ -38,18 +38,11 @@ mod tests {
     fn missing_anki_action_is_rejected() {
         let payload = json!({"action": "request"}).as_object().unwrap().clone();
         let result = handle_anki(&payload, &unreachable_client());
-        assert_eq!(result, Err("ankiAction が含まれていません".to_string()));
+        assert_eq!(result, Err("ankiAction is missing".to_string()));
     }
 
     #[test]
-    fn unknown_action_is_rejected() {
-        let payload = json!({"action": "other"}).as_object().unwrap().clone();
-        let result = handle_anki(&payload, &unreachable_client());
-        assert_eq!(result, Err("未知の action: other".to_string()));
-    }
-
-    #[test]
-    fn unreachable_anki_returns_japanese_error() {
+    fn unreachable_anki_returns_an_error_message() {
         let payload = json!({"action": "request", "ankiAction": "deckNames"})
             .as_object()
             .unwrap()

@@ -2,8 +2,8 @@ use serde_json::Value;
 use std::fmt;
 use std::time::Duration;
 
-/// Why adding to Anki failed. Each variant carries a Japanese message that can be
-/// shown on screen as is.
+/// Why adding to Anki failed. Each variant carries a message that can be shown on
+/// screen as is.
 ///
 /// The point is not to lump everything into "cannot connect". The browser's fetch turns
 /// both an unreachable network and a CORS rejection into the same "Load failed", so
@@ -25,13 +25,13 @@ impl fmt::Display for AnkiError {
         match self {
             AnkiError::NotRunning => write!(
                 f,
-                "Anki に接続できません。Anki を起動し、AnkiConnect アドオンが有効か確認してください"
+                "Cannot connect to Anki. Start Anki and check that the AnkiConnect add-on is enabled."
             ),
-            AnkiError::AnkiReported(message) => write!(f, "Anki がエラーを返しました: {message}"),
+            AnkiError::AnkiReported(message) => write!(f, "Anki returned an error: {message}"),
             AnkiError::UnreadableResponse(detail) => {
-                write!(f, "Anki の応答を解釈できません: {detail}")
+                write!(f, "Could not read the response from Anki: {detail}")
             }
-            AnkiError::BadStatus(code) => write!(f, "Anki が異常な応答を返しました(HTTP {code})"),
+            AnkiError::BadStatus(code) => write!(f, "Anki returned an unexpected response (HTTP {code})"),
         }
     }
 }
@@ -86,12 +86,12 @@ impl AnkiClient {
 
         let text = response
             .into_string()
-            .map_err(|e| AnkiError::UnreadableResponse(format!("応答を読めません: {e}")))?;
+            .map_err(|e| AnkiError::UnreadableResponse(format!("the response body could not be read: {e}")))?;
 
         let payload: Value = serde_json::from_str(&text).map_err(|_| {
             let head: String = text.chars().take(60).collect();
             AnkiError::UnreadableResponse(if head.is_empty() {
-                "(読めないバイト列)".to_string()
+                "(unreadable bytes)".to_string()
             } else {
                 head
             })
@@ -125,8 +125,8 @@ mod tests {
         }
     }
 
-    /// AnkiConnect の代役を python3 で立てる。実際の HTTP をやり取りするため、
-    /// クライアントとヘッダの扱いまで含めて確かめられる。
+    /// Stands in for AnkiConnect with python3. Real HTTP is exchanged, so the client
+    /// and its header handling are covered too.
     fn start_stub_server(port: u16, mode: &str) -> StubServer {
         let script = format!(
             r#"
@@ -156,22 +156,13 @@ http.server.HTTPServer(("127.0.0.1", {port}), H).serve_forever()
             .stdout(std::process::Stdio::null())
             .stderr(std::process::Stdio::null())
             .spawn()
-            .expect("python3 stub server起動に失敗した");
+            .expect("failed to start the python3 stub server");
         thread::sleep(Duration::from_millis(500));
         StubServer(child)
     }
 
     fn endpoint(port: u16) -> String {
         format!("http://127.0.0.1:{port}")
-    }
-
-    fn contains_japanese(text: &str) -> bool {
-        text.chars().any(|c| {
-            let v = c as u32;
-            (0x3040..=0x309F).contains(&v)
-                || (0x30A0..=0x30FF).contains(&v)
-                || (0x4E00..=0x9FFF).contains(&v)
-        })
     }
 
     #[test]
@@ -187,7 +178,7 @@ http.server.HTTPServer(("127.0.0.1", {port}), H).serve_forever()
         let offline = AnkiClient::new(endpoint(18799), Duration::from_secs(3));
         let error = offline.request("version", serde_json::json!({})).unwrap_err();
         assert!(matches!(error, AnkiError::NotRunning));
-        assert!(contains_japanese(&error.to_string()));
+        assert!(error.to_string().contains("Anki"));
     }
 
     #[test]
@@ -209,18 +200,5 @@ http.server.HTTPServer(("127.0.0.1", {port}), H).serve_forever()
         let client = AnkiClient::new(endpoint(18767), Duration::from_secs(5));
         let error = client.request("version", serde_json::json!({})).unwrap_err();
         assert!(matches!(error, AnkiError::UnreadableResponse(_)));
-    }
-
-    #[test]
-    fn every_error_has_a_japanese_description() {
-        let all = [
-            AnkiError::NotRunning,
-            AnkiError::AnkiReported("x".into()),
-            AnkiError::UnreadableResponse("x".into()),
-            AnkiError::BadStatus(500),
-        ];
-        for e in all {
-            assert!(contains_japanese(&e.to_string()), "{e}");
-        }
     }
 }

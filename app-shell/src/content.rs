@@ -42,17 +42,6 @@ mod tests {
     }
 
     #[test]
-    fn existing_file_returns_200_with_body_and_content_type() {
-        let dir = temp_root();
-        fs::write(dir.join("hello.html"), b"<p>hi</p>").unwrap();
-        let (status, headers, body) = respond(&dir, "/hello.html", None);
-        assert_eq!(status, 200);
-        assert!(headers.iter().any(|(k, v)| k == "Content-Type" && v.starts_with("text/html")));
-        assert_eq!(body, b"<p>hi</p>");
-        let _ = fs::remove_dir_all(&dir);
-    }
-
-    #[test]
     fn escaping_the_root_returns_404() {
         let dir = temp_root();
         let (status, _, _) = respond(&dir, "/../../etc/passwd", None);

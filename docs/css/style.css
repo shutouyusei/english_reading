@@ -111,39 +111,6 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
   color: var(--muted); margin-top: 10px;
 }
 .word { margin: 0 0 6px; font-size: 1.2em; }
-/* Dictionary entry. A definition is one continuous text with no line breaks, over 20,000
-   characters for some words (the=14,070, set=15,910, take=26,310).
-   The blocks split by dictformat.js are put back together here.
-   The height is capped and the entry scrolls inside, so it does not push the whole panel down.
-   #panel-body p contains an id, so overriding it takes two classes' worth of specificity. */
-.dict-entry {
-  max-height: 22em; overflow-y: auto;
-  border-left: 2px solid var(--border); padding-left: 12px;
-}
-#panel-body .dict-entry p { margin: 0; }
-#panel-body .dict-entry > :first-child { margin-top: 0; }
-#panel-body .dict-entry .dict-word { font-size: 1.05em; font-weight: 700; }
-#panel-body .dict-entry .dict-pron { font-weight: 400; color: var(--muted); }
-#panel-body .dict-entry .dict-pos {
-  margin: 14px 0 2px; font-size: .8em; font-weight: 700;
-  letter-spacing: .05em; color: var(--accent-green);
-}
-#panel-body .dict-entry .dict-sense { display: flex; gap: 8px; margin-top: 6px; }
-#panel-body .dict-entry .dict-sense.sub { padding-left: 18px; }
-#panel-body .dict-entry .dict-num {
-  flex: 0 0 auto; min-width: 1.5em; text-align: right;
-  color: var(--muted); font-weight: 700; font-variant-numeric: tabular-nums;
-}
-/* The ▸ of an example is removed during splitting. The marker is put back here.
-   A hanging indent keeps a wrapped second line from running under the ▸. */
-#panel-body .dict-entry .dict-ex {
-  margin: 2px 0 2px 26px; color: var(--muted); font-size: .95em;
-  padding-left: 1.2em; text-indent: -1.2em;
-}
-#panel-body .dict-entry .dict-ex::before { content: "▸ "; }
-/* An example inside a sub-sense (a. b.) is indented one more step to match the sub-sense */
-#panel-body .dict-entry .dict-ex.sub { margin-left: 44px; }
-#panel-body .dict-entry .dict-note { margin-top: 4px; color: var(--muted); }
 
 /* Listening playback screen. There is no body text, so center it. */
 .audio-stage { padding: 40px 20px; text-align: center; }

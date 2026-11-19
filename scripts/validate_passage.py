@@ -11,7 +11,7 @@ from extract_hard_words import WORD_RE, candidates
 REQUIRED_FIELDS = ["id", "title", "topic", "body", "word_count", "added", "questions", "vocab"]
 QUESTION_FIELDS = ["id", "type", "question", "target_word", "choices", "correct", "explanation"]
 QUESTION_TYPES = {"Factual", "Inference", "Vocabulary", "Reference", "Rhetorical Purpose"}
-TOPICS = {"科学", "社会", "歴史", "芸術", "環境"}
+TOPICS = {"Science", "Society", "History", "Arts", "Environment"}
 VOCAB_FIELDS = ["etymology", "definition", "usage_in_passage", "related_terms", "context_sentence"]
 CHOICE_KEYS = {"A", "B", "C", "D"}
 MAX_SAME_CORRECT = 3

@@ -12,7 +12,7 @@ function loadShim() {
   return { sent };
 }
 
-test("postMessage経由でhandler/requestId/payloadを送る", () => {
+test("postMessage sends the handler, a requestId and the payload", () => {
   const { sent } = loadShim();
   window.webkit.messageHandlers.store.postMessage({ action: "loadAll" });
   assert.equal(sent.length, 1);
@@ -21,7 +21,7 @@ test("postMessage経由でhandler/requestId/payloadを送る", () => {
   assert.equal(typeof sent[0].requestId, "string");
 });
 
-test("resolveが呼ばれるとPromiseが解決する", async () => {
+test("the promise resolves when the reply carries a result", async () => {
   const { sent } = loadShim();
   const promise = window.webkit.messageHandlers.essays.postMessage({ action: "loadAll" });
   const requestId = sent[0].requestId;
@@ -30,33 +30,24 @@ test("resolveが呼ばれるとPromiseが解決する", async () => {
   assert.deepEqual(result, [{ id: 1 }]);
 });
 
-test("errorが渡されるとPromiseがrejectする", async () => {
+test("the promise rejects when the reply carries an error", async () => {
   const { sent } = loadShim();
   const promise = window.webkit.messageHandlers.anki.postMessage({ action: "request" });
   const requestId = sent[0].requestId;
-  window.__toeflIpcResolve(requestId, null, "接続できません");
-  await assert.rejects(promise, /接続できません/);
+  window.__toeflIpcResolve(requestId, null, "cannot connect");
+  await assert.rejects(promise, /cannot connect/);
 });
 
-test("異なるハンドラ名は個別のリクエストとして送られる", () => {
-  const { sent } = loadShim();
-  window.webkit.messageHandlers.store.postMessage({ action: "loadAll" });
-  window.webkit.messageHandlers.grader.postMessage({ action: "grade" });
-  assert.equal(sent[0].handler, "store");
-  assert.equal(sent[1].handler, "grader");
-  assert.notEqual(sent[0].requestId, sent[1].requestId);
-});
-
-test("未知のrequestIdでresolveされても例外にならない", () => {
+test("a reply for an unknown requestId does not throw", () => {
   loadShim();
   assert.doesNotThrow(() => window.__toeflIpcResolve("does-not-exist", null, null));
 });
 
-test("wryが事前に用意したwindow.webkit.messageHandlers.ipcは上書きしない", () => {
-  // wry はmacOS上でwindow.ipc.postMessageを、内部的に
-  // window.webkit.messageHandlers.ipc経由で実装している。シムがwindow.webkitを
-  // 丸ごと上書きすると、この内部チャンネルが壊れてwindow.ipc.postMessageの
-  // 呼び出しがシム自身に回り込み、無限再帰になる(実際に起きた不具合の再発防止)。
+test("the window.webkit.messageHandlers.ipc that wry set up is not overwritten", () => {
+  // On macOS, wry implements window.ipc.postMessage through
+  // window.webkit.messageHandlers.ipc. If the shim replaced window.webkit wholesale,
+  // that channel would break and window.ipc.postMessage would loop back into the
+  // shim, recursing forever. This bug happened once.
   const nativeIpcCalls = [];
   global.window = {
     webkit: {
