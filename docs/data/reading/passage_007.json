@@ -1,7 +1,7 @@
 {
   "id": "passage_007",
   "title": "Who Owns the Yardstick",
-  "topic": "歴史",
+  "topic": "History",
   "body": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next. Units of measure grew out of the work they described. A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain. Such units were not evidence of ignorance. They were exact about what mattered locally, and they carried information that an abstract quantity could not. An acre defined by labour told a farmer how long a field would take to work; an acre defined by area told him nothing of the sort.\n\nThe difficulty appeared when goods and obligations crossed the boundary of the community that had defined them. A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral. A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched. Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal. Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible.\n\nEarly reform therefore concentrated on the object itself. Towns chained iron yardsticks to church doors and kept master vessels in guildhalls, where any buyer could test a suspect measure against them. This was an improvement, yet it displaced the problem rather than dissolving it. Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another. Enforcement still depended on the very authorities whose conduct the standard was meant to constrain.\n\nThe metric system's innovation was not decimal arithmetic but the relocation of authority. By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself. Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris. The principle nonetheless proved decisive. Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them. Modern practice completes the movement the reformers began. The metre is now fixed by the distance light travels in a specified fraction of a second, a quantity that belongs to no nation and sits in no vault.",
   "word_count": 460,
   "added": "2026-08-15",
@@ -18,7 +18,7 @@
       },
       "correct": "C",
       "target_word": null,
-      "explanation": "第1段落に「they carried information that an abstract quantity could not」とあり、続けて労働で定義されたエーカーは「told a farmer how long a field would take to work」と説明されている。抽象的な数値では伝わらない実務上の情報を運んでいた点が利点である。Aは第2段落の換算の困難と矛盾する。Bは正確さの比較ではなく情報の種類の違いなので誤り。Dは町ごとに異なっていたという前提に反する。"
+      "explanation": "Paragraph 1 says \"they carried information that an abstract quantity could not\", and goes on to explain that an acre defined by labour \"told a farmer how long a field would take to work\". The advantage was that these units carried practical information that an abstract number does not convey. A contradicts the difficulty of conversion described in paragraph 2. B is wrong because the point is not a comparison of accuracy but a difference in the kind of information. D goes against the premise that the units differed from town to town."
     },
     {
       "id": 2,
@@ -32,7 +32,7 @@
       },
       "correct": "A",
       "target_word": null,
-      "explanation": "この例の直後に「Because the physical object was the definition, altering the object altered the obligation」と一般化されている。器そのものが定義であるために、規則を変えずに負担を変えられてしまうという構造を示すための例である。Bは個人の道徳性ではなく制度の話なので誤り。Cは測定方法の理由に触れていない。Dは「protests against particular abuses」にとどまったという記述に反する。"
+      "explanation": "Immediately after this example, the passage generalizes: \"Because the physical object was the definition, altering the object altered the obligation\". The example is there to show the structure in which, because the vessel itself is the definition, the burden can be changed without changing the rule. B is wrong because the passage is about the system, not about the morality of individuals. C does not fit because the passage says nothing about the reason for the method of measurement. D goes against the statement that the complaints went no further than \"protests against particular abuses\"."
     },
     {
       "id": 3,
@@ -46,7 +46,7 @@
       },
       "correct": "D",
       "target_word": "subsided",
-      "explanation": "主語は「Resistance in the marketplace was fierce and lasted decades」を受けた抵抗であり、その抵抗が行政的手段によって収まっていった流れである。したがって「弱まった」が最も近い。Aの「広がった」とBの「硬化した」は文意と逆向き。Cの「戻った」は前後の因果と噛み合わない。"
+      "explanation": "The subject is the resistance, taken up from \"Resistance in the marketplace was fierce and lasted decades\", and the passage describes how that resistance died down through administrative means. 'Weakened' is therefore the closest. A, 'spread', and B, 'hardened', go in the opposite direction from the meaning of the sentence. C, 'returned', does not fit the cause and effect before and after."
     },
     {
       "id": 4,
@@ -60,7 +60,7 @@
       },
       "correct": "B",
       "target_word": null,
-      "explanation": "「This was an improvement」の直前の文が、鎖でつないだ鉄の物差しとギルドホールの原器を誰でも照合できるようにした取り組みを述べている。Thisはその取り組みを指す。AとCとDはいずれもThisより後で述べられる、その取り組みの限界であって、指示対象ではない。"
+      "explanation": "The sentence just before \"This was an improvement\" describes the practice of chaining iron yardsticks and keeping master vessels in guildhalls so that anyone could check a measure against them. This refers to that practice. A, C and D are all limits of that practice which are stated after This, so they are not what it refers to."
     },
     {
       "id": 5,
@@ -74,14 +74,14 @@
       },
       "correct": "C",
       "target_word": null,
-      "explanation": "「it subsided less through persuasion than through administration」に続けて、税・関税・学校教育が新単位で書かれ、旧単位が「lost the institutions that had sustained them」と述べられている。制度が新単位で動き出したことが普及を進めた。Aは「less through persuasion」と明確に矛盾する。Bは子午線測定が難航しても「The principle nonetheless proved decisive」とある点に反する。Dは市場の抵抗が激しかったという記述と逆である。"
+      "explanation": "After \"it subsided less through persuasion than through administration\", the passage says that taxes, tariffs and school lessons were written in the new units and that the old units \"lost the institutions that had sustained them\". What advanced the adoption was that institutions began to operate in the new units. A clearly contradicts \"less through persuasion\". B goes against the fact that, although measuring the meridian ran into difficulty, the passage says \"The principle nonetheless proved decisive\". D is the opposite of the statement that resistance in the marketplace was fierce."
     }
   ],
   "vocab": {
     "nineteenth": {
-      "etymology": "古英語 nigon(9) + -teen(10を足す) + -th(序数)",
-      "definition": "19番目の。ここでは nineteenth century で19世紀。",
-      "usage_in_passage": "冒頭の \"Before the nineteenth century\" が本文全体の時間枠を決め、度量衡が地域ごとにばらばらだった「以前」と、標準化された「以後」を分ける基準点になる。",
+      "etymology": "Old English nigon 'nine' + -teen 'plus ten' + -th (ordinal)",
+      "definition": "Coming after eighteen others in order; here, in nineteenth century, the years 1801 to 1900.",
+      "usage_in_passage": "The opening \"Before the nineteenth century\" sets the time frame of the whole passage and is the reference point that divides the 'before', when weights and measures differed from place to place, from the 'after', when they were standardized.",
       "related_terms": [
         "century",
         "medieval",
@@ -91,9 +91,9 @@
       "context_sentence": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next."
     },
     "bushel": {
-      "etymology": "古フランス語 boissel(小さな箱) ← boisse(穀物の升)",
-      "definition": "ブッシェル。穀物などを量る容積の単位。",
-      "usage_in_passage": "\"a bushel of grain in one town was rarely a bushel in the next\" と同じ語を二度使うことで、同じ名前が同じ量を指さないという本文の中心問題を一文で提示している。",
+      "etymology": "Old French boissel 'small box' ← boisse 'grain measure'",
+      "definition": "A unit of volume used to measure grain and similar goods.",
+      "usage_in_passage": "By using the same word twice in \"a bushel of grain in one town was rarely a bushel in the next\", the passage presents its central problem in one sentence: the same name does not refer to the same amount.",
       "related_terms": [
         "acre",
         "measure",
@@ -103,9 +103,9 @@
       "context_sentence": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next."
     },
     "grain": {
-      "etymology": "ラテン語 granum(種子, 粒)",
-      "definition": "穀物。穀粒。",
-      "usage_in_passage": "第2段落で \"the vessel used to collect grain rents\" と \"the vessel used to sell grain\" が対比され、同じ穀物に二つの器が使われる不正の構図を作る。",
+      "etymology": "Latin granum 'seed, kernel'",
+      "definition": "The seeds of cereal crops such as wheat.",
+      "usage_in_passage": "In paragraph 2, \"the vessel used to collect grain rents\" and \"the vessel used to sell grain\" are contrasted, which sets up the picture of the fraud: two vessels used for the same grain.",
       "related_terms": [
         "crop",
         "harvest",
@@ -115,9 +115,9 @@
       "context_sentence": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next."
     },
     "rarely": {
-      "etymology": "ラテン語 rarus(まばらな) + -ly(副詞化)",
-      "definition": "めったに〜ない。",
-      "usage_in_passage": "\"was rarely a bushel in the next\" と断定を避けた言い方で、例外もあるが原則として一致しなかったという事実を示す。第2段落の seldom と同じ働きをする。",
+      "etymology": "Latin rarus 'sparse' + -ly (forms adverbs)",
+      "definition": "Not often; almost never.",
+      "usage_in_passage": "\"was rarely a bushel in the next\" avoids an absolute statement and presents the fact that there were exceptions but that, as a rule, the measures did not match. It does the same job as seldom in paragraph 2.",
       "related_terms": [
         "seldom",
         "scarcely",
@@ -127,9 +127,9 @@
       "context_sentence": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next."
     },
     "grew": {
-      "etymology": "古英語 growan(育つ) の過去形",
-      "definition": "grow の過去形。ここでは grow out of で「〜から自然に生まれる」。",
-      "usage_in_passage": "\"Units of measure grew out of the work they described\" は、単位が机上で設計されたのではなく労働から育ったという主張で、次文以降の foot / acre / stone の説明を導く。",
+      "etymology": "Past tense of Old English growan 'to grow'",
+      "definition": "Past tense of grow; here, in grow out of, 'to develop naturally from'.",
+      "usage_in_passage": "\"Units of measure grew out of the work they described\" claims that units were not designed on paper but grew out of labour, and it leads into the explanations of foot, acre and stone in the following sentences.",
       "related_terms": [
         "emerge",
         "arise",
@@ -139,9 +139,9 @@
       "context_sentence": "Units of measure grew out of the work they described."
     },
     "approximated": {
-      "etymology": "ラテン語 ad-(〜へ) + proximus(最も近い) → 近づける",
-      "definition": "おおよそ〜に等しかった。近似した。",
-      "usage_in_passage": "\"A foot approximated a stride\" の approximated が、昔の単位は厳密な等値ではなく目安だったことを示し、後段の「正確な原器」への流れと対照をなす。",
+      "etymology": "Latin ad- 'to' + proximus 'nearest' → 'to bring near'",
+      "definition": "Was roughly equal to.",
+      "usage_in_passage": "The word approximated in \"A foot approximated a stride\" shows that the old units were rough guides and not strict equivalents, and it contrasts with the later move toward 'exact prototypes'.",
       "related_terms": [
         "estimated",
         "resembled",
@@ -151,9 +151,9 @@
       "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
     },
     "stride": {
-      "etymology": "古英語 stridan(またぐ, 大股で歩く)",
-      "definition": "歩幅。大股の一歩。",
-      "usage_in_passage": "foot(フィート)の由来として挙げられ、単位が人間の身体に根ざしていたことの最初の例になる。acre(牛の労働)、stone(持ち上げられる重さ)と三点セットで論拠を作る。",
+      "etymology": "Old English stridan 'to straddle, to walk with long steps'",
+      "definition": "A long step; the length of one step.",
+      "usage_in_passage": "It is given as the origin of the foot and is the first example showing that units were rooted in the human body. Together with acre (the labour of oxen) and stone (a weight that can be lifted), it forms a set of three that builds the argument.",
       "related_terms": [
         "step",
         "pace",
@@ -163,9 +163,9 @@
       "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
     },
     "acre": {
-      "etymology": "古英語 æcer(耕地, 野) ← 印欧祖語 *agro-(畑)",
-      "definition": "エーカー。面積の単位。",
-      "usage_in_passage": "第1段落の締めで \"An acre defined by labour\" と \"an acre defined by area\" が対比され、同じ単位名でも定義の根拠が変われば伝える情報が変わるという要点を担う。",
+      "etymology": "Old English æcer 'cultivated land, field' ← Proto-Indo-European *agro- 'field'",
+      "definition": "A unit of land area.",
+      "usage_in_passage": "At the close of paragraph 1, \"An acre defined by labour\" and \"an acre defined by area\" are contrasted, and the word carries the key point that even under the same unit name, the information conveyed changes when the basis of the definition changes.",
       "related_terms": [
         "hectare",
         "plot",
@@ -175,9 +175,9 @@
       "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
     },
     "oxen": {
-      "etymology": "古英語 oxa の複数形 oxan(不規則複数)",
-      "definition": "牛(去勢した雄牛)の複数形。農耕に使われた。",
-      "usage_in_passage": "\"the land a team of oxen could plough in a day\" として、エーカーが面積ではなく一日の労働量で定義されていた証拠になる。",
+      "etymology": "Old English oxan, plural of oxa (an irregular plural)",
+      "definition": "Plural of ox, a castrated bull; used for farm work.",
+      "usage_in_passage": "In \"the land a team of oxen could plough in a day\", it is the evidence that the acre was defined not by area but by the amount of work done in one day.",
       "related_terms": [
         "cattle",
         "plough",
@@ -187,9 +187,9 @@
       "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
     },
     "plough": {
-      "etymology": "古ノルド語 plógr(すき)。米つづりは plow",
-      "definition": "耕す。すきで田畑を起こす。",
-      "usage_in_passage": "エーカーの定義に労働を持ち込む動詞で、\"could plough in a day\" が時間と労力を単位に埋め込んでいることを示す。",
+      "etymology": "Old Norse plógr 'plough'; the American spelling is plow",
+      "definition": "To turn over the soil of a field with a plough.",
+      "usage_in_passage": "It is the verb that brings labour into the definition of the acre; \"could plough in a day\" shows that time and effort are built into the unit.",
       "related_terms": [
         "cultivate",
         "till",
@@ -199,9 +199,9 @@
       "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
     },
     "labourer": {
-      "etymology": "ラテン語 labor(労苦) + -er(人)",
-      "definition": "労働者。肉体労働に従事する人。",
-      "usage_in_passage": "\"a stone the weight a labourer could lift without strain\" として、重さの単位すら特定の人間の身体能力を基準にしていたことを示す三つ目の例。",
+      "etymology": "Latin labor 'toil' + -er 'person'",
+      "definition": "A person who does physical work.",
+      "usage_in_passage": "In \"a stone the weight a labourer could lift without strain\", it is the third example, showing that even a unit of weight took the physical ability of a particular person as its standard.",
       "related_terms": [
         "worker",
         "peasant",
@@ -211,9 +211,9 @@
       "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
     },
     "lift": {
-      "etymology": "古ノルド語 lypta(持ち上げる) ← lopt(空中)",
-      "definition": "持ち上げる。",
-      "usage_in_passage": "stone(ストーン)という重量単位の定義そのものを担う動詞で、\"could lift without strain\" が「無理なく」という主観的な条件を単位に持ち込んでいることを示す。",
+      "etymology": "Old Norse lypta 'to raise' ← lopt 'air'",
+      "definition": "To raise something to a higher position.",
+      "usage_in_passage": "It is the verb that carries the very definition of the stone as a unit of weight; \"could lift without strain\" shows that a subjective condition, 'without effort', is brought into the unit.",
       "related_terms": [
         "raise",
         "hoist",
@@ -223,9 +223,9 @@
       "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
     },
     "strain": {
-      "etymology": "古フランス語 estreindre ← ラテン語 stringere(強く締める)",
-      "definition": "無理な力み。負担。",
-      "usage_in_passage": "\"without strain\" が、ストーンという単位の基準が測定器ではなく人の感覚だったことを露わにし、第1段落の「身体に根ざした単位」という論点を締める。",
+      "etymology": "Old French estreindre ← Latin stringere 'to draw tight'",
+      "definition": "Excessive physical effort; a heavy burden on the body.",
+      "usage_in_passage": "\"without strain\" reveals that the standard for the stone was not a measuring instrument but a person's sense of effort, and it closes the point made in paragraph 1 about 'units rooted in the body'.",
       "related_terms": [
         "effort",
         "exertion",
@@ -235,9 +235,9 @@
       "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
     },
     "ignorance": {
-      "etymology": "ラテン語 in-(否定) + gnarus(知っている) → 知らないこと",
-      "definition": "無知。知識の欠如。",
-      "usage_in_passage": "\"Such units were not evidence of ignorance\" という否定文が本文の姿勢を決める。古い単位を遅れたものとして片づけず、その合理性を認めたうえで問題を論じる転換点になる。",
+      "etymology": "Latin in- (negation) + gnarus 'knowing' → 'not knowing'",
+      "definition": "Lack of knowledge.",
+      "usage_in_passage": "The negative sentence \"Such units were not evidence of ignorance\" sets the attitude of the passage. It is the turning point at which the passage, instead of dismissing the old units as backward, recognizes their logic before discussing the problem.",
       "related_terms": [
         "unawareness",
         "inexperience",
@@ -247,9 +247,9 @@
       "context_sentence": "Such units were not evidence of ignorance."
     },
     "exact": {
-      "etymology": "ラテン語 ex-(すっかり) + agere(行う) → やり遂げた, 精密な",
-      "definition": "正確な。厳密な。",
-      "usage_in_passage": "\"They were exact about what mattered locally\" は、古い単位が不正確だったのではなく「別のことに対して正確だった」と論点をずらす一句で、本文の主張の核にあたる。",
+      "etymology": "Latin ex- 'thoroughly' + agere 'to do' → 'carried through, precise'",
+      "definition": "Precise; strictly accurate.",
+      "usage_in_passage": "\"They were exact about what mattered locally\" shifts the point at issue: the old units were not inaccurate but 'accurate about something else'. This phrase is the core of the passage's claim.",
       "related_terms": [
         "precise",
         "accurate",
@@ -259,9 +259,9 @@
       "context_sentence": "They were exact about what mattered locally, and they carried information that an abstract quantity could not."
     },
     "locally": {
-      "etymology": "ラテン語 locus(場所) + -al + -ly",
-      "definition": "地域的に。その土地では。",
-      "usage_in_passage": "\"what mattered locally\" が、古い単位の正確さには「その土地では」という限定が付くことを示し、第2段落で境界を越えた途端に破綻する伏線になる。",
+      "etymology": "Latin locus 'place' + -al + -ly",
+      "definition": "Within a particular area; in that place.",
+      "usage_in_passage": "\"what mattered locally\" shows that the accuracy of the old units comes with the limit 'in that place', and it prepares for paragraph 2, where they break down the moment a boundary is crossed.",
       "related_terms": [
         "regionally",
         "domestically",
@@ -271,9 +271,9 @@
       "context_sentence": "They were exact about what mattered locally, and they carried information that an abstract quantity could not."
     },
     "labour": {
-      "etymology": "ラテン語 labor(労苦, 骨折り)",
-      "definition": "労働。米つづりは labor。",
-      "usage_in_passage": "\"An acre defined by labour\" として、面積(area)による定義と対置される。同じ単位を何で定義するかという本文全体の問いを具体化している。",
+      "etymology": "Latin labor 'toil, hardship'",
+      "definition": "Work, especially physical work; the American spelling is labor.",
+      "usage_in_passage": "In \"An acre defined by labour\", it is set against definition by area. It makes concrete the question that runs through the whole passage: what should the same unit be defined by?",
       "related_terms": [
         "work",
         "toil",
@@ -283,9 +283,9 @@
       "context_sentence": "An acre defined by labour told a farmer how long a field would take to work; an acre defined by area told him nothing of the sort."
     },
     "farmer": {
-      "etymology": "中英語 ferme(賃借地, 定額の借地料) + -er",
-      "definition": "農民。農場経営者。",
-      "usage_in_passage": "\"told a farmer how long a field would take to work\" と、単位の受け手を具体的に置くことで、労働による定義が実務上どう役立つかを読者に示す。",
+      "etymology": "Middle English ferme 'leased land, fixed rent' + -er",
+      "definition": "A person who owns or works a farm.",
+      "usage_in_passage": "By naming a concrete receiver of the unit in \"told a farmer how long a field would take to work\", the passage shows the reader how a definition by labour is useful in practice.",
       "related_terms": [
         "peasant",
         "tenant",
@@ -295,9 +295,9 @@
       "context_sentence": "An acre defined by labour told a farmer how long a field would take to work; an acre defined by area told him nothing of the sort."
     },
     "difficulty": {
-      "etymology": "ラテン語 dis-(否定) + facilis(容易な) → 容易でないこと",
-      "definition": "困難。問題点。",
-      "usage_in_passage": "\"The difficulty appeared when...\" が第2段落の冒頭に置かれ、第1段落で擁護した地域単位が破綻する条件を導入する転換の合図になっている。",
+      "etymology": "Latin dis- (negation) + facilis 'easy' → 'not being easy'",
+      "definition": "A problem; something hard to deal with.",
+      "usage_in_passage": "\"The difficulty appeared when\" is placed at the opening of paragraph 2 and signals a turn, introducing the condition under which the local units defended in paragraph 1 break down.",
       "related_terms": [
         "problem",
         "obstacle",
@@ -307,9 +307,9 @@
       "context_sentence": "The difficulty appeared when goods and obligations crossed the boundary of the community that had defined them."
     },
     "obligations": {
-      "etymology": "ラテン語 ob-(向かって) + ligare(縛る) → 縛るもの",
-      "definition": "義務。負担すべきもの。obligation の複数形。",
-      "usage_in_passage": "\"when goods and obligations crossed the boundary\" と、売買される物だけでなく地代や税といった義務も単位に依存することを示し、第2段落の不正の話につなぐ。",
+      "etymology": "Latin ob- 'toward' + ligare 'to bind' → 'something that binds'",
+      "definition": "Things a person is bound to pay or do; plural of obligation.",
+      "usage_in_passage": "\"when goods and obligations crossed the boundary\" shows that not only the goods bought and sold but also obligations such as rents and taxes depend on units, and it leads to the account of fraud in paragraph 2.",
       "related_terms": [
         "duty",
         "debt",
@@ -319,9 +319,9 @@
       "context_sentence": "The difficulty appeared when goods and obligations crossed the boundary of the community that had defined them."
     },
     "boundary": {
-      "etymology": "古フランス語 bodne(境界標) + -ary",
-      "definition": "境界。区切り。",
-      "usage_in_passage": "\"crossed the boundary of the community that had defined them\" が問題の発生条件を厳密に指定する。単位は共同体の内側では機能し、外に出た瞬間に機能しなくなる。",
+      "etymology": "Old French bodne 'boundary marker' + -ary",
+      "definition": "A line that marks the limit of an area.",
+      "usage_in_passage": "\"crossed the boundary of the community that had defined them\" specifies strictly the condition under which the problem arises. Units work inside the community and stop working the moment they go outside it.",
       "related_terms": [
         "border",
         "limit",
@@ -331,9 +331,9 @@
       "context_sentence": "The difficulty appeared when goods and obligations crossed the boundary of the community that had defined them."
     },
     "cloth": {
-      "etymology": "古英語 clāth(布, 衣)",
-      "definition": "布。織物。",
-      "usage_in_passage": "\"A merchant buying cloth in three towns\" として、長さの単位が実際の商取引でどう問題になるかを示す具体例になっている。",
+      "etymology": "Old English clāth 'cloth, garment'",
+      "definition": "Woven fabric.",
+      "usage_in_passage": "In \"A merchant buying cloth in three towns\", it is a concrete example that shows how units of length become a problem in actual trade.",
       "related_terms": [
         "fabric",
         "textile",
@@ -343,9 +343,9 @@
       "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
     },
     "reckon": {
-      "etymology": "古英語 gerecenian(数え上げる, 説明する)",
-      "definition": "計算する。勘定する。",
-      "usage_in_passage": "\"had to reckon in three yardsticks\" が、換算という余分な手間そのものが取引の費用になることを示し、次文の \"the conversion was seldom neutral\" を導く。",
+      "etymology": "Old English gerecenian 'to count up, to explain'",
+      "definition": "To calculate.",
+      "usage_in_passage": "\"had to reckon in three yardsticks\" shows that the extra work of conversion is itself a cost of trade, and it leads into the next clause, \"the conversion was seldom neutral\".",
       "related_terms": [
         "calculate",
         "compute",
@@ -355,9 +355,9 @@
       "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
     },
     "yardsticks": {
-      "etymology": "古英語 gierd(棒, 枝) + stick(棒)",
-      "definition": "ものさし。転じて判断の基準。yardstick の複数形。",
-      "usage_in_passage": "\"reckon in three yardsticks\" で商人の負担を表し、第3段落では \"chained iron yardsticks to church doors\" として改革の対象そのものになる。表題 \"Who Owns the Yardstick\" とも直結する。",
+      "etymology": "Old English gierd 'rod, twig' + stick 'stick'",
+      "definition": "Measuring sticks; by extension, standards of judgment. Plural of yardstick.",
+      "usage_in_passage": "In \"reckon in three yardsticks\" it expresses the burden on the merchant, and in paragraph 3 it becomes the very object of reform in \"chained iron yardsticks to church doors\". It also connects directly to the title \"Who Owns the Yardstick\".",
       "related_terms": [
         "ruler",
         "measure",
@@ -367,9 +367,9 @@
       "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
     },
     "seldom": {
-      "etymology": "古英語 seldan(まれに)",
-      "definition": "めったに〜ない。",
-      "usage_in_passage": "\"the conversion was seldom neutral\" と控えめに述べることで、換算が中立でないのは例外ではなく常態だという含みを持たせ、直後の不正の例を準備する。",
+      "etymology": "Old English seldan 'rarely'",
+      "definition": "Not often; almost never.",
+      "usage_in_passage": "The restrained wording \"the conversion was seldom neutral\" suggests that a conversion that is not neutral is the normal state and not an exception, and it prepares the example of fraud that follows.",
       "related_terms": [
         "rarely",
         "infrequently",
@@ -379,9 +379,9 @@
       "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
     },
     "neutral": {
-      "etymology": "ラテン語 neuter(どちらでもない) ← ne-(否定) + uter(二つのどちらか)",
-      "definition": "中立の。どちらにも偏らない。",
-      "usage_in_passage": "\"the conversion was seldom neutral\" の neutral が、換算には必ず得をする側と損をする側が生じるという指摘で、第2段落全体の主題を一語で言い当てている。",
+      "etymology": "Latin neuter 'neither' ← ne- (negation) + uter 'either of two'",
+      "definition": "Not favouring either side.",
+      "usage_in_passage": "The word neutral in \"the conversion was seldom neutral\" points out that conversion always produces a side that gains and a side that loses, and it captures the theme of the whole of paragraph 2 in one word.",
       "related_terms": [
         "impartial",
         "unbiased",
@@ -391,9 +391,9 @@
       "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
     },
     "controlled": {
-      "etymology": "古フランス語 contrerolle(照合用の控え帳) ← contre(対) + rolle(巻物)",
-      "definition": "支配していた。管理していた。",
-      "usage_in_passage": "\"A lord who controlled the official measure\" が、単位の問題が技術ではなく権力の問題であることを明示し、本文の主題である「基準を誰が所有するか」に直結する。",
+      "etymology": "Old French contrerolle 'duplicate register for checking' ← contre 'against' + rolle 'roll'",
+      "definition": "Had power over; was in charge of.",
+      "usage_in_passage": "\"A lord who controlled the official measure\" makes it explicit that the problem of units is a problem of power and not of technique, and it connects directly to the theme of the passage, 'who owns the standard'.",
       "related_terms": [
         "governed",
         "administered",
@@ -403,9 +403,9 @@
       "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
     },
     "quietly": {
-      "etymology": "ラテン語 quies(静止, 休息) + -ly",
-      "definition": "ひそかに。人目につかず。",
-      "usage_in_passage": "\"could quietly enlarge the vessel\" の quietly が、この不正が公然の暴力ではなく気づかれない操作として行われた点を強調し、なぜ抗議が個別事例にとどまったかの説明にもなっている。",
+      "etymology": "Latin quies 'rest, stillness' + -ly",
+      "definition": "Secretly; without attracting attention.",
+      "usage_in_passage": "The word quietly in \"could quietly enlarge the vessel\" stresses that this fraud was carried out not as open violence but as an operation nobody noticed, and it also explains why the protests stayed at the level of individual cases.",
       "related_terms": [
         "secretly",
         "discreetly",
@@ -415,9 +415,9 @@
       "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
     },
     "vessel": {
-      "etymology": "ラテン語 vascellum(小さな器) ← vas(器)",
-      "definition": "容器。器。",
-      "usage_in_passage": "第2段落で地代徴収用と販売用の二つの器が対比され、第3段落では \"kept master vessels in guildhalls\" と改革の道具になる。器そのものが定義であるという本文の要点を運ぶ語。",
+      "etymology": "Latin vascellum 'small container' ← vas 'container'",
+      "definition": "A container for holding something.",
+      "usage_in_passage": "In paragraph 2 the two vessels, one for collecting rent and one for selling, are contrasted, and in paragraph 3 the word becomes a tool of reform in \"kept master vessels in guildhalls\". It is the word that carries the passage's key point that the vessel itself is the definition.",
       "related_terms": [
         "container",
         "receptacle",
@@ -427,9 +427,9 @@
       "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
     },
     "collect": {
-      "etymology": "ラテン語 com-(共に) + legere(集める)",
-      "definition": "集める。取り立てる。",
-      "usage_in_passage": "\"the vessel used to collect grain rents\" として、単位が徴収の場面で使われることを示す。売る側の器と取り立てる側の器を分ける構図の一方を担う。",
+      "etymology": "Latin com- 'together' + legere 'to gather'",
+      "definition": "To gather; to take in payment that is owed.",
+      "usage_in_passage": "In \"the vessel used to collect grain rents\", it shows that the unit is used at the moment of collection. It carries one side of the picture that separates the vessel of the seller from the vessel of the collector.",
       "related_terms": [
         "gather",
         "levy",
@@ -439,9 +439,9 @@
       "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
     },
     "untouched": {
-      "etymology": "un-(否定) + touch(触れる) + -ed",
-      "definition": "手を加えられていない。そのままの。",
-      "usage_in_passage": "\"while leaving the vessel used to sell grain untouched\" の untouched が、不正の巧妙さを示す。片方だけを変えるからこそ、比較の基準が失われて発覚しにくい。",
+      "etymology": "un- (negation) + touch 'to touch' + -ed",
+      "definition": "Not changed; left as it was.",
+      "usage_in_passage": "The word untouched in \"while leaving the vessel used to sell grain untouched\" shows how clever the fraud was. Because only one of the two is changed, the standard of comparison is lost and the fraud is hard to detect.",
       "related_terms": [
         "unaltered",
         "unchanged",
@@ -451,9 +451,9 @@
       "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
     },
     "altering": {
-      "etymology": "ラテン語 alter(他の) → 他のものにする",
-      "definition": "変えること。変更すること。",
-      "usage_in_passage": "\"altering the object altered the obligation\" という同語反復に近い構文で、物を変えることと義務を変えることが区別できないという制度上の欠陥を圧縮して示す。",
+      "etymology": "Latin alter 'other' → 'to make into something other'",
+      "definition": "Changing something.",
+      "usage_in_passage": "The construction \"altering the object altered the obligation\", which is close to a repetition of the same word, shows in compressed form the defect in the system: changing the object and changing the obligation cannot be told apart.",
       "related_terms": [
         "changing",
         "modifying",
@@ -463,9 +463,9 @@
       "context_sentence": "Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal."
     },
     "altered": {
-      "etymology": "ラテン語 alter(他の) の過去分詞形",
-      "definition": "変えた。変更した。",
-      "usage_in_passage": "\"altering the object altered the obligation\" の後半を担い、原因(物の改変)と結果(義務の改変)が同一の行為であることを示す。第2段落の論証の核心。",
+      "etymology": "Past participle form from Latin alter 'other'",
+      "definition": "Changed.",
+      "usage_in_passage": "It carries the second half of \"altering the object altered the obligation\" and shows that the cause (changing the object) and the result (changing the obligation) are one and the same act. This is the core of the argument in paragraph 2.",
       "related_terms": [
         "changed",
         "transformed",
@@ -475,9 +475,9 @@
       "context_sentence": "Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal."
     },
     "obligation": {
-      "etymology": "ラテン語 ob-(向かって) + ligare(縛る)",
-      "definition": "義務。負担。",
-      "usage_in_passage": "\"altering the object altered the obligation\" で、物理的な器の大きさが、そのまま人の負う義務の重さに変換されることを示す。設問2の根拠にあたる。",
+      "etymology": "Latin ob- 'toward' + ligare 'to bind'",
+      "definition": "Something a person is bound to pay or do; a burden.",
+      "usage_in_passage": "In \"altering the object altered the obligation\", it shows that the size of the physical vessel is converted directly into the weight of the obligation a person bears. It is the basis for Question 2.",
       "related_terms": [
         "duty",
         "liability",
@@ -487,9 +487,9 @@
       "context_sentence": "Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal."
     },
     "tenants": {
-      "etymology": "ラテン語 tenere(保持する) の現在分詞 tenens → 土地を保有する者",
-      "definition": "小作人。借地人。tenant の複数形。",
-      "usage_in_passage": "\"tenants had no independent quantity to which they could appeal\" が被害者側の無力さを示す。訴える先の基準そのものが相手の手中にあるという構図を完成させる。",
+      "etymology": "Latin tenens, present participle of tenere 'to hold' → 'one who holds land'",
+      "definition": "People who rent land from a lord; plural of tenant.",
+      "usage_in_passage": "\"tenants had no independent quantity to which they could appeal\" shows the powerlessness of the victims. It completes the picture in which the very standard they would appeal to is in the hands of the other side.",
       "related_terms": [
         "peasants",
         "lessees",
@@ -499,9 +499,9 @@
       "context_sentence": "Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal."
     },
     "medieval": {
-      "etymology": "ラテン語 medium(中間の) + aevum(時代) → 中世の",
-      "definition": "中世の。",
-      "usage_in_passage": "\"Medieval court records are crowded with complaints\" として証拠の出所を示し、この問題が理論上のものではなく記録に残る現実だったことを裏づける。",
+      "etymology": "Latin medium 'middle' + aevum 'age' → 'of the Middle Ages'",
+      "definition": "Of the Middle Ages.",
+      "usage_in_passage": "In \"Medieval court records are crowded with complaints\", it shows where the evidence comes from and supports the point that this problem was not theoretical but a reality that remains in the records.",
       "related_terms": [
         "mediaeval",
         "feudal",
@@ -511,9 +511,9 @@
       "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
     },
     "crowded": {
-      "etymology": "古英語 crūdan(押す, 詰め込む) + -ed",
-      "definition": "ぎっしり詰まった。混み合った。",
-      "usage_in_passage": "\"court records are crowded with complaints\" と量の多さを比喩的に示し、不正が例外的な事件ではなく日常的だったことを一語で伝える。",
+      "etymology": "Old English crūdan 'to press, to pack in' + -ed",
+      "definition": "Packed full.",
+      "usage_in_passage": "\"court records are crowded with complaints\" expresses the large quantity figuratively and conveys in one word that fraud was not an exceptional event but an everyday one.",
       "related_terms": [
         "packed",
         "filled",
@@ -523,9 +523,9 @@
       "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
     },
     "complaints": {
-      "etymology": "ラテン語 com-(強意) + plangere(嘆く, 胸を打つ)",
-      "definition": "苦情。訴え。complaint の複数形。",
-      "usage_in_passage": "\"complaints about false measures\" と挙げたうえで、直後に \"these were protests against particular abuses rather than against the arrangement\" と限定される。批判が制度に届かなかったという本文の重要な留保を導く。",
+      "etymology": "Latin com- (intensive) + plangere 'to lament, to beat the breast'",
+      "definition": "Statements that something is wrong; plural of complaint.",
+      "usage_in_passage": "The passage mentions \"complaints about false measures\" and then immediately limits them with \"these were protests against particular abuses rather than against the arrangement\". The word leads into the important reservation that the criticism did not reach the system.",
       "related_terms": [
         "grievances",
         "protests",
@@ -535,9 +535,9 @@
       "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
     },
     "protests": {
-      "etymology": "ラテン語 pro-(前で) + testari(証言する) → 公に言い立てる",
-      "definition": "抗議。異議申し立て。",
-      "usage_in_passage": "\"protests against particular abuses rather than against the arrangement that made abuse possible\" が本文の分析の鋭い部分で、個別の不正への抗議と制度そのものへの批判を区別している。",
+      "etymology": "Latin pro- 'before' + testari 'to testify' → 'to declare publicly'",
+      "definition": "Expressions of objection.",
+      "usage_in_passage": "\"protests against particular abuses rather than against the arrangement that made abuse possible\" is a sharp part of the passage's analysis; it separates protest against individual frauds from criticism of the system itself.",
       "related_terms": [
         "objections",
         "complaints",
@@ -547,9 +547,9 @@
       "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
     },
     "arrangement": {
-      "etymology": "古フランス語 arengier(列に並べる) ← a- + rang(列) + -ment",
-      "definition": "仕組み。取り決め。配置。",
-      "usage_in_passage": "\"the arrangement that made abuse possible\" の arrangement が、個々の不正ではなく制度そのものを指す。第3段落以降の改革論はこの語が示した水準に向けられる。",
+      "etymology": "Old French arengier 'to put in a row' ← a- + rang 'row' + -ment",
+      "definition": "The way something is set up or organized; a system.",
+      "usage_in_passage": "The word arrangement in \"the arrangement that made abuse possible\" refers not to individual frauds but to the system itself. The discussion of reform from paragraph 3 onward is aimed at the level this word points to.",
       "related_terms": [
         "system",
         "structure",
@@ -559,9 +559,9 @@
       "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
     },
     "reform": {
-      "etymology": "ラテン語 re-(再び) + formare(形づくる) → 作り直す",
-      "definition": "改革。制度を改めること。",
-      "usage_in_passage": "\"Early reform therefore concentrated on the object itself\" が第3段落を開き、初期の改革が何に狙いを定めたか(そして何を見落としたか)を示す。",
+      "etymology": "Latin re- 'again' + formare 'to shape' → 'to make again'",
+      "definition": "The act of changing a system in order to improve it.",
+      "usage_in_passage": "\"Early reform therefore concentrated on the object itself\" opens paragraph 3 and shows what early reform aimed at (and what it overlooked).",
       "related_terms": [
         "revision",
         "improvement",
@@ -571,9 +571,9 @@
       "context_sentence": "Early reform therefore concentrated on the object itself."
     },
     "concentrated": {
-      "etymology": "ラテン語 com-(共に) + centrum(中心) → 中心に集める",
-      "definition": "集中した。焦点を絞った。",
-      "usage_in_passage": "\"concentrated on the object itself\" が初期改革の限界を予告する。物に集中したために、権限の所在という本当の問題が手つかずで残ることになる。",
+      "etymology": "Latin com- 'together' + centrum 'centre' → 'to bring to the centre'",
+      "definition": "Focused attention or effort on one thing.",
+      "usage_in_passage": "\"concentrated on the object itself\" announces in advance the limit of early reform. Because it focused on the object, the real problem, where authority lies, was left untouched.",
       "related_terms": [
         "focused",
         "centred",
@@ -583,9 +583,9 @@
       "context_sentence": "Early reform therefore concentrated on the object itself."
     },
     "vessels": {
-      "etymology": "ラテン語 vascellum(小さな器) の複数形由来",
-      "definition": "容器。器。vessel の複数形。",
-      "usage_in_passage": "\"kept master vessels in guildhalls\" として、原器を公共の場に置くという初期改革の具体策を表す。第2段落で不正の道具だった器が、ここでは対抗手段になる。",
+      "etymology": "From the plural of Latin vascellum 'small container'",
+      "definition": "Containers for holding something; plural of vessel.",
+      "usage_in_passage": "In \"kept master vessels in guildhalls\", it expresses the concrete measure of early reform: placing the master standards in a public place. The vessel, which was a tool of fraud in paragraph 2, becomes here a means of fighting it.",
       "related_terms": [
         "containers",
         "measures",
@@ -595,9 +595,9 @@
       "context_sentence": "Towns chained iron yardsticks to church doors and kept master vessels in guildhalls, where any buyer could test a suspect measure against them."
     },
     "guildhalls": {
-      "etymology": "古英語 gield(組合, 支払い) + hall(館)",
-      "definition": "ギルドホール。同業組合の会館。",
-      "usage_in_passage": "教会の扉と並ぶ保管場所として挙げられ、原器が誰でも近づける公共の場に置かれたことを示す。ただし後段で、その公共性が町の外までは及ばないと否定される。",
+      "etymology": "Old English gield 'guild, payment' + hall 'hall'",
+      "definition": "Buildings where a guild of merchants or craftsmen met.",
+      "usage_in_passage": "It is given as a place of storage alongside church doors, and shows that the master standards were kept in public places anyone could approach. Later in the paragraph, however, this public character is denied beyond the town itself.",
       "related_terms": [
         "guild",
         "town hall",
@@ -607,9 +607,9 @@
       "context_sentence": "Towns chained iron yardsticks to church doors and kept master vessels in guildhalls, where any buyer could test a suspect measure against them."
     },
     "suspect": {
-      "etymology": "ラテン語 sub-(下から) + specere(見る) → 下から窺う",
-      "definition": "疑わしい。怪しいと思われる。",
-      "usage_in_passage": "\"test a suspect measure against them\" として、照合という手続きが疑いを晴らす手段になることを示す。買い手が自力で検証できる点が初期改革の利点だった。",
+      "etymology": "Latin sub- 'from below' + specere 'to look' → 'to look at from below'",
+      "definition": "Thought likely to be false or dishonest.",
+      "usage_in_passage": "In \"test a suspect measure against them\", it shows that the procedure of checking is a way to clear up doubt. The advantage of early reform was that buyers could verify a measure by themselves.",
       "related_terms": [
         "doubtful",
         "questionable",
@@ -619,9 +619,9 @@
       "context_sentence": "Towns chained iron yardsticks to church doors and kept master vessels in guildhalls, where any buyer could test a suspect measure against them."
     },
     "displaced": {
-      "etymology": "ラテン語 dis-(離れて) + placere/placer(置く) → 位置をずらす",
-      "definition": "移動させた。ここでは問題の在りかをずらした。",
-      "usage_in_passage": "\"it displaced the problem rather than dissolving it\" が第3段落の評価を決める一句。改革が問題を解いたのではなく別の場所へ動かしただけだと述べ、第4段落の本質的解決へつなぐ。",
+      "etymology": "Latin dis- 'away' + placere/placer 'to place' → 'to shift the position'",
+      "definition": "Moved to another place; here, shifted where the problem lay.",
+      "usage_in_passage": "\"it displaced the problem rather than dissolving it\" is the phrase that settles the assessment in paragraph 3. It says that the reform did not solve the problem but only moved it to another place, and it leads to the fundamental solution in paragraph 4.",
       "related_terms": [
         "shifted",
         "relocated",
@@ -631,9 +631,9 @@
       "context_sentence": "This was an improvement, yet it displaced the problem rather than dissolving it."
     },
     "dissolving": {
-      "etymology": "ラテン語 dis-(分離) + solvere(解く) → 解きほぐす",
-      "definition": "解消すること。溶かすこと。",
-      "usage_in_passage": "\"rather than dissolving it\" と displaced に対置され、問題を消し去ることと動かすことの差を際立たせる。この対比が第4段落の主張の前提になる。",
+      "etymology": "Latin dis- 'apart' + solvere 'to loosen' → 'to unravel'",
+      "definition": "Making something disappear; bringing it to an end.",
+      "usage_in_passage": "In \"rather than dissolving it\" it is set against displaced and brings out the difference between removing a problem and moving it. This contrast is the premise of the claim in paragraph 4.",
       "related_terms": [
         "eliminating",
         "resolving",
@@ -643,9 +643,9 @@
       "context_sentence": "This was an improvement, yet it displaced the problem rather than dissolving it."
     },
     "prototypes": {
-      "etymology": "ギリシャ語 prōtos(最初の) + typos(型) → 原型",
-      "definition": "原器。基準となる最初の見本。",
-      "usage_in_passage": "\"Prototypes wore down with handling\" が物としての基準の弱点を突く。物である限り摩耗するという事実が、第4段落の「自然に基づく定義」への転換を必然にする。",
+      "etymology": "Greek prōtos 'first' + typos 'type' → 'original form'",
+      "definition": "Original physical objects that serve as the standard for a unit.",
+      "usage_in_passage": "\"Prototypes wore down with handling\" strikes at the weakness of a standard that is an object. The fact that anything that is an object wears away makes the turn in paragraph 4 to 'a definition based on nature' inevitable.",
       "related_terms": [
         "standards",
         "models",
@@ -655,9 +655,9 @@
       "context_sentence": "Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another."
     },
     "wore": {
-      "etymology": "古英語 werian(身につける, すり減らす) の過去形",
-      "definition": "wear の過去形。ここでは wear down で「すり減る」。",
-      "usage_in_passage": "\"Prototypes wore down with handling\" として、使えば使うほど基準が狂うという逆説を示す。参照されるほど劣化する基準の欠陥を端的に表す。",
+      "etymology": "Past tense of Old English werian 'to have on the body, to wear away'",
+      "definition": "Past tense of wear; here, in wear down, 'to become smaller through use'.",
+      "usage_in_passage": "In \"Prototypes wore down with handling\", it shows the paradox that the more a standard is used, the more it goes wrong. It expresses directly the defect of a standard that deteriorates the more it is consulted.",
       "related_terms": [
         "eroded",
         "deteriorated",
@@ -667,9 +667,9 @@
       "context_sentence": "Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another."
     },
     "drifted": {
-      "etymology": "古ノルド語 drift(押し流されること) ← drive(駆る)",
-      "definition": "少しずつずれた。漂流した。",
-      "usage_in_passage": "\"copies taken from copies drifted\" が誤差の累積を表す。一回ごとの誤差は小さくても複製を重ねれば基準が動くという、標準の複製に固有の問題を指す。",
+      "etymology": "Old Norse drift 'being driven along' ← drive 'to drive'",
+      "definition": "Moved away little by little from the original value.",
+      "usage_in_passage": "\"copies taken from copies drifted\" expresses the accumulation of error. It refers to a problem specific to copying a standard: each error is small, but the standard moves when copying is repeated.",
       "related_terms": [
         "deviated",
         "strayed",
@@ -679,9 +679,9 @@
       "context_sentence": "Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another."
     },
     "mute": {
-      "etymology": "ラテン語 mutus(口のきけない, 無言の)",
-      "definition": "無言の。何も語らない。",
-      "usage_in_passage": "\"a standard held in one town remained mute about the standard held in another\" と擬人的に用い、町ごとの原器が互いを参照できない構造的な断絶を示す。第1段落の locally と呼応する。",
+      "etymology": "Latin mutus 'unable to speak, silent'",
+      "definition": "Silent; saying nothing.",
+      "usage_in_passage": "It is used with personification in \"a standard held in one town remained mute about the standard held in another\", and shows the structural break in which the master standards of different towns cannot refer to each other. It echoes locally in paragraph 1.",
       "related_terms": [
         "silent",
         "speechless",
@@ -691,9 +691,9 @@
       "context_sentence": "Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another."
     },
     "enforcement": {
-      "etymology": "古フランス語 enforcier(力を与える) ← en- + force(力) + -ment",
-      "definition": "執行。取り締まり。",
-      "usage_in_passage": "\"Enforcement still depended on the very authorities whose conduct the standard was meant to constrain\" が第3段落の結論で、監視される側が監視する側だという循環を突く。",
+      "etymology": "Old French enforcier 'to give strength' ← en- + force 'strength' + -ment",
+      "definition": "The act of making people obey a rule.",
+      "usage_in_passage": "\"Enforcement still depended on the very authorities whose conduct the standard was meant to constrain\" is the conclusion of paragraph 3 and points to the circularity that those being watched are also those doing the watching.",
       "related_terms": [
         "implementation",
         "policing",
@@ -703,9 +703,9 @@
       "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
     },
     "depended": {
-      "etymology": "ラテン語 de-(下に) + pendere(垂れ下がる) → ぶら下がる",
-      "definition": "依存していた。〜次第だった。",
-      "usage_in_passage": "\"Enforcement still depended on the very authorities...\" の depended が、初期改革の限界の所在を名指しする。基準は作れても、それを守らせる力は元の権力に握られたままだった。",
+      "etymology": "Latin de- 'down' + pendere 'to hang' → 'to hang from'",
+      "definition": "Relied on; was decided by.",
+      "usage_in_passage": "The word depended in \"Enforcement still depended on the very authorities\" names where the limit of early reform lay. A standard could be made, but the power to make people keep it stayed in the hands of the original authorities.",
       "related_terms": [
         "relied",
         "rested",
@@ -715,9 +715,9 @@
       "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
     },
     "authorities": {
-      "etymology": "ラテン語 auctor(作り手, 権威者) + -itas → 権威, 当局",
-      "definition": "当局。権限を持つ者たち。",
-      "usage_in_passage": "\"the very authorities whose conduct the standard was meant to constrain\" と、the very を伴って皮肉を効かせる。制約すべき相手に執行を委ねる矛盾を指摘している。",
+      "etymology": "Latin auctor 'maker, person of authority' + -itas → 'authority, officials'",
+      "definition": "The people or bodies that hold official power.",
+      "usage_in_passage": "In \"the very authorities whose conduct the standard was meant to constrain\", it comes with the very, which gives the phrase an ironic edge. It points out the contradiction of entrusting enforcement to the party that should be constrained.",
       "related_terms": [
         "officials",
         "magistrates",
@@ -727,9 +727,9 @@
       "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
     },
     "meant": {
-      "etymology": "古英語 mænan(意図する, 意味する) の過去形",
-      "definition": "mean の過去分詞。be meant to で「〜するはずの、〜を意図された」。",
-      "usage_in_passage": "\"the standard was meant to constrain\" が、基準の本来の目的と現実の運用のずれを示す。意図はあったが果たせなかったという含みが第4段落への橋になる。",
+      "etymology": "Past tense of Old English mænan 'to intend, to mean'",
+      "definition": "Past participle of mean; be meant to means 'be intended to'.",
+      "usage_in_passage": "\"the standard was meant to constrain\" shows the gap between the original purpose of the standard and how it actually operated. The suggestion that the intention was there but was not fulfilled forms the bridge to paragraph 4.",
       "related_terms": [
         "intended",
         "designed",
@@ -739,9 +739,9 @@
       "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
     },
     "constrain": {
-      "etymology": "ラテン語 com-(共に) + stringere(締める) → 締めつける",
-      "definition": "束縛する。抑制する。",
-      "usage_in_passage": "\"whose conduct the standard was meant to constrain\" として、基準の役割が権力の抑制にあると明示する。この目的が果たされる条件が第4段落の主題になる。",
+      "etymology": "Latin com- 'together' + stringere 'to draw tight' → 'to bind tightly'",
+      "definition": "To limit or restrict.",
+      "usage_in_passage": "In \"whose conduct the standard was meant to constrain\", it states explicitly that the role of the standard is to hold power in check. The conditions under which this purpose is achieved are the theme of paragraph 4.",
       "related_terms": [
         "restrict",
         "limit",
@@ -751,9 +751,9 @@
       "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
     },
     "metric": {
-      "etymology": "ギリシャ語 metron(尺度) + -ic",
-      "definition": "メートル法の。測定の。",
-      "usage_in_passage": "\"The metric system's innovation was not decimal arithmetic but the relocation of authority\" と第4段落の主題を提示する。not A but B の構文で、通説を退けて本文独自の主張を立てる。",
+      "etymology": "Greek metron 'measure' + -ic",
+      "definition": "Relating to the system of measurement based on the metre.",
+      "usage_in_passage": "\"The metric system's innovation was not decimal arithmetic but the relocation of authority\" presents the theme of paragraph 4. With the not A but B construction, it rejects the common view and sets up the passage's own claim.",
       "related_terms": [
         "decimal",
         "measurement",
@@ -763,9 +763,9 @@
       "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
     },
     "innovation": {
-      "etymology": "ラテン語 in-(中へ) + novus(新しい) → 新しくすること",
-      "definition": "革新。新しい工夫。",
-      "usage_in_passage": "\"The metric system's innovation was not decimal arithmetic but...\" の主語として、何が本当に新しかったのかという問いを立てる。本文の中心的な主張を担う語。",
+      "etymology": "Latin in- 'into' + novus 'new' → 'making new'",
+      "definition": "A new idea or method.",
+      "usage_in_passage": "As the subject of \"The metric system's innovation was not decimal arithmetic\", it raises the question of what was really new. It is a word that carries the central claim of the passage.",
       "related_terms": [
         "invention",
         "breakthrough",
@@ -775,9 +775,9 @@
       "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
     },
     "decimal": {
-      "etymology": "ラテン語 decimus(10番目の) ← decem(10)",
-      "definition": "十進法の。",
-      "usage_in_passage": "\"not decimal arithmetic but the relocation of authority\" として、メートル法の革新性としてふつう挙げられるものをあえて否定する側に置く。読者の予想を外して主張を際立たせる。",
+      "etymology": "Latin decimus 'tenth' ← decem 'ten'",
+      "definition": "Based on the number ten.",
+      "usage_in_passage": "In \"not decimal arithmetic but the relocation of authority\", it is deliberately placed on the side that is denied, although it is what people usually name as the innovation of the metric system. This goes against the reader's expectation and makes the claim stand out.",
       "related_terms": [
         "metric",
         "base-ten",
@@ -787,9 +787,9 @@
       "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
     },
     "arithmetic": {
-      "etymology": "ギリシャ語 arithmos(数) + -tikē(技術)",
-      "definition": "算術。計算法。",
-      "usage_in_passage": "decimal と結びついて、計算の便利さという表面的な利点を表す。本文はこれを退け、権限の移動こそが本質だと論じる。",
+      "etymology": "Greek arithmos 'number' + -tikē 'art'",
+      "definition": "Calculation with numbers.",
+      "usage_in_passage": "Linked with decimal, it stands for a surface advantage, ease of calculation. The passage sets this aside and argues that the transfer of authority is the real essence.",
       "related_terms": [
         "calculation",
         "mathematics",
@@ -799,9 +799,9 @@
       "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
     },
     "relocation": {
-      "etymology": "ラテン語 re-(再び) + locus(場所) + -ation → 置き直すこと",
-      "definition": "移転。置き場所を変えること。",
-      "usage_in_passage": "\"the relocation of authority\" が本文全体の結論を一語で表す。基準を作り直したのではなく、基準を持つ権限を誰の手からも離したことが革新だったという主張。",
+      "etymology": "Latin re- 'again' + locus 'place' + -ation → 'placing again'",
+      "definition": "The act of moving something to a new place.",
+      "usage_in_passage": "\"the relocation of authority\" expresses the conclusion of the whole passage in one word. The claim is that the innovation was not remaking the standard but taking the authority to hold the standard out of anyone's hands.",
       "related_terms": [
         "transfer",
         "displacement",
@@ -811,9 +811,9 @@
       "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
     },
     "metre": {
-      "etymology": "ギリシャ語 metron(尺度) ← 印欧祖語 *me-(測る)。米つづりは meter",
-      "definition": "メートル。長さの基本単位。",
-      "usage_in_passage": "\"defining the metre as a fraction of the earth's meridian\" と定義され、最終文で光速による定義へ更新される。本文の時間軸を貫く具体物として機能する。",
+      "etymology": "Greek metron 'measure' ← Proto-Indo-European *me- 'to measure'; the American spelling is meter",
+      "definition": "The basic unit of length in the metric system.",
+      "usage_in_passage": "It is defined in \"defining the metre as a fraction of the earth's meridian\", and in the final sentence it is updated to a definition based on the speed of light. It works as the concrete object that runs through the passage's timeline.",
       "related_terms": [
         "metric",
         "yardstick",
@@ -823,9 +823,9 @@
       "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
     },
     "fraction": {
-      "etymology": "ラテン語 frangere(砕く) → 砕かれた一片",
-      "definition": "分数。一部分。",
-      "usage_in_passage": "\"a fraction of the earth's meridian\" と \"a specified fraction of a second\" の二か所で使われ、旧定義と新定義が同じ発想(自然の量の一部として定める)を共有していることを示す。",
+      "etymology": "Latin frangere 'to break' → 'a piece broken off'",
+      "definition": "A part of a whole.",
+      "usage_in_passage": "It is used in two places, \"a fraction of the earth's meridian\" and \"a specified fraction of a second\", and shows that the old definition and the new one share the same idea: fixing the unit as a part of a quantity found in nature.",
       "related_terms": [
         "portion",
         "segment",
@@ -835,9 +835,9 @@
       "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
     },
     "meridian": {
-      "etymology": "ラテン語 meridies(正午) ← medius(中間) + dies(日) → 太陽が南中する線",
-      "definition": "子午線。北極と南極を結ぶ地表の線。",
-      "usage_in_passage": "メートルの定義の基礎として登場し、\"Measuring the meridian proved harder than anticipated\" で理想と実行の落差を作る。誰の所有物でもない基準を求めた結果である点が重要。",
+      "etymology": "Latin meridies 'noon' ← medius 'middle' + dies 'day' → 'the line where the sun is highest'",
+      "definition": "A line on the earth's surface running between the North Pole and the South Pole.",
+      "usage_in_passage": "It appears as the basis of the definition of the metre, and \"Measuring the meridian proved harder than anticipated\" creates the gap between the ideal and its execution. What matters is that it was the result of seeking a standard that belongs to no one.",
       "related_terms": [
         "longitude",
         "latitude",
@@ -847,9 +847,9 @@
       "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
     },
     "sought": {
-      "etymology": "古英語 sēcan(探す) の過去形",
-      "definition": "seek の過去形。追い求めた。",
-      "usage_in_passage": "\"its designers sought a standard that no lord owned\" として、設計者の意図を明示する。実現したかどうかとは別に、目指したものが何だったかを述べる語。",
+      "etymology": "Past tense of Old English sēcan 'to look for'",
+      "definition": "Past tense of seek; tried to find or obtain.",
+      "usage_in_passage": "In \"its designers sought a standard that no lord owned\", it states the designers' intention explicitly. It is a word that tells what they were aiming for, apart from whether it was achieved.",
       "related_terms": [
         "pursued",
         "aimed",
@@ -859,9 +859,9 @@
       "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
     },
     "corrupt": {
-      "etymology": "ラテン語 com-(すっかり) + rumpere(破る) → 壊す",
-      "definition": "損なう。腐敗させる。",
-      "usage_in_passage": "\"a standard that no lord owned and no wear could corrupt\" と、人為的な腐敗(lord)と物理的な劣化(wear)を並べる。第2段落と第3段落で示した二つの欠陥への同時の回答になっている。",
+      "etymology": "Latin com- 'thoroughly' + rumpere 'to break' → 'to destroy'",
+      "definition": "To damage; to make worse or dishonest.",
+      "usage_in_passage": "\"a standard that no lord owned and no wear could corrupt\" places corruption by people (lord) side by side with physical deterioration (wear). It answers at the same time the two defects shown in paragraphs 2 and 3.",
       "related_terms": [
         "debase",
         "spoil",
@@ -871,9 +871,9 @@
       "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
     },
     "competent": {
-      "etymology": "ラテン語 com-(共に) + petere(求める) → 適合する, 有能な",
-      "definition": "有能な。必要な能力を備えた。",
-      "usage_in_passage": "\"a competent surveyor could in principle reconstruct\" の competent が、特別な権威ではなく通常の技能があれば足りることを示す。基準の民主化という含意を担う。",
+      "etymology": "Latin com- 'together' + petere 'to seek' → 'fitting, capable'",
+      "definition": "Having the necessary skill.",
+      "usage_in_passage": "The word competent in \"a competent surveyor could in principle reconstruct\" shows that ordinary skill is enough and no special authority is needed. It carries the implication that the standard is opened to everyone.",
       "related_terms": [
         "capable",
         "qualified",
@@ -883,9 +883,9 @@
       "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
     },
     "surveyor": {
-      "etymology": "古フランス語 surveeir(見渡す) ← sur-(上から) + veeir(見る) + -or",
-      "definition": "測量士。土地を測る技術者。",
-      "usage_in_passage": "原器を保管する当局に代わる存在として置かれる。誰でも世界から測り直せるという性質が、第3段落の「保管された原器」との決定的な違いになる。",
+      "etymology": "Old French surveeir 'to look over' ← sur- 'from above' + veeir 'to see' + -or",
+      "definition": "A person whose job is to measure land.",
+      "usage_in_passage": "The surveyor is put in the place of the authorities who keep a prototype. The property that anyone can measure the standard again from the world is the decisive difference from the 'stored prototypes' of paragraph 3.",
       "related_terms": [
         "geometer",
         "engineer",
@@ -895,9 +895,9 @@
       "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
     },
     "principle": {
-      "etymology": "ラテン語 principium(始まり, 根本) ← princeps(第一の)",
-      "definition": "原理。原則。in principle で「原理的には」。",
-      "usage_in_passage": "\"could in principle reconstruct\" では理論上の可能性を示す留保として働き、\"The principle nonetheless proved decisive\" では実務上の失敗にもかかわらず原理が勝ったことを示す。同じ語が二つの役割を担う。",
+      "etymology": "Latin principium 'beginning, foundation' ← princeps 'first'",
+      "definition": "A basic idea or rule; in principle means 'in theory'.",
+      "usage_in_passage": "In \"could in principle reconstruct\" it works as a reservation that indicates a theoretical possibility, and in \"The principle nonetheless proved decisive\" it shows that the principle won in spite of the practical failure. The same word plays two roles.",
       "related_terms": [
         "doctrine",
         "rule",
@@ -907,9 +907,9 @@
       "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
     },
     "reconstruct": {
-      "etymology": "ラテン語 re-(再び) + com-(共に) + struere(積む) → 組み立て直す",
-      "definition": "作り直す。復元する。",
-      "usage_in_passage": "\"reconstruct from the world itself\" が新しい基準の決定的な性質を表す。原器が失われても世界を測れば再現できる点で、保管に依存する旧来の標準と根本的に異なる。",
+      "etymology": "Latin re- 'again' + com- 'together' + struere 'to pile up' → 'to build again'",
+      "definition": "To build or make again.",
+      "usage_in_passage": "\"reconstruct from the world itself\" expresses the decisive property of the new standard. Because it can be reproduced by measuring the world even if the prototype is lost, it differs fundamentally from the older standards that depend on storage.",
       "related_terms": [
         "rebuild",
         "restore",
@@ -919,9 +919,9 @@
       "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
     },
     "proved": {
-      "etymology": "ラテン語 probare(試す, 良いと認める)",
-      "definition": "〜であると判明した。証明された。",
-      "usage_in_passage": "\"proved harder than anticipated\" と \"The principle nonetheless proved decisive\" の二か所で、実測の失敗と原理の成功を同じ動詞で並べる。対比の効果を生む。",
+      "etymology": "Latin probare 'to test, to approve'",
+      "definition": "Turned out to be.",
+      "usage_in_passage": "In two places, \"proved harder than anticipated\" and \"The principle nonetheless proved decisive\", the failure of the actual measurement and the success of the principle are set side by side with the same verb. This produces an effect of contrast.",
       "related_terms": [
         "turned out",
         "demonstrated",
@@ -931,9 +931,9 @@
       "context_sentence": "Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris."
     },
     "harder": {
-      "etymology": "古英語 heard(硬い, 困難な) の比較級",
-      "definition": "より難しい。より困難な。",
-      "usage_in_passage": "\"Measuring the meridian proved harder than anticipated\" として理想と現実の落差を示す。ただし直後の nonetheless によって、この失敗が結論を覆さないことが明示される。",
+      "etymology": "Comparative of Old English heard 'hard, difficult'",
+      "definition": "More difficult.",
+      "usage_in_passage": "In \"Measuring the meridian proved harder than anticipated\", it shows the gap between ideal and reality. The nonetheless that comes soon after, however, makes it explicit that this failure does not overturn the conclusion.",
       "related_terms": [
         "tougher",
         "more difficult",
@@ -943,9 +943,9 @@
       "context_sentence": "Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris."
     },
     "anticipated": {
-      "etymology": "ラテン語 ante-(前に) + capere(取る) → 先取りする",
-      "definition": "予期された。見込まれた。",
-      "usage_in_passage": "\"harder than anticipated\" が、設計者の見通しの甘さを認める一句。本文がメートル法を無批判に称賛していないことを示す。",
+      "etymology": "Latin ante- 'before' + capere 'to take' → 'to take in advance'",
+      "definition": "Expected.",
+      "usage_in_passage": "\"harder than anticipated\" is a phrase that admits the designers were too optimistic. It shows that the passage does not praise the metric system uncritically.",
       "related_terms": [
         "expected",
         "foreseen",
@@ -955,9 +955,9 @@
       "context_sentence": "Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris."
     },
     "vault": {
-      "etymology": "古フランス語 volte(丸天井) ← ラテン語 volvere(回す)",
-      "definition": "金庫室。地下貯蔵室。",
-      "usage_in_passage": "\"remained a metal bar in a vault outside Paris\" と、最終文の \"sits in no vault\" で二度使われる。同じ語の反復が、金庫に保管される基準から保管を要しない基準への移行を印象づける。",
+      "etymology": "Old French volte 'arched ceiling' ← Latin volvere 'to roll'",
+      "definition": "A secure room for storing valuable things.",
+      "usage_in_passage": "It is used twice, in \"remained a metal bar in a vault outside Paris\" and in \"sits in no vault\" in the final sentence. The repetition of the same word impresses on the reader the shift from a standard kept in a vault to a standard that needs no storage.",
       "related_terms": [
         "strongroom",
         "safe",
@@ -967,9 +967,9 @@
       "context_sentence": "Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris."
     },
     "nonetheless": {
-      "etymology": "none + the + less(それだけ少なくはない) の結合",
-      "definition": "それにもかかわらず。",
-      "usage_in_passage": "\"The principle nonetheless proved decisive\" が論の向きを立て直す接続語。実測の失敗を認めたうえで、それでも原理が勝ったと述べる譲歩の構造を作る。設問5の根拠にも関わる。",
+      "etymology": "A combination of none + the + less 'not any the less'",
+      "definition": "In spite of that.",
+      "usage_in_passage": "In \"The principle nonetheless proved decisive\", it is the linking word that sets the direction of the argument right again. It creates a structure of concession: the failure of the measurement is admitted, and the passage says the principle won all the same. It is also relevant to the basis for Question 5.",
       "related_terms": [
         "nevertheless",
         "however",
@@ -979,9 +979,9 @@
       "context_sentence": "The principle nonetheless proved decisive."
     },
     "decisive": {
-      "etymology": "ラテン語 de-(離して) + caedere(切る) → 切って決める",
-      "definition": "決定的な。勝敗を決める。",
-      "usage_in_passage": "\"proved decisive\" が第4段落の評価を確定させる。実務上の不備があっても、権限を移すという原理が最終的に結果を決めたという判断を示す。",
+      "etymology": "Latin de- 'off' + caedere 'to cut' → 'to settle by cutting'",
+      "definition": "Settling an outcome; determining the result.",
+      "usage_in_passage": "\"proved decisive\" fixes the assessment in paragraph 4. It expresses the judgment that, in spite of practical shortcomings, the principle of moving authority determined the result in the end.",
       "related_terms": [
         "conclusive",
         "crucial",
@@ -991,9 +991,9 @@
       "context_sentence": "The principle nonetheless proved decisive."
     },
     "resistance": {
-      "etymology": "ラテン語 re-(逆らって) + sistere(立つ) → 立ち向かうこと",
-      "definition": "抵抗。反対。",
-      "usage_in_passage": "\"Resistance in the marketplace was fierce and lasted decades\" が、標準化が上からの命令だけでは進まなかったことを示す。設問3の subsided の主語にあたる。",
+      "etymology": "Latin re- 'against' + sistere 'to stand' → 'standing against'",
+      "definition": "Opposition to something.",
+      "usage_in_passage": "\"Resistance in the marketplace was fierce and lasted decades\" shows that standardization did not advance by orders from above alone. It is the subject of subsided in Question 3.",
       "related_terms": [
         "opposition",
         "defiance",
@@ -1003,9 +1003,9 @@
       "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
     },
     "fierce": {
-      "etymology": "ラテン語 ferus(野生の, 荒々しい) → 古フランス語 fiers",
-      "definition": "激しい。猛烈な。",
-      "usage_in_passage": "\"Resistance ... was fierce\" と強い語を選ぶことで、次文の「説得ではなく行政によって収まった」という結論の意外性を高めている。",
+      "etymology": "Latin ferus 'wild, savage' → Old French fiers",
+      "definition": "Very strong and intense.",
+      "usage_in_passage": "By choosing a strong word in \"was fierce\", the passage makes the conclusion that follows, that the resistance died down 'through administration and not persuasion', more surprising.",
       "related_terms": [
         "intense",
         "violent",
@@ -1015,9 +1015,9 @@
       "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
     },
     "decades": {
-      "etymology": "ギリシャ語 dekas(10の集まり) ← deka(10)",
-      "definition": "数十年。decade(10年)の複数形。",
-      "usage_in_passage": "\"lasted decades\" が抵抗の持続期間を示し、標準化が一度の法令で完了する出来事ではなかったことを裏づける。",
+      "etymology": "Greek dekas 'a group of ten' ← deka 'ten'",
+      "definition": "Periods of ten years; plural of decade.",
+      "usage_in_passage": "\"lasted decades\" shows how long the resistance continued, and supports the point that standardization was not an event completed by a single law.",
       "related_terms": [
         "years",
         "generations",
@@ -1027,9 +1027,9 @@
       "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
     },
     "subsided": {
-      "etymology": "ラテン語 sub-(下へ) + sidere(座る) → 沈み込む, 収まる",
-      "definition": "収まった。弱まった。",
-      "usage_in_passage": "\"it subsided less through persuasion than through administration\" が本文の結論部で最も重要な一句。抵抗が説得ではなく制度の運用によって消えたと述べ、設問3と設問5の両方の根拠になる。",
+      "etymology": "Latin sub- 'down' + sidere 'to sit' → 'to sink down, to settle'",
+      "definition": "Became weaker; died down.",
+      "usage_in_passage": "\"it subsided less through persuasion than through administration\" is the most important phrase in the concluding part of the passage. It says that the resistance disappeared through the operation of institutions and not through persuasion, and it is the basis for both Question 3 and Question 5.",
       "related_terms": [
         "diminished",
         "abated",
@@ -1039,9 +1039,9 @@
       "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
     },
     "persuasion": {
-      "etymology": "ラテン語 per-(徹底的に) + suadere(勧める) → 説き伏せること",
-      "definition": "説得。納得させること。",
-      "usage_in_passage": "\"less through persuasion than through administration\" で administration と対置される。人々の考えを変えたのではなく、制度の側を変えたという本文の主張を支える。",
+      "etymology": "Latin per- 'thoroughly' + suadere 'to urge' → 'talking someone round'",
+      "definition": "The act of convincing someone by argument.",
+      "usage_in_passage": "In \"less through persuasion than through administration\" it is set against administration. It supports the passage's claim that what changed was not people's minds but the institutions.",
       "related_terms": [
         "argument",
         "convincing",
@@ -1051,9 +1051,9 @@
       "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
     },
     "tariffs": {
-      "etymology": "アラビア語 taʿrīf(通知, 明細) → イタリア語 tariffa",
-      "definition": "関税。料金表。tariff の複数形。",
-      "usage_in_passage": "\"taxes, tariffs, and school lessons were written in the new units\" の三つ組の一つ。徴税・貿易・教育という異なる領域が同時に新単位で動き出したことを示す。",
+      "etymology": "Arabic taʿrīf 'notification, itemized list' → Italian tariffa",
+      "definition": "Taxes on imported goods; lists of charges. Plural of tariff.",
+      "usage_in_passage": "It is one of the set of three in \"taxes, tariffs, and school lessons were written in the new units\". It shows that different areas, taxation, trade and education, began to operate in the new units at the same time.",
       "related_terms": [
         "duties",
         "levies",
@@ -1063,9 +1063,9 @@
       "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
     },
     "lessons": {
-      "etymology": "ラテン語 lectio(読むこと) ← legere(読む) → 古フランス語 leçon",
-      "definition": "授業。学課。lesson の複数形。",
-      "usage_in_passage": "税や関税と並べられることで、学校教育もまた標準を定着させる制度装置の一つだと位置づけられる。次世代が新単位で育つという長期的な仕組みを示す。",
+      "etymology": "Latin lectio 'a reading' ← legere 'to read' → Old French leçon",
+      "definition": "Periods of teaching in school; plural of lesson.",
+      "usage_in_passage": "By being listed alongside taxes and tariffs, school teaching too is placed as one of the institutional devices that fix a standard in place. It points to a long-term mechanism in which the next generation grows up with the new units.",
       "related_terms": [
         "classes",
         "curriculum",
@@ -1075,9 +1075,9 @@
       "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
     },
     "gradually": {
-      "etymology": "ラテン語 gradus(歩み, 段階) + -al + -ly",
-      "definition": "徐々に。少しずつ。",
-      "usage_in_passage": "\"the old ones gradually lost the institutions that had sustained them\" として、旧単位の消滅が禁止によってではなく支えの喪失によって進んだことを示す。",
+      "etymology": "Latin gradus 'step, stage' + -al + -ly",
+      "definition": "Slowly; little by little.",
+      "usage_in_passage": "In \"the old ones gradually lost the institutions that had sustained them\", it shows that the old units disappeared not by being banned but by losing their support.",
       "related_terms": [
         "slowly",
         "progressively",
@@ -1087,9 +1087,9 @@
       "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
     },
     "sustained": {
-      "etymology": "ラテン語 sub-(下から) + tenere(保つ) → 下支えする",
-      "definition": "支えていた。維持していた。",
-      "usage_in_passage": "\"lost the institutions that had sustained them\" が本文の因果理解の核心。単位は慣習ではなく制度によって生きており、制度を失えば単位も死ぬという見方を示す。",
+      "etymology": "Latin sub- 'from below' + tenere 'to hold' → 'to hold up from below'",
+      "definition": "Kept in existence; supported.",
+      "usage_in_passage": "\"lost the institutions that had sustained them\" is the core of the passage's understanding of cause and effect. It presents the view that units live through institutions and not through custom, and that when the institutions are lost the units die too.",
       "related_terms": [
         "supported",
         "maintained",
@@ -1099,9 +1099,9 @@
       "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
     },
     "reformers": {
-      "etymology": "ラテン語 re-(再び) + formare(形づくる) + -er",
-      "definition": "改革者。制度を改めようとする人々。",
-      "usage_in_passage": "\"completes the movement the reformers began\" として、18世紀の設計者たちと現代の定義とを一本の線でつなぐ。本文の時間軸を閉じる役割を持つ。",
+      "etymology": "Latin re- 'again' + formare 'to shape' + -er",
+      "definition": "People who try to change a system in order to improve it.",
+      "usage_in_passage": "In \"completes the movement the reformers began\", it links the designers of the metre and the modern definition in a single line. It has the role of closing the passage's timeline.",
       "related_terms": [
         "innovators",
         "designers",
@@ -1111,9 +1111,9 @@
       "context_sentence": "Modern practice completes the movement the reformers began."
     },
     "belongs": {
-      "etymology": "中英語 be-(強意) + longen(属する)",
-      "definition": "属する。〜のものである。",
-      "usage_in_passage": "最終文 \"a quantity that belongs to no nation\" の belongs が、表題 \"Who Owns the Yardstick\" への答えを示す。所有者がいないことこそが到達点だという結論。",
+      "etymology": "Middle English be- (intensive) + longen 'to pertain to'",
+      "definition": "Is the property of.",
+      "usage_in_passage": "The word belongs in the final sentence's \"a quantity that belongs to no nation\" gives the answer to the title \"Who Owns the Yardstick\". The conclusion is that having no owner is exactly the point that has been reached.",
       "related_terms": [
         "pertains",
         "appertains",
@@ -1123,9 +1123,9 @@
       "context_sentence": "The metre is now fixed by the distance light travels in a specified fraction of a second, a quantity that belongs to no nation and sits in no vault."
     },
     "sits": {
-      "etymology": "古英語 sittan(座る)",
-      "definition": "座る。ここでは「置かれている、存在する」。",
-      "usage_in_passage": "\"sits in no vault\" と物理的な保管を否定して本文を締める。第4段落中ほどの \"a metal bar in a vault outside Paris\" と正面から呼応し、金庫からの解放を印象づける。",
+      "etymology": "Old English sittan 'to sit'",
+      "definition": "Sits; here, 'is kept in a place, exists there'.",
+      "usage_in_passage": "\"sits in no vault\" denies physical storage and closes the passage. It answers \"a metal bar in a vault outside Paris\" from the middle of paragraph 4 head-on, and impresses on the reader the release from the vault.",
       "related_terms": [
         "rests",
         "lies",

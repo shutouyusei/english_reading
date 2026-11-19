@@ -2,18 +2,18 @@
   "id": "listening_002",
   "type": "conversation",
   "title": "A Slot in the Student Gallery",
-  "topic": "芸術",
+  "topic": "Arts",
   "added": "2026-08-20",
   "word_count": 440,
   "speakers": [
     {
       "id": "student",
-      "role": "学生",
+      "role": "Student",
       "voice": "Samantha"
     },
     {
       "id": "coordinator",
-      "role": "ギャラリー担当",
+      "role": "Gallery staff",
       "voice": "Daniel"
     }
   ],
@@ -135,7 +135,7 @@
         "D": "Why the main gallery room stays locked for most of the day"
       },
       "correct": "B",
-      "explanation": "学生は冒頭で「I'm hoping to book a slot for the spring.」と用件を告げ、担当者が「The corridor space is free.」と代わりの場所を出す。以降は「the work hangs off it on cables」という掛け方と、「I could break the panorama into a grid.」という並べ方の相談で会話が進む。展示の場所と形が終始の話題なので B。A の修繕は話題にならない。担当者が言うのは「We cleared it out last year and put in a proper hanging rail.」という設置済みの設備の説明であって、壁を直す話ではない。C は写真の選び方だが、どの写真を入れるかは一度も出ず、話題は大きさと配置に限られる。D の施錠は「the door's locked unless somebody's sitting in there」と一度だけ、廊下の利点を裏づける材料として触れられるだけで主題ではない。"
+      "explanation": "The student states her business at the start, \"I'm hoping to book a slot for the spring.\", and the coordinator offers another place instead: \"The corridor space is free.\" From then on the conversation is about how the work is hung, \"the work hangs off it on cables\", and how it could be arranged, \"I could break the panorama into a grid.\" The place and the form of the exhibition are the topic from beginning to end, so the answer is B. A is wrong because repairs are never discussed. What the coordinator says, \"We cleared it out last year and put in a proper hanging rail.\", describes equipment that is already installed; it is not about fixing the wall. C is about choosing photographs, but which photographs to include never comes up; the talk is limited to size and arrangement. D is wrong because the locked door is mentioned only once, \"the door's locked unless somebody's sitting in there\", as support for the advantage of the corridor, and it is not the main topic."
     },
     {
       "id": 2,
@@ -148,7 +148,7 @@
         "D": "Nails will not go into the wall, so the work must hang from cables"
       },
       "correct": "D",
-      "explanation": "担当者は「You can't get a nail into those walls. They're concrete behind the paint. So there's a rail along the top, and the work hangs off it on cables.」と理由を述べ、続けて「The cables hang straight down, so everything sits in columns.」と、縦に並ぶという制約を説明する。だから D。A の壁の長さは問題にされていない。担当者はその壁を「the long wall by the west stairs」と呼んでおり、短さは一度も理由に挙がらない。B の額縁は会話に一切出てこない。C は事実と逆で、押さえられたのは本館の枠(「somebody took it on Monday」)であり、廊下については「The corridor space is free.」と明言されている。"
+      "explanation": "The coordinator gives the reason: \"You can't get a nail into those walls. They're concrete behind the paint. So there's a rail along the top, and the work hangs off it on cables.\" He then explains the limit this creates, that everything lines up vertically: \"The cables hang straight down, so everything sits in columns.\" So the answer is D. A is wrong because the length of the wall is not treated as a problem. The coordinator calls it \"the long wall by the west stairs\", and shortness is never given as a reason. B is wrong because frames never appear in the conversation. C is the opposite of the facts: what was taken was the slot in the main room (\"somebody took it on Monday\"), and about the corridor he says plainly \"The corridor space is free.\""
     },
     {
       "id": 3,
@@ -161,7 +161,7 @@
         "D": "To apologise for a rule that he himself does not agree with"
       },
       "correct": "A",
-      "explanation": "担当者は「Can I say one thing for the corridor?」と断ってから「Everyone walks past it. Every person heading to the lecture halls comes down those stairs. The main room's lovely, but the door's locked unless somebody's sitting in there, and most days nobody is.」と続ける。廊下を推す文脈で本館の施錠を出しているので、目的は人目に触れる量の比較、つまり A。B は原因が別で、本館が埋まったのは「somebody took it on Monday」という先着の話であり、鍵とは無関係。C の鍵は学生が持つ持たないという話が一度も出ない。D は謝罪でも規則への不満でもない。担当者は施錠を欠点として利用しているだけで、規則への評価は述べていない。"
+      "explanation": "The coordinator first asks \"Can I say one thing for the corridor?\" and then continues, \"Everyone walks past it. Every person heading to the lecture halls comes down those stairs. The main room's lovely, but the door's locked unless somebody's sitting in there, and most days nobody is.\" He brings up the locked main room while recommending the corridor, so his purpose is to compare how many people would see the work, which is A. B gives the wrong cause: the main room filled up because \"somebody took it on Monday\", a matter of who came first, and that has nothing to do with the lock. C is wrong because whether the student would carry a key is never mentioned. D is wrong because he is neither apologising nor complaining about a rule. The coordinator only uses the locked door as a weak point of the main room and gives no opinion of the rule."
     },
     {
       "id": 4,
@@ -174,7 +174,7 @@
         "D": "She is unconvinced at the start and remains unconvinced at the end"
       },
       "correct": "C",
-      "explanation": "最初は「Oh. So there's nothing left at all?」と落胆し、「The corridor. Right. Isn't that where they put the flyers about parking?」と格下扱いする。しかし人通りと採光の説明を聞いて「Okay. That's not nothing.」と態度を変え、「Eight columns. I could break the panorama into a grid.」と自分から使い方を考え始める。よって C。A は費用の話が皆無で、しかも最初は喜んでいない。B の制作が間に合うかどうかも一度も話題にならない。D は後半と矛盾する。最後も「Can I go and look at it first, before I decide anything?」と自分から現地を見に行こうとしており、疑いのままではない。"
+      "explanation": "At first she is disappointed, \"Oh. So there's nothing left at all?\", and treats the corridor as a lesser place: \"The corridor. Right. Isn't that where they put the flyers about parking?\" But after hearing about the number of people passing and the light, she changes her attitude, \"Okay. That's not nothing.\", and starts working out for herself how to use it: \"Eight columns. I could break the panorama into a grid.\" So the answer is C. A is wrong because cost is never mentioned, and she is not pleased at first either. B is wrong because whether she can finish the work in time never comes up. D contradicts the second half. Even at the end she offers to go and see the place herself, \"Can I go and look at it first, before I decide anything?\", so she does not stay unconvinced."
     },
     {
       "id": 5,
@@ -187,7 +187,7 @@
         "D": "A note stating the total weight of the panels she wants to hang"
       },
       "correct": "B",
-      "explanation": "担当者は最後に「fill in the request form and get it back to me by the end of next week. And bring a sketch of the layout with it. I can't approve a wall I can't picture.」と述べる。求めているのは配置の図なので B。A の題名の一覧は会話に出ない。C の指導教員も推薦状も一度も言及されない。D の重量については、担当者が述べる制約は「The cables hang straight down, so everything sits in columns.」という並び方であって重さではなく、重さの数値を求める場面はない。"
+      "explanation": "At the end the coordinator says \"fill in the request form and get it back to me by the end of next week. And bring a sketch of the layout with it. I can't approve a wall I can't picture.\" What he asks for is a drawing of the arrangement, so the answer is B. A is wrong because a list of titles does not appear in the conversation. C is wrong because neither a teacher nor a letter of support is ever mentioned. As for the weight in D, the limit the coordinator describes is \"The cables hang straight down, so everything sits in columns.\", which is about arrangement and not weight, and at no point does he ask for a weight figure."
     },
     {
       "id": 6,
@@ -200,7 +200,7 @@
         "D": "Walk over to the corridor and look at the space for herself"
       },
       "correct": "D",
-      "explanation": "学生は「Can I go and look at it first, before I decide anything?」と現地を先に見たいと申し出、担当者は「Please do. It's open now.」と応じる。最後に学生は「Right. Which way is it from here?」と道順を尋ね、担当者が「Out of the office and left. You can't miss it.」と答えて会話が終わる。行き先は廊下しかないので、次の行動は現地を見に行くこと、つまり D。A は釘の使用を別の窓口に掛け合う話だが、学生は「You can't get a nail into those walls.」という条件を受け入れており、掛け合う素振りはない。B は逆で、彼女は題材を捨てるどころか「I could break the panorama into a grid. It wouldn't be the same piece, but it might still work.」と同じ作品の作り替えを考えている。C は本人が「before I decide anything」と決定を保留し、しかも道順を聞いて出て行くため、その場で用紙を出すとは読めない。締切も「by the end of next week」と先にある。"
+      "explanation": "The student asks to see the place first, \"Can I go and look at it first, before I decide anything?\", and the coordinator agrees: \"Please do. It's open now.\" Finally the student asks the way, \"Right. Which way is it from here?\", the coordinator answers \"Out of the office and left. You can't miss it.\", and the conversation ends. The only place she can be heading is the corridor, so her next action is to go and look at the space, which is D. A is about asking another office to allow nails, but the student accepts the condition \"You can't get a nail into those walls.\" and shows no sign of taking it up with anyone. B is the opposite: far from dropping her subject, she is thinking of reworking the same piece, \"I could break the panorama into a grid. It wouldn't be the same piece, but it might still work.\" C is wrong because she herself puts off the decision with \"before I decide anything\", and she asks the way and leaves, so it cannot be read as handing in the form on the spot. The deadline is also still ahead: \"by the end of next week\"."
     }
   ]
 }

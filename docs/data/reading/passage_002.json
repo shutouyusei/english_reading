@@ -1,7 +1,7 @@
 {
   "id": "passage_002",
   "title": "The Constraints of Fresco",
-  "topic": "芸術",
+  "topic": "Arts",
   "body": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them. The painter applied pigments suspended in water onto a layer of plaster while it remained damp. As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it. The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made.\n\nThe most immediate of these was time. Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work. Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again. Fresco therefore rewarded certainty and punished hesitation. Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet.\n\nPigments presented a second constraint. The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions. Blue was especially troublesome. The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg. Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away. The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss.\n\nThese demands shaped the organization of labor as much as the appearance of the finished work. Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture. When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments. That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it.",
   "word_count": 467,
   "added": "2026-08-06",
@@ -18,7 +18,7 @@
         "D": "A protective varnish is brushed over the painting once the plaster dries."
       },
       "correct": "B",
-      "explanation": "第1段落に \"lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it\" とあり、耐久性の理由は化学反応によって顔料が壁の内部に閉じ込められることだと明示されている。A(厚塗り)、C(顔料の細かさ)、D(ワニス)はいずれも本文に記述がない。"
+      "explanation": "Paragraph 1 says \"lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it\", which states directly that the reason for the durability is that a chemical reaction shuts the pigment inside the wall. A (thick layers), C (fineness of the pigments), and D (varnish) are none of them mentioned in the passage."
     },
     {
       "id": 2,
@@ -32,7 +32,7 @@
         "D": "the particles of color locked within the wall"
       },
       "correct": "C",
-      "explanation": "直前の第1段落末尾が \"the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made\" で終わっており、\"these\" はこの constraints を受けている。実際、続く第2段落は時間という制約を説明しているため、Cが正しい。Aは制約が支配する対象であって制約そのものではない。"
+      "explanation": "The end of paragraph 1, just before, finishes with \"the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made\", and \"these\" picks up these constraints. In fact, paragraph 2, which follows, explains the constraint of time, so C is correct. A is what the constraints govern, not the constraints themselves."
     },
     {
       "id": 3,
@@ -46,7 +46,7 @@
         "D": "stripped bare"
       },
       "correct": "D",
-      "explanation": "直前で青の絵具層が \"centuries of humidity have stripped many of them away\" と述べられており、denuded はその結果として色を失った状態を指す。したがって D の stripped bare が最も近い。A の darkened は逆に色が濃くなる方向、B と C は本文の文脈と無関係である。"
+      "explanation": "Just before, the passage says of the layers of blue paint that \"centuries of humidity have stripped many of them away\", and denuded refers to the state of having lost color as a result. So D, stripped bare, is the closest in meaning. A, darkened, points the opposite way, toward the color becoming deeper, and B and C have nothing to do with the context of the passage."
     },
     {
       "id": 4,
@@ -60,7 +60,7 @@
         "D": "Their walls were left unfinished for lack of suitable pigments."
       },
       "correct": "A",
-      "explanation": "本文は淡い空が \"not evidence of restraint on the painter's part but of loss\" だと述べている。つまり画家は青を控えたのではなく、後から塗られた青が失われた結果である。よって完成当初はより濃い青であったと推論できる。Bは \"restraint\" を否定する本文と矛盾し、Cは青がまさに乾いた漆喰の上に塗られたという記述に反する。"
+      "explanation": "The passage says the pale skies are \"not evidence of restraint on the painter's part but of loss\". In other words, the painters did not hold back on blue; the blue that was applied afterward has been lost. So we can infer that the skies were a deeper blue when first completed. B contradicts the passage, which denies \"restraint\", and C goes against the statement that blue was applied precisely on top of dried plaster."
     },
     {
       "id": 5,
@@ -74,14 +74,14 @@
         "D": "To show that oil painting was invented in response to the failures of fresco"
       },
       "correct": "B",
-      "explanation": "油彩は \"precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments\" として提示されており、本文がそれまでに述べてきた三つの制約(時間・修正不可・顔料の制限)を対比によって際立たせる役割を担っている。Aは \"fresco nevertheless persisted for generations afterward\" と矛盾する。Dの起源に関する主張は本文にない。"
+      "explanation": "Oil painting is presented as \"precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments\", and its role is to bring out by contrast the three constraints the passage has described up to that point (time, no possibility of correction, and the limited range of pigments). A contradicts \"fresco nevertheless persisted for generations afterward\". The claim about origins in D is not in the passage."
     }
   ],
   "vocab": {
     "appearance": {
-      "etymology": "ラテン語 ad-(〜に向かって) + parere(現れる) → appear + -ance(名詞化)",
-      "definition": "外観、見た目。",
-      "usage_in_passage": "冒頭の \"Few techniques have shaped the appearance of an era\" で、フレスコが一時代の美術の「見え方」そのものを決めたという主張を導入する語。",
+      "etymology": "Latin ad- (toward) + parere (to come into view), giving appear, + -ance (noun-forming)",
+      "definition": "The way something looks.",
+      "usage_in_passage": "In the opening \"Few techniques have shaped the appearance of an era\", this word introduces the claim that fresco determined the very 'look' of the art of an age.",
       "related_terms": [
         "appear",
         "aspect",
@@ -91,9 +91,9 @@
       "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
     },
     "decisively": {
-      "etymology": "ラテン語 de-(離して) + caedere(切る) → decide「切り分けて決める」+ -ive + -ly",
-      "definition": "決定的に、はっきりと。",
-      "usage_in_passage": "\"shaped the appearance of an era as decisively as buon fresco\" と比較構文を強め、フレスコの影響力が他の技法を上回ることを示す。",
+      "etymology": "Latin de- (off) + caedere (to cut), giving decide 'to settle by cutting apart', + -ive + -ly",
+      "definition": "In a way that settles the matter; unmistakably.",
+      "usage_in_passage": "It strengthens the comparison in \"shaped the appearance of an era as decisively as buon fresco\" and shows that the influence of fresco is greater than that of other techniques.",
       "related_terms": [
         "decisive",
         "conclusively",
@@ -103,9 +103,9 @@
       "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
     },
     "buon": {
-      "etymology": "イタリア語 buono「良い」< ラテン語 bonus(良い)",
-      "definition": "「良い」を意味するイタリア語。buon fresco で「真正のフレスコ技法」を指す。",
-      "usage_in_passage": "\"buon fresco\" という専門用語の一部として登場し、乾いた壁に描く secco 技法と区別される本来のフレスコを指す。",
+      "etymology": "Italian buono 'good' < Latin bonus (good)",
+      "definition": "Italian for 'good'; in buon fresco it refers to the true fresco technique.",
+      "usage_in_passage": "It appears as part of the technical term \"buon fresco\" and refers to fresco proper, as distinguished from the secco technique of painting on a dry wall.",
       "related_terms": [
         "fresco",
         "secco",
@@ -115,9 +115,9 @@
       "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
     },
     "fresco": {
-      "etymology": "イタリア語 fresco「新鮮な、生乾きの」(ゲルマン語起源。英語 fresh と同系)",
-      "definition": "生乾きの漆喰に描く壁画技法。",
-      "usage_in_passage": "本文全体の主題語。語源が示すとおり「生乾きのうちに描く」ことが、以降で論じられる時間の制約すべての出発点になっている。",
+      "etymology": "Italian fresco 'fresh, still damp' (of Germanic origin; related to English fresh)",
+      "definition": "A technique of wall painting done on damp plaster.",
+      "usage_in_passage": "The subject word of the whole passage. As its etymology shows, painting 'while it is still damp' is the starting point of all the constraints of time discussed afterward.",
       "related_terms": [
         "mural",
         "plaster",
@@ -127,9 +127,9 @@
       "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
     },
     "painters": {
-      "etymology": "古フランス語 peindre < ラテン語 pingere(描く) → paint + -er + -s",
-      "definition": "画家たち。",
-      "usage_in_passage": "\"Italian painters bound images permanently into the walls\" で行為の主体として示され、以後この制約下で働く職人集団として繰り返し言及される。",
+      "etymology": "Old French peindre < Latin pingere (to paint), giving paint, + -er + -s",
+      "definition": "Artists who paint.",
+      "usage_in_passage": "In \"Italian painters bound images permanently into the walls\" they are shown as the ones who act, and from then on they are mentioned repeatedly as the group of craftsmen working under these constraints.",
       "related_terms": [
         "painter",
         "artists",
@@ -139,9 +139,9 @@
       "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
     },
     "bound": {
-      "etymology": "古英語 bindan(縛る)の過去分詞形。ゲルマン系の語で、ラテン語由来ではない",
-      "definition": "固く結びつけた、定着させた。",
-      "usage_in_passage": "\"bound images permanently into the walls\" で、絵が壁の表面に乗るのではなく内部に結合することを示し、第1段落の化学的説明を予告する。",
+      "etymology": "Past participle form of Old English bindan (to tie). A Germanic word, not of Latin origin",
+      "definition": "Tied firmly; fixed in place.",
+      "usage_in_passage": "\"bound images permanently into the walls\" shows that the picture does not sit on the surface of the wall but is joined to its interior, and it anticipates the chemical explanation in paragraph 1.",
       "related_terms": [
         "bind",
         "fused",
@@ -151,9 +151,9 @@
       "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
     },
     "permanently": {
-      "etymology": "ラテン語 per-(通して、ずっと) + manere(留まる) → permanent + -ly",
-      "definition": "永続的に。",
-      "usage_in_passage": "\"bound images permanently into the walls\" で耐久性という長所を提示し、その代償として制約が生じるという本文の骨格を作る。",
+      "etymology": "Latin per- (through, all the way) + manere (to stay), giving permanent, + -ly",
+      "definition": "In a way that lasts forever.",
+      "usage_in_passage": "In \"bound images permanently into the walls\" it presents the advantage of durability and builds the frame of the passage: constraints arise as the price of that advantage.",
       "related_terms": [
         "permanence",
         "enduringly",
@@ -163,9 +163,9 @@
       "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
     },
     "painter": {
-      "etymology": "古フランス語 peindre < ラテン語 pingere(描く) + -er",
-      "definition": "画家。",
-      "usage_in_passage": "\"The painter applied pigments suspended in water\" のように、技法上の判断を下す主体として単数形で繰り返し現れる。",
+      "etymology": "Old French peindre < Latin pingere (to paint) + -er",
+      "definition": "An artist who paints.",
+      "usage_in_passage": "As in \"The painter applied pigments suspended in water\", it appears repeatedly in the singular as the one who makes the technical decisions.",
       "related_terms": [
         "painters",
         "artist",
@@ -175,9 +175,9 @@
       "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
     },
     "pigments": {
-      "etymology": "ラテン語 pingere(描く) → pigmentum(絵の具) + -s",
-      "definition": "顔料。色を与える粉末の材料。",
-      "usage_in_passage": "第1段落では水に溶いて塗る材料として、第3段落では石灰に耐えられるかどうかで選別される対象として登場し、二つの制約を結ぶ語となっている。",
+      "etymology": "Latin pingere (to paint), giving pigmentum (paint), + -s",
+      "definition": "Powdered materials that give color.",
+      "usage_in_passage": "In paragraph 1 they appear as the material mixed with water and applied, and in paragraph 3 as what is sorted by whether it can withstand lime, so the word links the two constraints.",
       "related_terms": [
         "pigment",
         "colorants",
@@ -187,9 +187,9 @@
       "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
     },
     "suspended": {
-      "etymology": "ラテン語 sus-(sub- 下に) + pendere(吊るす) → 「液中に漂わせる」",
-      "definition": "(液体中に)分散させた、懸濁させた。",
-      "usage_in_passage": "\"pigments suspended in water\" で、顔料が水に溶けるのではなく粒子として漂っている状態を正確に述べ、後の「粒子が壁に閉じ込められる」という説明につながる。",
+      "etymology": "Latin sus- (sub- under) + pendere (to hang), giving 'made to float in a liquid'",
+      "definition": "Dispersed (in a liquid) without dissolving.",
+      "usage_in_passage": "\"pigments suspended in water\" states precisely that the pigment does not dissolve in the water but floats in it as particles, and it leads to the later explanation that the particles are locked into the wall.",
       "related_terms": [
         "suspension",
         "dispersed",
@@ -199,9 +199,9 @@
       "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
     },
     "plaster": {
-      "etymology": "ギリシャ語 emplastron「塗りつけるもの」< en-(上に) + plassein(形づくる)",
-      "definition": "漆喰。壁に塗る石灰と砂の混合物。",
-      "usage_in_passage": "本文の中心的な物質。\"onto a layer of plaster while it remained damp\" とあるように、その乾燥速度が画家の作業時間を規定する。",
+      "etymology": "Greek emplastron 'something daubed on' < en- (on) + plassein (to mold)",
+      "definition": "A mixture of lime and sand spread on walls.",
+      "usage_in_passage": "The central material of the passage. As \"onto a layer of plaster while it remained damp\" indicates, the speed at which it dries sets the painter's working time.",
       "related_terms": [
         "mortar",
         "lime",
@@ -211,9 +211,9 @@
       "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
     },
     "damp": {
-      "etymology": "中低ドイツ語 damp「蒸気」に由来するゲルマン系の語",
-      "definition": "湿った、生乾きの。",
-      "usage_in_passage": "\"while it remained damp\" が buon fresco の必須条件を一語で示し、この状態が失われた時点で作業が終わることを含意する。",
+      "etymology": "A Germanic word derived from Middle Low German damp 'vapor'",
+      "definition": "Moist; not yet dry.",
+      "usage_in_passage": "\"while it remained damp\" shows the essential condition of buon fresco in one word and implies that the work ends the moment this state is lost.",
       "related_terms": [
         "moist",
         "wet",
@@ -223,9 +223,9 @@
       "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
     },
     "dried": {
-      "etymology": "古英語 dryge(乾いた) → dry + -ed。ゲルマン系",
-      "definition": "乾いた、乾燥した。",
-      "usage_in_passage": "\"As the plaster dried\" が第1段落の化学反応を導く時間節となり、乾燥が単なる水分の消失ではなく化学変化の過程であることを示す。",
+      "etymology": "Old English dryge (dry), giving dry, + -ed. Germanic",
+      "definition": "Became dry; lost its moisture.",
+      "usage_in_passage": "\"As the plaster dried\" is the time clause that leads into the chemical reaction of paragraph 1 and shows that drying is not merely a loss of water but a process of chemical change.",
       "related_terms": [
         "dry",
         "cured",
@@ -235,9 +235,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "lime": {
-      "etymology": "古英語 lim「粘着物」。ゲルマン系の語で、果物の lime とは別語源",
-      "definition": "石灰。漆喰の主成分となる強アルカリ性の物質。",
-      "usage_in_passage": "\"lime in the mortar reacted with carbon dioxide\" で耐久性の源として、第3段落では \"The alkalinity of wet lime destroyed many colors\" で顔料を壊す元凶として現れ、同じ物質が長所と短所の両方を生むという本文の逆説を担う。",
+      "etymology": "Old English lim 'sticky substance'. A Germanic word with a different origin from the fruit lime",
+      "definition": "A strongly alkaline substance that is the main ingredient of plaster.",
+      "usage_in_passage": "It appears as the source of durability in \"lime in the mortar reacted with carbon dioxide\" and, in paragraph 3, as the culprit that ruins pigments in \"The alkalinity of wet lime destroyed many colors\", so it carries the paradox of the passage: the same substance produces both the advantage and the drawback.",
       "related_terms": [
         "limestone",
         "calcium",
@@ -247,9 +247,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "mortar": {
-      "etymology": "ラテン語 mortarium「臼、そこで作られる漆喰」",
-      "definition": "モルタル。石灰と砂を練った建材。",
-      "usage_in_passage": "\"lime in the mortar\" として、反応を起こす石灰がどこに含まれているかを特定する。",
+      "etymology": "Latin mortarium 'a mortar bowl, the plaster made in it'",
+      "definition": "A building material of lime and sand mixed together.",
+      "usage_in_passage": "As \"lime in the mortar\" it specifies where the lime that causes the reaction is contained.",
       "related_terms": [
         "plaster",
         "cement",
@@ -259,9 +259,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "reacted": {
-      "etymology": "ラテン語 re-(再び、応じて) + agere(行う) → react + -ed",
-      "definition": "化学反応を起こした。",
-      "usage_in_passage": "\"lime in the mortar reacted with carbon dioxide\" が、フレスコの耐久性が物理的な付着ではなく化学変化によることを明示する中核の動詞。",
+      "etymology": "Latin re- (again, in response) + agere (to do), giving react, + -ed",
+      "definition": "Underwent a chemical reaction.",
+      "usage_in_passage": "\"lime in the mortar reacted with carbon dioxide\" contains the core verb that makes clear that the durability of fresco comes from a chemical change, not from physical adhesion.",
       "related_terms": [
         "reaction",
         "reacted",
@@ -271,9 +271,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "carbon": {
-      "etymology": "ラテン語 carbo「炭、木炭」",
-      "definition": "炭素。",
-      "usage_in_passage": "\"carbon dioxide drawn from the air\" で、壁を硬化させる反応相手が空気中の気体であることを示す。",
+      "etymology": "Latin carbo 'coal, charcoal'",
+      "definition": "The chemical element that, joined with oxygen, forms carbon dioxide.",
+      "usage_in_passage": "\"carbon dioxide drawn from the air\" shows that what the wall reacts with to harden is a gas in the air.",
       "related_terms": [
         "carbonate",
         "charcoal",
@@ -283,9 +283,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "dioxide": {
-      "etymology": "ギリシャ語 di-(二つの) + oxide(酸化物) → 酸素原子を二つ含む化合物",
-      "definition": "二酸化物。ここでは二酸化炭素。",
-      "usage_in_passage": "\"carbon dioxide drawn from the air\" として、フレスコの硬化が外気を取り込む過程であることを説明する。",
+      "etymology": "Greek di- (two) + oxide, giving a compound containing two oxygen atoms",
+      "definition": "A compound containing two oxygen atoms; here, carbon dioxide.",
+      "usage_in_passage": "As \"carbon dioxide drawn from the air\" it explains that the hardening of fresco is a process of taking in the outside air.",
       "related_terms": [
         "carbon",
         "oxide",
@@ -295,9 +295,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "drawn": {
-      "etymology": "古英語 dragan(引く)の過去分詞。ゲルマン系",
-      "definition": "引き出された、取り込まれた。",
-      "usage_in_passage": "\"carbon dioxide drawn from the air\" で、反応に必要な気体が外部から供給されることを示し、壁が周囲の環境と反応する開いた系であることを示唆する。",
+      "etymology": "Past participle of Old English dragan (to pull). Germanic",
+      "definition": "Pulled out; taken in.",
+      "usage_in_passage": "\"carbon dioxide drawn from the air\" shows that the gas needed for the reaction is supplied from outside and suggests that the wall is an open system that reacts with its surroundings.",
       "related_terms": [
         "draw",
         "extracted",
@@ -307,9 +307,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "crystalline": {
-      "etymology": "ギリシャ語 krystallos「氷、水晶」+ -ine(〜からなる)",
-      "definition": "結晶質の。",
-      "usage_in_passage": "\"a crystalline skin of calcium carbonate\" で、生成物が非晶質の膜ではなく結晶構造をもつことを示し、耐久性の根拠を具体化する。",
+      "etymology": "Greek krystallos 'ice, rock crystal' + -ine (consisting of)",
+      "definition": "Made of crystals.",
+      "usage_in_passage": "\"a crystalline skin of calcium carbonate\" shows that the product is not an amorphous film but has a crystal structure, making the basis of the durability concrete.",
       "related_terms": [
         "crystal",
         "mineral",
@@ -319,9 +319,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "calcium": {
-      "etymology": "ラテン語 calx「石灰、小石」+ 元素名を作る -ium",
-      "definition": "カルシウム。",
-      "usage_in_passage": "\"calcium carbonate\" として、石灰と二酸化炭素の反応生成物を化学名で特定する。",
+      "etymology": "Latin calx 'lime, pebble' + -ium, which forms element names",
+      "definition": "The chemical element found in lime.",
+      "usage_in_passage": "As \"calcium carbonate\" it identifies by its chemical name the product of the reaction between lime and carbon dioxide.",
       "related_terms": [
         "calcite",
         "lime",
@@ -331,9 +331,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "carbonate": {
-      "etymology": "carbon(炭素) + 塩を表す -ate",
-      "definition": "炭酸塩。",
-      "usage_in_passage": "\"a crystalline skin of calcium carbonate\" が、顔料を封じ込める物質の正体を示す。",
+      "etymology": "carbon + -ate, which indicates a salt",
+      "definition": "A salt of carbonic acid.",
+      "usage_in_passage": "\"a crystalline skin of calcium carbonate\" shows what the substance that seals in the pigment actually is.",
       "related_terms": [
         "carbon",
         "calcium",
@@ -343,9 +343,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "locking": {
-      "etymology": "古英語 loc「錠、留め具」→ lock + -ing。ゲルマン系",
-      "definition": "閉じ込めること、固定すること。",
-      "usage_in_passage": "\"locking the particles of color within the wall rather than upon it\" が第1段落の要点。within と upon の対比によって、フレスコが表面塗装ではないことを決定づける。",
+      "etymology": "Old English loc 'lock, fastening', giving lock, + -ing. Germanic",
+      "definition": "Shutting in; fixing in place.",
+      "usage_in_passage": "\"locking the particles of color within the wall rather than upon it\" is the main point of paragraph 1. The contrast between within and upon settles that fresco is not a surface coating.",
       "related_terms": [
         "lock",
         "sealing",
@@ -355,9 +355,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "particles": {
-      "etymology": "ラテン語 pars(部分)の縮小形 particula + -s",
-      "definition": "微粒子。",
-      "usage_in_passage": "\"the particles of color\" が、封じ込められる対象が溶けた色素ではなく固体の粒であることを示し、suspended in water の記述と呼応する。",
+      "etymology": "Latin particula, diminutive of pars (part), + -s",
+      "definition": "Tiny solid pieces.",
+      "usage_in_passage": "\"the particles of color\" shows that what is sealed in is not dissolved dye but solid grains, and it echoes the phrase suspended in water.",
       "related_terms": [
         "particle",
         "grains",
@@ -367,9 +367,9 @@
       "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
     },
     "extraordinarily": {
-      "etymology": "ラテン語 extra-(外の) + ordinarius(通常の) → extraordinary + -ly",
-      "definition": "並外れて。",
-      "usage_in_passage": "\"The resulting surface was extraordinarily durable\" で長所を最大限に述べ、直後の but による転換を際立たせる。",
+      "etymology": "Latin extra- (outside) + ordinarius (usual), giving extraordinary, + -ly",
+      "definition": "To a degree far beyond the usual.",
+      "usage_in_passage": "\"The resulting surface was extraordinarily durable\" states the advantage as strongly as possible and makes the turn with but immediately afterward stand out.",
       "related_terms": [
         "extraordinary",
         "remarkably",
@@ -379,9 +379,9 @@
       "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
     },
     "durable": {
-      "etymology": "ラテン語 durare(持続する) < durus(硬い) + -able",
-      "definition": "耐久性のある。",
-      "usage_in_passage": "フレスコの唯一最大の利点を示す語で、この一語のために画家が受け入れた代償が本文の残り全体を占める。",
+      "etymology": "Latin durare (to last) < durus (hard) + -able",
+      "definition": "Able to last a long time.",
+      "usage_in_passage": "It is the word for the single greatest advantage of fresco, and the price painters accepted for this one word fills all the rest of the passage.",
       "related_terms": [
         "durability",
         "lasting",
@@ -391,9 +391,9 @@
       "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
     },
     "chemistry": {
-      "etymology": "アラビア語 al-kīmiyā → alchemy → chemist + -ry",
-      "definition": "化学、化学的性質。",
-      "usage_in_passage": "\"the chemistry that conferred this permanence also imposed constraints\" が本文の主題文。同一の化学的性質が恩恵と制約の両方の源であるという逆説を一文で提示する。",
+      "etymology": "Arabic al-kīmiyā, then alchemy, then chemist + -ry",
+      "definition": "The chemical nature of something.",
+      "usage_in_passage": "\"the chemistry that conferred this permanence also imposed constraints\" is the thesis sentence of the passage. It presents in one sentence the paradox that the same chemical properties are the source of both the benefit and the constraints.",
       "related_terms": [
         "chemical",
         "reaction",
@@ -403,9 +403,9 @@
       "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
     },
     "conferred": {
-      "etymology": "ラテン語 con-(共に) + ferre(運ぶ) → 「与える、授ける」",
-      "definition": "与えた、もたらした。",
-      "usage_in_passage": "\"the chemistry that conferred this permanence\" で、耐久性が偶然ではなく化学から必然的に与えられたものであることを示す。",
+      "etymology": "Latin con- (together) + ferre (to carry), giving 'to give, to grant'",
+      "definition": "Gave; granted.",
+      "usage_in_passage": "\"the chemistry that conferred this permanence\" shows that the durability is not an accident but something that follows necessarily from the chemistry.",
       "related_terms": [
         "confer",
         "bestowed",
@@ -415,9 +415,9 @@
       "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
     },
     "permanence": {
-      "etymology": "ラテン語 per-(ずっと) + manere(留まる) + -ence(名詞化)",
-      "definition": "永続性。",
-      "usage_in_passage": "第1段落冒頭の permanently を名詞で受け直し、主題文において「何が制約と引き換えに得られたのか」を明示する。",
+      "etymology": "Latin per- (all the way) + manere (to stay) + -ence (noun-forming)",
+      "definition": "The quality of lasting forever.",
+      "usage_in_passage": "It picks up permanently from the start of paragraph 1 as a noun and, in the thesis sentence, makes clear what was gained in exchange for the constraints.",
       "related_terms": [
         "permanent",
         "durability",
@@ -427,9 +427,9 @@
       "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
     },
     "imposed": {
-      "etymology": "ラテン語 im-(in- 上に) + ponere(置く) → 「課す」",
-      "definition": "課した、強いた。",
-      "usage_in_passage": "\"also imposed constraints\" が主題文の後半で、恩恵と同じ原因から負担が生じるという構造を作る。",
+      "etymology": "Latin im- (in- upon) + ponere (to place), giving 'to lay upon'",
+      "definition": "Laid upon; forced on.",
+      "usage_in_passage": "\"also imposed constraints\" is the second half of the thesis sentence and builds the structure in which a burden arises from the same cause as the benefit.",
       "related_terms": [
         "impose",
         "inflicted",
@@ -439,9 +439,9 @@
       "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
     },
     "constraints": {
-      "etymology": "ラテン語 con-(共に) + stringere(締めつける) → 「締めて動きを制限するもの」+ -s",
-      "definition": "制約、制限。",
-      "usage_in_passage": "本文を貫くキーワード。第2段落の時間、第3段落の顔料、第4段落の労働編成という三つの制約がすべてこの語に集約される。",
+      "etymology": "Latin con- (together) + stringere (to draw tight), giving 'something that tightens and limits movement', + -s",
+      "definition": "Limits; restrictions.",
+      "usage_in_passage": "The key word that runs through the passage. The three constraints, time in paragraph 2, pigments in paragraph 3, and the organization of labor in paragraph 4, are all gathered under this word.",
       "related_terms": [
         "constraint",
         "restrictions",
@@ -451,9 +451,9 @@
       "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
     },
     "governed": {
-      "etymology": "ラテン語 gubernare(舵を取る) < ギリシャ語 kybernan → govern + -ed",
-      "definition": "支配した、左右した。",
-      "usage_in_passage": "\"constraints that governed nearly every decision the painter made\" で、制約が技法上の細部ではなく判断の全体に及ぶことを示す。",
+      "etymology": "Latin gubernare (to steer) < Greek kybernan, giving govern, + -ed",
+      "definition": "Controlled; determined.",
+      "usage_in_passage": "\"constraints that governed nearly every decision the painter made\" shows that the constraints reach not just the details of technique but the whole of the painter's decisions.",
       "related_terms": [
         "govern",
         "dictated",
@@ -463,9 +463,9 @@
       "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
     },
     "immediate": {
-      "etymology": "ラテン語 im-(否定) + mediatus(仲介された) → 「間に何もない」",
-      "definition": "直接の、真っ先の。",
-      "usage_in_passage": "\"The most immediate of these was time\" で三つの制約に順序を与え、時間を最優先の論点として提示する。",
+      "etymology": "Latin im- (negation) + mediatus (mediated), giving 'with nothing in between'",
+      "definition": "Most direct; coming first.",
+      "usage_in_passage": "\"The most immediate of these was time\" gives the three constraints an order and presents time as the first issue.",
       "related_terms": [
         "immediately",
         "direct",
@@ -475,9 +475,9 @@
       "context_sentence": "The most immediate of these was time."
     },
     "receptive": {
-      "etymology": "ラテン語 re-(再び) + capere(取る) → recept- + -ive",
-      "definition": "受け入れられる状態の。",
-      "usage_in_passage": "\"Plaster remained receptive for a matter of hours\" で、漆喰が絵の具を受け付ける時間が限られていることを述べ、giornata の説明を導く。",
+      "etymology": "Latin re- (again) + capere (to take), giving recept-, + -ive",
+      "definition": "In a state able to take something in.",
+      "usage_in_passage": "\"Plaster remained receptive for a matter of hours\" states that the time during which plaster accepts paint is limited and leads into the explanation of the giornata.",
       "related_terms": [
         "receive",
         "receptivity",
@@ -487,9 +487,9 @@
       "context_sentence": "Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work."
     },
     "prepare": {
-      "etymology": "ラテン語 prae-(前もって) + parare(整える)",
-      "definition": "下準備をする。",
-      "usage_in_passage": "\"a painter could prepare only as much wall as could be finished in a single session\" で、塗る面積そのものが時間から逆算されることを示す。",
+      "etymology": "Latin prae- (beforehand) + parare (to make ready)",
+      "definition": "To get ready in advance.",
+      "usage_in_passage": "\"a painter could prepare only as much wall as could be finished in a single session\" shows that the very area to be plastered is worked out backward from the time available.",
       "related_terms": [
         "preparation",
         "ready",
@@ -499,9 +499,9 @@
       "context_sentence": "Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work."
     },
     "giornata": {
-      "etymology": "イタリア語 giorno「日」< ラテン語 diurnus(一日の) + -ata → 「一日分の仕事」",
-      "definition": "ジョルナータ。一日で仕上げられる漆喰の区画。",
-      "usage_in_passage": "\"an area known as a giornata, or day's work\" が、時間の制約が物理的な区画として壁に刻まれることを示す専門用語。",
+      "etymology": "Italian giorno 'day' < Latin diurnus (of a day) + -ata, giving 'a day's worth of work'",
+      "definition": "The section of plaster that can be finished in one day.",
+      "usage_in_passage": "\"an area known as a giornata, or day's work\" is the technical term showing that the constraint of time is marked on the wall as physical sections.",
       "related_terms": [
         "day",
         "session",
@@ -511,9 +511,9 @@
       "context_sentence": "Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work."
     },
     "day's": {
-      "etymology": "古英語 dæg(日) + 所有を表す -'s。ゲルマン系",
-      "definition": "一日分の。",
-      "usage_in_passage": "\"a giornata, or day's work\" と言い換えることで、イタリア語の専門用語を平易に説明している。",
+      "etymology": "Old English dæg (day) + possessive -'s. Germanic",
+      "definition": "Belonging to one day; one day's worth of.",
+      "usage_in_passage": "By restating the term as \"a giornata, or day's work\", the passage explains the Italian technical term in plain words.",
       "related_terms": [
         "day",
         "daily",
@@ -523,9 +523,9 @@
       "context_sentence": "Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work."
     },
     "bond": {
-      "etymology": "中英語 band「縛るもの」。bind と同系のゲルマン語",
-      "definition": "接合する、結合する。",
-      "usage_in_passage": "\"further additions would not bond\" で、時間切れ後の加筆が物理的に不可能であることを示し、修正できないという次の論点へつなぐ。",
+      "etymology": "Middle English band 'something that ties'. A Germanic word related to bind",
+      "definition": "To join; to stick together.",
+      "usage_in_passage": "\"further additions would not bond\" shows that adding paint after time has run out is physically impossible and leads to the next point, that corrections cannot be made.",
       "related_terms": [
         "bind",
         "adhere",
@@ -535,9 +535,9 @@
       "context_sentence": "Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again."
     },
     "passage": {
-      "etymology": "ラテン語 passus(歩み) → pass + -age",
-      "definition": "(絵画・文章の)一部分、箇所。",
-      "usage_in_passage": "\"a passage judged unsatisfactory\" では絵の一区画を指す。第3段落の \"Such passages\" も同じ用法で、青を後から塗った箇所を指す。",
+      "etymology": "Latin passus (step), giving pass, + -age",
+      "definition": "A part or section (of a painting or a text).",
+      "usage_in_passage": "In \"a passage judged unsatisfactory\" it refers to one section of the painting. \"Such passages\" in paragraph 3 is the same use and refers to the places where blue was applied afterward.",
       "related_terms": [
         "passages",
         "section",
@@ -547,9 +547,9 @@
       "context_sentence": "Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again."
     },
     "unsatisfactory": {
-      "etymology": "un-(否定) + ラテン語 satis(十分) + facere(作る) → satisfactory の否定",
-      "definition": "満足のいかない。",
-      "usage_in_passage": "\"a passage judged unsatisfactory could be corrected only by chiseling away the plaster\" で、失敗の代償が壁の破壊であることを示す。",
+      "etymology": "un- (negation) + Latin satis (enough) + facere (to make), giving the negative of satisfactory",
+      "definition": "Not good enough.",
+      "usage_in_passage": "\"a passage judged unsatisfactory could be corrected only by chiseling away the plaster\" shows that the price of a failure is the destruction of the wall.",
       "related_terms": [
         "satisfactory",
         "inadequate",
@@ -559,9 +559,9 @@
       "context_sentence": "Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again."
     },
     "chiseling": {
-      "etymology": "古フランス語 cisel「のみ」< ラテン語 caedere(切る) + -ing",
-      "definition": "のみで削り取ること。",
-      "usage_in_passage": "修正の唯一の方法として提示され、\"rewarded certainty and punished hesitation\" という次の一文の根拠になっている。",
+      "etymology": "Old French cisel 'chisel' < Latin caedere (to cut) + -ing",
+      "definition": "Cutting away with a chisel.",
+      "usage_in_passage": "It is presented as the only means of correction and is the basis for the next sentence, \"rewarded certainty and punished hesitation\".",
       "related_terms": [
         "chisel",
         "carving",
@@ -571,9 +571,9 @@
       "context_sentence": "Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again."
     },
     "rewarded": {
-      "etymology": "re-(再び) + 古北フランス語 warder(見張る) → 「報いる」",
-      "definition": "報いた、有利に働いた。",
-      "usage_in_passage": "\"Fresco therefore rewarded certainty and punished hesitation\" の対句の前半。技法が画家の資質を選別することを示す。",
+      "etymology": "re- (again) + Old North French warder (to watch), giving 'to repay'",
+      "definition": "Repaid; worked in favor of.",
+      "usage_in_passage": "The first half of the paired phrase in \"Fresco therefore rewarded certainty and punished hesitation\". It shows that the technique selects for the painter's qualities.",
       "related_terms": [
         "reward",
         "favored",
@@ -583,9 +583,9 @@
       "context_sentence": "Fresco therefore rewarded certainty and punished hesitation."
     },
     "certainty": {
-      "etymology": "ラテン語 cernere(識別する) → certus(確かな) + -ty",
-      "definition": "確信、迷いのなさ。",
-      "usage_in_passage": "対句の中で hesitation と対置され、フレスコが要求する心理的態度を名指す。",
+      "etymology": "Latin cernere (to distinguish), giving certus (sure), + -ty",
+      "definition": "Sureness; freedom from doubt.",
+      "usage_in_passage": "It is set against hesitation in the paired phrase and names the mental attitude that fresco demands.",
       "related_terms": [
         "certain",
         "confidence",
@@ -595,9 +595,9 @@
       "context_sentence": "Fresco therefore rewarded certainty and punished hesitation."
     },
     "punished": {
-      "etymology": "ラテン語 poena(罰) → punire + -ed",
-      "definition": "罰した、不利に働いた。",
-      "usage_in_passage": "\"punished hesitation\" が対句の後半で、迷いが取り返しのつかない損失に直結することを示す。",
+      "etymology": "Latin poena (penalty), giving punire, + -ed",
+      "definition": "Penalized; worked against.",
+      "usage_in_passage": "\"punished hesitation\" is the second half of the paired phrase and shows that doubt leads directly to a loss that cannot be undone.",
       "related_terms": [
         "punish",
         "penalized",
@@ -607,9 +607,9 @@
       "context_sentence": "Fresco therefore rewarded certainty and punished hesitation."
     },
     "hesitation": {
-      "etymology": "ラテン語 haerere(くっつく、ためらう) → haesitare + -ion",
-      "definition": "ためらい、逡巡。",
-      "usage_in_passage": "certainty と対をなし、通常の絵画では許される試行錯誤がフレスコでは成立しないことを示す。",
+      "etymology": "Latin haerere (to stick, to hesitate), giving haesitare, + -ion",
+      "definition": "A pause from doubt; wavering.",
+      "usage_in_passage": "It pairs with certainty and shows that the trial and error allowed in ordinary painting does not work in fresco.",
       "related_terms": [
         "hesitate",
         "indecision",
@@ -619,9 +619,9 @@
       "context_sentence": "Fresco therefore rewarded certainty and punished hesitation."
     },
     "composition": {
-      "etymology": "ラテン語 com-(共に) + ponere(置く) + -ition → 「組み立てること」",
-      "definition": "構図。画面内の要素の配置。",
-      "usage_in_passage": "\"Composition had to be resolved in advance through drawings\" で、制作の順序が逆転すること、すなわち考える作業が壁の前から下絵へ移ることを示す。",
+      "etymology": "Latin com- (together) + ponere (to place) + -ition, giving 'the act of putting together'",
+      "definition": "The arrangement of the elements within a picture.",
+      "usage_in_passage": "\"Composition had to be resolved in advance through drawings\" shows that the order of production is reversed, that is, the work of thinking moves from in front of the wall to the preparatory drawing.",
       "related_terms": [
         "compose",
         "arrangement",
@@ -631,9 +631,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "resolved": {
-      "etymology": "ラテン語 re-(強意) + solvere(解く) → 「解決する」",
-      "definition": "決着をつけた、確定した。",
-      "usage_in_passage": "\"resolved in advance\" が、壁の上での判断が許されないという第2段落の帰結を要約する。",
+      "etymology": "Latin re- (intensive) + solvere (to loosen), giving 'to solve'",
+      "definition": "Settled; fixed.",
+      "usage_in_passage": "\"resolved in advance\" sums up the consequence drawn in paragraph 2: decisions on the wall are not allowed.",
       "related_terms": [
         "resolve",
         "settled",
@@ -643,9 +643,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "drawings": {
-      "etymology": "古英語 dragan(引く) → draw + -ing + -s。ゲルマン系",
-      "definition": "素描、下絵。",
-      "usage_in_passage": "壁の前で試せない分の思考を引き受ける媒体として提示され、ルネサンス美術で素描が重視された理由を示唆する。",
+      "etymology": "Old English dragan (to pull), giving draw, + -ing + -s. Germanic",
+      "definition": "Sketches; preparatory pictures.",
+      "usage_in_passage": "They are presented as the medium that takes over the thinking that cannot be tried out in front of the wall, which suggests why drawing was valued in Renaissance art.",
       "related_terms": [
         "draw",
         "sketches",
@@ -655,9 +655,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "transferred": {
-      "etymology": "ラテン語 trans-(越えて) + ferre(運ぶ)",
-      "definition": "転写した、移した。",
-      "usage_in_passage": "\"the finished design was transferred to the wall mechanically\" で、下絵から壁への移行が創造ではなく機械的作業であることを示す。",
+      "etymology": "Latin trans- (across) + ferre (to carry)",
+      "definition": "Copied across; moved.",
+      "usage_in_passage": "\"the finished design was transferred to the wall mechanically\" shows that the move from drawing to wall is not creation but mechanical work.",
       "related_terms": [
         "transfer",
         "conveyed",
@@ -667,9 +667,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "mechanically": {
-      "etymology": "ギリシャ語 mēkhanē(装置) → mechanical + -ly",
-      "definition": "機械的に、手順に従って。",
-      "usage_in_passage": "転写が判断を伴わない工程であることを示し、次に挙げる二つの具体的手法を導く。",
+      "etymology": "Greek mēkhanē (device), giving mechanical, + -ly",
+      "definition": "By a set procedure, without judgment.",
+      "usage_in_passage": "It shows that the transfer is a step that involves no judgment and leads into the two concrete methods given next.",
       "related_terms": [
         "mechanical",
         "mechanism",
@@ -679,9 +679,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "incising": {
-      "etymology": "ラテン語 in-(中に) + caedere(切る) → 「刻み込む」",
-      "definition": "(線を)刻みつけること。",
-      "usage_in_passage": "\"either by incising its outlines into the fresh surface\" が転写手法の一つ目で、生乾きの漆喰の柔らかさを利用する方法である。",
+      "etymology": "Latin in- (into) + caedere (to cut), giving 'to cut into'",
+      "definition": "Cutting (lines) into a surface.",
+      "usage_in_passage": "\"either by incising its outlines into the fresh surface\" is the first method of transfer, one that uses the softness of the damp plaster.",
       "related_terms": [
         "incision",
         "engraving",
@@ -691,9 +691,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "outlines": {
-      "etymology": "out(外) + line(< ラテン語 linea 糸)。ゲルマン語とラテン語の複合",
-      "definition": "輪郭線。",
-      "usage_in_passage": "転写されるのが陰影ではなく輪郭であることを示し、色の判断が壁の上に残されることを含意する。",
+      "etymology": "out + line (< Latin linea thread). A compound of Germanic and Latin elements",
+      "definition": "Lines that mark the outer edge of a shape.",
+      "usage_in_passage": "It shows that what is transferred is the outline, not the shading, and implies that decisions about color are left to be made on the wall.",
       "related_terms": [
         "outline",
         "contour",
@@ -703,9 +703,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "dusting": {
-      "etymology": "古英語 dūst(塵) → dust + -ing。ゲルマン系",
-      "definition": "粉をふりかけること。",
-      "usage_in_passage": "\"by dusting charcoal through a perforated sheet\" が転写手法の二つ目(ポウンス法)で、漆喰を傷つけずに下絵を写す方法である。",
+      "etymology": "Old English dūst (dust), giving dust, + -ing. Germanic",
+      "definition": "Sprinkling with powder.",
+      "usage_in_passage": "\"by dusting charcoal through a perforated sheet\" is the second method of transfer (pouncing), a way of copying the drawing without damaging the plaster.",
       "related_terms": [
         "dust",
         "sprinkling",
@@ -715,9 +715,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "charcoal": {
-      "etymology": "char(焦がす) + coal(炭)。ゲルマン系の複合語",
-      "definition": "木炭。",
-      "usage_in_passage": "穴を通して落とす粉として用いられ、消しやすさゆえに転写に適していることが含意される。",
+      "etymology": "char (to scorch) + coal. A Germanic compound",
+      "definition": "Black carbon made by burning wood.",
+      "usage_in_passage": "It is used as the powder dropped through the holes, and the passage implies that it suits the transfer because it is easy to wipe away.",
       "related_terms": [
         "char",
         "carbon",
@@ -727,9 +727,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "perforated": {
-      "etymology": "ラテン語 per-(通して) + forare(穴を開ける) + -ate",
-      "definition": "穴を開けた。",
-      "usage_in_passage": "\"a perforated sheet\" が、下絵の輪郭に沿って針で穴を空けた紙(カルトン)を指し、転写の仕組みを説明する。",
+      "etymology": "Latin per- (through) + forare (to bore a hole) + -ate",
+      "definition": "Pierced with holes.",
+      "usage_in_passage": "\"a perforated sheet\" refers to the paper (the cartoon) pricked with a needle along the outlines of the drawing and explains how the transfer works.",
       "related_terms": [
         "perforation",
         "punctured",
@@ -739,9 +739,9 @@
       "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
     },
     "constraint": {
-      "etymology": "ラテン語 con-(共に) + stringere(締めつける)",
-      "definition": "制約。",
-      "usage_in_passage": "\"Pigments presented a second constraint\" が第3段落の主題文となり、時間に続く二つ目の制約を明示的に数える。",
+      "etymology": "Latin con- (together) + stringere (to draw tight)",
+      "definition": "A limit; a restriction.",
+      "usage_in_passage": "\"Pigments presented a second constraint\" is the topic sentence of paragraph 3 and explicitly counts the second constraint, after time.",
       "related_terms": [
         "constraints",
         "limitation",
@@ -751,9 +751,9 @@
       "context_sentence": "Pigments presented a second constraint."
     },
     "alkalinity": {
-      "etymology": "アラビア語 al-qalī「(植物を焼いた)灰」→ alkali + -ine + -ity",
-      "definition": "アルカリ性。",
-      "usage_in_passage": "\"The alkalinity of wet lime destroyed many colors\" で、第1段落では長所の源だった石灰が、ここでは顔料を破壊する原因として再登場する。",
+      "etymology": "Arabic al-qalī 'ashes (of burnt plants)', giving alkali, + -ine + -ity",
+      "definition": "The quality of being alkaline.",
+      "usage_in_passage": "In \"The alkalinity of wet lime destroyed many colors\", the lime that was the source of the advantage in paragraph 1 reappears here as the cause that destroys pigments.",
       "related_terms": [
         "alkali",
         "alkaline",
@@ -763,9 +763,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "destroyed": {
-      "etymology": "ラテン語 de-(下に) + struere(積み上げる) → 「積んだものを崩す」",
-      "definition": "破壊した、だめにした。",
-      "usage_in_passage": "顔料が単に変色するのではなく化学的に壊れることを示し、代替手段を取らざるを得ない理由を与える。",
+      "etymology": "Latin de- (down) + struere (to pile up), giving 'to pull down what was built'",
+      "definition": "Ruined; made useless.",
+      "usage_in_passage": "It shows that the pigments do not merely change color but are broken down chemically, which gives the reason painters had no choice but to use other means.",
       "related_terms": [
         "destroy",
         "ruined",
@@ -775,9 +775,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "freely": {
-      "etymology": "古英語 frēo(自由な) → free + -ly。ゲルマン系",
-      "definition": "自由に、制限なく。",
-      "usage_in_passage": "\"colors that painters used freely in other media\" が他技法との対比を作り、制約がフレスコ固有であることを際立たせる。",
+      "etymology": "Old English frēo (free), giving free, + -ly. Germanic",
+      "definition": "Without restriction.",
+      "usage_in_passage": "\"colors that painters used freely in other media\" sets up the contrast with other techniques and makes it clear that the constraint is peculiar to fresco.",
       "related_terms": [
         "free",
         "freedom",
@@ -787,9 +787,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "palette": {
-      "etymology": "ラテン語 pala(へら)の縮小形 palette",
-      "definition": "パレット。転じて、使用できる色の範囲。",
-      "usage_in_passage": "\"the palette available for true fresco was consequently narrow\" で、制約の帰結が画家の色彩選択の幅そのものであることを示す。",
+      "etymology": "palette, diminutive of Latin pala (spade, flat blade)",
+      "definition": "A board for mixing paint; by extension, the range of colors available.",
+      "usage_in_passage": "\"the palette available for true fresco was consequently narrow\" shows that the consequence of the constraint is the very breadth of the painter's choice of colors.",
       "related_terms": [
         "pallet",
         "spectrum",
@@ -799,9 +799,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "consequently": {
-      "etymology": "ラテン語 con-(共に) + sequi(従う) → consequent + -ly",
-      "definition": "その結果として。",
-      "usage_in_passage": "アルカリによる破壊という原因と、色数が限られるという結果を明示的に接続する論理標識。",
+      "etymology": "Latin con- (together) + sequi (to follow), giving consequent, + -ly",
+      "definition": "As a result.",
+      "usage_in_passage": "It is a logical marker that explicitly connects the cause, destruction by alkali, with the result, a limited number of colors.",
       "related_terms": [
         "consequence",
         "therefore",
@@ -811,9 +811,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "narrow": {
-      "etymology": "古英語 nearu(狭い)。ゲルマン系",
-      "definition": "狭い、限られた。",
-      "usage_in_passage": "palette を修飾し、豊かさではなく乏しさがフレスコの色彩を特徴づけることを述べる。",
+      "etymology": "Old English nearu (narrow). Germanic",
+      "definition": "Limited in range.",
+      "usage_in_passage": "It modifies palette and states that what characterizes the color of fresco is scarcity, not richness.",
       "related_terms": [
         "narrowly",
         "limited",
@@ -823,9 +823,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "dominated": {
-      "etymology": "ラテン語 dominus(主人) → dominari + -ed",
-      "definition": "大半を占めた、支配的だった。",
-      "usage_in_passage": "\"dominated by earths and other minerals\" が、限られた色数の内訳を具体的に示す。",
+      "etymology": "Latin dominus (master), giving dominari, + -ed",
+      "definition": "Made up for the most part of; ruled by.",
+      "usage_in_passage": "\"dominated by earths and other minerals\" shows concretely what the limited number of colors consisted of.",
       "related_terms": [
         "dominant",
         "prevailed",
@@ -835,9 +835,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "minerals": {
-      "etymology": "中世ラテン語 minerale(鉱石) < mine(採掘する) + -s",
-      "definition": "鉱物。",
-      "usage_in_passage": "土性顔料とともに、アルカリに耐える数少ない材料として挙げられる。",
+      "etymology": "Medieval Latin minerale (ore) < mine (to dig) + -s",
+      "definition": "Natural inorganic substances taken from the earth.",
+      "usage_in_passage": "Together with the earth pigments, they are given as the few materials that withstand alkali.",
       "related_terms": [
         "mineral",
         "ores",
@@ -847,9 +847,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "tolerated": {
-      "etymology": "ラテン語 tolerare(耐える) + -ed",
-      "definition": "耐えた、持ちこたえた。",
-      "usage_in_passage": "\"minerals that tolerated caustic conditions\" が、顔料の選別基準が美的なものではなく化学的耐性であることを示す。",
+      "etymology": "Latin tolerare (to endure) + -ed",
+      "definition": "Withstood; held up under.",
+      "usage_in_passage": "\"minerals that tolerated caustic conditions\" shows that the standard for selecting pigments was not aesthetic but chemical resistance.",
       "related_terms": [
         "tolerance",
         "withstood",
@@ -859,9 +859,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "caustic": {
-      "etymology": "ギリシャ語 kaustikos(焼く) < kaiein(燃やす)",
-      "definition": "腐食性の、焼けつくような。",
-      "usage_in_passage": "石灰の環境の過酷さを一語で示し、なぜ多くの顔料が使えないのかを感覚的にも伝える。",
+      "etymology": "Greek kaustikos (burning) < kaiein (to burn)",
+      "definition": "Able to burn or corrode chemically.",
+      "usage_in_passage": "It shows in one word how harsh the lime environment is and conveys, to the senses as well, why many pigments cannot be used.",
       "related_terms": [
         "caustically",
         "corrosive",
@@ -871,9 +871,9 @@
       "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
     },
     "troublesome": {
-      "etymology": "trouble(< ラテン語 turbidus かき乱された) + -some(〜をもたらす)",
-      "definition": "厄介な、手を焼かせる。",
-      "usage_in_passage": "\"Blue was especially troublesome\" が段落内の焦点を青一色に絞り込み、以降の具体例を導く転換点となる。",
+      "etymology": "trouble (< Latin turbidus stirred up) + -some (causing)",
+      "definition": "Causing difficulty; hard to deal with.",
+      "usage_in_passage": "\"Blue was especially troublesome\" narrows the focus within the paragraph to the single color blue and is the turning point that leads into the concrete example that follows.",
       "related_terms": [
         "trouble",
         "problematic",
@@ -883,9 +883,9 @@
       "context_sentence": "Blue was especially troublesome."
     },
     "yielded": {
-      "etymology": "古英語 gieldan(支払う、産出する)。ゲルマン系",
-      "definition": "生み出した、産した。",
-      "usage_in_passage": "\"The pigments that yielded convincing blues\" で、望ましい色を出せる顔料と石灰に耐える顔料が一致しないという矛盾を示す。",
+      "etymology": "Old English gieldan (to pay, to produce). Germanic",
+      "definition": "Produced; gave.",
+      "usage_in_passage": "\"The pigments that yielded convincing blues\" shows the contradiction that the pigments able to give the desired color and the pigments able to withstand lime are not the same.",
       "related_terms": [
         "yield",
         "produced",
@@ -895,9 +895,9 @@
       "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
     },
     "convincing": {
-      "etymology": "ラテン語 con-(強意) + vincere(打ち負かす) → convince + -ing",
-      "definition": "説得力のある、本物らしい。",
-      "usage_in_passage": "青の色調が代替品では satisfactory にならなかったことを示し、画家が危険を承知で secco 技法を選んだ理由を説明する。",
+      "etymology": "Latin con- (intensive) + vincere (to overcome), giving convince, + -ing",
+      "definition": "Believable; looking like the real thing.",
+      "usage_in_passage": "It shows that substitutes did not give a satisfactory tone of blue and explains why painters chose the secco technique knowing the risk.",
       "related_terms": [
         "convince",
         "persuasive",
@@ -907,9 +907,9 @@
       "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
     },
     "survive": {
-      "etymology": "ラテン語 super-(超えて) + vivere(生きる)",
-      "definition": "生き延びる、持ちこたえる。",
-      "usage_in_passage": "\"did not survive contact with lime\" で、青の顔料が石灰と共存できないという事実を述べ、以下の回避策につなぐ。",
+      "etymology": "Latin super- (beyond) + vivere (to live)",
+      "definition": "To last through; to hold out.",
+      "usage_in_passage": "\"did not survive contact with lime\" states the fact that blue pigments cannot coexist with lime and leads to the workaround that follows.",
       "related_terms": [
         "survival",
         "endure",
@@ -919,9 +919,9 @@
       "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
     },
     "obliged": {
-      "etymology": "ラテン語 ob-(に向かって) + ligare(縛る) → 「義務を負わせる」",
-      "definition": "やむを得ず〜した。",
-      "usage_in_passage": "\"painters were obliged to apply them after the plaster had cured\" が、secco 技法の採用が選好ではなく強制であったことを示す。",
+      "etymology": "Latin ob- (toward) + ligare (to tie), giving 'to put under a duty'",
+      "definition": "Forced; left with no choice but to do something.",
+      "usage_in_passage": "\"painters were obliged to apply them after the plaster had cured\" shows that the use of the secco technique was not a preference but something forced on them.",
       "related_terms": [
         "obligation",
         "compelled",
@@ -931,9 +931,9 @@
       "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
     },
     "cured": {
-      "etymology": "ラテン語 cura(世話) → curare。ここでは材料が化学的に硬化する意",
-      "definition": "硬化した、養生を終えた。",
-      "usage_in_passage": "\"after the plaster had cured\" で、青が塗られる時点ではもう化学的結合が起きないことを示し、後の剥落の伏線となる。",
+      "etymology": "Latin cura (care), giving curare. Here it means that a material hardens chemically",
+      "definition": "Hardened; finished setting.",
+      "usage_in_passage": "\"after the plaster had cured\" shows that by the time the blue is applied the chemical bonding no longer takes place, and it foreshadows the later flaking.",
       "related_terms": [
         "cure",
         "hardened",
@@ -943,9 +943,9 @@
       "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
     },
     "binder": {
-      "etymology": "古英語 bindan(縛る) → bind + -er。ゲルマン系",
-      "definition": "展色剤。顔料を固着させる媒剤。",
-      "usage_in_passage": "\"using a binder of glue or egg\" が、石灰に代わる接着手段を示すと同時に、その接着が有機物頼みで脆いことを含意する。",
+      "etymology": "Old English bindan (to tie), giving bind, + -er. Germanic",
+      "definition": "A medium that makes pigment stick.",
+      "usage_in_passage": "\"using a binder of glue or egg\" shows the means of adhesion that takes the place of lime and at the same time implies that this adhesion relies on organic matter and is fragile.",
       "related_terms": [
         "bind",
         "bound",
@@ -955,9 +955,9 @@
       "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
     },
     "glue": {
-      "etymology": "後期ラテン語 glus(膠)",
-      "definition": "膠(にかわ)。動物性の接着剤。",
-      "usage_in_passage": "卵とともに secco 技法の展色剤として挙げられ、湿気に弱い有機素材であることが後の損失につながる。",
+      "etymology": "Late Latin glus (glue)",
+      "definition": "An adhesive made from animal matter.",
+      "usage_in_passage": "Together with egg, it is given as a binder for the secco technique, and the fact that it is an organic material that is weak against damp leads to the later loss.",
       "related_terms": [
         "adhesive",
         "binder",
@@ -967,9 +967,9 @@
       "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
     },
     "passages": {
-      "etymology": "ラテン語 passus(歩み) → pass + -age + -s",
-      "definition": "(絵の)箇所、部分。",
-      "usage_in_passage": "\"Such passages were mechanically attached rather than chemically incorporated\" で、青の部分が壁と一体化していないという決定的な差を述べる。",
+      "etymology": "Latin passus (step), giving pass, + -age + -s",
+      "definition": "Parts or sections (of a painting).",
+      "usage_in_passage": "\"Such passages were mechanically attached rather than chemically incorporated\" states the decisive difference: the blue parts are not one with the wall.",
       "related_terms": [
         "passage",
         "sections",
@@ -979,9 +979,9 @@
       "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
     },
     "attached": {
-      "etymology": "古フランス語 estachier(杭で留める)。ゲルマン語 stake と同系",
-      "definition": "貼り付いた、付着した。",
-      "usage_in_passage": "chemically incorporated と対置され、mechanically という副詞とともに、青が壁の「上」にとどまることを示す。第4段落末尾の \"not merely attached to architecture\" と呼応する。",
+      "etymology": "Old French estachier (to fasten with a stake). Related to the Germanic word stake",
+      "definition": "Stuck on; fastened to a surface.",
+      "usage_in_passage": "It is set against chemically incorporated and, together with the adverb mechanically, shows that the blue stays 'on' the wall. It echoes \"not merely attached to architecture\" at the end of paragraph 4.",
       "related_terms": [
         "attach",
         "affixed",
@@ -992,8 +992,8 @@
     },
     "chemically": {
       "etymology": "chemical + -ly",
-      "definition": "化学的に。",
-      "usage_in_passage": "attached との対比で用いられ、第1段落の \"locking...within the wall rather than upon it\" を第3段落で再確認する。",
+      "definition": "By chemical means.",
+      "usage_in_passage": "It is used in contrast with attached and confirms again in paragraph 3 the point of \"locking the particles of color within the wall rather than upon it\" in paragraph 1.",
       "related_terms": [
         "chemical",
         "chemistry",
@@ -1003,9 +1003,9 @@
       "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
     },
     "incorporated": {
-      "etymology": "ラテン語 in-(中に) + corpus(体) + -ate → 「体内に取り込む」",
-      "definition": "一体化した、組み込まれた。",
-      "usage_in_passage": "青の部分に欠けているものを名指し、なぜそれだけが失われたのかという因果を完成させる。",
+      "etymology": "Latin in- (into) + corpus (body) + -ate, giving 'to take into the body'",
+      "definition": "Made part of a whole; built in.",
+      "usage_in_passage": "It names what the blue parts lack and completes the causal account of why they alone were lost.",
       "related_terms": [
         "incorporate",
         "integrated",
@@ -1015,9 +1015,9 @@
       "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
     },
     "centuries": {
-      "etymology": "ラテン語 centum(百) → centuria + -es",
-      "definition": "何世紀もの間。",
-      "usage_in_passage": "\"centuries of humidity have stripped many of them away\" で、損失が事故ではなく時間の必然であることを示す。",
+      "etymology": "Latin centum (hundred), giving centuria, + -es",
+      "definition": "Periods of hundreds of years.",
+      "usage_in_passage": "\"centuries of humidity have stripped many of them away\" shows that the loss is not an accident but an inevitable result of time.",
       "related_terms": [
         "century",
         "ages",
@@ -1027,9 +1027,9 @@
       "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
     },
     "humidity": {
-      "etymology": "ラテン語 humidus(湿った) + -ity",
-      "definition": "湿気。",
-      "usage_in_passage": "壁画を長期的に破壊する作用因として提示され、第1段落で壁を硬化させた水分と対をなす。",
+      "etymology": "Latin humidus (damp) + -ity",
+      "definition": "Moisture in the air.",
+      "usage_in_passage": "It is presented as the agent that destroys wall paintings over the long term.",
       "related_terms": [
         "humid",
         "moisture",
@@ -1039,9 +1039,9 @@
       "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
     },
     "stripped": {
-      "etymology": "中英語 stripen(剥ぎ取る)。ゲルマン系",
-      "definition": "剥ぎ取った。",
-      "usage_in_passage": "\"have stripped many of them away\" が損失を能動的な剥奪として描き、直後の denuded の語義を文脈から導く手がかりになっている。",
+      "etymology": "Middle English stripen (to strip off). Germanic",
+      "definition": "Tore off; removed.",
+      "usage_in_passage": "\"have stripped many of them away\" depicts the loss as an active stripping and serves as the clue from which the meaning of denuded, immediately afterward, can be worked out from context.",
       "related_terms": [
         "strip",
         "stripping",
@@ -1051,9 +1051,9 @@
       "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
     },
     "pale": {
-      "etymology": "ラテン語 pallidus(青白い) < pallere(青ざめる)",
-      "definition": "淡い、色のあせた。",
-      "usage_in_passage": "\"The pale, denuded skies\" が、鑑賞者が目にする現状を描写し、それが原状ではないという段落の結論を導く。",
+      "etymology": "Latin pallidus (pallid) < pallere (to grow pale)",
+      "definition": "Light in color; faded.",
+      "usage_in_passage": "\"The pale, denuded skies\" describes the present state that viewers see and leads to the conclusion of the paragraph, that this is not the original state.",
       "related_terms": [
         "pallid",
         "faded",
@@ -1063,9 +1063,9 @@
       "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
     },
     "denuded": {
-      "etymology": "ラテン語 de-(完全に) + nudare(裸にする) < nudus(裸の)",
-      "definition": "剥き出しにされた、覆いを失った。",
-      "usage_in_passage": "語彙問題の対象語。直前の \"stripped many of them away\" が語義の手がかりとなり、空が本来もっていた青の層を失った状態を指す。",
+      "etymology": "Latin de- (completely) + nudare (to make bare) < nudus (bare)",
+      "definition": "Laid bare; having lost its covering.",
+      "usage_in_passage": "The target word of the vocabulary question. \"stripped many of them away\" just before it is the clue to its meaning, and it refers to the state in which the sky has lost the layer of blue it originally had.",
       "related_terms": [
         "nude",
         "bare",
@@ -1075,9 +1075,9 @@
       "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
     },
     "admire": {
-      "etymology": "ラテン語 ad-(に対して) + mirari(驚く、見とれる)",
-      "definition": "感嘆して眺める。",
-      "usage_in_passage": "\"skies that visitors now admire\" に皮肉が込められている。鑑賞者が画家の美意識と信じているものが、実は損傷の結果だという段落の主張を成立させる語。",
+      "etymology": "Latin ad- (at) + mirari (to wonder, to gaze in wonder)",
+      "definition": "To look at with wonder and pleasure.",
+      "usage_in_passage": "There is irony in \"skies that visitors now admire\". This word makes the claim of the paragraph work: what viewers believe to be the painter's sense of beauty is in fact the result of damage.",
       "related_terms": [
         "admiration",
         "marvel",
@@ -1087,9 +1087,9 @@
       "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
     },
     "chapels": {
-      "etymology": "後期ラテン語 cappella「小さな外套」。聖マルティヌスの外套を納めた聖堂に由来 + -s",
-      "definition": "礼拝堂。",
-      "usage_in_passage": "\"certain early Italian chapels\" が、議論を抽象論から実在する作品へ引き寄せ、推論問題の舞台を与える。",
+      "etymology": "Late Latin cappella 'little cloak'. From the shrine that held the cloak of Saint Martin, + -s",
+      "definition": "Small places of Christian worship.",
+      "usage_in_passage": "\"certain early Italian chapels\" draws the discussion from the abstract toward works that actually exist and provides the setting for the inference question.",
       "related_terms": [
         "chapel",
         "sanctuary",
@@ -1099,9 +1099,9 @@
       "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
     },
     "restraint": {
-      "etymology": "ラテン語 re-(後ろへ) + stringere(締めつける) → 「引き止めること」",
-      "definition": "抑制、自制。",
-      "usage_in_passage": "\"not evidence of restraint on the painter's part but of loss\" で、二つの解釈を対置する。この否定こそが推論問題の根拠となる。",
+      "etymology": "Latin re- (back) + stringere (to draw tight), giving 'the act of holding back'",
+      "definition": "Holding back; self-control.",
+      "usage_in_passage": "\"not evidence of restraint on the painter's part but of loss\" sets two interpretations against each other. This denial is the basis for the inference question.",
       "related_terms": [
         "restrain",
         "constraint",
@@ -1111,9 +1111,9 @@
       "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
     },
     "painter's": {
-      "etymology": "painter + 所有を表す -'s",
-      "definition": "画家の。",
-      "usage_in_passage": "\"on the painter's part\" が、抑制という解釈の主体を画家に帰し、それを否定することで責任を時間と湿気に移す。",
+      "etymology": "painter + possessive -'s",
+      "definition": "Belonging to the painter.",
+      "usage_in_passage": "\"on the painter's part\" attributes the interpretation of restraint to the painter, and by denying it the passage shifts the responsibility to time and damp.",
       "related_terms": [
         "painter",
         "painters",
@@ -1123,9 +1123,9 @@
       "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
     },
     "executed": {
-      "etymology": "ラテン語 ex-(外に) + sequi(従う) → exsequi(遂行する) + -ed",
-      "definition": "(作品を)制作した、施工した。",
-      "usage_in_passage": "\"could not be executed by a single hand within the interval\" が第4段落の主題文で、時間の制約が労働の編成にまで及ぶことを示す。",
+      "etymology": "Latin ex- (out) + sequi (to follow), giving exsequi (to carry out), + -ed",
+      "definition": "Carried out; produced (a work).",
+      "usage_in_passage": "\"could not be executed by a single hand within the interval\" comes early in paragraph 4 and shows that the constraint of time reaches as far as the organization of labor.",
       "related_terms": [
         "execute",
         "execution",
@@ -1135,9 +1135,9 @@
       "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
     },
     "interval": {
-      "etymology": "ラテン語 inter-(間) + vallum(城壁) → 「柵と柵の間」",
-      "definition": "間隔、猶予時間。",
-      "usage_in_passage": "第2段落の a matter of hours を言い換え、時間の制約が第4段落の議論の前提として再導入されることを示す。",
+      "etymology": "Latin inter- (between) + vallum (rampart), giving 'the space between palisades'",
+      "definition": "A stretch of time; the time allowed.",
+      "usage_in_passage": "It restates \"a matter of hours\" from paragraph 2 and shows that the constraint of time is brought back as the premise of the argument in paragraph 4.",
       "related_terms": [
         "intervals",
         "span",
@@ -1147,9 +1147,9 @@
       "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
     },
     "encouraged": {
-      "etymology": "en-(与える) + courage(< ラテン語 cor 心) + -ed",
-      "definition": "促した、助長した。",
-      "usage_in_passage": "\"fresco encouraged the workshop\" が、技法が組織形態を生むという本文で最も大きな主張を担う動詞。強制ではなく誘導であることを含意する。",
+      "etymology": "en- (to give) + courage (< Latin cor heart) + -ed",
+      "definition": "Promoted; made more likely.",
+      "usage_in_passage": "In \"fresco encouraged the workshop\" it is the verb that carries the largest claim in the passage, that a technique gives rise to a form of organization. It implies guidance, not compulsion.",
       "related_terms": [
         "courage",
         "fostered",
@@ -1159,9 +1159,9 @@
       "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
     },
     "subordinate": {
-      "etymology": "ラテン語 sub-(下に) + ordinare(順序づける)",
-      "definition": "従属的な、重要度の低い。",
-      "usage_in_passage": "\"executed subordinate passages\" が工房内の分業を示し、直後の \"the master reserved the faces and gestures\" との対比で価値の序列を明らかにする。",
+      "etymology": "Latin sub- (under) + ordinare (to put in order)",
+      "definition": "Secondary; of lesser importance.",
+      "usage_in_passage": "\"executed subordinate passages\" shows the division of labor within the workshop and, through the contrast with \"the master reserved the faces and gestures\" immediately afterward, makes the ranking of value clear.",
       "related_terms": [
         "subordination",
         "secondary",
@@ -1171,9 +1171,9 @@
       "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
     },
     "gestures": {
-      "etymology": "ラテン語 gerere(行う、振る舞う) → gestura + -s",
-      "definition": "身振り、所作。",
-      "usage_in_passage": "faces と並んで親方が自ら描く要素として挙げられ、絵の意味を担う部分がどこかを示す。",
+      "etymology": "Latin gerere (to do, to conduct oneself), giving gestura, + -s",
+      "definition": "Movements of the body that express something.",
+      "usage_in_passage": "Alongside faces, they are given as the elements the master paints himself and show which parts carry the meaning of the picture.",
       "related_terms": [
         "gesture",
         "postures",
@@ -1183,9 +1183,9 @@
       "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
     },
     "painting": {
-      "etymology": "paint(< ラテン語 pingere) + -ing",
-      "definition": "絵画、絵を描くこと。",
-      "usage_in_passage": "\"When oil painting on panel and canvas spread into Italian practice\" で、フレスコに代わる選択肢として油彩を導入する。",
+      "etymology": "paint (< Latin pingere) + -ing",
+      "definition": "The art of making pictures with paint; a picture so made.",
+      "usage_in_passage": "\"When oil painting on panel and canvas spread into Italian practice\" introduces oil painting as the alternative to fresco.",
       "related_terms": [
         "paint",
         "painters",
@@ -1195,9 +1195,9 @@
       "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
     },
     "canvas": {
-      "etymology": "ラテン語 cannabis(大麻) → 麻布",
-      "definition": "カンヴァス。",
-      "usage_in_passage": "panel とともに、壁から切り離された支持体を示し、絵が建築から独立していく流れを含意する。",
+      "etymology": "Latin cannabis (hemp), giving hemp cloth",
+      "definition": "Strong cloth used as a surface for painting.",
+      "usage_in_passage": "Together with panel, it indicates a support cut loose from the wall and implies the trend of pictures becoming independent of architecture.",
       "related_terms": [
         "cloth",
         "linen",
@@ -1207,9 +1207,9 @@
       "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
     },
     "spread": {
-      "etymology": "古英語 sprǣdan(広げる)。ゲルマン系",
-      "definition": "広まった、普及した。",
-      "usage_in_passage": "油彩がイタリアへ伝播したことを述べ、フレスコが唯一の選択肢でなくなった時点を示す。",
+      "etymology": "Old English sprǣdan (to spread out). Germanic",
+      "definition": "Became widely used.",
+      "usage_in_passage": "It states that oil painting reached Italy and marks the point at which fresco stopped being the only option.",
       "related_terms": [
         "spreading",
         "diffused",
@@ -1219,9 +1219,9 @@
       "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
     },
     "sixteenth": {
-      "etymology": "six + -teen + -th。ゲルマン系の数詞",
-      "definition": "16番目の。",
-      "usage_in_passage": "\"during the sixteenth century\" が、それまで技法の論理で進んだ議論に具体的な時代を与える。",
+      "etymology": "six + -teen + -th. A Germanic numeral",
+      "definition": "Number 16 in order.",
+      "usage_in_passage": "\"during the sixteenth century\" gives a concrete period to a discussion that until then has moved by the logic of technique.",
       "related_terms": [
         "sixteen",
         "sixth",
@@ -1231,9 +1231,9 @@
       "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
     },
     "precisely": {
-      "etymology": "ラテン語 prae-(前もって) + caedere(切る) → 「切り詰められた」→ 正確な",
-      "definition": "まさしく、ちょうど。",
-      "usage_in_passage": "\"it offered precisely what fresco withheld\" で、油彩の利点がフレスコの欠点の裏返しであることを強調し、続くコロン以下の三点を本文全体の要約として機能させる。",
+      "etymology": "Latin prae- (beforehand) + caedere (to cut), giving 'cut short', then 'exact'",
+      "definition": "Exactly; just.",
+      "usage_in_passage": "\"it offered precisely what fresco withheld\" stresses that the advantages of oil painting are the reverse side of the drawbacks of fresco and makes the three points after the colon work as a summary of the whole passage.",
       "related_terms": [
         "precise",
         "precision",
@@ -1243,9 +1243,9 @@
       "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
     },
     "withheld": {
-      "etymology": "with-(後ろへ) + hold(古英語 healdan)の過去分詞。ゲルマン系",
-      "definition": "与えなかった、差し控えた。",
-      "usage_in_passage": "フレスコを能動的な主語として描くことで、制約が単なる欠陥ではなく技法の性格であるという含みを与える。",
+      "etymology": "with- (back) + past participle of hold (Old English healdan). Germanic",
+      "definition": "Did not give; kept back.",
+      "usage_in_passage": "By depicting fresco as an active subject, it suggests that the constraints are not mere defects but the character of the technique.",
       "related_terms": [
         "withhold",
         "denied",
@@ -1255,9 +1255,9 @@
       "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
     },
     "slowly": {
-      "etymology": "古英語 slāw(鈍い) → slow + -ly。ゲルマン系",
-      "definition": "ゆっくりと。",
-      "usage_in_passage": "\"a medium that dried slowly\" が油彩の第一の利点で、第2段落の時間の制約に正確に対応する。",
+      "etymology": "Old English slāw (sluggish), giving slow, + -ly. Germanic",
+      "definition": "At a low speed.",
+      "usage_in_passage": "\"a medium that dried slowly\" is the first advantage of oil painting and corresponds exactly to the constraint of time in paragraph 2.",
       "related_terms": [
         "slow",
         "gradually",
@@ -1267,9 +1267,9 @@
       "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
     },
     "admitted": {
-      "etymology": "ラテン語 ad-(に) + mittere(送る) → 「入れる」",
-      "definition": "受け入れた、許容した。",
-      "usage_in_passage": "\"admitted the full range of pigments\" が油彩の第三の利点で、第3段落の顔料の制約に対応する。三つの利点が三つの制約に順に対応する構造を完成させる。",
+      "etymology": "Latin ad- (to) + mittere (to send), giving 'to let in'",
+      "definition": "Allowed in; accepted.",
+      "usage_in_passage": "\"admitted the full range of pigments\" is the third advantage of oil painting and corresponds to the constraint on pigments in paragraph 3. It completes the structure in which the three advantages correspond in order to the three constraints.",
       "related_terms": [
         "admit",
         "admission",
@@ -1279,9 +1279,9 @@
       "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
     },
     "nevertheless": {
-      "etymology": "never + the + less の複合。ゲルマン系",
-      "definition": "それにもかかわらず。",
-      "usage_in_passage": "\"That fresco nevertheless persisted\" が、油彩の優位を認めた上で反転を導入し、本文最後の主張への転換点となる。",
+      "etymology": "A compound of never + the + less. Germanic",
+      "definition": "In spite of that.",
+      "usage_in_passage": "\"That fresco nevertheless persisted\" introduces a reversal after granting the superiority of oil painting and is the turning point toward the final claim of the passage.",
       "related_terms": [
         "never",
         "nonetheless",
@@ -1291,9 +1291,9 @@
       "context_sentence": "That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it."
     },
     "persisted": {
-      "etymology": "ラテン語 per-(通して) + sistere(立つ) → 「立ち続ける」",
-      "definition": "存続した、使われ続けた。",
-      "usage_in_passage": "より便利な媒体が現れてもフレスコが残ったという事実を提示し、それを説明する必要が最終文の主張を要請する。",
+      "etymology": "Latin per- (through) + sistere (to stand), giving 'to keep standing'",
+      "definition": "Continued to exist; went on being used.",
+      "usage_in_passage": "It presents the fact that fresco remained even after a more convenient medium appeared, and the need to explain that fact calls for the claim of the last sentence.",
       "related_terms": [
         "persist",
         "persistence",
@@ -1303,9 +1303,9 @@
       "context_sentence": "That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it."
     },
     "afterward": {
-      "etymology": "after + 方向を表す -ward。ゲルマン系",
-      "definition": "その後。",
-      "usage_in_passage": "\"for generations afterward\" が存続の長さを示し、フレスコの残存が一時的な惰性ではないことを示す。",
+      "etymology": "after + -ward, which indicates direction. Germanic",
+      "definition": "After that time.",
+      "usage_in_passage": "\"for generations afterward\" shows how long it lasted and shows that the survival of fresco was not a temporary matter of inertia.",
       "related_terms": [
         "after",
         "afterwards",
@@ -1315,9 +1315,9 @@
       "context_sentence": "That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it."
     },
     "newer": {
-      "etymology": "古英語 nīwe(新しい) → new + 比較級 -er。ゲルマン系",
-      "definition": "より新しい。",
-      "usage_in_passage": "\"the newer medium\" が油彩を指し、新しさが必ずしも優位を意味しないという最終文の逆説を準備する。",
+      "etymology": "Old English nīwe (new), giving new, + comparative -er. Germanic",
+      "definition": "More recent.",
+      "usage_in_passage": "\"the newer medium\" refers to oil painting and prepares the paradox of the last sentence, that being new does not necessarily mean being superior.",
       "related_terms": [
         "new",
         "newest",
@@ -1327,9 +1327,9 @@
       "context_sentence": "That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it."
     },
     "merely": {
-      "etymology": "ラテン語 merus(混じりけのない) → mere + -ly",
-      "definition": "単に、ただ〜にすぎない。",
-      "usage_in_passage": "\"not merely attached to architecture but had become part of it\" で、第1段落の within/upon の対比を建築との関係に転用し、本文を主題へ回帰させて締めくくる。",
+      "etymology": "Latin merus (unmixed), giving mere, + -ly",
+      "definition": "Only; nothing more than.",
+      "usage_in_passage": "In \"not merely attached to architecture but had become part of it\", the contrast between within and upon from paragraph 1 is applied to the relation with architecture, bringing the passage back to its subject to close it.",
       "related_terms": [
         "mere",
         "simply",

@@ -1,7 +1,7 @@
 {
   "id": "passage_006",
   "title": "How Bacteria Take a Vote",
-  "topic": "科学",
+  "topic": "Science",
   "body": "Bacteria were long regarded as the most solitary of organisms. A single cell divides, the two daughter cells drift apart, and whatever either of them accomplishes it appears to accomplish alone. This assumption began to erode in the 1970s, when microbiologists turned their attention to an unremarkable marine bacterium called Vibrio fischeri. The organism is luminescent, and it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water. What puzzled researchers was not the light itself but its timing. A flask of these bacteria grown in the laboratory remained dark for hours and then, quite abruptly, began to shine.\n\nThe explanation could not be that individual cells were switching on at random, for that would have produced a gradual brightening rather than a sudden one. Nor could the cells be reacting to some change in the flask itself, since the medium was deliberately held constant. The clue lay in density. Light appeared only once the population had grown past a certain size. Something, it seemed, allowed each bacterium to register how many others surrounded it, and only when that number was sufficient did the cells commit to the considerable expense of producing light. The bacteria, in other words, were behaving less like a crowd of individuals than like a single body awaiting a cue.\n\nThat something proved to be a small molecule. Each cell continuously releases a chemical signal, later named an autoinducer, into its surroundings, and each cell also carries a receptor for it. When the population is sparse, the molecule diffuses away and its concentration remains negligible. As the cells multiply, however, the signal accumulates faster than it disperses, until it crosses a threshold at which the receptors are occupied and a whole battery of genes is switched on at once. The process is now called quorum sensing, a term borrowed from parliamentary procedure: nothing is decided until enough members are present to act.\n\nThe discovery would have remained a curiosity of marine biology had the same mechanism not turned out to be nearly universal. Many pathogens, it emerged, use quorum sensing to schedule their assault on a host. Releasing toxins while still few in number would merely alert the immune system to a threat it could easily eliminate; by staying silent until their numbers are overwhelming, the invaders improve their odds considerably. This insight has suggested an unfamiliar strategy for medicine. Rather than killing bacteria outright, the approach that has driven the rise of resistance, one might instead jam their communication, leaving the cells alive but unable to coordinate. A drug that merely silences an organism exerts less pressure to evolve around it than one that threatens the organism with death. Whether that difference is large enough to matter remains an open question.",
   "word_count": 465,
   "added": "2026-08-14",
@@ -18,7 +18,7 @@
         "D": "The light attracts other members of the squid's own species"
       },
       "correct": "B",
-      "explanation": "第1段落に \"it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water\" とあり、光は輪郭を消すために使われる。A・C・Dのような捕食・警戒・誘引の機能は本文に記述がない。"
+      "explanation": "Paragraph 1 says \"it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water\", so the light is used to hide the squid's outline. The functions in A, C and D (finding prey, warning of predators, attracting other squid) are not described anywhere in the passage."
     },
     {
       "id": 2,
@@ -32,7 +32,7 @@
         "D": "To eliminate a competing explanation for the sudden appearance of light"
       },
       "correct": "D",
-      "explanation": "第2段落はまず \"could not be that individual cells were switching on at random\" を退け、続けて \"Nor could the cells be reacting to some change in the flask itself, since the medium was deliberately held constant\" と述べる。培地一定への言及は、環境変化という対立仮説を消すためのもので、消去法の末に density へ話を進める。"
+      "explanation": "Paragraph 2 first rejects the idea with \"could not be that individual cells were switching on at random\", and then says \"Nor could the cells be reacting to some change in the flask itself, since the medium was deliberately held constant\". The mention of the constant medium is there to rule out a competing hypothesis, a change in the environment; after this process of elimination the paragraph moves on to density."
     },
     {
       "id": 3,
@@ -46,7 +46,7 @@
         "D": "difficult to predict"
       },
       "correct": "A",
-      "explanation": "\"When the population is sparse, the molecule diffuses away and its concentration remains negligible\" の文脈では、拡散によって濃度が意味を持たない水準にとどまることを指す。Bの「測定不能」は言い過ぎで、C・Dは文脈が支持しない。"
+      "explanation": "In the context of \"When the population is sparse, the molecule diffuses away and its concentration remains negligible\", the word means that diffusion keeps the concentration at a level too low to have any effect. B, 'impossible to measure', goes too far, and the context does not support C or D."
     },
     {
       "id": 4,
@@ -60,7 +60,7 @@
         "D": "the receptor"
       },
       "correct": "C",
-      "explanation": "\"Each cell continuously releases a chemical signal, later named an autoinducer, into its surroundings, and each cell also carries a receptor for it\" では、受容体が結合する対象は放出された化学信号(autoinducer)である。受容体が自分自身や細胞を受け取るという読みは成り立たない。"
+      "explanation": "In \"Each cell continuously releases a chemical signal, later named an autoinducer, into its surroundings, and each cell also carries a receptor for it\", what the receptor binds is the chemical signal (the autoinducer) that has been released. A reading in which the receptor receives itself or the cell does not make sense."
     },
     {
       "id": 5,
@@ -74,14 +74,14 @@
         "D": "They eliminate bacteria faster than drugs that kill cells directly"
       },
       "correct": "B",
-      "explanation": "第4段落は \"A drug that merely silences an organism exerts less pressure to evolve around it than one that threatens the organism with death\" と述べつつ、直後に \"Whether that difference is large enough to matter remains an open question\" と留保する。Bはこの二点を両方反映する。Aの普及度は本文にない。Cは発光を病原性と取り違えており、Dは \"leaving the cells alive\" と矛盾する。"
+      "explanation": "Paragraph 4 says \"A drug that merely silences an organism exerts less pressure to evolve around it than one that threatens the organism with death\", but immediately qualifies this with \"Whether that difference is large enough to matter remains an open question\". B reflects both of these points. A's claim about how widely the drugs are used is not in the passage. C confuses light production with the ability to cause disease, and D contradicts \"leaving the cells alive\"."
     }
   ],
   "vocab": {
     "abruptly": {
-      "etymology": "ラテン語 ab-(離れて) + rumpere(破る) → 断ち切るように",
-      "definition": "突然に、不意に。",
-      "usage_in_passage": "\"then, quite abruptly, began to shine\" の abruptly が本文の中心的な謎そのもので、第2段落の \"gradual brightening\" との対比で論証を動かす。",
+      "etymology": "Latin ab- 'away' + rumpere 'to break' → 'as if broken off'",
+      "definition": "Suddenly and unexpectedly.",
+      "usage_in_passage": "The word abruptly in \"then, quite abruptly, began to shine\" is the central puzzle of the passage itself, and its contrast with \"gradual brightening\" in paragraph 2 drives the argument.",
       "related_terms": [
         "suddenly",
         "sharply",
@@ -91,9 +91,9 @@
       "context_sentence": "A flask of these bacteria grown in the laboratory remained dark for hours and then, quite abruptly, began to shine."
     },
     "accomplish": {
-      "etymology": "ラテン語 ad-(〜へ) + complere(満たす) → 成し遂げる",
-      "definition": "成し遂げる、達成する。",
-      "usage_in_passage": "同一文中で accomplishes と対にして繰り返され、\"alone\" を強調する位置に置かれる。",
+      "etymology": "Latin ad- 'to' + complere 'to fill' → 'to carry through'",
+      "definition": "To succeed in doing something; to achieve.",
+      "usage_in_passage": "It is repeated in the same sentence as a pair with accomplishes, and is placed where it puts the stress on \"alone\".",
       "related_terms": [
         "achieve",
         "attain",
@@ -103,9 +103,9 @@
       "context_sentence": "A single cell divides, the two daughter cells drift apart, and whatever either of them accomplishes it appears to accomplish alone."
     },
     "accomplishes": {
-      "etymology": "ラテン語 ad-(〜へ) + complere(満たす) → 成し遂げる",
-      "definition": "成し遂げる、達成する。",
-      "usage_in_passage": "\"whatever either of them accomplishes it appears to accomplish alone\" で、行為の単位が個体であるという前提を明示する。",
+      "etymology": "Latin ad- 'to' + complere 'to fill' → 'to carry through'",
+      "definition": "Succeeds in doing something; achieves.",
+      "usage_in_passage": "In \"whatever either of them accomplishes it appears to accomplish alone\", it states openly the premise that the unit of action is the individual cell.",
       "related_terms": [
         "achieve",
         "attain",
@@ -115,9 +115,9 @@
       "context_sentence": "A single cell divides, the two daughter cells drift apart, and whatever either of them accomplishes it appears to accomplish alone."
     },
     "accumulates": {
-      "etymology": "ラテン語 ad-(〜へ) + cumulus(積み重ね) → 積み上がる",
-      "definition": "蓄積する。",
-      "usage_in_passage": "\"the signal accumulates faster than it disperses\" が、蓄積と拡散という2つの速度の競合として閾値を説明する。",
+      "etymology": "Latin ad- 'to' + cumulus 'a heap' → 'to pile up'",
+      "definition": "Builds up gradually in amount.",
+      "usage_in_passage": "\"the signal accumulates faster than it disperses\" explains the threshold as a competition between two rates, accumulation and diffusion.",
       "related_terms": [
         "amass",
         "build up",
@@ -127,9 +127,9 @@
       "context_sentence": "As the cells multiply, however, the signal accumulates faster than it disperses, until it crosses a threshold at which the receptors are occupied and a whole battery of genes is switched on at once."
     },
     "alive": {
-      "etymology": "古英語 on life(生の状態にある)",
-      "definition": "生きている。",
-      "usage_in_passage": "\"leaving the cells alive but unable to coordinate\" が新戦略の要点で、殺さないという点が耐性圧の議論の前提になる。",
+      "etymology": "Old English on life 'in a state of life'",
+      "definition": "Living; not dead.",
+      "usage_in_passage": "\"leaving the cells alive but unable to coordinate\" is the key point of the new strategy; the fact that the cells are not killed is the premise of the argument about pressure toward resistance.",
       "related_terms": [
         "living",
         "viable",
@@ -139,9 +139,9 @@
       "context_sentence": "Rather than killing bacteria outright, the approach that has driven the rise of resistance, one might instead jam their communication, leaving the cells alive but unable to coordinate."
     },
     "apart": {
-      "etymology": "a-(〜へ) + part(部分) → 別々に",
-      "definition": "離れて、別々に。",
-      "usage_in_passage": "\"drift apart\" で分裂した細胞同士が無関係になることを表し、後の\"like a single body\" と正面から対立する。",
+      "etymology": "a- 'to' + part 'part' → 'separately'",
+      "definition": "Away from each other; separately.",
+      "usage_in_passage": "In \"drift apart\" it shows that the cells produced by division no longer have anything to do with each other, which stands in direct opposition to the later \"like a single body\".",
       "related_terms": [
         "separately",
         "asunder",
@@ -151,9 +151,9 @@
       "context_sentence": "A single cell divides, the two daughter cells drift apart, and whatever either of them accomplishes it appears to accomplish alone."
     },
     "assault": {
-      "etymology": "ラテン語 ad-(〜へ) + saltare(跳ぶ) → 襲いかかる",
-      "definition": "攻撃、襲撃。",
-      "usage_in_passage": "\"schedule their assault on a host\" が、感染を計画された攻撃として描き、タイミングの問題であることを示す。",
+      "etymology": "Latin ad- 'to' + saltare 'to leap' → 'to leap upon'",
+      "definition": "An attack.",
+      "usage_in_passage": "\"schedule their assault on a host\" presents infection as a planned attack and shows that the issue is one of timing.",
       "related_terms": [
         "attack",
         "offensive",
@@ -163,9 +163,9 @@
       "context_sentence": "Many pathogens, it emerged, use quorum sensing to schedule their assault on a host."
     },
     "assumption": {
-      "etymology": "ラテン語 ad-(〜へ) + sumere(取る) → 前提として取り込む",
-      "definition": "前提、思い込み。",
-      "usage_in_passage": "\"This assumption began to erode\" が段落の転換点。直前までの記述が事実ではなく仮定だったと遡って再定義する。",
+      "etymology": "Latin ad- 'to' + sumere 'to take' → 'to take in as a premise'",
+      "definition": "Something accepted as true without proof; a premise.",
+      "usage_in_passage": "\"This assumption began to erode\" is the turning point of the paragraph. Looking back, it redefines everything said up to that point as an assumption, not a fact.",
       "related_terms": [
         "premise",
         "presupposition",
@@ -175,9 +175,9 @@
       "context_sentence": "This assumption began to erode in the 1970s, when microbiologists turned their attention to an unremarkable marine bacterium called Vibrio fischeri."
     },
     "autoinducer": {
-      "etymology": "ギリシャ語 auto-(自己) + ラテン語 inducere(導き入れる) + -er",
-      "definition": "オートインデューサー。自身の遺伝子発現を誘導する信号物質。",
-      "usage_in_passage": "\"later named an autoinducer\" と後から命名された経緯を挟むことで、発見が現象の観察から機構の特定へ進んだ順序を保つ。",
+      "etymology": "Greek auto- 'self' + Latin inducere 'to lead in' + -er",
+      "definition": "A signal molecule that induces the expression of the genes of the cells that produce it.",
+      "usage_in_passage": "By inserting \"later named an autoinducer\", which notes that the name was given afterwards, the passage keeps the order in which the discovery moved from observing the phenomenon to identifying the mechanism.",
       "related_terms": [
         "signal molecule",
         "pheromone",
@@ -187,9 +187,9 @@
       "context_sentence": "Each cell continuously releases a chemical signal, later named an autoinducer, into its surroundings, and each cell also carries a receptor for it."
     },
     "awaiting": {
-      "etymology": "a-(強意) + wait(待つ)",
-      "definition": "待ち受ける。",
-      "usage_in_passage": "\"like a single body awaiting a cue\" が、細胞群を合図を待つ一個の主体として描き、quorum sensing の比喩的な予告になる。",
+      "etymology": "a- (intensive) + wait 'to wait'",
+      "definition": "Waiting for something that is expected.",
+      "usage_in_passage": "\"like a single body awaiting a cue\" presents the group of cells as a single agent waiting for a signal, and is a figurative preview of quorum sensing.",
       "related_terms": [
         "expecting",
         "anticipating",
@@ -199,9 +199,9 @@
       "context_sentence": "The bacteria, in other words, were behaving less like a crowd of individuals than like a single body awaiting a cue."
     },
     "bacteria": {
-      "etymology": "ギリシャ語 bakterion(小さな杖)の複数形 → 桿状の微生物",
-      "definition": "細菌(複数形)。",
-      "usage_in_passage": "冒頭 \"Bacteria were long regarded as the most solitary of organisms\" で、本文がひっくり返そうとする通説の主語に置かれる。",
+      "etymology": "Plural of Greek bakterion 'small staff' → rod-shaped microorganisms",
+      "definition": "Single-celled microorganisms (plural form).",
+      "usage_in_passage": "In the opening \"Bacteria were long regarded as the most solitary of organisms\", it is the subject of the accepted view that the passage sets out to overturn.",
       "related_terms": [
         "bacterium",
         "microbe",
@@ -211,9 +211,9 @@
       "context_sentence": "Bacteria were long regarded as the most solitary of organisms."
     },
     "bacterium": {
-      "etymology": "ギリシャ語 bakterion(小さな杖)の単数形",
-      "definition": "細菌(単数形)。",
-      "usage_in_passage": "\"an unremarkable marine bacterium called Vibrio fischeri\" と単数で示し、議論を1種の具体例に絞る。",
+      "etymology": "Singular of Greek bakterion 'small staff'",
+      "definition": "A single-celled microorganism (singular form).",
+      "usage_in_passage": "\"an unremarkable marine bacterium called Vibrio fischeri\" uses the singular and narrows the discussion to one concrete species.",
       "related_terms": [
         "bacteria",
         "microbe",
@@ -223,9 +223,9 @@
       "context_sentence": "This assumption began to erode in the 1970s, when microbiologists turned their attention to an unremarkable marine bacterium called Vibrio fischeri."
     },
     "behaving": {
-      "etymology": "be-(強意) + have(持つ) → ふるまう",
-      "definition": "ふるまう、行動する。",
-      "usage_in_passage": "\"The bacteria... were behaving less like a crowd of individuals than like a single body\" が第1段落の solitary を明示的に否定する。",
+      "etymology": "be- (intensive) + have 'to have' → 'to conduct oneself'",
+      "definition": "Acting in a particular way.",
+      "usage_in_passage": "\"were behaving less like a crowd of individuals than like a single body\" explicitly denies the word solitary from paragraph 1.",
       "related_terms": [
         "acting",
         "conducting",
@@ -235,9 +235,9 @@
       "context_sentence": "The bacteria, in other words, were behaving less like a crowd of individuals than like a single body awaiting a cue."
     },
     "biology": {
-      "etymology": "ギリシャ語 bios(生命) + logos(学)",
-      "definition": "生物学。",
-      "usage_in_passage": "\"a curiosity of marine biology\" が、発見が当初は一分野に閉じていたことを示す。",
+      "etymology": "Greek bios 'life' + logos 'study'",
+      "definition": "The scientific study of living things.",
+      "usage_in_passage": "\"a curiosity of marine biology\" shows that the discovery was at first confined to a single field.",
       "related_terms": [
         "life science",
         "zoology",
@@ -247,9 +247,9 @@
       "context_sentence": "The discovery would have remained a curiosity of marine biology had the same mechanism not turned out to be nearly universal."
     },
     "borrowed": {
-      "etymology": "古英語 borgian(担保を取る) → 借りる",
-      "definition": "借用された。",
-      "usage_in_passage": "\"a term borrowed from parliamentary procedure\" が、生物学の用語が人間の制度の語彙から来たことを明示する。",
+      "etymology": "Old English borgian 'to take a pledge' → 'to borrow'",
+      "definition": "Taken from another source and used as one's own.",
+      "usage_in_passage": "\"a term borrowed from parliamentary procedure\" states openly that the biological term came from the vocabulary of a human institution.",
       "related_terms": [
         "adopted",
         "appropriated",
@@ -259,9 +259,9 @@
       "context_sentence": "The process is now called quorum sensing, a term borrowed from parliamentary procedure: nothing is decided until enough members are present to act."
     },
     "brightening": {
-      "etymology": "古英語 beorht(明るい) + -en(化する) + -ing",
-      "definition": "明るくなること。",
-      "usage_in_passage": "\"a gradual brightening\" が、実際には起きなかった対照的な現象を名詞化し、反実仮想として提示する。",
+      "etymology": "Old English beorht 'bright' + -en 'to make' + -ing",
+      "definition": "The process of becoming brighter.",
+      "usage_in_passage": "\"a gradual brightening\" turns into a noun the contrasting phenomenon that did not in fact occur, and presents it as a counterfactual.",
       "related_terms": [
         "illumination",
         "lightening",
@@ -271,9 +271,9 @@
       "context_sentence": "The explanation could not be that individual cells were switching on at random, for that would have produced a gradual brightening rather than a sudden one."
     },
     "carries": {
-      "etymology": "ラテン語 carrus(荷車) → 運ぶ、備える",
-      "definition": "備えている、持つ。",
-      "usage_in_passage": "\"each cell also carries a receptor for it\" の also が、発信と受信の両方を同じ細胞が担うことを示す。",
+      "etymology": "Latin carrus 'wagon' → 'to transport, to be equipped with'",
+      "definition": "Has or possesses as a part of itself.",
+      "usage_in_passage": "The word also in \"each cell also carries a receptor for it\" shows that the same cell does both the sending and the receiving.",
       "related_terms": [
         "bear",
         "possess",
@@ -283,9 +283,9 @@
       "context_sentence": "Each cell continuously releases a chemical signal, later named an autoinducer, into its surroundings, and each cell also carries a receptor for it."
     },
     "clue": {
-      "etymology": "中英語 clewe(糸玉)。迷宮を抜ける糸に由来",
-      "definition": "手がかり。",
-      "usage_in_passage": "\"The clue lay in density\" が消去法から積極的な仮説へ転じる蝶番の一文。",
+      "etymology": "Middle English clewe 'ball of thread', from the thread used to find the way out of the labyrinth",
+      "definition": "A piece of evidence that helps to solve a problem.",
+      "usage_in_passage": "\"The clue lay in density\" is the hinge sentence that turns from the process of elimination to a positive hypothesis.",
       "related_terms": [
         "hint",
         "indication",
@@ -295,9 +295,9 @@
       "context_sentence": "The clue lay in density."
     },
     "commit": {
-      "etymology": "ラテン語 com-(共に) + mittere(送る) → 委ねる",
-      "definition": "(資源を)投じる、踏み切る。",
-      "usage_in_passage": "\"did the cells commit to the considerable expense of producing light\" が、発光を代償を伴う投資として描き、なぜ細胞が数を数える必要があるのかを説明する。",
+      "etymology": "Latin com- 'together' + mittere 'to send' → 'to entrust'",
+      "definition": "To devote resources to a course of action; to go ahead with it.",
+      "usage_in_passage": "\"did the cells commit to the considerable expense of producing light\" presents light production as an investment that has a cost, and explains why the cells need to count their numbers.",
       "related_terms": [
         "pledge",
         "devote",
@@ -307,9 +307,9 @@
       "context_sentence": "Something, it seemed, allowed each bacterium to register how many others surrounded it, and only when that number was sufficient did the cells commit to the considerable expense of producing light."
     },
     "concentration": {
-      "etymology": "con-(共に) + ラテン語 centrum(中心) → 中心に集まること",
-      "definition": "濃度。",
-      "usage_in_passage": "\"its concentration remains negligible\" が、細胞数という数えられない量を濃度という測れる量に翻訳する。この置き換えが機構全体の要になる。",
+      "etymology": "con- 'together' + Latin centrum 'centre' → 'a gathering at the centre'",
+      "definition": "The amount of a substance present in a given volume.",
+      "usage_in_passage": "\"its concentration remains negligible\" translates the number of cells, a quantity the cells cannot count, into concentration, a quantity that can be measured. This substitution is the key to the whole mechanism.",
       "related_terms": [
         "density",
         "strength",
@@ -319,9 +319,9 @@
       "context_sentence": "When the population is sparse, the molecule diffuses away and its concentration remains negligible."
     },
     "considerable": {
-      "etymology": "con-(共に) + ラテン語 sidus(星) → 熟慮に値する → 相当な",
-      "definition": "相当な、かなりの。",
-      "usage_in_passage": "\"the considerable expense\" が発光のコストの大きさを示し、密度依存の合理性を裏づける。",
+      "etymology": "con- 'together' + Latin sidus 'star' → 'worth careful thought' → 'substantial'",
+      "definition": "Fairly large in amount or degree.",
+      "usage_in_passage": "\"the considerable expense\" shows how large the cost of producing light is, and supports the logic of making it depend on density.",
       "related_terms": [
         "substantial",
         "significant",
@@ -331,9 +331,9 @@
       "context_sentence": "Something, it seemed, allowed each bacterium to register how many others surrounded it, and only when that number was sufficient did the cells commit to the considerable expense of producing light."
     },
     "considerably": {
-      "etymology": "con- + ラテン語 sidus(星) → 熟慮に値するほど → 相当に",
-      "definition": "相当に、かなり。",
-      "usage_in_passage": "\"improve their odds considerably\" が効果の大きさを断定し、この戦略が広く見られる理由を裏づける。",
+      "etymology": "con- + Latin sidus 'star' → 'to a degree worth careful thought' → 'substantially'",
+      "definition": "To a fairly large degree; much.",
+      "usage_in_passage": "\"improve their odds considerably\" asserts how large the effect is, and supports the reason why this strategy is so widespread.",
       "related_terms": [
         "substantially",
         "significantly",
@@ -343,9 +343,9 @@
       "context_sentence": "by staying silent until their numbers are overwhelming, the invaders improve their odds considerably."
     },
     "constant": {
-      "etymology": "ラテン語 con-(共に) + stare(立つ) → 変わらず立つ",
-      "definition": "一定の、不変の。",
-      "usage_in_passage": "\"held constant\" は統制条件を表す実験科学の定型表現で、設問2の根拠となる。",
+      "etymology": "Latin con- 'together' + stare 'to stand' → 'standing unchanged'",
+      "definition": "Staying the same; not changing.",
+      "usage_in_passage": "\"held constant\" is a set phrase of experimental science for a controlled condition, and it is the basis for Question 2.",
       "related_terms": [
         "unchanging",
         "steady",
@@ -355,9 +355,9 @@
       "context_sentence": "Nor could the cells be reacting to some change in the flask itself, since the medium was deliberately held constant."
     },
     "continuously": {
-      "etymology": "ラテン語 con-(共に) + tenere(保つ) → 途切れなく",
-      "definition": "絶え間なく。",
-      "usage_in_passage": "\"Each cell continuously releases a chemical signal\" の continuously が、放出が条件付きではなく常時であることを示す。これが濃度を数の指標にする前提となる。",
+      "etymology": "Latin con- 'together' + tenere 'to hold' → 'without a break'",
+      "definition": "Without stopping or interruption.",
+      "usage_in_passage": "The word continuously in \"Each cell continuously releases a chemical signal\" shows that the release is not conditional but goes on all the time. This is the premise that makes concentration an indicator of number.",
       "related_terms": [
         "constantly",
         "incessantly",
@@ -367,9 +367,9 @@
       "context_sentence": "Each cell continuously releases a chemical signal, later named an autoinducer, into its surroundings, and each cell also carries a receptor for it."
     },
     "coordinate": {
-      "etymology": "ラテン語 co-(共に) + ordinare(順序づける)",
-      "definition": "協調する、足並みを揃える。",
-      "usage_in_passage": "\"unable to coordinate\" が、本文が一貫して描いてきた集団行動そのものを標的にすることを示す。",
+      "etymology": "Latin co- 'together' + ordinare 'to put in order'",
+      "definition": "To act together in an organized way.",
+      "usage_in_passage": "\"unable to coordinate\" shows that the target is the collective behaviour itself, which the passage has described throughout.",
       "related_terms": [
         "synchronize",
         "organize",
@@ -379,9 +379,9 @@
       "context_sentence": "Rather than killing bacteria outright, the approach that has driven the rise of resistance, one might instead jam their communication, leaving the cells alive but unable to coordinate."
     },
     "crowd": {
-      "etymology": "古英語 crudan(押す)",
-      "definition": "群衆、寄せ集め。",
-      "usage_in_passage": "\"less like a crowd of individuals\" が、単に数が多いだけの集合を指し、組織された single body と対置される。",
+      "etymology": "Old English crudan 'to press'",
+      "definition": "A large group gathered together without organization.",
+      "usage_in_passage": "\"less like a crowd of individuals\" refers to a collection that is merely large in number, and is set against the organized single body.",
       "related_terms": [
         "throng",
         "multitude",
@@ -391,9 +391,9 @@
       "context_sentence": "The bacteria, in other words, were behaving less like a crowd of individuals than like a single body awaiting a cue."
     },
     "curiosity": {
-      "etymology": "ラテン語 cura(注意、世話) + -ous + -ity",
-      "definition": "珍しいもの、好事家的な話題。",
-      "usage_in_passage": "\"would have remained a curiosity of marine biology\" が、普遍性が判明する前の位置づけを示し、後続との落差を作る。",
+      "etymology": "Latin cura 'care, attention' + -ous + -ity",
+      "definition": "An unusual thing that is interesting mainly to specialists.",
+      "usage_in_passage": "\"would have remained a curiosity of marine biology\" shows where the discovery stood before its universality became clear, and creates a gap with what follows.",
       "related_terms": [
         "oddity",
         "novelty",
@@ -403,9 +403,9 @@
       "context_sentence": "The discovery would have remained a curiosity of marine biology had the same mechanism not turned out to be nearly universal."
     },
     "deliberately": {
-      "etymology": "ラテン語 de-(完全に) + librare(秤にかける) → よく検討して",
-      "definition": "意図的に、慎重に。",
-      "usage_in_passage": "\"the medium was deliberately held constant\" の deliberately が、条件一定が偶然ではなく実験設計であることを示し、対立仮説の排除を正当化する。",
+      "etymology": "Latin de- 'completely' + librare 'to weigh' → 'after careful weighing'",
+      "definition": "On purpose; intentionally.",
+      "usage_in_passage": "The word deliberately in \"the medium was deliberately held constant\" shows that the constant condition was not an accident but part of the experimental design, and this justifies ruling out the competing hypothesis.",
       "related_terms": [
         "intentionally",
         "purposely",
@@ -415,9 +415,9 @@
       "context_sentence": "Nor could the cells be reacting to some change in the flask itself, since the medium was deliberately held constant."
     },
     "density": {
-      "etymology": "ラテン語 densus(濃い) + -ity",
-      "definition": "密度。",
-      "usage_in_passage": "\"The clue lay in density\" が本文の鍵概念を導入する。以降の quorum sensing はすべてこの密度依存性の説明として展開される。",
+      "etymology": "Latin densus 'thick' + -ity",
+      "definition": "The number of individuals in a given space.",
+      "usage_in_passage": "\"The clue lay in density\" introduces the key concept of the passage. Everything said about quorum sensing afterwards is developed as an explanation of this dependence on density.",
       "related_terms": [
         "concentration",
         "compactness",
@@ -427,9 +427,9 @@
       "context_sentence": "The clue lay in density."
     },
     "diffuses": {
-      "etymology": "ラテン語 dis-(四方へ) + fundere(注ぐ) → 拡散する",
-      "definition": "拡散する。",
-      "usage_in_passage": "\"the molecule diffuses away\" が、低密度では信号が薄まって届かない理由を与える。",
+      "etymology": "Latin dis- 'in all directions' + fundere 'to pour' → 'to spread out'",
+      "definition": "Spreads out through the surrounding space.",
+      "usage_in_passage": "\"the molecule diffuses away\" gives the reason why, at low density, the signal is diluted and does not reach the cells.",
       "related_terms": [
         "disperses",
         "spread",
@@ -439,9 +439,9 @@
       "context_sentence": "When the population is sparse, the molecule diffuses away and its concentration remains negligible."
     },
     "discovery": {
-      "etymology": "dis-(否定) + ラテン語 cooperire(覆う) → 覆いを取る",
-      "definition": "発見。",
-      "usage_in_passage": "\"The discovery would have remained a curiosity\" が仮定法で始まり、実際にはそうならなかったという反転を用意する。",
+      "etymology": "dis- (negation) + Latin cooperire 'to cover' → 'to take the cover off'",
+      "definition": "The act of finding something that was not known before.",
+      "usage_in_passage": "\"The discovery would have remained a curiosity\" opens with a hypothetical past form and prepares the reversal: in fact this did not happen.",
       "related_terms": [
         "finding",
         "revelation",
@@ -451,9 +451,9 @@
       "context_sentence": "The discovery would have remained a curiosity of marine biology had the same mechanism not turned out to be nearly universal."
     },
     "disperses": {
-      "etymology": "ラテン語 dis-(四方へ) + spargere(まく) → 散らす",
-      "definition": "散逸する。",
-      "usage_in_passage": "\"faster than it disperses\" が accumulates の対項で、この収支が逆転する点が閾値であることを含意する。",
+      "etymology": "Latin dis- 'in all directions' + spargere 'to scatter' → 'to scatter'",
+      "definition": "Scatters and spreads away.",
+      "usage_in_passage": "\"faster than it disperses\" is the counterpart of accumulates, and implies that the point where this balance is reversed is the threshold.",
       "related_terms": [
         "diffuse",
         "scatter",
@@ -463,9 +463,9 @@
       "context_sentence": "As the cells multiply, however, the signal accumulates faster than it disperses, until it crosses a threshold at which the receptors are occupied and a whole battery of genes is switched on at once."
     },
     "divides": {
-      "etymology": "ラテン語 dividere(di- 分離 + videre 分ける)",
-      "definition": "分裂する、分かれる。",
-      "usage_in_passage": "\"A single cell divides\" が細菌の増殖を最小単位で描き、次の drift apart と対になって「増えても繋がらない」という通説を絵にする。",
+      "etymology": "Latin dividere (di- 'apart' + videre 'to separate')",
+      "definition": "Splits into two; separates.",
+      "usage_in_passage": "\"A single cell divides\" describes bacterial growth in its smallest unit and, paired with the following drift apart, gives a picture of the accepted view that bacteria 'multiply but do not connect'.",
       "related_terms": [
         "split",
         "separate",
@@ -475,9 +475,9 @@
       "context_sentence": "A single cell divides, the two daughter cells drift apart, and whatever either of them accomplishes it appears to accomplish alone."
     },
     "drift": {
-      "etymology": "古英語 drifan(駆り立てる)に由来 → 流される",
-      "definition": "漂う、流れ去る。",
-      "usage_in_passage": "\"the two daughter cells drift apart\" が、分裂後に関係が絶たれるという想定を示す。",
+      "etymology": "From Old English drifan 'to drive' → 'to be carried along'",
+      "definition": "To be carried slowly away, as if by a current.",
+      "usage_in_passage": "\"the two daughter cells drift apart\" expresses the assumption that the relationship between the cells is cut off after division.",
       "related_terms": [
         "float",
         "wander",
@@ -487,9 +487,9 @@
       "context_sentence": "A single cell divides, the two daughter cells drift apart, and whatever either of them accomplishes it appears to accomplish alone."
     },
     "driven": {
-      "etymology": "古英語 drifan(駆り立てる)の過去分詞",
-      "definition": "引き起こされた、駆動された。",
-      "usage_in_passage": "\"the approach that has driven the rise of resistance\" が、従来手法を耐性拡大の原因として名指しし、対案の必要性を根拠づける。",
+      "etymology": "Past participle of Old English drifan 'to drive'",
+      "definition": "Caused or pushed forward.",
+      "usage_in_passage": "\"the approach that has driven the rise of resistance\" names the conventional method as the cause of the spread of resistance, and gives the grounds for needing an alternative.",
       "related_terms": [
         "propelled",
         "prompted",
@@ -499,9 +499,9 @@
       "context_sentence": "Rather than killing bacteria outright, the approach that has driven the rise of resistance, one might instead jam their communication, leaving the cells alive but unable to coordinate."
     },
     "eliminate": {
-      "etymology": "ラテン語 e-(外へ) + limen(敷居) → 敷居の外へ出す",
-      "definition": "排除する、根絶する。",
-      "usage_in_passage": "\"a threat it could easily eliminate\" が、少数のうちは駆逐されるという前提を置き、沈黙戦略の合理性を支える。",
+      "etymology": "Latin e- 'out' + limen 'threshold' → 'to put out over the threshold'",
+      "definition": "To remove or destroy completely.",
+      "usage_in_passage": "\"a threat it could easily eliminate\" sets up the premise that the bacteria are wiped out while they are few, and supports the logic of the strategy of silence.",
       "related_terms": [
         "eradicate",
         "remove",
@@ -511,9 +511,9 @@
       "context_sentence": "Releasing toxins while still few in number would merely alert the immune system to a threat it could easily eliminate;"
     },
     "emerged": {
-      "etymology": "ラテン語 e-(外へ) + mergere(沈める) → 浮かび上がる",
-      "definition": "明らかになる。",
-      "usage_in_passage": "\"it emerged\" という挿入句が、後から判明したという時間的な順序を保ちつつ文を進める。",
+      "etymology": "Latin e- 'out' + mergere 'to dip' → 'to rise to the surface'",
+      "definition": "Became known.",
+      "usage_in_passage": "The inserted phrase \"it emerged\" moves the sentence forward while keeping the order in time: this was found out later.",
       "related_terms": [
         "transpired",
         "surfaced",
@@ -523,9 +523,9 @@
       "context_sentence": "Many pathogens, it emerged, use quorum sensing to schedule their assault on a host."
     },
     "erase": {
-      "etymology": "ラテン語 e-(外へ) + radere(削る) → 削り取る",
-      "definition": "消す、消し去る。",
-      "usage_in_passage": "\"erase their silhouettes against moonlit water\" は「照らす」の逆で、光を隠蔽の道具として使うという逆説を一語で表す。",
+      "etymology": "Latin e- 'out' + radere 'to scrape' → 'to scrape away'",
+      "definition": "To remove completely; to wipe out.",
+      "usage_in_passage": "\"erase their silhouettes against moonlit water\" is the opposite of 'illuminate', and expresses in one word the paradox of using light as a tool for concealment.",
       "related_terms": [
         "efface",
         "obliterate",
@@ -535,9 +535,9 @@
       "context_sentence": "The organism is luminescent, and it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water."
     },
     "erode": {
-      "etymology": "ラテン語 e-(外へ) + rodere(かじる) → 少しずつ削る",
-      "definition": "浸食する、徐々に崩れる。",
-      "usage_in_passage": "\"began to erode\" は突然の否定ではなく漸進的な崩壊を選んだ語で、1970年代以降の研究の積み重ねという含みを持つ。",
+      "etymology": "Latin e- 'out' + rodere 'to gnaw' → 'to wear away little by little'",
+      "definition": "To wear away or weaken gradually.",
+      "usage_in_passage": "\"began to erode\" is a word chosen for a gradual collapse, not a sudden rejection, and it suggests the build-up of research from the 1970s onward.",
       "related_terms": [
         "wear away",
         "undermine",
@@ -547,9 +547,9 @@
       "context_sentence": "This assumption began to erode in the 1970s, when microbiologists turned their attention to an unremarkable marine bacterium called Vibrio fischeri."
     },
     "evolve": {
-      "etymology": "ラテン語 e-(外へ) + volvere(巻く) → 展開する",
-      "definition": "進化する。",
-      "usage_in_passage": "\"less pressure to evolve around it\" が、耐性の獲得を進化の問題として定式化する。",
+      "etymology": "Latin e- 'out' + volvere 'to roll' → 'to unfold'",
+      "definition": "To change genetically over generations.",
+      "usage_in_passage": "\"less pressure to evolve around it\" formulates the gaining of resistance as a question of evolution.",
       "related_terms": [
         "adapt",
         "develop",
@@ -559,9 +559,9 @@
       "context_sentence": "A drug that merely silences an organism exerts less pressure to evolve around it than one that threatens the organism with death."
     },
     "exerts": {
-      "etymology": "ラテン語 ex-(外へ) + serere(繋ぐ) → 力を及ぼす",
-      "definition": "(力を)及ぼす。",
-      "usage_in_passage": "\"exerts less pressure to evolve around it\" が、進化的選択圧の強弱という観点を導入し、新戦略の理論的な利点を述べる。",
+      "etymology": "Latin ex- 'out' + serere 'to join' → 'to apply force'",
+      "definition": "Applies (force or pressure).",
+      "usage_in_passage": "\"exerts less pressure to evolve around it\" introduces the viewpoint of stronger or weaker evolutionary selection pressure, and states the theoretical advantage of the new strategy.",
       "related_terms": [
         "apply",
         "wield",
@@ -571,9 +571,9 @@
       "context_sentence": "A drug that merely silences an organism exerts less pressure to evolve around it than one that threatens the organism with death."
     },
     "expense": {
-      "etymology": "ラテン語 ex-(外へ) + pendere(量る、支払う)",
-      "definition": "費用、代償。",
-      "usage_in_passage": "\"the considerable expense of producing light\" が、発光を生化学的な出費として捉える経済的な比喩を導入する。",
+      "etymology": "Latin ex- 'out' + pendere 'to weigh, to pay'",
+      "definition": "The cost required for something.",
+      "usage_in_passage": "\"the considerable expense of producing light\" introduces an economic metaphor that treats light production as a biochemical expenditure.",
       "related_terms": [
         "cost",
         "outlay",
@@ -583,9 +583,9 @@
       "context_sentence": "Something, it seemed, allowed each bacterium to register how many others surrounded it, and only when that number was sufficient did the cells commit to the considerable expense of producing light."
     },
     "explanation": {
-      "etymology": "ラテン語 ex-(外へ) + planare(平らにする) → 解きほぐす",
-      "definition": "説明、解釈。",
-      "usage_in_passage": "\"The explanation could not be that...\" が消去法の起点で、以降2文にわたり候補仮説を1つずつ退ける構造を宣言する。",
+      "etymology": "Latin ex- 'out' + planare 'to make flat' → 'to smooth out, to unravel'",
+      "definition": "A statement that makes clear why something happens.",
+      "usage_in_passage": "\"The explanation could not be that\" is the starting point of the process of elimination, and announces a structure in which the candidate hypotheses are rejected one by one over the next two sentences.",
       "related_terms": [
         "account",
         "interpretation",
@@ -595,9 +595,9 @@
       "context_sentence": "The explanation could not be that individual cells were switching on at random, for that would have produced a gradual brightening rather than a sudden one."
     },
     "flask": {
-      "etymology": "中世ラテン語 flasca(瓶)",
-      "definition": "フラスコ、実験用の容器。",
-      "usage_in_passage": "\"A flask of these bacteria grown in the laboratory\" が、観察の場を野外から実験室へ移し、第2段落の統制された条件の議論を可能にする。",
+      "etymology": "Medieval Latin flasca 'bottle'",
+      "definition": "A glass container used in laboratory experiments.",
+      "usage_in_passage": "\"A flask of these bacteria grown in the laboratory\" moves the place of observation from the wild to the laboratory, and makes possible the discussion of controlled conditions in paragraph 2.",
       "related_terms": [
         "vessel",
         "beaker",
@@ -607,9 +607,9 @@
       "context_sentence": "A flask of these bacteria grown in the laboratory remained dark for hours and then, quite abruptly, began to shine."
     },
     "glow": {
-      "etymology": "古英語 glowan(輝く)",
-      "definition": "光、輝き。",
-      "usage_in_passage": "\"use the glow to erase their silhouettes\" で、光が手段として機能することを示す。",
+      "etymology": "Old English glowan 'to shine'",
+      "definition": "A steady light.",
+      "usage_in_passage": "In \"use the glow to erase their silhouettes\", it shows that the light works as a means to an end.",
       "related_terms": [
         "shine",
         "radiance",
@@ -619,9 +619,9 @@
       "context_sentence": "The organism is luminescent, and it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water."
     },
     "gradual": {
-      "etymology": "ラテン語 gradus(段階) + -al → 段階を踏む",
-      "definition": "徐々の、緩やかな。",
-      "usage_in_passage": "\"would have produced a gradual brightening rather than a sudden one\" で、ランダム説が予測する結果を示し、観察との食い違いから棄却する。",
+      "etymology": "Latin gradus 'step' + -al → 'going step by step'",
+      "definition": "Happening slowly, by degrees.",
+      "usage_in_passage": "\"would have produced a gradual brightening rather than a sudden one\" states the result that the random-switching hypothesis predicts, and rejects it because it does not match the observation.",
       "related_terms": [
         "incremental",
         "progressive",
@@ -631,9 +631,9 @@
       "context_sentence": "The explanation could not be that individual cells were switching on at random, for that would have produced a gradual brightening rather than a sudden one."
     },
     "grown": {
-      "etymology": "古英語 growan(成長する)の過去分詞",
-      "definition": "育てられた、培養された。",
-      "usage_in_passage": "\"grown in the laboratory\" が人為的な培養条件を示し、自然界の共生とは切り離した観察であることを断る。",
+      "etymology": "Past participle of Old English growan 'to grow'",
+      "definition": "Raised or cultured.",
+      "usage_in_passage": "\"grown in the laboratory\" points to artificial culture conditions and makes clear that the observation is separate from the symbiosis found in nature.",
       "related_terms": [
         "cultured",
         "cultivated",
@@ -643,9 +643,9 @@
       "context_sentence": "A flask of these bacteria grown in the laboratory remained dark for hours and then, quite abruptly, began to shine."
     },
     "immune": {
-      "etymology": "ラテン語 im-(否定) + munus(務め) → 義務を免れた → 免疫の",
-      "definition": "免疫の。",
-      "usage_in_passage": "\"alert the immune system to a threat\" が、病原体側の計算に対する宿主側の対抗力を導入する。",
+      "etymology": "Latin im- (negation) + munus 'duty' → 'exempt from duty' → 'relating to immunity'",
+      "definition": "Relating to the body's defences against infection.",
+      "usage_in_passage": "\"alert the immune system to a threat\" introduces the host's power to fight back against the pathogens' calculation.",
       "related_terms": [
         "immunity",
         "resistant",
@@ -655,9 +655,9 @@
       "context_sentence": "Releasing toxins while still few in number would merely alert the immune system to a threat it could easily eliminate;"
     },
     "insight": {
-      "etymology": "in-(中へ) + sight(見ること) → 内側を見通すこと",
-      "definition": "洞察、着眼。",
-      "usage_in_passage": "\"This insight has suggested an unfamiliar strategy for medicine\" が、基礎研究の知見を応用へ橋渡しする一文。",
+      "etymology": "in- 'into' + sight 'seeing' → 'seeing into the inside'",
+      "definition": "A clear understanding of how something works.",
+      "usage_in_passage": "\"This insight has suggested an unfamiliar strategy for medicine\" is the sentence that bridges a finding of basic research to its application.",
       "related_terms": [
         "understanding",
         "perception",
@@ -667,9 +667,9 @@
       "context_sentence": "This insight has suggested an unfamiliar strategy for medicine."
     },
     "invaders": {
-      "etymology": "ラテン語 in-(中へ) + vadere(行く) + -er",
-      "definition": "侵入者。",
-      "usage_in_passage": "\"the invaders improve their odds considerably\" が病原体を軍事的な主体として描き、assault の比喩を一貫させる。",
+      "etymology": "Latin in- 'into' + vadere 'to go' + -er",
+      "definition": "Those that enter by force in order to attack.",
+      "usage_in_passage": "\"the invaders improve their odds considerably\" presents the pathogens as a military force and keeps the metaphor of assault consistent.",
       "related_terms": [
         "intruders",
         "attackers",
@@ -679,9 +679,9 @@
       "context_sentence": "by staying silent until their numbers are overwhelming, the invaders improve their odds considerably."
     },
     "killing": {
-      "etymology": "中英語 killen(殺す) + -ing",
-      "definition": "殺すこと。",
-      "usage_in_passage": "\"Rather than killing bacteria outright\" が従来の抗生物質の原理を一語で要約し、対案の起点になる。",
+      "etymology": "Middle English killen 'to kill' + -ing",
+      "definition": "The act of causing death.",
+      "usage_in_passage": "\"Rather than killing bacteria outright\" sums up in one word the principle of conventional antibiotics, and is the starting point for the alternative.",
       "related_terms": [
         "slaying",
         "eradication",
@@ -691,9 +691,9 @@
       "context_sentence": "Rather than killing bacteria outright, the approach that has driven the rise of resistance, one might instead jam their communication, leaving the cells alive but unable to coordinate."
     },
     "luminescent": {
-      "etymology": "ラテン語 lumen(光) + -escent(〜しつつある)",
-      "definition": "発光する。",
-      "usage_in_passage": "\"The organism is luminescent\" が本文の観察対象そのものを導入する。熱を伴う incandescent と対比される生物発光を指す。",
+      "etymology": "Latin lumen 'light' + -escent 'becoming'",
+      "definition": "Giving off light without heat.",
+      "usage_in_passage": "\"The organism is luminescent\" introduces the very thing the passage observes. It refers to biological light production, in contrast to incandescent, which involves heat.",
       "related_terms": [
         "bioluminescent",
         "glowing",
@@ -703,9 +703,9 @@
       "context_sentence": "The organism is luminescent, and it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water."
     },
     "mechanism": {
-      "etymology": "ギリシャ語 mechane(仕掛け) + -ism",
-      "definition": "仕組み、機構。",
-      "usage_in_passage": "\"had the same mechanism not turned out to be nearly universal\" が、イカの発光と病原体の毒素放出を同一の仕組みとして束ねる。",
+      "etymology": "Greek mechane 'device' + -ism",
+      "definition": "The way in which a process works.",
+      "usage_in_passage": "\"had the same mechanism not turned out to be nearly universal\" ties together the squid's light and the pathogens' release of toxins as one and the same process.",
       "related_terms": [
         "process",
         "apparatus",
@@ -715,9 +715,9 @@
       "context_sentence": "The discovery would have remained a curiosity of marine biology had the same mechanism not turned out to be nearly universal."
     },
     "merely": {
-      "etymology": "ラテン語 merus(純粋な) → 単に",
-      "definition": "単に〜にすぎない。",
-      "usage_in_passage": "\"would merely alert the immune system\" の merely が、早期放出の効果が警告だけで利益がないことを一語で切り捨てる。",
+      "etymology": "Latin merus 'pure' → 'only'",
+      "definition": "Only; nothing more than.",
+      "usage_in_passage": "The word merely in \"would merely alert the immune system\" dismisses in one word the effect of an early release: it would only be a warning and bring no benefit.",
       "related_terms": [
         "only",
         "simply",
@@ -727,9 +727,9 @@
       "context_sentence": "Releasing toxins while still few in number would merely alert the immune system to a threat it could easily eliminate;"
     },
     "microbiologists": {
-      "etymology": "ギリシャ語 mikros(小さい) + bios(生命) + logos(学) + -ist(人)",
-      "definition": "微生物学者。",
-      "usage_in_passage": "\"when microbiologists turned their attention to\" が、通説を崩した主体を特定する。",
+      "etymology": "Greek mikros 'small' + bios 'life' + logos 'study' + -ist 'person'",
+      "definition": "Scientists who study microorganisms.",
+      "usage_in_passage": "\"when microbiologists turned their attention to\" identifies who it was that undermined the accepted view.",
       "related_terms": [
         "biologist",
         "bacteriologist",
@@ -739,9 +739,9 @@
       "context_sentence": "This assumption began to erode in the 1970s, when microbiologists turned their attention to an unremarkable marine bacterium called Vibrio fischeri."
     },
     "molecule": {
-      "etymology": "ラテン語 moles(塊) + -cula(小さい) → 小さな塊",
-      "definition": "分子。",
-      "usage_in_passage": "\"a small molecule\" が、密度の知覚という抽象的な能力を、物質的な機構へ落とし込む。",
+      "etymology": "Latin moles 'mass' + -cula 'small' → 'a small mass'",
+      "definition": "The smallest unit of a chemical substance.",
+      "usage_in_passage": "\"a small molecule\" brings the abstract ability to sense density down to a physical mechanism.",
       "related_terms": [
         "compound",
         "particle",
@@ -751,9 +751,9 @@
       "context_sentence": "That something proved to be a small molecule."
     },
     "moonlit": {
-      "etymology": "moon(月) + lit(light の過去分詞) → 月に照らされた",
-      "definition": "月明かりに照らされた。",
-      "usage_in_passage": "\"against moonlit water\" が、輪郭が生じる光源を特定し、なぜ発光が隠蔽になるのかを成立させる。",
+      "etymology": "moon 'moon' + lit (past participle of light) → 'lit by the moon'",
+      "definition": "Lit by the light of the moon.",
+      "usage_in_passage": "\"against moonlit water\" identifies the light source that produces the outline, and makes it clear why giving off light works as concealment.",
       "related_terms": [
         "moonlight",
         "illuminated",
@@ -763,9 +763,9 @@
       "context_sentence": "The organism is luminescent, and it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water."
     },
     "multiply": {
-      "etymology": "ラテン語 multus(多い) + plicare(折る) → 何倍にもなる",
-      "definition": "増殖する。",
-      "usage_in_passage": "\"As the cells multiply, however\" の however が高密度側への転換を示す。",
+      "etymology": "Latin multus 'many' + plicare 'to fold' → 'to become many times more'",
+      "definition": "To increase in number by reproducing.",
+      "usage_in_passage": "The word however in \"As the cells multiply, however\" marks the turn to the high-density side.",
       "related_terms": [
         "proliferate",
         "reproduce",
@@ -775,9 +775,9 @@
       "context_sentence": "As the cells multiply, however, the signal accumulates faster than it disperses, until it crosses a threshold at which the receptors are occupied and a whole battery of genes is switched on at once."
     },
     "negligible": {
-      "etymology": "ラテン語 neglegere(顧みない) + -ible → 無視してよい",
-      "definition": "無視できるほど小さい。",
-      "usage_in_passage": "\"its concentration remains negligible\" は、濃度がゼロではないが作用しない水準にとどまることを指し、設問3の解答根拠となる。",
+      "etymology": "Latin neglegere 'to disregard' + -ible → 'that may be disregarded'",
+      "definition": "So small that it can be ignored.",
+      "usage_in_passage": "\"its concentration remains negligible\" means that the concentration is not zero but stays at a level that has no effect, and it is the basis for the answer to Question 3.",
       "related_terms": [
         "insignificant",
         "trifling",
@@ -787,9 +787,9 @@
       "context_sentence": "When the population is sparse, the molecule diffuses away and its concentration remains negligible."
     },
     "occupied": {
-      "etymology": "ラテン語 ob-(〜に向かって) + capere(取る) → 占める",
-      "definition": "占有された、埋まった。",
-      "usage_in_passage": "\"the receptors are occupied\" が、受容体が信号で満たされた状態を指し、遺伝子発現の引き金となる。",
+      "etymology": "Latin ob- 'toward' + capere 'to take' → 'to take up'",
+      "definition": "Filled; taken up.",
+      "usage_in_passage": "\"the receptors are occupied\" refers to the state in which the receptors are filled with the signal, which is the trigger for gene expression.",
       "related_terms": [
         "filled",
         "engaged",
@@ -799,9 +799,9 @@
       "context_sentence": "As the cells multiply, however, the signal accumulates faster than it disperses, until it crosses a threshold at which the receptors are occupied and a whole battery of genes is switched on at once."
     },
     "odds": {
-      "etymology": "古ノルド語 oddi(奇数、不揃い) → 差、勝算",
-      "definition": "勝算、見込み。",
-      "usage_in_passage": "\"improve their odds considerably\" が、沈黙戦略の利得を確率の言葉で表す。",
+      "etymology": "Old Norse oddi 'odd number, unevenness' → 'difference, chances'",
+      "definition": "The chances of success.",
+      "usage_in_passage": "\"improve their odds considerably\" expresses the gain from the strategy of silence in the language of probability.",
       "related_terms": [
         "chances",
         "likelihood",
@@ -811,9 +811,9 @@
       "context_sentence": "by staying silent until their numbers are overwhelming, the invaders improve their odds considerably."
     },
     "organism": {
-      "etymology": "ギリシャ語 organon(器官) + -ism",
-      "definition": "生物、有機体。",
-      "usage_in_passage": "\"The organism is luminescent\" で前文の bacterium を言い換え、同じ指示対象を保ちながら反復を避ける。",
+      "etymology": "Greek organon 'organ' + -ism",
+      "definition": "A living thing.",
+      "usage_in_passage": "In \"The organism is luminescent\" it rephrases bacterium from the previous sentence, keeping the same referent while avoiding repetition.",
       "related_terms": [
         "organisms",
         "creature",
@@ -823,9 +823,9 @@
       "context_sentence": "Bacteria were long regarded as the most solitary of organisms."
     },
     "organisms": {
-      "etymology": "ギリシャ語 organon(道具、器官) + -ism → 器官を持つもの",
-      "definition": "生物、有機体(複数形)。",
-      "usage_in_passage": "\"the most solitary of organisms\" と生物一般の中に位置づけることで、細菌の特異性を強調する。",
+      "etymology": "Greek organon 'tool, organ' + -ism → 'something that has organs'",
+      "definition": "Living things (plural form).",
+      "usage_in_passage": "\"the most solitary of organisms\" places bacteria among living things in general and so stresses how exceptional they were thought to be.",
       "related_terms": [
         "organism",
         "creature",
@@ -835,9 +835,9 @@
       "context_sentence": "Bacteria were long regarded as the most solitary of organisms."
     },
     "organs": {
-      "etymology": "ギリシャ語 organon(道具、器官)",
-      "definition": "器官。",
-      "usage_in_passage": "\"the light organs of certain squid\" が、細菌が単独ではなく宿主との関係の中にいることを早い段階で示す。",
+      "etymology": "Greek organon 'tool, organ'",
+      "definition": "Parts of the body that have a particular function.",
+      "usage_in_passage": "\"the light organs of certain squid\" shows at an early stage that the bacteria do not live alone but in a relationship with a host.",
       "related_terms": [
         "organ",
         "tissue",
@@ -847,9 +847,9 @@
       "context_sentence": "The organism is luminescent, and it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water."
     },
     "outright": {
-      "etymology": "out-(完全に) + right(まっすぐに)",
-      "definition": "完全に、即座に。",
-      "usage_in_passage": "\"killing bacteria outright\" の outright が、殺菌の徹底性を示し、後の \"leaving the cells alive\" と鋭く対立する。",
+      "etymology": "out- 'completely' + right 'straight'",
+      "definition": "Completely and at once.",
+      "usage_in_passage": "The word outright in \"killing bacteria outright\" shows how thorough the killing is, and stands in sharp opposition to the later \"leaving the cells alive\".",
       "related_terms": [
         "completely",
         "utterly",
@@ -859,9 +859,9 @@
       "context_sentence": "Rather than killing bacteria outright, the approach that has driven the rise of resistance, one might instead jam their communication, leaving the cells alive but unable to coordinate."
     },
     "overwhelming": {
-      "etymology": "over-(上を) + 中英語 whelmen(ひっくり返す)",
-      "definition": "圧倒的な。",
-      "usage_in_passage": "\"until their numbers are overwhelming\" が、閾値を宿主側の視点で言い直したもので、第3段落の threshold と対応する。",
+      "etymology": "over- 'over' + Middle English whelmen 'to turn upside down'",
+      "definition": "Too great in number to be resisted.",
+      "usage_in_passage": "\"until their numbers are overwhelming\" restates the threshold from the host's point of view, and corresponds to threshold in paragraph 3.",
       "related_terms": [
         "overpowering",
         "crushing",
@@ -871,9 +871,9 @@
       "context_sentence": "by staying silent until their numbers are overwhelming, the invaders improve their odds considerably."
     },
     "parliamentary": {
-      "etymology": "フランス語 parler(話す) → parlement(議会) + -ary",
-      "definition": "議会の。",
-      "usage_in_passage": "\"borrowed from parliamentary procedure: nothing is decided until enough members are present to act\" が、定足数の比喩を明示的に説明し、専門用語を読者の既知の制度に接続する。",
+      "etymology": "French parler 'to speak' → parlement 'parliament' + -ary",
+      "definition": "Relating to a parliament.",
+      "usage_in_passage": "\"borrowed from parliamentary procedure: nothing is decided until enough members are present to act\" explains the quorum metaphor explicitly, and connects the technical term to an institution the reader already knows.",
       "related_terms": [
         "legislative",
         "congressional",
@@ -883,9 +883,9 @@
       "context_sentence": "The process is now called quorum sensing, a term borrowed from parliamentary procedure: nothing is decided until enough members are present to act."
     },
     "pathogens": {
-      "etymology": "ギリシャ語 pathos(苦しみ、病) + -gen(生むもの)",
-      "definition": "病原体。",
-      "usage_in_passage": "\"Many pathogens, it emerged, use quorum sensing\" が、話題を海洋生物から医学へ移す転換点。",
+      "etymology": "Greek pathos 'suffering, disease' + -gen 'something that produces'",
+      "definition": "Microorganisms that cause disease.",
+      "usage_in_passage": "\"Many pathogens, it emerged, use quorum sensing\" is the turning point where the topic moves from marine life to medicine.",
       "related_terms": [
         "germs",
         "microbes",
@@ -895,9 +895,9 @@
       "context_sentence": "Many pathogens, it emerged, use quorum sensing to schedule their assault on a host."
     },
     "proved": {
-      "etymology": "ラテン語 probare(試す、証明する)",
-      "definition": "〜と判明する。",
-      "usage_in_passage": "\"That something proved to be a small molecule\" が、第2段落末の未特定の \"Something\" に答えを与えて段落を接続する。",
+      "etymology": "Latin probare 'to test, to prove'",
+      "definition": "Turned out to be.",
+      "usage_in_passage": "\"That something proved to be a small molecule\" gives an answer to the unidentified \"Something\" at the end of paragraph 2 and links the two paragraphs.",
       "related_terms": [
         "turned out",
         "demonstrated",
@@ -907,9 +907,9 @@
       "context_sentence": "That something proved to be a small molecule."
     },
     "puzzled": {
-      "etymology": "語源不詳。16世紀英語 puzzle(当惑させる)",
-      "definition": "当惑させる、悩ませる。",
-      "usage_in_passage": "\"What puzzled researchers was not the light itself but its timing\" が、段落の焦点を発光の有無から発光の時刻へ移す転換文。",
+      "etymology": "Origin unknown; from 16th-century English puzzle 'to bewilder'",
+      "definition": "Confused; caused someone to be unable to understand.",
+      "usage_in_passage": "\"What puzzled researchers was not the light itself but its timing\" is the turning sentence that moves the focus of the paragraph from whether there is light to when the light appears.",
       "related_terms": [
         "perplex",
         "baffle",
@@ -919,9 +919,9 @@
       "context_sentence": "What puzzled researchers was not the light itself but its timing."
     },
     "quorum": {
-      "etymology": "ラテン語 qui(誰)の属格複数 quorum。議事定足数の文言に由来",
-      "definition": "定足数。",
-      "usage_in_passage": "\"The process is now called quorum sensing\" が本文の核心用語を導入し、直後に議会の比喩で意味を開く。",
+      "etymology": "Latin quorum, genitive plural of qui 'who'; from the wording used to state the minimum number of members for a meeting",
+      "definition": "The minimum number of members that must be present for a group to make a decision.",
+      "usage_in_passage": "\"The process is now called quorum sensing\" introduces the core term of the passage, and its meaning is then opened up immediately by the parliamentary metaphor.",
       "related_terms": [
         "threshold",
         "majority",
@@ -931,9 +931,9 @@
       "context_sentence": "The process is now called quorum sensing, a term borrowed from parliamentary procedure: nothing is decided until enough members are present to act."
     },
     "reacting": {
-      "etymology": "re-(戻って) + ラテン語 agere(行う) → 反応する",
-      "definition": "反応する。",
-      "usage_in_passage": "\"Nor could the cells be reacting to some change in the flask itself\" が第2の候補仮説(外部環境への反応)を提示し、直後に退ける。",
+      "etymology": "re- 'back' + Latin agere 'to do' → 'to respond'",
+      "definition": "Responding to something.",
+      "usage_in_passage": "\"Nor could the cells be reacting to some change in the flask itself\" presents the second candidate hypothesis (a reaction to the external environment) and rejects it straight away.",
       "related_terms": [
         "responding",
         "answering",
@@ -943,9 +943,9 @@
       "context_sentence": "Nor could the cells be reacting to some change in the flask itself, since the medium was deliberately held constant."
     },
     "receptor": {
-      "etymology": "ラテン語 recipere(受け取る) + -or → 受け取るもの",
-      "definition": "受容体。",
-      "usage_in_passage": "\"a receptor for it\" が信号を読む側の仕組みで、設問4の指示対象を問う文でもある。",
+      "etymology": "Latin recipere 'to receive' + -or → 'something that receives'",
+      "definition": "A molecule on a cell that binds a specific signal.",
+      "usage_in_passage": "\"a receptor for it\" is the mechanism on the side that reads the signal, and it is also the sentence whose referent Question 4 asks about.",
       "related_terms": [
         "receptors",
         "sensor",
@@ -955,9 +955,9 @@
       "context_sentence": "Each cell continuously releases a chemical signal, later named an autoinducer, into its surroundings, and each cell also carries a receptor for it."
     },
     "receptors": {
-      "etymology": "ラテン語 recipere(受け取る) + -or の複数形",
-      "definition": "受容体(複数形)。",
-      "usage_in_passage": "\"the receptors are occupied\" が閾値到達の分子的な実体を与える。",
+      "etymology": "Plural of Latin recipere 'to receive' + -or",
+      "definition": "Molecules on a cell that bind a specific signal (plural form).",
+      "usage_in_passage": "\"the receptors are occupied\" gives the molecular reality of reaching the threshold.",
       "related_terms": [
         "receptor",
         "binding sites",
@@ -967,9 +967,9 @@
       "context_sentence": "As the cells multiply, however, the signal accumulates faster than it disperses, until it crosses a threshold at which the receptors are occupied and a whole battery of genes is switched on at once."
     },
     "regarded": {
-      "etymology": "re-(再び) + ラテン語 gardare(見る) → 繰り返し見る、みなす",
-      "definition": "〜とみなす、評価する。",
-      "usage_in_passage": "\"were long regarded as\" という受動態が、事実ではなく「長く信じられてきた見方」であることを示し、第3文の erode への伏線になる。",
+      "etymology": "re- 'again' + Latin gardare 'to look' → 'to look at repeatedly, to consider'",
+      "definition": "Considered or thought of in a particular way.",
+      "usage_in_passage": "The passive \"were long regarded as\" shows that this is not a fact but 'a view that was long believed', and it prepares for erode in the third sentence.",
       "related_terms": [
         "consider",
         "deem",
@@ -979,9 +979,9 @@
       "context_sentence": "Bacteria were long regarded as the most solitary of organisms."
     },
     "researchers": {
-      "etymology": "re-(再び) + フランス語 cerchier(探す) + -er(人)",
-      "definition": "研究者。",
-      "usage_in_passage": "\"What puzzled researchers\" で、問いを持つ主体を明示し、以降の消去法的推論の担い手を置く。",
+      "etymology": "re- 'again' + French cerchier 'to search' + -er 'person'",
+      "definition": "People who carry out scientific investigation.",
+      "usage_in_passage": "In \"What puzzled researchers\", it names who is asking the question and sets up the people who carry out the reasoning by elimination that follows.",
       "related_terms": [
         "scientists",
         "investigators",
@@ -991,9 +991,9 @@
       "context_sentence": "What puzzled researchers was not the light itself but its timing."
     },
     "resistance": {
-      "etymology": "ラテン語 re-(反して) + sistere(立つ) → 抵抗する",
-      "definition": "耐性、抵抗。",
-      "usage_in_passage": "\"the rise of resistance\" が薬剤耐性という現実の問題を導入し、最終文の進化的軍拡競争の議論へつながる。",
+      "etymology": "Latin re- 'against' + sistere 'to stand' → 'to withstand'",
+      "definition": "The ability of bacteria to survive a drug.",
+      "usage_in_passage": "\"the rise of resistance\" introduces the real-world problem of drug resistance, and leads to the argument about evolution in the closing sentences.",
       "related_terms": [
         "immunity",
         "tolerance",
@@ -1003,9 +1003,9 @@
       "context_sentence": "Rather than killing bacteria outright, the approach that has driven the rise of resistance, one might instead jam their communication, leaving the cells alive but unable to coordinate."
     },
     "shine": {
-      "etymology": "古英語 scinan(輝く)",
-      "definition": "光る、輝く。",
-      "usage_in_passage": "\"began to shine\" が段落を締め、観察された現象を確定させる。",
+      "etymology": "Old English scinan 'to shine'",
+      "definition": "To give off light.",
+      "usage_in_passage": "\"began to shine\" closes the paragraph and fixes the phenomenon that was observed.",
       "related_terms": [
         "glow",
         "gleam",
@@ -1015,9 +1015,9 @@
       "context_sentence": "A flask of these bacteria grown in the laboratory remained dark for hours and then, quite abruptly, began to shine."
     },
     "silences": {
-      "etymology": "ラテン語 silere(黙る) + -ence → 黙らせる",
-      "definition": "黙らせる、沈黙させる。",
-      "usage_in_passage": "\"A drug that merely silences an organism\" が、殺菌ではなく通信遮断という作用機序を一語で表し、次の exerts less pressure の主語になる。",
+      "etymology": "Latin silere 'to be silent' + -ence → 'to make silent'",
+      "definition": "Makes silent; stops from communicating.",
+      "usage_in_passage": "\"A drug that merely silences an organism\" expresses in one word a mode of action that blocks communication without killing, and is the subject of the following exerts less pressure.",
       "related_terms": [
         "mute",
         "quiet",
@@ -1027,9 +1027,9 @@
       "context_sentence": "A drug that merely silences an organism exerts less pressure to evolve around it than one that threatens the organism with death."
     },
     "silent": {
-      "etymology": "ラテン語 silere(黙る)",
-      "definition": "沈黙した、活動を示さない。",
-      "usage_in_passage": "\"by staying silent until their numbers are overwhelming\" が、毒素を出さないことを能動的な戦略として言い換える。",
+      "etymology": "Latin silere 'to be silent'",
+      "definition": "Showing no activity; making no signal.",
+      "usage_in_passage": "\"by staying silent until their numbers are overwhelming\" rephrases not releasing toxins as an active strategy.",
       "related_terms": [
         "quiet",
         "dormant",
@@ -1039,9 +1039,9 @@
       "context_sentence": "by staying silent until their numbers are overwhelming, the invaders improve their odds considerably."
     },
     "silhouettes": {
-      "etymology": "18世紀フランスの財務総監 Étienne de Silhouette の名に由来",
-      "definition": "輪郭、影絵。",
-      "usage_in_passage": "\"erase their silhouettes against moonlit water\" が、下から見上げた時に浮かぶ影という具体的な情景を与える。",
+      "etymology": "From the name of Étienne de Silhouette, an 18th-century French finance minister",
+      "definition": "Dark outlines seen against a lighter background.",
+      "usage_in_passage": "\"erase their silhouettes against moonlit water\" gives the concrete scene of a shadow that stands out when seen from below.",
       "related_terms": [
         "outline",
         "profile",
@@ -1051,9 +1051,9 @@
       "context_sentence": "The organism is luminescent, and it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water."
     },
     "solitary": {
-      "etymology": "ラテン語 solus(単独の) + -arius(性質) → 独りでいる",
-      "definition": "単独の、孤独な。",
-      "usage_in_passage": "\"the most solitary of organisms\" が本文全体の対立軸を作る。最終的に quorum sensing によってこの形容が覆される。",
+      "etymology": "Latin solus 'alone' + -arius (quality) → 'being alone'",
+      "definition": "Living or acting alone.",
+      "usage_in_passage": "\"the most solitary of organisms\" creates the opposition that runs through the whole passage. In the end this description is overturned by quorum sensing.",
       "related_terms": [
         "isolated",
         "lone",
@@ -1063,9 +1063,9 @@
       "context_sentence": "Bacteria were long regarded as the most solitary of organisms."
     },
     "sparse": {
-      "etymology": "ラテン語 spargere(まく)の過去分詞 sparsus → まばらな",
-      "definition": "まばらな、希薄な。",
-      "usage_in_passage": "\"When the population is sparse\" が低密度側の条件を設定し、次の multiply と対になって閾値の両側を描く。",
+      "etymology": "Latin sparsus, past participle of spargere 'to scatter' → 'thinly scattered'",
+      "definition": "Thinly spread; few and far apart.",
+      "usage_in_passage": "\"When the population is sparse\" sets the condition on the low-density side and, paired with the following multiply, describes both sides of the threshold.",
       "related_terms": [
         "scattered",
         "thin",
@@ -1075,9 +1075,9 @@
       "context_sentence": "When the population is sparse, the molecule diffuses away and its concentration remains negligible."
     },
     "squid": {
-      "etymology": "語源不詳。17世紀の船乗り言葉に由来するとされる",
-      "definition": "イカ。",
-      "usage_in_passage": "\"certain squid, which use the glow to erase their silhouettes\" が、発光に生態上の意味を与え、設問1の根拠になる。",
+      "etymology": "Origin unknown; said to come from 17th-century sailors' slang",
+      "definition": "A soft-bodied sea animal with ten arms.",
+      "usage_in_passage": "\"certain squid, which use the glow to erase their silhouettes\" gives light production an ecological meaning, and is the basis for Question 1.",
       "related_terms": [
         "cephalopod",
         "octopus",
@@ -1087,9 +1087,9 @@
       "context_sentence": "The organism is luminescent, and it lives in the light organs of certain squid, which use the glow to erase their silhouettes against moonlit water."
     },
     "sudden": {
-      "etymology": "ラテン語 subitaneus(不意の)",
-      "definition": "突然の。",
-      "usage_in_passage": "\"rather than a sudden one\" の one は brightening を受け、観察された発光の性質を一語で確定する。",
+      "etymology": "Latin subitaneus 'unexpected'",
+      "definition": "Happening quickly and without warning.",
+      "usage_in_passage": "The word one in \"rather than a sudden one\" stands for brightening, and it fixes in one word the nature of the light that was observed.",
       "related_terms": [
         "abrupt",
         "immediate",
@@ -1099,9 +1099,9 @@
       "context_sentence": "The explanation could not be that individual cells were switching on at random, for that would have produced a gradual brightening rather than a sudden one."
     },
     "sufficient": {
-      "etymology": "ラテン語 sub-(下から) + facere(作る) → 足りる",
-      "definition": "十分な。",
-      "usage_in_passage": "\"only when that number was sufficient\" が閾値の存在を予告し、第3段落の threshold で機構として説明される。",
+      "etymology": "Latin sub- 'from below' + facere 'to make' → 'to be enough'",
+      "definition": "Enough for a purpose.",
+      "usage_in_passage": "\"only when that number was sufficient\" announces in advance that a threshold exists, which is explained as a mechanism by threshold in paragraph 3.",
       "related_terms": [
         "adequate",
         "enough",
@@ -1111,9 +1111,9 @@
       "context_sentence": "Something, it seemed, allowed each bacterium to register how many others surrounded it, and only when that number was sufficient did the cells commit to the considerable expense of producing light."
     },
     "surrounded": {
-      "etymology": "ラテン語 super-(上に) + undare(波打つ) → 取り巻く",
-      "definition": "取り囲む。",
-      "usage_in_passage": "\"register how many others surrounded it\" が、個々の細胞が周囲の数を知覚するという本文の中心的主張を初めて言葉にする。",
+      "etymology": "Latin super- 'over' + undare 'to rise in waves' → 'to encircle'",
+      "definition": "Was all around something.",
+      "usage_in_passage": "\"register how many others surrounded it\" puts into words for the first time the central claim of the passage, that each cell senses the number around it.",
       "related_terms": [
         "encircle",
         "enclose",
@@ -1123,9 +1123,9 @@
       "context_sentence": "Something, it seemed, allowed each bacterium to register how many others surrounded it, and only when that number was sufficient did the cells commit to the considerable expense of producing light."
     },
     "surroundings": {
-      "etymology": "super-(上に) + undare(波打つ) → 取り巻くもの",
-      "definition": "周囲、環境。",
-      "usage_in_passage": "\"releases a chemical signal... into its surroundings\" が、信号が細胞外の共有空間に出ることを示す。この共有性が数の集計を可能にする。",
+      "etymology": "super- 'over' + undare 'to rise in waves' → 'what encircles'",
+      "definition": "The area and conditions around something.",
+      "usage_in_passage": "\"into its surroundings\" shows that the chemical signal goes out into the shared space outside the cell. This shared space is what makes it possible to total up the numbers.",
       "related_terms": [
         "environment",
         "milieu",
@@ -1135,9 +1135,9 @@
       "context_sentence": "Each cell continuously releases a chemical signal, later named an autoinducer, into its surroundings, and each cell also carries a receptor for it."
     },
     "threat": {
-      "etymology": "古英語 threat(圧迫、群れ)",
-      "definition": "脅威。",
-      "usage_in_passage": "\"a threat it could easily eliminate\" が、少数時の病原体を免疫から見た評価として位置づける。",
+      "etymology": "Old English threat 'pressure, crowd'",
+      "definition": "Something likely to cause harm.",
+      "usage_in_passage": "\"a threat it could easily eliminate\" places the pathogens, while they are few, as they are judged from the side of the immune system.",
       "related_terms": [
         "danger",
         "menace",
@@ -1147,9 +1147,9 @@
       "context_sentence": "Releasing toxins while still few in number would merely alert the immune system to a threat it could easily eliminate;"
     },
     "threatens": {
-      "etymology": "古英語 threat(圧迫) → 脅かす",
-      "definition": "脅かす。",
-      "usage_in_passage": "\"one that threatens the organism with death\" が従来薬を指し、silences との対比で選択圧の差を説明する。最終文の留保はこの差の大きさを問う。",
+      "etymology": "Old English threat 'pressure' → 'to menace'",
+      "definition": "Puts in danger.",
+      "usage_in_passage": "\"one that threatens the organism with death\" refers to conventional drugs and, through the contrast with silences, explains the difference in selection pressure. The reservation in the final sentence questions how large this difference is.",
       "related_terms": [
         "endanger",
         "menace",
@@ -1159,9 +1159,9 @@
       "context_sentence": "A drug that merely silences an organism exerts less pressure to evolve around it than one that threatens the organism with death."
     },
     "threshold": {
-      "etymology": "古英語 therscold(踏み板、敷居)",
-      "definition": "閾値、境目。",
-      "usage_in_passage": "\"until it crosses a threshold\" が、第2段落の abruptly を機構的に説明する語。連続的な蓄積が不連続な応答に変わる点を指す。",
+      "etymology": "Old English therscold 'tread board, doorsill'",
+      "definition": "The level at which something starts to happen.",
+      "usage_in_passage": "\"until it crosses a threshold\" is the word that explains abruptly from paragraph 1 in terms of mechanism. It refers to the point where continuous accumulation turns into a discontinuous response.",
       "related_terms": [
         "limit",
         "boundary",
@@ -1171,9 +1171,9 @@
       "context_sentence": "As the cells multiply, however, the signal accumulates faster than it disperses, until it crosses a threshold at which the receptors are occupied and a whole battery of genes is switched on at once."
     },
     "toxins": {
-      "etymology": "ギリシャ語 toxikon(矢に塗る毒)",
-      "definition": "毒素。",
-      "usage_in_passage": "\"Releasing toxins while still few in number\" が、早すぎる攻撃がなぜ不利かという議論の具体的な対象になる。",
+      "etymology": "Greek toxikon 'poison put on arrows'",
+      "definition": "Poisonous substances produced by living things.",
+      "usage_in_passage": "\"Releasing toxins while still few in number\" is the concrete subject of the argument about why an attack that comes too early is a disadvantage.",
       "related_terms": [
         "poisons",
         "venoms",
@@ -1183,9 +1183,9 @@
       "context_sentence": "Releasing toxins while still few in number would merely alert the immune system to a threat it could easily eliminate;"
     },
     "unable": {
-      "etymology": "un-(否定) + able(できる)",
-      "definition": "〜できない。",
-      "usage_in_passage": "\"alive but unable to coordinate\" の but が、生存と機能を切り離す新戦略の狙いを示す。",
+      "etymology": "un- (negation) + able 'able'",
+      "definition": "Not able to do something.",
+      "usage_in_passage": "The word but in \"alive but unable to coordinate\" shows the aim of the new strategy, which separates survival from function.",
       "related_terms": [
         "incapable",
         "powerless",
@@ -1195,9 +1195,9 @@
       "context_sentence": "Rather than killing bacteria outright, the approach that has driven the rise of resistance, one might instead jam their communication, leaving the cells alive but unable to coordinate."
     },
     "unfamiliar": {
-      "etymology": "un-(否定) + familiar(なじみのある)",
-      "definition": "見慣れない、従来にない。",
-      "usage_in_passage": "\"an unfamiliar strategy for medicine\" が、次文の Rather than 構文で示される従来手法との対比を予告する。",
+      "etymology": "un- (negation) + familiar 'well known'",
+      "definition": "Not known before; new and different from the usual.",
+      "usage_in_passage": "\"an unfamiliar strategy for medicine\" announces the contrast with the conventional method that the next sentence presents with its Rather than construction.",
       "related_terms": [
         "novel",
         "unaccustomed",
@@ -1207,9 +1207,9 @@
       "context_sentence": "This insight has suggested an unfamiliar strategy for medicine."
     },
     "unremarkable": {
-      "etymology": "un-(否定) + re-(再び) + markable(注目に値する)",
-      "definition": "取り立てて目立たない、平凡な。",
-      "usage_in_passage": "\"an unremarkable marine bacterium\" という控えめな導入が、後の \"nearly universal\" という落差を際立たせる。",
+      "etymology": "un- (negation) + re- 'again' + markable 'worth noticing'",
+      "definition": "Not special in any way; ordinary.",
+      "usage_in_passage": "The modest introduction \"an unremarkable marine bacterium\" makes the later contrast with \"nearly universal\" stand out.",
       "related_terms": [
         "ordinary",
         "undistinguished",
