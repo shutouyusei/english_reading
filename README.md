@@ -33,11 +33,11 @@ Claude Code で `/new-passage` を実行する。Claudeがパッセージ・ク�
 単語解説を生成し、以下を自動実行する(Anthropic APIキーは不要。
 Claude Codeのサブスクリプション枠で動作):
 
-1. `docs/data/passages/passage_NNN.json` の生成
+1. `docs/data/reading/passage_NNN.json` の生成
 2. `python3 scripts/extract_hard_words.py <file>` — 難語彙抽出
 3. 難語彙の日本語解説を `vocab` にマージ
 4. `python3 scripts/validate_passage.py <file>` — スキーマ検証
-5. `python3 scripts/update_index.py` — マニフェスト更新
+5. `python3 scripts/update_index.py reading` — マニフェスト更新
 
 ## ローカルアプリ(macOS / Linux)
 

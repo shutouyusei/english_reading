@@ -29,7 +29,7 @@ description: TOEFLライティングの問題を1問生成して docs/data/writi
      短い相槌ではなく、それぞれが独立した主張になっていること
 5. 検証する: `python3 scripts/validate_writing.py docs/data/writing/writing_NNN.json`
    エラーが出たら直してから次へ進む。
-6. 一覧を更新する: `python3 scripts/update_writing_index.py`
+6. 一覧を更新する: `python3 scripts/update_index.py writing`
 7. 確認とコミット
 - タイトル・形式・シチュエーション・必須要素のサマリーをユーザーに表示する。
 - ユーザーの承認後:

@@ -15,7 +15,7 @@ description: TOEFLリスニングの問題を1本生成して docs/data/listenin
 - `type`: 引数で `lecture` か `conversation` が指定されていればそれに従い、
   無ければ `docs/data/listening/` の既存ファイルを見て少ない方を選ぶ。
 - `topic`: 科学/社会/歴史/芸術/環境 のうち既存で使用が少ないもの。テーマは既存と重複させない。
-  リスニング内だけでなく `docs/data/index.json`(読解)のテーマとも重ねない。
+  リスニング内だけでなく `docs/data/reading/index.json`(読解)のテーマとも重ねない。
 - `speakers`: lecture は1人、conversation は2人。
   `role` は一覧と復習モードの行頭に出るので日本語で書く(`教授` `学生` `事務員` など)。
   `id` は英小文字の短い語(`professor` `student` `advisor`)。
@@ -100,7 +100,7 @@ conversation では**2人に別々の声を割り当てる**。同じ声にす�
 ## 6. 検証してマニフェストを更新する
 ```
 python3 scripts/validate_listening.py docs/data/listening/listening_NNN.json
-python3 scripts/update_listening_index.py
+python3 scripts/update_index.py listening
 ```
 `ERROR` は当然直す。**語数の `WARNING` も残さない。** 台本を伸縮させて範囲に収める。
 

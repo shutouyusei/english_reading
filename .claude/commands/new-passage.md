@@ -8,11 +8,11 @@ description: 新しいTOEFLパッセージ・クイズ・単語解説を生成�
 `docs/superpowers/specs/2026-08-04-toefl-vocab-app-design.md` セクション5。
 
 ## 1. 次のIDを決める
-- `docs/data/passages/` の既存ファイルから連番の次のID(`passage_NNN`、3桁ゼロ埋め)を決める。
-- `docs/data/index.json` で既存パッセージのトピックとテーマを確認する。
+- `docs/data/reading/` の既存ファイルから連番の次のID(`passage_NNN`、3桁ゼロ埋め)を決める。
+- `docs/data/reading/index.json` で既存パッセージのトピックとテーマを確認する。
 
 ## 2. パッセージとクイズを生成する
-以下の条件でJSONを作り `docs/data/passages/passage_NNN.json` に保存する:
+以下の条件でJSONを作り `docs/data/reading/passage_NNN.json` に保存する:
 - `body`: 450〜500語の学術的英文(TOEFL iBTリーディング相当の難度、3〜5段落、段落区切りは `\n\n`)
 - `topic`: 科学/社会/歴史/芸術/環境のうち既存で使用が少ないもの。テーマは既存と重複させない
 - `questions`: 5問。`type` は Factual / Inference / Vocabulary / Reference / Rhetorical Purpose
@@ -22,7 +22,7 @@ description: 新しいTOEFLパッセージ・クイズ・単語解説を生成�
 - `word_count`: 実際の語数、`added`: 今日の日付(YYYY-MM-DD)、`vocab`: この段階では `{}`
 
 ## 3. 難語彙を抽出する
-`python3 scripts/extract_hard_words.py docs/data/passages/passage_NNN.json`
+`python3 scripts/extract_hard_words.py docs/data/reading/passage_NNN.json`
 出力リストから明らかな固有名詞(人名・地名)を除外し、残りを解説対象とする。
 
 ## 4. 単語解説を生成する
@@ -34,8 +34,8 @@ description: 新しいTOEFLパッセージ・クイズ・単語解説を生成�
 - `context_sentence`: その単語を含む本文の一文をそのまま抜き出す
 
 ## 5. 検証してindexを更新する
-`python3 scripts/validate_passage.py docs/data/passages/passage_NNN.json`
-`python3 scripts/update_index.py`
+`python3 scripts/validate_passage.py docs/data/reading/passage_NNN.json`
+`python3 scripts/update_index.py reading`
 エラーが出たら修正して再実行する。
 
 ## 6. 確認とコミット
