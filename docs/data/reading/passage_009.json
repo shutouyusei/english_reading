@@ -1,0 +1,1072 @@
+{
+  "id": "passage_009",
+  "title": "The Bystander Who Didn't Move",
+  "topic": "Society",
+  "body": "On a March night in 1964, a young woman named Kitty Genovese was attacked outside her apartment building in New York City. Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference. Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction. Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble.\n\nDarley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion. At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent. When a participant believed they were the only listener, nearly all of them left the room to summon assistance within a minute. When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all. The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience.\n\nThe explanation the researchers settled on was a diffusion of responsibility. When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous. When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it. No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first. A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong.\n\nThe bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences. Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd. This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced.",
+  "word_count": 494,
+  "added": "2026-08-24",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to the passage, what did later journalists find regarding the original reporting on the Kitty Genovese case?",
+      "target_word": null,
+      "choices": {
+        "A": "It had correctly described how many witnesses failed to act.",
+        "B": "It had exaggerated the number of witnesses and how little they did.",
+        "C": "It had understated the number of people who called for help.",
+        "D": "It had failed to identify Darley and Latané's later research."
+      },
+      "correct": "B",
+      "explanation": "Paragraph 1 says \"journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction\", which states that both the number of witnesses and their failure to act had been exaggerated."
+    },
+    {
+      "id": 2,
+      "type": "Inference",
+      "question": "What can be inferred about the purpose of designing the experiment so that bystanders could not see or be seen by one another?",
+      "target_word": null,
+      "choices": {
+        "A": "To make the emergency sound more realistic to participants.",
+        "B": "To prevent participants from communicating during the discussion.",
+        "C": "To rule out embarrassment or fear of looking foolish as the explanation for inaction.",
+        "D": "To ensure that every participant heard the same recorded voice."
+      },
+      "correct": "C",
+      "explanation": "The end of paragraph 2 says \"The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish\". From this we can infer that the experiment was designed this way in order to rule out explanations based on how a person looks to others."
+    },
+    {
+      "id": 3,
+      "type": "Vocabulary",
+      "question": "The word \"induced\" in the passage is closest in meaning to",
+      "target_word": "induced",
+      "choices": {
+        "A": "prevented",
+        "B": "brought about",
+        "C": "measured",
+        "D": "documented"
+      },
+      "correct": "B",
+      "explanation": "In the final paragraph, the diffusion \"can be reversed as readily as it can be induced\". Here induce means 'to cause, to bring on', so brought about is the closest."
+    },
+    {
+      "id": 4,
+      "type": "Reference",
+      "question": "In the sentence \"each share can shrink to the point that no one feels compelled to move first,\" what does \"each share\" refer to?",
+      "target_word": null,
+      "choices": {
+        "A": "Each witness's portion of the responsibility to help.",
+        "B": "Each bystander's share of the intercom recording.",
+        "C": "Each researcher's share of the experimental results.",
+        "D": "Each profession's share of emergency training."
+      },
+      "correct": "A",
+      "explanation": "Just before this, in the same sentence of paragraph 3, the passage says that the responsibility becomes \"divided among many\". \"each share\" refers to each person's portion of that divided responsibility."
+    },
+    {
+      "id": 5,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention emergency response training that instructs a witness to single out one bystander directly?",
+      "target_word": null,
+      "choices": {
+        "A": "To show that the bystander effect cannot be reversed in practice.",
+        "B": "To provide an example of how understanding diffusion of responsibility has been applied to shorten response times.",
+        "C": "To argue that Darley and Latané's original experiments were flawed.",
+        "D": "To introduce a new, unrelated theory of workplace misconduct."
+      },
+      "correct": "B",
+      "explanation": "The final paragraph says that training which assigns responsibility to one specific person has shortened response times markedly, and it gives this as a concrete example showing that diffused responsibility can be deliberately 'reversed'."
+    }
+  ],
+  "vocab": {
+    "dozens": {
+      "etymology": "dozen (12) + -s (plural). 'A group of twelve', used in the plural, came to mean 'a large number'.",
+      "definition": "Tens; a large number (strictly it counts in units of twelve, but in everyday use it simply means 'a lot').",
+      "usage_in_passage": "\"dozens of neighbors\" means 'a large number of neighbors' and stresses how many witnesses there were said to be.",
+      "related_terms": [
+        "scores",
+        "numerous",
+        "multitude"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "neighbors": {
+      "etymology": "neigh- (Old English neah 'near') + -bor (Old English gebur 'dweller'). The original meaning is 'a person who lives nearby'.",
+      "definition": "People who live near someone.",
+      "usage_in_passage": "Refers to the neighbors who appear as the witnesses of the attack; they are the kind of group that the later discussion of the bystander effect is about.",
+      "related_terms": [
+        "neighborhood",
+        "resident",
+        "vicinity"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "cries": {
+      "etymology": "cry 'to shout' + -s (plural / third person singular). It is the noun form or an inflected form of the verb cry.",
+      "definition": "Shouts; screams.",
+      "usage_in_passage": "\"heard her cries\" refers to the victim's screams, and it is the basis of the claim that the neighbors did not respond to them.",
+      "related_terms": [
+        "scream",
+        "shout",
+        "wail"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "byword": {
+      "etymology": "by 'beside, incidental' + word. From 'a word that is on everyone's lips' it developed the meaning 'a typical example, a name that stands for something'.",
+      "definition": "A person or thing taken as the typical example or symbol of something (usually something bad).",
+      "usage_in_passage": "\"became a byword for urban indifference\" says that this case turned into an expression that stands for the indifference of city people.",
+      "related_terms": [
+        "symbol",
+        "synonym",
+        "epitome"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "indifference": {
+      "etymology": "in- (negation) + different 'differing, making a distinction' + -ence (forms a noun). From 'an attitude that makes no distinction' it came to mean 'lack of interest'.",
+      "definition": "Lack of interest or concern.",
+      "usage_in_passage": "Names the social phenomenon, \"urban indifference\", that the case came to stand for. The passage goes on to say that the reporting behind this story was exaggerated.",
+      "related_terms": [
+        "apathy",
+        "unconcern",
+        "detachment"
+      ],
+      "context_sentence": "Newspaper accounts that followed claimed that dozens of neighbors had heard her cries and done nothing, a story that became a byword for urban indifference."
+    },
+    "decades": {
+      "etymology": "deca- (Greek deka 'ten') + -ade (a suffix for a group). 'A group of ten years'.",
+      "definition": "Periods of ten years; tens of years.",
+      "usage_in_passage": "\"Decades later\" shows that the truth came out only many years after the first reports.",
+      "related_terms": [
+        "century",
+        "era",
+        "generation"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "journalists": {
+      "etymology": "journal (Latin diurnalis 'daily') + -ist 'a person who does'. The original meaning is 'a person who keeps a daily record'.",
+      "definition": "People who report the news; reporters.",
+      "usage_in_passage": "They appear as the people who later revealed that the original reporting was exaggerated.",
+      "related_terms": [
+        "reporter",
+        "correspondent",
+        "press"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "exaggerated": {
+      "etymology": "ex- 'out' + agger- (Latin aggerare 'to heap up') + -ed (past participle). The original meaning is 'to heap up too much'.",
+      "definition": "Made something seem larger or more extreme than it really was; overstated.",
+      "usage_in_passage": "Shows that the original reporting had overstated both the number of witnesses and their inaction, so the basis of the accepted story falls apart.",
+      "related_terms": [
+        "overstated",
+        "inflated",
+        "embellished"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "witnesses": {
+      "etymology": "wit (Old English witan 'to know') + -ness (state; forms a noun) + -es (plural). The original meaning is 'one who knows'.",
+      "definition": "People who see or hear an event happen.",
+      "usage_in_passage": "Refers to the people who were present at the attack. It is a central idea of the passage: the later experiments examine how the number of witnesses affects the response.",
+      "related_terms": [
+        "bystander",
+        "onlooker",
+        "observer"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "inaction": {
+      "etymology": "in- (negation) + action.",
+      "definition": "Failure to act; doing nothing.",
+      "usage_in_passage": "Refers to the content of the exaggerated claim: that the witnesses took no action at all.",
+      "related_terms": [
+        "passivity",
+        "inertia",
+        "nonintervention"
+      ],
+      "context_sentence": "Decades later, journalists would show that the original reporting had exaggerated both the number of witnesses and their inaction."
+    },
+    "psychologists": {
+      "etymology": "psycho- (Greek psykhe 'mind') + -logy 'study' + -ist 'a person who does'. 'A person who studies the mind'.",
+      "definition": "Scientists who study the mind and behavior.",
+      "usage_in_passage": "Refers to the researchers, Darley and Latané, who carried out the experiments at the center of the passage.",
+      "related_terms": [
+        "researcher",
+        "scientist",
+        "behaviorist"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "overturn": {
+      "etymology": "over 'upside down' + turn 'to change direction'.",
+      "definition": "To reverse or disprove an accepted view or decision.",
+      "usage_in_passage": "Shows that the experiments reversed the common belief that people are more likely to help when more people are present; the word sums up the argument of the whole passage.",
+      "related_terms": [
+        "reverse",
+        "refute",
+        "upend"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "comfortable": {
+      "etymology": "com- (intensive) + fort (Latin fortis 'strong') + -able 'able to'. The original meaning 'to strengthen' shifted to 'pleasant, at ease'.",
+      "definition": "Pleasant and reassuring to believe; convenient.",
+      "usage_in_passage": "Describes the reassuring belief, held without being tested, that the presence of other people makes help more likely.",
+      "related_terms": [
+        "convenient",
+        "reassuring",
+        "complacent"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "assumption": {
+      "etymology": "as- 'to' + Latin sumere 'to take' + -tion (forms a noun). 'Taking something up and treating it as a starting point'.",
+      "definition": "Something believed to be true without proof; a premise.",
+      "usage_in_passage": "Refers to the very premise that the experiments overturn: that help is easier to get when more people are present.",
+      "related_terms": [
+        "presumption",
+        "premise",
+        "supposition"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "bystander": {
+      "etymology": "by 'beside' + stand + -er 'person'. The original meaning is 'a person standing nearby'.",
+      "definition": "A person who is present at an event but does not take part in it.",
+      "usage_in_passage": "Refers to a person who is present at an emergency and does not act (or does act). It is the central idea of the passage and also appears in the passage's title.",
+      "related_terms": [
+        "onlooker",
+        "witness",
+        "spectator"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "trouble": {
+      "etymology": "From Old French trubler 'to disturb'.",
+      "definition": "Difficulty; a bad or dangerous situation.",
+      "usage_in_passage": "\"someone in trouble\" refers to a person who needs help.",
+      "related_terms": [
+        "difficulty",
+        "distress",
+        "predicament"
+      ],
+      "context_sentence": "Yet the case had already set two psychologists, John Darley and Bibb Latané, on a path that would overturn a comfortable assumption: that the presence of other people makes a bystander more likely to help someone in trouble."
+    },
+    "experiments": {
+      "etymology": "ex- 'out' + Latin periri 'to try' + -ment (forms a noun). 'The act of trying something out'.",
+      "definition": "Scientific tests carried out to find out what happens.",
+      "usage_in_passage": "Refers to the series of experiments that Darley and Latané ran to test the bystander effect.",
+      "related_terms": [
+        "trial",
+        "study",
+        "test"
+      ],
+      "context_sentence": "Darley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion."
+    },
+    "participant": {
+      "etymology": "parti- 'part' + -cip- (Latin capere 'to take') + -ant 'a person who does'. From 'a person who takes a part' to 'a person who takes part'.",
+      "definition": "A person who takes part in something, here in an experiment.",
+      "usage_in_passage": "Refers to the person who takes part in the experiment and whose reaction to the emergency is observed.",
+      "related_terms": [
+        "subject",
+        "volunteer",
+        "respondent"
+      ],
+      "context_sentence": "Darley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion."
+    },
+    "communicating": {
+      "etymology": "Latin communicare 'to share' (from communis 'common, shared') + -ing. The original meaning is 'sharing something with others'.",
+      "definition": "Exchanging messages; being in contact with one another.",
+      "usage_in_passage": "Describes the situation in which a participant believed they were in contact with other participants over an intercom.",
+      "related_terms": [
+        "conversing",
+        "interacting",
+        "corresponding"
+      ],
+      "context_sentence": "Darley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion."
+    },
+    "intercom": {
+      "etymology": "inter- 'between each other' + com (short for communication). A compound coined in the 20th century.",
+      "definition": "A device for speaking between rooms; an internal communication system.",
+      "usage_in_passage": "The device through which the participants were led to believe they were talking with one another (in fact they were hearing a recording).",
+      "related_terms": [
+        "intercom system",
+        "loudspeaker",
+        "telephone"
+      ],
+      "context_sentence": "Darley and Latané staged laboratory experiments in which a participant, seated alone in a room, believed they were communicating with one or more other participants over an intercom during a discussion."
+    },
+    "prearranged": {
+      "etymology": "pre- 'beforehand' + arrange 'to plan, to settle' + -ed.",
+      "definition": "Planned or agreed in advance.",
+      "usage_in_passage": "Shows that the emergency occurs at a moment built into the script of the experiment in advance.",
+      "related_terms": [
+        "prescheduled",
+        "predetermined",
+        "scripted"
+      ],
+      "context_sentence": "At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent."
+    },
+    "simulate": {
+      "etymology": "Latin similis 'like' + -ate (forms a verb). The original meaning is 'to make something look like another thing'.",
+      "definition": "To imitate something that is not really happening; to fake.",
+      "usage_in_passage": "Shows that the recorded voice pretended to have a medical emergency, which makes it clear that the emergency in the experiment was staged.",
+      "related_terms": [
+        "fake",
+        "imitate",
+        "mimic"
+      ],
+      "context_sentence": "At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent."
+    },
+    "choking": {
+      "etymology": "From Old English aceocian; the original meaning is 'to squeeze the throat'.",
+      "definition": "Being unable to breathe because the throat is blocked; gasping.",
+      "usage_in_passage": "Describes how the voice acting out the emergency called for help while gasping for breath.",
+      "related_terms": [
+        "gasping",
+        "suffocating",
+        "gagging"
+      ],
+      "context_sentence": "At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent."
+    },
+    "silent": {
+      "etymology": "Latin silere 'to be quiet' + -ent (forms an adjective).",
+      "definition": "Making no sound; quiet.",
+      "usage_in_passage": "\"falling silent\" says that the voice calling for help finally stopped.",
+      "related_terms": [
+        "quiet",
+        "mute",
+        "hushed"
+      ],
+      "context_sentence": "At a prearranged moment, one voice would simulate a medical emergency, choking and calling for help before falling silent."
+    },
+    "listener": {
+      "etymology": "listen + -er 'person'.",
+      "definition": "A person who is listening.",
+      "usage_in_passage": "Refers to the participant who believed they alone were listening. This is the alone condition, whose high rate of helping is set against the result that follows.",
+      "related_terms": [
+        "hearer",
+        "audience member",
+        "monitor"
+      ],
+      "context_sentence": "When a participant believed they were the only listener, nearly all of them left the room to summon assistance within a minute."
+    },
+    "summon": {
+      "etymology": "sub- 'from below' + Latin monere 'to urge, to warn'. The original meaning is 'to call up, to prompt'.",
+      "definition": "To call for someone or something, such as help.",
+      "usage_in_passage": "\"summon assistance\" shows that the participant took action to get help.",
+      "related_terms": [
+        "call",
+        "fetch",
+        "request"
+      ],
+      "context_sentence": "When a participant believed they were the only listener, nearly all of them left the room to summon assistance within a minute."
+    },
+    "listeners": {
+      "etymology": "listen + -er 'person' + -s (plural).",
+      "definition": "People who are listening.",
+      "usage_in_passage": "Refers to the other people that participants believed were also listening, and so describes the condition under which the bystander effect appears.",
+      "related_terms": [
+        "audience",
+        "witnesses",
+        "observers"
+      ],
+      "context_sentence": "When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all."
+    },
+    "intervened": {
+      "etymology": "inter- 'between' + Latin venire 'to come' + -ed. The original meaning is 'to come in between'.",
+      "definition": "Stepped in; took action in a situation.",
+      "usage_in_passage": "Used in \"the number who intervened\" for the participants who actually took action in response to the emergency.",
+      "related_terms": [
+        "intruded",
+        "interceded",
+        "stepped in"
+      ],
+      "context_sentence": "When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all."
+    },
+    "fell": {
+      "etymology": "Past tense of the verb fall 'to drop'.",
+      "definition": "Dropped; decreased.",
+      "usage_in_passage": "\"fell sharply\" says that both the number who intervened and the speed of their response dropped steeply.",
+      "related_terms": [
+        "dropped",
+        "declined",
+        "plummeted"
+      ],
+      "context_sentence": "When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all."
+    },
+    "sharply": {
+      "etymology": "sharp + -ly (forms an adverb).",
+      "definition": "Suddenly and by a large amount; steeply.",
+      "usage_in_passage": "An adverb stressing how large the drop was in the number who intervened and in the speed of response.",
+      "related_terms": [
+        "steeply",
+        "abruptly",
+        "markedly"
+      ],
+      "context_sentence": "When participants believed several other listeners were also on the line, both the number who intervened and the speed of their response fell sharply; some sat through the entire recording without acting at all."
+    },
+    "explanations": {
+      "etymology": "explain + -ation (forms a noun) + -s.",
+      "definition": "Statements of why something happens; accounts.",
+      "usage_in_passage": "Refers to the several possible explanations of why the bystander effect occurs; in this sentence some of them are ruled out.",
+      "related_terms": [
+        "accounts",
+        "interpretations",
+        "rationales"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "involving": {
+      "etymology": "in- 'in' + Latin volvere 'to roll' + -ing. The original meaning is 'to roll something up in'.",
+      "definition": "Including something as a part; having to do with.",
+      "usage_in_passage": "Marks the explanations that include social embarrassment; the same sentence says that these explanations are ruled out.",
+      "related_terms": [
+        "entailing",
+        "concerning",
+        "implicating"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "embarrassment": {
+      "etymology": "From French embarrasser 'to block, to hinder'.",
+      "definition": "A feeling of shame or awkwardness in front of others.",
+      "usage_in_passage": "Names the content of one explanation, that people fail to act because they worry about how others see them; the results of the experiment rule it out.",
+      "related_terms": [
+        "awkwardness",
+        "humiliation",
+        "self-consciousness"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "foolish": {
+      "etymology": "fool (Old French fol) + -ish 'like'.",
+      "definition": "Silly; looking stupid.",
+      "usage_in_passage": "A fear of looking foolish in front of others might seem to be the cause of the bystander effect, but the design of the experiment rules that possibility out.",
+      "related_terms": [
+        "silly",
+        "ridiculous",
+        "absurd"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "audience": {
+      "etymology": "Latin audire 'to hear' + -ence (forms a noun). The original meaning is 'the people who listen'.",
+      "definition": "A group of people watching or listening.",
+      "usage_in_passage": "\"before an audience\" refers to the situation of being watched by others, and it is contrasted with the fact that in the experiment the participants could not actually see one another.",
+      "related_terms": [
+        "spectators",
+        "onlookers",
+        "crowd"
+      ],
+      "context_sentence": "The effect held even though no bystander could see or be seen by any other, ruling out explanations involving social embarrassment or a fear of appearing foolish before an audience."
+    },
+    "explanation": {
+      "etymology": "explain + -ation (forms a noun).",
+      "definition": "A statement of why something happens.",
+      "usage_in_passage": "In the first sentence of paragraph 3, \"The explanation the researchers settled on\" refers to the diffusion of responsibility, the account the researchers finally arrived at.",
+      "related_terms": [
+        "account",
+        "rationale",
+        "interpretation"
+      ],
+      "context_sentence": "The explanation the researchers settled on was a diffusion of responsibility."
+    },
+    "researchers": {
+      "etymology": "re- 'again and again' + search (Old French cerchier 'to look for') + -er 'person' + -s.",
+      "definition": "People who carry out research.",
+      "usage_in_passage": "Refers to the researchers, Darley and Latané, who ran the experiments and reached the conclusion.",
+      "related_terms": [
+        "scientists",
+        "scholars",
+        "investigators"
+      ],
+      "context_sentence": "The explanation the researchers settled on was a diffusion of responsibility."
+    },
+    "settled": {
+      "etymology": "settle 'to come to rest, to fix' + -ed.",
+      "definition": "Decided on; fixed an opinion or conclusion.",
+      "usage_in_passage": "\"settled on\" marks the conclusion that the researchers finally reached.",
+      "related_terms": [
+        "decided",
+        "concluded",
+        "resolved"
+      ],
+      "context_sentence": "The explanation the researchers settled on was a diffusion of responsibility."
+    },
+    "diffusion": {
+      "etymology": "dis- 'apart' + Latin fundere 'to pour' + -sion (forms a noun). The original meaning is 'pouring something out in all directions'.",
+      "definition": "The act of spreading something out over many people or places.",
+      "usage_in_passage": "As part of \"diffusion of responsibility\", it is the term for the central idea of the passage.",
+      "related_terms": [
+        "dispersal",
+        "spread",
+        "dissemination"
+      ],
+      "context_sentence": "The explanation the researchers settled on was a diffusion of responsibility."
+    },
+    "witness": {
+      "etymology": "wit (Old English 'to know') + -ness (forms a noun). The singular form.",
+      "definition": "A person who sees or hears an event happen.",
+      "usage_in_passage": "Refers to the case in which one witness alone faces an emergency; the passage says that in this case it is clear where the responsibility lies.",
+      "related_terms": [
+        "bystander",
+        "onlooker",
+        "eyewitness"
+      ],
+      "context_sentence": "When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous."
+    },
+    "confronts": {
+      "etymology": "con- 'together' + Latin frontem 'forehead, front' + -s. The original meaning is 'to meet face to face'.",
+      "definition": "Faces; comes up against.",
+      "usage_in_passage": "Describes the scene in which a single witness faces an emergency.",
+      "related_terms": [
+        "faces",
+        "encounters",
+        "meets"
+      ],
+      "context_sentence": "When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous."
+    },
+    "obligation": {
+      "etymology": "ob- 'toward' + Latin ligare 'to bind' + -tion (forms a noun). The original meaning is 'the state of being bound'.",
+      "definition": "A duty; something a person is responsible for doing.",
+      "usage_in_passage": "Refers to the whole of the duty to help that rests on a single witness; it is presented as the baseline before responsibility is spread out.",
+      "related_terms": [
+        "duty",
+        "responsibility",
+        "obligation to act"
+      ],
+      "context_sentence": "When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous."
+    },
+    "unambiguous": {
+      "etymology": "un- (negation) + ambiguous 'unclear'.",
+      "definition": "Not open to more than one interpretation; clear.",
+      "usage_in_passage": "Says that when a single witness does not help, it is clear who is responsible for that failure.",
+      "related_terms": [
+        "clear",
+        "unequivocal",
+        "explicit"
+      ],
+      "context_sentence": "When a single witness confronts an emergency, the full weight of the obligation to act rests on that one person; failure to help is, in a sense, unambiguous."
+    },
+    "presumed": {
+      "etymology": "pre- 'beforehand' + Latin sumere 'to take' + -ed. The original meaning is 'to take beforehand', that is, to take for granted.",
+      "definition": "Supposed to be the case; assumed.",
+      "usage_in_passage": "Introduces the mental process that operates when several witnesses are assumed to be present.",
+      "related_terms": [
+        "assumed",
+        "supposed",
+        "believed"
+      ],
+      "context_sentence": "When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it."
+    },
+    "conscious": {
+      "etymology": "con- 'together' + Latin scire 'to know' + -ous (forms an adjective). The original meaning is 'knowing together with'.",
+      "definition": "Aware; done with awareness.",
+      "usage_in_passage": "\"without conscious deliberation\" shows that this reasoning often goes on without the person even noticing it.",
+      "related_terms": [
+        "deliberate",
+        "aware",
+        "intentional"
+      ],
+      "context_sentence": "When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it."
+    },
+    "deliberation": {
+      "etymology": "de- (intensive) + Latin librare 'to weigh on a scale' + -tion (forms a noun). 'Considering something carefully'.",
+      "definition": "Careful thought; consideration.",
+      "usage_in_passage": "As part of \"conscious deliberation\", it refers to a witness thinking the matter over with awareness; the passage says the reasoning operates without it.",
+      "related_terms": [
+        "consideration",
+        "reflection",
+        "reasoning"
+      ],
+      "context_sentence": "When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it."
+    },
+    "respond": {
+      "etymology": "re- 'back' + Latin spondere 'to pledge, to answer'. The original meaning is 'to pledge in return'.",
+      "definition": "To act in answer to something; to react.",
+      "usage_in_passage": "Used for the thought that someone else is better placed to deal with the emergency.",
+      "related_terms": [
+        "react",
+        "reply",
+        "answer"
+      ],
+      "context_sentence": "When several witnesses are presumed present, each may reason, often without conscious deliberation, that someone else is better positioned to respond or already taking care of it."
+    },
+    "necessarily": {
+      "etymology": "Latin necesse 'necessary' + -ly (forms an adverb).",
+      "definition": "Inevitably; with a negative, 'not in every case'.",
+      "usage_in_passage": "\"No individual necessarily decides\" stresses that nobody is consciously making the decision not to help.",
+      "related_terms": [
+        "inevitably",
+        "invariably",
+        "certainly"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "decides": {
+      "etymology": "de- 'off' + Latin caedere 'to cut'. The original meaning is 'to settle by cutting off'.",
+      "definition": "Makes a choice; determines.",
+      "usage_in_passage": "The verb that supports the point that an individual does not consciously choose not to help.",
+      "related_terms": [
+        "determines",
+        "resolves",
+        "chooses"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "entirely": {
+      "etymology": "entire 'whole' + -ly (forms an adverb).",
+      "definition": "Completely; wholly.",
+      "usage_in_passage": "Says that with a single witness the responsibility would rest wholly on that one person.",
+      "related_terms": [
+        "wholly",
+        "completely",
+        "fully"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "divided": {
+      "etymology": "Latin dividere: di- 'apart' + -videre 'to separate'; + -ed.",
+      "definition": "Split into parts.",
+      "usage_in_passage": "Expresses the core claim of the passage: that responsibility is split among several witnesses.",
+      "related_terms": [
+        "split",
+        "distributed",
+        "shared"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "shrink": {
+      "etymology": "From Old English scrincan 'to shrink'.",
+      "definition": "To become smaller.",
+      "usage_in_passage": "Describes how each person's portion of the divided responsibility gets smaller.",
+      "related_terms": [
+        "diminish",
+        "dwindle",
+        "contract"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "compelled": {
+      "etymology": "com- (intensive) + Latin pellere 'to push, to drive' + -ed. The original meaning is 'pushed hard'.",
+      "definition": "Driven or forced to do something.",
+      "usage_in_passage": "\"feels compelled to move first\" expresses a strong urge to be the first to act.",
+      "related_terms": [
+        "obliged",
+        "forced",
+        "impelled"
+      ],
+      "context_sentence": "No individual necessarily decides not to help; rather, the responsibility that would otherwise fall entirely on one person becomes divided among many, and each share can shrink to the point that no one feels compelled to move first."
+    },
+    "pluralistic": {
+      "etymology": "plural 'more than one' + -istic 'having the nature of'.",
+      "definition": "Involving many people; shared across a group.",
+      "usage_in_passage": "Part of the technical term \"pluralistic ignorance\", which names a second mental process, separate from the diffusion of responsibility.",
+      "related_terms": [
+        "collective",
+        "communal",
+        "group"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "ignorance": {
+      "etymology": "Latin ignorare 'not to know' (in- 'not' + the root of gnarus 'knowing') + -ance (forms a noun). 'The state of not knowing'.",
+      "definition": "Lack of knowledge; not being aware of something.",
+      "usage_in_passage": "\"pluralistic ignorance\" refers to the state in which everyone in a group is in fact uneasy, yet none of them realizes that the others feel the same.",
+      "related_terms": [
+        "unawareness",
+        "obliviousness",
+        "incomprehension"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "compounds": {
+      "etymology": "com- 'together' + Latin ponere 'to put'. From 'to put together' it developed the meaning 'to make worse'.",
+      "definition": "Makes a problem worse or more complicated.",
+      "usage_in_passage": "The verb that shows pluralistic ignorance makes the delay worse.",
+      "related_terms": [
+        "worsens",
+        "aggravates",
+        "intensifies"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "delay": {
+      "etymology": "de- (intensive) + Old French laier 'to leave'.",
+      "definition": "A period of waiting before something happens; lateness.",
+      "usage_in_passage": "Refers to the time that passes before anyone helps; pluralistic ignorance makes it even longer.",
+      "related_terms": [
+        "postponement",
+        "lag",
+        "holdup"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "bystanders": {
+      "etymology": "Plural of bystander.",
+      "definition": "People who are present at an event but do not take part in it.",
+      "usage_in_passage": "Refers to bystanders as a group who check on one another (\"glance at one another\").",
+      "related_terms": [
+        "onlookers",
+        "witnesses",
+        "spectators"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "glance": {
+      "etymology": "Probably from Old French glacier 'to slip'. The first sense in English was 'to strike at an angle and slide off'; the sense 'to look quickly' developed later.",
+      "definition": "To take a quick look.",
+      "usage_in_passage": "Depicts bystanders taking quick looks at one another's reactions to judge how serious the situation is.",
+      "related_terms": [
+        "glimpse",
+        "peek",
+        "look"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "cues": {
+      "etymology": "From the theater term cue 'a signal to an actor'.",
+      "definition": "Signals or hints that guide what to do or think.",
+      "usage_in_passage": "\"cues about how serious a situation is\" refers to hints used to judge how serious the situation is.",
+      "related_terms": [
+        "signals",
+        "hints",
+        "indicators"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "outwardly": {
+      "etymology": "outward 'on the outside' + -ly (forms an adverb).",
+      "definition": "On the surface; in appearance.",
+      "usage_in_passage": "\"outwardly calm faces\" describes faces that look calm on the surface, whatever the people feel inside.",
+      "related_terms": [
+        "externally",
+        "seemingly",
+        "ostensibly"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "calm": {
+      "etymology": "From Old French calme.",
+      "definition": "Not excited or upset; composed.",
+      "usage_in_passage": "Describes the composed look on the bystanders' faces, and sets up a contrast with the inner uncertainty mentioned right after it.",
+      "related_terms": [
+        "composed",
+        "tranquil",
+        "unruffled"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "privately": {
+      "etymology": "private + -ly (forms an adverb).",
+      "definition": "In one's own mind; inwardly.",
+      "usage_in_passage": "\"privately uncertain\" says that each person, inwardly, is not sure.",
+      "related_terms": [
+        "internally",
+        "inwardly",
+        "secretly"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "uncertain": {
+      "etymology": "un- (negation) + certain 'sure'.",
+      "definition": "Not sure; in doubt.",
+      "usage_in_passage": "Describes how the bystanders, inwardly, are not sure about the situation.",
+      "related_terms": [
+        "unsure",
+        "doubtful",
+        "hesitant"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "publicly": {
+      "etymology": "public + -ly (forms an adverb).",
+      "definition": "In front of other people; openly.",
+      "usage_in_passage": "\"publicly composed\" describes people putting on a calm appearance in front of others.",
+      "related_terms": [
+        "outwardly",
+        "openly",
+        "visibly"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "composed": {
+      "etymology": "com- 'together' + Latin ponere 'to put' + -ed. From 'put neatly in place' it developed the meaning 'calm'.",
+      "definition": "Calm and in control of one's feelings.",
+      "usage_in_passage": "Describes how the bystanders appear to stay calm in front of others.",
+      "related_terms": [
+        "calm",
+        "collected",
+        "unruffled"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "convince": {
+      "etymology": "con- 'completely' + Latin vincere 'to defeat'. The original meaning is 'to overcome completely in argument'.",
+      "definition": "To make someone believe that something is true.",
+      "usage_in_passage": "Expresses the process by which everyone, by acting calm, leads everyone else to believe that nothing is wrong.",
+      "related_terms": [
+        "persuade",
+        "assure",
+        "satisfy"
+      ],
+      "context_sentence": "A related process, pluralistic ignorance, compounds the delay: bystanders glance at one another for cues about how serious a situation is, and a room full of outwardly calm faces, each person privately uncertain but publicly composed, can convince everyone that nothing is actually wrong."
+    },
+    "replicated": {
+      "etymology": "re- 'again' + Latin plicare 'to fold' + -ed. From 'to fold again' it developed the meaning 'to reproduce'.",
+      "definition": "Repeated with the same result; reproduced in further studies.",
+      "usage_in_passage": "States that the bystander effect has been reproduced in hundreds of studies, which shows how robust the phenomenon is.",
+      "related_terms": [
+        "reproduced",
+        "confirmed",
+        "duplicated"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "hundreds": {
+      "etymology": "hundred (100) + -s (plural).",
+      "definition": "Several hundred; a very large number.",
+      "usage_in_passage": "Shows how many studies have tested the bystander effect.",
+      "related_terms": [
+        "numerous studies",
+        "many",
+        "countless"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "emergencies": {
+      "etymology": "e- 'out' + Latin mergere 'to dip, to sink' (emergere 'to rise out, to come up') + -ency (forms a noun) + -ies. The original meaning is 'something that suddenly comes up'.",
+      "definition": "Sudden, serious situations that need immediate action.",
+      "usage_in_passage": "The reference point for showing that research on the bystander effect has spread beyond the medical emergencies it started with.",
+      "related_terms": [
+        "crises",
+        "urgent situations",
+        "emergency cases"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "everyday": {
+      "etymology": "every + day.",
+      "definition": "Ordinary; happening as part of daily life.",
+      "usage_in_passage": "Shows that the bystander effect has been extended to ordinary, day-to-day requests for help.",
+      "related_terms": [
+        "daily",
+        "routine",
+        "ordinary"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "workplace": {
+      "etymology": "work + place.",
+      "definition": "The place where a person works.",
+      "usage_in_passage": "Shows that the bystander effect also applies to how people react to misconduct at work.",
+      "related_terms": [
+        "office",
+        "workplace setting",
+        "organization"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "misconduct": {
+      "etymology": "mis- 'wrong' + conduct 'behavior'.",
+      "definition": "Wrong or improper behavior, especially by someone in a job.",
+      "usage_in_passage": "Gives misconduct in the workplace as one example of the range the bystander effect has been extended to.",
+      "related_terms": [
+        "wrongdoing",
+        "malpractice",
+        "impropriety"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "harassment": {
+      "etymology": "harass 'to torment' (connected with Old French harer) + -ment (forms a noun).",
+      "definition": "Behavior that repeatedly annoys, threatens or upsets someone.",
+      "usage_in_passage": "Shows that harassment online, as a situation with many witnesses, also falls within the scope of the bystander effect.",
+      "related_terms": [
+        "bullying",
+        "abuse",
+        "intimidation"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "witnessed": {
+      "etymology": "witness 'to see happen' + -ed.",
+      "definition": "Seen happening.",
+      "usage_in_passage": "Describes online harassment as something seen by large audiences.",
+      "related_terms": [
+        "observed",
+        "seen",
+        "viewed"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "audiences": {
+      "etymology": "audience + -s (plural).",
+      "definition": "Groups of people watching or listening; viewers.",
+      "usage_in_passage": "Refers to the large numbers of people watching harassment online, a present-day setting in which the bystander effect arises.",
+      "related_terms": [
+        "viewers",
+        "onlookers",
+        "spectators"
+      ],
+      "context_sentence": "The bystander effect has since been replicated across hundreds of studies and extended well beyond emergencies to cover everyday requests for help, workplace misconduct, and online harassment witnessed by large audiences."
+    },
+    "visible": {
+      "etymology": "Latin videre 'to see' + -ible 'able to be'.",
+      "definition": "Able to be seen; evident.",
+      "usage_in_passage": "Shows that the understanding of the bystander effect has been put to use in a form that can be seen: practical training.",
+      "related_terms": [
+        "evident",
+        "apparent",
+        "observable"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "professions": {
+      "etymology": "profess (Latin profiteri 'to declare publicly') + -ion (forms a noun) + -s.",
+      "definition": "Occupations, especially ones that need special training.",
+      "usage_in_passage": "Shows that training based on the bystander effect is now standard in many occupations.",
+      "related_terms": [
+        "occupations",
+        "careers",
+        "vocations"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "instruct": {
+      "etymology": "in- 'into' + Latin struere 'to pile up, to build'. The original meaning is 'to build up knowledge in someone'.",
+      "definition": "To tell someone what to do; to teach.",
+      "usage_in_passage": "States what emergency response courses tell a witness to do.",
+      "related_terms": [
+        "direct",
+        "train",
+        "teach"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "specifying": {
+      "etymology": "specify 'to state exactly' + -ing. From Latin species 'kind, sort'.",
+      "definition": "Stating exactly; naming something in particular.",
+      "usage_in_passage": "\"pointing and specifying a task\" describes the act of giving a particular task to a particular person.",
+      "related_terms": [
+        "designating",
+        "identifying",
+        "naming"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "crowd": {
+      "etymology": "From Old English crudan 'to press, to push'.",
+      "definition": "A large group of people gathered together.",
+      "usage_in_passage": "Used as the contrast to directing one particular individual: the alternative is \"a general appeal to a crowd\".",
+      "related_terms": [
+        "mob",
+        "throng",
+        "multitude"
+      ],
+      "context_sentence": "Its practical influence is visible in training now standard for many professions: emergency response courses instruct a witness to single out one bystander directly, by pointing and specifying a task, rather than issuing a general appeal to a crowd."
+    },
+    "adjustment": {
+      "etymology": "From Old French ajuster, from Late Latin adjuxtare 'to bring near' (ad- 'to' + juxta 'near'), later associated with Latin justus 'right'; + -ment (forms a noun).",
+      "definition": "A small change made to improve something.",
+      "usage_in_passage": "\"This single adjustment\" is singling out one particular person, and the sentence shows that this one change has the effect of shortening response times.",
+      "related_terms": [
+        "modification",
+        "change",
+        "tweak"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "assigning": {
+      "etymology": "ad- 'to' + Latin signare 'to mark' + -ing.",
+      "definition": "Giving a task or duty to a particular person.",
+      "usage_in_passage": "Shows that giving the responsibility to one particular person has a different effect from simply asking for help.",
+      "related_terms": [
+        "allocating",
+        "designating",
+        "delegating"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "merely": {
+      "etymology": "mere 'nothing more than' + -ly (forms an adverb).",
+      "definition": "Only; simply.",
+      "usage_in_passage": "An adverb that sets up the contrast between only requesting help and assigning responsibility.",
+      "related_terms": [
+        "simply",
+        "just",
+        "solely"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "shorten": {
+      "etymology": "short + -en (forms a verb).",
+      "definition": "To make shorter.",
+      "usage_in_passage": "Shows that the device of assigning responsibility reduces the time it takes for help to come.",
+      "related_terms": [
+        "reduce",
+        "abbreviate",
+        "cut down"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "markedly": {
+      "etymology": "marked 'noticeable' + -ly (forms an adverb).",
+      "definition": "Noticeably; to a clear degree.",
+      "usage_in_passage": "Stresses that the reduction in response times was a large one.",
+      "related_terms": [
+        "notably",
+        "significantly",
+        "considerably"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "confirming": {
+      "etymology": "con- 'completely' + Latin firmare 'to make firm' + -ing.",
+      "definition": "Showing that something is true; supporting with evidence.",
+      "usage_in_passage": "States that this result supports the idea that the diffusion of responsibility found in the original experiments can be reversed.",
+      "related_terms": [
+        "verifying",
+        "substantiating",
+        "validating"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "reversed": {
+      "etymology": "re- 'back' + Latin vertere 'to turn' + -ed.",
+      "definition": "Turned around; changed to the opposite.",
+      "usage_in_passage": "Shows that the diffusion of responsibility can be undone by a deliberate change in method; this is the conclusion of the passage.",
+      "related_terms": [
+        "reverted",
+        "undone",
+        "inverted"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "readily": {
+      "etymology": "ready + -ly (forms an adverb).",
+      "definition": "Easily; without difficulty or delay.",
+      "usage_in_passage": "\"as readily as it can be induced\" shows that the diffusion can be reversed just as easily as it can be brought about.",
+      "related_terms": [
+        "easily",
+        "promptly",
+        "effortlessly"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    },
+    "induced": {
+      "etymology": "in- 'into' + Latin ducere 'to lead' + -ed.",
+      "definition": "Caused; brought about.",
+      "usage_in_passage": "States that the diffusion of responsibility is something that was brought about by the experiments, in contrast with the fact that it can be reversed. It is the last word of the passage.",
+      "related_terms": [
+        "brought about",
+        "triggered",
+        "provoked"
+      ],
+      "context_sentence": "This single adjustment, assigning responsibility rather than merely requesting it, has been shown to shorten response times markedly, confirming that the diffusion the original experiments identified can be reversed as readily as it can be induced."
+    }
+  }
+}

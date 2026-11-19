@@ -16,7 +16,7 @@ QUESTION_FIELDS = ["id", "type", "question", "choices", "correct", "explanation"
 QUESTION_TYPES = {
     "Gist-Content", "Gist-Purpose", "Detail", "Function", "Attitude", "Inference",
 }
-TOPICS = {"科学", "社会", "歴史", "芸術", "環境"}
+TOPICS = {"Science", "Society", "History", "Arts", "Environment"}
 CHOICE_KEYS = {"A", "B", "C", "D"}
 SPEAKER_COUNT = {"lecture": 1, "conversation": 2}
 LENGTH_RANGE = {"lecture": (500, 700), "conversation": (300, 450)}
@@ -24,18 +24,20 @@ QUESTION_COUNT = 6
 MIN_DISTINCT_TYPES = 3
 MAX_SAME_CORRECT = 3
 WORD_COUNT_TOLERANCE = 10
-# 解説中の 「…」 と 『…』 で囲まれた引用。入れ子は想定しない。
-QUOTE_RE = re.compile(r"「([^「」]*)」|『([^『』]*)』")
+# Double-quoted text inside an explanation: straight "..." or curly “...”.
+# Nesting is not expected. Single quotes are deliberately not matched (see
+# _validate_explanation_quotes).
+QUOTE_RE = re.compile('"([^"]*)"|“([^“”]*)”')
 ID_RE = re.compile(r"^listening_\d{3}$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def script_text(script: list[dict]) -> str:
-    """台本を1つの文字列に連結する。語数はこの文字列から数える。
+    """Join the script into one string. Words are counted from this string.
 
-    形の壊れた行(辞書でないもの)は読み飛ばす。_validate_script がそれを
-    別途 script[i] must be an object として報告するので、ここで落ちると
-    本来の診断が出ないまま AttributeError の traceback だけが残る。
+    Malformed lines (not a dict) are skipped. _validate_script reports them separately as
+    "script[i] must be an object", so crashing here would leave only an AttributeError
+    traceback without the real diagnosis.
     """
     return " ".join(str(line.get("text", "")) for line in script if isinstance(line, dict))
 
@@ -69,8 +71,8 @@ def _validate_speakers(data: dict) -> list[str]:
         if speaker_id in seen:
             errors.append(f"duplicate speaker id {speaker_id!r}")
         seen.add(speaker_id)
-        # 同じ声を2人の話者に割り当てると、音声上で話者が区別できなくなる
-        # (.claude/commands/new-listening.md:56)。lecture は話者が1人なので対象外。
+        # Giving two speakers the same voice makes them indistinguishable in the audio
+        # (.claude/commands/new-listening.md). A lecture has one speaker, so it is exempt.
         if is_conversation:
             voice = str(speaker.get("voice", ""))
             if voice and voice in seen_voices:
@@ -158,23 +160,26 @@ def _validate_questions(data: dict) -> list[str]:
 
 
 def _normalize_quote(text: str) -> str:
-    """突き合わせる前の正規化。空白の詰め方の違いだけを吸収する。
+    """Normalize before comparing. Only absorbs differences in whitespace.
 
-    凝った正規化をすると本物の食い違いまで隠してしまうため、ここは空白だけに留める。
+    Anything fancier would also hide real mismatches, so this stops at whitespace.
     """
     return " ".join(text.split())
 
 
 def _validate_explanation_quotes(data: dict) -> list[str]:
-    """解説が台本に無い英文を引用していないか確かめる。
+    """Check that every double-quoted text in an explanation appears in the script.
 
-    解説は台本の該当箇所を引用して根拠を示す約束になっている。台本を直したあとに
-    解説側の引用を直し忘れると、学習者は一度も流れていない文言を「その選択肢が誤りである
-    理由」として読まされることになる(listening_002 で実際に起きた)。
-    ここが唯一の自動的な歯止めなので、人手のレビューに頼らず機械で塞ぐ。
+    An explanation is supposed to quote the relevant part of the script as evidence. If the
+    script is fixed and the quote in the explanation is not, the learner is made to read
+    words that were never played as "the reason this choice is wrong" (this actually happened
+    in listening_002). This is the only automatic guard, so it is closed by machine instead
+    of relying on human review.
 
-    ラテン文字で始まる引用だけを見る。「取るに足らない」のような日本語だけの引用は
-    語義の言い換えであって台本の引用ではないため、台本に無くて当然である。
+    Quotation rule for explanations: double quotes ("..." or the curly pair) are reserved
+    for verbatim quotes of the script, and every one of them is checked here. Paraphrases
+    and single terms go in single quotes ('...'), which are not checked, so their absence
+    from the script is expected.
     """
     script = data.get("script")
     questions = data.get("questions")
@@ -188,9 +193,9 @@ def _validate_explanation_quotes(data: dict) -> list[str]:
             continue
         for match in QUOTE_RE.finditer(str(question.get("explanation", ""))):
             quote = _normalize_quote(match.group(1) or match.group(2) or "")
-            if not quote or not (quote[0].isascii() and quote[0].isalpha()):
+            if not quote:
                 continue
-            # 文の途中を引用して末尾にピリオドを補った形も認める。
+            # Also accept a mid-sentence quote with a period added at the end.
             if quote in haystack or quote.rstrip(".") in haystack:
                 continue
             errors.append(

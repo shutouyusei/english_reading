@@ -1,0 +1,1138 @@
+{
+  "id": "passage_007",
+  "title": "Who Owns the Yardstick",
+  "topic": "History",
+  "body": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next. Units of measure grew out of the work they described. A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain. Such units were not evidence of ignorance. They were exact about what mattered locally, and they carried information that an abstract quantity could not. An acre defined by labour told a farmer how long a field would take to work; an acre defined by area told him nothing of the sort.\n\nThe difficulty appeared when goods and obligations crossed the boundary of the community that had defined them. A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral. A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched. Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal. Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible.\n\nEarly reform therefore concentrated on the object itself. Towns chained iron yardsticks to church doors and kept master vessels in guildhalls, where any buyer could test a suspect measure against them. This was an improvement, yet it displaced the problem rather than dissolving it. Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another. Enforcement still depended on the very authorities whose conduct the standard was meant to constrain.\n\nThe metric system's innovation was not decimal arithmetic but the relocation of authority. By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself. Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris. The principle nonetheless proved decisive. Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them. Modern practice completes the movement the reformers began. The metre is now fixed by the distance light travels in a specified fraction of a second, a quantity that belongs to no nation and sits in no vault.",
+  "word_count": 460,
+  "added": "2026-08-15",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 1, what advantage did locally defined units have?",
+      "choices": {
+        "A": "They could be converted into one another without difficulty.",
+        "B": "They were more accurate than measurements based on area.",
+        "C": "They conveyed practical information that an abstract quantity did not.",
+        "D": "They were established by agreement among neighbouring towns."
+      },
+      "correct": "C",
+      "target_word": null,
+      "explanation": "Paragraph 1 says \"they carried information that an abstract quantity could not\", and goes on to explain that an acre defined by labour \"told a farmer how long a field would take to work\". The advantage was that these units carried practical information that an abstract number does not convey. A contradicts the difficulty of conversion described in paragraph 2. B is wrong because the point is not a comparison of accuracy but a difference in the kind of information. D goes against the premise that the units differed from town to town."
+    },
+    {
+      "id": 2,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention the lord who enlarged the vessel used to collect grain rents?",
+      "choices": {
+        "A": "To illustrate how a physical standard allowed obligations to be altered without changing the law",
+        "B": "To argue that medieval lords were more dishonest than medieval merchants",
+        "C": "To explain why grain was measured by volume rather than by weight",
+        "D": "To show that tenants eventually succeeded in reforming local measures"
+      },
+      "correct": "A",
+      "target_word": null,
+      "explanation": "Immediately after this example, the passage generalizes: \"Because the physical object was the definition, altering the object altered the obligation\". The example is there to show the structure in which, because the vessel itself is the definition, the burden can be changed without changing the rule. B is wrong because the passage is about the system, not about the morality of individuals. C does not fit because the passage says nothing about the reason for the method of measurement. D goes against the statement that the complaints went no further than \"protests against particular abuses\"."
+    },
+    {
+      "id": 3,
+      "type": "Vocabulary",
+      "question": "The word \"subsided\" in paragraph 4 is closest in meaning to",
+      "choices": {
+        "A": "spread",
+        "B": "hardened",
+        "C": "returned",
+        "D": "weakened"
+      },
+      "correct": "D",
+      "target_word": "subsided",
+      "explanation": "The subject is the resistance, taken up from \"Resistance in the marketplace was fierce and lasted decades\", and the passage describes how that resistance died down through administrative means. 'Weakened' is therefore the closest. A, 'spread', and B, 'hardened', go in the opposite direction from the meaning of the sentence. C, 'returned', does not fit the cause and effect before and after."
+    },
+    {
+      "id": 4,
+      "type": "Reference",
+      "question": "The word \"This\" in paragraph 3 refers to",
+      "choices": {
+        "A": "the wearing down of prototypes through handling",
+        "B": "the practice of keeping public master measures that buyers could test against",
+        "C": "the drift introduced by copying a copy",
+        "D": "the dependence of enforcement on local authorities"
+      },
+      "correct": "B",
+      "target_word": null,
+      "explanation": "The sentence just before \"This was an improvement\" describes the practice of chaining iron yardsticks and keeping master vessels in guildhalls so that anyone could check a measure against them. This refers to that practice. A, C and D are all limits of that practice which are stated after This, so they are not what it refers to."
+    },
+    {
+      "id": 5,
+      "type": "Inference",
+      "question": "What can be inferred from paragraph 4 about the adoption of the metric system?",
+      "choices": {
+        "A": "It succeeded because merchants were persuaded of its scientific merits.",
+        "B": "It was delayed until the meridian had been measured accurately.",
+        "C": "It advanced because institutions began to operate in the new units.",
+        "D": "It was accepted more readily in the marketplace than in government."
+      },
+      "correct": "C",
+      "target_word": null,
+      "explanation": "After \"it subsided less through persuasion than through administration\", the passage says that taxes, tariffs and school lessons were written in the new units and that the old units \"lost the institutions that had sustained them\". What advanced the adoption was that institutions began to operate in the new units. A clearly contradicts \"less through persuasion\". B goes against the fact that, although measuring the meridian ran into difficulty, the passage says \"The principle nonetheless proved decisive\". D is the opposite of the statement that resistance in the marketplace was fierce."
+    }
+  ],
+  "vocab": {
+    "nineteenth": {
+      "etymology": "Old English nigon 'nine' + -teen 'plus ten' + -th (ordinal)",
+      "definition": "Coming after eighteen others in order; here, in nineteenth century, the years 1801 to 1900.",
+      "usage_in_passage": "The opening \"Before the nineteenth century\" sets the time frame of the whole passage and is the reference point that divides the 'before', when weights and measures differed from place to place, from the 'after', when they were standardized.",
+      "related_terms": [
+        "century",
+        "medieval",
+        "modern",
+        "era"
+      ],
+      "context_sentence": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next."
+    },
+    "bushel": {
+      "etymology": "Old French boissel 'small box' ← boisse 'grain measure'",
+      "definition": "A unit of volume used to measure grain and similar goods.",
+      "usage_in_passage": "By using the same word twice in \"a bushel of grain in one town was rarely a bushel in the next\", the passage presents its central problem in one sentence: the same name does not refer to the same amount.",
+      "related_terms": [
+        "acre",
+        "measure",
+        "unit",
+        "volume"
+      ],
+      "context_sentence": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next."
+    },
+    "grain": {
+      "etymology": "Latin granum 'seed, kernel'",
+      "definition": "The seeds of cereal crops such as wheat.",
+      "usage_in_passage": "In paragraph 2, \"the vessel used to collect grain rents\" and \"the vessel used to sell grain\" are contrasted, which sets up the picture of the fraud: two vessels used for the same grain.",
+      "related_terms": [
+        "crop",
+        "harvest",
+        "cereal",
+        "produce"
+      ],
+      "context_sentence": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next."
+    },
+    "rarely": {
+      "etymology": "Latin rarus 'sparse' + -ly (forms adverbs)",
+      "definition": "Not often; almost never.",
+      "usage_in_passage": "\"was rarely a bushel in the next\" avoids an absolute statement and presents the fact that there were exceptions but that, as a rule, the measures did not match. It does the same job as seldom in paragraph 2.",
+      "related_terms": [
+        "seldom",
+        "scarcely",
+        "infrequently",
+        "often"
+      ],
+      "context_sentence": "Before the nineteenth century, a bushel of grain in one town was rarely a bushel in the next."
+    },
+    "grew": {
+      "etymology": "Past tense of Old English growan 'to grow'",
+      "definition": "Past tense of grow; here, in grow out of, 'to develop naturally from'.",
+      "usage_in_passage": "\"Units of measure grew out of the work they described\" claims that units were not designed on paper but grew out of labour, and it leads into the explanations of foot, acre and stone in the following sentences.",
+      "related_terms": [
+        "emerge",
+        "arise",
+        "develop",
+        "originate"
+      ],
+      "context_sentence": "Units of measure grew out of the work they described."
+    },
+    "approximated": {
+      "etymology": "Latin ad- 'to' + proximus 'nearest' → 'to bring near'",
+      "definition": "Was roughly equal to.",
+      "usage_in_passage": "The word approximated in \"A foot approximated a stride\" shows that the old units were rough guides and not strict equivalents, and it contrasts with the later move toward 'exact prototypes'.",
+      "related_terms": [
+        "estimated",
+        "resembled",
+        "matched",
+        "corresponded"
+      ],
+      "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
+    },
+    "stride": {
+      "etymology": "Old English stridan 'to straddle, to walk with long steps'",
+      "definition": "A long step; the length of one step.",
+      "usage_in_passage": "It is given as the origin of the foot and is the first example showing that units were rooted in the human body. Together with acre (the labour of oxen) and stone (a weight that can be lifted), it forms a set of three that builds the argument.",
+      "related_terms": [
+        "step",
+        "pace",
+        "gait",
+        "footstep"
+      ],
+      "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
+    },
+    "acre": {
+      "etymology": "Old English æcer 'cultivated land, field' ← Proto-Indo-European *agro- 'field'",
+      "definition": "A unit of land area.",
+      "usage_in_passage": "At the close of paragraph 1, \"An acre defined by labour\" and \"an acre defined by area\" are contrasted, and the word carries the key point that even under the same unit name, the information conveyed changes when the basis of the definition changes.",
+      "related_terms": [
+        "hectare",
+        "plot",
+        "field",
+        "area"
+      ],
+      "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
+    },
+    "oxen": {
+      "etymology": "Old English oxan, plural of oxa (an irregular plural)",
+      "definition": "Plural of ox, a castrated bull; used for farm work.",
+      "usage_in_passage": "In \"the land a team of oxen could plough in a day\", it is the evidence that the acre was defined not by area but by the amount of work done in one day.",
+      "related_terms": [
+        "cattle",
+        "plough",
+        "team",
+        "livestock"
+      ],
+      "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
+    },
+    "plough": {
+      "etymology": "Old Norse plógr 'plough'; the American spelling is plow",
+      "definition": "To turn over the soil of a field with a plough.",
+      "usage_in_passage": "It is the verb that brings labour into the definition of the acre; \"could plough in a day\" shows that time and effort are built into the unit.",
+      "related_terms": [
+        "cultivate",
+        "till",
+        "furrow",
+        "farm"
+      ],
+      "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
+    },
+    "labourer": {
+      "etymology": "Latin labor 'toil' + -er 'person'",
+      "definition": "A person who does physical work.",
+      "usage_in_passage": "In \"a stone the weight a labourer could lift without strain\", it is the third example, showing that even a unit of weight took the physical ability of a particular person as its standard.",
+      "related_terms": [
+        "worker",
+        "peasant",
+        "tenant",
+        "farmhand"
+      ],
+      "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
+    },
+    "lift": {
+      "etymology": "Old Norse lypta 'to raise' ← lopt 'air'",
+      "definition": "To raise something to a higher position.",
+      "usage_in_passage": "It is the verb that carries the very definition of the stone as a unit of weight; \"could lift without strain\" shows that a subjective condition, 'without effort', is brought into the unit.",
+      "related_terms": [
+        "raise",
+        "hoist",
+        "carry",
+        "lower"
+      ],
+      "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
+    },
+    "strain": {
+      "etymology": "Old French estreindre ← Latin stringere 'to draw tight'",
+      "definition": "Excessive physical effort; a heavy burden on the body.",
+      "usage_in_passage": "\"without strain\" reveals that the standard for the stone was not a measuring instrument but a person's sense of effort, and it closes the point made in paragraph 1 about 'units rooted in the body'.",
+      "related_terms": [
+        "effort",
+        "exertion",
+        "stress",
+        "ease"
+      ],
+      "context_sentence": "A foot approximated a stride, an acre the land a team of oxen could plough in a day, a stone the weight a labourer could lift without strain."
+    },
+    "ignorance": {
+      "etymology": "Latin in- (negation) + gnarus 'knowing' → 'not knowing'",
+      "definition": "Lack of knowledge.",
+      "usage_in_passage": "The negative sentence \"Such units were not evidence of ignorance\" sets the attitude of the passage. It is the turning point at which the passage, instead of dismissing the old units as backward, recognizes their logic before discussing the problem.",
+      "related_terms": [
+        "unawareness",
+        "inexperience",
+        "knowledge",
+        "expertise"
+      ],
+      "context_sentence": "Such units were not evidence of ignorance."
+    },
+    "exact": {
+      "etymology": "Latin ex- 'thoroughly' + agere 'to do' → 'carried through, precise'",
+      "definition": "Precise; strictly accurate.",
+      "usage_in_passage": "\"They were exact about what mattered locally\" shifts the point at issue: the old units were not inaccurate but 'accurate about something else'. This phrase is the core of the passage's claim.",
+      "related_terms": [
+        "precise",
+        "accurate",
+        "rigorous",
+        "vague"
+      ],
+      "context_sentence": "They were exact about what mattered locally, and they carried information that an abstract quantity could not."
+    },
+    "locally": {
+      "etymology": "Latin locus 'place' + -al + -ly",
+      "definition": "Within a particular area; in that place.",
+      "usage_in_passage": "\"what mattered locally\" shows that the accuracy of the old units comes with the limit 'in that place', and it prepares for paragraph 2, where they break down the moment a boundary is crossed.",
+      "related_terms": [
+        "regionally",
+        "domestically",
+        "nearby",
+        "universally"
+      ],
+      "context_sentence": "They were exact about what mattered locally, and they carried information that an abstract quantity could not."
+    },
+    "labour": {
+      "etymology": "Latin labor 'toil, hardship'",
+      "definition": "Work, especially physical work; the American spelling is labor.",
+      "usage_in_passage": "In \"An acre defined by labour\", it is set against definition by area. It makes concrete the question that runs through the whole passage: what should the same unit be defined by?",
+      "related_terms": [
+        "work",
+        "toil",
+        "effort",
+        "leisure"
+      ],
+      "context_sentence": "An acre defined by labour told a farmer how long a field would take to work; an acre defined by area told him nothing of the sort."
+    },
+    "farmer": {
+      "etymology": "Middle English ferme 'leased land, fixed rent' + -er",
+      "definition": "A person who owns or works a farm.",
+      "usage_in_passage": "By naming a concrete receiver of the unit in \"told a farmer how long a field would take to work\", the passage shows the reader how a definition by labour is useful in practice.",
+      "related_terms": [
+        "peasant",
+        "tenant",
+        "labourer",
+        "cultivator"
+      ],
+      "context_sentence": "An acre defined by labour told a farmer how long a field would take to work; an acre defined by area told him nothing of the sort."
+    },
+    "difficulty": {
+      "etymology": "Latin dis- (negation) + facilis 'easy' → 'not being easy'",
+      "definition": "A problem; something hard to deal with.",
+      "usage_in_passage": "\"The difficulty appeared when\" is placed at the opening of paragraph 2 and signals a turn, introducing the condition under which the local units defended in paragraph 1 break down.",
+      "related_terms": [
+        "problem",
+        "obstacle",
+        "trouble",
+        "ease"
+      ],
+      "context_sentence": "The difficulty appeared when goods and obligations crossed the boundary of the community that had defined them."
+    },
+    "obligations": {
+      "etymology": "Latin ob- 'toward' + ligare 'to bind' → 'something that binds'",
+      "definition": "Things a person is bound to pay or do; plural of obligation.",
+      "usage_in_passage": "\"when goods and obligations crossed the boundary\" shows that not only the goods bought and sold but also obligations such as rents and taxes depend on units, and it leads to the account of fraud in paragraph 2.",
+      "related_terms": [
+        "duty",
+        "debt",
+        "rent",
+        "commitment"
+      ],
+      "context_sentence": "The difficulty appeared when goods and obligations crossed the boundary of the community that had defined them."
+    },
+    "boundary": {
+      "etymology": "Old French bodne 'boundary marker' + -ary",
+      "definition": "A line that marks the limit of an area.",
+      "usage_in_passage": "\"crossed the boundary of the community that had defined them\" specifies strictly the condition under which the problem arises. Units work inside the community and stop working the moment they go outside it.",
+      "related_terms": [
+        "border",
+        "limit",
+        "frontier",
+        "edge"
+      ],
+      "context_sentence": "The difficulty appeared when goods and obligations crossed the boundary of the community that had defined them."
+    },
+    "cloth": {
+      "etymology": "Old English clāth 'cloth, garment'",
+      "definition": "Woven fabric.",
+      "usage_in_passage": "In \"A merchant buying cloth in three towns\", it is a concrete example that shows how units of length become a problem in actual trade.",
+      "related_terms": [
+        "fabric",
+        "textile",
+        "linen",
+        "merchandise"
+      ],
+      "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
+    },
+    "reckon": {
+      "etymology": "Old English gerecenian 'to count up, to explain'",
+      "definition": "To calculate.",
+      "usage_in_passage": "\"had to reckon in three yardsticks\" shows that the extra work of conversion is itself a cost of trade, and it leads into the next clause, \"the conversion was seldom neutral\".",
+      "related_terms": [
+        "calculate",
+        "compute",
+        "estimate",
+        "convert"
+      ],
+      "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
+    },
+    "yardsticks": {
+      "etymology": "Old English gierd 'rod, twig' + stick 'stick'",
+      "definition": "Measuring sticks; by extension, standards of judgment. Plural of yardstick.",
+      "usage_in_passage": "In \"reckon in three yardsticks\" it expresses the burden on the merchant, and in paragraph 3 it becomes the very object of reform in \"chained iron yardsticks to church doors\". It also connects directly to the title \"Who Owns the Yardstick\".",
+      "related_terms": [
+        "ruler",
+        "measure",
+        "standard",
+        "criterion"
+      ],
+      "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
+    },
+    "seldom": {
+      "etymology": "Old English seldan 'rarely'",
+      "definition": "Not often; almost never.",
+      "usage_in_passage": "The restrained wording \"the conversion was seldom neutral\" suggests that a conversion that is not neutral is the normal state and not an exception, and it prepares the example of fraud that follows.",
+      "related_terms": [
+        "rarely",
+        "infrequently",
+        "scarcely",
+        "frequently"
+      ],
+      "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
+    },
+    "neutral": {
+      "etymology": "Latin neuter 'neither' ← ne- (negation) + uter 'either of two'",
+      "definition": "Not favouring either side.",
+      "usage_in_passage": "The word neutral in \"the conversion was seldom neutral\" points out that conversion always produces a side that gains and a side that loses, and it captures the theme of the whole of paragraph 2 in one word.",
+      "related_terms": [
+        "impartial",
+        "unbiased",
+        "even-handed",
+        "partial"
+      ],
+      "context_sentence": "A merchant buying cloth in three towns had to reckon in three yardsticks, and the conversion was seldom neutral."
+    },
+    "controlled": {
+      "etymology": "Old French contrerolle 'duplicate register for checking' ← contre 'against' + rolle 'roll'",
+      "definition": "Had power over; was in charge of.",
+      "usage_in_passage": "\"A lord who controlled the official measure\" makes it explicit that the problem of units is a problem of power and not of technique, and it connects directly to the theme of the passage, 'who owns the standard'.",
+      "related_terms": [
+        "governed",
+        "administered",
+        "dominated",
+        "regulated"
+      ],
+      "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
+    },
+    "quietly": {
+      "etymology": "Latin quies 'rest, stillness' + -ly",
+      "definition": "Secretly; without attracting attention.",
+      "usage_in_passage": "The word quietly in \"could quietly enlarge the vessel\" stresses that this fraud was carried out not as open violence but as an operation nobody noticed, and it also explains why the protests stayed at the level of individual cases.",
+      "related_terms": [
+        "secretly",
+        "discreetly",
+        "covertly",
+        "openly"
+      ],
+      "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
+    },
+    "vessel": {
+      "etymology": "Latin vascellum 'small container' ← vas 'container'",
+      "definition": "A container for holding something.",
+      "usage_in_passage": "In paragraph 2 the two vessels, one for collecting rent and one for selling, are contrasted, and in paragraph 3 the word becomes a tool of reform in \"kept master vessels in guildhalls\". It is the word that carries the passage's key point that the vessel itself is the definition.",
+      "related_terms": [
+        "container",
+        "receptacle",
+        "measure",
+        "cask"
+      ],
+      "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
+    },
+    "collect": {
+      "etymology": "Latin com- 'together' + legere 'to gather'",
+      "definition": "To gather; to take in payment that is owed.",
+      "usage_in_passage": "In \"the vessel used to collect grain rents\", it shows that the unit is used at the moment of collection. It carries one side of the picture that separates the vessel of the seller from the vessel of the collector.",
+      "related_terms": [
+        "gather",
+        "levy",
+        "exact",
+        "distribute"
+      ],
+      "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
+    },
+    "untouched": {
+      "etymology": "un- (negation) + touch 'to touch' + -ed",
+      "definition": "Not changed; left as it was.",
+      "usage_in_passage": "The word untouched in \"while leaving the vessel used to sell grain untouched\" shows how clever the fraud was. Because only one of the two is changed, the standard of comparison is lost and the fraud is hard to detect.",
+      "related_terms": [
+        "unaltered",
+        "unchanged",
+        "intact",
+        "modified"
+      ],
+      "context_sentence": "A lord who controlled the official measure could quietly enlarge the vessel used to collect grain rents while leaving the vessel used to sell grain untouched."
+    },
+    "altering": {
+      "etymology": "Latin alter 'other' → 'to make into something other'",
+      "definition": "Changing something.",
+      "usage_in_passage": "The construction \"altering the object altered the obligation\", which is close to a repetition of the same word, shows in compressed form the defect in the system: changing the object and changing the obligation cannot be told apart.",
+      "related_terms": [
+        "changing",
+        "modifying",
+        "adjusting",
+        "preserving"
+      ],
+      "context_sentence": "Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal."
+    },
+    "altered": {
+      "etymology": "Past participle form from Latin alter 'other'",
+      "definition": "Changed.",
+      "usage_in_passage": "It carries the second half of \"altering the object altered the obligation\" and shows that the cause (changing the object) and the result (changing the obligation) are one and the same act. This is the core of the argument in paragraph 2.",
+      "related_terms": [
+        "changed",
+        "transformed",
+        "revised",
+        "retained"
+      ],
+      "context_sentence": "Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal."
+    },
+    "obligation": {
+      "etymology": "Latin ob- 'toward' + ligare 'to bind'",
+      "definition": "Something a person is bound to pay or do; a burden.",
+      "usage_in_passage": "In \"altering the object altered the obligation\", it shows that the size of the physical vessel is converted directly into the weight of the obligation a person bears. It is the basis for Question 2.",
+      "related_terms": [
+        "duty",
+        "liability",
+        "rent",
+        "exemption"
+      ],
+      "context_sentence": "Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal."
+    },
+    "tenants": {
+      "etymology": "Latin tenens, present participle of tenere 'to hold' → 'one who holds land'",
+      "definition": "People who rent land from a lord; plural of tenant.",
+      "usage_in_passage": "\"tenants had no independent quantity to which they could appeal\" shows the powerlessness of the victims. It completes the picture in which the very standard they would appeal to is in the hands of the other side.",
+      "related_terms": [
+        "peasants",
+        "lessees",
+        "occupants",
+        "landlords"
+      ],
+      "context_sentence": "Because the physical object was the definition, altering the object altered the obligation, and tenants had no independent quantity to which they could appeal."
+    },
+    "medieval": {
+      "etymology": "Latin medium 'middle' + aevum 'age' → 'of the Middle Ages'",
+      "definition": "Of the Middle Ages.",
+      "usage_in_passage": "In \"Medieval court records are crowded with complaints\", it shows where the evidence comes from and supports the point that this problem was not theoretical but a reality that remains in the records.",
+      "related_terms": [
+        "mediaeval",
+        "feudal",
+        "premodern",
+        "modern"
+      ],
+      "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
+    },
+    "crowded": {
+      "etymology": "Old English crūdan 'to press, to pack in' + -ed",
+      "definition": "Packed full.",
+      "usage_in_passage": "\"court records are crowded with complaints\" expresses the large quantity figuratively and conveys in one word that fraud was not an exceptional event but an everyday one.",
+      "related_terms": [
+        "packed",
+        "filled",
+        "teeming",
+        "empty"
+      ],
+      "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
+    },
+    "complaints": {
+      "etymology": "Latin com- (intensive) + plangere 'to lament, to beat the breast'",
+      "definition": "Statements that something is wrong; plural of complaint.",
+      "usage_in_passage": "The passage mentions \"complaints about false measures\" and then immediately limits them with \"these were protests against particular abuses rather than against the arrangement\". The word leads into the important reservation that the criticism did not reach the system.",
+      "related_terms": [
+        "grievances",
+        "protests",
+        "objections",
+        "praise"
+      ],
+      "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
+    },
+    "protests": {
+      "etymology": "Latin pro- 'before' + testari 'to testify' → 'to declare publicly'",
+      "definition": "Expressions of objection.",
+      "usage_in_passage": "\"protests against particular abuses rather than against the arrangement that made abuse possible\" is a sharp part of the passage's analysis; it separates protest against individual frauds from criticism of the system itself.",
+      "related_terms": [
+        "objections",
+        "complaints",
+        "demonstrations",
+        "acceptance"
+      ],
+      "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
+    },
+    "arrangement": {
+      "etymology": "Old French arengier 'to put in a row' ← a- + rang 'row' + -ment",
+      "definition": "The way something is set up or organized; a system.",
+      "usage_in_passage": "The word arrangement in \"the arrangement that made abuse possible\" refers not to individual frauds but to the system itself. The discussion of reform from paragraph 3 onward is aimed at the level this word points to.",
+      "related_terms": [
+        "system",
+        "structure",
+        "scheme",
+        "institution"
+      ],
+      "context_sentence": "Medieval court records are crowded with complaints about false measures, but these were protests against particular abuses rather than against the arrangement that made abuse possible."
+    },
+    "reform": {
+      "etymology": "Latin re- 'again' + formare 'to shape' → 'to make again'",
+      "definition": "The act of changing a system in order to improve it.",
+      "usage_in_passage": "\"Early reform therefore concentrated on the object itself\" opens paragraph 3 and shows what early reform aimed at (and what it overlooked).",
+      "related_terms": [
+        "revision",
+        "improvement",
+        "restructuring",
+        "stagnation"
+      ],
+      "context_sentence": "Early reform therefore concentrated on the object itself."
+    },
+    "concentrated": {
+      "etymology": "Latin com- 'together' + centrum 'centre' → 'to bring to the centre'",
+      "definition": "Focused attention or effort on one thing.",
+      "usage_in_passage": "\"concentrated on the object itself\" announces in advance the limit of early reform. Because it focused on the object, the real problem, where authority lies, was left untouched.",
+      "related_terms": [
+        "focused",
+        "centred",
+        "directed",
+        "dispersed"
+      ],
+      "context_sentence": "Early reform therefore concentrated on the object itself."
+    },
+    "vessels": {
+      "etymology": "From the plural of Latin vascellum 'small container'",
+      "definition": "Containers for holding something; plural of vessel.",
+      "usage_in_passage": "In \"kept master vessels in guildhalls\", it expresses the concrete measure of early reform: placing the master standards in a public place. The vessel, which was a tool of fraud in paragraph 2, becomes here a means of fighting it.",
+      "related_terms": [
+        "containers",
+        "measures",
+        "prototypes",
+        "standards"
+      ],
+      "context_sentence": "Towns chained iron yardsticks to church doors and kept master vessels in guildhalls, where any buyer could test a suspect measure against them."
+    },
+    "guildhalls": {
+      "etymology": "Old English gield 'guild, payment' + hall 'hall'",
+      "definition": "Buildings where a guild of merchants or craftsmen met.",
+      "usage_in_passage": "It is given as a place of storage alongside church doors, and shows that the master standards were kept in public places anyone could approach. Later in the paragraph, however, this public character is denied beyond the town itself.",
+      "related_terms": [
+        "guild",
+        "town hall",
+        "assembly",
+        "market"
+      ],
+      "context_sentence": "Towns chained iron yardsticks to church doors and kept master vessels in guildhalls, where any buyer could test a suspect measure against them."
+    },
+    "suspect": {
+      "etymology": "Latin sub- 'from below' + specere 'to look' → 'to look at from below'",
+      "definition": "Thought likely to be false or dishonest.",
+      "usage_in_passage": "In \"test a suspect measure against them\", it shows that the procedure of checking is a way to clear up doubt. The advantage of early reform was that buyers could verify a measure by themselves.",
+      "related_terms": [
+        "doubtful",
+        "questionable",
+        "dubious",
+        "trustworthy"
+      ],
+      "context_sentence": "Towns chained iron yardsticks to church doors and kept master vessels in guildhalls, where any buyer could test a suspect measure against them."
+    },
+    "displaced": {
+      "etymology": "Latin dis- 'away' + placere/placer 'to place' → 'to shift the position'",
+      "definition": "Moved to another place; here, shifted where the problem lay.",
+      "usage_in_passage": "\"it displaced the problem rather than dissolving it\" is the phrase that settles the assessment in paragraph 3. It says that the reform did not solve the problem but only moved it to another place, and it leads to the fundamental solution in paragraph 4.",
+      "related_terms": [
+        "shifted",
+        "relocated",
+        "moved",
+        "resolved"
+      ],
+      "context_sentence": "This was an improvement, yet it displaced the problem rather than dissolving it."
+    },
+    "dissolving": {
+      "etymology": "Latin dis- 'apart' + solvere 'to loosen' → 'to unravel'",
+      "definition": "Making something disappear; bringing it to an end.",
+      "usage_in_passage": "In \"rather than dissolving it\" it is set against displaced and brings out the difference between removing a problem and moving it. This contrast is the premise of the claim in paragraph 4.",
+      "related_terms": [
+        "eliminating",
+        "resolving",
+        "removing",
+        "preserving"
+      ],
+      "context_sentence": "This was an improvement, yet it displaced the problem rather than dissolving it."
+    },
+    "prototypes": {
+      "etymology": "Greek prōtos 'first' + typos 'type' → 'original form'",
+      "definition": "Original physical objects that serve as the standard for a unit.",
+      "usage_in_passage": "\"Prototypes wore down with handling\" strikes at the weakness of a standard that is an object. The fact that anything that is an object wears away makes the turn in paragraph 4 to 'a definition based on nature' inevitable.",
+      "related_terms": [
+        "standards",
+        "models",
+        "originals",
+        "copies"
+      ],
+      "context_sentence": "Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another."
+    },
+    "wore": {
+      "etymology": "Past tense of Old English werian 'to have on the body, to wear away'",
+      "definition": "Past tense of wear; here, in wear down, 'to become smaller through use'.",
+      "usage_in_passage": "In \"Prototypes wore down with handling\", it shows the paradox that the more a standard is used, the more it goes wrong. It expresses directly the defect of a standard that deteriorates the more it is consulted.",
+      "related_terms": [
+        "eroded",
+        "deteriorated",
+        "diminished",
+        "endured"
+      ],
+      "context_sentence": "Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another."
+    },
+    "drifted": {
+      "etymology": "Old Norse drift 'being driven along' ← drive 'to drive'",
+      "definition": "Moved away little by little from the original value.",
+      "usage_in_passage": "\"copies taken from copies drifted\" expresses the accumulation of error. It refers to a problem specific to copying a standard: each error is small, but the standard moves when copying is repeated.",
+      "related_terms": [
+        "deviated",
+        "strayed",
+        "diverged",
+        "stabilised"
+      ],
+      "context_sentence": "Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another."
+    },
+    "mute": {
+      "etymology": "Latin mutus 'unable to speak, silent'",
+      "definition": "Silent; saying nothing.",
+      "usage_in_passage": "It is used with personification in \"a standard held in one town remained mute about the standard held in another\", and shows the structural break in which the master standards of different towns cannot refer to each other. It echoes locally in paragraph 1.",
+      "related_terms": [
+        "silent",
+        "speechless",
+        "uninformative",
+        "articulate"
+      ],
+      "context_sentence": "Prototypes wore down with handling, copies taken from copies drifted, and a standard held in one town remained mute about the standard held in another."
+    },
+    "enforcement": {
+      "etymology": "Old French enforcier 'to give strength' ← en- + force 'strength' + -ment",
+      "definition": "The act of making people obey a rule.",
+      "usage_in_passage": "\"Enforcement still depended on the very authorities whose conduct the standard was meant to constrain\" is the conclusion of paragraph 3 and points to the circularity that those being watched are also those doing the watching.",
+      "related_terms": [
+        "implementation",
+        "policing",
+        "regulation",
+        "compliance"
+      ],
+      "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
+    },
+    "depended": {
+      "etymology": "Latin de- 'down' + pendere 'to hang' → 'to hang from'",
+      "definition": "Relied on; was decided by.",
+      "usage_in_passage": "The word depended in \"Enforcement still depended on the very authorities\" names where the limit of early reform lay. A standard could be made, but the power to make people keep it stayed in the hands of the original authorities.",
+      "related_terms": [
+        "relied",
+        "rested",
+        "hinged",
+        "independent"
+      ],
+      "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
+    },
+    "authorities": {
+      "etymology": "Latin auctor 'maker, person of authority' + -itas → 'authority, officials'",
+      "definition": "The people or bodies that hold official power.",
+      "usage_in_passage": "In \"the very authorities whose conduct the standard was meant to constrain\", it comes with the very, which gives the phrase an ironic edge. It points out the contradiction of entrusting enforcement to the party that should be constrained.",
+      "related_terms": [
+        "officials",
+        "magistrates",
+        "lords",
+        "subjects"
+      ],
+      "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
+    },
+    "meant": {
+      "etymology": "Past tense of Old English mænan 'to intend, to mean'",
+      "definition": "Past participle of mean; be meant to means 'be intended to'.",
+      "usage_in_passage": "\"the standard was meant to constrain\" shows the gap between the original purpose of the standard and how it actually operated. The suggestion that the intention was there but was not fulfilled forms the bridge to paragraph 4.",
+      "related_terms": [
+        "intended",
+        "designed",
+        "supposed",
+        "achieved"
+      ],
+      "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
+    },
+    "constrain": {
+      "etymology": "Latin com- 'together' + stringere 'to draw tight' → 'to bind tightly'",
+      "definition": "To limit or restrict.",
+      "usage_in_passage": "In \"whose conduct the standard was meant to constrain\", it states explicitly that the role of the standard is to hold power in check. The conditions under which this purpose is achieved are the theme of paragraph 4.",
+      "related_terms": [
+        "restrict",
+        "limit",
+        "restrain",
+        "liberate"
+      ],
+      "context_sentence": "Enforcement still depended on the very authorities whose conduct the standard was meant to constrain."
+    },
+    "metric": {
+      "etymology": "Greek metron 'measure' + -ic",
+      "definition": "Relating to the system of measurement based on the metre.",
+      "usage_in_passage": "\"The metric system's innovation was not decimal arithmetic but the relocation of authority\" presents the theme of paragraph 4. With the not A but B construction, it rejects the common view and sets up the passage's own claim.",
+      "related_terms": [
+        "decimal",
+        "measurement",
+        "standard",
+        "imperial"
+      ],
+      "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
+    },
+    "innovation": {
+      "etymology": "Latin in- 'into' + novus 'new' → 'making new'",
+      "definition": "A new idea or method.",
+      "usage_in_passage": "As the subject of \"The metric system's innovation was not decimal arithmetic\", it raises the question of what was really new. It is a word that carries the central claim of the passage.",
+      "related_terms": [
+        "invention",
+        "breakthrough",
+        "novelty",
+        "tradition"
+      ],
+      "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
+    },
+    "decimal": {
+      "etymology": "Latin decimus 'tenth' ← decem 'ten'",
+      "definition": "Based on the number ten.",
+      "usage_in_passage": "In \"not decimal arithmetic but the relocation of authority\", it is deliberately placed on the side that is denied, although it is what people usually name as the innovation of the metric system. This goes against the reader's expectation and makes the claim stand out.",
+      "related_terms": [
+        "metric",
+        "base-ten",
+        "numerical",
+        "arithmetic"
+      ],
+      "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
+    },
+    "arithmetic": {
+      "etymology": "Greek arithmos 'number' + -tikē 'art'",
+      "definition": "Calculation with numbers.",
+      "usage_in_passage": "Linked with decimal, it stands for a surface advantage, ease of calculation. The passage sets this aside and argues that the transfer of authority is the real essence.",
+      "related_terms": [
+        "calculation",
+        "mathematics",
+        "computation",
+        "numeracy"
+      ],
+      "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
+    },
+    "relocation": {
+      "etymology": "Latin re- 'again' + locus 'place' + -ation → 'placing again'",
+      "definition": "The act of moving something to a new place.",
+      "usage_in_passage": "\"the relocation of authority\" expresses the conclusion of the whole passage in one word. The claim is that the innovation was not remaking the standard but taking the authority to hold the standard out of anyone's hands.",
+      "related_terms": [
+        "transfer",
+        "displacement",
+        "shift",
+        "retention"
+      ],
+      "context_sentence": "The metric system's innovation was not decimal arithmetic but the relocation of authority."
+    },
+    "metre": {
+      "etymology": "Greek metron 'measure' ← Proto-Indo-European *me- 'to measure'; the American spelling is meter",
+      "definition": "The basic unit of length in the metric system.",
+      "usage_in_passage": "It is defined in \"defining the metre as a fraction of the earth's meridian\", and in the final sentence it is updated to a definition based on the speed of light. It works as the concrete object that runs through the passage's timeline.",
+      "related_terms": [
+        "metric",
+        "yardstick",
+        "unit",
+        "measure"
+      ],
+      "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
+    },
+    "fraction": {
+      "etymology": "Latin frangere 'to break' → 'a piece broken off'",
+      "definition": "A part of a whole.",
+      "usage_in_passage": "It is used in two places, \"a fraction of the earth's meridian\" and \"a specified fraction of a second\", and shows that the old definition and the new one share the same idea: fixing the unit as a part of a quantity found in nature.",
+      "related_terms": [
+        "portion",
+        "segment",
+        "proportion",
+        "whole"
+      ],
+      "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
+    },
+    "meridian": {
+      "etymology": "Latin meridies 'noon' ← medius 'middle' + dies 'day' → 'the line where the sun is highest'",
+      "definition": "A line on the earth's surface running between the North Pole and the South Pole.",
+      "usage_in_passage": "It appears as the basis of the definition of the metre, and \"Measuring the meridian proved harder than anticipated\" creates the gap between the ideal and its execution. What matters is that it was the result of seeking a standard that belongs to no one.",
+      "related_terms": [
+        "longitude",
+        "latitude",
+        "equator",
+        "circumference"
+      ],
+      "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
+    },
+    "sought": {
+      "etymology": "Past tense of Old English sēcan 'to look for'",
+      "definition": "Past tense of seek; tried to find or obtain.",
+      "usage_in_passage": "In \"its designers sought a standard that no lord owned\", it states the designers' intention explicitly. It is a word that tells what they were aiming for, apart from whether it was achieved.",
+      "related_terms": [
+        "pursued",
+        "aimed",
+        "desired",
+        "abandoned"
+      ],
+      "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
+    },
+    "corrupt": {
+      "etymology": "Latin com- 'thoroughly' + rumpere 'to break' → 'to destroy'",
+      "definition": "To damage; to make worse or dishonest.",
+      "usage_in_passage": "\"a standard that no lord owned and no wear could corrupt\" places corruption by people (lord) side by side with physical deterioration (wear). It answers at the same time the two defects shown in paragraphs 2 and 3.",
+      "related_terms": [
+        "debase",
+        "spoil",
+        "taint",
+        "preserve"
+      ],
+      "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
+    },
+    "competent": {
+      "etymology": "Latin com- 'together' + petere 'to seek' → 'fitting, capable'",
+      "definition": "Having the necessary skill.",
+      "usage_in_passage": "The word competent in \"a competent surveyor could in principle reconstruct\" shows that ordinary skill is enough and no special authority is needed. It carries the implication that the standard is opened to everyone.",
+      "related_terms": [
+        "capable",
+        "qualified",
+        "skilled",
+        "incompetent"
+      ],
+      "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
+    },
+    "surveyor": {
+      "etymology": "Old French surveeir 'to look over' ← sur- 'from above' + veeir 'to see' + -or",
+      "definition": "A person whose job is to measure land.",
+      "usage_in_passage": "The surveyor is put in the place of the authorities who keep a prototype. The property that anyone can measure the standard again from the world is the decisive difference from the 'stored prototypes' of paragraph 3.",
+      "related_terms": [
+        "geometer",
+        "engineer",
+        "cartographer",
+        "inspector"
+      ],
+      "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
+    },
+    "principle": {
+      "etymology": "Latin principium 'beginning, foundation' ← princeps 'first'",
+      "definition": "A basic idea or rule; in principle means 'in theory'.",
+      "usage_in_passage": "In \"could in principle reconstruct\" it works as a reservation that indicates a theoretical possibility, and in \"The principle nonetheless proved decisive\" it shows that the principle won in spite of the practical failure. The same word plays two roles.",
+      "related_terms": [
+        "doctrine",
+        "rule",
+        "foundation",
+        "practice"
+      ],
+      "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
+    },
+    "reconstruct": {
+      "etymology": "Latin re- 'again' + com- 'together' + struere 'to pile up' → 'to build again'",
+      "definition": "To build or make again.",
+      "usage_in_passage": "\"reconstruct from the world itself\" expresses the decisive property of the new standard. Because it can be reproduced by measuring the world even if the prototype is lost, it differs fundamentally from the older standards that depend on storage.",
+      "related_terms": [
+        "rebuild",
+        "restore",
+        "recreate",
+        "destroy"
+      ],
+      "context_sentence": "By defining the metre as a fraction of the earth's meridian, its designers sought a standard that no lord owned and no wear could corrupt, one that a competent surveyor could in principle reconstruct from the world itself."
+    },
+    "proved": {
+      "etymology": "Latin probare 'to test, to approve'",
+      "definition": "Turned out to be.",
+      "usage_in_passage": "In two places, \"proved harder than anticipated\" and \"The principle nonetheless proved decisive\", the failure of the actual measurement and the success of the principle are set side by side with the same verb. This produces an effect of contrast.",
+      "related_terms": [
+        "turned out",
+        "demonstrated",
+        "showed",
+        "disproved"
+      ],
+      "context_sentence": "Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris."
+    },
+    "harder": {
+      "etymology": "Comparative of Old English heard 'hard, difficult'",
+      "definition": "More difficult.",
+      "usage_in_passage": "In \"Measuring the meridian proved harder than anticipated\", it shows the gap between ideal and reality. The nonetheless that comes soon after, however, makes it explicit that this failure does not overturn the conclusion.",
+      "related_terms": [
+        "tougher",
+        "more difficult",
+        "demanding",
+        "easier"
+      ],
+      "context_sentence": "Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris."
+    },
+    "anticipated": {
+      "etymology": "Latin ante- 'before' + capere 'to take' → 'to take in advance'",
+      "definition": "Expected.",
+      "usage_in_passage": "\"harder than anticipated\" is a phrase that admits the designers were too optimistic. It shows that the passage does not praise the metric system uncritically.",
+      "related_terms": [
+        "expected",
+        "foreseen",
+        "predicted",
+        "unforeseen"
+      ],
+      "context_sentence": "Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris."
+    },
+    "vault": {
+      "etymology": "Old French volte 'arched ceiling' ← Latin volvere 'to roll'",
+      "definition": "A secure room for storing valuable things.",
+      "usage_in_passage": "It is used twice, in \"remained a metal bar in a vault outside Paris\" and in \"sits in no vault\" in the final sentence. The repetition of the same word impresses on the reader the shift from a standard kept in a vault to a standard that needs no storage.",
+      "related_terms": [
+        "strongroom",
+        "safe",
+        "repository",
+        "archive"
+      ],
+      "context_sentence": "Measuring the meridian proved harder than anticipated, and for a century the working standard remained a metal bar in a vault outside Paris."
+    },
+    "nonetheless": {
+      "etymology": "A combination of none + the + less 'not any the less'",
+      "definition": "In spite of that.",
+      "usage_in_passage": "In \"The principle nonetheless proved decisive\", it is the linking word that sets the direction of the argument right again. It creates a structure of concession: the failure of the measurement is admitted, and the passage says the principle won all the same. It is also relevant to the basis for Question 5.",
+      "related_terms": [
+        "nevertheless",
+        "however",
+        "still",
+        "therefore"
+      ],
+      "context_sentence": "The principle nonetheless proved decisive."
+    },
+    "decisive": {
+      "etymology": "Latin de- 'off' + caedere 'to cut' → 'to settle by cutting'",
+      "definition": "Settling an outcome; determining the result.",
+      "usage_in_passage": "\"proved decisive\" fixes the assessment in paragraph 4. It expresses the judgment that, in spite of practical shortcomings, the principle of moving authority determined the result in the end.",
+      "related_terms": [
+        "conclusive",
+        "crucial",
+        "determining",
+        "inconclusive"
+      ],
+      "context_sentence": "The principle nonetheless proved decisive."
+    },
+    "resistance": {
+      "etymology": "Latin re- 'against' + sistere 'to stand' → 'standing against'",
+      "definition": "Opposition to something.",
+      "usage_in_passage": "\"Resistance in the marketplace was fierce and lasted decades\" shows that standardization did not advance by orders from above alone. It is the subject of subsided in Question 3.",
+      "related_terms": [
+        "opposition",
+        "defiance",
+        "objection",
+        "acceptance"
+      ],
+      "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
+    },
+    "fierce": {
+      "etymology": "Latin ferus 'wild, savage' → Old French fiers",
+      "definition": "Very strong and intense.",
+      "usage_in_passage": "By choosing a strong word in \"was fierce\", the passage makes the conclusion that follows, that the resistance died down 'through administration and not persuasion', more surprising.",
+      "related_terms": [
+        "intense",
+        "violent",
+        "ferocious",
+        "mild"
+      ],
+      "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
+    },
+    "decades": {
+      "etymology": "Greek dekas 'a group of ten' ← deka 'ten'",
+      "definition": "Periods of ten years; plural of decade.",
+      "usage_in_passage": "\"lasted decades\" shows how long the resistance continued, and supports the point that standardization was not an event completed by a single law.",
+      "related_terms": [
+        "years",
+        "generations",
+        "century",
+        "moment"
+      ],
+      "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
+    },
+    "subsided": {
+      "etymology": "Latin sub- 'down' + sidere 'to sit' → 'to sink down, to settle'",
+      "definition": "Became weaker; died down.",
+      "usage_in_passage": "\"it subsided less through persuasion than through administration\" is the most important phrase in the concluding part of the passage. It says that the resistance disappeared through the operation of institutions and not through persuasion, and it is the basis for both Question 3 and Question 5.",
+      "related_terms": [
+        "diminished",
+        "abated",
+        "waned",
+        "intensified"
+      ],
+      "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
+    },
+    "persuasion": {
+      "etymology": "Latin per- 'thoroughly' + suadere 'to urge' → 'talking someone round'",
+      "definition": "The act of convincing someone by argument.",
+      "usage_in_passage": "In \"less through persuasion than through administration\" it is set against administration. It supports the passage's claim that what changed was not people's minds but the institutions.",
+      "related_terms": [
+        "argument",
+        "convincing",
+        "advocacy",
+        "coercion"
+      ],
+      "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
+    },
+    "tariffs": {
+      "etymology": "Arabic taʿrīf 'notification, itemized list' → Italian tariffa",
+      "definition": "Taxes on imported goods; lists of charges. Plural of tariff.",
+      "usage_in_passage": "It is one of the set of three in \"taxes, tariffs, and school lessons were written in the new units\". It shows that different areas, taxation, trade and education, began to operate in the new units at the same time.",
+      "related_terms": [
+        "duties",
+        "levies",
+        "taxes",
+        "customs"
+      ],
+      "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
+    },
+    "lessons": {
+      "etymology": "Latin lectio 'a reading' ← legere 'to read' → Old French leçon",
+      "definition": "Periods of teaching in school; plural of lesson.",
+      "usage_in_passage": "By being listed alongside taxes and tariffs, school teaching too is placed as one of the institutional devices that fix a standard in place. It points to a long-term mechanism in which the next generation grows up with the new units.",
+      "related_terms": [
+        "classes",
+        "curriculum",
+        "instruction",
+        "schooling"
+      ],
+      "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
+    },
+    "gradually": {
+      "etymology": "Latin gradus 'step, stage' + -al + -ly",
+      "definition": "Slowly; little by little.",
+      "usage_in_passage": "In \"the old ones gradually lost the institutions that had sustained them\", it shows that the old units disappeared not by being banned but by losing their support.",
+      "related_terms": [
+        "slowly",
+        "progressively",
+        "steadily",
+        "abruptly"
+      ],
+      "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
+    },
+    "sustained": {
+      "etymology": "Latin sub- 'from below' + tenere 'to hold' → 'to hold up from below'",
+      "definition": "Kept in existence; supported.",
+      "usage_in_passage": "\"lost the institutions that had sustained them\" is the core of the passage's understanding of cause and effect. It presents the view that units live through institutions and not through custom, and that when the institutions are lost the units die too.",
+      "related_terms": [
+        "supported",
+        "maintained",
+        "upheld",
+        "undermined"
+      ],
+      "context_sentence": "Resistance in the marketplace was fierce and lasted decades, and it subsided less through persuasion than through administration: taxes, tariffs, and school lessons were written in the new units, and the old ones gradually lost the institutions that had sustained them."
+    },
+    "reformers": {
+      "etymology": "Latin re- 'again' + formare 'to shape' + -er",
+      "definition": "People who try to change a system in order to improve it.",
+      "usage_in_passage": "In \"completes the movement the reformers began\", it links the designers of the metre and the modern definition in a single line. It has the role of closing the passage's timeline.",
+      "related_terms": [
+        "innovators",
+        "designers",
+        "revolutionaries",
+        "traditionalists"
+      ],
+      "context_sentence": "Modern practice completes the movement the reformers began."
+    },
+    "belongs": {
+      "etymology": "Middle English be- (intensive) + longen 'to pertain to'",
+      "definition": "Is the property of.",
+      "usage_in_passage": "The word belongs in the final sentence's \"a quantity that belongs to no nation\" gives the answer to the title \"Who Owns the Yardstick\". The conclusion is that having no owner is exactly the point that has been reached.",
+      "related_terms": [
+        "pertains",
+        "appertains",
+        "owns",
+        "excludes"
+      ],
+      "context_sentence": "The metre is now fixed by the distance light travels in a specified fraction of a second, a quantity that belongs to no nation and sits in no vault."
+    },
+    "sits": {
+      "etymology": "Old English sittan 'to sit'",
+      "definition": "Sits; here, 'is kept in a place, exists there'.",
+      "usage_in_passage": "\"sits in no vault\" denies physical storage and closes the passage. It answers \"a metal bar in a vault outside Paris\" from the middle of paragraph 4 head-on, and impresses on the reader the release from the vault.",
+      "related_terms": [
+        "rests",
+        "lies",
+        "resides",
+        "moves"
+      ],
+      "context_sentence": "The metre is now fixed by the distance light travels in a specified fraction of a second, a quantity that belongs to no nation and sits in no vault."
+    }
+  }
+}

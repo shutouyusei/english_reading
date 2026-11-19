@@ -24,21 +24,21 @@ def make_passage() -> dict:
             "target_word": "disequilibria" if qtype == "Vocabulary" else None,
             "choices": {"A": "a", "B": "b", "C": "c", "D": "d"},
             "correct": correct,
-            "explanation": f"解説{i}",
+            "explanation": f"Explanation {i}",
         })
     return {
         "id": "passage_900",
         "title": "Test Passage",
-        "topic": "環境",
+        "topic": "Environment",
         "body": body,
         "word_count": 15,
         "added": "2026-08-04",
         "questions": questions,
         "vocab": {
             "disequilibria": {
-                "etymology": "dis-(否定) + equi-(等しい) + librium(天秤)",
-                "definition": "不均衡状態",
-                "usage_in_passage": "回復の不安定さを示すキーワード。",
+                "etymology": "dis- (not) + equi- (equal) + libra (balance)",
+                "definition": "states of imbalance",
+                "usage_in_passage": "Key word showing that recovery is unstable.",
                 "related_terms": ["equilibrium", "instability"],
                 "context_sentence": "Scientists observe disequilibria in reef ecosystems.",
             }

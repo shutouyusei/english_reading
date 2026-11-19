@@ -16,22 +16,23 @@ async function init() {
   try {
     await Store.init();
   } catch (err) {
-    console.warn("学習記録を読み込めませんでした:", err);
+    console.warn("Could not load study records:", err);
   }
   const params = new URLSearchParams(location.search);
   const id = params.get("id") || "";
   const mode = params.get("mode") === "study" ? "study" : "solve";
   if (!/^passage_\d+$/.test(id)) {
-    renderError("パッセージが指定されていません。");
+    renderError("No passage specified.");
     return;
   }
   try {
-    // 公開後に内容を訂正した場合も確実に反映させる(理由は app.js の同種の記述を参照)。
-    const res = await fetch(`${window.DATA_BASE || ""}data/passages/${id}.json`, { cache: "no-cache" });
+    // Makes sure corrections made after publishing also show up (for the reason, see the
+    // matching comment in app.js).
+    const res = await fetch(`${window.DATA_BASE || ""}data/reading/${id}.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.passage = await res.json();
   } catch (err) {
-    renderError(`パッセージを読み込めませんでした(${err.message})。`);
+    renderError(`Could not load the passage (${err.message}).`);
     return;
   }
   document.title = `${state.passage.title} — TOEFL Reading`;
@@ -41,10 +42,10 @@ async function init() {
 
 function renderError(message) {
   qs("#reader-main").innerHTML =
-    `<p class="error">${escapeHtml(message)} <a href="index.html">一覧に戻る</a></p>`;
+    `<p class="error">${escapeHtml(message)} <a href="index.html">Back to the list</a></p>`;
 }
 
-/* ---------- 解答モード ---------- */
+/* ---------- Solve mode ---------- */
 
 function startSolveMode() {
   stopTimer();
@@ -78,8 +79,8 @@ function updateTimer() {
 
 function renderSolveHeader() {
   qs("#header-status").innerHTML =
-    `<span id="q-pos"></span> ｜ ⏱ <span id="timer">0:00</span> ｜ ` +
-    `<a href="#" id="quit-link">中断して解説モードへ</a>`;
+    `<span id="q-pos"></span> | ⏱ <span id="timer">0:00</span> | ` +
+    `<a href="#" id="quit-link">Quit and go to study mode</a>`;
   qs("#quit-link").addEventListener("click", (e) => {
     e.preventDefault();
     startStudyMode();
@@ -131,7 +132,7 @@ function renderQuestion() {
       <div class="nav-row">
         <button id="back-btn" ${idx === 0 ? "disabled" : ""}>← Back</button>
         <button id="next-btn" class="primary" ${state.answers[idx] ? "" : "disabled"}>
-          ${isLast ? "採点する" : "Next →"}</button>
+          ${isLast ? "Submit" : "Next →"}</button>
       </div>
     </div>`;
   document.querySelectorAll(".choice").forEach((btn) =>
@@ -169,8 +170,8 @@ async function finishSolve() {
     answers: state.answers,
     finishedAt: new Date().toISOString(),
   };
-  // 保存を待ってから結果を描画する。待たないと、直後に復習へ進んだとき
-  // Store.latest() がまだ古く「まだ解いていません」と表示されうる。
+  // Wait for the save before rendering the result. Otherwise, moving on to review right
+  // away can find Store.latest() still stale and show the "not solved yet" message.
   let saveError = null;
   try {
     await Store.saveAttempt(attempt);
@@ -178,24 +179,24 @@ async function finishSolve() {
     saveError = err;
   }
   qs("#header-status").textContent = saveError
-    ? `⚠ 保存に失敗しました: ${saveError.message}`
-    : `⏱ ${formatElapsed(sec)} で終了`;
+    ? `⚠ Could not save the result: ${saveError.message}`
+    : `⏱ Finished in ${formatElapsed(sec)}`;
   qs("#right-pane").innerHTML = `
     <div class="result-card">
-      <p class="score">${score} / ${questions.length} 正解</p>
-      <p class="hint">所要時間 ${formatElapsed(sec)}${
-        wrong.length ? ` ｜ 誤答: ${wrong.join(", ")}` : " ｜ 🎉 全問正解"}</p>
-      <button id="to-study" class="primary">📖 解説モードで復習する</button>
+      <p class="score">${score} / ${questions.length} correct</p>
+      <p class="hint">Time ${formatElapsed(sec)}${
+        wrong.length ? ` | Incorrect: ${wrong.join(", ")}` : " | 🎉 All correct"}</p>
+      <button id="to-study" class="primary">📖 Review in study mode</button>
     </div>`;
   qs("#to-study").addEventListener("click", () => startStudyMode());
 }
 
-/* ---------- 解説モード ---------- */
+/* ---------- Study mode ---------- */
 
 function startStudyMode() {
   stopTimer();
   qs("#header-status").innerHTML =
-    `<a href="#" id="resolve-link">✏️ もう一度解く</a>`;
+    `<a href="#" id="resolve-link">✏️ Solve again</a>`;
   qs("#resolve-link").addEventListener("click", (e) => {
     e.preventDefault();
     startSolveMode();

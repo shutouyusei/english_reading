@@ -1,7 +1,7 @@
 "use strict";
 
-/* 保存層(公開版)。localStorage に最新の1件だけを保持する。
-   エンジンはこのファイルの存在を知らず、window.Store の口だけを使う。 */
+/* Storage layer (public site). Keeps only the latest attempt in localStorage.
+   The engine does not know this file exists; it only uses the window.Store interface. */
 
 const STORE_PREFIX = "results.";
 const _memory = new Map();
@@ -35,7 +35,7 @@ window.Store = {
         STORE_PREFIX + attempt.passageId,
         JSON.stringify(attempt)
       );
-    } catch (_) { /* プライベートモード等では保存しない */ }
+    } catch (_) { /* cannot save in private mode etc.; ignore */ }
     _memory.set(attempt.passageId, [attempt]);
   },
 };

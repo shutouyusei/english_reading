@@ -1,6 +1,6 @@
 "use strict";
 
-/* 純粋関数のみ。DOMに触れないこと(nodeでテストするため)。 */
+/* Pure functions only. Do not touch the DOM (this is tested under node). */
 
 const SUFFIXES = ["ing", "ed", "es", "s"];
 const MIN_STEM_LEN = 3;

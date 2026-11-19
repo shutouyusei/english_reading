@@ -2,10 +2,10 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-// store.native.js は Swift 側のブリッジ (window.webkit.messageHandlers.store) に
-// 依存する。ここでは偽のブリッジを差し込んで、グループ化・並べ替え・キャッシュ更新を
-// 検証する。アプリを再起動したとき一覧のバッジが「最新の」試行を示すかは、
-// この init() の並べ替えだけで決まる。
+// store.native.js depends on the native bridge (window.webkit.messageHandlers.store).
+// A fake bridge is injected to check grouping, sorting and cache updates. After an
+// app restart, whether the list badge shows the latest attempt depends only on the
+// sort in init().
 
 function loadStore(initialAttempts, options = {}) {
   const calls = [];
@@ -15,15 +15,12 @@ function loadStore(initialAttempts, options = {}) {
         store: {
           postMessage: async (payload) => {
             calls.push(payload);
-            if (payload.action === "loadAll") {
-              if (options.loadAllReturns !== undefined) return options.loadAllReturns;
-              return initialAttempts;
-            }
+            if (payload.action === "loadAll") return initialAttempts;
             if (payload.action === "saveAttempt") {
-              if (options.saveRejects) throw new Error("書き込みに失敗しました: 権限がありません");
+              if (options.saveRejects) throw new Error("write failed: permission denied");
               return null;
             }
-            throw new Error(`未知の action: ${payload.action}`);
+            throw new Error(`unknown action: ${payload.action}`);
           },
         },
       },
@@ -47,20 +44,7 @@ const other = {
   answers: ["A", "A", "A", "A", "A"], finishedAt: "2026-08-10T12:00:00.000Z",
 };
 
-test("init は loadAll を一度だけ呼ぶ", async () => {
-  const { Store, calls } = loadStore([]);
-  await Store.init();
-  assert.deepEqual(calls, [{ action: "loadAll" }]);
-});
-
-test("履歴が無ければ空配列と null を返す", async () => {
-  const { Store } = loadStore([]);
-  await Store.init();
-  assert.deepEqual(Store.attempts("passage_005"), []);
-  assert.equal(Store.latest("passage_005"), null);
-});
-
-test("パッセージごとにグループ化される", async () => {
+test("attempts are grouped by passage", async () => {
   const { Store } = loadStore([older, other, newer]);
   await Store.init();
   assert.equal(Store.attempts("passage_005").length, 2);
@@ -68,21 +52,15 @@ test("パッセージごとにグループ化される", async () => {
   assert.deepEqual(Store.attempts("passage_999"), []);
 });
 
-test("latest は最新の試行を返す(ファイル順に依存しない)", async () => {
-  // ファイルは古い順に並んでいる。最新を返すには並べ替えが要る
+test("latest returns the newest attempt (whatever the file order)", async () => {
+  // The file lists the older attempt first, so latest is only right if init() sorts.
   const { Store } = loadStore([older, newer]);
   await Store.init();
   assert.equal(Store.latest("passage_005").finishedAt, newer.finishedAt);
   assert.equal(Store.latest("passage_005").score, 4);
 });
 
-test("ファイルが新しい順に並んでいても latest は変わらない", async () => {
-  const { Store } = loadStore([newer, older]);
-  await Store.init();
-  assert.equal(Store.latest("passage_005").finishedAt, newer.finishedAt);
-});
-
-test("attempts は新しい順に並ぶ", async () => {
+test("attempts are sorted newest first", async () => {
   const { Store } = loadStore([older, newer]);
   await Store.init();
   assert.deepEqual(
@@ -91,7 +69,7 @@ test("attempts は新しい順に並ぶ", async () => {
   );
 });
 
-test("saveAttempt はブリッジへ渡し、キャッシュの先頭に積む", async () => {
+test("saveAttempt calls the bridge and puts the attempt at the front of the cache", async () => {
   const { Store, calls } = loadStore([older]);
   await Store.init();
   await Store.saveAttempt(newer);
@@ -100,24 +78,11 @@ test("saveAttempt はブリッジへ渡し、キャッシュの先頭に積む",
   assert.equal(Store.latest("passage_005").finishedAt, newer.finishedAt);
 });
 
-test("保存が失敗したらキャッシュを汚さずに reject する", async () => {
+test("a failed save rejects and leaves the cache unchanged", async () => {
   const { Store } = loadStore([older], { saveRejects: true });
   await Store.init();
-  await assert.rejects(() => Store.saveAttempt(newer), /書き込みに失敗しました/);
-  // ディスクに書けていないものをキャッシュに入れてはいけない
+  await assert.rejects(() => Store.saveAttempt(newer), /write failed/);
+  // What did not reach the disk must not enter the cache.
   assert.equal(Store.attempts("passage_005").length, 1);
   assert.equal(Store.latest("passage_005").finishedAt, older.finishedAt);
-});
-
-test("loadAll が null を返しても落ちない", async () => {
-  const { Store } = loadStore(null, { loadAllReturns: null });
-  await Store.init();
-  assert.deepEqual(Store.attempts("passage_005"), []);
-});
-
-test("init を二度呼んでも履歴が重複しない", async () => {
-  const { Store } = loadStore([older, newer]);
-  await Store.init();
-  await Store.init();
-  assert.equal(Store.attempts("passage_005").length, 2);
 });

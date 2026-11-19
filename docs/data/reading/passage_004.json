@@ -1,0 +1,1150 @@
+{
+  "id": "passage_004",
+  "title": "Reading the Air Trapped in Ice",
+  "topic": "Science",
+  "body": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago. The evidence comes from Antarctica, where snow that fell in a single season has never melted and has instead been buried by the snow of the seasons that followed. As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely. Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures.\n\nA core drilled from such a sheet is therefore a sequence of samples rather than a single specimen. Bubbles near the top hold air from the industrial era; those a kilometer down hold air from the last glacial maximum. Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday. The concentrations of carbon dioxide and methane that emerge are not inferred from proxies. They are direct measurements of ancient atmosphere. This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it.\n\nDating the layers demands more ingenuity. Near the surface, annual accumulation is visible, and the layers can be counted much as one counts the rings of a tree. Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age. Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology. A large eruption is in this sense a stopwatch pressed once and read in both hemispheres.\n\nOne complication deserves emphasis. Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it. The offset can exceed several thousand years where accumulation is slow, and it must be estimated and subtracted before gas and temperature can be compared. Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate. Much of the technical literature on ice cores concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything.",
+  "word_count": 473,
+  "added": "2026-08-09",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 1, how does ancient air become trapped in an ice sheet?",
+      "target_word": null,
+      "choices": {
+        "A": "Meltwater refreezes around pockets of air near the surface",
+        "B": "Gas rises from the bedrock and is captured by the overlying ice",
+        "C": "The spaces between snow crystals shrink and eventually close as the layers are compressed",
+        "D": "Wind drives air into cracks that later fill with snow"
+      },
+      "correct": "C",
+      "explanation": "Paragraph 1 says \"the spaces between them shrink until they close entirely. Whatever air occupied those spaces at the moment of closure is sealed off\", so the air is trapped when compression closes the gaps. A contradicts the passage's statement that the snow \"has never melted\", and B and D are not stated in the passage."
+    },
+    {
+      "id": 2,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author state that the measurements \"are not inferred from proxies\"?",
+      "target_word": null,
+      "choices": {
+        "A": "To emphasize that ice cores yield the ancient atmosphere itself rather than an indirect indicator of it",
+        "B": "To argue that other methods of studying past climate have been abandoned",
+        "C": "To explain why the instruments must be calibrated before each use",
+        "D": "To indicate that the gas concentrations are still a matter of dispute"
+      },
+      "correct": "A",
+      "explanation": "The next sentence, \"They are direct measurements of ancient atmosphere\", follows as a restatement, so the purpose is to stress how direct the evidence is by contrasting it with indirect indicators. Nothing is said about other methods being abandoned, as B claims, and D contradicts the firm statement \"direct measurements\"."
+    },
+    {
+      "id": 3,
+      "type": "Vocabulary",
+      "question": "The word \"anchors\" in paragraph 3 is closest in meaning to",
+      "target_word": "anchors",
+      "choices": {
+        "A": "compares",
+        "B": "conceals",
+        "C": "interrupts",
+        "D": "fixes"
+      },
+      "correct": "D",
+      "explanation": "The sentence describes how the sulfate layer left by an eruption \"appears simultaneously in cores from opposite ends of the earth\" and so fastens separate records to a common time scale. D, fixes, is therefore the closest. A, compares, only sets records side by side and does not carry the meaning of fastening them to a reference point."
+    },
+    {
+      "id": 4,
+      "type": "Inference",
+      "question": "It can be inferred from paragraph 4 that a researcher who ignored the age offset might",
+      "target_word": null,
+      "choices": {
+        "A": "underestimate the total depth of the ice sheet",
+        "B": "conclude wrongly that temperature rose before carbon dioxide did",
+        "C": "fail to detect the sulfate layers left by volcanic eruptions",
+        "D": "overstate the amount of methane present during glacial periods"
+      },
+      "correct": "B",
+      "explanation": "The passage says \"an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process\". Unless the amount by which the air is younger than the ice is corrected for, the timing of the rise in carbon dioxide is misplaced relative to the warming, and a researcher could reach the wrong conclusion that warming came first. A, C and D have nothing to do with what the correction addresses."
+    },
+    {
+      "id": 5,
+      "type": "Reference",
+      "question": "The word \"them\" in paragraph 4 (\"the corrections that make them mean anything\") refers to",
+      "target_word": null,
+      "choices": {
+        "A": "the corrections",
+        "B": "the ice cores",
+        "C": "the measurements",
+        "D": "the technical publications"
+      },
+      "correct": "C",
+      "explanation": "The sentence is built as \"concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything\", and what the corrections give meaning to is the measurements. A would make them refer to the corrections themselves, so the sentence would become circular, and D is not what the corrections deal with."
+    }
+  ],
+  "vocab": {
+    "atmosphere": {
+      "etymology": "Greek atmos 'vapor' + sphaira 'sphere' → 'sphere of vapor'",
+      "definition": "The layer of gases surrounding the earth.",
+      "usage_in_passage": "The opening \"The atmosphere leaves no fossils\" sets up the problem of the passage. The question of how we can know about something that should leave no fossils runs through the whole text.",
+      "related_terms": [
+        "atmospheric",
+        "air",
+        "climate",
+        "troposphere"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "fossils": {
+      "etymology": "Latin fodere 'to dig' → fossilis 'something dug up' + -s",
+      "definition": "Remains or traces of ancient living things preserved in rock.",
+      "usage_in_passage": "Refers to the usual kind of evidence in paleontology; the fact that none exists here brings out the value of ice cores.",
+      "related_terms": [
+        "fossil",
+        "fossilized",
+        "remains",
+        "specimen"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "climate": {
+      "etymology": "Greek klima 'slope, zone' → Latin clima",
+      "definition": "The typical weather conditions of a place or of the earth over a long period.",
+      "usage_in_passage": "In \"climate scientists\" it names those doing the research, and at the end, in \"a fact about the climate\", it names what they study.",
+      "related_terms": [
+        "climatic",
+        "weather",
+        "meteorology",
+        "atmosphere"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "scientists": {
+      "etymology": "Latin scire 'to know' → science + -ist + -s",
+      "definition": "People who study the natural world through observation and experiment.",
+      "usage_in_passage": "They are the subject of \"can state with confidence\" and are presented as the ones who guarantee that the claim is reliable.",
+      "related_terms": [
+        "science",
+        "scientific",
+        "researchers",
+        "investigators"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "confidence": {
+      "etymology": "Latin con- (intensive) + fidere 'to trust' → confidere + -ence",
+      "definition": "A feeling of certainty.",
+      "usage_in_passage": "\"state with confidence\" creates the paradox that a firm statement is possible even without fossils, and obliges the passage to show the grounds for it.",
+      "related_terms": [
+        "confident",
+        "certainty",
+        "assurance",
+        "conviction"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "hundred": {
+      "etymology": "Old English hundred. A Germanic numeral",
+      "definition": "The number 100.",
+      "usage_in_passage": "In \"eight hundred thousand years ago\" it gives the length of time that can be reconstructed; in paragraph 4, \"a hundred meters\" gives the depth at which the bubbles close.",
+      "related_terms": [
+        "hundreds",
+        "thousand",
+        "century",
+        "numeral"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "thousand": {
+      "etymology": "Old English þūsend. A Germanic numeral",
+      "definition": "The number 1,000.",
+      "usage_in_passage": "Gives the order of magnitude, eight hundred thousand years, and impresses on the reader the time scale that ice cores cover.",
+      "related_terms": [
+        "thousands",
+        "hundred",
+        "millennium",
+        "numeral"
+      ],
+      "context_sentence": "The atmosphere leaves no fossils, yet climate scientists can state with confidence what the air contained eight hundred thousand years ago."
+    },
+    "fell": {
+      "etymology": "Past tense of Old English feallan 'to fall'. Germanic",
+      "definition": "Came down from the sky as snow.",
+      "usage_in_passage": "\"snow that fell in a single season\" refers to a single snowfall, the starting point for the later discussion of layers.",
+      "related_terms": [
+        "fall",
+        "fallen",
+        "descended",
+        "precipitated"
+      ],
+      "context_sentence": "The evidence comes from Antarctica, where snow that fell in a single season has never melted and has instead been buried by the snow of the seasons that followed."
+    },
+    "melted": {
+      "etymology": "Old English meltan 'to melt'. Germanic",
+      "definition": "Turned from solid into liquid.",
+      "usage_in_passage": "\"has never melted\" is the reason the Antarctic record is continuous, and it is also the basis for ruling out a wrong choice in Q1.",
+      "related_terms": [
+        "melt",
+        "molten",
+        "thawed",
+        "liquefied"
+      ],
+      "context_sentence": "The evidence comes from Antarctica, where snow that fell in a single season has never melted and has instead been buried by the snow of the seasons that followed."
+    },
+    "buried": {
+      "etymology": "Old English byrgan 'to bury' → bury + -ed. Germanic",
+      "definition": "Covered over completely.",
+      "usage_in_passage": "In paragraph 1 it describes snow being covered by later snow; in paragraph 4 it states the fact that bubbles do not close until they are buried a hundred meters down. The same word covers both how the record is made and where the error comes from.",
+      "related_terms": [
+        "bury",
+        "burial",
+        "interred",
+        "covered"
+      ],
+      "context_sentence": "The evidence comes from Antarctica, where snow that fell in a single season has never melted and has instead been buried by the snow of the seasons that followed."
+    },
+    "accumulated": {
+      "etymology": "Latin ad- 'to' + cumulus 'heap' → accumulare + -ed",
+      "definition": "Built up over time.",
+      "usage_in_passage": "\"the accumulated weight compresses the layers beneath\" shows the force that drives the compaction.",
+      "related_terms": [
+        "accumulate",
+        "accumulation",
+        "amassed",
+        "piled"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "compresses": {
+      "etymology": "Latin com- 'together' + premere 'to press' → 'to press together'",
+      "definition": "Presses into a smaller space.",
+      "usage_in_passage": "Shows the force that the weight of the snow exerts on the lower layers, and introduces the process by which crystals turn into ice.",
+      "related_terms": [
+        "compress",
+        "compression",
+        "condenses",
+        "squeezes"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "beneath": {
+      "etymology": "Old English beneoðan 'below'. Germanic",
+      "definition": "Below; underneath.",
+      "usage_in_passage": "Shows that what is compressed is the lower layers, and hints at a structure in which depth corresponds to age.",
+      "related_terms": [
+        "below",
+        "under",
+        "underneath",
+        "underlying"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "loose": {
+      "etymology": "Old Norse lauss 'loose'. Germanic",
+      "definition": "Not packed or joined together.",
+      "usage_in_passage": "\"the loose crystals at the surface\" shows the state before the change and sets up the contrast with solid ice.",
+      "related_terms": [
+        "loosen",
+        "slack",
+        "unpacked",
+        "granular"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "gradually": {
+      "etymology": "Latin gradus 'step' → gradual + -ly",
+      "definition": "Slowly, little by little.",
+      "usage_in_passage": "Shows that the change from snow to ice is not instantaneous, and prepares for paragraph 4, where a time gap arises before the bubbles close.",
+      "related_terms": [
+        "gradual",
+        "progressively",
+        "incrementally",
+        "steadily"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "welded": {
+      "etymology": "From Middle Swedish välla 'to heat and join'. Germanic",
+      "definition": "Joined firmly into one piece.",
+      "usage_in_passage": "\"welded into solid ice\" uses a metalworking metaphor for the way the grains are fused together by pressure.",
+      "related_terms": [
+        "weld",
+        "welding",
+        "fused",
+        "bonded"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "shrink": {
+      "etymology": "Old English scrincan 'to shrink'. Germanic",
+      "definition": "To become smaller.",
+      "usage_in_passage": "\"the spaces between them shrink until they close entirely\" is the direct mechanism by which air is trapped, and the basis for the correct answer to Q1.",
+      "related_terms": [
+        "shrank",
+        "shrinkage",
+        "contract",
+        "diminish"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "entirely": {
+      "etymology": "Latin integer 'untouched' → entire + -ly",
+      "definition": "Completely.",
+      "usage_in_passage": "Shows that the gaps close completely, not partly, and stresses that the trapping cannot be reversed.",
+      "related_terms": [
+        "entire",
+        "entirety",
+        "completely",
+        "wholly"
+      ],
+      "context_sentence": "As the accumulated weight compresses the layers beneath, the loose crystals at the surface are gradually welded into solid ice, and the spaces between them shrink until they close entirely."
+    },
+    "occupied": {
+      "etymology": "Latin ob- 'to' + capere 'to take' → occupare + -ed",
+      "definition": "Filled a space.",
+      "usage_in_passage": "\"Whatever air occupied those spaces at the moment of closure\" adds the limitation that what is preserved is the air present at the moment of trapping.",
+      "related_terms": [
+        "occupy",
+        "occupation",
+        "inhabited",
+        "filled"
+      ],
+      "context_sentence": "Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures."
+    },
+    "closure": {
+      "etymology": "Latin claudere 'to close' → clausura + -ure",
+      "definition": "The act of closing.",
+      "usage_in_passage": "In \"at the moment of closure\" it fixes a point in time; the age gap in paragraph 4 arises from the difference between this moment and the time the ice formed.",
+      "related_terms": [
+        "close",
+        "closed",
+        "sealing",
+        "enclosure"
+      ],
+      "context_sentence": "Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures."
+    },
+    "sealed": {
+      "etymology": "Latin signum 'mark' → sigillum → seal + -ed",
+      "definition": "Closed off so that nothing can get in or out.",
+      "usage_in_passage": "Used twice in the same sentence, it states both that the trapping happens and that it lasts.",
+      "related_terms": [
+        "seal",
+        "sealing",
+        "airtight",
+        "enclosed"
+      ],
+      "context_sentence": "Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures."
+    },
+    "endures": {
+      "etymology": "Latin in- 'in' + durus 'hard' → indurare → endure + -s",
+      "definition": "Continues to exist.",
+      "usage_in_passage": "\"for as long as the ice endures\" gives the condition on how long the record is kept, and implies that if the ice is lost, the record is lost too.",
+      "related_terms": [
+        "endure",
+        "endurance",
+        "persists",
+        "survives"
+      ],
+      "context_sentence": "Whatever air occupied those spaces at the moment of closure is sealed off, and remains sealed for as long as the ice endures."
+    },
+    "drilled": {
+      "etymology": "Middle Low German drillen 'to bore a hole'. Germanic",
+      "definition": "Cut out by boring into something.",
+      "usage_in_passage": "In paragraph 2 it is the means of taking samples; in paragraph 4 it is used in \"the cores are drilled to investigate\", a context that states the purpose of the research.",
+      "related_terms": [
+        "drill",
+        "drilling",
+        "bored",
+        "extracted"
+      ],
+      "context_sentence": "A core drilled from such a sheet is therefore a sequence of samples rather than a single specimen."
+    },
+    "specimen": {
+      "etymology": "Latin specere 'to look' → specimen 'sample'",
+      "definition": "A single sample taken for study.",
+      "usage_in_passage": "\"a sequence of samples rather than a single specimen\" shows that a core is by nature a time series, not a single object.",
+      "related_terms": [
+        "specimens",
+        "sample",
+        "example",
+        "exemplar"
+      ],
+      "context_sentence": "A core drilled from such a sheet is therefore a sequence of samples rather than a single specimen."
+    },
+    "bubbles": {
+      "etymology": "Middle English bobel 'bubble'. A Germanic word that imitates a sound + -s",
+      "definition": "Small pockets of gas enclosed in a solid or liquid.",
+      "usage_in_passage": "The central object of the passage. In paragraph 2 they carry the difference in age at each depth, and in paragraph 4 the error caused by their late closure.",
+      "related_terms": [
+        "bubble",
+        "bubbly",
+        "cavities",
+        "pockets"
+      ],
+      "context_sentence": "Bubbles near the top hold air from the industrial era; those a kilometer down hold air from the last glacial maximum."
+    },
+    "kilometer": {
+      "etymology": "Greek khilioi 'thousand' + metron 'measure'",
+      "definition": "A unit of length equal to 1,000 meters.",
+      "usage_in_passage": "\"those a kilometer down\" shows the correspondence between depth and age with a concrete figure.",
+      "related_terms": [
+        "kilometre",
+        "meter",
+        "metric",
+        "distance"
+      ],
+      "context_sentence": "Bubbles near the top hold air from the industrial era; those a kilometer down hold air from the last glacial maximum."
+    },
+    "glacial": {
+      "etymology": "Latin glacies 'ice' → glacialis",
+      "definition": "Relating to an ice age or to glaciers.",
+      "usage_in_passage": "\"the last glacial maximum\" identifies the period that the deep bubbles correspond to, and shows how far back a core reaches.",
+      "related_terms": [
+        "glacier",
+        "glaciation",
+        "icy",
+        "interglacial"
+      ],
+      "context_sentence": "Bubbles near the top hold air from the industrial era; those a kilometer down hold air from the last glacial maximum."
+    },
+    "extracting": {
+      "etymology": "Latin ex- 'out' + trahere 'to draw' → extract + -ing",
+      "definition": "Taking something out.",
+      "usage_in_passage": "\"Extracting the gas is mechanically simple\" states how easy the measurement is technically, and serves as the counterpart to the conclusion of paragraph 4 that the hard part is the corrections.",
+      "related_terms": [
+        "extract",
+        "extraction",
+        "obtaining",
+        "isolating"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "mechanically": {
+      "etymology": "Greek mēkhanē 'device' → mechanical + -ly",
+      "definition": "As far as the physical procedure and equipment are concerned.",
+      "usage_in_passage": "Limits the statement to physical handling, as opposed to difficulty in chemical analysis, and narrows the range of what simple means.",
+      "related_terms": [
+        "mechanical",
+        "mechanism",
+        "physically",
+        "technically"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "crushing": {
+      "etymology": "Old French croissir 'to crush' + -ing",
+      "definition": "Breaking into small pieces by pressing.",
+      "usage_in_passage": "\"crushing a fragment of ice in a vacuum releases it\" gives the actual procedure for recovering the gas.",
+      "related_terms": [
+        "crush",
+        "crushed",
+        "pulverizing",
+        "grinding"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "fragment": {
+      "etymology": "Latin frangere 'to break' → fragmentum",
+      "definition": "A small piece broken off something.",
+      "usage_in_passage": "Shows that a small piece is enough for a measurement, and implies that the analysis can be done without damaging a precious core.",
+      "related_terms": [
+        "fragments",
+        "shard",
+        "piece",
+        "splinter"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "vacuum": {
+      "etymology": "Latin vacuus 'empty' → vacuum 'emptiness'",
+      "definition": "A space with no air in it.",
+      "usage_in_passage": "Presented as the condition that keeps outside air from mixing in, it guarantees the reliability of the measurement.",
+      "related_terms": [
+        "vacuous",
+        "void",
+        "evacuated",
+        "airless"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "collected": {
+      "etymology": "Latin com- 'together' + legere 'to gather' → colligere + -ed",
+      "definition": "Gathered as a sample.",
+      "usage_in_passage": "\"the same instruments used on air collected yesterday\" shows that ancient and modern air can be measured by the same method, and supports the directness of the evidence.",
+      "related_terms": [
+        "collect",
+        "collection",
+        "gathered",
+        "sampled"
+      ],
+      "context_sentence": "Extracting the gas is mechanically simple, since crushing a fragment of ice in a vacuum releases it, and the resulting sample can be measured by the same instruments used on air collected yesterday."
+    },
+    "concentrations": {
+      "etymology": "Latin com- 'together' + centrum 'center' → concentrate + -ion + -s",
+      "definition": "The amounts of a substance contained in a given volume.",
+      "usage_in_passage": "Specifies the quantity being measured and leads to the names of the specific gases, carbon dioxide and methane.",
+      "related_terms": [
+        "concentrate",
+        "concentrated",
+        "levels",
+        "density"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "carbon": {
+      "etymology": "Latin carbo 'charcoal'",
+      "definition": "A chemical element found in coal and in all living things.",
+      "usage_in_passage": "As part of \"carbon dioxide\", it forms the name of the main gas, whose timing relative to warming becomes the issue in paragraph 4.",
+      "related_terms": [
+        "carbonate",
+        "carbonic",
+        "charcoal",
+        "graphite"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "dioxide": {
+      "etymology": "Greek di- 'two' + oxide",
+      "definition": "A compound with two oxygen atoms in each molecule.",
+      "usage_in_passage": "Combined with carbon it refers to carbon dioxide, the most important thing measured in the passage.",
+      "related_terms": [
+        "oxide",
+        "carbon",
+        "gas",
+        "monoxide"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "methane": {
+      "etymology": "Greek methy 'wine' → methyl + -ane (a suffix for saturated hydrocarbons)",
+      "definition": "A colorless gas made of carbon and hydrogen.",
+      "usage_in_passage": "Named alongside carbon dioxide as something measured, it shows how wide the measurements range.",
+      "related_terms": [
+        "methyl",
+        "hydrocarbon",
+        "gas",
+        "ethane"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "emerge": {
+      "etymology": "Latin e- 'out' + mergere 'to dip' → 'to rise to the surface'",
+      "definition": "To come out; to become known.",
+      "usage_in_passage": "In \"The concentrations of carbon dioxide and methane that emerge\", it refers to the results of measurement, which the negative sentence that follows goes on to characterize.",
+      "related_terms": [
+        "emergence",
+        "emergent",
+        "arise",
+        "surface"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "inferred": {
+      "etymology": "Latin in- 'into' + ferre 'to carry' → inferre 'to infer'",
+      "definition": "Worked out by reasoning from other evidence.",
+      "usage_in_passage": "\"are not inferred from proxies\" is the core of the passage's claim and the subject of Q2. Using it in the negative brings out the difference from direct measurement.",
+      "related_terms": [
+        "infer",
+        "inference",
+        "deduced",
+        "surmised"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "proxies": {
+      "etymology": "Latin procuratio 'acting for another' → procuracy → proxy + -es",
+      "definition": "Substitute data used to estimate a quantity that cannot be measured directly.",
+      "usage_in_passage": "Appears as a technical term of climate science, and is made concrete by the examples of the tree ring and the shell that follow.",
+      "related_terms": [
+        "proxy",
+        "surrogate",
+        "substitute",
+        "indicator"
+      ],
+      "context_sentence": "The concentrations of carbon dioxide and methane that emerge are not inferred from proxies."
+    },
+    "measurements": {
+      "etymology": "Latin mensura 'a measuring' → measure + -ment + -s",
+      "definition": "Values obtained by measuring.",
+      "usage_in_passage": "In paragraph 2, \"direct measurements\" carries the strength of the evidence; in paragraph 4, \"not the measurements themselves\" carries the contrast with the corrections. It is also what the pronoun in Q5 refers to.",
+      "related_terms": [
+        "measure",
+        "measured",
+        "readings",
+        "quantification"
+      ],
+      "context_sentence": "They are direct measurements of ancient atmosphere."
+    },
+    "ancient": {
+      "etymology": "Latin ante 'before' → antianus → Old French ancien",
+      "definition": "Belonging to the very distant past.",
+      "usage_in_passage": "\"direct measurements of ancient atmosphere\" condenses into one phrase the passage's claim that something remote in time is measured directly.",
+      "related_terms": [
+        "antiquity",
+        "antique",
+        "archaic",
+        "primeval"
+      ],
+      "context_sentence": "They are direct measurements of ancient atmosphere."
+    },
+    "distinguishes": {
+      "etymology": "Latin dis- 'apart' + stinguere 'to prick' → distinguere",
+      "definition": "Marks as different.",
+      "usage_in_passage": "\"This distinguishes them from most of what is known about the deep past\" sets ice cores apart from other research on past climate and states what makes them unusual.",
+      "related_terms": [
+        "distinguish",
+        "distinct",
+        "differentiates",
+        "separates"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "substitutes": {
+      "etymology": "Latin sub- 'under' + statuere 'to set up' → 'things put in place of others' + -s",
+      "definition": "Things used in place of something else.",
+      "usage_in_passage": "Works as a plain restatement of proxies and leads into the two examples after the colon.",
+      "related_terms": [
+        "substitute",
+        "substitution",
+        "surrogates",
+        "proxies"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "width": {
+      "etymology": "Old English wid 'wide' → wide + -th. Germanic",
+      "definition": "The distance from one side to the other.",
+      "usage_in_passage": "\"the width of a tree ring standing for a summer\" is the first example of a proxy and shows the pattern in which one quantity speaks for another.",
+      "related_terms": [
+        "wide",
+        "widen",
+        "breadth",
+        "thickness"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "chemistry": {
+      "etymology": "Arabic al-kīmiyā → alchemy → chemist + -ry",
+      "definition": "Chemical composition.",
+      "usage_in_passage": "\"the chemistry of a shell standing for the temperature\" is the second example of a proxy, and refers to reconstructing water temperature by isotope analysis.",
+      "related_terms": [
+        "chemical",
+        "chemically",
+        "composition",
+        "isotopes"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "shell": {
+      "etymology": "Old English sciell 'shell'. Germanic",
+      "definition": "The hard outer covering of a sea animal.",
+      "usage_in_passage": "Refers to the shell of a marine organism and is presented as a proxy for past water temperature.",
+      "related_terms": [
+        "shells",
+        "carapace",
+        "fossil",
+        "mollusk"
+      ],
+      "context_sentence": "This distinguishes them from most of what is known about the deep past, which reaches us only through substitutes: the width of a tree ring standing for a summer, the chemistry of a shell standing for the temperature of the water that formed it."
+    },
+    "ingenuity": {
+      "etymology": "Latin ingenium 'inborn talent' → ingenious + -ity",
+      "definition": "Cleverness in finding ways to solve problems.",
+      "usage_in_passage": "\"Dating the layers demands more ingenuity\" is the topic sentence of paragraph 3 and contrasts the ease of measurement with the difficulty of dating.",
+      "related_terms": [
+        "ingenious",
+        "inventiveness",
+        "resourcefulness",
+        "cleverness"
+      ],
+      "context_sentence": "Dating the layers demands more ingenuity."
+    },
+    "accumulation": {
+      "etymology": "Latin ad- 'to' + cumulus 'heap' + -ation",
+      "definition": "The building up of snow in layers, or the amount built up.",
+      "usage_in_passage": "In paragraph 3 it is the condition for the annual layers being visible; in paragraph 4 it is the variable that controls the depth at which bubbles close and the size of the error.",
+      "related_terms": [
+        "accumulate",
+        "accumulated",
+        "deposition",
+        "buildup"
+      ],
+      "context_sentence": "Near the surface, annual accumulation is visible, and the layers can be counted much as one counts the rings of a tree."
+    },
+    "visible": {
+      "etymology": "Latin videre 'to see' + -ible",
+      "definition": "Able to be seen.",
+      "usage_in_passage": "\"annual accumulation is visible\" gives the reason the annual layers can be counted near the surface.",
+      "related_terms": [
+        "vision",
+        "visual",
+        "discernible",
+        "apparent"
+      ],
+      "context_sentence": "Near the surface, annual accumulation is visible, and the layers can be counted much as one counts the rings of a tree."
+    },
+    "deeper": {
+      "etymology": "Old English dēop 'deep' → deep + comparative -er. Germanic",
+      "definition": "Farther down.",
+      "usage_in_passage": "\"Deeper down the layers thin under pressure\" is the turning point within the paragraph and moves the discussion to the zone where simple counting breaks down.",
+      "related_terms": [
+        "deep",
+        "depth",
+        "lower",
+        "profound"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "thin": {
+      "etymology": "Old English þynne 'thin'. Germanic",
+      "definition": "To become thinner.",
+      "usage_in_passage": "Used here as a verb, it describes how the thinning of the layers under pressure makes counting impossible.",
+      "related_terms": [
+        "thinner",
+        "thinning",
+        "attenuate",
+        "narrow"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "impossible": {
+      "etymology": "Latin im- (negation) + posse 'to be able' → the negative of possible",
+      "definition": "Not able to be done.",
+      "usage_in_passage": "States the limit of the simple method of counting and justifies the need for the alternative, modeling.",
+      "related_terms": [
+        "possible",
+        "impossibility",
+        "unfeasible",
+        "unattainable"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "researchers": {
+      "etymology": "re- 'again' + Old French cerchier 'to search' → research + -er + -s",
+      "definition": "People who carry out careful study to discover facts.",
+      "usage_in_passage": "\"researchers must instead model how the ice has flowed\" shows that dating at depth shifts from observation to calculation.",
+      "related_terms": [
+        "research",
+        "scientists",
+        "investigators",
+        "scholars"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "calibrating": {
+      "etymology": "calibre, said to come from Latin qua libra 'by which balance' → calibrate + -ing",
+      "definition": "Adjusting against a known standard so that results are accurate.",
+      "usage_in_passage": "Refers to the work of fitting the model to known ages so that it does not become arbitrary, and leads into the topic of volcanic eruptions that follows.",
+      "related_terms": [
+        "calibrate",
+        "calibration",
+        "adjusting",
+        "standardizing"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "calculations": {
+      "etymology": "Latin calculus 'pebble, stone used in counting' → calculare + -ation + -s",
+      "definition": "Results worked out with mathematics.",
+      "usage_in_passage": "Shows that ages at depth are estimates made by a model, and makes clear the difference in method from the shallow part, where dating rests on observation.",
+      "related_terms": [
+        "calculate",
+        "calculus",
+        "computations",
+        "estimates"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "markers": {
+      "etymology": "Germanic mark 'sign' + -er + -s",
+      "definition": "Things that serve as reference points.",
+      "usage_in_passage": "\"markers of known age\" refers to the standards used for calibration, and volcanic eruptions are given right afterward as a concrete example.",
+      "related_terms": [
+        "mark",
+        "marked",
+        "indicators",
+        "benchmarks"
+      ],
+      "context_sentence": "Deeper down the layers thin under pressure until counting becomes impossible, and researchers must instead model how the ice has flowed, calibrating their calculations against markers of known age."
+    },
+    "volcanic": {
+      "etymology": "Vulcanus, the Roman god of fire → volcano + -ic",
+      "definition": "Of or from a volcano.",
+      "usage_in_passage": "\"Volcanic eruptions are especially useful\" introduces the best example of a means of calibration.",
+      "related_terms": [
+        "volcano",
+        "volcanism",
+        "eruptive",
+        "magmatic"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "eruptions": {
+      "etymology": "Latin e- 'out' + rumpere 'to break' → eruptio + -s",
+      "definition": "Events in which a volcano throws out material.",
+      "usage_in_passage": "As events that leave traces all over the globe at the same time, they play the role of linking cores that are far apart.",
+      "related_terms": [
+        "erupt",
+        "eruption",
+        "outburst",
+        "explosion"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "deposits": {
+      "etymology": "Latin de- 'down' + ponere 'to put' → deponere + -s",
+      "definition": "Lays down a layer of material.",
+      "usage_in_passage": "\"each deposits a distinctive film of sulfate\" shows the mechanism by which an eruption leaves a physical mark.",
+      "related_terms": [
+        "deposit",
+        "deposition",
+        "lays",
+        "sediments"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "distinctive": {
+      "etymology": "Latin dis- 'apart' + stinguere 'to prick' → distinct + -ive",
+      "definition": "Clearly different from others and easy to recognize.",
+      "usage_in_passage": "Shows that the sulfate layer works as a fingerprint by which each eruption can be identified, and guarantees the precision of the calibration.",
+      "related_terms": [
+        "distinct",
+        "distinguish",
+        "characteristic",
+        "identifiable"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "sulfate": {
+      "etymology": "Latin sulphur 'sulfur' + -ate, a suffix for salts",
+      "definition": "A chemical compound containing sulfur and oxygen.",
+      "usage_in_passage": "Identifies what the chemical trace left by a volcanic eruption actually is, and gives the marker a material basis.",
+      "related_terms": [
+        "sulfur",
+        "sulfuric",
+        "sulfide",
+        "salt"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "simultaneously": {
+      "etymology": "Latin simul 'at the same time' + -taneous + -ly",
+      "definition": "At the same time.",
+      "usage_in_passage": "The appearance of the same layer in both hemispheres is the ground for linking records that are far apart.",
+      "related_terms": [
+        "simultaneous",
+        "concurrently",
+        "synchronously",
+        "together"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "opposite": {
+      "etymology": "Latin ob- 'against' + ponere 'to put' → oppositus",
+      "definition": "Located at the other side or end.",
+      "usage_in_passage": "\"cores from opposite ends of the earth\" expresses in spatial terms that the marker is valid across the whole globe.",
+      "related_terms": [
+        "oppose",
+        "opposition",
+        "contrary",
+        "reverse"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "anchors": {
+      "etymology": "Greek ankyra 'anchor' → Old English ancor + -s",
+      "definition": "Fixes firmly to a reference point.",
+      "usage_in_passage": "The target word of the vocabulary question. With the metaphor of an anchor, it describes how an age model that could drift is held to one known point.",
+      "related_terms": [
+        "anchor",
+        "anchored",
+        "moor",
+        "fasten"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "chronology": {
+      "etymology": "Greek khronos 'time' + -logia 'study' → 'the order of time'",
+      "definition": "A system of dates arranged in order of time.",
+      "usage_in_passage": "\"a common chronology\" refers to the shared time axis that makes it possible to compare several cores.",
+      "related_terms": [
+        "chronological",
+        "chronicle",
+        "timeline",
+        "dating"
+      ],
+      "context_sentence": "Volcanic eruptions are especially useful, because each deposits a distinctive film of sulfate that appears simultaneously in cores from opposite ends of the earth and thus anchors separate records to a common chronology."
+    },
+    "eruption": {
+      "etymology": "Latin e- 'out' + rumpere 'to break' → eruptio",
+      "definition": "An event in which a volcano throws out material.",
+      "usage_in_passage": "\"A large eruption is in this sense a stopwatch\" restates the technical explanation of the preceding sentence in an intuitive way through a metaphor.",
+      "related_terms": [
+        "erupt",
+        "eruptions",
+        "explosion",
+        "outburst"
+      ],
+      "context_sentence": "A large eruption is in this sense a stopwatch pressed once and read in both hemispheres."
+    },
+    "stopwatch": {
+      "etymology": "stop + watch. A Germanic compound",
+      "definition": "A watch that can be started and stopped to time an event.",
+      "usage_in_passage": "Compares an eruption to \"a stopwatch pressed once and read in both hemispheres\", replacing the abstract property of simultaneity with a familiar tool.",
+      "related_terms": [
+        "watch",
+        "timer",
+        "chronometer",
+        "clock"
+      ],
+      "context_sentence": "A large eruption is in this sense a stopwatch pressed once and read in both hemispheres."
+    },
+    "hemispheres": {
+      "etymology": "Greek hēmi- 'half' + sphaira 'sphere' + -s",
+      "definition": "The northern and southern halves of the earth.",
+      "usage_in_passage": "\"read in both hemispheres\" carries the idea of global reach inside the metaphor and restates opposite ends of the earth.",
+      "related_terms": [
+        "hemisphere",
+        "sphere",
+        "spherical",
+        "global"
+      ],
+      "context_sentence": "A large eruption is in this sense a stopwatch pressed once and read in both hemispheres."
+    },
+    "complication": {
+      "etymology": "Latin com- 'together' + plicare 'to fold' → 'a folding together into a tangle' + -ation",
+      "definition": "Something that makes a situation more difficult.",
+      "usage_in_passage": "\"One complication deserves emphasis\" is the topic sentence of paragraph 4 and the turning point that adds a reservation to the clear explanation given so far.",
+      "related_terms": [
+        "complicate",
+        "complex",
+        "difficulty",
+        "obstacle"
+      ],
+      "context_sentence": "One complication deserves emphasis."
+    },
+    "deserves": {
+      "etymology": "Latin de- (intensive) + servire 'to serve' → deservire 'to merit'",
+      "definition": "Is worthy of.",
+      "usage_in_passage": "A word with which the author openly asks for the reader's attention, raising the importance of this paragraph.",
+      "related_terms": [
+        "deserve",
+        "deserving",
+        "merits",
+        "warrants"
+      ],
+      "context_sentence": "One complication deserves emphasis."
+    },
+    "emphasis": {
+      "etymology": "Greek en- 'in' + phainein 'to show' → emphasis",
+      "definition": "Special importance given to something.",
+      "usage_in_passage": "Joined with deserves, it announces that what follows is a key point that is easy to overlook.",
+      "related_terms": [
+        "emphasize",
+        "emphatic",
+        "stress",
+        "accent"
+      ],
+      "context_sentence": "One complication deserves emphasis."
+    },
+    "roughly": {
+      "etymology": "Old English rūh 'rough' → rough + -ly. Germanic",
+      "definition": "Approximately.",
+      "usage_in_passage": "\"roughly a hundred meters\" shows that the closing depth is an approximate figure that varies from place to place, which leads to the variable size of the error later on.",
+      "related_terms": [
+        "rough",
+        "approximately",
+        "about",
+        "circa"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "meters": {
+      "etymology": "Greek metron 'measure' → Latin metrum + -s",
+      "definition": "Units of length in the metric system.",
+      "usage_in_passage": "Puts a number on the depth reached before the bubbles close, and gives the physical reason for the time gap.",
+      "related_terms": [
+        "meter",
+        "metric",
+        "metre",
+        "kilometer"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "invariably": {
+      "etymology": "Latin in- (negation) + variare 'to change' → invariable + -ly",
+      "definition": "Always, without exception.",
+      "usage_in_passage": "\"the air in any layer is invariably younger than the ice enclosing it\" shows that the error always runs in the same direction, which is the reason a correction is possible in principle.",
+      "related_terms": [
+        "invariable",
+        "variable",
+        "consistently",
+        "unfailingly"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "younger": {
+      "etymology": "Old English geong 'young' → young + comparative -er. Germanic",
+      "definition": "More recent in age.",
+      "usage_in_passage": "Expresses in one word the core of paragraph 4, the age difference between ice and air, and is the starting point for the inference in Q4.",
+      "related_terms": [
+        "young",
+        "youth",
+        "newer",
+        "recent"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "enclosing": {
+      "etymology": "Latin in- 'in' + claudere 'to close' → enclose + -ing",
+      "definition": "Surrounding on all sides.",
+      "usage_in_passage": "\"the ice enclosing it\" states the physical relation between the two things being compared, the air and the ice.",
+      "related_terms": [
+        "enclose",
+        "enclosure",
+        "surrounding",
+        "encasing"
+      ],
+      "context_sentence": "Because bubbles do not close until the snow above has buried them under roughly a hundred meters of accumulation, the air in any layer is invariably younger than the ice enclosing it."
+    },
+    "offset": {
+      "etymology": "off + set. A Germanic compound",
+      "definition": "The amount by which two things are out of line with each other.",
+      "usage_in_passage": "A noun for the age difference between air and ice; from here on, in \"The offset can exceed several thousand years\", it becomes the subject of quantitative discussion.",
+      "related_terms": [
+        "set",
+        "discrepancy",
+        "difference",
+        "displacement"
+      ],
+      "context_sentence": "The offset can exceed several thousand years where accumulation is slow, and it must be estimated and subtracted before gas and temperature can be compared."
+    },
+    "exceed": {
+      "etymology": "Latin ex- 'beyond' + cedere 'to go' → excedere",
+      "definition": "To be greater than.",
+      "usage_in_passage": "Shows that the error can reach several thousand years and impresses on the reader that it is too large to ignore.",
+      "related_terms": [
+        "exceeds",
+        "excess",
+        "surpass",
+        "outstrip"
+      ],
+      "context_sentence": "The offset can exceed several thousand years where accumulation is slow, and it must be estimated and subtracted before gas and temperature can be compared."
+    },
+    "subtracted": {
+      "etymology": "Latin sub- 'from below' + trahere 'to draw' → subtrahere",
+      "definition": "Taken away from a total.",
+      "usage_in_passage": "\"estimated and subtracted\" gives the concrete operations of the correction and makes clear that it is a procedure, not just a warning.",
+      "related_terms": [
+        "subtract",
+        "subtraction",
+        "deducted",
+        "removed"
+      ],
+      "context_sentence": "The offset can exceed several thousand years where accumulation is slow, and it must be estimated and subtracted before gas and temperature can be compared."
+    },
+    "distort": {
+      "etymology": "Latin dis- 'apart' + torquere 'to twist' → distorquere",
+      "definition": "To give a false picture of.",
+      "usage_in_passage": "\"would distort the very relationship the cores are drilled to investigate\" states the consequence of neglecting the correction and is the basis for Q4.",
+      "related_terms": [
+        "distortion",
+        "warp",
+        "skew",
+        "misrepresent"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "investigate": {
+      "etymology": "Latin in- 'in' + vestigare 'to track' → 'to follow footprints'",
+      "definition": "To examine in order to find out the facts.",
+      "usage_in_passage": "Refers to the very purpose for which cores are drilled, and sets up the irony that this purpose is undermined by the error.",
+      "related_terms": [
+        "investigation",
+        "investigator",
+        "examine",
+        "probe"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "apparent": {
+      "etymology": "Latin ad- 'to' + parere 'to appear' → apparens",
+      "definition": "Seeming to be so, but not necessarily real.",
+      "usage_in_passage": "In \"an apparent lag\", it is a qualifier showing that the observed delay does not necessarily exist; this one word is what makes the warning of the whole paragraph work.",
+      "related_terms": [
+        "appear",
+        "appearance",
+        "seeming",
+        "ostensible"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "warming": {
+      "etymology": "Old English wearm 'warm' → warm + -ing. Germanic",
+      "definition": "A rise in temperature.",
+      "usage_in_passage": "The phrase \"lag between warming and rising carbon dioxide\" raises the order of cause and effect, a point of controversy in climate science.",
+      "related_terms": [
+        "warm",
+        "warmth",
+        "heating",
+        "thawing"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "artifact": {
+      "etymology": "Latin ars 'skill' + factum 'thing made' → 'something made by human hands'",
+      "definition": "A false effect produced by the method of measurement, not by the thing studied.",
+      "usage_in_passage": "\"an artifact of the sealing process rather than a fact about the climate\" sets artifact against fact and condenses the warning of the passage.",
+      "related_terms": [
+        "artifice",
+        "artificial",
+        "byproduct",
+        "artefact"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "sealing": {
+      "etymology": "Latin sigillum 'small mark' → seal + -ing",
+      "definition": "The process of closing something off.",
+      "usage_in_passage": "Turns the physical process explained in paragraph 1 into a noun and shows that the process itself can be a source of error.",
+      "related_terms": [
+        "seal",
+        "sealed",
+        "enclosure",
+        "closure"
+      ],
+      "context_sentence": "Failing to account for it would distort the very relationship the cores are drilled to investigate, since an apparent lag between warming and rising carbon dioxide might be an artifact of the sealing process rather than a fact about the climate."
+    },
+    "comparatively": {
+      "etymology": "Latin com- 'together' + par 'equal' → compare + -ative + -ly",
+      "definition": "Relatively; when compared with something else.",
+      "usage_in_passage": "\"which are comparatively straightforward\" states the ease of the measurements in contrast with the difficulty of the corrections, and prepares the claim of the final sentence.",
+      "related_terms": [
+        "compare",
+        "comparison",
+        "relatively",
+        "moderately"
+      ],
+      "context_sentence": "Much of the technical literature on ice cores concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything."
+    },
+    "straightforward": {
+      "etymology": "straight + forward. A Germanic compound",
+      "definition": "Simple and easy to do.",
+      "usage_in_passage": "Describes how plain the measuring procedure is, and makes more surprising the conclusion that most of the technical literature is spent on corrections.",
+      "related_terms": [
+        "straight",
+        "forward",
+        "uncomplicated",
+        "simple"
+      ],
+      "context_sentence": "Much of the technical literature on ice cores concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything."
+    },
+    "corrections": {
+      "etymology": "Latin com- (intensive) + regere 'to make straight' → corrigere + -ion + -s",
+      "definition": "Adjustments made to remove errors.",
+      "usage_in_passage": "The word that carries the close of the passage. The passage ends on the claim that the substance of the science lies in the corrections, not in the measurements themselves.",
+      "related_terms": [
+        "correct",
+        "correction",
+        "adjustments",
+        "calibration"
+      ],
+      "context_sentence": "Much of the technical literature on ice cores concerns not the measurements themselves, which are comparatively straightforward, but the corrections that make them mean anything."
+    }
+  }
+}

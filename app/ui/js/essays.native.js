@@ -1,12 +1,12 @@
 "use strict";
 
-/* 保存層(ライティング・アプリ版)。Swift 側が
-   ~/Documents/TOEFLReading/essays.jsonl に追記する。
-   ファイルには essay 行と grade 行が混在するので、essayId で突き合わせて
-   {essay, grade} のペアにまとめる。追記専用なので、再採点は grade 行が
-   増えるだけ。gradedAt が最新のものを採用する。 */
+/* Storage layer (writing, app build). The native side (app-shell) appends to
+   essays.jsonl in the data directory.
+   The file mixes essay rows and grade rows, so they are matched by essayId into
+   {essay, grade} pairs. It is append-only, so re-grading only adds another
+   grade row. The one with the latest gradedAt is used. */
 
-const _byPrompt = new Map();   // promptId -> Entry[](新しい順)
+const _byPrompt = new Map();   // promptId -> Entry[] (newest first)
 const _byEssayId = new Map();  // essayId  -> Entry
 
 async function _callEssays(payload) {

@@ -1,0 +1,1138 @@
+{
+  "id": "passage_008",
+  "title": "Why Rivers Refuse to Run Straight",
+  "topic": "Environment",
+  "body": "A river crossing a flat plain almost never runs straight. Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends. The tendency is so reliable that engineers who straighten a river must plan for it to bend again. The explanation is not that something blocks the water. It is that a straight channel is unstable, and that the instability feeds on itself.\n\nConsider a channel with a slight curve, however that curve arose. Moving water carries momentum, and momentum resists turning. The flow therefore presses against the outer bank of the curve, where it runs faster and scours sediment away. Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying. The curve consequently becomes more pronounced. A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further. Small departures from straightness do not fade; they amplify.\n\nThe mechanism has a second component that is not visible from the surface. Because the water surface stands slightly higher against the outer bank, pressure at the bed drives a return current inward. The result is a helical motion: the water spirals along the channel, moving outward near the surface and inward near the bottom. That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar. Erosion and deposition are therefore not separate events at opposite banks but two ends of one circulation.\n\nAmplification cannot continue without limit. As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting. Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path. The severed bend survives as a crescent of standing water. What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel.\n\nThat ratio holds because the same balance of forces sets it at every scale, and it is why engineering against meandering is so costly. A straightened channel is steeper than the one it replaced, since it covers the same drop in less distance. Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed. Rivers held between levees do not stop behaving like rivers. They simply do their work where the design did not expect it.",
+  "word_count": 486,
+  "added": "2026-08-21",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 2, why does sediment accumulate along the inner bank of a curve?",
+      "choices": {
+        "A": "The inner bank is composed of softer material than the outer bank.",
+        "B": "Momentum pushes suspended material toward the inside of the turn.",
+        "C": "The water there moves more slowly and cannot keep as much material suspended.",
+        "D": "Deposits from upstream are carried preferentially along the inner side."
+      },
+      "correct": "C",
+      "target_word": null,
+      "explanation": "Paragraph 2 says \"Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying\", so the reason for the deposit is that the lower speed of the flow reduces its capacity to carry material. A is wrong because the passage says nothing about the material of the banks (it assumes a uniform bed of sediment). B states the effect of momentum the wrong way round; in the passage, momentum presses the water against the outer bank. D is about supply from upstream, which is not in the passage."
+    },
+    {
+      "id": 2,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention that engineers who straighten a river must plan for it to bend again?",
+      "choices": {
+        "A": "To signal that meandering arises from the channel itself rather than from an external obstruction",
+        "B": "To argue that river engineering is generally a waste of public money",
+        "C": "To introduce the helical circulation described in the third paragraph",
+        "D": "To show that straightened rivers are more prone to flooding than natural ones"
+      },
+      "correct": "A",
+      "target_word": null,
+      "explanation": "This sentence is followed immediately by \"The explanation is not that something blocks the water. It is that a straight channel is unstable\", so it serves as an introduction showing that the cause of meandering is not an external obstruction but the instability of the channel itself. B is a claim about value for money; paragraph 5 does mention cost, but that is not the purpose of this sentence. The helical flow in C has not yet appeared. The flooding in D is not dealt with anywhere in the passage."
+    },
+    {
+      "id": 3,
+      "type": "Vocabulary",
+      "question": "The word \"amplify\" in paragraph 2 is closest in meaning to",
+      "choices": {
+        "A": "reverse direction",
+        "B": "grow stronger",
+        "C": "spread outward",
+        "D": "settle into place"
+      },
+      "correct": "B",
+      "target_word": "amplify",
+      "explanation": "The words just before it are \"Small departures from straightness do not fade\", so the word must contrast with fade ('to die away'). The whole paragraph describes self-amplification, 'the deeper the bend becomes, the faster the erosion, and the deeper the bend becomes again', so 'grow stronger' is the closest. A, 'reverse direction', does not match the cause and effect in the passage. C, 'spread outward', is spreading in space, not amplification. D, 'settle into place', has a meaning on the side of fade, and the contrast would break down."
+    },
+    {
+      "id": 4,
+      "type": "Reference",
+      "question": "The phrase \"That bottom current\" in paragraph 3 refers to",
+      "choices": {
+        "A": "the faster flow that scours the outer bank",
+        "B": "the tilt of the water surface against the outer bank",
+        "C": "the spiral motion of the water as a whole",
+        "D": "the inward flow near the bed driven by pressure"
+      },
+      "correct": "D",
+      "target_word": null,
+      "explanation": "The preceding sentence says \"pressure at the bed drives a return current inward\", and the passage then describes the helical motion as \"moving outward near the surface and inward near the bottom\". That bottom current refers to this flow that moves inward near the bed. A is the faster flow that cuts the outer bank, which belongs to the surface layer. B is the tilt of the water surface, which is the cause and not the flow itself. C refers to the spiral as a whole, but the phrase is limited by the word bottom, so it refers only to the lower part of the motion."
+    },
+    {
+      "id": 5,
+      "type": "Inference",
+      "question": "What can be inferred from paragraph 5 about a river confined between levees?",
+      "choices": {
+        "A": "It will gradually lose the energy needed to move sediment.",
+        "B": "It will tend to deepen its bed instead of forming new bends.",
+        "C": "It will develop bends with a longer spacing than an unconfined river.",
+        "D": "It will come to rest at a gradient close to that of the original channel."
+      },
+      "correct": "B",
+      "target_word": null,
+      "explanation": "Paragraph 5 says \"Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed\". If levees keep the river from meandering, the second route is closed off, so the surplus energy goes into cutting downward. A is the reverse: a straightened channel is steeper and has more energy. C goes against the statement that the ratio, a spacing of about eleven times the width of the channel, holds regardless of scale. D misreads the argument that 'the surplus energy is used up as work' as meaning that the gradient returns to its original value by itself."
+    }
+  ],
+  "vocab": {
+    "plain": {
+      "etymology": "Latin planus 'flat'",
+      "definition": "A large area of flat land.",
+      "usage_in_passage": "The opening \"A river crossing a flat plain\" limits the setting. By choosing flat ground with no obstacles, the passage shuts out in advance any explanation that puts the cause of meandering down to uneven terrain.",
+      "related_terms": [
+        "prairie",
+        "lowland",
+        "flat",
+        "plateau"
+      ],
+      "context_sentence": "A river crossing a flat plain almost never runs straight."
+    },
+    "uniform": {
+      "etymology": "Latin unus 'one' + forma 'form' → 'of one form'",
+      "definition": "The same in character everywhere.",
+      "usage_in_passage": "In \"a uniform bed of sediment\", it states explicitly that the river bed has no harder and softer parts. This is the premise of the claim in paragraph 1 that 'nothing is blocking the water'.",
+      "related_terms": [
+        "homogeneous",
+        "consistent",
+        "even",
+        "varied"
+      ],
+      "context_sentence": "Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends."
+    },
+    "sediment": {
+      "etymology": "Latin sedere 'to sit' → 'what has sunk and settled'",
+      "definition": "Sand and mud that are carried by water and settle to the bottom.",
+      "usage_in_passage": "One of the main actors in the whole passage. It is cut away at the outer bank (\"scours sediment away\"), dropped at the inner bank (\"drops what it was carrying\"), and carried across the channel by the helical flow. It works as the material that links erosion and deposition.",
+      "related_terms": [
+        "silt",
+        "deposit",
+        "alluvium",
+        "bedrock"
+      ],
+      "context_sentence": "Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends."
+    },
+    "deflect": {
+      "etymology": "Latin de- 'away' + flectere 'to bend'",
+      "definition": "To turn something aside from its course.",
+      "usage_in_passage": "\"nothing solid to deflect it\" rules out external factors, and the word later turns into the agent of self-amplification in \"A deeper curve deflects the flow more strongly\". The same word is used both to deny one cause and to affirm another.",
+      "related_terms": [
+        "divert",
+        "redirect",
+        "veer",
+        "straighten"
+      ],
+      "context_sentence": "Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends."
+    },
+    "bends": {
+      "etymology": "Old English bendan 'to string a bow, to bend'",
+      "definition": "Curved sections of a river; plural of bend.",
+      "usage_in_passage": "\"a train of regular bends\" is the very phenomenon that is observed. In paragraph 4, neighbouring bends become the things that move closer together and have the neck between them cut through.",
+      "related_terms": [
+        "curves",
+        "meanders",
+        "loops",
+        "straights"
+      ],
+      "context_sentence": "Given a uniform bed of sediment and nothing solid to deflect it, a channel that begins as a straight cut will, within a few seasons, develop a train of regular bends."
+    },
+    "tendency": {
+      "etymology": "Latin tendere 'to stretch, to head toward' + -ency",
+      "definition": "A natural likelihood of behaving in a certain way.",
+      "usage_in_passage": "By saying \"The tendency is so reliable\", the passage shows that meandering is not accidental but follows a law, and this leads to the rest of the sentence, that 'engineers must expect the river to bend again'.",
+      "related_terms": [
+        "inclination",
+        "propensity",
+        "disposition",
+        "exception"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "reliable": {
+      "etymology": "re- 'again' + Latin ligare 'to bind' → 'that can be depended on'",
+      "definition": "Able to be counted on; certain to happen.",
+      "usage_in_passage": "It expresses how strong the tendency is. \"so reliable that engineers\" leads into a result clause ending in \"must plan for it to bend again\", which backs up the repeatability of the phenomenon with a practical consequence.",
+      "related_terms": [
+        "dependable",
+        "consistent",
+        "predictable",
+        "erratic"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "engineers": {
+      "etymology": "Latin ingenium 'talent, cleverness' → 'a person who devises things'",
+      "definition": "People who design and build structures; plural of engineer.",
+      "usage_in_passage": "It is introduced in paragraph 1 and taken up again in paragraph 5. It carries the secondary theme of how human intentions fare against the physics of rivers.",
+      "related_terms": [
+        "designers",
+        "builders",
+        "surveyors",
+        "planners"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "straighten": {
+      "etymology": "straight 'straight' + -en 'to make'",
+      "definition": "To make straight.",
+      "usage_in_passage": "\"engineers who straighten a river\" is the intervention the passage criticizes. Its price is revealed in \"A straightened channel is steeper\" in paragraph 5.",
+      "related_terms": [
+        "channelize",
+        "align",
+        "flatten",
+        "curve"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "bend": {
+      "etymology": "Old English bendan 'to bend'",
+      "definition": "To curve.",
+      "usage_in_passage": "The word again in \"must plan for it to bend again\" is the key point; it shows the recurrence by which the river goes back to its former shape even after it has been straightened.",
+      "related_terms": [
+        "curve",
+        "meander",
+        "bow",
+        "straighten"
+      ],
+      "context_sentence": "The tendency is so reliable that engineers who straighten a river must plan for it to bend again."
+    },
+    "explanation": {
+      "etymology": "Latin ex- 'out' + planus 'flat' → 'to spread out flat and show'",
+      "definition": "A statement of the reason for something.",
+      "usage_in_passage": "It is placed in a negative form in \"The explanation is not that something blocks the water.\" and rejects first the wrong explanation that readers tend to hold. It is the turning point of the argument.",
+      "related_terms": [
+        "account",
+        "reason",
+        "interpretation",
+        "assumption"
+      ],
+      "context_sentence": "The explanation is not that something blocks the water."
+    },
+    "unstable": {
+      "etymology": "un- (negation) + Latin stabilis 'stable'",
+      "definition": "Not stable; in a state where a small disturbance grows.",
+      "usage_in_passage": "\"a straight channel is unstable\" is the central claim of the passage. It says that a straight line is not kept, not because of an outside force, but because of the nature of the straight state itself.",
+      "related_terms": [
+        "precarious",
+        "volatile",
+        "unsteady",
+        "stable"
+      ],
+      "context_sentence": "It is that a straight channel is unstable, and that the instability feeds on itself."
+    },
+    "instability": {
+      "etymology": "in- (negation) + stabilis 'stable' + -ity",
+      "definition": "The condition of being unstable.",
+      "usage_in_passage": "\"the instability feeds on itself\" expresses self-amplification in one phrase. The chain of cause and effect in paragraph 2 is the unfolding of this phrase.",
+      "related_terms": [
+        "volatility",
+        "imbalance",
+        "fluctuation",
+        "equilibrium"
+      ],
+      "context_sentence": "It is that a straight channel is unstable, and that the instability feeds on itself."
+    },
+    "slight": {
+      "etymology": "Old Norse slettr 'flat, trifling'",
+      "definition": "Very small in degree.",
+      "usage_in_passage": "In \"a channel with a slight curve\", it shows that the starting point of amplification can be tiny. This is the key to the argument that a small cause produces a large result.",
+      "related_terms": [
+        "minor",
+        "faint",
+        "marginal",
+        "pronounced"
+      ],
+      "context_sentence": "Consider a channel with a slight curve, however that curve arose."
+    },
+    "curve": {
+      "etymology": "Latin curvus 'bent'",
+      "definition": "A line or shape that bends.",
+      "usage_in_passage": "It is repeated as the subject in paragraph 2, and the sequence \"The curve consequently becomes more pronounced\" → \"A deeper curve deflects the flow more strongly\" makes visible the cycle in which a result becomes the next cause.",
+      "related_terms": [
+        "arc",
+        "bend",
+        "curvature",
+        "line"
+      ],
+      "context_sentence": "Consider a channel with a slight curve, however that curve arose."
+    },
+    "arose": {
+      "etymology": "Past tense of Old English arisan 'to rise up'",
+      "definition": "Came into being; past tense of arise.",
+      "usage_in_passage": "\"however that curve arose\" states plainly that the origin does not matter. It shows the position that where the first bend came from is unimportant and that only the mechanism of amplification is essential.",
+      "related_terms": [
+        "emerged",
+        "originated",
+        "occurred",
+        "vanished"
+      ],
+      "context_sentence": "Consider a channel with a slight curve, however that curve arose."
+    },
+    "carries": {
+      "etymology": "Latin carrus 'wagon' → 'to transport'",
+      "definition": "Transports; holds and moves along.",
+      "usage_in_passage": "In \"Moving water carries momentum\" the water carries a physical quantity, and in \"what it was carrying\" it carries sediment. The same verb is used for both momentum and material, which suggests that the two are linked.",
+      "related_terms": [
+        "transports",
+        "conveys",
+        "bears",
+        "releases"
+      ],
+      "context_sentence": "Moving water carries momentum, and momentum resists turning."
+    },
+    "momentum": {
+      "etymology": "Latin movimentum ← movere 'to move'",
+      "definition": "The quantity of motion of a moving body; its tendency to keep moving in the same direction.",
+      "usage_in_passage": "\"momentum resists turning\" is the starting point of the whole mechanism. Water is pressed against the outer bank exactly because it does not want to turn; this is the first link in the chain of cause and effect.",
+      "related_terms": [
+        "inertia",
+        "impetus",
+        "velocity",
+        "friction"
+      ],
+      "context_sentence": "Moving water carries momentum, and momentum resists turning."
+    },
+    "resists": {
+      "etymology": "Latin re- 'against' + sistere 'to stand'",
+      "definition": "Opposes; works against.",
+      "usage_in_passage": "\"momentum resists turning\" is personification, but it is accurate: it expresses in one word the property of inertia, that a course does not change without an outside force.",
+      "related_terms": [
+        "opposes",
+        "withstands",
+        "counters",
+        "yields"
+      ],
+      "context_sentence": "Moving water carries momentum, and momentum resists turning."
+    },
+    "outer": {
+      "etymology": "Comparative of out 'outside'",
+      "definition": "On the outside.",
+      "usage_in_passage": "\"the outer bank\" is the side of erosion. The contrast with the inner bank is the axis on which paragraphs 2 and 3 are built.",
+      "related_terms": [
+        "exterior",
+        "outward",
+        "convex",
+        "inner"
+      ],
+      "context_sentence": "The flow therefore presses against the outer bank of the curve, where it runs faster and scours sediment away."
+    },
+    "scours": {
+      "etymology": "Latin ex- 'thoroughly' + curare 'to care for' → 'to rub clean'",
+      "definition": "Removes material by the force of flowing water.",
+      "usage_in_passage": "\"scours sediment away\" is the erosion that takes place at the outer bank. The word does not simply mean 'cut' but includes the rubbing action of the current, so it suits the work of fast-flowing water.",
+      "related_terms": [
+        "erodes",
+        "abrades",
+        "excavates",
+        "deposits"
+      ],
+      "context_sentence": "The flow therefore presses against the outer bank of the curve, where it runs faster and scours sediment away."
+    },
+    "inner": {
+      "etymology": "Comparative of in 'inside'",
+      "definition": "On the inside.",
+      "usage_in_passage": "\"the inner bank\" is the side of deposition. It reappears in paragraph 3 as the place where the point bar is built, and is the end point of the helical flow.",
+      "related_terms": [
+        "interior",
+        "inward",
+        "concave",
+        "outer"
+      ],
+      "context_sentence": "Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying."
+    },
+    "slower": {
+      "etymology": "Comparative of Old English slaw 'slow'",
+      "definition": "Moving at a lower speed.",
+      "usage_in_passage": "\"slower water cannot hold as much material in suspension\" is the reason for the deposit itself. It is the basis for Question 1.",
+      "related_terms": [
+        "sluggish",
+        "gradual",
+        "decelerated",
+        "faster"
+      ],
+      "context_sentence": "Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying."
+    },
+    "cannot": {
+      "etymology": "can 'be able' + not",
+      "definition": "Is not able to.",
+      "usage_in_passage": "\"cannot hold as much material in suspension\" is written as a limit of capacity. It shows that deposition is the result of a physical constraint and not of any intention.",
+      "related_terms": [
+        "unable",
+        "incapable",
+        "fails to",
+        "can"
+      ],
+      "context_sentence": "Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying."
+    },
+    "suspension": {
+      "etymology": "Latin sub- 'under' + pendere 'to hang' → 'the state of being hung'",
+      "definition": "The state in which particles float in water without sinking.",
+      "usage_in_passage": "\"hold as much material in suspension\" is the key term for carrying capacity. It supports the whole line of reasoning that when the flow slows, the water can no longer hold the particles up and they sink.",
+      "related_terms": [
+        "colloid",
+        "turbidity",
+        "dispersion",
+        "sedimentation"
+      ],
+      "context_sentence": "Along the inner bank the water slows, and slower water cannot hold as much material in suspension, so it drops what it was carrying."
+    },
+    "consequently": {
+      "etymology": "Latin con- 'together' + sequi 'to follow' → 'as a result'",
+      "definition": "As a result; therefore.",
+      "usage_in_passage": "In \"The curve consequently becomes more pronounced\", it is a linking word that makes the cause and effect explicit. Paragraph 2 runs in a chain, consequently → which → which, and expresses positive feedback through the structure of the sentences themselves.",
+      "related_terms": [
+        "therefore",
+        "hence",
+        "accordingly",
+        "nevertheless"
+      ],
+      "context_sentence": "The curve consequently becomes more pronounced."
+    },
+    "pronounced": {
+      "etymology": "Latin pro- 'forth' + nuntiare 'to announce' → 'clearly shown'",
+      "definition": "Very noticeable; marked.",
+      "usage_in_passage": "\"becomes more pronounced\" means that the bend becomes deeper. It expresses an increase in degree and connects to the next sentence, that 'a deeper bend turns the flow aside more strongly'.",
+      "related_terms": [
+        "marked",
+        "conspicuous",
+        "distinct",
+        "subtle"
+      ],
+      "context_sentence": "The curve consequently becomes more pronounced."
+    },
+    "deeper": {
+      "etymology": "Comparative of Old English deop 'deep'",
+      "definition": "More deep; here, more sharply bent.",
+      "usage_in_passage": "\"A deeper curve deflects the flow more strongly\" is the second round of amplification. It captures the moment when the result (a deep bend) turns into a cause (strong deflection).",
+      "related_terms": [
+        "greater",
+        "sharper",
+        "more acute",
+        "shallower"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "deflects": {
+      "etymology": "Latin de- 'away' + flectere 'to bend'",
+      "definition": "Turns aside.",
+      "usage_in_passage": "The external deflect that was denied in paragraph 1 is used here in the affirmative, as the action of the bend itself. The reuse of the word shows that the location of the cause has moved from outside to inside.",
+      "related_terms": [
+        "diverts",
+        "turns",
+        "bends",
+        "aligns"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "strongly": {
+      "etymology": "Old English strang 'strong' + -ly",
+      "definition": "With great force.",
+      "usage_in_passage": "The word more in \"deflects the flow more strongly\" carries the degree of amplification. The chain in paragraph 2 is written entirely in comparatives, so the form itself shows that an increase in quantity is the theme.",
+      "related_terms": [
+        "forcefully",
+        "intensely",
+        "markedly",
+        "weakly"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "quickens": {
+      "etymology": "Old English cwic 'alive, quick' + -en",
+      "definition": "Makes faster; speeds up.",
+      "usage_in_passage": "\"which quickens the erosion\" is the middle term of the chain. It sits at the position that closes the loop: bend → deflection → faster erosion → an even deeper bend.",
+      "related_terms": [
+        "accelerates",
+        "hastens",
+        "speeds",
+        "slows"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "erosion": {
+      "etymology": "Latin e- 'out' + rodere 'to gnaw' → 'gnawing away'",
+      "definition": "The wearing away of the land surface by water or wind.",
+      "usage_in_passage": "One of the two major processes in the passage. It forms a pair with deposition, and in paragraph 3 the two are unified as 'not separate events but the two ends of one circulation'.",
+      "related_terms": [
+        "abrasion",
+        "weathering",
+        "scouring",
+        "accretion"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "deepens": {
+      "etymology": "deep 'deep' + -en",
+      "definition": "Makes deeper.",
+      "usage_in_passage": "\"which deepens the curve further\" is the end point of the loop and at the same time its starting point. The single word further shows the repetition: 'the same thing happens again'.",
+      "related_terms": [
+        "intensifies",
+        "increases",
+        "sharpens",
+        "flattens"
+      ],
+      "context_sentence": "A deeper curve deflects the flow more strongly, which quickens the erosion, which deepens the curve further."
+    },
+    "departures": {
+      "etymology": "Old French departir 'to part' → 'going away'",
+      "definition": "Deviations from a standard; plural of departure.",
+      "usage_in_passage": "\"Small departures from straightness do not fade; they amplify.\" is the conclusion of paragraph 2. It restates the point as a property of the system as a whole instead of as individual causes and effects.",
+      "related_terms": [
+        "deviations",
+        "divergences",
+        "variations",
+        "conformity"
+      ],
+      "context_sentence": "Small departures from straightness do not fade; they amplify."
+    },
+    "straightness": {
+      "etymology": "straight 'straight' + -ness (quality)",
+      "definition": "The quality of being straight.",
+      "usage_in_passage": "In \"departures from straightness\", the wording too shows that the straight line is the reference state. The claim of the passage is that this reference state is unstable.",
+      "related_terms": [
+        "linearity",
+        "directness",
+        "alignment",
+        "curvature"
+      ],
+      "context_sentence": "Small departures from straightness do not fade; they amplify."
+    },
+    "fade": {
+      "etymology": "Old French fader 'to lose colour' ← Latin fatuus 'insipid'",
+      "definition": "To grow weaker and disappear.",
+      "usage_in_passage": "The contrast in \"do not fade; they amplify\" is the key to Question 3. It says that in a stable system disturbances would fade, but in this system the opposite happens.",
+      "related_terms": [
+        "diminish",
+        "dissipate",
+        "subside",
+        "intensify"
+      ],
+      "context_sentence": "Small departures from straightness do not fade; they amplify."
+    },
+    "amplify": {
+      "etymology": "Latin amplus 'wide' + facere 'to make' → 'to make large'",
+      "definition": "To grow steadily stronger.",
+      "usage_in_passage": "It is set against fade and sums up positive feedback in one word. The whole of paragraph 2 serves as the proof of this word.",
+      "related_terms": [
+        "intensify",
+        "magnify",
+        "escalate",
+        "dampen"
+      ],
+      "context_sentence": "Small departures from straightness do not fade; they amplify."
+    },
+    "mechanism": {
+      "etymology": "Greek mēkhanē 'device' + -ism",
+      "definition": "The way in which a process works.",
+      "usage_in_passage": "The passage opens paragraph 3 by saying \"The mechanism has a second component\". It is the signal that a three-dimensional circulation is being added to the mechanism in the horizontal plane explained in paragraph 2.",
+      "related_terms": [
+        "process",
+        "apparatus",
+        "workings",
+        "outcome"
+      ],
+      "context_sentence": "The mechanism has a second component that is not visible from the surface."
+    },
+    "visible": {
+      "etymology": "Latin videre 'to see' + -ible",
+      "definition": "Able to be seen.",
+      "usage_in_passage": "\"not visible from the surface\" decides the place of paragraph 3. It announces that there is a layer that cannot be understood just by looking at the water surface, and prepares the introduction of the helical flow.",
+      "related_terms": [
+        "apparent",
+        "observable",
+        "evident",
+        "hidden"
+      ],
+      "context_sentence": "The mechanism has a second component that is not visible from the surface."
+    },
+    "inward": {
+      "etymology": "in 'inside' + -ward 'in the direction of'",
+      "definition": "Toward the inside.",
+      "usage_in_passage": "It is used in two places, \"drives a return current inward\" and \"inward near the bottom\", and fixes the direction of the lower half of the spiral. It is also the word that decides the referent in Question 4.",
+      "related_terms": [
+        "inbound",
+        "centripetal",
+        "toward the centre",
+        "outward"
+      ],
+      "context_sentence": "Because the water surface stands slightly higher against the outer bank, pressure at the bed drives a return current inward."
+    },
+    "helical": {
+      "etymology": "Greek helix 'spiral' + -al",
+      "definition": "Having the form of a spiral.",
+      "usage_in_passage": "\"a helical motion\" is the central concept of paragraph 3. It expresses in one word a double movement: going from upstream to downstream while turning within the cross-section.",
+      "related_terms": [
+        "spiral",
+        "corkscrew",
+        "coiled",
+        "linear"
+      ],
+      "context_sentence": "The result is a helical motion: the water spirals along the channel, moving outward near the surface and inward near the bottom."
+    },
+    "spirals": {
+      "etymology": "Greek speira 'something coiled'",
+      "definition": "Moves forward in a spiral.",
+      "usage_in_passage": "\"the water spirals along the channel\" is a rewording of helical motion. The word along carries the sense of 'while flowing downstream' and shows that this is not a stationary whirlpool.",
+      "related_terms": [
+        "coils",
+        "winds",
+        "circulates",
+        "flows straight"
+      ],
+      "context_sentence": "The result is a helical motion: the water spirals along the channel, moving outward near the surface and inward near the bottom."
+    },
+    "outward": {
+      "etymology": "out 'outside' + -ward 'in the direction of'",
+      "definition": "Toward the outside.",
+      "usage_in_passage": "\"moving outward near the surface\" is the upper half of the spiral. Paired with inward, it shows that the direction is reversed according to depth.",
+      "related_terms": [
+        "outbound",
+        "centrifugal",
+        "away from the centre",
+        "inward"
+      ],
+      "context_sentence": "The result is a helical motion: the water spirals along the channel, moving outward near the surface and inward near the bottom."
+    },
+    "sweeps": {
+      "etymology": "Old English swapan 'to sweep'",
+      "definition": "Carries along as if with a broom.",
+      "usage_in_passage": "In \"sweeps eroded material from the outer bank across the channel floor\", it expresses transport across the river bed. The metaphor of sweeping conveys precisely that the movement runs along a surface.",
+      "related_terms": [
+        "carries",
+        "brushes",
+        "transports",
+        "deposits"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "eroded": {
+      "etymology": "Past participle from Latin e- 'out' + rodere 'to gnaw'",
+      "definition": "Worn away; removed by erosion.",
+      "usage_in_passage": "\"eroded material\" is the material stripped from the outer bank. This word ties erosion and deposition together as the history of the same material.",
+      "related_terms": [
+        "worn",
+        "scoured",
+        "abraded",
+        "deposited"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "delivers": {
+      "etymology": "Latin de- 'away' + liberare 'to set free' → 'to hand over'",
+      "definition": "Carries something to a place and leaves it there.",
+      "usage_in_passage": "\"delivers it to the inner bank\" shows that the transport has a destination. The choice of word anticipates the conclusion of paragraph 3, that 'erosion and deposition are the two ends of one circulation'.",
+      "related_terms": [
+        "conveys",
+        "transfers",
+        "supplies",
+        "removes"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "gently": {
+      "etymology": "Latin gentilis 'of the same clan' → 'mild' + -ly",
+      "definition": "With a gradual slope; not steeply.",
+      "usage_in_passage": "\"the gently sloping deposit\" is the shape of the point bar. It contrasts with the steep cliff of the outer bank, and conveys visually the asymmetry of the two banks.",
+      "related_terms": [
+        "gradually",
+        "softly",
+        "mildly",
+        "steeply"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "sloping": {
+      "etymology": "Old English aslupan 'to slip' → 'to slant'",
+      "definition": "Lying at an angle; inclined.",
+      "usage_in_passage": "It describes the cross-section of the point bar. The gently slanting shape shows that it is the result of slow water building it up little by little.",
+      "related_terms": [
+        "inclined",
+        "graded",
+        "tilted",
+        "level"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "deposit": {
+      "etymology": "Latin de- 'down' + ponere 'to put'",
+      "definition": "A mass of material that has been laid down.",
+      "usage_in_passage": "In \"the gently sloping deposit that geologists call a point bar\", it is used as a bridge from an everyday word to a technical term.",
+      "related_terms": [
+        "accumulation",
+        "sediment",
+        "bar",
+        "erosion"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "geologists": {
+      "etymology": "Greek gē 'earth' + logos 'study' + -ist",
+      "definition": "Scientists who study the earth; plural of geologist.",
+      "usage_in_passage": "It is given as the source when the technical term point bar is introduced. This is careful writing that assumes the reader does not know the term.",
+      "related_terms": [
+        "earth scientists",
+        "geomorphologists",
+        "researchers",
+        "laypeople"
+      ],
+      "context_sentence": "That bottom current sweeps eroded material from the outer bank across the channel floor and delivers it to the inner bank, where it builds the gently sloping deposit that geologists call a point bar."
+    },
+    "deposition": {
+      "etymology": "Latin de- 'down' + ponere 'to put' + -tion",
+      "definition": "The process by which transported material is laid down.",
+      "usage_in_passage": "It is placed side by side with erosion, and the two are unified in \"not separate events at opposite banks but two ends of one circulation\". It is the word that carries the conclusion of the whole of paragraph 3.",
+      "related_terms": [
+        "accretion",
+        "sedimentation",
+        "accumulation",
+        "erosion"
+      ],
+      "context_sentence": "Erosion and deposition are therefore not separate events at opposite banks but two ends of one circulation."
+    },
+    "opposite": {
+      "etymology": "Latin ob- 'toward' + ponere 'to put' → 'placed facing each other'",
+      "definition": "On the other side.",
+      "usage_in_passage": "The passage presents the simple view of \"separate events at opposite banks\" and then denies it. The word is there in order to reject the intuition that the two banks look separate.",
+      "related_terms": [
+        "contrary",
+        "facing",
+        "reverse",
+        "adjacent"
+      ],
+      "context_sentence": "Erosion and deposition are therefore not separate events at opposite banks but two ends of one circulation."
+    },
+    "circulation": {
+      "etymology": "Latin circulus 'circle' + -ation",
+      "definition": "Movement around a closed path.",
+      "usage_in_passage": "\"two ends of one circulation\" is the point that paragraph 3 arrives at. It reinterprets erosion and deposition not as separate phenomena but as the two ends of a single flow.",
+      "related_terms": [
+        "cycle",
+        "current",
+        "rotation",
+        "stagnation"
+      ],
+      "context_sentence": "Erosion and deposition are therefore not separate events at opposite banks but two ends of one circulation."
+    },
+    "amplification": {
+      "etymology": "Latin amplus 'wide' + facere 'to make' + -tion",
+      "definition": "The process of becoming stronger.",
+      "usage_in_passage": "\"Amplification cannot continue without limit.\" opens paragraph 4 and announces that a brake is put on the positive feedback described so far. It is the point where the argument turns back.",
+      "related_terms": [
+        "intensification",
+        "escalation",
+        "growth",
+        "damping"
+      ],
+      "context_sentence": "Amplification cannot continue without limit."
+    },
+    "lengthens": {
+      "etymology": "length 'length' + -en",
+      "definition": "Becomes longer.",
+      "usage_in_passage": "\"the river lengthens\" is followed by the statement that its gradient declines, which shows the cause and effect by which an increase in length brings a fall in gradient. This is the first of the mechanisms that stop the amplification.",
+      "related_terms": [
+        "extends",
+        "elongates",
+        "stretches",
+        "shortens"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "gradient": {
+      "etymology": "Latin gradus 'step, stage' + -ent → 'degree of slope'",
+      "definition": "The amount of fall in height over a given distance.",
+      "usage_in_passage": "The passage defines it itself as \"the drop in elevation over a given distance of channel\". It is the foundation of the argument in paragraph 5 that straightening makes the gradient steeper.",
+      "related_terms": [
+        "slope",
+        "incline",
+        "steepness",
+        "plateau"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "elevation": {
+      "etymology": "Latin e- 'out' + levare 'to raise' + -tion",
+      "definition": "Height above a reference level.",
+      "usage_in_passage": "It appears inside the definition of gradient. It is a word that points to the source of the energy, the difference in height.",
+      "related_terms": [
+        "altitude",
+        "height",
+        "relief",
+        "depth"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "declines": {
+      "etymology": "Latin de- 'down' + clinare 'to lean'",
+      "definition": "Becomes lower; decreases.",
+      "usage_in_passage": "The gradient declines, \"which reduces the energy available for cutting\"; with this the passage introduces the negative feedback that stops the amplification. It is symmetrical with the chain in paragraph 2.",
+      "related_terms": [
+        "diminishes",
+        "decreases",
+        "wanes",
+        "rises"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "cutting": {
+      "etymology": "Middle English cutten 'to cut'",
+      "definition": "Wearing into the ground; erosion.",
+      "usage_in_passage": "It is used in two places, \"the energy available for cutting\" and \"cutting downward\", and links the two destinations of the energy: sideways meandering and vertical downcutting.",
+      "related_terms": [
+        "incision",
+        "downcutting",
+        "carving",
+        "filling"
+      ],
+      "context_sentence": "As bends grow, the river lengthens and its gradient, the drop in elevation over a given distance of channel, declines, which reduces the energy available for cutting."
+    },
+    "meanwhile": {
+      "etymology": "mean 'middle' + while 'time' → 'during that time'",
+      "definition": "At the same time.",
+      "usage_in_passage": "It is the linking word that places a second check, the cutoff, alongside the first check, the fall in gradient. It shows that the two proceed at the same time.",
+      "related_terms": [
+        "simultaneously",
+        "concurrently",
+        "in the interim",
+        "afterwards"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "neighbouring": {
+      "etymology": "Old English neahgebur 'one who lives near' + -ing; the American spelling is neighboring",
+      "definition": "Next to each other.",
+      "usage_in_passage": "In \"neighbouring bends migrate toward one another\", it shows that the next stage is decided not by individual bends but by the relationship between bends.",
+      "related_terms": [
+        "adjacent",
+        "nearby",
+        "adjoining",
+        "distant"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "migrate": {
+      "etymology": "Latin migrare 'to move from one place to another'",
+      "definition": "To move; to change position.",
+      "usage_in_passage": "It shows that a bend is not a fixed landform but something that moves over time. It reflects the passage's attitude of treating landforms as processes and not as still objects.",
+      "related_terms": [
+        "shift",
+        "move",
+        "travel",
+        "remain"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "narrow": {
+      "etymology": "Old English nearu 'narrow'",
+      "definition": "Small in width.",
+      "usage_in_passage": "In \"the narrow neck between them\", it gives the condition under which the cutoff happens. This is the thin part that forms as a result of the bends moving close together.",
+      "related_terms": [
+        "slender",
+        "constricted",
+        "thin",
+        "broad"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "neck": {
+      "etymology": "Old English hnecca 'neck'",
+      "definition": "The neck; here, the thin strip of land between two bends.",
+      "usage_in_passage": "It describes a landform through a metaphor of the body. The implication of a part that is thin and easily cut leads naturally to the following breached.",
+      "related_terms": [
+        "isthmus",
+        "strip",
+        "spit",
+        "basin"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "breached": {
+      "etymology": "Old English brecan 'to break' → 'a place that has been broken'",
+      "definition": "Broken through.",
+      "usage_in_passage": "\"until the narrow neck between them is breached\" is the moment of the cutoff. It is written in the passive, which shows that this is not something the river tried to do but a result it reached physically.",
+      "related_terms": [
+        "ruptured",
+        "broken through",
+        "penetrated",
+        "sealed"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "abandons": {
+      "etymology": "Old French a bandon 'at will' → 'to give up'",
+      "definition": "Leaves behind; gives up.",
+      "usage_in_passage": "\"the river abandons the loop for a shorter path\" is written with personification, but in fact it is a consequence of physics: the steeper route is the one taken.",
+      "related_terms": [
+        "forsakes",
+        "deserts",
+        "relinquishes",
+        "retains"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "loop": {
+      "etymology": "Middle English loupe 'loop'",
+      "definition": "A bend shaped almost like a ring.",
+      "usage_in_passage": "It is the thing that is cut off. The crescent in the next sentence gives a concrete picture of the shape of what remains.",
+      "related_terms": [
+        "bend",
+        "curve",
+        "meander",
+        "straight"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "shorter": {
+      "etymology": "Comparative of Old English sceort 'short'",
+      "definition": "Less long.",
+      "usage_in_passage": "\"a shorter path\" is the route after the cutoff. Being shorter means going down the same drop more steeply, so the same reasoning as in the argument of paragraph 5 is at work.",
+      "related_terms": [
+        "briefer",
+        "more direct",
+        "curtailed",
+        "longer"
+      ],
+      "context_sentence": "Meanwhile neighbouring bends migrate toward one another until the narrow neck between them is breached, and the river abandons the loop for a shorter path."
+    },
+    "severed": {
+      "etymology": "Latin separare 'to separate' → Old French sevrer",
+      "definition": "Cut off.",
+      "usage_in_passage": "\"The severed bend survives as a crescent of standing water\" tells what happens to the bend after the cutoff. The past participle shows that it is the trace of an action done to it.",
+      "related_terms": [
+        "detached",
+        "cut off",
+        "isolated",
+        "joined"
+      ],
+      "context_sentence": "The severed bend survives as a crescent of standing water."
+    },
+    "survives": {
+      "etymology": "Latin super- 'beyond' + vivere 'to live'",
+      "definition": "Continues to exist; remains.",
+      "usage_in_passage": "It shows that the bend remains as a landform even after it is cut off from the main stream. It gives the viewpoint that within a dynamic process, its history is preserved as a trace.",
+      "related_terms": [
+        "persists",
+        "endures",
+        "remains",
+        "vanishes"
+      ],
+      "context_sentence": "The severed bend survives as a crescent of standing water."
+    },
+    "crescent": {
+      "etymology": "Latin crescere 'to grow' → 'the waxing moon'",
+      "definition": "A curved shape like the new moon.",
+      "usage_in_passage": "It describes in one word the shape of the bend that has been cut off. It conveys the feature by its shape without using the technical term oxbow lake, and appeals directly to the reader's eye.",
+      "related_terms": [
+        "arc",
+        "sickle",
+        "oxbow",
+        "circle"
+      ],
+      "context_sentence": "The severed bend survives as a crescent of standing water."
+    },
+    "landscape": {
+      "etymology": "Dutch landschap (land + -schap) → 'a continuous stretch of land'",
+      "definition": "The overall appearance of an area of land.",
+      "usage_in_passage": "In \"What looks like a landscape in disorder\", it sets up the contrast between apparent disorder and the regularity behind it. It is the device that leads to the conclusion of the paragraph.",
+      "related_terms": [
+        "terrain",
+        "scenery",
+        "topography",
+        "detail"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "disorder": {
+      "etymology": "dis- (negation) + order 'order'",
+      "definition": "Lack of order; confusion.",
+      "usage_in_passage": "\"a landscape in disorder\" is the view that is rejected. The \"in fact a system held near a characteristic scale\" that follows shows that it is a regular system.",
+      "related_terms": [
+        "chaos",
+        "randomness",
+        "confusion",
+        "regularity"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "characteristic": {
+      "etymology": "Greek kharaktēr 'engraved mark' + -istic",
+      "definition": "Typical of, and particular to, a given system.",
+      "usage_in_passage": "\"a system held near a characteristic scale\" is the point the passage arrives at. It says that meanders do not take any shape at random but are kept around a fixed scale.",
+      "related_terms": [
+        "distinctive",
+        "typical",
+        "defining",
+        "arbitrary"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "enormous": {
+      "etymology": "Latin e- 'out of' + norma 'standard' → 'outside the norm'",
+      "definition": "Extremely large.",
+      "usage_in_passage": "\"across an enormous range of sizes\" stresses that the ratio is universal. With a range from a stream you can step over to the lower Mississippi, it shows that the same law is at work.",
+      "related_terms": [
+        "immense",
+        "vast",
+        "tremendous",
+        "minute"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "roughly": {
+      "etymology": "Old English ruh 'rough' + -ly",
+      "definition": "Approximately.",
+      "usage_in_passage": "\"roughly eleven times the width\" gives an approximate figure. The word tells the reader honestly that this is a tendency and not a strict constant, and it is part of a scientific way of writing.",
+      "related_terms": [
+        "approximately",
+        "about",
+        "around",
+        "exactly"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "eleven": {
+      "etymology": "Old English endleofan 'one left over'",
+      "definition": "The number 11.",
+      "usage_in_passage": "The ratio is that the spacing of the bends is about eleven times the width of the channel. It is the only specific number in the passage, and it puts the claim of regularity into a form that can be tested.",
+      "related_terms": [
+        "ratio",
+        "multiple",
+        "factor",
+        "proportion"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "width": {
+      "etymology": "wide 'wide' + -th (forms nouns)",
+      "definition": "The distance from one side to the other.",
+      "usage_in_passage": "It is the quantity that serves as the basis of the ratio. Scaling by the width of the channel makes it possible to speak of rivers of all sizes on the same scale.",
+      "related_terms": [
+        "breadth",
+        "span",
+        "gauge",
+        "length"
+      ],
+      "context_sentence": "What looks like a landscape in disorder is in fact a system held near a characteristic scale: across an enormous range of sizes, from a stream you can step over to the lower Mississippi, the distance from one bend to the next is roughly eleven times the width of the channel."
+    },
+    "meandering": {
+      "etymology": "Greek Maiandros (the name of a winding river in Asia Minor) → became a common noun",
+      "definition": "Following a winding course.",
+      "usage_in_passage": "In \"engineering against meandering is so costly\", it states the theme of paragraph 5. The fact that its origin is the name of a real river tells how old the phenomenon is.",
+      "related_terms": [
+        "winding",
+        "sinuosity",
+        "curving",
+        "channelization"
+      ],
+      "context_sentence": "That ratio holds because the same balance of forces sets it at every scale, and it is why engineering against meandering is so costly."
+    },
+    "costly": {
+      "etymology": "cost 'cost' + -ly",
+      "definition": "Expensive; having a high price.",
+      "usage_in_passage": "\"so costly\" is the claim of paragraph 5. It implies not only money but also a price in the sense that the force that is held down appears somewhere else.",
+      "related_terms": [
+        "expensive",
+        "burdensome",
+        "onerous",
+        "cheap"
+      ],
+      "context_sentence": "That ratio holds because the same balance of forces sets it at every scale, and it is why engineering against meandering is so costly."
+    },
+    "straightened": {
+      "etymology": "straight + -en + -ed",
+      "definition": "Made straight.",
+      "usage_in_passage": "\"A straightened channel is steeper than the one it replaced\" is the starting point of the argument in paragraph 5. It shows that a human intervention changes a physical quantity.",
+      "related_terms": [
+        "channelized",
+        "realigned",
+        "artificial",
+        "natural"
+      ],
+      "context_sentence": "A straightened channel is steeper than the one it replaced, since it covers the same drop in less distance."
+    },
+    "steeper": {
+      "etymology": "Comparative of Old English steap 'high, precipitous'",
+      "definition": "Sloping more sharply.",
+      "usage_in_passage": "It comes with its reason attached, \"since it covers the same drop in less distance\". This lets the reader confirm that the point follows necessarily from the definition of gradient.",
+      "related_terms": [
+        "sharper",
+        "more inclined",
+        "precipitous",
+        "gentler"
+      ],
+      "context_sentence": "A straightened channel is steeper than the one it replaced, since it covers the same drop in less distance."
+    },
+    "replaced": {
+      "etymology": "re- 'again' + place 'to put'",
+      "definition": "Took the place of.",
+      "usage_in_passage": "\"the one it replaced\" refers to the other side of the comparison, that is, the original meandering channel. It is a word that contrasts the artificial with the natural.",
+      "related_terms": [
+        "supplanted",
+        "substituted",
+        "superseded",
+        "preserved"
+      ],
+      "context_sentence": "A straightened channel is steeper than the one it replaced, since it covers the same drop in less distance."
+    },
+    "surplus": {
+      "etymology": "Latin super- 'over' + plus 'more' → 'excess'",
+      "definition": "An amount left over; extra.",
+      "usage_in_passage": "It is used twice in \"Steeper water carries surplus energy, and the surplus goes into cutting downward\", and expresses the idea of conservation, that energy left over must go somewhere. It is the core of paragraph 5.",
+      "related_terms": [
+        "excess",
+        "overflow",
+        "residue",
+        "deficit"
+      ],
+      "context_sentence": "Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed."
+    },
+    "downward": {
+      "etymology": "down 'down' + -ward 'in the direction of'",
+      "definition": "Toward a lower place.",
+      "usage_in_passage": "\"cutting downward\" is one of the destinations of the surplus energy. The choice between two options, digging down if the river cannot bend sideways, is the basis of the inference in Question 5.",
+      "related_terms": [
+        "vertically",
+        "incising",
+        "deepening",
+        "upward"
+      ],
+      "context_sentence": "Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed."
+    },
+    "rebuilding": {
+      "etymology": "re- 'again' + build 'to build' + -ing",
+      "definition": "Building again.",
+      "usage_in_passage": "\"rebuilding the bends that were removed\" is the other destination. It backs up in the language of mechanism the advance notice in paragraph 1 that the bends that were taken away come back.",
+      "related_terms": [
+        "restoring",
+        "reconstructing",
+        "re-forming",
+        "demolishing"
+      ],
+      "context_sentence": "Steeper water carries surplus energy, and the surplus goes into cutting downward or into rebuilding the bends that were removed."
+    },
+    "levees": {
+      "etymology": "French lever 'to raise' → 'raised bank'",
+      "definition": "Banks built along a river to hold it in; plural of levee.",
+      "usage_in_passage": "\"Rivers held between levees\" is the scene of the final paragraph. It is the setting for the conclusion that the nature of a river does not change even when it is physically shut in.",
+      "related_terms": [
+        "embankments",
+        "dikes",
+        "floodwalls",
+        "floodplain"
+      ],
+      "context_sentence": "Rivers held between levees do not stop behaving like rivers."
+    },
+    "behaving": {
+      "etymology": "be- (intensive) + have 'to have, to conduct oneself' + -ing",
+      "definition": "Acting in a particular way.",
+      "usage_in_passage": "\"do not stop behaving like rivers\" is the close of the passage. It places at the end the viewpoint of seeing a river not as an object that can be controlled but as a system with its own nature.",
+      "related_terms": [
+        "acting",
+        "functioning",
+        "operating",
+        "ceasing"
+      ],
+      "context_sentence": "Rivers held between levees do not stop behaving like rivers."
+    }
+  }
+}

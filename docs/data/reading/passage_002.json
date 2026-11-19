@@ -1,0 +1,1342 @@
+{
+  "id": "passage_002",
+  "title": "The Constraints of Fresco",
+  "topic": "Arts",
+  "body": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them. The painter applied pigments suspended in water onto a layer of plaster while it remained damp. As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it. The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made.\n\nThe most immediate of these was time. Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work. Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again. Fresco therefore rewarded certainty and punished hesitation. Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet.\n\nPigments presented a second constraint. The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions. Blue was especially troublesome. The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg. Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away. The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss.\n\nThese demands shaped the organization of labor as much as the appearance of the finished work. Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture. When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments. That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it.",
+  "word_count": 467,
+  "added": "2026-08-06",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 1, what makes the surface of a buon fresco so durable?",
+      "target_word": null,
+      "choices": {
+        "A": "The plaster is applied in unusually thick layers before painting begins.",
+        "B": "A chemical reaction encloses the pigment particles inside the wall itself.",
+        "C": "The pigments are ground more finely than those used in other media.",
+        "D": "A protective varnish is brushed over the painting once the plaster dries."
+      },
+      "correct": "B",
+      "explanation": "Paragraph 1 says \"lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it\", which states directly that the reason for the durability is that a chemical reaction shuts the pigment inside the wall. A (thick layers), C (fineness of the pigments), and D (varnish) are none of them mentioned in the passage."
+    },
+    {
+      "id": 2,
+      "type": "Reference",
+      "question": "The word \"these\" in paragraph 2 (\"The most immediate of these was time\") refers to",
+      "target_word": null,
+      "choices": {
+        "A": "the decisions the painter made",
+        "B": "the walls that carried the images",
+        "C": "the constraints imposed by the chemistry of fresco",
+        "D": "the particles of color locked within the wall"
+      },
+      "correct": "C",
+      "explanation": "The end of paragraph 1, just before, finishes with \"the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made\", and \"these\" picks up these constraints. In fact, paragraph 2, which follows, explains the constraint of time, so C is correct. A is what the constraints govern, not the constraints themselves."
+    },
+    {
+      "id": 3,
+      "type": "Vocabulary",
+      "question": "The word \"denuded\" in paragraph 3 is closest in meaning to",
+      "target_word": "denuded",
+      "choices": {
+        "A": "darkened",
+        "B": "crowded",
+        "C": "enlarged",
+        "D": "stripped bare"
+      },
+      "correct": "D",
+      "explanation": "Just before, the passage says of the layers of blue paint that \"centuries of humidity have stripped many of them away\", and denuded refers to the state of having lost color as a result. So D, stripped bare, is the closest in meaning. A, darkened, points the opposite way, toward the color becoming deeper, and B and C have nothing to do with the context of the passage."
+    },
+    {
+      "id": 4,
+      "type": "Inference",
+      "question": "What can be inferred from paragraph 3 about the appearance of certain early Italian chapels when they were first completed?",
+      "target_word": null,
+      "choices": {
+        "A": "Their skies were more strongly colored than they are today.",
+        "B": "Their painters deliberately avoided depicting the sky.",
+        "C": "They contained no passages painted on dried plaster.",
+        "D": "Their walls were left unfinished for lack of suitable pigments."
+      },
+      "correct": "A",
+      "explanation": "The passage says the pale skies are \"not evidence of restraint on the painter's part but of loss\". In other words, the painters did not hold back on blue; the blue that was applied afterward has been lost. So we can infer that the skies were a deeper blue when first completed. B contradicts the passage, which denies \"restraint\", and C goes against the statement that blue was applied precisely on top of dried plaster."
+    },
+    {
+      "id": 5,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention oil painting in paragraph 4?",
+      "target_word": null,
+      "choices": {
+        "A": "To argue that oil painting quickly replaced fresco throughout Italy",
+        "B": "To identify, by contrast, the limitations under which fresco painters worked",
+        "C": "To explain how workshops trained their assistants in a second medium",
+        "D": "To show that oil painting was invented in response to the failures of fresco"
+      },
+      "correct": "B",
+      "explanation": "Oil painting is presented as \"precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments\", and its role is to bring out by contrast the three constraints the passage has described up to that point (time, no possibility of correction, and the limited range of pigments). A contradicts \"fresco nevertheless persisted for generations afterward\". The claim about origins in D is not in the passage."
+    }
+  ],
+  "vocab": {
+    "appearance": {
+      "etymology": "Latin ad- (toward) + parere (to come into view), giving appear, + -ance (noun-forming)",
+      "definition": "The way something looks.",
+      "usage_in_passage": "In the opening \"Few techniques have shaped the appearance of an era\", this word introduces the claim that fresco determined the very 'look' of the art of an age.",
+      "related_terms": [
+        "appear",
+        "aspect",
+        "guise",
+        "semblance"
+      ],
+      "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
+    },
+    "decisively": {
+      "etymology": "Latin de- (off) + caedere (to cut), giving decide 'to settle by cutting apart', + -ive + -ly",
+      "definition": "In a way that settles the matter; unmistakably.",
+      "usage_in_passage": "It strengthens the comparison in \"shaped the appearance of an era as decisively as buon fresco\" and shows that the influence of fresco is greater than that of other techniques.",
+      "related_terms": [
+        "decisive",
+        "conclusively",
+        "definitively",
+        "markedly"
+      ],
+      "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
+    },
+    "buon": {
+      "etymology": "Italian buono 'good' < Latin bonus (good)",
+      "definition": "Italian for 'good'; in buon fresco it refers to the true fresco technique.",
+      "usage_in_passage": "It appears as part of the technical term \"buon fresco\" and refers to fresco proper, as distinguished from the secco technique of painting on a dry wall.",
+      "related_terms": [
+        "fresco",
+        "secco",
+        "genuine",
+        "authentic"
+      ],
+      "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
+    },
+    "fresco": {
+      "etymology": "Italian fresco 'fresh, still damp' (of Germanic origin; related to English fresh)",
+      "definition": "A technique of wall painting done on damp plaster.",
+      "usage_in_passage": "The subject word of the whole passage. As its etymology shows, painting 'while it is still damp' is the starting point of all the constraints of time discussed afterward.",
+      "related_terms": [
+        "mural",
+        "plaster",
+        "secco",
+        "pigment"
+      ],
+      "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
+    },
+    "painters": {
+      "etymology": "Old French peindre < Latin pingere (to paint), giving paint, + -er + -s",
+      "definition": "Artists who paint.",
+      "usage_in_passage": "In \"Italian painters bound images permanently into the walls\" they are shown as the ones who act, and from then on they are mentioned repeatedly as the group of craftsmen working under these constraints.",
+      "related_terms": [
+        "painter",
+        "artists",
+        "artisans",
+        "muralists"
+      ],
+      "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
+    },
+    "bound": {
+      "etymology": "Past participle form of Old English bindan (to tie). A Germanic word, not of Latin origin",
+      "definition": "Tied firmly; fixed in place.",
+      "usage_in_passage": "\"bound images permanently into the walls\" shows that the picture does not sit on the surface of the wall but is joined to its interior, and it anticipates the chemical explanation in paragraph 1.",
+      "related_terms": [
+        "bind",
+        "fused",
+        "anchored",
+        "fixed"
+      ],
+      "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
+    },
+    "permanently": {
+      "etymology": "Latin per- (through, all the way) + manere (to stay), giving permanent, + -ly",
+      "definition": "In a way that lasts forever.",
+      "usage_in_passage": "In \"bound images permanently into the walls\" it presents the advantage of durability and builds the frame of the passage: constraints arise as the price of that advantage.",
+      "related_terms": [
+        "permanence",
+        "enduringly",
+        "indelibly",
+        "lastingly"
+      ],
+      "context_sentence": "Few techniques have shaped the appearance of an era as decisively as buon fresco, the method by which Italian painters bound images permanently into the walls that carried them."
+    },
+    "painter": {
+      "etymology": "Old French peindre < Latin pingere (to paint) + -er",
+      "definition": "An artist who paints.",
+      "usage_in_passage": "As in \"The painter applied pigments suspended in water\", it appears repeatedly in the singular as the one who makes the technical decisions.",
+      "related_terms": [
+        "painters",
+        "artist",
+        "muralist",
+        "craftsman"
+      ],
+      "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
+    },
+    "pigments": {
+      "etymology": "Latin pingere (to paint), giving pigmentum (paint), + -s",
+      "definition": "Powdered materials that give color.",
+      "usage_in_passage": "In paragraph 1 they appear as the material mixed with water and applied, and in paragraph 3 as what is sorted by whether it can withstand lime, so the word links the two constraints.",
+      "related_terms": [
+        "pigment",
+        "colorants",
+        "dyes",
+        "palette"
+      ],
+      "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
+    },
+    "suspended": {
+      "etymology": "Latin sus- (sub- under) + pendere (to hang), giving 'made to float in a liquid'",
+      "definition": "Dispersed (in a liquid) without dissolving.",
+      "usage_in_passage": "\"pigments suspended in water\" states precisely that the pigment does not dissolve in the water but floats in it as particles, and it leads to the later explanation that the particles are locked into the wall.",
+      "related_terms": [
+        "suspension",
+        "dispersed",
+        "immersed",
+        "floating"
+      ],
+      "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
+    },
+    "plaster": {
+      "etymology": "Greek emplastron 'something daubed on' < en- (on) + plassein (to mold)",
+      "definition": "A mixture of lime and sand spread on walls.",
+      "usage_in_passage": "The central material of the passage. As \"onto a layer of plaster while it remained damp\" indicates, the speed at which it dries sets the painter's working time.",
+      "related_terms": [
+        "mortar",
+        "lime",
+        "stucco",
+        "render"
+      ],
+      "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
+    },
+    "damp": {
+      "etymology": "A Germanic word derived from Middle Low German damp 'vapor'",
+      "definition": "Moist; not yet dry.",
+      "usage_in_passage": "\"while it remained damp\" shows the essential condition of buon fresco in one word and implies that the work ends the moment this state is lost.",
+      "related_terms": [
+        "moist",
+        "wet",
+        "humid",
+        "dampness"
+      ],
+      "context_sentence": "The painter applied pigments suspended in water onto a layer of plaster while it remained damp."
+    },
+    "dried": {
+      "etymology": "Old English dryge (dry), giving dry, + -ed. Germanic",
+      "definition": "Became dry; lost its moisture.",
+      "usage_in_passage": "\"As the plaster dried\" is the time clause that leads into the chemical reaction of paragraph 1 and shows that drying is not merely a loss of water but a process of chemical change.",
+      "related_terms": [
+        "dry",
+        "cured",
+        "hardened",
+        "desiccated"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "lime": {
+      "etymology": "Old English lim 'sticky substance'. A Germanic word with a different origin from the fruit lime",
+      "definition": "A strongly alkaline substance that is the main ingredient of plaster.",
+      "usage_in_passage": "It appears as the source of durability in \"lime in the mortar reacted with carbon dioxide\" and, in paragraph 3, as the culprit that ruins pigments in \"The alkalinity of wet lime destroyed many colors\", so it carries the paradox of the passage: the same substance produces both the advantage and the drawback.",
+      "related_terms": [
+        "limestone",
+        "calcium",
+        "alkali",
+        "mortar"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "mortar": {
+      "etymology": "Latin mortarium 'a mortar bowl, the plaster made in it'",
+      "definition": "A building material of lime and sand mixed together.",
+      "usage_in_passage": "As \"lime in the mortar\" it specifies where the lime that causes the reaction is contained.",
+      "related_terms": [
+        "plaster",
+        "cement",
+        "lime",
+        "grout"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "reacted": {
+      "etymology": "Latin re- (again, in response) + agere (to do), giving react, + -ed",
+      "definition": "Underwent a chemical reaction.",
+      "usage_in_passage": "\"lime in the mortar reacted with carbon dioxide\" contains the core verb that makes clear that the durability of fresco comes from a chemical change, not from physical adhesion.",
+      "related_terms": [
+        "reaction",
+        "reacted",
+        "combined",
+        "interacted"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "carbon": {
+      "etymology": "Latin carbo 'coal, charcoal'",
+      "definition": "The chemical element that, joined with oxygen, forms carbon dioxide.",
+      "usage_in_passage": "\"carbon dioxide drawn from the air\" shows that what the wall reacts with to harden is a gas in the air.",
+      "related_terms": [
+        "carbonate",
+        "charcoal",
+        "carbonic",
+        "graphite"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "dioxide": {
+      "etymology": "Greek di- (two) + oxide, giving a compound containing two oxygen atoms",
+      "definition": "A compound containing two oxygen atoms; here, carbon dioxide.",
+      "usage_in_passage": "As \"carbon dioxide drawn from the air\" it explains that the hardening of fresco is a process of taking in the outside air.",
+      "related_terms": [
+        "carbon",
+        "oxide",
+        "gas",
+        "carbonate"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "drawn": {
+      "etymology": "Past participle of Old English dragan (to pull). Germanic",
+      "definition": "Pulled out; taken in.",
+      "usage_in_passage": "\"carbon dioxide drawn from the air\" shows that the gas needed for the reaction is supplied from outside and suggests that the wall is an open system that reacts with its surroundings.",
+      "related_terms": [
+        "draw",
+        "extracted",
+        "absorbed",
+        "pulled"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "crystalline": {
+      "etymology": "Greek krystallos 'ice, rock crystal' + -ine (consisting of)",
+      "definition": "Made of crystals.",
+      "usage_in_passage": "\"a crystalline skin of calcium carbonate\" shows that the product is not an amorphous film but has a crystal structure, making the basis of the durability concrete.",
+      "related_terms": [
+        "crystal",
+        "mineral",
+        "vitreous",
+        "granular"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "calcium": {
+      "etymology": "Latin calx 'lime, pebble' + -ium, which forms element names",
+      "definition": "The chemical element found in lime.",
+      "usage_in_passage": "As \"calcium carbonate\" it identifies by its chemical name the product of the reaction between lime and carbon dioxide.",
+      "related_terms": [
+        "calcite",
+        "lime",
+        "carbonate",
+        "limestone"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "carbonate": {
+      "etymology": "carbon + -ate, which indicates a salt",
+      "definition": "A salt of carbonic acid.",
+      "usage_in_passage": "\"a crystalline skin of calcium carbonate\" shows what the substance that seals in the pigment actually is.",
+      "related_terms": [
+        "carbon",
+        "calcium",
+        "calcite",
+        "mineral"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "locking": {
+      "etymology": "Old English loc 'lock, fastening', giving lock, + -ing. Germanic",
+      "definition": "Shutting in; fixing in place.",
+      "usage_in_passage": "\"locking the particles of color within the wall rather than upon it\" is the main point of paragraph 1. The contrast between within and upon settles that fresco is not a surface coating.",
+      "related_terms": [
+        "lock",
+        "sealing",
+        "trapping",
+        "embedding"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "particles": {
+      "etymology": "Latin particula, diminutive of pars (part), + -s",
+      "definition": "Tiny solid pieces.",
+      "usage_in_passage": "\"the particles of color\" shows that what is sealed in is not dissolved dye but solid grains, and it echoes the phrase suspended in water.",
+      "related_terms": [
+        "particle",
+        "grains",
+        "granules",
+        "specks"
+      ],
+      "context_sentence": "As the plaster dried, lime in the mortar reacted with carbon dioxide drawn from the air and formed a crystalline skin of calcium carbonate, locking the particles of color within the wall rather than upon it."
+    },
+    "extraordinarily": {
+      "etymology": "Latin extra- (outside) + ordinarius (usual), giving extraordinary, + -ly",
+      "definition": "To a degree far beyond the usual.",
+      "usage_in_passage": "\"The resulting surface was extraordinarily durable\" states the advantage as strongly as possible and makes the turn with but immediately afterward stand out.",
+      "related_terms": [
+        "extraordinary",
+        "remarkably",
+        "exceptionally",
+        "strikingly"
+      ],
+      "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
+    },
+    "durable": {
+      "etymology": "Latin durare (to last) < durus (hard) + -able",
+      "definition": "Able to last a long time.",
+      "usage_in_passage": "It is the word for the single greatest advantage of fresco, and the price painters accepted for this one word fills all the rest of the passage.",
+      "related_terms": [
+        "durability",
+        "lasting",
+        "resilient",
+        "enduring"
+      ],
+      "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
+    },
+    "chemistry": {
+      "etymology": "Arabic al-kīmiyā, then alchemy, then chemist + -ry",
+      "definition": "The chemical nature of something.",
+      "usage_in_passage": "\"the chemistry that conferred this permanence also imposed constraints\" is the thesis sentence of the passage. It presents in one sentence the paradox that the same chemical properties are the source of both the benefit and the constraints.",
+      "related_terms": [
+        "chemical",
+        "reaction",
+        "composition",
+        "science"
+      ],
+      "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
+    },
+    "conferred": {
+      "etymology": "Latin con- (together) + ferre (to carry), giving 'to give, to grant'",
+      "definition": "Gave; granted.",
+      "usage_in_passage": "\"the chemistry that conferred this permanence\" shows that the durability is not an accident but something that follows necessarily from the chemistry.",
+      "related_terms": [
+        "confer",
+        "bestowed",
+        "granted",
+        "imparted"
+      ],
+      "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
+    },
+    "permanence": {
+      "etymology": "Latin per- (all the way) + manere (to stay) + -ence (noun-forming)",
+      "definition": "The quality of lasting forever.",
+      "usage_in_passage": "It picks up permanently from the start of paragraph 1 as a noun and, in the thesis sentence, makes clear what was gained in exchange for the constraints.",
+      "related_terms": [
+        "permanent",
+        "durability",
+        "endurance",
+        "stability"
+      ],
+      "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
+    },
+    "imposed": {
+      "etymology": "Latin im- (in- upon) + ponere (to place), giving 'to lay upon'",
+      "definition": "Laid upon; forced on.",
+      "usage_in_passage": "\"also imposed constraints\" is the second half of the thesis sentence and builds the structure in which a burden arises from the same cause as the benefit.",
+      "related_terms": [
+        "impose",
+        "inflicted",
+        "enforced",
+        "dictated"
+      ],
+      "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
+    },
+    "constraints": {
+      "etymology": "Latin con- (together) + stringere (to draw tight), giving 'something that tightens and limits movement', + -s",
+      "definition": "Limits; restrictions.",
+      "usage_in_passage": "The key word that runs through the passage. The three constraints, time in paragraph 2, pigments in paragraph 3, and the organization of labor in paragraph 4, are all gathered under this word.",
+      "related_terms": [
+        "constraint",
+        "restrictions",
+        "limitations",
+        "restraint"
+      ],
+      "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
+    },
+    "governed": {
+      "etymology": "Latin gubernare (to steer) < Greek kybernan, giving govern, + -ed",
+      "definition": "Controlled; determined.",
+      "usage_in_passage": "\"constraints that governed nearly every decision the painter made\" shows that the constraints reach not just the details of technique but the whole of the painter's decisions.",
+      "related_terms": [
+        "govern",
+        "dictated",
+        "regulated",
+        "determined"
+      ],
+      "context_sentence": "The resulting surface was extraordinarily durable, but the chemistry that conferred this permanence also imposed constraints that governed nearly every decision the painter made."
+    },
+    "immediate": {
+      "etymology": "Latin im- (negation) + mediatus (mediated), giving 'with nothing in between'",
+      "definition": "Most direct; coming first.",
+      "usage_in_passage": "\"The most immediate of these was time\" gives the three constraints an order and presents time as the first issue.",
+      "related_terms": [
+        "immediately",
+        "direct",
+        "foremost",
+        "instant"
+      ],
+      "context_sentence": "The most immediate of these was time."
+    },
+    "receptive": {
+      "etymology": "Latin re- (again) + capere (to take), giving recept-, + -ive",
+      "definition": "In a state able to take something in.",
+      "usage_in_passage": "\"Plaster remained receptive for a matter of hours\" states that the time during which plaster accepts paint is limited and leads into the explanation of the giornata.",
+      "related_terms": [
+        "receive",
+        "receptivity",
+        "absorbent",
+        "workable"
+      ],
+      "context_sentence": "Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work."
+    },
+    "prepare": {
+      "etymology": "Latin prae- (beforehand) + parare (to make ready)",
+      "definition": "To get ready in advance.",
+      "usage_in_passage": "\"a painter could prepare only as much wall as could be finished in a single session\" shows that the very area to be plastered is worked out backward from the time available.",
+      "related_terms": [
+        "preparation",
+        "ready",
+        "arrange",
+        "prime"
+      ],
+      "context_sentence": "Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work."
+    },
+    "giornata": {
+      "etymology": "Italian giorno 'day' < Latin diurnus (of a day) + -ata, giving 'a day's worth of work'",
+      "definition": "The section of plaster that can be finished in one day.",
+      "usage_in_passage": "\"an area known as a giornata, or day's work\" is the technical term showing that the constraint of time is marked on the wall as physical sections.",
+      "related_terms": [
+        "day",
+        "session",
+        "segment",
+        "fresco"
+      ],
+      "context_sentence": "Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work."
+    },
+    "day's": {
+      "etymology": "Old English dæg (day) + possessive -'s. Germanic",
+      "definition": "Belonging to one day; one day's worth of.",
+      "usage_in_passage": "By restating the term as \"a giornata, or day's work\", the passage explains the Italian technical term in plain words.",
+      "related_terms": [
+        "day",
+        "daily",
+        "diurnal",
+        "session"
+      ],
+      "context_sentence": "Plaster remained receptive for a matter of hours, so a painter could prepare only as much wall as could be finished in a single session, an area known as a giornata, or day's work."
+    },
+    "bond": {
+      "etymology": "Middle English band 'something that ties'. A Germanic word related to bind",
+      "definition": "To join; to stick together.",
+      "usage_in_passage": "\"further additions would not bond\" shows that adding paint after time has run out is physically impossible and leads to the next point, that corrections cannot be made.",
+      "related_terms": [
+        "bind",
+        "adhere",
+        "attach",
+        "fuse"
+      ],
+      "context_sentence": "Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again."
+    },
+    "passage": {
+      "etymology": "Latin passus (step), giving pass, + -age",
+      "definition": "A part or section (of a painting or a text).",
+      "usage_in_passage": "In \"a passage judged unsatisfactory\" it refers to one section of the painting. \"Such passages\" in paragraph 3 is the same use and refers to the places where blue was applied afterward.",
+      "related_terms": [
+        "passages",
+        "section",
+        "portion",
+        "area"
+      ],
+      "context_sentence": "Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again."
+    },
+    "unsatisfactory": {
+      "etymology": "un- (negation) + Latin satis (enough) + facere (to make), giving the negative of satisfactory",
+      "definition": "Not good enough.",
+      "usage_in_passage": "\"a passage judged unsatisfactory could be corrected only by chiseling away the plaster\" shows that the price of a failure is the destruction of the wall.",
+      "related_terms": [
+        "satisfactory",
+        "inadequate",
+        "deficient",
+        "unacceptable"
+      ],
+      "context_sentence": "Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again."
+    },
+    "chiseling": {
+      "etymology": "Old French cisel 'chisel' < Latin caedere (to cut) + -ing",
+      "definition": "Cutting away with a chisel.",
+      "usage_in_passage": "It is presented as the only means of correction and is the basis for the next sentence, \"rewarded certainty and punished hesitation\".",
+      "related_terms": [
+        "chisel",
+        "carving",
+        "gouging",
+        "scraping"
+      ],
+      "context_sentence": "Once the surface had set, further additions would not bond, and a passage judged unsatisfactory could be corrected only by chiseling away the plaster and beginning again."
+    },
+    "rewarded": {
+      "etymology": "re- (again) + Old North French warder (to watch), giving 'to repay'",
+      "definition": "Repaid; worked in favor of.",
+      "usage_in_passage": "The first half of the paired phrase in \"Fresco therefore rewarded certainty and punished hesitation\". It shows that the technique selects for the painter's qualities.",
+      "related_terms": [
+        "reward",
+        "favored",
+        "compensated",
+        "benefited"
+      ],
+      "context_sentence": "Fresco therefore rewarded certainty and punished hesitation."
+    },
+    "certainty": {
+      "etymology": "Latin cernere (to distinguish), giving certus (sure), + -ty",
+      "definition": "Sureness; freedom from doubt.",
+      "usage_in_passage": "It is set against hesitation in the paired phrase and names the mental attitude that fresco demands.",
+      "related_terms": [
+        "certain",
+        "confidence",
+        "assurance",
+        "conviction"
+      ],
+      "context_sentence": "Fresco therefore rewarded certainty and punished hesitation."
+    },
+    "punished": {
+      "etymology": "Latin poena (penalty), giving punire, + -ed",
+      "definition": "Penalized; worked against.",
+      "usage_in_passage": "\"punished hesitation\" is the second half of the paired phrase and shows that doubt leads directly to a loss that cannot be undone.",
+      "related_terms": [
+        "punish",
+        "penalized",
+        "sanctioned",
+        "chastised"
+      ],
+      "context_sentence": "Fresco therefore rewarded certainty and punished hesitation."
+    },
+    "hesitation": {
+      "etymology": "Latin haerere (to stick, to hesitate), giving haesitare, + -ion",
+      "definition": "A pause from doubt; wavering.",
+      "usage_in_passage": "It pairs with certainty and shows that the trial and error allowed in ordinary painting does not work in fresco.",
+      "related_terms": [
+        "hesitate",
+        "indecision",
+        "reluctance",
+        "wavering"
+      ],
+      "context_sentence": "Fresco therefore rewarded certainty and punished hesitation."
+    },
+    "composition": {
+      "etymology": "Latin com- (together) + ponere (to place) + -ition, giving 'the act of putting together'",
+      "definition": "The arrangement of the elements within a picture.",
+      "usage_in_passage": "\"Composition had to be resolved in advance through drawings\" shows that the order of production is reversed, that is, the work of thinking moves from in front of the wall to the preparatory drawing.",
+      "related_terms": [
+        "compose",
+        "arrangement",
+        "layout",
+        "design"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "resolved": {
+      "etymology": "Latin re- (intensive) + solvere (to loosen), giving 'to solve'",
+      "definition": "Settled; fixed.",
+      "usage_in_passage": "\"resolved in advance\" sums up the consequence drawn in paragraph 2: decisions on the wall are not allowed.",
+      "related_terms": [
+        "resolve",
+        "settled",
+        "determined",
+        "finalized"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "drawings": {
+      "etymology": "Old English dragan (to pull), giving draw, + -ing + -s. Germanic",
+      "definition": "Sketches; preparatory pictures.",
+      "usage_in_passage": "They are presented as the medium that takes over the thinking that cannot be tried out in front of the wall, which suggests why drawing was valued in Renaissance art.",
+      "related_terms": [
+        "draw",
+        "sketches",
+        "studies",
+        "cartoon"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "transferred": {
+      "etymology": "Latin trans- (across) + ferre (to carry)",
+      "definition": "Copied across; moved.",
+      "usage_in_passage": "\"the finished design was transferred to the wall mechanically\" shows that the move from drawing to wall is not creation but mechanical work.",
+      "related_terms": [
+        "transfer",
+        "conveyed",
+        "copied",
+        "relayed"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "mechanically": {
+      "etymology": "Greek mēkhanē (device), giving mechanical, + -ly",
+      "definition": "By a set procedure, without judgment.",
+      "usage_in_passage": "It shows that the transfer is a step that involves no judgment and leads into the two concrete methods given next.",
+      "related_terms": [
+        "mechanical",
+        "mechanism",
+        "automatically",
+        "systematically"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "incising": {
+      "etymology": "Latin in- (into) + caedere (to cut), giving 'to cut into'",
+      "definition": "Cutting (lines) into a surface.",
+      "usage_in_passage": "\"either by incising its outlines into the fresh surface\" is the first method of transfer, one that uses the softness of the damp plaster.",
+      "related_terms": [
+        "incision",
+        "engraving",
+        "etching",
+        "scoring"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "outlines": {
+      "etymology": "out + line (< Latin linea thread). A compound of Germanic and Latin elements",
+      "definition": "Lines that mark the outer edge of a shape.",
+      "usage_in_passage": "It shows that what is transferred is the outline, not the shading, and implies that decisions about color are left to be made on the wall.",
+      "related_terms": [
+        "outline",
+        "contour",
+        "silhouette",
+        "profile"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "dusting": {
+      "etymology": "Old English dūst (dust), giving dust, + -ing. Germanic",
+      "definition": "Sprinkling with powder.",
+      "usage_in_passage": "\"by dusting charcoal through a perforated sheet\" is the second method of transfer (pouncing), a way of copying the drawing without damaging the plaster.",
+      "related_terms": [
+        "dust",
+        "sprinkling",
+        "powdering",
+        "pouncing"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "charcoal": {
+      "etymology": "char (to scorch) + coal. A Germanic compound",
+      "definition": "Black carbon made by burning wood.",
+      "usage_in_passage": "It is used as the powder dropped through the holes, and the passage implies that it suits the transfer because it is easy to wipe away.",
+      "related_terms": [
+        "char",
+        "carbon",
+        "soot",
+        "graphite"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "perforated": {
+      "etymology": "Latin per- (through) + forare (to bore a hole) + -ate",
+      "definition": "Pierced with holes.",
+      "usage_in_passage": "\"a perforated sheet\" refers to the paper (the cartoon) pricked with a needle along the outlines of the drawing and explains how the transfer works.",
+      "related_terms": [
+        "perforation",
+        "punctured",
+        "pierced",
+        "porous"
+      ],
+      "context_sentence": "Composition had to be resolved in advance through drawings, and the finished design was transferred to the wall mechanically, either by incising its outlines into the fresh surface or by dusting charcoal through a perforated sheet."
+    },
+    "constraint": {
+      "etymology": "Latin con- (together) + stringere (to draw tight)",
+      "definition": "A limit; a restriction.",
+      "usage_in_passage": "\"Pigments presented a second constraint\" is the topic sentence of paragraph 3 and explicitly counts the second constraint, after time.",
+      "related_terms": [
+        "constraints",
+        "limitation",
+        "restriction",
+        "restraint"
+      ],
+      "context_sentence": "Pigments presented a second constraint."
+    },
+    "alkalinity": {
+      "etymology": "Arabic al-qalī 'ashes (of burnt plants)', giving alkali, + -ine + -ity",
+      "definition": "The quality of being alkaline.",
+      "usage_in_passage": "In \"The alkalinity of wet lime destroyed many colors\", the lime that was the source of the advantage in paragraph 1 reappears here as the cause that destroys pigments.",
+      "related_terms": [
+        "alkali",
+        "alkaline",
+        "basicity",
+        "caustic"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "destroyed": {
+      "etymology": "Latin de- (down) + struere (to pile up), giving 'to pull down what was built'",
+      "definition": "Ruined; made useless.",
+      "usage_in_passage": "It shows that the pigments do not merely change color but are broken down chemically, which gives the reason painters had no choice but to use other means.",
+      "related_terms": [
+        "destroy",
+        "ruined",
+        "degraded",
+        "annihilated"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "freely": {
+      "etymology": "Old English frēo (free), giving free, + -ly. Germanic",
+      "definition": "Without restriction.",
+      "usage_in_passage": "\"colors that painters used freely in other media\" sets up the contrast with other techniques and makes it clear that the constraint is peculiar to fresco.",
+      "related_terms": [
+        "free",
+        "freedom",
+        "liberally",
+        "unrestrictedly"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "palette": {
+      "etymology": "palette, diminutive of Latin pala (spade, flat blade)",
+      "definition": "A board for mixing paint; by extension, the range of colors available.",
+      "usage_in_passage": "\"the palette available for true fresco was consequently narrow\" shows that the consequence of the constraint is the very breadth of the painter's choice of colors.",
+      "related_terms": [
+        "pallet",
+        "spectrum",
+        "range",
+        "pigments"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "consequently": {
+      "etymology": "Latin con- (together) + sequi (to follow), giving consequent, + -ly",
+      "definition": "As a result.",
+      "usage_in_passage": "It is a logical marker that explicitly connects the cause, destruction by alkali, with the result, a limited number of colors.",
+      "related_terms": [
+        "consequence",
+        "therefore",
+        "accordingly",
+        "hence"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "narrow": {
+      "etymology": "Old English nearu (narrow). Germanic",
+      "definition": "Limited in range.",
+      "usage_in_passage": "It modifies palette and states that what characterizes the color of fresco is scarcity, not richness.",
+      "related_terms": [
+        "narrowly",
+        "limited",
+        "restricted",
+        "confined"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "dominated": {
+      "etymology": "Latin dominus (master), giving dominari, + -ed",
+      "definition": "Made up for the most part of; ruled by.",
+      "usage_in_passage": "\"dominated by earths and other minerals\" shows concretely what the limited number of colors consisted of.",
+      "related_terms": [
+        "dominant",
+        "prevailed",
+        "predominated",
+        "governed"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "minerals": {
+      "etymology": "Medieval Latin minerale (ore) < mine (to dig) + -s",
+      "definition": "Natural inorganic substances taken from the earth.",
+      "usage_in_passage": "Together with the earth pigments, they are given as the few materials that withstand alkali.",
+      "related_terms": [
+        "mineral",
+        "ores",
+        "earths",
+        "pigments"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "tolerated": {
+      "etymology": "Latin tolerare (to endure) + -ed",
+      "definition": "Withstood; held up under.",
+      "usage_in_passage": "\"minerals that tolerated caustic conditions\" shows that the standard for selecting pigments was not aesthetic but chemical resistance.",
+      "related_terms": [
+        "tolerance",
+        "withstood",
+        "endured",
+        "resisted"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "caustic": {
+      "etymology": "Greek kaustikos (burning) < kaiein (to burn)",
+      "definition": "Able to burn or corrode chemically.",
+      "usage_in_passage": "It shows in one word how harsh the lime environment is and conveys, to the senses as well, why many pigments cannot be used.",
+      "related_terms": [
+        "caustically",
+        "corrosive",
+        "alkaline",
+        "acrid"
+      ],
+      "context_sentence": "The alkalinity of wet lime destroyed many colors that painters used freely in other media, and the palette available for true fresco was consequently narrow, dominated by earths and other minerals that tolerated caustic conditions."
+    },
+    "troublesome": {
+      "etymology": "trouble (< Latin turbidus stirred up) + -some (causing)",
+      "definition": "Causing difficulty; hard to deal with.",
+      "usage_in_passage": "\"Blue was especially troublesome\" narrows the focus within the paragraph to the single color blue and is the turning point that leads into the concrete example that follows.",
+      "related_terms": [
+        "trouble",
+        "problematic",
+        "vexing",
+        "awkward"
+      ],
+      "context_sentence": "Blue was especially troublesome."
+    },
+    "yielded": {
+      "etymology": "Old English gieldan (to pay, to produce). Germanic",
+      "definition": "Produced; gave.",
+      "usage_in_passage": "\"The pigments that yielded convincing blues\" shows the contradiction that the pigments able to give the desired color and the pigments able to withstand lime are not the same.",
+      "related_terms": [
+        "yield",
+        "produced",
+        "generated",
+        "afforded"
+      ],
+      "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
+    },
+    "convincing": {
+      "etymology": "Latin con- (intensive) + vincere (to overcome), giving convince, + -ing",
+      "definition": "Believable; looking like the real thing.",
+      "usage_in_passage": "It shows that substitutes did not give a satisfactory tone of blue and explains why painters chose the secco technique knowing the risk.",
+      "related_terms": [
+        "convince",
+        "persuasive",
+        "credible",
+        "compelling"
+      ],
+      "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
+    },
+    "survive": {
+      "etymology": "Latin super- (beyond) + vivere (to live)",
+      "definition": "To last through; to hold out.",
+      "usage_in_passage": "\"did not survive contact with lime\" states the fact that blue pigments cannot coexist with lime and leads to the workaround that follows.",
+      "related_terms": [
+        "survival",
+        "endure",
+        "withstand",
+        "persist"
+      ],
+      "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
+    },
+    "obliged": {
+      "etymology": "Latin ob- (toward) + ligare (to tie), giving 'to put under a duty'",
+      "definition": "Forced; left with no choice but to do something.",
+      "usage_in_passage": "\"painters were obliged to apply them after the plaster had cured\" shows that the use of the secco technique was not a preference but something forced on them.",
+      "related_terms": [
+        "obligation",
+        "compelled",
+        "forced",
+        "required"
+      ],
+      "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
+    },
+    "cured": {
+      "etymology": "Latin cura (care), giving curare. Here it means that a material hardens chemically",
+      "definition": "Hardened; finished setting.",
+      "usage_in_passage": "\"after the plaster had cured\" shows that by the time the blue is applied the chemical bonding no longer takes place, and it foreshadows the later flaking.",
+      "related_terms": [
+        "cure",
+        "hardened",
+        "set",
+        "dried"
+      ],
+      "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
+    },
+    "binder": {
+      "etymology": "Old English bindan (to tie), giving bind, + -er. Germanic",
+      "definition": "A medium that makes pigment stick.",
+      "usage_in_passage": "\"using a binder of glue or egg\" shows the means of adhesion that takes the place of lime and at the same time implies that this adhesion relies on organic matter and is fragile.",
+      "related_terms": [
+        "bind",
+        "bound",
+        "medium",
+        "adhesive"
+      ],
+      "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
+    },
+    "glue": {
+      "etymology": "Late Latin glus (glue)",
+      "definition": "An adhesive made from animal matter.",
+      "usage_in_passage": "Together with egg, it is given as a binder for the secco technique, and the fact that it is an organic material that is weak against damp leads to the later loss.",
+      "related_terms": [
+        "adhesive",
+        "binder",
+        "gum",
+        "paste"
+      ],
+      "context_sentence": "The pigments that yielded convincing blues did not survive contact with lime, and painters were obliged to apply them after the plaster had cured, using a binder of glue or egg."
+    },
+    "passages": {
+      "etymology": "Latin passus (step), giving pass, + -age + -s",
+      "definition": "Parts or sections (of a painting).",
+      "usage_in_passage": "\"Such passages were mechanically attached rather than chemically incorporated\" states the decisive difference: the blue parts are not one with the wall.",
+      "related_terms": [
+        "passage",
+        "sections",
+        "areas",
+        "portions"
+      ],
+      "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
+    },
+    "attached": {
+      "etymology": "Old French estachier (to fasten with a stake). Related to the Germanic word stake",
+      "definition": "Stuck on; fastened to a surface.",
+      "usage_in_passage": "It is set against chemically incorporated and, together with the adverb mechanically, shows that the blue stays 'on' the wall. It echoes \"not merely attached to architecture\" at the end of paragraph 4.",
+      "related_terms": [
+        "attach",
+        "affixed",
+        "adhered",
+        "fastened"
+      ],
+      "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
+    },
+    "chemically": {
+      "etymology": "chemical + -ly",
+      "definition": "By chemical means.",
+      "usage_in_passage": "It is used in contrast with attached and confirms again in paragraph 3 the point of \"locking the particles of color within the wall rather than upon it\" in paragraph 1.",
+      "related_terms": [
+        "chemical",
+        "chemistry",
+        "molecularly",
+        "reactively"
+      ],
+      "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
+    },
+    "incorporated": {
+      "etymology": "Latin in- (into) + corpus (body) + -ate, giving 'to take into the body'",
+      "definition": "Made part of a whole; built in.",
+      "usage_in_passage": "It names what the blue parts lack and completes the causal account of why they alone were lost.",
+      "related_terms": [
+        "incorporate",
+        "integrated",
+        "embodied",
+        "assimilated"
+      ],
+      "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
+    },
+    "centuries": {
+      "etymology": "Latin centum (hundred), giving centuria, + -es",
+      "definition": "Periods of hundreds of years.",
+      "usage_in_passage": "\"centuries of humidity have stripped many of them away\" shows that the loss is not an accident but an inevitable result of time.",
+      "related_terms": [
+        "century",
+        "ages",
+        "eras",
+        "epochs"
+      ],
+      "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
+    },
+    "humidity": {
+      "etymology": "Latin humidus (damp) + -ity",
+      "definition": "Moisture in the air.",
+      "usage_in_passage": "It is presented as the agent that destroys wall paintings over the long term.",
+      "related_terms": [
+        "humid",
+        "moisture",
+        "dampness",
+        "damp"
+      ],
+      "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
+    },
+    "stripped": {
+      "etymology": "Middle English stripen (to strip off). Germanic",
+      "definition": "Tore off; removed.",
+      "usage_in_passage": "\"have stripped many of them away\" depicts the loss as an active stripping and serves as the clue from which the meaning of denuded, immediately afterward, can be worked out from context.",
+      "related_terms": [
+        "strip",
+        "stripping",
+        "peeled",
+        "removed"
+      ],
+      "context_sentence": "Such passages were mechanically attached rather than chemically incorporated, and centuries of humidity have stripped many of them away."
+    },
+    "pale": {
+      "etymology": "Latin pallidus (pallid) < pallere (to grow pale)",
+      "definition": "Light in color; faded.",
+      "usage_in_passage": "\"The pale, denuded skies\" describes the present state that viewers see and leads to the conclusion of the paragraph, that this is not the original state.",
+      "related_terms": [
+        "pallid",
+        "faded",
+        "washed-out",
+        "wan"
+      ],
+      "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
+    },
+    "denuded": {
+      "etymology": "Latin de- (completely) + nudare (to make bare) < nudus (bare)",
+      "definition": "Laid bare; having lost its covering.",
+      "usage_in_passage": "The target word of the vocabulary question. \"stripped many of them away\" just before it is the clue to its meaning, and it refers to the state in which the sky has lost the layer of blue it originally had.",
+      "related_terms": [
+        "nude",
+        "bare",
+        "stripped",
+        "denudation"
+      ],
+      "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
+    },
+    "admire": {
+      "etymology": "Latin ad- (at) + mirari (to wonder, to gaze in wonder)",
+      "definition": "To look at with wonder and pleasure.",
+      "usage_in_passage": "There is irony in \"skies that visitors now admire\". This word makes the claim of the paragraph work: what viewers believe to be the painter's sense of beauty is in fact the result of damage.",
+      "related_terms": [
+        "admiration",
+        "marvel",
+        "appreciate",
+        "revere"
+      ],
+      "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
+    },
+    "chapels": {
+      "etymology": "Late Latin cappella 'little cloak'. From the shrine that held the cloak of Saint Martin, + -s",
+      "definition": "Small places of Christian worship.",
+      "usage_in_passage": "\"certain early Italian chapels\" draws the discussion from the abstract toward works that actually exist and provides the setting for the inference question.",
+      "related_terms": [
+        "chapel",
+        "sanctuary",
+        "oratory",
+        "shrine"
+      ],
+      "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
+    },
+    "restraint": {
+      "etymology": "Latin re- (back) + stringere (to draw tight), giving 'the act of holding back'",
+      "definition": "Holding back; self-control.",
+      "usage_in_passage": "\"not evidence of restraint on the painter's part but of loss\" sets two interpretations against each other. This denial is the basis for the inference question.",
+      "related_terms": [
+        "restrain",
+        "constraint",
+        "moderation",
+        "reserve"
+      ],
+      "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
+    },
+    "painter's": {
+      "etymology": "painter + possessive -'s",
+      "definition": "Belonging to the painter.",
+      "usage_in_passage": "\"on the painter's part\" attributes the interpretation of restraint to the painter, and by denying it the passage shifts the responsibility to time and damp.",
+      "related_terms": [
+        "painter",
+        "painters",
+        "artist's",
+        "creator's"
+      ],
+      "context_sentence": "The pale, denuded skies that visitors now admire in certain early Italian chapels are not evidence of restraint on the painter's part but of loss."
+    },
+    "executed": {
+      "etymology": "Latin ex- (out) + sequi (to follow), giving exsequi (to carry out), + -ed",
+      "definition": "Carried out; produced (a work).",
+      "usage_in_passage": "\"could not be executed by a single hand within the interval\" comes early in paragraph 4 and shows that the constraint of time reaches as far as the organization of labor.",
+      "related_terms": [
+        "execute",
+        "execution",
+        "performed",
+        "rendered"
+      ],
+      "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
+    },
+    "interval": {
+      "etymology": "Latin inter- (between) + vallum (rampart), giving 'the space between palisades'",
+      "definition": "A stretch of time; the time allowed.",
+      "usage_in_passage": "It restates \"a matter of hours\" from paragraph 2 and shows that the constraint of time is brought back as the premise of the argument in paragraph 4.",
+      "related_terms": [
+        "intervals",
+        "span",
+        "duration",
+        "window"
+      ],
+      "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
+    },
+    "encouraged": {
+      "etymology": "en- (to give) + courage (< Latin cor heart) + -ed",
+      "definition": "Promoted; made more likely.",
+      "usage_in_passage": "In \"fresco encouraged the workshop\" it is the verb that carries the largest claim in the passage, that a technique gives rise to a form of organization. It implies guidance, not compulsion.",
+      "related_terms": [
+        "courage",
+        "fostered",
+        "promoted",
+        "prompted"
+      ],
+      "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
+    },
+    "subordinate": {
+      "etymology": "Latin sub- (under) + ordinare (to put in order)",
+      "definition": "Secondary; of lesser importance.",
+      "usage_in_passage": "\"executed subordinate passages\" shows the division of labor within the workshop and, through the contrast with \"the master reserved the faces and gestures\" immediately afterward, makes the ranking of value clear.",
+      "related_terms": [
+        "subordination",
+        "secondary",
+        "ancillary",
+        "inferior"
+      ],
+      "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
+    },
+    "gestures": {
+      "etymology": "Latin gerere (to do, to conduct oneself), giving gestura, + -s",
+      "definition": "Movements of the body that express something.",
+      "usage_in_passage": "Alongside faces, they are given as the elements the master paints himself and show which parts carry the meaning of the picture.",
+      "related_terms": [
+        "gesture",
+        "postures",
+        "attitudes",
+        "movements"
+      ],
+      "context_sentence": "Because a large wall could not be executed by a single hand within the interval the plaster allowed, fresco encouraged the workshop, in which assistants prepared surfaces, transferred designs, and executed subordinate passages while the master reserved the faces and gestures that carried the meaning of the picture."
+    },
+    "painting": {
+      "etymology": "paint (< Latin pingere) + -ing",
+      "definition": "The art of making pictures with paint; a picture so made.",
+      "usage_in_passage": "\"When oil painting on panel and canvas spread into Italian practice\" introduces oil painting as the alternative to fresco.",
+      "related_terms": [
+        "paint",
+        "painters",
+        "artwork",
+        "picture"
+      ],
+      "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
+    },
+    "canvas": {
+      "etymology": "Latin cannabis (hemp), giving hemp cloth",
+      "definition": "Strong cloth used as a surface for painting.",
+      "usage_in_passage": "Together with panel, it indicates a support cut loose from the wall and implies the trend of pictures becoming independent of architecture.",
+      "related_terms": [
+        "cloth",
+        "linen",
+        "panel",
+        "support"
+      ],
+      "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
+    },
+    "spread": {
+      "etymology": "Old English sprǣdan (to spread out). Germanic",
+      "definition": "Became widely used.",
+      "usage_in_passage": "It states that oil painting reached Italy and marks the point at which fresco stopped being the only option.",
+      "related_terms": [
+        "spreading",
+        "diffused",
+        "propagated",
+        "disseminated"
+      ],
+      "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
+    },
+    "sixteenth": {
+      "etymology": "six + -teen + -th. A Germanic numeral",
+      "definition": "Number 16 in order.",
+      "usage_in_passage": "\"during the sixteenth century\" gives a concrete period to a discussion that until then has moved by the logic of technique.",
+      "related_terms": [
+        "sixteen",
+        "sixth",
+        "century",
+        "decade"
+      ],
+      "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
+    },
+    "precisely": {
+      "etymology": "Latin prae- (beforehand) + caedere (to cut), giving 'cut short', then 'exact'",
+      "definition": "Exactly; just.",
+      "usage_in_passage": "\"it offered precisely what fresco withheld\" stresses that the advantages of oil painting are the reverse side of the drawbacks of fresco and makes the three points after the colon work as a summary of the whole passage.",
+      "related_terms": [
+        "precise",
+        "precision",
+        "exactly",
+        "squarely"
+      ],
+      "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
+    },
+    "withheld": {
+      "etymology": "with- (back) + past participle of hold (Old English healdan). Germanic",
+      "definition": "Did not give; kept back.",
+      "usage_in_passage": "By depicting fresco as an active subject, it suggests that the constraints are not mere defects but the character of the technique.",
+      "related_terms": [
+        "withhold",
+        "denied",
+        "refused",
+        "retained"
+      ],
+      "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
+    },
+    "slowly": {
+      "etymology": "Old English slāw (sluggish), giving slow, + -ly. Germanic",
+      "definition": "At a low speed.",
+      "usage_in_passage": "\"a medium that dried slowly\" is the first advantage of oil painting and corresponds exactly to the constraint of time in paragraph 2.",
+      "related_terms": [
+        "slow",
+        "gradually",
+        "unhurriedly",
+        "leisurely"
+      ],
+      "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
+    },
+    "admitted": {
+      "etymology": "Latin ad- (to) + mittere (to send), giving 'to let in'",
+      "definition": "Allowed in; accepted.",
+      "usage_in_passage": "\"admitted the full range of pigments\" is the third advantage of oil painting and corresponds to the constraint on pigments in paragraph 3. It completes the structure in which the three advantages correspond in order to the three constraints.",
+      "related_terms": [
+        "admit",
+        "admission",
+        "permitted",
+        "accommodated"
+      ],
+      "context_sentence": "When oil painting on panel and canvas spread into Italian practice during the sixteenth century, it offered precisely what fresco withheld: a medium that dried slowly, accepted revision, and admitted the full range of pigments."
+    },
+    "nevertheless": {
+      "etymology": "A compound of never + the + less. Germanic",
+      "definition": "In spite of that.",
+      "usage_in_passage": "\"That fresco nevertheless persisted\" introduces a reversal after granting the superiority of oil painting and is the turning point toward the final claim of the passage.",
+      "related_terms": [
+        "never",
+        "nonetheless",
+        "however",
+        "regardless"
+      ],
+      "context_sentence": "That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it."
+    },
+    "persisted": {
+      "etymology": "Latin per- (through) + sistere (to stand), giving 'to keep standing'",
+      "definition": "Continued to exist; went on being used.",
+      "usage_in_passage": "It presents the fact that fresco remained even after a more convenient medium appeared, and the need to explain that fact calls for the claim of the last sentence.",
+      "related_terms": [
+        "persist",
+        "persistence",
+        "endured",
+        "continued"
+      ],
+      "context_sentence": "That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it."
+    },
+    "afterward": {
+      "etymology": "after + -ward, which indicates direction. Germanic",
+      "definition": "After that time.",
+      "usage_in_passage": "\"for generations afterward\" shows how long it lasted and shows that the survival of fresco was not a temporary matter of inertia.",
+      "related_terms": [
+        "after",
+        "afterwards",
+        "subsequently",
+        "thereafter"
+      ],
+      "context_sentence": "That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it."
+    },
+    "newer": {
+      "etymology": "Old English nīwe (new), giving new, + comparative -er. Germanic",
+      "definition": "More recent.",
+      "usage_in_passage": "\"the newer medium\" refers to oil painting and prepares the paradox of the last sentence, that being new does not necessarily mean being superior.",
+      "related_terms": [
+        "new",
+        "newest",
+        "later",
+        "recent"
+      ],
+      "context_sentence": "That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it."
+    },
+    "merely": {
+      "etymology": "Latin merus (unmixed), giving mere, + -ly",
+      "definition": "Only; nothing more than.",
+      "usage_in_passage": "In \"not merely attached to architecture but had become part of it\", the contrast between within and upon from paragraph 1 is applied to the relation with architecture, bringing the passage back to its subject to close it.",
+      "related_terms": [
+        "mere",
+        "simply",
+        "solely",
+        "purely"
+      ],
+      "context_sentence": "That fresco nevertheless persisted for generations afterward suggests that painters valued something the newer medium could not supply, an image that was not merely attached to architecture but had become part of it."
+    }
+  }
+}

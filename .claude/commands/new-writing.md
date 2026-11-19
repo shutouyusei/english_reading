@@ -1,39 +1,46 @@
 ---
-description: TOEFLライティングの問題を1問生成して docs/data/writing/ に追加する
+description: Generate one TOEFL writing prompt and add it to docs/data/writing/
 ---
 
-新しいライティング問題を作る。
+Create a new writing prompt.
 
-1. 形式を決める。引数で `email` か `discussion` が指定されていればそれに従い、
-   無ければ `docs/data/writing/` の既存ファイルを見て少ない方を選ぶ。
-2. 既存の問題と題材が重ならないことを確認する。
-   `docs/data/writing/index.json` の `title` を全て読んでから決める。
-3. 次の番号を決める(`writing_001` の次は `writing_002`)。
-4. `docs/data/writing/writing_NNN.json` を書く。スキーマは
-   `docs/superpowers/specs/2026-08-11-writing-design.md` の「問題データ」節に従う。
-   - `email`: `situation` / `recipient` は必須の非空文字列、`must_include` は非空文字列の非空リスト。`discussion` は null
-   - `discussion`: `situation` / `recipient` / `must_include` は null にし、`discussion.student_posts` はちょうど2件
-   - **全て英語で書く。** 人名・地名・会社名も英語。日本語は使わない
-   - `target_minutes` は email なら 7、discussion なら 10
+1. Decide the format. If the argument says `email` or `discussion`, follow it. Otherwise
+   look at the existing files in `docs/data/writing/` and pick the format with fewer prompts.
+2. Make sure the subject does not overlap with an existing prompt.
+   Read every `title` in `docs/data/writing/index.json` before deciding.
+3. Decide the next number (`writing_002` comes after `writing_001`).
+4. Write `docs/data/writing/writing_NNN.json`. Follow the schema in the "Question data"
+   section of `docs/superpowers/specs/2026-08-11-writing-design.md`.
+   - `email`: `situation` and `recipient` are required non-empty strings, and `must_include`
+     is a non-empty list of non-empty strings. `discussion` is null
+   - `discussion`: `situation`, `recipient` and `must_include` are null, and
+     `discussion.student_posts` has exactly 2 entries
+   - **Write everything in English.** Names of people, places and companies are English
+     too. Do not use any other language
+   - `target_minutes` is 7 for email and 10 for discussion
 
-   **分量と形の目安**(`writing_001` / `writing_002` を手本にすること):
+   **Length and shape** (use `writing_001` and `writing_002` as models):
 
-   - `email` の `situation` は **40〜60 words、3〜4文**に抑える。日常で起きうる具体的な出来事を1つだけ書く
-     (例: 借りたレンタカーで、断ったはずの保険が請求に入っていた)。背景説明を盛らない
-   - `must_include` は **3項目**。動詞で始まる短い命令形にする
-     (`explain what happened…` / `state what you would like…` / `ask when…`)。
-     採点プロンプトにそのまま埋め込まれるので、採点の観点として読める表現にする
-   - `discussion` は逆に読み応えを持たせる。`professor_post` は **150〜200 words**
-     で、具体例と対立する2つの立場の両方に触れ、最後に問いを置く。
-     `student_posts` は各 **120〜150 words** で、片方がもう片方に言及して噛み合わせる。
-     短い相槌ではなく、それぞれが独立した主張になっていること
-5. 検証する: `python3 scripts/validate_writing.py docs/data/writing/writing_NNN.json`
-   エラーが出たら直してから次へ進む。
-6. 一覧を更新する: `python3 scripts/update_writing_index.py`
-7. 確認とコミット
-- タイトル・形式・シチュエーション・必須要素のサマリーをユーザーに表示する。
-- ユーザーの承認後:
+   - Keep the `situation` of an `email` to **40-60 words in 3-4 sentences**. Describe just
+     one concrete event that could happen in everyday life (for example: the bill for a
+     rental car includes insurance that you declined). Do not pile on background
+   - `must_include` has **3 items**. Each is a short imperative that starts with a verb
+     (`explain what happened…` / `state what you would like…` / `ask when…`).
+     The items are embedded in the grading prompt as they are, so word them so that they
+     read as grading criteria
+   - A `discussion`, by contrast, should give the student something substantial to read.
+     `professor_post` is **150-200 words**, covers a concrete example and both of two
+     opposing positions, and ends with a question.
+     Each of the `student_posts` is **120-150 words**, and one of them refers to the other
+     so that they engage with each other. Each must be an independent argument, not a
+     short reply of agreement
+5. Validate: `python3 scripts/validate_writing.py docs/data/writing/writing_NNN.json`
+   If an error is reported, fix it before moving on.
+6. Update the index: `python3 scripts/update_index.py writing`
+7. Confirm and commit
+- Show the user a summary: title, format, situation and required points.
+- After the user approves:
   `git add docs/data/writing/ && git commit -m "content: add writing_NNN <title>"`
-  リモートが設定済みなら `git push` も行う。
+  If a remote is configured, also run `git push`.
 
-生成はこのセッション内で行うので API 課金は発生しない。
+Generation happens inside this session, so no API charges are incurred.

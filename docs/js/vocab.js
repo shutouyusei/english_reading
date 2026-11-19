@@ -2,11 +2,11 @@
 
 const studyState = { selectedWord: null, history: [], activeTab: "vocab" };
 
-/* 学習ソース: 読解のパッセージとリスニングの台本の共通の形。
+/* Study source: the shape shared by reading passages and listening scripts.
    { id, title, lines: [{speaker, text}], vocab, questions, latestResult, solveUrl }
-   この層より下は「どちらの教材か」を知らない。 */
+   Nothing below this layer knows which kind of material it is. */
 
-/** 読解のパッセージから学習ソースを作る。 */
+/** Builds a study source from a reading passage. */
 function buildStudySource(passage, latestResult, solveUrl) {
   const lines = passage.body
     .split("\n\n")
@@ -71,10 +71,10 @@ function onWordClick(source, surface, key, span) {
 
 function renderPanel(source) {
   const result = source.latestResult;
-  const quizLabel = result ? `問題の解説 (${result.score}/${result.total})` : "問題の解説";
+  const quizLabel = result ? `Question explanations (${result.score}/${result.total})` : "Question explanations";
   qs("#right-pane").innerHTML = `
     <div class="tabs">
-      <button class="tab${studyState.activeTab === "vocab" ? " on" : ""}" data-tab="vocab">単語解説</button>
+      <button class="tab${studyState.activeTab === "vocab" ? " on" : ""}" data-tab="vocab">Vocabulary</button>
       <button class="tab${studyState.activeTab === "quiz" ? " on" : ""}" data-tab="quiz">${quizLabel}</button>
     </div>
     <div id="panel-body"></div>`;
@@ -95,109 +95,48 @@ function renderVocabTab(source) {
   const word = studyState.selectedWord;
   if (!word) {
     body.innerHTML =
-      `<p class="hint">本文中の単語をクリックすると、ここに解説が表示されます。</p>`;
+      `<p class="hint">Click a word in the text to see its explanation here.</p>`;
     return;
   }
   const entry = source.vocab[word];
-  const weblio = `https://ejje.weblio.jp/content/${encodeURIComponent(word)}`;
+  const cambridge =
+    `https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(word)}`;
   if (!entry) {
     body.innerHTML = `
       <h3 class="word">${escapeHtml(word)}</h3>
-      <div id="dict-body"><p class="hint">辞書を調べています…</p></div>
-      <p><a href="${weblio}" target="_blank" rel="noopener">Weblioで調べる ↗</a></p>
+      <p>No prepared explanation for this word.</p>
+      <p><a href="${cambridge}" target="_blank" rel="noopener">Look up in Cambridge Dictionary ↗</a></p>
       ${historyHtml()}`;
-    // 収録語でなければ辞書が最後の頼み。引けなければ従来どおりの案内に戻す。
-    fillDictionary(word, `<p>未収録の単語です。</p>`);
     return;
   }
   body.innerHTML = `
     <h3 class="word">${escapeHtml(word)}</h3>
-    <div class="label">語源</div><p>${escapeHtml(entry.etymology)}</p>
-    <div class="label">定義</div><p>${escapeHtml(entry.definition)}</p>
-    <div class="label">この文章での役割</div><p>${escapeHtml(entry.usage_in_passage)}</p>
-    <div class="label">関連語</div><p>${entry.related_terms.map(escapeHtml).join(" ・ ")}</p>
-    <div id="dict-body"></div>
+    <div class="label">Etymology</div><p>${escapeHtml(entry.etymology)}</p>
+    <div class="label">Definition</div><p>${escapeHtml(entry.definition)}</p>
+    <div class="label">Role in the passage</div><p>${escapeHtml(entry.usage_in_passage)}</p>
+    <div class="label">Related words</div><p>${entry.related_terms.map(escapeHtml).join(" · ")}</p>
     <div class="btn-row">
-      <button id="anki-add" class="anki">＋ Ankiに追加</button>
-      <a class="button" href="${weblio}" target="_blank" rel="noopener">Weblio ↗</a>
-      <button id="anki-settings-open" title="Anki設定">⚙</button>
+      <button id="anki-add" class="anki">+ Add to Anki</button>
+      <a class="button" href="${cambridge}" target="_blank" rel="noopener">Cambridge ↗</a>
+      <button id="anki-settings-open" title="Anki settings">⚙</button>
     </div>
     <p id="anki-status" class="hint"></p>
     ${historyHtml()}`;
   qs("#anki-add").addEventListener("click", () => addToAnki(source, word, entry));
   qs("#anki-settings-open").addEventListener("click", () => openAnkiSettings());
-  // 収録語には既に解説がある。辞書は引けたときだけ足す。
-  fillDictionary(word, "");
-}
-
-/* ---------- システム辞書(アプリ版のみ) ---------- */
-
-/// 辞書引きは Swift 側への往復があるため、枠だけ先に出して後から埋める。
-/// 引けなかったときは emptyHtml に差し替える。
-async function fillDictionary(word, emptyHtml) {
-  let result = null;
-  try {
-    result = await Dict.define(word);
-  } catch (err) {
-    // 辞書層そのものが読み込めていない場合もここに来る。
-    // 黙って諦めないと「調べています…」の表示が残り続ける。
-    console.warn("辞書を引けませんでした:", err);
-  }
-  // 待っている間に別の語へ移っていたら、古い結果を書き込まない
-  if (studyState.selectedWord !== word || studyState.activeTab !== "vocab") return;
-  const target = qs("#dict-body");
-  if (!target) return;
-  target.innerHTML = result ? dictionaryHtml(result) : emptyHtml;
-}
-
-function dictionaryHtml(result) {
-  const source = result.source ? `（${escapeHtml(result.source)}）` : "";
-  return `<div class="label">辞書${source}</div>` +
-    `<div class="dict-entry">${dictionaryBodyHtml(result.definition)}</div>`;
-}
-
-/// 辞書が返すのは改行を1つも含まない一続きのテキスト。dictformat.js が
-/// 見出し・品詞・語義・例文に切り分けたものを、ここで表示に組み直す。
-/// 整形層が読み込まれていなければ、そのまま1塊で出す(辞書は補助なので止めない)。
-function dictionaryBodyHtml(definition) {
-  const format = window.DictFormat && window.DictFormat.formatDefinition;
-  const blocks = format ? format(definition) : [{ kind: "text", text: definition }];
-  return Array.from(blocks).map(dictionaryBlockHtml).join("");
-}
-
-function dictionaryBlockHtml(block) {
-  if (block.kind === "head") {
-    const pron = block.pron
-      ? ` <span class="dict-pron">/${escapeHtml(block.pron)}/</span>` : "";
-    return `<p class="dict-word">${escapeHtml(block.word)}${pron}</p>`;
-  }
-  if (block.kind === "pos") {
-    return `<p class="dict-pos">${escapeHtml(block.text)}</p>`;
-  }
-  if (block.kind === "sense") {
-    const sub = block.level === 2 ? " sub" : "";
-    return `<p class="dict-sense${sub}">` +
-      `<span class="dict-num">${escapeHtml(block.label)}</span>` +
-      `<span>${escapeHtml(block.text)}</span></p>`;
-  }
-  if (block.kind === "example") {
-    const sub = block.level === 2 ? " sub" : "";
-    return `<p class="dict-ex${sub}">${escapeHtml(block.text)}</p>`;
-  }
-  return `<p class="dict-note">${escapeHtml(block.text)}</p>`;
 }
 
 function historyHtml() {
   if (!studyState.history.length) return "";
-  const words = studyState.history.slice(0, 8).map(escapeHtml).join(" ・ ");
-  return `<p class="hint">最近調べた語: ${words}</p>`;
+  const words = studyState.history.slice(0, 8).map(escapeHtml).join(" · ");
+  return `<p class="hint">Recently looked up: ${words}</p>`;
 }
 
 function renderQuizTab(source, result) {
   const body = qs("#panel-body");
   if (!result) {
-    body.innerHTML = `<p class="hint">まだ解いていません。` +
-      `<a href="${source.solveUrl}">問題を解く</a></p>`;
+    body.innerHTML = `<p class="hint">Not attempted yet. ` +
+      `<a href="${source.solveUrl}">Solve</a></p>`;
     return;
   }
   body.innerHTML = source.questions.map((q, i) => {
@@ -206,8 +145,8 @@ function renderQuizTab(source, result) {
     return `
       <div class="quiz-review${ok ? " ok" : " ng"}">
         <p><b>Q${q.id}.</b> ${escapeHtml(q.question)}</p>
-        <p>${ok ? "✅" : "❌"} あなたの回答: ${user || "—"} ／ ` +
-        `正解: ${q.correct}. ${escapeHtml(q.choices[q.correct])}</p>
+        <p>${ok ? "✅" : "❌"} Your answer: ${user || "—"} / ` +
+        `Correct answer: ${q.correct}. ${escapeHtml(q.choices[q.correct])}</p>
         <p class="explanation">${escapeHtml(q.explanation)}</p>
       </div>`;
   }).join("");

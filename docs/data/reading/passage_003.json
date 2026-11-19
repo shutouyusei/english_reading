@@ -1,0 +1,1318 @@
+{
+  "id": "passage_003",
+  "title": "The Economics of the Medieval Book",
+  "topic": "History",
+  "body": "Before paper reached northern Europe, every book was written on the skins of animals, and this single fact governed what medieval libraries could contain. A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase. Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks.\n\nThe preparation of the skins was itself protracted. After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly. The two sides were never quite alike. The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering. Nothing about this labor could be hurried, and a failure at any stage ruined material that had taken a year of grazing to produce. Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine.\n\nOne consequence was that parchment was rarely discarded. A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne. Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete. What survives from the ancient world was thus filtered not only by taste but by the price of a sheep.\n\nThe arrival of paper altered this arithmetic decisively. Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany. Printing, when it came, is often credited with the sudden abundance of books in the fifteenth century, yet a press without cheap sheets to feed it would have changed little. The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable. Skin did not vanish overnight. Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise.",
+  "word_count": 476,
+  "added": "2026-08-07",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 1, why did book-producing monasteries need to be landholders?",
+      "target_word": null,
+      "choices": {
+        "A": "Because church law required monasteries to farm the land they occupied",
+        "B": "Because the animals whose skins became pages had to be raised and grazed",
+        "C": "Because scribes were recruited from the families of neighboring tenants",
+        "D": "Because libraries had to be housed in buildings large enough to store hides"
+      },
+      "correct": "B",
+      "explanation": "Paragraph 1 says \"the raw material alone represented a herd rather than a purchase. Monasteries that produced books therefore had to be landholders first\", so the reason is that land was needed to keep herds of sheep and calves. A, C and D are not stated anywhere in the passage."
+    },
+    {
+      "id": 2,
+      "type": "Vocabulary",
+      "question": "The word \"protracted\" in paragraph 2 is closest in meaning to",
+      "target_word": "protracted",
+      "choices": {
+        "A": "expensive",
+        "B": "unreliable",
+        "C": "lengthy",
+        "D": "secretive"
+      },
+      "correct": "C",
+      "explanation": "The sentences that follow describe the process step by step, and \"Nothing about this labor could be hurried\" states outright that it could not be rushed. So protracted refers to length of time, and C, lengthy, is the closest. A, expensive, is the point of paragraph 1; what this sentence describes is the time required."
+    },
+    {
+      "id": 3,
+      "type": "Inference",
+      "question": "What can be inferred from paragraph 3 about the ancient texts that survive today?",
+      "target_word": null,
+      "choices": {
+        "A": "They were copied more often than the texts that were lost",
+        "B": "They were valued more highly by medieval scholars than other works",
+        "C": "They were written on higher-quality parchment than the texts that vanished",
+        "D": "Their survival depended partly on circumstances unrelated to their merit"
+      },
+      "correct": "D",
+      "explanation": "The passage says \"the accident that preserved them was economic rather than scholarly\" and closes with \"filtered not only by taste but by the price of a sheep\". In other words, survival was not decided by the value of the works alone. B and C are the scholarly or quality-based reasons that the passage rejects, and A fails because the passage says nothing about how often texts were copied."
+    },
+    {
+      "id": 4,
+      "type": "Reference",
+      "question": "The word \"it\" in paragraph 3 (\"whatever it had previously borne\") refers to",
+      "target_word": null,
+      "choices": {
+        "A": "the recycled sheet",
+        "B": "the text that had lost its audience",
+        "C": "the monastery short of skins",
+        "D": "the ancient world"
+      },
+      "correct": "A",
+      "explanation": "The relevant part is \"the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne\", and what had earlier carried writing is the reused sheet itself. B, the text that had lost its audience, is the content the sheet carried, not the thing that carried it."
+    },
+    {
+      "id": 5,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author state that \"a press without cheap sheets to feed it would have changed little\"?",
+      "target_word": null,
+      "choices": {
+        "A": "To argue that printing was invented later than most historians believe",
+        "B": "To qualify the common view that printing alone produced the abundance of books",
+        "C": "To suggest that early presses were mechanically unreliable",
+        "D": "To explain why paper mills were built beside rivers"
+      },
+      "correct": "B",
+      "explanation": "This sentence uses yet to answer the preceding statement that printing \"is often credited with the sudden abundance of books\", so its role is to qualify the common view that printing alone was the cause. The next sentence, which treats the two as \"a single development\", also shows that the purpose is to correct the common view. A, the date of the invention, and C, mechanical reliability, are not discussed."
+    }
+  ],
+  "vocab": {
+    "governed": {
+      "etymology": "Latin gubernare 'to steer' < Greek kybernan → govern + -ed",
+      "definition": "Controlled or determined.",
+      "usage_in_passage": "The opening \"this single fact governed what medieval libraries could contain\" states the passage's claim in one sentence. It introduces the paradox that a material condition, the writing surface, decided intellectual matters.",
+      "related_terms": [
+        "government",
+        "dictated",
+        "determined",
+        "regulated"
+      ],
+      "context_sentence": "Before paper reached northern Europe, every book was written on the skins of animals, and this single fact governed what medieval libraries could contain."
+    },
+    "medieval": {
+      "etymology": "Latin medium 'middle' + aevum 'age' → 'of the Middle Ages'",
+      "definition": "Of the Middle Ages.",
+      "usage_in_passage": "Limits the period under discussion and sets the premise that this is the time before paper became common.",
+      "related_terms": [
+        "medieval",
+        "mediaeval",
+        "feudal",
+        "antiquity"
+      ],
+      "context_sentence": "Before paper reached northern Europe, every book was written on the skins of animals, and this single fact governed what medieval libraries could contain."
+    },
+    "consume": {
+      "etymology": "Latin con- 'completely' + sumere 'to take' → 'to use up'",
+      "definition": "To use up.",
+      "usage_in_passage": "In \"A large volume might consume the hides of two hundred sheep\", it shows bluntly that making a book meant using up livestock.",
+      "related_terms": [
+        "consumption",
+        "expend",
+        "exhaust",
+        "deplete"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "hundred": {
+      "etymology": "Old English hundred. A Germanic numeral",
+      "definition": "The number 100.",
+      "usage_in_passage": "The concrete figure \"two hundred sheep or calves\" conveys the scale more forcefully than an abstract statement that books were expensive.",
+      "related_terms": [
+        "hundreds",
+        "thousand",
+        "dozen",
+        "score"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "sheep": {
+      "etymology": "Old English scēap. Germanic; the singular and plural forms are the same",
+      "definition": "A farm animal kept for its wool, meat and skin.",
+      "usage_in_passage": "Appears in paragraph 1 as the source of the material, and is picked up again in paragraph 3 in \"the price of a sheep\", as a factor that decided which classical texts survived.",
+      "related_terms": [
+        "lamb",
+        "ewe",
+        "flock",
+        "livestock"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "calves": {
+      "etymology": "Plural of Old English cealf 'calf'. Germanic",
+      "definition": "Young cattle.",
+      "usage_in_passage": "Named alongside sheep as a source of skins, and hints that fine vellum was made from calves.",
+      "related_terms": [
+        "calf",
+        "cattle",
+        "vellum",
+        "livestock"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "herd": {
+      "etymology": "Old English heord 'herd'. Germanic",
+      "definition": "A group of farm animals kept together.",
+      "usage_in_passage": "\"the raw material alone represented a herd rather than a purchase\" is the central image of the passage. It shows that the cost of a book lay in raising animals, not in buying something.",
+      "related_terms": [
+        "herds",
+        "flock",
+        "drove",
+        "livestock"
+      ],
+      "context_sentence": "A large volume might consume the hides of two hundred sheep or calves, so that the raw material alone represented a herd rather than a purchase."
+    },
+    "monasteries": {
+      "etymology": "Greek monos 'alone' → monastērion + -es",
+      "definition": "Communities of monks, and the buildings they live in.",
+      "usage_in_passage": "They appear as the producers of books, and in paragraph 3 as economic actors that reuse parchment.",
+      "related_terms": [
+        "monastery",
+        "monks",
+        "abbey",
+        "convent"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "landholders": {
+      "etymology": "land + hold + -er + -s. A Germanic compound",
+      "definition": "People or institutions that own land.",
+      "usage_in_passage": "The word order of \"had to be landholders first and scholars second\" itself carries the claim. The priority it sets, land before learning, sums up the paradox of the passage.",
+      "related_terms": [
+        "landholding",
+        "landowners",
+        "proprietors",
+        "estates"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "scholars": {
+      "etymology": "Late Latin scholaris < Greek skholē 'leisure, school' + -s",
+      "definition": "People devoted to learning and study.",
+      "usage_in_passage": "Set against landholders, it brings out that the character of a monastery was economic more than intellectual.",
+      "related_terms": [
+        "scholar",
+        "scholarly",
+        "academics",
+        "learning"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "reflected": {
+      "etymology": "Latin re- 'back' + flectere 'to bend' → 'to reflect'",
+      "definition": "Showed or was a sign of.",
+      "usage_in_passage": "In \"the size of a collection reflected the extent of the pastures\", it shows that the number of books a house owned was a function of how much grazing land it had.",
+      "related_terms": [
+        "reflect",
+        "reflection",
+        "mirrored",
+        "indicated"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "extent": {
+      "etymology": "Latin ex- 'out' + tendere 'to stretch' → noun form of extend",
+      "definition": "The area that something covers.",
+      "usage_in_passage": "Refers to the area of the pastures; placed side by side with \"the learning of the monks\" that follows, it shows that material resources and intellect shaped a collection equally.",
+      "related_terms": [
+        "extend",
+        "extensive",
+        "scope",
+        "magnitude"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "pastures": {
+      "etymology": "Latin pascere 'to feed on grass' → pastura + -s",
+      "definition": "Fields of grass where animals feed.",
+      "usage_in_passage": "Presented, alongside learning, as the physical resource that sets the size of a library.",
+      "related_terms": [
+        "pasture",
+        "grazing",
+        "meadow",
+        "grassland"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "attached": {
+      "etymology": "Old French estachier 'to fasten with a stake'. Related to the Germanic word stake",
+      "definition": "Belonging to or connected with.",
+      "usage_in_passage": "\"the pastures attached to it\" shows that the monastery and its land formed a single unit as an institution.",
+      "related_terms": [
+        "attach",
+        "attachment",
+        "affiliated",
+        "annexed"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "faithfully": {
+      "etymology": "Latin fides 'trust' → faith + -ful + -ly",
+      "definition": "Accurately and reliably.",
+      "usage_in_passage": "In \"as faithfully as it reflected the learning of the monks\", it says the two correspondences are equally strong, putting material conditions on the same level as learning.",
+      "related_terms": [
+        "faith",
+        "faithful",
+        "accurately",
+        "precisely"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "monks": {
+      "etymology": "Greek monakhos 'one who lives alone' → Old English munuc + -s",
+      "definition": "Men who live in a religious community.",
+      "usage_in_passage": "\"the learning of the monks\" is the factor that would normally be named first to explain the size of a collection; the passage lowers it to the same rank as land.",
+      "related_terms": [
+        "monk",
+        "monastic",
+        "monastery",
+        "friars"
+      ],
+      "context_sentence": "Monasteries that produced books therefore had to be landholders first and scholars second, and the size of a collection reflected the extent of the pastures attached to it as faithfully as it reflected the learning of the monks."
+    },
+    "preparation": {
+      "etymology": "Latin prae- 'beforehand' + parare 'to make ready' + -ation",
+      "definition": "The work of getting something ready for use.",
+      "usage_in_passage": "The key word of paragraph 2. \"The preparation of the skins was itself protracted\" shows that the constraint was not only the cost of the material but also the time needed to process it.",
+      "related_terms": [
+        "prepare",
+        "preparatory",
+        "processing",
+        "treatment"
+      ],
+      "context_sentence": "The preparation of the skins was itself protracted."
+    },
+    "protracted": {
+      "etymology": "Latin pro- 'forward' + trahere 'to draw' → 'drawn out'",
+      "definition": "Lasting a long time; drawn out.",
+      "usage_in_passage": "The target word of the vocabulary question. The steps of the process are described in order right after it, and \"Nothing about this labor could be hurried\" is the clue to its meaning.",
+      "related_terms": [
+        "protraction",
+        "prolonged",
+        "lengthy",
+        "drawn-out"
+      ],
+      "context_sentence": "The preparation of the skins was itself protracted."
+    },
+    "loosened": {
+      "etymology": "Old Norse lauss 'loose' → loose + -en + -ed. Germanic",
+      "definition": "Made less firmly fixed so that it comes away easily.",
+      "usage_in_passage": "\"After the hair was loosened in a bath of lime\" gives the first stage of processing and explains that lime was used to remove the hair.",
+      "related_terms": [
+        "loose",
+        "slackened",
+        "released",
+        "detached"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "lime": {
+      "etymology": "Old English lim 'sticky substance'. Germanic",
+      "definition": "A white alkaline substance made from limestone.",
+      "usage_in_passage": "Appears as the agent used to loosen the hair. Its strongly alkaline nature takes off only the hair without damaging the skin.",
+      "related_terms": [
+        "limestone",
+        "alkali",
+        "calcium",
+        "caustic"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "stretched": {
+      "etymology": "Old English streccan 'to stretch'. Germanic",
+      "definition": "Pulled tight.",
+      "usage_in_passage": "\"the hide was stretched on a frame\" describes the treatment under tension that gives a smooth surface, and pairs with scraped, which follows.",
+      "related_terms": [
+        "stretch",
+        "taut",
+        "extended",
+        "tension"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "scraped": {
+      "etymology": "Old Norse skrapa 'to scrape'. Germanic",
+      "definition": "Rubbed with a blade to remove a layer from the surface.",
+      "usage_in_passage": "In paragraph 2 it is the step that thins the skin; in paragraph 3 it returns in \"scraped a second time\" as the step that erases writing, showing that the same action serves both manufacture and reuse.",
+      "related_terms": [
+        "scrape",
+        "scraping",
+        "abraded",
+        "shaved"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "repeatedly": {
+      "etymology": "Latin re- 'again' + petere 'to seek' → repeat + -ed + -ly",
+      "definition": "Again and again.",
+      "usage_in_passage": "Shows an amount of work that cannot be done in one pass, and gives concrete support to the meaning of protracted.",
+      "related_terms": [
+        "repeat",
+        "repetition",
+        "recurrently",
+        "persistently"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "dried": {
+      "etymology": "Old English dryge 'dry' → dry + -ed. Germanic",
+      "definition": "Became dry.",
+      "usage_in_passage": "In \"while it dried under tension\", it gives the key point of the process: drying and tension acting together produce a smooth surface.",
+      "related_terms": [
+        "dry",
+        "drying",
+        "desiccated",
+        "cured"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "tension": {
+      "etymology": "Latin tendere 'to stretch' → tensio + -on",
+      "definition": "The state of being pulled tight.",
+      "usage_in_passage": "Shows that keeping the skin stretched while it dried was the key to preventing shrinking and warping.",
+      "related_terms": [
+        "tense",
+        "tensile",
+        "strain",
+        "stress"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "yielded": {
+      "etymology": "Old English gieldan 'to pay, to produce'. Germanic",
+      "definition": "Produced.",
+      "usage_in_passage": "In \"a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly\", it shows the need to meet two opposed requirements at once.",
+      "related_terms": [
+        "yield",
+        "produced",
+        "generated",
+        "afforded"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "folded": {
+      "etymology": "Old English fealdan 'to fold'. Germanic",
+      "definition": "Bent over on itself.",
+      "usage_in_passage": "Together with sewn, it shows that parchment had to be not just a surface for writing but a material that could stand up to binding.",
+      "related_terms": [
+        "fold",
+        "folding",
+        "creased",
+        "doubled"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "sewn": {
+      "etymology": "Past participle of Old English siwian 'to sew'. Germanic",
+      "definition": "Joined with stitches.",
+      "usage_in_passage": "Refers to the binding step in which gatherings are stitched together, and gives the reason the sheets needed to be strong.",
+      "related_terms": [
+        "sew",
+        "stitched",
+        "bound",
+        "quire"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "thin": {
+      "etymology": "Old English þynne 'thin'. Germanic",
+      "definition": "Having little thickness.",
+      "usage_in_passage": "Set against strong; the concessive pattern of \"strong enough\" followed by \"yet thin enough\" expresses how difficult the processing was.",
+      "related_terms": [
+        "thinner",
+        "slender",
+        "fine",
+        "slim"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "cleanly": {
+      "etymology": "Old English clǣne 'clean' → clean + -ly. Germanic",
+      "definition": "Neatly, without smudging or spreading.",
+      "usage_in_passage": "In \"thin enough to take ink cleanly\", it gives the practical requirement that a sheet that is too thick will not take ink well.",
+      "related_terms": [
+        "clean",
+        "cleanliness",
+        "neatly",
+        "crisply"
+      ],
+      "context_sentence": "After the hair was loosened in a bath of lime, the hide was stretched on a frame and scraped repeatedly while it dried under tension, a process that yielded a sheet strong enough to be folded and sewn yet thin enough to take ink cleanly."
+    },
+    "alike": {
+      "etymology": "Old English gelīc 'similar' → a- + like. Germanic",
+      "definition": "Similar to each other.",
+      "usage_in_passage": "\"The two sides were never quite alike\" shifts the focus of the paragraph in one short sentence and introduces a new point, the difference between the two faces of the skin.",
+      "related_terms": [
+        "like",
+        "likeness",
+        "similar",
+        "identical"
+      ],
+      "context_sentence": "The two sides were never quite alike."
+    },
+    "borne": {
+      "etymology": "Past participle of Old English beran 'to carry, to bear'. Germanic",
+      "definition": "Carried or had on its surface.",
+      "usage_in_passage": "In paragraph 2, \"The face that had borne hair\" refers to the side that once had hair; in paragraph 3, \"whatever it had previously borne\" refers to the earlier writing. The same word covers both the physical surface and the content.",
+      "related_terms": [
+        "bear",
+        "bore",
+        "carried",
+        "supported"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "darker": {
+      "etymology": "Old English deorc 'dark' → dark + comparative -er. Germanic",
+      "definition": "Deeper in color.",
+      "usage_in_passage": "Together with coarser, it describes the hair side and makes concrete the difference that scribes had to take into account.",
+      "related_terms": [
+        "dark",
+        "darkness",
+        "duller",
+        "shaded"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "coarser": {
+      "etymology": "coarse 'rough' (late Middle English, origin uncertain) + comparative -er",
+      "definition": "Rougher in texture.",
+      "usage_in_passage": "Paired with darker, it shows that the difference between the two sides can be both seen and felt.",
+      "related_terms": [
+        "coarse",
+        "coarseness",
+        "rougher",
+        "grainier"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "lain": {
+      "etymology": "Past participle of Old English licgan 'to lie'. Germanic",
+      "definition": "Rested against or faced.",
+      "usage_in_passage": "In \"the face that had lain against the flesh\", it refers to the side that was against the flesh, completing the contrast with the hair side.",
+      "related_terms": [
+        "lie",
+        "lay",
+        "rested",
+        "abutted"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "flesh": {
+      "etymology": "Old English flǣsc 'flesh'. Germanic",
+      "definition": "The soft body tissue under the skin; here, the inner side of the hide.",
+      "usage_in_passage": "A technical use referring to the inner side of the skin; it is a bookbinding term that pairs with hair side.",
+      "related_terms": [
+        "fleshy",
+        "meat",
+        "tissue",
+        "hide"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "scribes": {
+      "etymology": "Latin scribere 'to write' → scriba + -s",
+      "definition": "People who copied books by hand.",
+      "usage_in_passage": "In paragraph 2 they are the ones who devise the matching of the two sides, and the ones who show respect for the material.",
+      "related_terms": [
+        "scribe",
+        "script",
+        "copyists",
+        "clerks"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "arranged": {
+      "etymology": "Old French arengier 'to put in a row' < a- + rank",
+      "definition": "Put in a planned order.",
+      "usage_in_passage": "\"scribes arranged the folded leaves so that like met like\" shows a device that makes up for a flaw in the material through the way the leaves are ordered.",
+      "related_terms": [
+        "arrange",
+        "arrangement",
+        "ordered",
+        "organized"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "invisible": {
+      "etymology": "Latin in- (negation) + videre 'to see' + -ible",
+      "definition": "Not seen or noticed.",
+      "usage_in_passage": "Set against obvious, it shows that this device worked without readers ever being aware of it.",
+      "related_terms": [
+        "visible",
+        "vision",
+        "imperceptible",
+        "unnoticed"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "obvious": {
+      "etymology": "Latin ob- 'in front of' + via 'way' → 'lying in the way'",
+      "definition": "Easy to see; plain.",
+      "usage_in_passage": "Paired with invisible, it shows that the same fact can be seen or missed depending on what the observer knows.",
+      "related_terms": [
+        "obviously",
+        "evident",
+        "apparent",
+        "manifest"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "examines": {
+      "etymology": "Latin examinare 'to weigh on a balance' < examen 'the needle of a balance'",
+      "definition": "Looks at closely and carefully.",
+      "usage_in_passage": "\"anyone who examines the order of a gathering\" shows that this is evidence that appears only under expert observation.",
+      "related_terms": [
+        "examine",
+        "examination",
+        "inspects",
+        "scrutinizes"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "gathering": {
+      "etymology": "Old English gaderian 'to gather' → gather + -ing. Germanic",
+      "definition": "A group of leaves folded one inside another, the unit from which a bound book is made up.",
+      "usage_in_passage": "Used as a term from the study of manuscripts, it shows that the matching of the two sides was done within each unit of the binding.",
+      "related_terms": [
+        "gather",
+        "quire",
+        "signature",
+        "folio"
+      ],
+      "context_sentence": "The face that had borne hair stayed slightly darker and coarser than the face that had lain against the flesh, and scribes arranged the folded leaves so that like met like across each opening, an accommodation invisible to most readers but obvious to anyone who examines the order of a gathering."
+    },
+    "hurried": {
+      "etymology": "Middle English horyen 'to hurry'. Germanic + -ed",
+      "definition": "Made to go faster.",
+      "usage_in_passage": "\"Nothing about this labor could be hurried\" restates protracted and confirms that time was a constraint that could not be shortened.",
+      "related_terms": [
+        "hurry",
+        "rushed",
+        "hastened",
+        "expedited"
+      ],
+      "context_sentence": "Nothing about this labor could be hurried, and a failure at any stage ruined material that had taken a year of grazing to produce."
+    },
+    "ruined": {
+      "etymology": "Latin ruere 'to collapse' → ruina + -ed",
+      "definition": "Spoiled completely.",
+      "usage_in_passage": "\"a failure at any stage ruined material that had taken a year of grazing\" measures the price of failure again in units of time and ties it to the economic claim of paragraph 1.",
+      "related_terms": [
+        "ruin",
+        "ruinous",
+        "spoiled",
+        "destroyed"
+      ],
+      "context_sentence": "Nothing about this labor could be hurried, and a failure at any stage ruined material that had taken a year of grazing to produce."
+    },
+    "grazing": {
+      "etymology": "Old English grasian 'to eat grass' < græs 'grass' + -ing. Germanic",
+      "definition": "The feeding of animals on grassland.",
+      "usage_in_passage": "\"a year of grazing\" shows that one spoiled sheet cancels a year of raising an animal, and so shows that material and time were equivalent.",
+      "related_terms": [
+        "graze",
+        "pasture",
+        "foraging",
+        "herding"
+      ],
+      "context_sentence": "Nothing about this labor could be hurried, and a failure at any stage ruined material that had taken a year of grazing to produce."
+    },
+    "accordingly": {
+      "etymology": "Latin ad- 'to' + cor 'heart' → accord + -ing + -ly",
+      "definition": "As a result; in a way that fits the situation.",
+      "usage_in_passage": "Works as a connecting word that moves the argument from the description of the process to the attitude of the scribes.",
+      "related_terms": [
+        "accord",
+        "according",
+        "consequently",
+        "therefore"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "treated": {
+      "etymology": "Latin tractare 'to handle' < trahere 'to draw' + -ed",
+      "definition": "Handled or behaved toward in a certain way.",
+      "usage_in_passage": "\"treated the surface with a respect\" shows that the scarcity of the material reached as far as attitudes and habits.",
+      "related_terms": [
+        "treat",
+        "treatment",
+        "handled",
+        "regarded"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "accustomed": {
+      "etymology": "Latin ad- 'to' + consuetudo 'habit' → accustom + -ed",
+      "definition": "Thoroughly used to something.",
+      "usage_in_passage": "\"modern readers, accustomed to abundant paper\" draws the modern reader into the argument and supports the point that plenty gets in the way of understanding.",
+      "related_terms": [
+        "accustom",
+        "custom",
+        "habituated",
+        "inured"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "abundant": {
+      "etymology": "Latin ab- 'overflowing' + undare 'to rise in waves' → 'more than enough'",
+      "definition": "Available in large quantities.",
+      "usage_in_passage": "Contrasts medieval scarcity with modern plenty, and prepares for abundance in paragraph 4.",
+      "related_terms": [
+        "abundance",
+        "plentiful",
+        "ample",
+        "copious"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "imagine": {
+      "etymology": "Latin imago 'image' → imaginari",
+      "definition": "To form a picture of something in the mind.",
+      "usage_in_passage": "\"may find difficult to imagine\" closes the paragraph and presents the difficulty of grasping historical conditions as a problem on the reader's side.",
+      "related_terms": [
+        "image",
+        "imagination",
+        "envision",
+        "conceive"
+      ],
+      "context_sentence": "Scribes accordingly treated the surface with a respect that modern readers, accustomed to abundant paper, may find difficult to imagine."
+    },
+    "consequence": {
+      "etymology": "Latin con- 'together' + sequi 'to follow' + -ence",
+      "definition": "A result that follows from something.",
+      "usage_in_passage": "\"One consequence was that parchment was rarely discarded\" is the topic sentence of paragraph 3, showing that scarcity led to the practice of reuse.",
+      "related_terms": [
+        "consequent",
+        "consequently",
+        "outcome",
+        "result"
+      ],
+      "context_sentence": "One consequence was that parchment was rarely discarded."
+    },
+    "parchment": {
+      "etymology": "Latin pergamina, from the name of the ancient city of Pergamum",
+      "definition": "Animal skin prepared as a surface for writing.",
+      "usage_in_passage": "The central material of the passage. At the end of paragraph 4 it is contrasted with paper, and the passage says it remained in use for documents because of its durability.",
+      "related_terms": [
+        "vellum",
+        "hide",
+        "skin",
+        "manuscript"
+      ],
+      "context_sentence": "One consequence was that parchment was rarely discarded."
+    },
+    "rarely": {
+      "etymology": "rare (from Latin rarus 'thinly spread, infrequent') + -ly",
+      "definition": "Almost never.",
+      "usage_in_passage": "\"parchment was rarely discarded\" introduces the practice of reuse described next.",
+      "related_terms": [
+        "rare",
+        "rarity",
+        "seldom",
+        "infrequently"
+      ],
+      "context_sentence": "One consequence was that parchment was rarely discarded."
+    },
+    "discarded": {
+      "etymology": "dis- 'away' + card → originally 'to throw away a playing card'",
+      "definition": "Thrown away.",
+      "usage_in_passage": "The fact that a scarce material was not thrown away is the premise for the phenomenon of the palimpsest.",
+      "related_terms": [
+        "discard",
+        "disposed",
+        "jettisoned",
+        "abandoned"
+      ],
+      "context_sentence": "One consequence was that parchment was rarely discarded."
+    },
+    "audience": {
+      "etymology": "Latin audire 'to hear' → audientia",
+      "definition": "The people who read or listen to a work.",
+      "usage_in_passage": "\"A text that had lost its audience\" shows that the standard for deciding what to reuse was demand, not the value of the content.",
+      "related_terms": [
+        "audible",
+        "readership",
+        "public",
+        "listeners"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "recycled": {
+      "etymology": "re- 'again' + Latin cyclus < Greek kyklos 'circle' + -ed",
+      "definition": "Used again.",
+      "usage_in_passage": "\"the recycled sheet\" is the antecedent of the pronoun it tested in the reference question, and fixes the focus of the paragraph on the sheet itself.",
+      "related_terms": [
+        "recycle",
+        "reused",
+        "repurposed",
+        "reclaimed"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "palimpsest": {
+      "etymology": "Greek palin 'again' + psēstos 'scraped' → 'something scraped again'",
+      "definition": "A sheet of parchment whose writing was erased so that it could be written on again.",
+      "usage_in_passage": "A technical term whose etymology is itself a description of the process; it condenses the whole argument of paragraph 3 into one word.",
+      "related_terms": [
+        "palimpsests",
+        "manuscript",
+        "parchment",
+        "erasure"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "faint": {
+      "etymology": "Old French faindre 'to pretend' < Latin fingere 'to shape'",
+      "definition": "Barely visible.",
+      "usage_in_passage": "\"the faint traces\" shows that the erasure was not complete, which is the condition that made later decipherment possible.",
+      "related_terms": [
+        "faintly",
+        "dim",
+        "indistinct",
+        "vague"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "traces": {
+      "etymology": "Latin trahere 'to draw' → tractus → Old French trace + -s",
+      "definition": "Marks left behind by something.",
+      "usage_in_passage": "Refers to the writing that was not fully erased; it is the physical basis of the paradox that an economic decision worked, without anyone intending it, as a means of preservation.",
+      "related_terms": [
+        "trace",
+        "vestiges",
+        "remnants",
+        "residue"
+      ],
+      "context_sentence": "A text that had lost its audience could be scraped a second time and written over, and the recycled sheet, known as a palimpsest, carried the faint traces of whatever it had previously borne."
+    },
+    "recovered": {
+      "etymology": "Latin re- 'again' + recuperare 'to get back'",
+      "definition": "Got back something that had been lost.",
+      "usage_in_passage": "\"Scholars have recovered lost works of antiquity\" shows that the traces actually produced results.",
+      "related_terms": [
+        "recover",
+        "recovery",
+        "retrieved",
+        "restored"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "antiquity": {
+      "etymology": "Latin antiquus 'old' + -ity",
+      "definition": "The ancient past, especially ancient Greece and Rome.",
+      "usage_in_passage": "\"lost works of antiquity\" presents the dramatic fact that classics thought to be lost were lying under medieval sheets.",
+      "related_terms": [
+        "antique",
+        "ancient",
+        "classical",
+        "antiquated"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "beneath": {
+      "etymology": "Old English beneoðan 'below'. Germanic",
+      "definition": "Under.",
+      "usage_in_passage": "\"from beneath later devotional texts\" shows a physical relation of layers and expresses the overlap of periods in spatial terms.",
+      "related_terms": [
+        "below",
+        "under",
+        "underneath",
+        "underlying"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "devotional": {
+      "etymology": "Latin de- 'completely' + vovere 'to vow' → devotion + -al",
+      "definition": "Used in religious worship or prayer.",
+      "usage_in_passage": "Shows the character of the text that was written over the old one, and implies that medieval interest lay in faith more than in the classics.",
+      "related_terms": [
+        "devotion",
+        "devout",
+        "liturgical",
+        "pious"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "accident": {
+      "etymology": "Latin ad- 'to' + cadere 'to fall' → 'something that happens by chance'",
+      "definition": "Something that happens by chance.",
+      "usage_in_passage": "\"the accident that preserved them was economic rather than scholarly\" is the core of paragraph 3. It shows that preservation was not the product of intention.",
+      "related_terms": [
+        "accidental",
+        "chance",
+        "happenstance",
+        "contingency"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "preserved": {
+      "etymology": "Latin prae- 'beforehand' + servare 'to keep'",
+      "definition": "Kept from being lost or destroyed.",
+      "usage_in_passage": "By taking accident as its subject, it creates a reversal: what did the preserving was circumstance, not human judgment.",
+      "related_terms": [
+        "preserve",
+        "preservation",
+        "conserved",
+        "retained"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "scholarly": {
+      "etymology": "scholar + -ly",
+      "definition": "Relating to serious study and learning.",
+      "usage_in_passage": "Set against economic, it gives economics as the answer to the question of what kept the classics alive.",
+      "related_terms": [
+        "scholar",
+        "scholars",
+        "academic",
+        "erudite"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "monastery": {
+      "etymology": "Greek monos 'alone' → monastērion",
+      "definition": "A community of monks, and the building they live in.",
+      "usage_in_passage": "\"a monastery short of skins reused what it judged obsolete\" brings an abstract economic law down to one concrete decision.",
+      "related_terms": [
+        "monasteries",
+        "monks",
+        "abbey",
+        "cloister"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "reused": {
+      "etymology": "re- 'again' + use + -d",
+      "definition": "Used again.",
+      "usage_in_passage": "As a verb of decision, it shows that this was the result of an active choice by the monastery.",
+      "related_terms": [
+        "reuse",
+        "recycled",
+        "repurposed",
+        "reclaimed"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "obsolete": {
+      "etymology": "Latin ob- 'away' + solere 'to be accustomed' → 'no longer in use'",
+      "definition": "No longer used or needed; out of date.",
+      "usage_in_passage": "\"what it judged obsolete\" implies that a mistaken judgment of value caused later ages a loss that could not be undone.",
+      "related_terms": [
+        "obsolescence",
+        "outdated",
+        "antiquated",
+        "defunct"
+      ],
+      "context_sentence": "Scholars have recovered lost works of antiquity from beneath later devotional texts, and the accident that preserved them was economic rather than scholarly: a monastery short of skins reused what it judged obsolete."
+    },
+    "survives": {
+      "etymology": "Latin super- 'beyond' + vivere 'to live' + -s",
+      "definition": "Continues to exist.",
+      "usage_in_passage": "\"What survives from the ancient world\" serves as the subject and lifts the conclusion of the paragraph to a general statement.",
+      "related_terms": [
+        "survive",
+        "survival",
+        "endures",
+        "persists"
+      ],
+      "context_sentence": "What survives from the ancient world was thus filtered not only by taste but by the price of a sheep."
+    },
+    "ancient": {
+      "etymology": "Latin ante 'before' → antianus → Old French ancien",
+      "definition": "Belonging to the distant past.",
+      "usage_in_passage": "In \"the ancient world\", it points to where the lost texts came from.",
+      "related_terms": [
+        "antiquity",
+        "antique",
+        "archaic",
+        "classical"
+      ],
+      "context_sentence": "What survives from the ancient world was thus filtered not only by taste but by the price of a sheep."
+    },
+    "taste": {
+      "etymology": "Old French taster 'to touch, to taste' < Latin taxare",
+      "definition": "What people like and judge to be good.",
+      "usage_in_passage": "In \"filtered not only by taste but by the price of a sheep\", it is presented as the usual standard of selection and set against the economic factor.",
+      "related_terms": [
+        "tasteful",
+        "preference",
+        "judgment",
+        "discernment"
+      ],
+      "context_sentence": "What survives from the ancient world was thus filtered not only by taste but by the price of a sheep."
+    },
+    "arrival": {
+      "etymology": "Latin ad- 'to' + ripa 'shore' → arrive + -al",
+      "definition": "The coming of something new.",
+      "usage_in_passage": "\"The arrival of paper altered this arithmetic decisively\" is the topic sentence of paragraph 4 and marks the turning point at which the premise of the earlier paragraphs breaks down.",
+      "related_terms": [
+        "arrive",
+        "advent",
+        "onset",
+        "appearance"
+      ],
+      "context_sentence": "The arrival of paper altered this arithmetic decisively."
+    },
+    "altered": {
+      "etymology": "Latin alter 'other' → alterare + -ed",
+      "definition": "Changed.",
+      "usage_in_passage": "Shows that the economic logic running from paragraph 1 is rewritten, and divides the structure of the passage into a before and an after.",
+      "related_terms": [
+        "alter",
+        "alteration",
+        "modified",
+        "transformed"
+      ],
+      "context_sentence": "The arrival of paper altered this arithmetic decisively."
+    },
+    "arithmetic": {
+      "etymology": "Greek arithmos 'number' → arithmētikē",
+      "definition": "Calculation with numbers; here, the balance of costs.",
+      "usage_in_passage": "Used as a metaphor, it sums up in one word the passage's view that book production was a matter of numbers throughout.",
+      "related_terms": [
+        "arithmetical",
+        "calculation",
+        "computation",
+        "reckoning"
+      ],
+      "context_sentence": "The arrival of paper altered this arithmetic decisively."
+    },
+    "decisively": {
+      "etymology": "Latin de- 'off' + caedere 'to cut' → decide + -ive + -ly",
+      "definition": "In a way that settles the matter completely.",
+      "usage_in_passage": "Shows that the change was a break, not a gradual shift, and sets the strength of the argument in paragraph 4.",
+      "related_terms": [
+        "decisive",
+        "decision",
+        "conclusively",
+        "definitively"
+      ],
+      "context_sentence": "The arrival of paper altered this arithmetic decisively."
+    },
+    "manufactured": {
+      "etymology": "Latin manus 'hand' + facere 'to make' → 'to make by hand'",
+      "definition": "Made from raw materials.",
+      "usage_in_passage": "\"Manufactured from rags rather than livestock\" shows that the source of the material moved from animal farming to craft production.",
+      "related_terms": [
+        "manufacture",
+        "produced",
+        "fabricated",
+        "made"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "rags": {
+      "etymology": "Old Norse rögg 'tuft'. Germanic + -s",
+      "definition": "Pieces of old, worn cloth.",
+      "usage_in_passage": "Set against livestock, it shows that the raw material of paper was waste that needed no land. This removes the constraint described in paragraph 1.",
+      "related_terms": [
+        "rag",
+        "cloth",
+        "textile",
+        "linen"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "livestock": {
+      "etymology": "live + stock. A Germanic compound",
+      "definition": "Farm animals.",
+      "usage_in_passage": "Restates herd from paragraph 1 and points to the whole older system of materials in one word.",
+      "related_terms": [
+        "stock",
+        "cattle",
+        "herd",
+        "husbandry"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "artisans": {
+      "etymology": "Latin ars 'skill' → Italian artigiano + -s",
+      "definition": "Skilled workers who make things by hand.",
+      "usage_in_passage": "\"artisans who owned no land\" shows that production passed from landowners to craftsmen without property, and implies a change in the structure of society.",
+      "related_terms": [
+        "artisan",
+        "craftsmen",
+        "artisanal",
+        "tradesmen"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "fell": {
+      "etymology": "Past tense of Old English feallan 'to fall'. Germanic",
+      "definition": "Went down.",
+      "usage_in_passage": "\"its cost fell as mills multiplied\" links the drop in price and the growth in production facilities as cause and effect.",
+      "related_terms": [
+        "fall",
+        "fallen",
+        "declined",
+        "dropped"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "mills": {
+      "etymology": "Latin molere 'to grind' → molina → Old English mylen + -s",
+      "definition": "Buildings with water-driven machinery, here for making paper.",
+      "usage_in_passage": "Their location along rivers shows the need for a source of power and tells us that paper was an industrial product.",
+      "related_terms": [
+        "mill",
+        "milling",
+        "factory",
+        "workshop"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "multiplied": {
+      "etymology": "Latin multus 'many' + plicare 'to fold' → 'to make manifold'",
+      "definition": "Increased in number.",
+      "usage_in_passage": "Shows the market logic by which more facilities bring lower prices.",
+      "related_terms": [
+        "multiply",
+        "multiple",
+        "proliferated",
+        "increased"
+      ],
+      "context_sentence": "Manufactured from rags rather than livestock, paper could be produced in quantity by artisans who owned no land, and its cost fell as mills multiplied along the rivers of Italy and Germany."
+    },
+    "sudden": {
+      "etymology": "Latin sub- 'from below' + ire 'to go' → 'coming unexpectedly'",
+      "definition": "Happening quickly and unexpectedly.",
+      "usage_in_passage": "\"the sudden abundance of books\" shows how dramatic the change is in the common account, and the yet that follows qualifies it.",
+      "related_terms": [
+        "suddenly",
+        "abrupt",
+        "unexpected",
+        "swift"
+      ],
+      "context_sentence": "Printing, when it came, is often credited with the sudden abundance of books in the fifteenth century, yet a press without cheap sheets to feed it would have changed little."
+    },
+    "abundance": {
+      "etymology": "Latin ab- 'overflowing' + undare 'to rise in waves' + -ance",
+      "definition": "A very large quantity.",
+      "usage_in_passage": "Echoes \"abundant paper\" in paragraph 2 and shows the causal link by which plentiful paper turned into plentiful books.",
+      "related_terms": [
+        "abundant",
+        "plenty",
+        "profusion",
+        "surplus"
+      ],
+      "context_sentence": "Printing, when it came, is often credited with the sudden abundance of books in the fifteenth century, yet a press without cheap sheets to feed it would have changed little."
+    },
+    "fifteenth": {
+      "etymology": "five + -teen + -th. A Germanic numeral",
+      "definition": "Number 15 in a series.",
+      "usage_in_passage": "\"the fifteenth century\" identifies the period when printing appeared and anchors the argument to a date.",
+      "related_terms": [
+        "fifteen",
+        "fifth",
+        "century",
+        "quattrocento"
+      ],
+      "context_sentence": "Printing, when it came, is often credited with the sudden abundance of books in the fifteenth century, yet a press without cheap sheets to feed it would have changed little."
+    },
+    "innovations": {
+      "etymology": "Latin in- 'into' + novus 'new' → innovare + -ation + -s",
+      "definition": "New methods or inventions.",
+      "usage_in_passage": "\"The two innovations are properly understood as a single development\" is the conclusion of the passage, rejecting the common habit of discussing paper and printing separately.",
+      "related_terms": [
+        "innovate",
+        "innovative",
+        "inventions",
+        "advances"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "properly": {
+      "etymology": "Latin proprius 'one's own' → proper + -ly",
+      "definition": "Correctly.",
+      "usage_in_passage": "\"are properly understood as\" presents the correction of the common view as a calm, firm statement.",
+      "related_terms": [
+        "proper",
+        "propriety",
+        "correctly",
+        "rightly"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "understood": {
+      "etymology": "Past participle of under + stand. Germanic",
+      "definition": "Interpreted or regarded in a particular way.",
+      "usage_in_passage": "The passive voice presents the conclusion as a sound interpretation, not as the author's personal opinion.",
+      "related_terms": [
+        "understand",
+        "understanding",
+        "comprehended",
+        "construed"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "duplication": {
+      "etymology": "Latin duo 'two' + plicare 'to fold' → duplicare + -ation",
+      "definition": "The making of copies.",
+      "usage_in_passage": "A word that restates printing by its function, and supports the claim of the same sentence that printing means little on its own.",
+      "related_terms": [
+        "duplicate",
+        "replication",
+        "reproduction",
+        "copying"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "consequential": {
+      "etymology": "Latin con- 'together' + sequi 'to follow' + -ential",
+      "definition": "Important; having significant effects.",
+      "usage_in_passage": "\"became consequential only because a new material had already made the page expendable\" states plainly that one of the two inventions depended on the other.",
+      "related_terms": [
+        "consequence",
+        "consequently",
+        "significant",
+        "momentous"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "expendable": {
+      "etymology": "Latin ex- 'out' + pendere 'to weigh, to pay' + -able",
+      "definition": "Cheap enough to be used up and thrown away.",
+      "usage_in_passage": "The word on which the passage's argument about paper and printing closes. In one word it measures the distance from the situation in paragraph 1, where a single volume cost two hundred animals.",
+      "related_terms": [
+        "expend",
+        "expenditure",
+        "disposable",
+        "dispensable"
+      ],
+      "context_sentence": "The two innovations are properly understood as a single development, in which a new method of duplication became consequential only because a new material had already made the page expendable."
+    },
+    "vanish": {
+      "etymology": "Latin vanus 'empty' → evanescere → Old French esvanir",
+      "definition": "To disappear.",
+      "usage_in_passage": "\"Skin did not vanish overnight\" shows that even a decisive change has exceptions, and saves the conclusion from oversimplification.",
+      "related_terms": [
+        "vanished",
+        "disappear",
+        "evaporate",
+        "fade"
+      ],
+      "context_sentence": "Skin did not vanish overnight."
+    },
+    "overnight": {
+      "etymology": "over + night. A Germanic compound",
+      "definition": "Very suddenly.",
+      "usage_in_passage": "Pairs with decisively and fine-tunes, later in the paragraph, the claim about how fast the change was.",
+      "related_terms": [
+        "night",
+        "abruptly",
+        "suddenly",
+        "immediately"
+      ],
+      "context_sentence": "Skin did not vanish overnight."
+    },
+    "charters": {
+      "etymology": "Latin charta 'paper, document' → Old French chartre + -s",
+      "definition": "Official documents that grant rights or record legal acts.",
+      "usage_in_passage": "\"Charters and other documents intended to outlast their makers\" shows concretely the area in which parchment remained.",
+      "related_terms": [
+        "charter",
+        "deeds",
+        "documents",
+        "diploma"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "outlast": {
+      "etymology": "out- 'beyond' + last 'to continue'. A Germanic compound",
+      "definition": "To last longer than.",
+      "usage_in_passage": "The requirement that a document remain longer than the person who made it explains the choice of material.",
+      "related_terms": [
+        "last",
+        "outlive",
+        "survive",
+        "endure"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "makers": {
+      "etymology": "Old English macian 'to make' → make + -er + -s. Germanic",
+      "definition": "The people who produced something.",
+      "usage_in_passage": "\"outlast their makers\" shows that the expected life of a document is measured on a scale longer than a human lifetime.",
+      "related_terms": [
+        "make",
+        "maker",
+        "creators",
+        "authors"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "drawn": {
+      "etymology": "Past participle of Old English dragan 'to draw, to pull'. Germanic",
+      "definition": "Written out as a formal document.",
+      "usage_in_passage": "\"were still drawn on parchment\" is the idiomatic use meaning to prepare a legal document; note that it does not simply mean that pictures were drawn.",
+      "related_terms": [
+        "draw",
+        "drew",
+        "drafted",
+        "executed"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "captured": {
+      "etymology": "Latin capere 'to take' → captura + -ed",
+      "definition": "Took control of; won over.",
+      "usage_in_passage": "\"long after paper had captured the ordinary book\" uses the metaphor of taking a market to describe how the two materials divided the field between them.",
+      "related_terms": [
+        "capture",
+        "captive",
+        "seized",
+        "conquered"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "ordinary": {
+      "etymology": "Latin ordo 'order' → ordinarius",
+      "definition": "Common; not special.",
+      "usage_in_passage": "In contrast with charters, it shows the division of uses between everyday books and special documents.",
+      "related_terms": [
+        "order",
+        "ordinarily",
+        "commonplace",
+        "routine"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "preference": {
+      "etymology": "Latin prae- 'before' + ferre 'to carry' → prefer + -ence",
+      "definition": "A choice of one thing over another.",
+      "usage_in_passage": "\"a preference that reveals what each material was thought to promise\" makes explicit at the end the passage's method of reading practices as evidence.",
+      "related_terms": [
+        "prefer",
+        "preferable",
+        "predilection",
+        "inclination"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "reveals": {
+      "etymology": "Latin re- 'back' + velum 'covering' → 'to remove the covering'",
+      "definition": "Makes known; shows.",
+      "usage_in_passage": "Shows the passage's framework of interpretation: the choice of material is evidence of what people at the time expected.",
+      "related_terms": [
+        "reveal",
+        "revelation",
+        "discloses",
+        "exposes"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    },
+    "promise": {
+      "etymology": "Latin pro- 'forward' + mittere 'to send' → promissum",
+      "definition": "To give reason to expect.",
+      "usage_in_passage": "\"what each material was thought to promise\" closes the passage and returns to durability, the quality that kept parchment in use for documents meant to last.",
+      "related_terms": [
+        "promising",
+        "pledge",
+        "assurance",
+        "guarantee"
+      ],
+      "context_sentence": "Charters and other documents intended to outlast their makers were still drawn on parchment long after paper had captured the ordinary book, a preference that reveals what each material was thought to promise."
+    }
+  }
+}

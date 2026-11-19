@@ -1,0 +1,1066 @@
+{
+  "id": "passage_005",
+  "title": "The Strength of Weak Ties",
+  "topic": "Society",
+  "body": "Common sense suggests that the people who help us most are the people who know us best. A study of how professional men in a Boston suburb had found their jobs produced the opposite result. Those who learned of an opening through a personal contact had usually heard it not from a close friend or relative but from someone they saw rarely, in several cases someone they had nearly forgotten. The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society. It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work.\n\nThe argument turns on redundancy. Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices. Whatever reaches them is therefore likely to reach us anyway, and often has already. An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new. The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual.\n\nThe consequences extend well beyond employment. If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them. Remove those links and the clusters become islands. The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy. A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent.\n\nThe practical implications are less comfortable than they first appear. Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands. Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense. What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents. Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does.",
+  "word_count": 460,
+  "added": "2026-08-11",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 2, why is information from a close friend often less useful?",
+      "target_word": null,
+      "choices": {
+        "A": "Close friends usually belong to the same circle and so know much the same things",
+        "B": "Close friends tend to give advice rather than concrete information",
+        "C": "Close friends are contacted too infrequently to be reached in time",
+        "D": "Close friends are reluctant to share news that might create competition"
+      },
+      "correct": "A",
+      "explanation": "Paragraph 2 says \"Close friends tend to move in the same circle as we do\" and then \"Whatever reaches them is therefore likely to reach us anyway\", so the reason is that the information overlaps. B, the nature of advice, and D, a sense of competition, are not stated in the passage, and C confuses close friends with the description of an acquaintance."
+    },
+    {
+      "id": 2,
+      "type": "Vocabulary",
+      "question": "The word \"sparse\" in paragraph 3 is closest in meaning to",
+      "target_word": "sparse",
+      "choices": {
+        "A": "recently formed",
+        "B": "carefully chosen",
+        "C": "difficult to maintain",
+        "D": "few and scattered"
+      },
+      "correct": "D",
+      "explanation": "The word is set against \"dense clusters\" and refers to the few ties that connect one cluster to another. The following \"Remove those links and the clusters become islands\" also assumes that their number is limited. D is therefore the closest. C, difficult to maintain, is a different property, the one that fragile describes a little later; it is not the meaning of sparse."
+    },
+    {
+      "id": 3,
+      "type": "Reference",
+      "question": "The word \"they\" in paragraph 2 (\"precisely because they are casual\") refers to",
+      "target_word": null,
+      "choices": {
+        "A": "the circles that acquaintances belong to",
+        "B": "the casual ties",
+        "C": "the notices that close friends read",
+        "D": "the distances that relationships span"
+      },
+      "correct": "B",
+      "explanation": "The sentence is \"casual ties tend to span the greater distance precisely because they are casual\", and what is casual is the ties themselves. D, the distance, is what they span, not the subject."
+    },
+    {
+      "id": 4,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention rumors, techniques, and contagions in paragraph 3?",
+      "target_word": null,
+      "choices": {
+        "A": "To compare the speed at which different kinds of information travel",
+        "B": "To identify the three subjects that sociologists most often study",
+        "C": "To show that the same structural principle governs many different kinds of spread",
+        "D": "To warn that weak ties can spread harmful things as well as useful ones"
+      },
+      "correct": "C",
+      "explanation": "The three are listed side by side as examples of \"anything that must travel between clusters\", and they are named to show one and the same structural constraint: each must pass along the sparse ties that link the clusters. No comparison of speed is made, as A claims, and the list is not a list of fields of study, as B claims. The warning in D is not the main point of the passage; contagion is only one example showing that the structure does not sort what it carries into good and bad."
+    },
+    {
+      "id": 5,
+      "type": "Inference",
+      "question": "It can be inferred from paragraph 4 that a program aimed at strengthening bonds within an isolated neighborhood would probably",
+      "target_word": null,
+      "choices": {
+        "A": "reduce the density of the networks that already exist there",
+        "B": "be resisted by residents who prefer their existing networks",
+        "C": "succeed only if residents were first relocated elsewhere",
+        "D": "fail to supply the outward connections that residents actually lack"
+      },
+      "correct": "D",
+      "explanation": "The passage says the residents' networks are \"often unusually dense\" and that what is missing is \"the sparse, outward-reaching kind\". A measure that strengthens internal bonds therefore does not supply what is lacking. The final sentence, \"address a problem that does not exist while neglecting the one that does\", supports this inference. B and C have no basis in the passage, and A is the reverse of what a measure that strengthens bonds would do."
+    }
+  ],
+  "vocab": {
+    "suburb": {
+      "etymology": "Latin sub- 'under, near' + urbs 'city' → suburbium 'the outskirts of a city'",
+      "definition": "A residential area on the edge of a city.",
+      "usage_in_passage": "\"professional men in a Boston suburb\" identifies who was studied, and quietly prepares a contrast in social class with paragraph 4, which deals with urban poverty.",
+      "related_terms": [
+        "suburban",
+        "urban",
+        "outskirts",
+        "periphery"
+      ],
+      "context_sentence": "A study of how professional men in a Boston suburb had found their jobs produced the opposite result."
+    },
+    "opposite": {
+      "etymology": "Latin ob- 'against' + ponere 'to put' → oppositus",
+      "definition": "Completely different; contrary.",
+      "usage_in_passage": "\"produced the opposite result\" shows that the common-sense assumption of the opening was overturned by evidence, and creates the starting point of the passage.",
+      "related_terms": [
+        "oppose",
+        "opposition",
+        "contrary",
+        "reverse"
+      ],
+      "context_sentence": "A study of how professional men in a Boston suburb had found their jobs produced the opposite result."
+    },
+    "rarely": {
+      "etymology": "rare (from Latin rarus 'thinly spread, infrequent') + -ly",
+      "definition": "Not often; almost never.",
+      "usage_in_passage": "\"someone they saw rarely\" defines a weak tie by how often people meet, and becomes the foundation of the argument that follows.",
+      "related_terms": [
+        "rare",
+        "rarity",
+        "seldom",
+        "infrequently"
+      ],
+      "context_sentence": "Those who learned of an opening through a personal contact had usually heard it not from a close friend or relative but from someone they saw rarely, in several cases someone they had nearly forgotten."
+    },
+    "forgotten": {
+      "etymology": "Past participle of Old English forgietan 'to forget'. Germanic",
+      "definition": "No longer remembered.",
+      "usage_in_passage": "\"someone they had nearly forgotten\" shows how surprising the finding is through an extreme example, and prepares the word counterintuitive that comes next.",
+      "related_terms": [
+        "forget",
+        "forgot",
+        "overlooked",
+        "neglected"
+      ],
+      "context_sentence": "Those who learned of an opening through a personal contact had usually heard it not from a close friend or relative but from someone they saw rarely, in several cases someone they had nearly forgotten."
+    },
+    "counterintuitive": {
+      "etymology": "counter- 'against' + Latin intueri 'to look at' → a compound that negates intuitive",
+      "definition": "Contrary to what one would naturally expect.",
+      "usage_in_passage": "\"counterintuitive enough to require an explanation\" states why this finding needs explaining, and forms a bridge to the theoretical explanation in paragraph 2.",
+      "related_terms": [
+        "intuitive",
+        "intuition",
+        "paradoxical",
+        "unexpected"
+      ],
+      "context_sentence": "The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society."
+    },
+    "explanation": {
+      "etymology": "Latin ex- 'out' + planus 'flat' → explanare 'to make level and show' + -ation",
+      "definition": "A statement that makes clear why something is so.",
+      "usage_in_passage": "Used twice in the same sentence, it links in one sentence the fact that an explanation was needed and the fact that the explanation changed the field.",
+      "related_terms": [
+        "explain",
+        "explanatory",
+        "account",
+        "interpretation"
+      ],
+      "context_sentence": "The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society."
+    },
+    "reshaped": {
+      "etymology": "re- 'again' + shape (Old English sceppan). Germanic + -ed",
+      "definition": "Gave a new form to.",
+      "usage_in_passage": "\"reshaped how sociologists think about the architecture of a society\" shows how large an effect a single finding had on theory as a whole.",
+      "related_terms": [
+        "shape",
+        "reshape",
+        "transformed",
+        "recast"
+      ],
+      "context_sentence": "The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society."
+    },
+    "sociologists": {
+      "etymology": "Latin socius 'companion' + Greek -logia 'study' + -ist + -s",
+      "definition": "Scholars who study human society.",
+      "usage_in_passage": "Identifies who received this finding and shows that the discussion belongs to an academic context.",
+      "related_terms": [
+        "sociology",
+        "sociological",
+        "social",
+        "researchers"
+      ],
+      "context_sentence": "The finding was counterintuitive enough to require an explanation, and the explanation reshaped how sociologists think about the architecture of a society."
+    },
+    "inverted": {
+      "etymology": "Latin in- 'into' + vertere 'to turn' → invertere 'to turn upside down'",
+      "definition": "Reversed; turned upside down.",
+      "usage_in_passage": "\"It also inverted a long habit of treating intimacy as the measure\" shows that the effect of the finding goes beyond correcting a fact and overturns a standard of value.",
+      "related_terms": [
+        "invert",
+        "inversion",
+        "reversed",
+        "overturned"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "habit": {
+      "etymology": "Latin habere 'to have' → habitus 'something acquired'",
+      "definition": "A settled way of thinking or acting.",
+      "usage_in_passage": "Here it refers to a habit of thought; it means an assumption held in the field, not an individual's personal habit.",
+      "related_terms": [
+        "habitual",
+        "custom",
+        "practice",
+        "convention"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "treating": {
+      "etymology": "Latin tractare 'to handle' < trahere 'to draw' + -ing",
+      "definition": "Regarding or considering something in a certain way.",
+      "usage_in_passage": "\"treating intimacy as the measure of a relationship's worth\" sets out the traditional view before it is overturned.",
+      "related_terms": [
+        "treat",
+        "treatment",
+        "regarding",
+        "considering"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "intimacy": {
+      "etymology": "Latin intimus 'innermost' → intimate + -acy",
+      "definition": "Closeness between people.",
+      "usage_in_passage": "The very thing the passage removes as the standard of value; it echoes \"intimate bonds\" in paragraph 3.",
+      "related_terms": [
+        "intimate",
+        "closeness",
+        "familiarity",
+        "affection"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "relationship's": {
+      "etymology": "relation (< Latin referre 'to relate') + -ship + possessive -'s",
+      "definition": "Belonging to a connection between people.",
+      "usage_in_passage": "\"a relationship's worth\" fixes the thing being evaluated as the relationship itself, not the person.",
+      "related_terms": [
+        "relationship",
+        "relation",
+        "relative",
+        "connection"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "implied": {
+      "etymology": "Latin in- 'in' + plicare 'to fold' → implicare 'to fold in'",
+      "definition": "Suggested as a logical consequence without stating it directly.",
+      "usage_in_passage": "Shows the logical relation by which the finding leads even to things it does not say outright, and marks the clause that follows as an inference.",
+      "related_terms": [
+        "imply",
+        "implication",
+        "suggested",
+        "entailed"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "bonds": {
+      "etymology": "Middle English band 'something that binds'. A Germanic word related to bind + -s",
+      "definition": "Connections that hold people together.",
+      "usage_in_passage": "It appears in paragraph 1 as \"the bonds a person values least\" and in paragraph 3 as \"intimate bonds\", and works as another word for ties, the central word of the passage.",
+      "related_terms": [
+        "bond",
+        "bind",
+        "ties",
+        "attachments"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "consequential": {
+      "etymology": "Latin con- 'together' + sequi 'to follow' + -ential",
+      "definition": "Important; having significant effects.",
+      "usage_in_passage": "\"doing the most consequential work\" rounds off the paradox that the relationships regarded as least valuable are the ones with the greatest effect.",
+      "related_terms": [
+        "consequence",
+        "consequently",
+        "significant",
+        "momentous"
+      ],
+      "context_sentence": "It also inverted a long habit of treating intimacy as the measure of a relationship's worth, since it implied that the bonds a person values least may be the ones doing the most consequential work."
+    },
+    "redundancy": {
+      "etymology": "Latin re- 'again' + undare 'to rise in waves' → redundare 'to overflow' + -ancy",
+      "definition": "The state of repeating what is already there.",
+      "usage_in_passage": "In \"The argument turns on redundancy\", it is the key word of paragraph 2 and explains in one word why information from people close to us is not useful.",
+      "related_terms": [
+        "redundant",
+        "duplication",
+        "overlap",
+        "surplus"
+      ],
+      "context_sentence": "The argument turns on redundancy."
+    },
+    "tend": {
+      "etymology": "Latin tendere 'to stretch, to head toward'",
+      "definition": "To be likely to do something.",
+      "usage_in_passage": "\"Close friends tend to move in the same circle\" states a tendency instead of an absolute rule, so the argument moves forward while allowing for exceptions.",
+      "related_terms": [
+        "tendency",
+        "tends",
+        "incline",
+        "gravitate"
+      ],
+      "context_sentence": "Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices."
+    },
+    "circle": {
+      "etymology": "Latin circulus, diminutive of circus 'ring'",
+      "definition": "A group of people who know one another.",
+      "usage_in_passage": "The key metaphor of the passage. It builds the structure in which being in the same circle or not decides how new information is.",
+      "related_terms": [
+        "circles",
+        "circular",
+        "clique",
+        "cluster"
+      ],
+      "context_sentence": "Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices."
+    },
+    "attend": {
+      "etymology": "Latin ad- 'to' + tendere 'to direct' → attendere",
+      "definition": "To be present at.",
+      "usage_in_passage": "With the concrete example of going to the same gatherings, it shows what sharing a circle means.",
+      "related_terms": [
+        "attendance",
+        "attendee",
+        "participate",
+        "frequent"
+      ],
+      "context_sentence": "Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices."
+    },
+    "gatherings": {
+      "etymology": "Old English gaderian 'to gather' → gather + -ing + -s. Germanic",
+      "definition": "Occasions when people come together.",
+      "usage_in_passage": "Refers to the places where information circulates, and shows that being present together is the route by which information comes to overlap.",
+      "related_terms": [
+        "gather",
+        "assembly",
+        "meetings",
+        "congregations"
+      ],
+      "context_sentence": "Close friends tend to move in the same circle as we do, attend the same gatherings, and read the same notices."
+    },
+    "anyway": {
+      "etymology": "any + way. A Germanic compound",
+      "definition": "In any case.",
+      "usage_in_passage": "\"likely to reach us anyway\" says flatly, in a conversational tone, that the marginal value of information coming through people close to us is near zero.",
+      "related_terms": [
+        "anyhow",
+        "regardless",
+        "nonetheless",
+        "besides"
+      ],
+      "context_sentence": "Whatever reaches them is therefore likely to reach us anyway, and often has already."
+    },
+    "acquaintance": {
+      "etymology": "Latin ad- 'to' + cognoscere 'to know' → Old French acointer + -ance",
+      "definition": "A person one knows slightly but who is not a close friend.",
+      "usage_in_passage": "\"An acquaintance seen twice a year\" gives the weak tie the concrete form of a person and completes the contrast with the close friend.",
+      "related_terms": [
+        "acquaint",
+        "acquainted",
+        "associate",
+        "contact"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "twice": {
+      "etymology": "Old English twiges 'twice'. Germanic",
+      "definition": "Two times.",
+      "usage_in_passage": "Gives the frequency of contact as a number and makes concrete the idea of someone seen rarely.",
+      "related_terms": [
+        "two",
+        "twofold",
+        "double",
+        "biannually"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "belongs": {
+      "etymology": "be- + long (Old English langian 'to belong'). Germanic",
+      "definition": "Is a member of.",
+      "usage_in_passage": "\"belongs to a different circle\" states plainly that the value of a weak tie comes from membership in a different group.",
+      "related_terms": [
+        "belong",
+        "belonging",
+        "pertains",
+        "affiliated"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "circulating": {
+      "etymology": "Latin circulus 'ring' → circulare + -ing",
+      "definition": "Passing from person to person.",
+      "usage_in_passage": "Gives the image of information moving around inside a group, and leads to paragraph 3, which deals with movement between groups.",
+      "related_terms": [
+        "circulate",
+        "circulation",
+        "circular",
+        "spreading"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "genuinely": {
+      "etymology": "Latin genuinus 'inborn' → genuine + -ly",
+      "definition": "Truly; really.",
+      "usage_in_passage": "\"genuinely new\" stresses the key point of the argument: only information that is not a repeat has value.",
+      "related_terms": [
+        "genuine",
+        "authentically",
+        "truly",
+        "actually"
+      ],
+      "context_sentence": "An acquaintance seen twice a year belongs to a different circle, and the information circulating there is genuinely new."
+    },
+    "depends": {
+      "etymology": "Latin de- 'down' + pendere 'to hang' → dependere 'to hang from'",
+      "definition": "Is determined by.",
+      "usage_in_passage": "\"depends less on its warmth than on the distance it spans\" is the central proposition of the passage and announces that one standard of evaluation is being replaced by another.",
+      "related_terms": [
+        "depend",
+        "dependent",
+        "relies",
+        "hinges"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "warmth": {
+      "etymology": "Old English wearm 'warm' + -th. Germanic",
+      "definition": "Friendliness and closeness of feeling.",
+      "usage_in_passage": "Set against distance, it works as the word that stands for the old standard of evaluation being set aside.",
+      "related_terms": [
+        "warm",
+        "warmly",
+        "affection",
+        "intimacy"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "spans": {
+      "etymology": "Old English spann 'the width of a hand'. Germanic",
+      "definition": "Stretches across a gap.",
+      "usage_in_passage": "A verb that recasts a relationship as a bridge crossing a distance; together with span later in the same sentence, it forms the core metaphor of the passage.",
+      "related_terms": [
+        "span",
+        "spanned",
+        "bridge",
+        "straddle"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "casual": {
+      "etymology": "Latin casus 'chance, event' → casualis",
+      "definition": "Not close or serious; informal.",
+      "usage_in_passage": "Used twice in the same sentence, it builds \"casual ties tend to span the greater distance precisely because they are casual\", a construction that looks circular but in fact states a cause.",
+      "related_terms": [
+        "casually",
+        "informal",
+        "offhand",
+        "incidental"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "ties": {
+      "etymology": "Old English tēag 'something that binds'. Germanic + -s",
+      "definition": "Connections between people.",
+      "usage_in_passage": "The word in the title and the central concept of the passage. Along with the attribute of being strong or weak, ties are treated throughout as paths for information.",
+      "related_terms": [
+        "tie",
+        "bond",
+        "link",
+        "connection"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "span": {
+      "etymology": "Old English spann 'the width of a hand'. Germanic",
+      "definition": "To stretch across.",
+      "usage_in_passage": "As a verb it shows the action of crossing a distance, and supports the passage's framework of measuring the value of a relationship by its length.",
+      "related_terms": [
+        "spans",
+        "spanned",
+        "bridge",
+        "traverse"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "precisely": {
+      "etymology": "Latin prae- 'beforehand' + caedere 'to cut' → precise + -ly",
+      "definition": "Exactly; for just this reason.",
+      "usage_in_passage": "\"precisely because they are casual\" stresses the paradox that weakness is the source of the tie's function, not a defect.",
+      "related_terms": [
+        "precise",
+        "precision",
+        "exactly",
+        "specifically"
+      ],
+      "context_sentence": "The value of a relationship as a channel depends less on its warmth than on the distance it spans, and casual ties tend to span the greater distance precisely because they are casual."
+    },
+    "consequences": {
+      "etymology": "Latin con- 'together' + sequi 'to follow' + -ence + -s",
+      "definition": "Results or effects.",
+      "usage_in_passage": "\"The consequences extend well beyond employment\" is the topic sentence of paragraph 3 and widens the argument from the specific case of finding a job to a general theory.",
+      "related_terms": [
+        "consequence",
+        "consequential",
+        "outcomes",
+        "ramifications"
+      ],
+      "context_sentence": "The consequences extend well beyond employment."
+    },
+    "extend": {
+      "etymology": "Latin ex- 'out' + tendere 'to stretch'",
+      "definition": "To reach or spread.",
+      "usage_in_passage": "Shows that the range to which the argument applies is growing, and leads to the list of rumor, technique and contagion that follows.",
+      "related_terms": [
+        "extends",
+        "extension",
+        "expand",
+        "reach"
+      ],
+      "context_sentence": "The consequences extend well beyond employment."
+    },
+    "divided": {
+      "etymology": "Latin dividere 'to separate' + -ed",
+      "definition": "Split into parts.",
+      "usage_in_passage": "\"If a community is divided into dense clusters\" forms the conditional clause that abstracts society into a network structure.",
+      "related_terms": [
+        "divide",
+        "division",
+        "partitioned",
+        "segmented"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "dense": {
+      "etymology": "Latin densus 'thick'",
+      "definition": "Closely packed; having many connections.",
+      "usage_in_passage": "A structural key word of the passage, paired with sparse. It returns in paragraph 4 as the word describing the networks of poor neighborhoods.",
+      "related_terms": [
+        "density",
+        "densely",
+        "compact",
+        "thick"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "clusters": {
+      "etymology": "Old English clyster 'bunch'. Germanic + -s",
+      "definition": "Groups of closely connected people.",
+      "usage_in_passage": "As a term from network analysis it makes circle more abstract and makes possible the argument about bridges between groups.",
+      "related_terms": [
+        "cluster",
+        "clustered",
+        "groups",
+        "cliques"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "rumor": {
+      "etymology": "Latin rumor 'gossip, noise'",
+      "definition": "A story passed from person to person that may not be true.",
+      "usage_in_passage": "Listed alongside technique and contagion, it is one of three examples showing that the structural constraint works whatever the nature of the content.",
+      "related_terms": [
+        "rumors",
+        "gossip",
+        "hearsay",
+        "report"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "technique": {
+      "etymology": "Greek tekhnē 'skill' → technicus → French technique",
+      "definition": "A method of doing something.",
+      "usage_in_passage": "Standing for useful information, it shows that such information travels along the same routes as rumor and contagion.",
+      "related_terms": [
+        "technical",
+        "technology",
+        "method",
+        "skill"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "contagion": {
+      "etymology": "Latin con- 'together' + tangere 'to touch' → contagio 'spread by contact'",
+      "definition": "The spread of disease from one person to another.",
+      "usage_in_passage": "Added as an example of something unwanted, it shows that the structure is neutral about value. It is one of the three examples that Q4 asks about.",
+      "related_terms": [
+        "contagious",
+        "contact",
+        "infection",
+        "epidemic"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "sparse": {
+      "etymology": "Latin spargere 'to scatter' → sparsus 'scattered'",
+      "definition": "Few in number and thinly spread.",
+      "usage_in_passage": "The target word of the vocabulary question. Set against dense, it refers to the few ties that connect the clusters. In paragraph 4, \"the sparse, outward-reaching kind\" carries the conclusion of the argument.",
+      "related_terms": [
+        "sparsely",
+        "sparsity",
+        "scattered",
+        "scanty"
+      ],
+      "context_sentence": "If a community is divided into dense clusters whose members all know one another, then anything that must travel between clusters, whether a rumor, a technique, or a contagion, can cross only along the sparse links that connect them."
+    },
+    "geometry": {
+      "etymology": "Greek gē 'earth' + metron 'measuring' → geōmetria",
+      "definition": "The shape of a structure and the arrangement of its parts.",
+      "usage_in_passage": "\"The same geometry that makes a bridging tie valuable also makes it fragile\" uses a mathematical word to express the paradox that value and fragility come from the same structure.",
+      "related_terms": [
+        "geometric",
+        "metric",
+        "structure",
+        "topology"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "valuable": {
+      "etymology": "Latin valere 'to be worth' → value + -able",
+      "definition": "Worth a great deal.",
+      "usage_in_passage": "Set against fragile in the same sentence, it shows that the strength and the weakness cannot be separated.",
+      "related_terms": [
+        "value",
+        "valued",
+        "precious",
+        "worthwhile"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "fragile": {
+      "etymology": "Latin frangere 'to break' → fragilis",
+      "definition": "Easily broken.",
+      "usage_in_passage": "Introduces the practical difficulty that a bridging tie is hard to keep up, and lays the ground for the discussion of policy in paragraph 4.",
+      "related_terms": [
+        "fragility",
+        "frail",
+        "brittle",
+        "delicate"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "neither": {
+      "etymology": "Old English nāhwæþer 'not either'. Germanic",
+      "definition": "Not the one and not the other.",
+      "usage_in_passage": "\"maintained by neither habit nor affection\" shows, by negating both, that no force holds a weak tie in place.",
+      "related_terms": [
+        "either",
+        "nor",
+        "none",
+        "not"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "affection": {
+      "etymology": "Latin ad- 'to' + facere 'to make' → afficere 'to move the feelings' + -ion",
+      "definition": "A feeling of fondness.",
+      "usage_in_passage": "Named with habit as one of the two forces that keep a relationship going; the passage shows that lacking both is the cause of fragility.",
+      "related_terms": [
+        "affect",
+        "affectionate",
+        "fondness",
+        "attachment"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "lapse": {
+      "etymology": "Latin labi 'to slip' → lapsus 'a slipping'",
+      "definition": "To come to an end through lack of attention.",
+      "usage_in_passage": "Shows how a bridging tie is lost without anyone intending it, and gives the route by which the metaphor of islands in the preceding sentence becomes real.",
+      "related_terms": [
+        "lapsed",
+        "elapse",
+        "expire",
+        "dissolve"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "busy": {
+      "etymology": "Old English bisig 'busy'. Germanic",
+      "definition": "Having a lot to do.",
+      "usage_in_passage": "Puts the cause of a broken tie down to everyday busyness, not ill will, and shows that the fragility of the structure is hard to avoid.",
+      "related_terms": [
+        "busily",
+        "occupied",
+        "engaged",
+        "preoccupied"
+      ],
+      "context_sentence": "The same geometry that makes a bridging tie valuable also makes it fragile, for a connection maintained by neither habit nor affection is the first to lapse when either party grows busy."
+    },
+    "composed": {
+      "etymology": "Latin com- 'together' + ponere 'to put' → componere + -ed",
+      "definition": "Made up of.",
+      "usage_in_passage": "\"A society composed entirely of intimate bonds\" sets up a thought experiment and draws a paradox from an extreme assumption.",
+      "related_terms": [
+        "compose",
+        "composition",
+        "constituted",
+        "comprised"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "entirely": {
+      "etymology": "Latin integer 'untouched' → entire + -ly",
+      "definition": "Completely; wholly.",
+      "usage_in_passage": "By making the assumption extreme, it brings into sharp focus how badly a society made only of intimacy would work.",
+      "related_terms": [
+        "entire",
+        "entirety",
+        "wholly",
+        "completely"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "intimate": {
+      "etymology": "Latin intimus 'innermost' → intimatus",
+      "definition": "Very close and personal.",
+      "usage_in_passage": "Takes up intimacy from paragraph 1 in adjective form and fixes the object of the thought experiment.",
+      "related_terms": [
+        "intimacy",
+        "close",
+        "familiar",
+        "confidential"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "paradoxically": {
+      "etymology": "Greek para- 'contrary to' + doxa 'accepted opinion' → paradox + -ic + -ally",
+      "definition": "In a way that seems to contradict what one would expect.",
+      "usage_in_passage": "Placed as an inserted word, it serves as a signal telling the reader that the conclusion runs against intuition.",
+      "related_terms": [
+        "paradox",
+        "paradoxical",
+        "ironically",
+        "counterintuitively"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "researchers": {
+      "etymology": "re- 'again' + Old French cerchier 'to search' → research + -er + -s",
+      "definition": "People who carry out careful study to discover facts.",
+      "usage_in_passage": "They appear as the ones who back up the thought experiment with empirical research, giving the claim a basis in evidence.",
+      "related_terms": [
+        "research",
+        "researched",
+        "investigators",
+        "scholars"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "spread": {
+      "etymology": "Old English sprǣdan 'to spread'. Germanic",
+      "definition": "The process by which something reaches more and more people.",
+      "usage_in_passage": "\"the spread of innovations\" shows the specific field of research to which the theory of the passage applies.",
+      "related_terms": [
+        "spreading",
+        "diffusion",
+        "propagation",
+        "dissemination"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "innovations": {
+      "etymology": "Latin in- 'into' + novus 'new' → innovare + -ation + -s",
+      "definition": "New ideas, methods or products.",
+      "usage_in_passage": "Named as the subject of diffusion research, it brings technique back and echoes it within paragraph 3.",
+      "related_terms": [
+        "innovate",
+        "innovative",
+        "inventions",
+        "novelties"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "repeatedly": {
+      "etymology": "Latin re- 'again' + petere 'to seek' → repeat + -ed + -ly",
+      "definition": "Many times.",
+      "usage_in_passage": "Shows that several findings agree, not just one study, and reinforces how solid the claim is.",
+      "related_terms": [
+        "repeat",
+        "repetition",
+        "recurrently",
+        "consistently"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "adoption": {
+      "etymology": "Latin ad- 'to' + optare 'to choose' → adoptare + -ion",
+      "definition": "The act of starting to use something new.",
+      "usage_in_passage": "\"adoption stalls\" names the outcome that can be observed in diffusion research.",
+      "related_terms": [
+        "adopt",
+        "adopted",
+        "uptake",
+        "acceptance"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "stalls": {
+      "etymology": "Old English steall 'place, enclosure' → stall. Germanic",
+      "definition": "Stops making progress.",
+      "usage_in_passage": "A verb for what happens when bridging ties are missing; it says that what the theory predicts is actually observed.",
+      "related_terms": [
+        "stall",
+        "stalled",
+        "halt",
+        "stagnate"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "absent": {
+      "etymology": "Latin ab- 'away' + esse 'to be' → absens",
+      "definition": "Not present; missing.",
+      "usage_in_passage": "The word that closes the clause, showing that the absence of bridges is the cause of the stall.",
+      "related_terms": [
+        "absence",
+        "absentee",
+        "lacking",
+        "missing"
+      ],
+      "context_sentence": "A society composed entirely of intimate bonds would be, paradoxically, a society through which very little could move, and researchers studying the spread of innovations have repeatedly found that adoption stalls where such bridging connections are absent."
+    },
+    "implications": {
+      "etymology": "Latin in- 'in' + plicare 'to fold' → implicare + -ation + -s",
+      "definition": "Consequences that follow from something.",
+      "usage_in_passage": "\"The practical implications are less comfortable than they first appear\" is the topic sentence of paragraph 4 and moves the discussion from theory to policy.",
+      "related_terms": [
+        "imply",
+        "implied",
+        "ramifications",
+        "consequences"
+      ],
+      "context_sentence": "The practical implications are less comfortable than they first appear."
+    },
+    "comfortable": {
+      "etymology": "Latin com- (intensive) + fortis 'strong' → comfort + -able",
+      "definition": "Pleasant and easy to accept.",
+      "usage_in_passage": "Used in a negative comparison, it warns that applying the theory does not allow an optimistic conclusion.",
+      "related_terms": [
+        "comfort",
+        "comforting",
+        "reassuring",
+        "agreeable"
+      ],
+      "context_sentence": "The practical implications are less comfortable than they first appear."
+    },
+    "weak": {
+      "etymology": "Old Norse veikr 'weak'. Germanic",
+      "definition": "Not strong.",
+      "usage_in_passage": "As the \"weak ties\" of the title, it names the central concept of the passage and works as another word for casual.",
+      "related_terms": [
+        "weakness",
+        "weaken",
+        "faint",
+        "slight"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "conclude": {
+      "etymology": "Latin con- 'together' + claudere 'to close' → concludere 'to bring to a close'",
+      "definition": "To decide something after reasoning.",
+      "usage_in_passage": "\"one might conclude that anyone can accumulate them freely\" presents a mistaken inference that is denied by the but right after it.",
+      "related_terms": [
+        "conclusion",
+        "concluding",
+        "infer",
+        "deduce"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "accumulate": {
+      "etymology": "Latin ad- 'to' + cumulus 'heap' → accumulare",
+      "definition": "To collect more and more of something.",
+      "usage_in_passage": "States the assumption that weak ties can be added at will, which the next clause denies by showing that they are limited by structure.",
+      "related_terms": [
+        "accumulation",
+        "accumulated",
+        "amass",
+        "gather"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "freely": {
+      "etymology": "Old English frēo 'free' → free + -ly. Germanic",
+      "definition": "Without limits.",
+      "usage_in_passage": "The word at the heart of the assumption being denied; it stands in direct opposition to constrained, which follows.",
+      "related_terms": [
+        "free",
+        "freedom",
+        "liberally",
+        "unrestrictedly"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "circles": {
+      "etymology": "Latin circulus 'ring' + -s",
+      "definition": "Groups of people who know one another.",
+      "usage_in_passage": "Takes up circle from paragraph 2 in the plural and leads to a new point: the range a person can reach is limited.",
+      "related_terms": [
+        "circle",
+        "circular",
+        "cliques",
+        "clusters"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "constrained": {
+      "etymology": "Latin con- 'together' + stringere 'to draw tight' → constringere + -ed",
+      "definition": "Limited.",
+      "usage_in_passage": "\"constrained by where that person already stands\" shows that gaining weak ties depends on a person's position, not on individual effort.",
+      "related_terms": [
+        "constrain",
+        "constraint",
+        "restricted",
+        "limited"
+      ],
+      "context_sentence": "Because weak ties are cheap to maintain, one might conclude that anyone can accumulate them freely, but the circles a person can reach are constrained by where that person already stands."
+    },
+    "poverty": {
+      "etymology": "Latin pauper 'poor' → paupertas → Old French poverte",
+      "definition": "The condition of being poor.",
+      "usage_in_passage": "\"Studies of urban poverty\" marks the point where the abstract theory connects with real inequality.",
+      "related_terms": [
+        "poor",
+        "impoverished",
+        "destitution",
+        "deprivation"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "isolated": {
+      "etymology": "Latin insula 'island' → Italian isolato 'made into an island'",
+      "definition": "Cut off from others.",
+      "usage_in_passage": "Carries on, at the level of etymology, the metaphor \"the clusters become islands\" from paragraph 3, and links theory to reality.",
+      "related_terms": [
+        "isolate",
+        "isolation",
+        "secluded",
+        "insular"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "neighborhoods": {
+      "etymology": "Old English nēahgebūr 'one who lives nearby' → neighbor + -hood + -s. Germanic",
+      "definition": "Districts where people live.",
+      "usage_in_passage": "Moves the unit of discussion from the individual to the community and prepares for the treatment of policy implications.",
+      "related_terms": [
+        "neighbor",
+        "neighboring",
+        "districts",
+        "communities"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "deficient": {
+      "etymology": "Latin de- 'away' + facere 'to make' → deficere 'to be lacking' + -ent",
+      "definition": "Not having enough of something.",
+      "usage_in_passage": "\"are not deficient in social connection\" explicitly denies the popular assumption and relocates where the problem lies.",
+      "related_terms": [
+        "deficiency",
+        "deficit",
+        "lacking",
+        "inadequate"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "unusually": {
+      "etymology": "un- (negation) + Latin usus 'custom' → usual + -ly",
+      "definition": "To a degree that is not normal; remarkably.",
+      "usage_in_passage": "\"often unusually dense\" stresses the surprising fact that the networks of isolated areas, far from being weak, are stronger than average.",
+      "related_terms": [
+        "unusual",
+        "usually",
+        "exceptionally",
+        "remarkably"
+      ],
+      "context_sentence": "Studies of urban poverty have found that residents of isolated neighborhoods are not deficient in social connection; their networks are often unusually dense."
+    },
+    "outward-reaching": {
+      "etymology": "out + -ward (direction) + reach + -ing. A Germanic compound",
+      "definition": "Extending to people outside one's own group.",
+      "usage_in_passage": "\"the sparse, outward-reaching kind\" defines in one word the nature of what is missing, and is the key to the inference in Q5.",
+      "related_terms": [
+        "outward",
+        "reach",
+        "outgoing",
+        "external"
+      ],
+      "context_sentence": "What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents."
+    },
+    "disadvantage": {
+      "etymology": "dis- (negation) + Latin ab ante 'in front' → the negative of advantage",
+      "definition": "A condition that makes success harder.",
+      "usage_in_passage": "\"the resulting disadvantage compounds\" shows that a structural gap grows worse with time.",
+      "related_terms": [
+        "advantage",
+        "disadvantaged",
+        "handicap",
+        "detriment"
+      ],
+      "context_sentence": "What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents."
+    },
+    "compounds": {
+      "etymology": "Latin com- 'together' + ponere 'to put' → componere → compound",
+      "definition": "Builds on itself and grows worse.",
+      "usage_in_passage": "It carries the sense of the economic term for interest growing on interest, and shows that the disadvantage reinforces itself.",
+      "related_terms": [
+        "compound",
+        "compounded",
+        "accumulate",
+        "aggravate"
+      ],
+      "context_sentence": "What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents."
+    },
+    "isolation": {
+      "etymology": "Latin insula 'island' → isolate + -ion",
+      "definition": "The state of being cut off from others.",
+      "usage_in_passage": "\"the contacts that would carry news of opportunity are exactly the contacts that isolation prevents\" puts the vicious circle into a formula and makes the sharpest sentence in the passage.",
+      "related_terms": [
+        "isolate",
+        "isolated",
+        "seclusion",
+        "insularity"
+      ],
+      "context_sentence": "What they lack is the sparse, outward-reaching kind, and the resulting disadvantage compounds, since the contacts that would carry news of opportunity are exactly the contacts that isolation prevents."
+    },
+    "assumption": {
+      "etymology": "Latin ad- 'to' + sumere 'to take' → assumere + -ption",
+      "definition": "Something accepted as true without proof.",
+      "usage_in_passage": "\"Programs designed on the assumption that such communities need more solidarity\" identifies policy built on a mistaken premise as the target of criticism.",
+      "related_terms": [
+        "assume",
+        "assumed",
+        "presumption",
+        "premise"
+      ],
+      "context_sentence": "Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does."
+    },
+    "solidarity": {
+      "etymology": "Latin solidus 'firm' → French solidarité",
+      "definition": "Unity and mutual support within a group.",
+      "usage_in_passage": "Names the value that well-meaning policy tends to aim at, and carries the passage's conclusion that this aim can miss the mark.",
+      "related_terms": [
+        "solid",
+        "solidify",
+        "unity",
+        "cohesion"
+      ],
+      "context_sentence": "Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does."
+    },
+    "exist": {
+      "etymology": "Latin ex- 'out' + sistere 'to stand' → existere",
+      "definition": "To be real or present.",
+      "usage_in_passage": "\"address a problem that does not exist\" states concisely that the policy spins without effect.",
+      "related_terms": [
+        "existence",
+        "existing",
+        "occur",
+        "subsist"
+      ],
+      "context_sentence": "Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does."
+    },
+    "neglecting": {
+      "etymology": "Latin nec- (negation) + legere 'to choose' → neglegere 'to disregard' + -ing",
+      "definition": "Failing to give attention to.",
+      "usage_in_passage": "Placed close to the final words of the passage, it closes with a matched pair that names a double failure: dealing with a problem that does not exist and leaving the real one untouched.",
+      "related_terms": [
+        "neglect",
+        "neglected",
+        "overlooking",
+        "disregarding"
+      ],
+      "context_sentence": "Programs designed on the assumption that such communities need more solidarity may therefore address a problem that does not exist while neglecting the one that does."
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "passages": [
+    {
+      "id": "passage_009",
+      "title": "The Bystander Who Didn't Move",
+      "topic": "Society",
+      "word_count": 494,
+      "added": "2026-08-24"
+    },
+    {
+      "id": "passage_008",
+      "title": "Why Rivers Refuse to Run Straight",
+      "topic": "Environment",
+      "word_count": 486,
+      "added": "2026-08-21"
+    },
+    {
+      "id": "passage_007",
+      "title": "Who Owns the Yardstick",
+      "topic": "History",
+      "word_count": 460,
+      "added": "2026-08-15"
+    },
+    {
+      "id": "passage_006",
+      "title": "How Bacteria Take a Vote",
+      "topic": "Science",
+      "word_count": 465,
+      "added": "2026-08-14"
+    },
+    {
+      "id": "passage_005",
+      "title": "The Strength of Weak Ties",
+      "topic": "Society",
+      "word_count": 460,
+      "added": "2026-08-11"
+    },
+    {
+      "id": "passage_004",
+      "title": "Reading the Air Trapped in Ice",
+      "topic": "Science",
+      "word_count": 473,
+      "added": "2026-08-09"
+    },
+    {
+      "id": "passage_003",
+      "title": "The Economics of the Medieval Book",
+      "topic": "History",
+      "word_count": 476,
+      "added": "2026-08-07"
+    },
+    {
+      "id": "passage_002",
+      "title": "The Constraints of Fresco",
+      "topic": "Arts",
+      "word_count": 467,
+      "added": "2026-08-06"
+    },
+    {
+      "id": "passage_001",
+      "title": "Peatlands and the Paradox of Slow Decay",
+      "topic": "Environment",
+      "word_count": 467,
+      "added": "2026-08-04"
+    }
+  ]
+}

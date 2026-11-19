@@ -1,0 +1,1846 @@
+{
+  "id": "passage_001",
+  "title": "Peatlands and the Paradox of Slow Decay",
+  "topic": "Environment",
+  "body": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined. This disproportion arises not from exceptional productivity but from exceptionally slow decay. In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade. In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually. Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since.\n\nThe mechanism behind this arrested breakdown is chemical as much as physical. Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer. Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules. Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place.\n\nThe latch, however, is easily released. When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed. The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime. Drained peat also becomes combustible. The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them.\n\nRestoration therefore concentrates on hydrology rather than on planting. Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay. The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it. Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries. Restoration is correspondingly slow, since a bog that required eight thousand years to build cannot be reconstituted within a decade. The arithmetic of peatland management thus depends less on annual accounting than on the horizon over which the accounting is done.",
+  "word_count": 467,
+  "added": "2026-08-04",
+  "questions": [
+    {
+      "id": 1,
+      "type": "Factual",
+      "question": "According to paragraph 2, why does oxygen move through peat much more slowly than through dry soil?",
+      "target_word": null,
+      "choices": {
+        "A": "Sphagnum mosses consume the available oxygen as they grow.",
+        "B": "Water occupies the pore spaces that would otherwise contain air.",
+        "C": "The acidity of the peat chemically binds oxygen to organic molecules.",
+        "D": "A thin surface layer of bacteria blocks oxygen from descending."
+      },
+      "correct": "B",
+      "explanation": "Paragraph 2 says \"Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil\", which states directly that the cause is water filling the gaps where air would otherwise be. A is not stated in the passage. C is also wrong: it is the phenolic compounds that inhibit the enzymes, and the passage never says that oxygen is bound. D reverses cause and effect: the aerobic bacteria are limited to the surface layer as a result of the lack of oxygen."
+    },
+    {
+      "id": 2,
+      "type": "Vocabulary",
+      "question": "The word \"arrested\" in paragraph 2 is closest in meaning to",
+      "target_word": "arrested",
+      "choices": {
+        "A": "halted",
+        "B": "detected",
+        "C": "accelerated",
+        "D": "measured"
+      },
+      "correct": "A",
+      "explanation": "\"arrested breakdown\" restates \"decomposition stalls\" from paragraph 1 and refers to a state in which decomposition has stopped. So halted is the closest in meaning. B, detected (to discover), and D, measured (to take a measurement), are wrong answers that come from the legal and measuring associations of arrest; neither carries the meaning 'to stop' that the context requires. C, accelerated, means exactly the opposite."
+    },
+    {
+      "id": 3,
+      "type": "Reference",
+      "question": "The word \"they\" in paragraph 2 (\"they actively acidify their surroundings\") refers to",
+      "target_word": null,
+      "choices": {
+        "A": "Sphagnum mosses",
+        "B": "aerobic bacteria",
+        "C": "northern bogs",
+        "D": "phenolic compounds"
+      },
+      "correct": "A",
+      "explanation": "The subject of the main clause before the colon is \"Sphagnum mosses\", and \"the dominant peat-forming plants of northern bogs\" is an appositive that describes it. The clause after the colon spells out how these mosses strengthen the constraint. B, aerobic bacteria, is the subject of the previous sentence, but the bacteria are not described as the ones doing the acidifying. C, northern bogs, is only part of a modifying phrase that says where the mosses belong. D, phenolic compounds, is what they release, not they itself."
+    },
+    {
+      "id": 4,
+      "type": "Inference",
+      "question": "What can be inferred from paragraph 3 about the rate at which peat stores and loses carbon?",
+      "target_word": null,
+      "choices": {
+        "A": "Carbon is lost from drained peat at roughly the same rate at which it originally accumulated.",
+        "B": "Peat that has been drained will eventually stop losing carbon once its surface stops subsiding.",
+        "C": "Loss of carbon after drainage proceeds far faster than the accumulation that preceded it.",
+        "D": "Peatlands release most of their carbon through fire rather than through microbial respiration."
+      },
+      "correct": "C",
+      "explanation": "Paragraph 3 says \"carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime\". Carbon that took ten thousand years to build up can be released within one human lifetime, so we can infer that release is orders of magnitude faster than accumulation. A ignores the contrast the passage draws. B is wrong because the passage does not state any causal link by which carbon loss stops once the surface stops subsiding. D is wrong because the passage does not compare fire and microbial respiration to say which is the main route."
+    },
+    {
+      "id": 5,
+      "type": "Rhetorical Purpose",
+      "question": "Why does the author mention the smoldering fires that blanket parts of Southeast Asia in haze?",
+      "target_word": null,
+      "choices": {
+        "A": "To argue that fire suppression should be the main priority of peatland policy",
+        "B": "To identify the original cause of drainage in tropical peatlands",
+        "C": "To contrast tropical peatlands with the northern bogs described earlier",
+        "D": "To illustrate an additional consequence of drainage that ordinary firefighting cannot address"
+      },
+      "correct": "D",
+      "explanation": "This sentence follows \"Drained peat also becomes combustible.\" and, as also signals, it gives a concrete example of an additional consequence of drainage. It goes on to explain why ordinary firefighting does not work: \"burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them\". A is wrong because the passage makes no claim about policy priorities. B reverses cause and effect, since the fires are a result of drainage, not its cause. C is wrong because comparing northern and southern peatlands is not the point of this paragraph."
+    }
+  ],
+  "vocab": {
+    "peatlands": {
+      "etymology": "peat + land + -s (plural). peat goes back to Medieval Latin peta 'a piece of peat'.",
+      "definition": "Wetlands where peat has built up in thick layers.",
+      "usage_in_passage": "The opening \"Peatlands occupy barely three percent of the global land surface\" presents the subject of the whole passage and sets up the paradox of a small area holding a large amount of stored carbon.",
+      "related_terms": [
+        "bog",
+        "mire",
+        "wetland",
+        "fen"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "occupy": {
+      "etymology": "Latin occupare = ob- (toward) + capere (to seize). From 'to take first' to 'to take up a place'.",
+      "definition": "To take up a certain space.",
+      "usage_in_passage": "\"Peatlands occupy barely three percent\" gives the share of land area and prepares for the contrast introduced by yet immediately afterward.",
+      "related_terms": [
+        "inhabit",
+        "seize",
+        "possess",
+        "occupancy"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "barely": {
+      "etymology": "Old English bær (bare, uncovered) + -ly (adverb-forming). From 'all but nakedly' to 'only just'.",
+      "definition": "Only just; hardly as much as.",
+      "usage_in_passage": "\"barely three percent\" pushes the figure toward the minimum, widening the gap with what comes next: an amount of carbon greater than that in all forests.",
+      "related_terms": [
+        "hardly",
+        "scarcely",
+        "merely",
+        "narrowly"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "carbon": {
+      "etymology": "Latin carbo 'charcoal, ember' + -on (suffix for element names).",
+      "definition": "The chemical element that is the main component of organic matter and carbon dioxide.",
+      "usage_in_passage": "\"the carbon locked in their saturated soils\" is the central concept of the passage and forms the axis of its argument: accumulation (paragraphs 1 and 2) and release (paragraph 3).",
+      "related_terms": [
+        "dioxide",
+        "organic",
+        "sequestration",
+        "emission"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "locked": {
+      "etymology": "Old English loc 'lock, enclosure' + -ed.",
+      "definition": "Shut in so that it cannot move.",
+      "usage_in_passage": "\"the carbon locked in their saturated soils\" uses the image of a lock to show that the carbon is fixed in place, outside the cycle, and it forms a chain of metaphors with the enzymic latch in paragraph 2 and \"easily released\" in paragraph 3.",
+      "related_terms": [
+        "sealed",
+        "trapped",
+        "confined",
+        "immobilized"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "saturated": {
+      "etymology": "Latin satur 'full' + -ate (verb-forming) + -ed.",
+      "definition": "Holding as much water as it can.",
+      "usage_in_passage": "\"saturated soils\" is the first mention of the physical condition that stops decomposition, and it foreshadows the explanation of pore spaces in paragraph 2.",
+      "related_terms": [
+        "waterlogged",
+        "soaked",
+        "permeated",
+        "saturation"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "soils": {
+      "etymology": "Old French soil < Latin solum 'ground' + -s.",
+      "definition": "The upper layer of earth in which plants grow.",
+      "usage_in_passage": "As \"saturated soils\" it names the place where the carbon is stored, and it is contrasted with \"dry soil\" later on.",
+      "related_terms": [
+        "sediment",
+        "substrate",
+        "humus",
+        "ground"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "exceeds": {
+      "etymology": "Latin ex- (out) + cedere (to go), giving 'to go beyond', + -s.",
+      "definition": "Is greater in amount than.",
+      "usage_in_passage": "\"exceeds the amount held in every forest on the planet combined\" is the core of the contrast in the first sentence and establishes the imbalance between share of area and amount stored.",
+      "related_terms": [
+        "surpass",
+        "outstrip",
+        "transcend",
+        "outweigh"
+      ],
+      "context_sentence": "Peatlands occupy barely three percent of the global land surface, yet the carbon locked in their saturated soils exceeds the amount held in every forest on the planet combined."
+    },
+    "disproportion": {
+      "etymology": "dis- (negation) + pro- (before) + Latin portio 'share'.",
+      "definition": "A state in which things are out of proportion.",
+      "usage_in_passage": "In \"This disproportion arises not from\" it sums up the whole preceding contrast in one word. It is an abstract noun that points back and bridges the argument from presenting the phenomenon to explaining its cause.",
+      "related_terms": [
+        "imbalance",
+        "discrepancy",
+        "asymmetry",
+        "mismatch"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "arises": {
+      "etymology": "Old English ā- (intensive prefix) + risan (to rise) + -s.",
+      "definition": "Comes about (as a result).",
+      "usage_in_passage": "In the pattern 'arises not from X but from Y', the wrong cause is ruled out first so that the right cause stands out.",
+      "related_terms": [
+        "emerge",
+        "originate",
+        "stem",
+        "derive"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "exceptional": {
+      "etymology": "Latin ex- (out) + capere (to take), giving except 'to leave out', + -ion + -al.",
+      "definition": "Far beyond the ordinary; unusual.",
+      "usage_in_passage": "In \"not from exceptional productivity\" it sits on the side that is denied, shutting off the guess a reader is likely to make: that there is a lot of carbon because a lot is produced.",
+      "related_terms": [
+        "extraordinary",
+        "remarkable",
+        "singular",
+        "exception"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "productivity": {
+      "etymology": "Latin pro- (forward) + ducere (to lead), giving produce, + -ivity (expressing a quality).",
+      "definition": "The capacity to produce; in ecology, the amount of organic matter produced per unit of time.",
+      "usage_in_passage": "It is denied as the cause of the amount of carbon in peatlands, and the slowness of decay is offered as the cause instead.",
+      "related_terms": [
+        "biomass",
+        "yield",
+        "output",
+        "productive"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "exceptionally": {
+      "etymology": "exceptional + -ly.",
+      "definition": "To an unusual degree; extremely.",
+      "usage_in_passage": "\"exceptionally slow decay\" strengthens the cause that is affirmed, and by matching the form of exceptional productivity just before it, it makes the contrast between what is denied and what is affirmed stand out in sound as well.",
+      "related_terms": [
+        "extremely",
+        "remarkably",
+        "strikingly",
+        "unusually"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "decay": {
+      "etymology": "Latin de- (down) + cadere (to fall). From 'to fall into ruin' to 'to rot'.",
+      "definition": "The breaking down of organic matter by microbes.",
+      "usage_in_passage": "\"exceptionally slow decay\" is the main cause given in the passage, and the enzymic latch in paragraph 2 is introduced to explain this slowness.",
+      "related_terms": [
+        "decomposition",
+        "rot",
+        "degradation",
+        "breakdown"
+      ],
+      "context_sentence": "This disproportion arises not from exceptional productivity but from exceptionally slow decay."
+    },
+    "terrestrial": {
+      "etymology": "Latin terra 'earth' + -estris + -al.",
+      "definition": "Of the land.",
+      "usage_in_passage": "\"In most terrestrial ecosystems\" marks the range over which the general rule applies and makes the exception in the next sentence, the peatland, stand out.",
+      "related_terms": [
+        "terrain",
+        "subterranean",
+        "extraterrestrial",
+        "aquatic"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "ecosystems": {
+      "etymology": "Greek oikos 'house', giving eco-, + system 'something put together' + -s.",
+      "definition": "Functional units made up of living things and their environment.",
+      "usage_in_passage": "It provides the framework for comparing peatlands with other ecosystems and sets up the pattern of argument in which exceptionality is shown through comparison.",
+      "related_terms": [
+        "habitat",
+        "biome",
+        "ecology",
+        "community"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "organic": {
+      "etymology": "Greek organon 'tool, organ' + -ic.",
+      "definition": "Coming from living things; made of carbon compounds.",
+      "usage_in_passage": "\"the organic matter that plants deposit each year\" identifies what is being decomposed and prepares the reader to follow carbon going in and out.",
+      "related_terms": [
+        "organism",
+        "inorganic",
+        "biomass",
+        "biological"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "deposit": {
+      "etymology": "Latin de- (down) + ponere 'to place'.",
+      "definition": "To lay down; to put in place.",
+      "usage_in_passage": "In \"the organic matter that plants deposit each year\" the verb shows the supply side, and it pairs with the noun deposits (layers of accumulated material) at the end of paragraph 1 and in paragraph 3.",
+      "related_terms": [
+        "accumulate",
+        "sediment",
+        "deposition",
+        "settle"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "entirely": {
+      "etymology": "Latin integer 'untouched', giving Old French entier, + -ly.",
+      "definition": "Completely.",
+      "usage_in_passage": "\"almost entirely consumed by microbes within a decade\" stresses how thorough decomposition is in ordinary ecosystems and creates a gap with stalls in the peatland.",
+      "related_terms": [
+        "completely",
+        "wholly",
+        "thoroughly",
+        "entirety"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "consumed": {
+      "etymology": "Latin con- (thoroughly) + sumere 'to take' + -ed.",
+      "definition": "Eaten up; used up.",
+      "usage_in_passage": "It shows that microbes process the organic matter and leave nothing behind, in direct contrast with \"decomposition stalls\" immediately afterward.",
+      "related_terms": [
+        "devour",
+        "absorb",
+        "expend",
+        "consumption"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "microbes": {
+      "etymology": "Greek mikros 'small' + bios 'life' + -s.",
+      "definition": "Microscopic living organisms.",
+      "usage_in_passage": "They are introduced as the agents of decomposition and reappear in paragraph 2 in \"the enzymes microbes secrete\", where they become the thing that is held back.",
+      "related_terms": [
+        "microbial",
+        "bacteria",
+        "microorganism",
+        "microscopic"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "decade": {
+      "etymology": "Greek deka 'ten' + -ade.",
+      "definition": "A period of ten years.",
+      "usage_in_passage": "\"within a decade\" gives the time scale of ordinary decomposition and becomes the baseline against which \"ten thousand years\" in paragraph 3 and the lifetime of methane in the final paragraph are compared.",
+      "related_terms": [
+        "century",
+        "millennium",
+        "decadal",
+        "era"
+      ],
+      "context_sentence": "In most terrestrial ecosystems, the organic matter that plants deposit each year is almost entirely consumed by microbes within a decade."
+    },
+    "waterlogged": {
+      "etymology": "water + log (the state of a ship that has taken on water and lies as motionless as a log) + -ed.",
+      "definition": "Soaked with water that does not drain away.",
+      "usage_in_passage": "\"In a waterlogged peatland, by contrast\" states the condition under which the exception holds and fixes the premise for the explanation that follows.",
+      "related_terms": [
+        "saturated",
+        "flooded",
+        "boggy",
+        "inundated"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "peatland": {
+      "etymology": "Singular form of peat + land.",
+      "definition": "An area of land covered with peat.",
+      "usage_in_passage": "Whereas the plural peatlands refers to the general case, the singular here picks out a typical example and describes what happens in an individual place.",
+      "related_terms": [
+        "bog",
+        "fen",
+        "mire",
+        "wetland"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "contrast": {
+      "etymology": "Latin contra- (against) + stare 'to stand'.",
+      "definition": "A marked difference; opposition.",
+      "usage_in_passage": "\"by contrast\" is a discourse marker that tells the reader in advance of the turn from the general rule to the exception, making the logical structure of paragraph 1 visible.",
+      "related_terms": [
+        "comparison",
+        "juxtaposition",
+        "divergence",
+        "opposition"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "decomposition": {
+      "etymology": "de- (separation) + com- (together) + ponere 'to place', giving the reverse of compose, + -ition.",
+      "definition": "The process by which organic matter returns to inorganic matter.",
+      "usage_in_passage": "\"decomposition stalls\" presents the central phenomenon of the passage as a noun, and it is restated in paragraph 2 as \"arrested breakdown\".",
+      "related_terms": [
+        "decay",
+        "breakdown",
+        "degradation",
+        "mineralization"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "stalls": {
+      "etymology": "Old English steall 'standing place', giving 'to come to a stand', + -s.",
+      "definition": "Stops partway; fails to go forward.",
+      "usage_in_passage": "\"decomposition stalls\" is restated by \"arrested breakdown\" at the start of paragraph 2, which makes it the evidence for the answer to the vocabulary question on arrested.",
+      "related_terms": [
+        "halt",
+        "stagnate",
+        "falter",
+        "stall"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "successive": {
+      "etymology": "Latin sub- (under) + cedere 'to go', giving succeed, + -ive.",
+      "definition": "Following one after another.",
+      "usage_in_passage": "\"successive generations of vegetation accumulate\" shows time piling up and gives depth to the archive metaphor.",
+      "related_terms": [
+        "consecutive",
+        "sequential",
+        "subsequent",
+        "succession"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "vegetation": {
+      "etymology": "Latin vegetare 'to enliven' + -ation.",
+      "definition": "The plants of an area taken as a whole.",
+      "usage_in_passage": "It names the actual material that accumulates and lets the reader understand what \"a dark, fibrous archive\" immediately afterward is made of.",
+      "related_terms": [
+        "flora",
+        "foliage",
+        "biomass",
+        "undergrowth"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "accumulate": {
+      "etymology": "Latin ad- (to) + cumulus 'heap' + -ate.",
+      "definition": "To build up little by little.",
+      "usage_in_passage": "It is the central verb on the accumulation side and corresponds to the past form accumulated in paragraph 3, creating the point tested in question 4: the difference in speed between accumulation and loss.",
+      "related_terms": [
+        "amass",
+        "aggregate",
+        "accrue",
+        "accumulation"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "fibrous": {
+      "etymology": "Latin fibra 'fiber' + -ous.",
+      "definition": "Made of fibers.",
+      "usage_in_passage": "\"a dark, fibrous archive\" describes what peat looks like and at the same time implies that plant tissue remains without being decomposed.",
+      "related_terms": [
+        "fiber",
+        "filament",
+        "stringy",
+        "coarse"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "deepen": {
+      "etymology": "deep + -en (suffix that turns an adjective into a verb).",
+      "definition": "To become deeper.",
+      "usage_in_passage": "\"may deepen by less than a millimeter annually\" puts a number on the rate of accumulation so that it can be compared, by order of magnitude, with the rate of subsidence in paragraph 3.",
+      "related_terms": [
+        "thicken",
+        "intensify",
+        "heighten",
+        "broaden"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "millimeter": {
+      "etymology": "Latin mille 'thousand' + Greek metron 'measure'. One thousandth of a meter.",
+      "definition": "A unit of length equal to one thousandth of a meter.",
+      "usage_in_passage": "It is the unit for the yearly amount of accumulation, and it is contrasted with the subsidence rate \"several centimeters a year\" in paragraph 3, which makes the slowness of accumulation stand out.",
+      "related_terms": [
+        "centimeter",
+        "micrometer",
+        "metric",
+        "kilometer"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "annually": {
+      "etymology": "Latin annus 'year' + -al + -ly.",
+      "definition": "Every year; per year.",
+      "usage_in_passage": "It expresses accumulation as a yearly rate and connects to the discussion of time scale in \"annual accounting\" in the final paragraph.",
+      "related_terms": [
+        "yearly",
+        "perennial",
+        "biannual",
+        "annual"
+      ],
+      "context_sentence": "In a waterlogged peatland, by contrast, decomposition stalls, and successive generations of vegetation accumulate as a dark, fibrous archive that may deepen by less than a millimeter annually."
+    },
+    "peat": {
+      "etymology": "Medieval Latin peta 'a piece of peat'.",
+      "definition": "A deposit of plant remains that have not fully decomposed.",
+      "usage_in_passage": "In \"Most northern peat began forming\" it is an uncountable noun for the material itself, used differently from peatland, which refers to a place.",
+      "related_terms": [
+        "humus",
+        "turf",
+        "lignite",
+        "peatland"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "withdrew": {
+      "etymology": "with- (back) + past tense of draw 'to pull'.",
+      "definition": "Moved back; retreated.",
+      "usage_in_passage": "\"as the last ice sheets withdrew\" places the start of peat formation at the end of the last ice age and shows that accumulation runs on a geological time scale.",
+      "related_terms": [
+        "retreat",
+        "recede",
+        "retract",
+        "withdrawal"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "deposits": {
+      "etymology": "Plural noun form of deposit.",
+      "definition": "Layers of accumulated material.",
+      "usage_in_passage": "In \"the deposits have been thickening\" the word shifts from verb to noun, and in paragraph 3 it reappears as what has been \"sealed for millennia\".",
+      "related_terms": [
+        "sediment",
+        "stratum",
+        "layer",
+        "accumulation"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "thickening": {
+      "etymology": "thick + -en (verb-forming) + -ing.",
+      "definition": "Growing thicker.",
+      "usage_in_passage": "It is used in the present perfect progressive and expresses the slow accumulation that has continued without a break from the end of the ice age to the present.",
+      "related_terms": [
+        "accumulating",
+        "deepening",
+        "swelling",
+        "thicken"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "imperceptibly": {
+      "etymology": "im- (negation) + per- (through) + capere 'to take', giving perceive, + -ible + -ly.",
+      "definition": "So slightly that it cannot be noticed.",
+      "usage_in_passage": "\"almost imperceptibly\" restates the millimeter figure in the language of the senses and impresses the slowness of accumulation on the reader a second time.",
+      "related_terms": [
+        "subtly",
+        "gradually",
+        "undetectably",
+        "perceptible"
+      ],
+      "context_sentence": "Most northern peat began forming as the last ice sheets withdrew, and the deposits have been thickening, almost imperceptibly, ever since."
+    },
+    "mechanism": {
+      "etymology": "Greek mekhane 'device' + -ism.",
+      "definition": "The way a phenomenon is made to work.",
+      "usage_in_passage": "\"The mechanism behind this arrested breakdown\" is the topic sentence of paragraph 2 and switches the argument from describing the phenomenon to explaining its cause.",
+      "related_terms": [
+        "process",
+        "apparatus",
+        "machinery",
+        "dynamics"
+      ],
+      "context_sentence": "The mechanism behind this arrested breakdown is chemical as much as physical."
+    },
+    "arrested": {
+      "etymology": "Latin ad- (to) + restare 'to remain', giving Old French arester, + -ed.",
+      "definition": "Brought to a stop partway.",
+      "usage_in_passage": "\"this arrested breakdown\" picks up and restates \"decomposition stalls\" from paragraph 1, and it is the target word of the vocabulary question.",
+      "related_terms": [
+        "halted",
+        "suspended",
+        "checked",
+        "impeded"
+      ],
+      "context_sentence": "The mechanism behind this arrested breakdown is chemical as much as physical."
+    },
+    "breakdown": {
+      "etymology": "Compound noun of break + down.",
+      "definition": "The breaking of something into parts; collapse.",
+      "usage_in_passage": "It is used as a plainer restatement of decomposition; by referring to the same concept with a different word, it asks the reader to follow the vocabulary shifts typical of academic writing.",
+      "related_terms": [
+        "decomposition",
+        "disintegration",
+        "decay",
+        "dissolution"
+      ],
+      "context_sentence": "The mechanism behind this arrested breakdown is chemical as much as physical."
+    },
+    "pore": {
+      "etymology": "Greek poros 'passage'.",
+      "definition": "A tiny hole or gap.",
+      "usage_in_passage": "\"the pore spaces that would otherwise hold air\" identifies the physical cause of the lack of oxygen and is the direct evidence for question 1.",
+      "related_terms": [
+        "porous",
+        "porosity",
+        "cavity",
+        "aperture"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "oxygen": {
+      "etymology": "Greek oxys 'sour' + -gen 'producing'. Named in the mistaken belief that it was the source of acids.",
+      "definition": "The gas in air that aerobic organisms need.",
+      "usage_in_passage": "It is introduced as the necessary condition for aerobic decomposition and carries the causal axis of the whole passage: its absence is the key to preserving carbon, and its entry is the trigger for releasing carbon.",
+      "related_terms": [
+        "aerobic",
+        "anaerobic",
+        "oxidation",
+        "respiration"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "diffuses": {
+      "etymology": "Latin dis- (in all directions) + fundere 'to pour' + -es.",
+      "definition": "Spreads out by diffusion.",
+      "usage_in_passage": "\"oxygen diffuses through peat far more slowly\" shows that the supply of oxygen is the rate-limiting step.",
+      "related_terms": [
+        "disperse",
+        "permeate",
+        "diffusion",
+        "spread"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "slowly": {
+      "etymology": "Old English slaw 'sluggish' + -ly.",
+      "definition": "At a low speed.",
+      "usage_in_passage": "In the comparative \"far more slowly than through dry soil\" it states the difference from dry soil and supplies the information needed to tell the choices in question 1 apart.",
+      "related_terms": [
+        "gradually",
+        "sluggishly",
+        "incrementally",
+        "slow"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "soil": {
+      "etymology": "Old French soil < Latin solum 'ground'.",
+      "definition": "The upper layer of earth in which plants grow.",
+      "usage_in_passage": "\"through dry soil\" sets dry soil as the term of comparison and shows the special nature of peat in relative terms.",
+      "related_terms": [
+        "sediment",
+        "loam",
+        "substrate",
+        "ground"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "aerobic": {
+      "etymology": "Greek aer 'air' + bios 'life' + -ic.",
+      "definition": "Requiring oxygen.",
+      "usage_in_passage": "\"the aerobic bacteria responsible for rapid decay\" narrows down who carries out decomposition and ties the distribution of oxygen to the distribution of decomposition.",
+      "related_terms": [
+        "anaerobic",
+        "oxygen",
+        "aeration",
+        "respiration"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "bacteria": {
+      "etymology": "Plural of Greek bakterion 'small staff'. From the shape of rod-shaped bacteria.",
+      "definition": "Single-celled microorganisms.",
+      "usage_in_passage": "They make the decomposers concrete, and because their range of activity is limited by \"confined to a thin surface layer\", the preservation of the deeper layers is explained.",
+      "related_terms": [
+        "microbe",
+        "bacterial",
+        "microorganism",
+        "fungi"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "rapid": {
+      "etymology": "Latin rapidus 'swift' < rapere 'to snatch away'.",
+      "definition": "Fast.",
+      "usage_in_passage": "\"rapid decay\" is the direct counterpart of \"slow decay\" in paragraph 1 and supports the claim that the presence or absence of oxygen determines the speed.",
+      "related_terms": [
+        "swift",
+        "brisk",
+        "expeditious",
+        "rapidity"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "confined": {
+      "etymology": "Latin con- (together) + finis 'boundary' + -ed.",
+      "definition": "Limited to a certain range.",
+      "usage_in_passage": "\"confined to a thin surface layer\" shows the spatial limit of decomposing activity and answers the question of why the deep peat remains.",
+      "related_terms": [
+        "restricted",
+        "limited",
+        "bounded",
+        "constrained"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "thin": {
+      "etymology": "Old English thynne.",
+      "definition": "Having little thickness.",
+      "usage_in_passage": "\"a thin surface layer\" stresses how thin the layer reached by aerobic decomposition is and implies that most of the peat as a whole is untouched.",
+      "related_terms": [
+        "shallow",
+        "slender",
+        "sparse",
+        "narrow"
+      ],
+      "context_sentence": "Because water fills the pore spaces that would otherwise hold air, oxygen diffuses through peat far more slowly than through dry soil, and the aerobic bacteria responsible for rapid decay are confined to a thin surface layer."
+    },
+    "sphagnum": {
+      "etymology": "Modern Latin sphagnum < Greek sphagnos (a kind of moss).",
+      "definition": "The genus of moss that is the main former of peat.",
+      "usage_in_passage": "It is introduced in paragraph 2 as the leading agent of peat formation and returns in paragraph 4 as the agent of recovery in \"Sphagnum, once reestablished\". It is a key word that runs through the causal chain of the passage.",
+      "related_terms": [
+        "moss",
+        "bryophyte",
+        "hummock",
+        "bog"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "mosses": {
+      "etymology": "Old English mos 'bog, moss' + -es. Note that the words for bog and moss share the same origin.",
+      "definition": "Small non-flowering plants that grow in mats in damp places.",
+      "usage_in_passage": "\"Sphagnum mosses, the dominant peat-forming plants\" explains their function through an appositive structure, and the phrase is the antecedent of the pronoun they immediately afterward (question 3).",
+      "related_terms": [
+        "moss",
+        "lichen",
+        "bryophyte",
+        "fern"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "dominant": {
+      "etymology": "Latin dominus 'master' + -ant.",
+      "definition": "Most abundant or influential in that plant community.",
+      "usage_in_passage": "It is used as a technical term in ecology and shows that Sphagnum is not an exceptional presence but a standard component species of northern bogs.",
+      "related_terms": [
+        "predominant",
+        "prevailing",
+        "principal",
+        "dominate"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "peat-forming": {
+      "etymology": "Compound adjective of peat + form (Latin forma 'shape') + -ing.",
+      "definition": "Having the function of forming peat.",
+      "usage_in_passage": "It compresses the ecological function of Sphagnum into one word and tells the reader at once why this plant matters in the passage.",
+      "related_terms": [
+        "peatland",
+        "formation",
+        "generative",
+        "accumulating"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "bogs": {
+      "etymology": "Old Irish bogach 'soft ground' < bog 'soft' + -s.",
+      "definition": "Nutrient-poor, acidic wetlands.",
+      "usage_in_passage": "\"northern bogs\" limits the setting, and it echoes \"a bog that required eight thousand years to build\" in the final paragraph, which rounds off the discussion of time scale.",
+      "related_terms": [
+        "fen",
+        "mire",
+        "marsh",
+        "swamp"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "compound": {
+      "etymology": "Latin com- (together) + ponere 'to place'.",
+      "definition": "(verb) To make an existing problem or condition stronger or worse.",
+      "usage_in_passage": "\"compound this constraint\" is the link showing that a chemical constraint is added on top of the physical one; the fact that its part of speech differs from the noun compounds in the same paragraph adds to the reading load.",
+      "related_terms": [
+        "aggravate",
+        "intensify",
+        "exacerbate",
+        "augment"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "constraint": {
+      "etymology": "Latin con- (intensive) + stringere 'to tighten' + -t.",
+      "definition": "A condition that limits an action or a process.",
+      "usage_in_passage": "It is an abstract noun that sums up the limit on oxygen diffusion just described, and through this word the argument moves from the physical explanation to the chemical one.",
+      "related_terms": [
+        "restriction",
+        "limitation",
+        "restraint",
+        "constrain"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "actively": {
+      "etymology": "Latin agere 'to do', giving act, + -ive + -ly.",
+      "definition": "By its own action; not passively.",
+      "usage_in_passage": "It stresses that Sphagnum does not adapt to its environment but remakes the environment itself, and it foreshadows the later description self-reinforcing.",
+      "related_terms": [
+        "deliberately",
+        "proactively",
+        "vigorously",
+        "passively"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "acidify": {
+      "etymology": "Latin acidus 'sour' + -ify (to make into).",
+      "definition": "To make acidic.",
+      "usage_in_passage": "\"they actively acidify their surroundings\" shows the first stage of the chemical suppression. An acidic environment in itself slows microbial activity.",
+      "related_terms": [
+        "acidic",
+        "acidity",
+        "alkaline",
+        "neutralize"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "surroundings": {
+      "etymology": "sur- (over, around) + round + -ing + -s.",
+      "definition": "The environment around something.",
+      "usage_in_passage": "It expresses a picture in which a living thing takes the role of making its environment: the moss changes the chemical conditions of the place where it grows.",
+      "related_terms": [
+        "environment",
+        "habitat",
+        "milieu",
+        "vicinity"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "phenolic": {
+      "etymology": "phenol (the name of a compound, derived from Greek phaino 'to shine') + -ic.",
+      "definition": "Of the phenol type; having a hydroxyl group attached to an aromatic ring.",
+      "usage_in_passage": "\"phenolic compounds that inhibit the enzymes\" identifies the inhibiting substance chemically and gives the enzymic latch metaphor something concrete behind it.",
+      "related_terms": [
+        "phenol",
+        "polyphenol",
+        "tannin",
+        "aromatic"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "compounds": {
+      "etymology": "Plural noun form of compound. Latin com- + ponere.",
+      "definition": "Substances made of chemically combined elements.",
+      "usage_in_passage": "The verb compound is used earlier in the same paragraph, and compounds as a noun follows. This is a place where the reader has to tell the two uses of the same form apart by grammar.",
+      "related_terms": [
+        "substance",
+        "molecule",
+        "chemical",
+        "mixture"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "inhibit": {
+      "etymology": "Latin in- (in) + habere 'to hold', giving 'to hold back'.",
+      "definition": "To hinder the working of something; to block.",
+      "usage_in_passage": "It is the central verb of the causal chain, the suppression of enzyme activity, and this one word is the very content of the latch metaphor.",
+      "related_terms": [
+        "suppress",
+        "impede",
+        "hinder",
+        "inhibition"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "enzymes": {
+      "etymology": "Greek en- (in) + zyme 'leaven' + -s.",
+      "definition": "Proteins that catalyze chemical reactions.",
+      "usage_in_passage": "They are introduced as the tools that carry out decomposition, and the reader is led to understand that stopping them is what the 'latch' means.",
+      "related_terms": [
+        "enzymic",
+        "catalyst",
+        "protein",
+        "substrate"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "secrete": {
+      "etymology": "Latin se- (apart) + cernere 'to separate', giving secernere.",
+      "definition": "To release out of the body.",
+      "usage_in_passage": "\"the enzymes microbes secrete\" is a clause with the relative pronoun omitted, and it shows which of the two, microbes or enzymes, is the agent and which is the product.",
+      "related_terms": [
+        "excrete",
+        "exude",
+        "discharge",
+        "secretion"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "dismantle": {
+      "etymology": "Old French des- (removal) + mantel 'cloak', giving 'to strip off a cloak'.",
+      "definition": "To take apart something that has been put together.",
+      "usage_in_passage": "\"dismantle complex organic molecules\" likens decomposition to taking a machine apart and matches the tone of the mechanical metaphors latch and brake that follow.",
+      "related_terms": [
+        "disassemble",
+        "decompose",
+        "deconstruct",
+        "dismantling"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "molecules": {
+      "etymology": "Latin moles 'mass' + -cula (diminutive), giving 'small mass'.",
+      "definition": "The smallest units of a chemical compound.",
+      "usage_in_passage": "It identifies what is decomposed at the chemical level and makes the account more concrete by moving from the level of microbes to the level of molecules.",
+      "related_terms": [
+        "molecular",
+        "compound",
+        "atom",
+        "macromolecule"
+      ],
+      "context_sentence": "Sphagnum mosses, the dominant peat-forming plants of northern bogs, compound this constraint: they actively acidify their surroundings and release phenolic compounds that inhibit the enzymes microbes secrete in order to dismantle complex organic molecules."
+    },
+    "ecologists": {
+      "etymology": "Greek oikos 'house', giving eco-, + logos 'study' + -ist + -s.",
+      "definition": "Scientists who study ecology.",
+      "usage_in_passage": "\"Ecologists call this self-reinforcing arrangement the enzymic latch\" presents the introduction of the technical term as the usage of the field and shows that it is not the author's own coinage.",
+      "related_terms": [
+        "ecology",
+        "ecological",
+        "biologist",
+        "naturalist"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "self-reinforcing": {
+      "etymology": "self + re- (again) + Old French enforcier 'to apply force' + -ing.",
+      "definition": "Continuing to strengthen its own cause; having positive feedback.",
+      "usage_in_passage": "It expresses in one word that the conditions which suppress decomposition also keep themselves in place, and it explains why this state lasts for thousands of years.",
+      "related_terms": [
+        "feedback",
+        "self-sustaining",
+        "cyclical",
+        "autocatalytic"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "arrangement": {
+      "etymology": "Old French a- (to) + rangier 'to put in a row' + -ment.",
+      "definition": "The way elements are put together; a setup.",
+      "usage_in_passage": "It is an abstract noun that restates mechanism from the start of the paragraph and refers in one word to the whole set of conditions: lack of oxygen, acidification, and enzyme inhibition.",
+      "related_terms": [
+        "configuration",
+        "setup",
+        "structure",
+        "arrange"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "enzymic": {
+      "etymology": "enzyme + -ic.",
+      "definition": "Relating to enzymes.",
+      "usage_in_passage": "It is the first half of the term \"the enzymic latch\" and names the enzymes as the place where the suppression is applied.",
+      "related_terms": [
+        "enzyme",
+        "enzymatic",
+        "catalytic",
+        "biochemical"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "latch": {
+      "etymology": "Old English læccan 'to grasp'.",
+      "definition": "A small metal fastening that keeps a door closed.",
+      "usage_in_passage": "The core of the metaphor. The image of a small chemical latch holding a huge store of carbon is reversed at the start of paragraph 3 in \"The latch, however, is easily released\", which bridges the two paragraphs.",
+      "related_terms": [
+        "lock",
+        "catch",
+        "bolt",
+        "clasp"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "metaphor": {
+      "etymology": "Greek meta- (across) + pherein 'to carry', giving 'something that carries meaning across'.",
+      "definition": "A figure of speech that describes one thing as another.",
+      "usage_in_passage": "By stating that latch is a metaphor, the author shows scholarly care in warning the reader not to take the term literally.",
+      "related_terms": [
+        "analogy",
+        "simile",
+        "figurative",
+        "imagery"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "captures": {
+      "etymology": "Latin capere 'to take', giving capture, + -s.",
+      "definition": "Expresses (the essence of something) well.",
+      "usage_in_passage": "In \"a metaphor that captures how\" it is a verb that rates the explanatory power of the metaphor, and the extension of meaning from physically 'catching' to abstractly 'grasping' is the point to watch in reading.",
+      "related_terms": [
+        "encapsulate",
+        "convey",
+        "embody",
+        "capture"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "modest": {
+      "etymology": "Latin modus 'measure' + -estus, giving 'keeping within measure'.",
+      "definition": "Not large; small in scale.",
+      "usage_in_passage": "\"a modest chemical brake\" states how small the cause is and creates a gap with the size of the result in \"an entire carbon reservoir\" immediately afterward.",
+      "related_terms": [
+        "slight",
+        "moderate",
+        "minor",
+        "unassuming"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "brake": {
+      "etymology": "Middle English brake 'braking device'.",
+      "definition": "A device that stops motion.",
+      "usage_in_passage": "It is a mechanical metaphor of the same family as latch and lets the reader grasp the chemical suppression intuitively.",
+      "related_terms": [
+        "restraint",
+        "curb",
+        "check",
+        "throttle"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "reservoir": {
+      "etymology": "French réservoir < Latin reservare 'to keep back'.",
+      "definition": "A store; a pool where something is held.",
+      "usage_in_passage": "\"an entire carbon reservoir\" places peat as a pool in the carbon cycle and prepares the picture in paragraph 3 in which that pool moves into the atmosphere.",
+      "related_terms": [
+        "repository",
+        "sink",
+        "stockpile",
+        "basin"
+      ],
+      "context_sentence": "Ecologists call this self-reinforcing arrangement the enzymic latch, a metaphor that captures how a modest chemical brake can hold an entire carbon reservoir in place."
+    },
+    "drained": {
+      "etymology": "Old English dreahnian 'to strain, to dry out' + -ed.",
+      "definition": "Having had its water removed.",
+      "usage_in_passage": "It is the starting point of the causal chain in paragraph 3: the subsidence, burning, and carbon release that follow all derive from this one word. The measures in paragraph 4 are presented as the reversal of this operation.",
+      "related_terms": [
+        "drainage",
+        "dewater",
+        "desiccate",
+        "drain"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "pasture": {
+      "etymology": "Latin pascere 'to feed' + -ura.",
+      "definition": "Grassland for grazing animals.",
+      "usage_in_passage": "It gives raising livestock as one of the motives for drainage and shows that the destruction of peat comes not from ill will but from economic rationality.",
+      "related_terms": [
+        "grazing",
+        "meadow",
+        "rangeland",
+        "pastoral"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "forestry": {
+      "etymology": "forest + -ry (suffix for a skill or industry).",
+      "definition": "The industry of growing and managing forests.",
+      "usage_in_passage": "It is given as the second motive for drainage and is placed in the middle of the three uses, alongside pasture and fuel extraction.",
+      "related_terms": [
+        "silviculture",
+        "logging",
+        "timber",
+        "plantation"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "extraction": {
+      "etymology": "Latin ex- (out) + trahere 'to draw' + -ion.",
+      "definition": "The act of digging something out and removing it.",
+      "usage_in_passage": "\"fuel extraction\" names the use in which peat itself is dug up as fuel. The point that peat is a fuel even before it is used leads into the discussion of combustibility in the second half of paragraph 3.",
+      "related_terms": [
+        "extract",
+        "mining",
+        "removal",
+        "harvesting"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "penetrates": {
+      "etymology": "Latin penitus 'deep inside' + -trare + -s.",
+      "definition": "Goes into the interior of.",
+      "usage_in_passage": "\"oxygen penetrates layers that have been sealed for millennia\" depicts the moment when the oxygen barrier explained in paragraph 2 is broken and makes the release of the latch concrete.",
+      "related_terms": [
+        "infiltrate",
+        "permeate",
+        "pierce",
+        "penetration"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "sealed": {
+      "etymology": "Latin sigillum 'seal', giving seal, + -ed.",
+      "definition": "Shut off from the outside.",
+      "usage_in_passage": "The present perfect \"have been sealed for millennia\" is used, showing that the sealing is not temporary but a state that has continued for thousands of years.",
+      "related_terms": [
+        "airtight",
+        "enclosed",
+        "insulated",
+        "impermeable"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "millennia": {
+      "etymology": "Latin mille 'thousand' + annus 'year', giving the plural of millennium.",
+      "definition": "Long periods counted in thousands of years.",
+      "usage_in_passage": "It shows the length of the period of preservation and, by setting it against the speed of loss in \"within a single human lifetime\" immediately afterward, makes the inference in question 4 possible.",
+      "related_terms": [
+        "millennium",
+        "epoch",
+        "era",
+        "century"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "microbial": {
+      "etymology": "microbe + -ial.",
+      "definition": "Carried out by microbes.",
+      "usage_in_passage": "\"microbial respiration resumes\" shows that the activity held down in paragraph 2 reappears under a different name.",
+      "related_terms": [
+        "microbe",
+        "bacterial",
+        "microorganism",
+        "fungal"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "respiration": {
+      "etymology": "Latin re- (repeatedly) + spirare 'to breathe' + -ion.",
+      "definition": "The metabolic process that oxidizes organic matter and produces carbon dioxide.",
+      "usage_in_passage": "It names the physiological mechanism by which carbon returns to the atmosphere, and in the final paragraph the same phenomenon is restated with the chemical word oxidation.",
+      "related_terms": [
+        "respire",
+        "metabolism",
+        "oxidation",
+        "aerobic"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "resumes": {
+      "etymology": "Latin re- (again) + sumere 'to take' + -s.",
+      "definition": "Starts again after an interruption.",
+      "usage_in_passage": "Its implication, that something once stopped begins to move again, corresponds exactly to the metaphor of the latch coming undone.",
+      "related_terms": [
+        "restart",
+        "recommence",
+        "revive",
+        "resumption"
+      ],
+      "context_sentence": "When peatlands are drained for pasture, forestry, or fuel extraction, the water table falls, oxygen penetrates layers that have been sealed for millennia, and microbial respiration resumes at rates the system has not experienced since the deposits first formed."
+    },
+    "subsides": {
+      "etymology": "Latin sub- (down) + sidere 'to sit' + -s.",
+      "definition": "Sinks down (of the ground surface).",
+      "usage_in_passage": "\"The surface subsides\" shows the physical consequence of drainage and gives the reader a visible indicator of the invisible loss of carbon.",
+      "related_terms": [
+        "sink",
+        "settle",
+        "subsidence",
+        "collapse"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "centimeters": {
+      "etymology": "Latin centum 'hundred' + Greek metron 'measure' + -s.",
+      "definition": "Units of length equal to one hundredth of a meter.",
+      "usage_in_passage": "\"several centimeters a year\" is contrasted by order of magnitude with \"less than a millimeter annually\" in paragraph 1 and is the numerical evidence for the inference in question 4 that loss is more than ten times faster than accumulation.",
+      "related_terms": [
+        "millimeter",
+        "meter",
+        "decimeter",
+        "metric"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "accumulated": {
+      "etymology": "Past tense and past participle of accumulate.",
+      "definition": "Built up over a long period.",
+      "usage_in_passage": "\"carbon that accumulated over ten thousand years\" shows the time scale of accumulation and sets it directly against \"within a single human lifetime\" immediately afterward.",
+      "related_terms": [
+        "amassed",
+        "accrued",
+        "stored",
+        "accumulation"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "thousand": {
+      "etymology": "Old English thusend.",
+      "definition": "The number 1,000.",
+      "usage_in_passage": "\"ten thousand years\" makes the period of accumulation concrete and echoes \"eight thousand years\" in the final paragraph, keeping the figures consistent.",
+      "related_terms": [
+        "millennium",
+        "myriad",
+        "hundred",
+        "million"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "atmosphere": {
+      "etymology": "Greek atmos 'vapor' + sphaira 'sphere'.",
+      "definition": "The layer of gases surrounding the Earth.",
+      "usage_in_passage": "It shows where the carbon goes and is the turning point that connects the ecological description to the discussion of climate.",
+      "related_terms": [
+        "atmospheric",
+        "troposphere",
+        "climate",
+        "air"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "lifetime": {
+      "etymology": "Compound of life + time.",
+      "definition": "The length of one life.",
+      "usage_in_passage": "\"within a single human lifetime\" brings in the human time scale and makes the asymmetry with the geological scale something readers can feel for themselves.",
+      "related_terms": [
+        "lifespan",
+        "generation",
+        "longevity",
+        "duration"
+      ],
+      "context_sentence": "The surface subsides, sometimes by several centimeters a year, and carbon that accumulated over ten thousand years can be returned to the atmosphere within a single human lifetime."
+    },
+    "combustible": {
+      "etymology": "Latin com- (intensive) + urere 'to burn', giving comburere, + -ible (able to be).",
+      "definition": "Able to catch fire easily.",
+      "usage_in_passage": "The short sentence \"Drained peat also becomes combustible.\" introduces a new consequence, and the relation of addition signaled by also is the evidence for the answer to question 5.",
+      "related_terms": [
+        "flammable",
+        "ignitable",
+        "combustion",
+        "incendiary"
+      ],
+      "context_sentence": "Drained peat also becomes combustible."
+    },
+    "smoldering": {
+      "etymology": "Middle English smolder 'to smolder' + -ing.",
+      "definition": "Burning slowly inside without a flame.",
+      "usage_in_passage": "It shows in one word a way of burning that differs from an ordinary wildfire and anticipates the reason for \"burn downward\" and \"conventional firefighting has so little effect\" that follow.",
+      "related_terms": [
+        "smolder",
+        "simmer",
+        "ember",
+        "glow"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "periodically": {
+      "etymology": "Greek peri- (around) + hodos 'way', giving period, + -ical + -ly.",
+      "definition": "At intervals; repeatedly.",
+      "usage_in_passage": "It shows that the fires are not a one-time accident but a recurring, structural problem.",
+      "related_terms": [
+        "recurrently",
+        "intermittently",
+        "cyclically",
+        "sporadically"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "blanket": {
+      "etymology": "Old French blanquette < blanc 'white'. From a white woolen cloth.",
+      "definition": "(verb) To cover completely.",
+      "usage_in_passage": "\"blanket parts of Southeast Asia in haze\" expresses the spread of the smoke through the image of a blanket, and the conversion from noun to verb adds to the reading load.",
+      "related_terms": [
+        "cover",
+        "envelop",
+        "shroud",
+        "enshroud"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "haze": {
+      "etymology": "Thought to be a back-formation from 18th-century English hazy; the origin is unknown.",
+      "definition": "A thin mist caused by smoke or dust.",
+      "usage_in_passage": "It makes the effects of peat fires concrete from the side of people's daily lives and gives the issue urgency as an environmental problem.",
+      "related_terms": [
+        "smog",
+        "mist",
+        "smoke",
+        "fog"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "burn": {
+      "etymology": "Old English beornan 'to be on fire' / bærnan 'to set on fire'.",
+      "definition": "To be on fire.",
+      "usage_in_passage": "By stating the direction of burning in \"burn downward through dried deposits\", it creates in one word the decisive difference from an ordinary forest fire.",
+      "related_terms": [
+        "combust",
+        "scorch",
+        "ignite",
+        "incinerate"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "downward": {
+      "etymology": "down + -ward (suffix of direction, Old English -weard 'toward').",
+      "definition": "Toward a lower place.",
+      "usage_in_passage": "It is a direction word contrasted with ordinary fires that run sideways across the canopy, and it supports the logic of question 5: why firefighting does not work.",
+      "related_terms": [
+        "descending",
+        "subsurface",
+        "beneath",
+        "upward"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "dried": {
+      "etymology": "dry + -ed.",
+      "definition": "Having lost its moisture.",
+      "usage_in_passage": "\"dried deposits\" states that what burns is the layers dried out by drainage and lets the reader confirm the causal link that the fires are a consequence of drainage.",
+      "related_terms": [
+        "desiccated",
+        "parched",
+        "arid",
+        "dehydrated"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "canopy": {
+      "etymology": "Greek konops 'mosquito', giving konopeion 'mosquito net', then 'covering overhead'.",
+      "definition": "The upper layer of a forest formed by the branches and leaves of its trees.",
+      "usage_in_passage": "\"rather than across the canopy\" sets the usual image of a forest fire as the term of contrast and brings out how unusual peat fires are.",
+      "related_terms": [
+        "crown",
+        "overstory",
+        "foliage",
+        "understory"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "precisely": {
+      "etymology": "Latin prae- (beforehand) + caedere 'to cut', giving precise, + -ly.",
+      "definition": "Exactly; for this very reason and no other.",
+      "usage_in_passage": "\"which is precisely why\" stresses the causal relation and closes the paragraph, making clear that the preceding description is not mere scenery but evidence.",
+      "related_terms": [
+        "exactly",
+        "specifically",
+        "accurately",
+        "precise"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "conventional": {
+      "etymology": "Latin con- (together) + venire 'to come', giving convention 'agreement', + -al.",
+      "definition": "Following the usual practice; standard.",
+      "usage_in_passage": "\"conventional firefighting\" shows the limits of existing methods and prepares for the need, in paragraph 4, to change the way the remedy is thought about.",
+      "related_terms": [
+        "traditional",
+        "customary",
+        "orthodox",
+        "convention"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "firefighting": {
+      "etymology": "Compound noun of fire + fight + -ing.",
+      "definition": "The work of putting out fires.",
+      "usage_in_passage": "It is a word that shows the limits of treating symptoms, and it foreshadows the change of approach in \"concentrates on hydrology rather than on planting\" at the start of paragraph 4.",
+      "related_terms": [
+        "extinguish",
+        "suppression",
+        "containment",
+        "blaze"
+      ],
+      "context_sentence": "The smoldering fires that periodically blanket parts of Southeast Asia in haze burn downward through dried deposits rather than across the canopy, which is precisely why conventional firefighting has so little effect on them."
+    },
+    "restoration": {
+      "etymology": "Latin re- (back) + staurare 'to set up' + -ion.",
+      "definition": "The act of returning a damaged thing to its former state.",
+      "usage_in_passage": "It is the subject word of paragraph 4 and announces in one word that the passage turns from describing the problem to examining measures against it.",
+      "related_terms": [
+        "rehabilitation",
+        "recovery",
+        "renewal",
+        "restore"
+      ],
+      "context_sentence": "Restoration therefore concentrates on hydrology rather than on planting."
+    },
+    "concentrates": {
+      "etymology": "Latin con- (together) + centrum 'center' + -ate + -s.",
+      "definition": "Focuses on one point.",
+      "usage_in_passage": "\"concentrates on hydrology rather than on planting\" narrows the focus of the measures and puts forward a claim that goes against the intuition that restoration means planting.",
+      "related_terms": [
+        "focus",
+        "prioritize",
+        "center",
+        "concentration"
+      ],
+      "context_sentence": "Restoration therefore concentrates on hydrology rather than on planting."
+    },
+    "hydrology": {
+      "etymology": "Greek hydor 'water' + logos 'study'.",
+      "definition": "The study of, or the conditions of, the distribution and movement of water.",
+      "usage_in_passage": "It shows that the key to recovery is managing the water level, not planting, which is logically consistent with the mechanism in paragraph 2, where water shuts oxygen out.",
+      "related_terms": [
+        "hydrological",
+        "aquifer",
+        "hydraulic",
+        "irrigation"
+      ],
+      "context_sentence": "Restoration therefore concentrates on hydrology rather than on planting."
+    },
+    "drainage": {
+      "etymology": "drain + -age (suffix for an action or installation).",
+      "definition": "The removal of water, or the system that does it.",
+      "usage_in_passage": "\"Blocking drainage ditches\" picks up drained from paragraph 3 and shows that the measure is simply the reverse of the cause.",
+      "related_terms": [
+        "drain",
+        "runoff",
+        "ditch",
+        "culvert"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "ditches": {
+      "etymology": "Old English dic 'ditch, bank' + -es. Same origin as dike.",
+      "definition": "Channels dug to carry water away.",
+      "usage_in_passage": "It names the concrete object of the work and tells the reader that peatland restoration starts not with advanced technology but with physically blocking channels.",
+      "related_terms": [
+        "trench",
+        "channel",
+        "canal",
+        "furrow"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "recover": {
+      "etymology": "Latin re- (again) + recuperare 'to get back'.",
+      "definition": "To return to its former level.",
+      "usage_in_passage": "\"allows the water table to recover\" shows that the recovery of the groundwater level is the first stage of restoration.",
+      "related_terms": [
+        "restore",
+        "rebound",
+        "regain",
+        "recovery"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "reestablished": {
+      "etymology": "re- (again) + Latin stabilis 'stable', giving establish, + -ed.",
+      "definition": "Settled in again.",
+      "usage_in_passage": "\"Sphagnum, once reestablished\" shows a cycle in which the return of the leading agent of paragraph 2 brings back the chemical conditions as well, and it implies that the self-reinforcing property also works in restoration.",
+      "related_terms": [
+        "recolonize",
+        "reintroduce",
+        "establish",
+        "reinstate"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "gradually": {
+      "etymology": "Latin gradus 'step' + -al + -ly.",
+      "definition": "Little by little, step by step.",
+      "usage_in_passage": "It signals in advance that recovery takes time and echoes \"Restoration is correspondingly slow\" in the final paragraph.",
+      "related_terms": [
+        "incrementally",
+        "progressively",
+        "steadily",
+        "gradual"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "restores": {
+      "etymology": "Latin re- (back) + staurare 'to set up' + -s.",
+      "definition": "Returns something to its former state.",
+      "usage_in_passage": "It means that Sphagnum brings back the chemical conditions, that is, the enzymic latch forms again, and it shows that the mechanism of paragraph 2 becomes the principle of restoration as it stands.",
+      "related_terms": [
+        "reinstate",
+        "revive",
+        "renew",
+        "restoration"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "suppress": {
+      "etymology": "Latin sub- (down) + premere 'to press', giving supprimere.",
+      "definition": "To hold down the working of something.",
+      "usage_in_passage": "\"the chemical conditions that suppress decay\" states that the aim of restoration is to suppress decomposition again, and the word plays the same role as inhibit in paragraph 2.",
+      "related_terms": [
+        "inhibit",
+        "restrain",
+        "curb",
+        "suppression"
+      ],
+      "context_sentence": "Blocking drainage ditches allows the water table to recover, and Sphagnum, once reestablished, gradually restores the chemical conditions that suppress decay."
+    },
+    "remedy": {
+      "etymology": "Latin re- (again) + mederi 'to heal', giving remedium.",
+      "definition": "A means of putting a problem right.",
+      "usage_in_passage": "\"The remedy is not without ambiguity\" is the turning point that introduces a reservation right after the measure is presented, and it expresses the caution of academic writing, which does not offer a simple solution.",
+      "related_terms": [
+        "cure",
+        "treatment",
+        "solution",
+        "redress"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "ambiguity": {
+      "etymology": "Latin ambi- (both ways) + agere 'to drive', giving 'to move in both directions', + -ity.",
+      "definition": "The quality of not having a single clear interpretation; two-sidedness.",
+      "usage_in_passage": "It is used in the double negative \"not without ambiguity\" and shows in an understated way that the measure cannot be called simply good or bad.",
+      "related_terms": [
+        "ambiguous",
+        "uncertainty",
+        "equivocal",
+        "vagueness"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "rewetted": {
+      "etymology": "re- (again) + wet + -ed.",
+      "definition": "Flooded with water again.",
+      "usage_in_passage": "It refers to peat after the measure has been taken; its side effect, the release of methane, is introduced immediately afterward, and the argument folds back from approval to reservation.",
+      "related_terms": [
+        "rewetting",
+        "saturate",
+        "inundate",
+        "flood"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "emits": {
+      "etymology": "Latin e- (out) + mittere 'to send' + -s.",
+      "definition": "Gives off a gas or the like.",
+      "usage_in_passage": "It is the central verb in the statement of the side effect and expresses, in a different word, movement in the same direction as \"returned to the atmosphere\" in paragraph 3.",
+      "related_terms": [
+        "release",
+        "discharge",
+        "exude",
+        "emission"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "methane": {
+      "etymology": "methyl (Greek methy 'wine' + hyle 'wood') + -ane (suffix for saturated hydrocarbons).",
+      "definition": "A gas with a powerful greenhouse effect.",
+      "usage_in_passage": "It is introduced as a second greenhouse gas, contrasted with carbon dioxide, and it is the cause of the paradox that the measure can make warming worse in the short term.",
+      "related_terms": [
+        "hydrocarbon",
+        "greenhouse",
+        "emission",
+        "biogas"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "warming": {
+      "etymology": "warm + -ing.",
+      "definition": "The rise in (global) temperature.",
+      "usage_in_passage": "As a noun it refers to the effect on climate; it is the object in the time-lag construction \"aggravate warming before they alleviate it\" and marks the point where the short-term and long-term assessments divide.",
+      "related_terms": [
+        "greenhouse",
+        "climate",
+        "heating",
+        "temperature"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "decades": {
+      "etymology": "Greek deka 'ten' + -ade + -s.",
+      "definition": "Periods of ten years; tens of years.",
+      "usage_in_passage": "\"over two decades\" states the time window in which the warming effect of methane is assessed and foreshadows the discussion of horizon in the last sentence.",
+      "related_terms": [
+        "decade",
+        "century",
+        "timescale",
+        "period"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "surpasses": {
+      "etymology": "Old French sur- (beyond) + passer 'to pass' + -es.",
+      "definition": "Is greater in degree or amount than.",
+      "usage_in_passage": "It shows that the warming effect of methane is greater than that of carbon dioxide and gives the basis for the claim that restoration can be counterproductive.",
+      "related_terms": [
+        "exceed",
+        "outstrip",
+        "eclipse",
+        "transcend"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "dioxide": {
+      "etymology": "Greek di- 'two' + oxide. It contains two oxygen atoms.",
+      "definition": "A compound containing two oxygen atoms.",
+      "usage_in_passage": "As \"carbon dioxide\" it identifies the chemical form in which carbon is released and makes the comparison with methane chemically exact.",
+      "related_terms": [
+        "oxide",
+        "monoxide",
+        "carbonate",
+        "oxygen"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "restored": {
+      "etymology": "Past participle of restore.",
+      "definition": "Having undergone restoration work.",
+      "usage_in_passage": "\"some restored sites\" shows the paradox that even places where the measure has been taken can get worse in the short term, and it sets aside any simple expectation of the measure.",
+      "related_terms": [
+        "rehabilitated",
+        "renewed",
+        "revived",
+        "restoration"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "consequently": {
+      "etymology": "Latin con- (together) + sequi 'to follow' + -ent + -ly.",
+      "definition": "As a result.",
+      "usage_in_passage": "It is a linking adverb that states cause and effect and lets the reader see the logical connection from methane emission to the temporary worsening of warming.",
+      "related_terms": [
+        "therefore",
+        "hence",
+        "accordingly",
+        "consequence"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "aggravate": {
+      "etymology": "Latin ad- (to) + gravis 'heavy' + -ate, giving 'to make heavy'.",
+      "definition": "To make a condition even worse.",
+      "usage_in_passage": "In \"aggravate warming before they alleviate it\" it is placed side by side with its antonym alleviate and shows in a single sentence the order in time: harm first, benefit later.",
+      "related_terms": [
+        "worsen",
+        "exacerbate",
+        "intensify",
+        "compound"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "alleviate": {
+      "etymology": "Latin ad- (to) + levis 'light' + -ate, giving 'to make light'.",
+      "definition": "To ease a pain or a problem.",
+      "usage_in_passage": "It pairs with aggravate in etymology as well, as 'heavy' against 'light', and expresses symmetrically the passage's axis of assessment: short-term harm and long-term benefit.",
+      "related_terms": [
+        "mitigate",
+        "ease",
+        "relieve",
+        "ameliorate"
+      ],
+      "context_sentence": "The remedy is not without ambiguity: rewetted peat emits methane, a gas whose warming effect over two decades far surpasses that of carbon dioxide, and some restored sites consequently aggravate warming before they alleviate it."
+    },
+    "researchers": {
+      "etymology": "re- (again) + Old French cerchier 'to seek', giving search, + -er + -s.",
+      "definition": "People who carry out research.",
+      "usage_in_passage": "\"Most researchers nevertheless regard\" presents the assessment as the majority view of the field and shows the academic way of writing that avoids a flat assertion by the author.",
+      "related_terms": [
+        "scholar",
+        "investigator",
+        "scientist",
+        "academic"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "nevertheless": {
+      "etymology": "A fusion of never + the + less: 'never any the less for that'.",
+      "definition": "In spite of that.",
+      "usage_in_passage": "It is a marker of concession that keeps the conclusion while taking into account the side effect just admitted, and the final position of the passage comes after this word.",
+      "related_terms": [
+        "nonetheless",
+        "notwithstanding",
+        "however",
+        "regardless"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "regard": {
+      "etymology": "Old French re- (again) + garder 'to look', giving 'to look at closely'.",
+      "definition": "To consider to be; to judge as.",
+      "usage_in_passage": "\"regard the trade-off as favorable\" expresses a judgment with the regard A as B construction and grammatically separates assessment from the statement of fact.",
+      "related_terms": [
+        "consider",
+        "deem",
+        "view",
+        "esteem"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "trade-off": {
+      "etymology": "trade 'exchange' + off. A relation in which one thing is given up to gain another.",
+      "definition": "A situation in which one thing is gained at the cost of another.",
+      "usage_in_passage": "It names in one word the relation between more methane and less carbon dioxide and narrows the rest of the discussion down to assessing it.",
+      "related_terms": [
+        "compromise",
+        "balance",
+        "concession",
+        "dilemma"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "favorable": {
+      "etymology": "Latin favere 'to show goodwill' + -able.",
+      "definition": "Advantageous; working out well.",
+      "usage_in_passage": "It gives the conclusion of the assessment, and the because clause immediately afterward explains the basis for it (the difference in how long each gas stays in the atmosphere).",
+      "related_terms": [
+        "advantageous",
+        "beneficial",
+        "propitious",
+        "unfavorable"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "persists": {
+      "etymology": "Latin per- (through) + sistere 'to stand' + -s.",
+      "definition": "Continues to remain for a long time.",
+      "usage_in_passage": "\"methane persists in the atmosphere for roughly a decade\" introduces a new axis of assessment, how long a gas remains, separate from the strength of its greenhouse effect.",
+      "related_terms": [
+        "endure",
+        "remain",
+        "linger",
+        "persistence"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "roughly": {
+      "etymology": "rough + -ly.",
+      "definition": "Approximately; as an estimate.",
+      "usage_in_passage": "It is a hedging expression that states that the figure is approximate and keeps the academic caution of avoiding a flat assertion.",
+      "related_terms": [
+        "approximately",
+        "nearly",
+        "about",
+        "circa"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "whereas": {
+      "etymology": "Compound conjunction of where + as.",
+      "definition": "While on the other hand.",
+      "usage_in_passage": "It is a subordinating conjunction that directly contrasts how long methane and carbon dioxide stay in the atmosphere and compresses into one sentence the reason the trade-off is judged favorable.",
+      "related_terms": [
+        "while",
+        "conversely",
+        "although",
+        "whilst"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "oxidation": {
+      "etymology": "oxygen (Greek oxys 'sour' + -gen) + -ation.",
+      "definition": "A chemical change in which a substance combines with oxygen.",
+      "usage_in_passage": "It refers to the process that continues in drained peat and keeps the argument unified by restating in the vocabulary of chemistry the same phenomenon as microbial respiration in paragraph 3.",
+      "related_terms": [
+        "oxidize",
+        "combustion",
+        "respiration",
+        "reduction"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "linger": {
+      "etymology": "Frequentative form of Middle English lengen 'to prolong'.",
+      "definition": "To stay for a long time without leaving.",
+      "usage_in_passage": "It shows that carbon dioxide remains for centuries and completes the basis for judging the trade-off favorable. As a word choice it pairs with persists.",
+      "related_terms": [
+        "persist",
+        "remain",
+        "dwell",
+        "endure"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "centuries": {
+      "etymology": "Latin centum 'hundred' + -uria, giving the plural of century.",
+      "definition": "Periods of a hundred years; hundreds of years.",
+      "usage_in_passage": "It is contrasted by order of magnitude with \"a decade\" for methane and settles the issue of the last sentence: on what time scale the assessment is made.",
+      "related_terms": [
+        "century",
+        "decade",
+        "millennia",
+        "epoch"
+      ],
+      "context_sentence": "Most researchers nevertheless regard the trade-off as favorable, because methane persists in the atmosphere for roughly a decade whereas the carbon dioxide released by continued oxidation would linger for centuries."
+    },
+    "correspondingly": {
+      "etymology": "Latin cor- (together) + respondere 'to answer' + -ing + -ly.",
+      "definition": "In a matching way; to a similar degree.",
+      "usage_in_passage": "\"Restoration is correspondingly slow\" shows the correspondence that since accumulation is slow, restoration is slow too, and it picks up the mention of millimeter in paragraph 1.",
+      "related_terms": [
+        "accordingly",
+        "similarly",
+        "proportionately",
+        "likewise"
+      ],
+      "context_sentence": "Restoration is correspondingly slow, since a bog that required eight thousand years to build cannot be reconstituted within a decade."
+    },
+    "cannot": {
+      "etymology": "Fused form of can + not.",
+      "definition": "Is not able to.",
+      "usage_in_passage": "\"cannot be reconstituted within a decade\" states the impossibility outright and warns against expecting too much of the measure.",
+      "related_terms": [
+        "unable",
+        "incapable",
+        "impossible",
+        "inability"
+      ],
+      "context_sentence": "Restoration is correspondingly slow, since a bog that required eight thousand years to build cannot be reconstituted within a decade."
+    },
+    "reconstituted": {
+      "etymology": "re- (again) + con- (together) + Latin statuere 'to set up', giving constitute, + -ed.",
+      "definition": "Rebuilt into its original makeup.",
+      "usage_in_passage": "It shows how hard it is to 'rebuild' a peatland by human action and makes clear the limits of what the word restoration means.",
+      "related_terms": [
+        "reconstruct",
+        "reassemble",
+        "reform",
+        "constitute"
+      ],
+      "context_sentence": "Restoration is correspondingly slow, since a bog that required eight thousand years to build cannot be reconstituted within a decade."
+    },
+    "arithmetic": {
+      "etymology": "Greek arithmos 'number' + -tikos.",
+      "definition": "Calculation; the reckoning of numbers.",
+      "usage_in_passage": "\"The arithmetic of peatland management\" is a metaphor that treats a policy judgment as a calculation problem and provides the framework that leads to the conclusion of the last sentence.",
+      "related_terms": [
+        "calculation",
+        "computation",
+        "numeracy",
+        "accounting"
+      ],
+      "context_sentence": "The arithmetic of peatland management thus depends less on annual accounting than on the horizon over which the accounting is done."
+    },
+    "depends": {
+      "etymology": "Latin de- (down) + pendere 'to hang' + -s.",
+      "definition": "Is decided by.",
+      "usage_in_passage": "In the pattern 'depends less on X than on Y', it moves the weight of the conclusion from yearly calculation to the period of assessment and closes the whole passage.",
+      "related_terms": [
+        "rely",
+        "hinge",
+        "contingent",
+        "dependence"
+      ],
+      "context_sentence": "The arithmetic of peatland management thus depends less on annual accounting than on the horizon over which the accounting is done."
+    },
+    "horizon": {
+      "etymology": "Greek horizein 'to set a boundary', giving horizon 'the limiting line'.",
+      "definition": "(here) The range of time over which an assessment extends.",
+      "usage_in_passage": "It turns horizon, originally a word of space, into a metaphor of time, condenses into one word the issue of the whole paragraph, over how many years the balance is to be judged, and closes the passage.",
+      "related_terms": [
+        "timeframe",
+        "perspective",
+        "scope",
+        "outlook"
+      ],
+      "context_sentence": "The arithmetic of peatland management thus depends less on annual accounting than on the horizon over which the accounting is done."
+    }
+  }
+}

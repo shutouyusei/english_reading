@@ -1,7 +1,9 @@
 "use strict";
 
-/* 保存層(アプリ版)。Swift 側が ~/Documents/TOEFLReading/attempts.jsonl に追記する。
-   公開版の store.web.js と同じ口を提供するため、エンジン側の変更は不要。 */
+/* Storage layer (app build). The native side (app-shell) appends to attempts.jsonl in
+   the data directory.
+   Exposes the same interface as store.web.js in the public build, so the engine needs
+   no changes. */
 
 const _attempts = new Map();
 
@@ -18,7 +20,6 @@ window.Store = {
       list.push(attempt);
       _attempts.set(attempt.passageId, list);
     }
-    // 新しい順に並べる
     for (const list of _attempts.values()) {
       list.sort((a, b) => String(b.finishedAt).localeCompare(String(a.finishedAt)));
     }

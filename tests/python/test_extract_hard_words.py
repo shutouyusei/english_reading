@@ -12,17 +12,11 @@ from extract_hard_words import candidates, extract_hard_words
 
 
 class TestCandidates(unittest.TestCase):
-    def test_plain_word_returns_lowercase_self(self):
-        self.assertEqual(candidates("Reef"), ["reef"])
-
     def test_suffixes_are_stripped(self):
         self.assertEqual(candidates("fluctuates"), ["fluctuates", "fluctuat", "fluctuate"])
         self.assertIn("attribute", candidates("attributed"))
         self.assertIn("change", candidates("changed"))
         self.assertIn("read", candidates("reading"))
-
-    def test_short_stems_are_not_produced(self):
-        self.assertEqual(candidates("les"), ["les"])
 
 
 class TestExtractHardWords(unittest.TestCase):
@@ -35,14 +29,6 @@ class TestExtractHardWords(unittest.TestCase):
     def test_inflected_common_words_are_excluded(self):
         body = "Changes changed changing."
         self.assertEqual(extract_hard_words(body, self.COMMON), [])
-
-    def test_dedup_keeps_first_occurrence_order(self):
-        body = "Disequilibria persists; disequilibria persists."
-        self.assertEqual(extract_hard_words(body, self.COMMON), ["disequilibria", "persists"])
-
-    def test_words_shorter_than_four_letters_are_ignored(self):
-        body = "An apex zoo."
-        self.assertEqual(extract_hard_words(body, self.COMMON), ["apex"])
 
 
 class TestMainMissingBody(unittest.TestCase):

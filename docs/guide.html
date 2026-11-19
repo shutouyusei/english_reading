@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>使い方・Anki設定 — TOEFL Reading</title>
+  <title>Guide and Anki setup — TOEFL Reading</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html">📖 TOEFL Reading</a>
-    <a href="index.html">パッセージ一覧</a>
+    <a href="index.html">Passage list</a>
   </header>
   <main class="prose">
-    <h1>使い方</h1>
-    <p>このサイトには2つのモードがあります。</p>
+    <h1>Guide</h1>
+    <p>This site has two modes.</p>
     <ul>
-      <li><b>✏️ 解答モード</b> — 本番のTOEFLと同じ形式です。左にパッセージ、右に問題が1問ずつ表示され、回答するごとに次の問題へ進みます。経過時間はヘッダーでカウントアップ表示されます。このモードでは単語クリックは無効です。</li>
-      <li><b>📖 解説モード</b> — 本文中の<b>すべての単語</b>をクリックできます。収録語は語源・定義・文中での役割・関連語の日本語解説が右パネルに表示され、その場でAnkiに追加できます。未収録語はWeblioへのリンクが表示されます。「問題の解説」タブでは各問題の正誤と日本語解説を確認できます。</li>
+      <li><b>✏️ Solve mode</b> — the same format as the real TOEFL. The passage is on the left and one question at a time is on the right; answer it to move on to the next. The elapsed time counts up in the header. Clicking words is disabled in this mode.</li>
+      <li><b>📖 Study mode</b> — <b>every word</b> in the text is clickable. For listed words, the right panel shows an English explanation (etymology, definition, role in the passage, related words), and you can add the word to Anki on the spot. For unlisted words, it shows a link to the Cambridge Dictionary. The "Question explanations" tab shows whether each answer was correct, with an explanation in English.</li>
     </ul>
-    <p>問題を解かずに解説モードだけで読むこともできます。成績(スコア・所要時間)はお使いのブラウザ内(localStorage)にのみ保存され、サーバーには送信されません。</p>
+    <p>You can also read in study mode without solving the questions. Results (score and time) are saved only in your browser (localStorage) and are never sent to a server.</p>
 
-    <h1 id="anki">Anki連携のセットアップ</h1>
-    <p>解説モードの「＋ Ankiに追加」ボタンで、単語カードをPCのAnkiに直接追加できます。初回のみ以下の設定が必要です。</p>
+    <h1 id="anki">Setting up Anki</h1>
+    <p>The "+ Add to Anki" button in study mode adds a word card directly to Anki on your computer. This setup is needed once.</p>
     <ol>
-      <li><a href="https://apps.ankiweb.net/" target="_blank" rel="noopener">Anki</a>(PC版)をインストールする。</li>
-      <li>Ankiのメニュー「ツール → アドオン → 新規アドオンを取得」でコード <code>2055492159</code> を入力し、<b>AnkiConnect</b> をインストールする。</li>
-      <li>「ツール → アドオン → AnkiConnect → 設定」を開き、<code>webCorsOriginList</code> に<b>このサイトのURL</b>(<code>https://shutouyusei.github.io</code>)を追加する。下をそのままコピーして貼り付けてください:
+      <li>Install <a href="https://apps.ankiweb.net/" target="_blank" rel="noopener">Anki</a> (desktop version).</li>
+      <li>In Anki, open "Tools → Add-ons → Get Add-ons", enter the code <code>2055492159</code> and install <b>AnkiConnect</b>.</li>
+      <li>Open "Tools → Add-ons → AnkiConnect → Config" and add <b>this site's URL</b> (<code>https://shutouyusei.github.io</code>) to <code>webCorsOriginList</code>. You can copy and paste this as is:
 <pre>{
     "webCorsOriginList": [
         "http://localhost",
         "https://shutouyusei.github.io"
     ]
 }</pre>
-      (他の設定項目は変更不要。既存の値は残したまま追記してください。ここに入れるのは<b>ご自身のユーザー名ではなく、上記のURLそのまま</b>です)</li>
-      <li>Ankiを再起動する。</li>
-      <li>解説モードで単語をクリック →「＋ Ankiに追加」を押し、「✅ 追加しました」と出れば完了。カードはデッキ「TOEFL Reading」に入ります(デッキ名は ⚙ ボタンで変更可)。</li>
+      (Leave the other settings unchanged and keep any existing values. Enter <b>the URL above exactly as written, not your own user name</b>.)</li>
+      <li>Restart Anki.</li>
+      <li>In study mode, click a word and press "+ Add to Anki". If "✅ Added to deck" appears, setup is complete. Cards go into the deck "TOEFL Reading" (you can change the deck name with the ⚙ button).</li>
     </ol>
-    <p><b>ポート番号まで含めて完全一致で判定されます。</b> このリポジトリをフォークして自分のGitHub Pagesで動かす場合や、手元の開発サーバー(<code>http://localhost:8000</code> など)で開く場合は、そのURLを同じ形式で追加してください。<code>http://localhost:8000</code> は <code>http://localhost</code> とは別のURLとして扱われます:
+    <p><b>The URL must match exactly, including the port number.</b> If you fork this repository and run it on your own GitHub Pages, or open it from a local development server (such as <code>http://localhost:8000</code>), add that URL in the same format. <code>http://localhost:8000</code> is treated as a different URL from <code>http://localhost</code>:
 <pre>"webCorsOriginList": ["http://localhost", "http://localhost:8000"]</pre></p>
 
-    <h2>うまくいかないときは</h2>
+    <h2>Troubleshooting</h2>
     <ul>
-      <li><b>「Ankiに接続できませんでした」と出る</b> — Ankiが起動しているか確認してください。起動していれば、次の項目が原因である可能性が高いです。</li>
-      <li><b>Ankiは起動しているのに接続できない</b> — 上記の <code>webCorsOriginList</code> に、いま開いているページのURL(ポート番号を含む)が入っているか確認してください。設定変更後はAnkiの再起動が必要です。</li>
-      <li><b>ポート8765を他のプログラムが使っていないか</b> — AnkiConnectはポート8765を使います。他の開発用サーバーなどがこのポートを先に占有していると、Ankiを起動してもAnkiConnectが待ち受けできず、接続に失敗します。ターミナルで <code>lsof -nP -iTCP:8765 -sTCP:LISTEN</code> を実行し、Anki以外のプログラムが出てきたらそれを終了してください。</li>
-      <li><b>「Ankiがエラーを返しました」と出る</b> — Ankiからの実際のエラー内容が表示されます。<code>model was not found: Basic</code> の場合、お使いのAnkiのノートタイプ名が「Basic」ではありません(日本語版では「基本」など)。その場合はAnki側で「Basic」という名前のノートタイプを用意してください。</li>
-      <li><b>Safariで動かない</b> — SafariはHTTPSページからローカル(<code>http://127.0.0.1</code>)への通信を混在コンテンツとして遮断します。公開版のサイトでAnki連携を使う場合はChromeまたはFirefoxをお使いください。</li>
+      <li><b>"Could not connect to Anki" appears</b> — check that Anki is running. If it is, the next item is the likely cause.</li>
+      <li><b>Anki is running but the connection fails</b> — check that <code>webCorsOriginList</code> above contains the URL of the page you have open (including the port number). Restart Anki after changing the setting.</li>
+      <li><b>Another program is using port 8765</b> — AnkiConnect uses port 8765. If another program, such as a development server, already holds this port, AnkiConnect cannot listen on it even when Anki is running, and the connection fails. Run <code>lsof -nP -iTCP:8765 -sTCP:LISTEN</code> in a terminal and quit any program other than Anki that it lists.</li>
+      <li><b>"Anki returned an error" appears</b> — the actual error from Anki is shown. If it is <code>model was not found: Basic</code>, your Anki has no note type named "Basic" (non-English versions of Anki use a translated name). In that case, create a note type named "Basic" in Anki.</li>
+      <li><b>It does not work in Safari</b> — Safari blocks requests from an HTTPS page to your own computer (<code>http://127.0.0.1</code>) as mixed content. To use Anki from the public site, use Chrome or Firefox.</li>
     </ul>
 
-    <p><b>制約:</b> この機能はPCでAnkiを起動している間のみ動作します。スマートフォン(AnkiDroid / AnkiMobile)への直接追加はできません。PCのAnkiに追加後、Ankiの同期機能でスマートフォンへ反映してください。</p>
+    <p><b>Limitation:</b> this feature works only while Anki is running on your computer. It cannot add cards directly to a phone (AnkiDroid / AnkiMobile). Add the cards to desktop Anki, then use Anki's sync to bring them to your phone.</p>
 
-    <h1 id="report">免責事項・問題の報告</h1>
+    <h1 id="report">Disclaimer and reporting problems</h1>
     <ul>
-      <li>本サイトのパッセージ・問題・解説は<b>すべてAIによって生成</b>されており、人間の専門家によるレビューを受けていません。</li>
-      <li>作成者は英語教育の専門家ではありません。</li>
-      <li>本サイトはETSおよびTOEFLとは無関係の非公式教材です。TOEFLはETSの登録商標です。</li>
-      <li>誤りを見つけた場合は <a href="https://github.com/shutouyusei/english_reading/issues" target="_blank" rel="noopener">GitHub Issues</a> から報告してください。</li>
+      <li>All passages, questions and explanations on this site are <b>generated by AI</b> and have not been reviewed by a human expert.</li>
+      <li>The author is not an English-teaching professional.</li>
+      <li>This site is unofficial material and is not affiliated with ETS or TOEFL. TOEFL is a registered trademark of ETS.</li>
+      <li>If you find a mistake, please report it on <a href="https://github.com/shutouyusei/english_reading/issues" target="_blank" rel="noopener">GitHub Issues</a>.</li>
     </ul>
   </main>
   <footer class="site-footer">
-    <p>⚠️ コンテンツは全てAI生成です ・ 作成者は英語の専門家ではありません ・ ETSおよびTOEFLとは無関係の非公式教材です</p>
-    <p><a href="index.html">パッセージ一覧</a> ・ <a href="#report">問題を報告</a></p>
+    <p>⚠️ All content is AI-generated. The author is not an English-teaching professional. Unofficial material, not affiliated with ETS or TOEFL.</p>
+    <p><a href="index.html">Passage list</a> · <a href="#report">Report a problem</a></p>
   </footer>
   <script src="js/footer.js"></script>
 </body>
