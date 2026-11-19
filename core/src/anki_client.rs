@@ -91,7 +91,7 @@ impl AnkiClient {
         let payload: Value = serde_json::from_str(&text).map_err(|_| {
             let head: String = text.chars().take(60).collect();
             AnkiError::UnreadableResponse(if head.is_empty() {
-                "(unreadable bytes)".to_string()
+                "(empty response)".to_string()
             } else {
                 head
             })
@@ -115,20 +115,24 @@ impl AnkiClient {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use std::io::{BufRead, BufReader};
     use std::process::{Child, Command};
-    use std::thread;
 
-    struct StubServer(Child);
+    struct StubServer {
+        child: Child,
+        port: u16,
+    }
     impl Drop for StubServer {
         fn drop(&mut self) {
-            let _ = self.0.kill();
+            let _ = self.child.kill();
         }
     }
 
     /// Stands in for AnkiConnect with python3. Real HTTP is exchanged, so the client
-    /// and its header handling are covered too.
-    fn start_stub_server(port: u16, mode: &str) -> StubServer {
-        let script = format!(
+    /// and its header handling are covered too. The stub binds a free port and prints
+    /// it once it is listening, so tests neither share ports nor sleep.
+    fn start_stub_server(mode: &str) -> StubServer {
+        let script = String::from(
             r#"
 import http.server, json, sys
 MODE = sys.argv[1]
@@ -137,9 +141,9 @@ class H(http.server.BaseHTTPRequestHandler):
         n = int(self.headers.get("Content-Length", 0))
         req = json.loads(self.rfile.read(n).decode())
         if MODE == "ok":
-            out = json.dumps({{"result": {{"echo": req.get("action")}}, "error": None}}).encode()
+            out = json.dumps({"result": {"echo": req.get("action")}, "error": None}).encode()
         elif MODE == "anki_error":
-            out = json.dumps({{"result": None, "error": "deck not found"}}).encode()
+            out = json.dumps({"result": None, "error": "deck not found"}).encode()
         else:
             out = b"not json at all"
         self.send_response(200)
@@ -148,34 +152,46 @@ class H(http.server.BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(out)
     def log_message(self, *a): pass
-http.server.HTTPServer(("127.0.0.1", {port}), H).serve_forever()
-"#
+server = http.server.HTTPServer(("127.0.0.1", 0), H)
+print(server.server_address[1], flush=True)
+server.serve_forever()
+"#,
         );
-        let child = Command::new("python3")
+        let mut child = Command::new("python3")
             .args(["-c", &script, mode])
-            .stdout(std::process::Stdio::null())
+            .stdout(std::process::Stdio::piped())
             .stderr(std::process::Stdio::null())
             .spawn()
             .expect("failed to start the python3 stub server");
-        thread::sleep(Duration::from_millis(500));
-        StubServer(child)
+        let mut line = String::new();
+        BufReader::new(child.stdout.take().expect("the stub server has no stdout"))
+            .read_line(&mut line)
+            .expect("failed to read the stub server's port");
+        let port = line.trim().parse().expect("the stub server did not print a port");
+        StubServer { child, port }
     }
 
     fn endpoint(port: u16) -> String {
         format!("http://127.0.0.1:{port}")
     }
 
+    /// A port nothing listens on: bind a free one, then release it.
+    fn unused_port() -> u16 {
+        let listener = std::net::TcpListener::bind("127.0.0.1:0").expect("failed to bind a free port");
+        listener.local_addr().expect("the listener has no address").port()
+    }
+
     #[test]
     fn extracts_result_from_a_normal_response() {
-        let _server = start_stub_server(18765, "ok");
-        let client = AnkiClient::new(endpoint(18765), Duration::from_secs(5));
+        let server = start_stub_server("ok");
+        let client = AnkiClient::new(endpoint(server.port), Duration::from_secs(5));
         let result = client.request("version", serde_json::json!({})).unwrap();
         assert_eq!(result.unwrap()["echo"], "version");
     }
 
     #[test]
     fn distinguishes_anki_not_running() {
-        let offline = AnkiClient::new(endpoint(18799), Duration::from_secs(3));
+        let offline = AnkiClient::new(endpoint(unused_port()), Duration::from_secs(3));
         let error = offline.request("version", serde_json::json!({})).unwrap_err();
         assert!(matches!(error, AnkiError::NotRunning));
         assert!(error.to_string().contains("Anki"));
@@ -183,8 +199,8 @@ http.server.HTTPServer(("127.0.0.1", {port}), H).serve_forever()
 
     #[test]
     fn treats_anki_reported_error_as_failure() {
-        let _server = start_stub_server(18766, "anki_error");
-        let client = AnkiClient::new(endpoint(18766), Duration::from_secs(5));
+        let server = start_stub_server("anki_error");
+        let client = AnkiClient::new(endpoint(server.port), Duration::from_secs(5));
         let error = client
             .request("addNote", serde_json::json!({}))
             .unwrap_err();
@@ -196,8 +212,8 @@ http.server.HTTPServer(("127.0.0.1", {port}), H).serve_forever()
 
     #[test]
     fn treats_non_json_response_as_failure() {
-        let _server = start_stub_server(18767, "garbage");
-        let client = AnkiClient::new(endpoint(18767), Duration::from_secs(5));
+        let server = start_stub_server("garbage");
+        let client = AnkiClient::new(endpoint(server.port), Duration::from_secs(5));
         let error = client.request("version", serde_json::json!({})).unwrap_err();
         assert!(matches!(error, AnkiError::UnreadableResponse(_)));
     }

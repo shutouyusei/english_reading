@@ -16,6 +16,7 @@ async function initWritingList() {
                             { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     index = await res.json();
+    if (!Array.isArray(index.prompts)) throw new Error("index.json has no prompts list");
   } catch (err) {
     container.innerHTML =
       `<p class="error">Could not load the list (${escapeHtml(err.message)}).</p>`;
@@ -36,7 +37,7 @@ function promptCardHtml(meta) {
     <div class="card">
       <div class="card-main">
         <h3>${escapeHtml(meta.title)}</h3>
-        <p class="meta">${TYPE_LABELS[meta.type] || meta.type} · target ${meta.target_minutes} min · ${meta.added} ${badgeHtml(entry, entries.length)}</p>
+        <p class="meta">${escapeHtml(TYPE_LABELS[meta.type] || meta.type)} · target ${escapeHtml(meta.target_minutes)} min · ${escapeHtml(meta.added)} ${badgeHtml(entry, entries.length)}</p>
       </div>
       <div class="card-actions">
         <a class="button primary" href="${window.EDITOR_URL}?id=${encodeURIComponent(meta.id)}">✏️ Write</a>

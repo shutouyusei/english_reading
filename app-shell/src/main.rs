@@ -46,8 +46,11 @@ fn main() -> wry::Result<()> {
                     let script = ipc::dispatch(&request, &root, &data_dir);
                     let _ = proxy.send_event(UserEvent::EvaluateScript(script));
                 }
-                Err(_) => {
+                Err(error) => {
                     eprintln!("cannot parse the IPC message: {raw}");
+                    if let Some(script) = ipc::format_parse_failure_script(&raw, &error) {
+                        let _ = proxy.send_event(UserEvent::EvaluateScript(script));
+                    }
                 }
             });
         }

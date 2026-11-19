@@ -75,6 +75,19 @@ pub fn format_resolve_script(request_id: &str, result: Option<&Value>, error: Op
     format!("window.__toeflIpcResolve({request_id_json}, {result_json}, {error_json})")
 }
 
+/// For a message `parse_ipc_request` rejected: builds the JS that rejects the waiting
+/// promise, so the screen shows an error instead of waiting forever. Returns None when
+/// the message carries no usable requestId, because then no promise can be found.
+pub fn format_parse_failure_script(raw: &str, error: &IpcParseError) -> Option<String> {
+    let value: Value = serde_json::from_str(raw).ok()?;
+    let request_id = value.get("requestId")?.as_str().filter(|id| !id.is_empty())?;
+    let message = match error {
+        IpcParseError::UnknownHandler(name) => format!("The app does not support \"{name}\" requests"),
+        _ => "The app could not read this request".to_string(),
+    };
+    Some(format_resolve_script(request_id, None, Some(&message)))
+}
+
 use std::path::Path;
 use toefl_core::anki_client::AnkiClient;
 use toefl_core::jsonlines_log::JsonLinesFile;
@@ -119,6 +132,19 @@ mod tests {
     #[test]
     fn invalid_json_is_rejected() {
         assert_eq!(parse_ipc_request("not json"), Err(IpcParseError::InvalidJson));
+    }
+
+    #[test]
+    fn rejected_message_with_a_request_id_still_gets_an_error_reply() {
+        let raw = r#"{"requestId":"7","handler":"dictionary"}"#;
+        let error = parse_ipc_request(raw).unwrap_err();
+        let script = format_parse_failure_script(raw, &error).unwrap();
+        assert!(script.starts_with(r#"window.__toeflIpcResolve("7", null, "#), "script={script}");
+        assert!(script.contains("dictionary"));
+
+        let without_id = r#"{"handler":"store"}"#;
+        let error = parse_ipc_request(without_id).unwrap_err();
+        assert_eq!(format_parse_failure_script(without_id, &error), None);
     }
 
     #[test]

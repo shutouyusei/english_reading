@@ -19,6 +19,9 @@ pub enum UnreadableStage {
 #[derive(Debug)]
 pub enum ClaudeRunnerError {
     BinaryNotFound,
+    /// The writing prompt or the grading template could not be loaded, so Claude Code
+    /// was never started.
+    PromptUnavailable(String),
     LaunchFailed(String),
     TimedOut { seconds: u64 },
     ClaudeReportedError(String),
@@ -34,6 +37,9 @@ impl ClaudeRunnerError {
                 "Claude Code was not found. Check ~/.local/bin/claude, or set the \
                  TOEFL_CLAUDE_BIN environment variable to its path."
                     .to_string()
+            }
+            ClaudeRunnerError::PromptUnavailable(detail) => {
+                format!("Could not prepare the essay for grading: {detail}")
             }
             ClaudeRunnerError::LaunchFailed(detail) => {
                 format!("Could not start Claude Code: {detail}")

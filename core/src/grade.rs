@@ -48,7 +48,7 @@ pub fn grade_essay(
     .ok_or(ClaudeRunnerError::BinaryNotFound)?;
 
     let prompt_path = writing_prompt_path(root, prompt_id)
-        .ok_or_else(|| ClaudeRunnerError::LaunchFailed(format!("the prompt ID \"{prompt_id}\" is not valid")))?;
+        .ok_or_else(|| ClaudeRunnerError::PromptUnavailable(format!("the prompt ID \"{prompt_id}\" is not valid")))?;
 
     let template_name = if prompt_type == "discussion" {
         "grade-discussion"
@@ -57,15 +57,22 @@ pub fn grade_essay(
     };
     let template_path = root.join(format!("app/prompts/{template_name}.md"));
 
-    let load_failure = || ClaudeRunnerError::LaunchFailed("the prompt or the grading template could not be loaded".to_string());
+    let prompt_failure = || {
+        ClaudeRunnerError::PromptUnavailable(format!("the prompt file for \"{prompt_id}\" could not be read"))
+    };
+    let template_failure = || {
+        ClaudeRunnerError::PromptUnavailable(format!(
+            "the grading template app/prompts/{template_name}.md could not be read"
+        ))
+    };
 
-    let prompt_data = std::fs::read(&prompt_path).map_err(|_| load_failure())?;
+    let prompt_data = std::fs::read(&prompt_path).map_err(|_| prompt_failure())?;
     let prompt: Map<String, Value> = match serde_json::from_slice(&prompt_data) {
         Ok(Value::Object(map)) => map,
-        _ => return Err(load_failure()),
+        _ => return Err(prompt_failure()),
     };
-    let template_text = std::fs::read_to_string(&template_path).map_err(|_| load_failure())?;
-    let (system, user_template) = split_prompt_file(&template_text).ok_or_else(load_failure)?;
+    let template_text = std::fs::read_to_string(&template_path).map_err(|_| template_failure())?;
+    let (system, user_template) = split_prompt_file(&template_text).ok_or_else(template_failure)?;
 
     let must_include = prompt
         .get("must_include")

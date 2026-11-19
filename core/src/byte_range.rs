@@ -19,8 +19,7 @@ pub enum ByteRangeRequest {
 ///
 /// A range that cannot be parsed becomes Whole. RFC 7233 asks for an invalid Range
 /// to be ignored and the whole body returned, which is safer than half-interpreting
-/// it and breaking something. The exception is a suffix range whose length cannot be
-/// parsed (`bytes=-abc`, `bytes=-`): that returns Unsatisfiable.
+/// it and breaking something.
 /// Multiple ranges (`bytes=0-1,5-6`) also get the whole body instead of a multipart
 /// response.
 pub fn parse_byte_range(header: Option<&str>, total_length: i64) -> ByteRangeRequest {
@@ -45,7 +44,7 @@ pub fn parse_byte_range(header: Option<&str>, total_length: i64) -> ByteRangeReq
     // Suffix range (bytes=-N)
     if first_text.is_empty() {
         let Ok(suffix) = last_text.parse::<i64>() else {
-            return Unsatisfiable;
+            return Whole;
         };
         if suffix <= 0 || total_length <= 0 {
             return Unsatisfiable;
@@ -148,7 +147,9 @@ mod tests {
 
     #[test]
     fn malformed_headers_are_whole() {
-        for header in ["", "bytes=5-3", "items=0-1", "bytes=abc", "bytes=10", "bytes=0-1,5-6"] {
+        let headers =
+            ["", "bytes=5-3", "items=0-1", "bytes=abc", "bytes=10", "bytes=0-1,5-6", "bytes=-abc", "bytes=-"];
+        for header in headers {
             assert_eq!(parse_byte_range(Some(header), 100), Whole, "header={header:?}");
         }
     }

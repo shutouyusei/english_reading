@@ -28,7 +28,7 @@ explanations. Do not use any other language.
   `Gallery staff` and so on).
   `id` is a short lowercase English word (`professor`, `student`, `advisor`).
 
-### Use only the 3 voices confirmed in this environment for `voice`
+### Use only these 3 voices for `voice`
 
 | voice | locale |
 |---|---|
@@ -36,28 +36,13 @@ explanations. Do not use any other language.
 | `Daniel` | en_GB |
 | `Karen` | en_AU |
 
-`say -v '?'` lists other English voices too, but they are either novelty voices such as
-`Bad News`, `Bubbles` and `Zarvox`, or voices such as `Albert` and `Fred` that do not suit
-study material read aloud. **Do not use any voice other than these 3.**
+These are macOS voice names that suit study material read aloud. **Do not use any other
+voice.** Nothing checks the name by machine: `validate_listening.py` only requires `voice`
+to be non-empty and, in a conversation, different for each speaker.
 
-Do not confuse what the pre-check protects with what it does not:
-
-- A name that is **not** in `say -v '?'` always fails at playback.
-  `SpeechSynthesizer` compares the voice with the list of voices before calling `say`, and
-  raises an error on the spot if the voice is missing
-  (`say` exits with code 0 and silently substitutes the default voice when given a voice
-  that does not exist, so without the pre-check the learner would study with a different
-  voice and never notice)
-- A name that **is** in `say -v '?'` but is not one of the 3 above (`Albert`, `Fred` and
-  so on) **passes the pre-check and plays as it is.** `validate_listening.py` does not
-  check that a `voice` exists either. In other words, nothing catches a wrong choice here
-  by machine: validation and the build both pass, and the result is study material with
-  audio that is hard to follow
-
-> Current state: the pre-check described above belonged to the former macOS app. In the
-> Rust app the `speech` handler is a placeholder that always returns an error
-> (`app-shell/src/ipc/placeholder.rs`), so no audio is generated yet. Keep to the 3 voices
-> anyway, so that the data is ready when speech synthesis is implemented.
+The app does not generate audio yet: its `speech` handler is a placeholder that always
+returns an error (`app-shell/src/ipc/placeholder.rs`). The voices are recorded so that the
+data is ready when speech synthesis is implemented.
 
 In a conversation, **give the 2 speakers different voices**. With the same voice the
 speakers cannot be told apart in the audio.
@@ -140,24 +125,18 @@ python3 scripts/update_index.py listening
 Fix every `ERROR`, of course. **Do not leave a word-count `WARNING` either.** Lengthen or
 shorten the script until it fits the range.
 
-## 7. Check the audio
-Build the app, start it, and actually play the item.
+## 7. Check the item in the app
+Build the app, start it, and open the item.
 ```
 sh app-shell/build.sh && TOEFL_REPO_ROOT="$(pwd)" app-shell/target/release/app_shell
 ```
 What to check:
-- The audio is generated and plays to the end
-- In a conversation, **the voice changes partway through** (if it does not, suspect the
-  voice assignment)
-- In review mode, `role` appears at the start of each line, and clicking a word in the
+- The item appears in the listening list with its title, type and topic
+- In study mode, `role` appears at the start of each line, and clicking a word in the
   script opens the word panel with a link to Cambridge Dictionary
 
-> Current state: because the `speech` handler is a placeholder, the first 2 checks cannot
-> pass yet. Until speech synthesis is implemented, check that the item appears in the
-> list, and tell the user that the audio was not verified.
-
-Generated audio is placed in a cache and does not enter the repository.
-Also check that `docs/data/listening/audio` does not appear in `git status`.
+The audio cannot be checked yet, because the app does not generate it (see the voice
+section above). Tell the user that the audio was not verified.
 
 ## 8. Confirm and commit
 - Show the user: title, type, topic, word count, speakers and voices, breakdown of
