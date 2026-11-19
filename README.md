@@ -57,6 +57,10 @@ bash app-shell/build.sh    # build (cargo only)
 TOEFL_REPO_ROOT="$(pwd)" app-shell/target/release/app_shell
 ```
 
+On macOS, `sh app-shell/install-macos.sh` puts a double-clickable launcher,
+`TOEFL Study.app`, into `/Applications`. It starts the binary built in this repository, so
+the repository must stay where it is; run the script again after moving it.
+
 ### Before building on Linux
 
 Install the system libraries that wry (WebKitGTK) and tao (GTK3) need first.
