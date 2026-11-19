@@ -1,8 +1,8 @@
 use serde_json::{Map, Value};
 use toefl_core::jsonlines_log::JsonLinesFile;
 
-/// store(読解)・listening どちらのIPCハンドラも、この共通実装をファイル名だけ
-/// 変えて使う(Swift版 `StoreHandler` と同じ設計)。
+/// Both the store (reading) and listening IPC handlers use this shared implementation,
+/// changing only the file name.
 pub fn handle_log_store(payload: &Map<String, Value>, log: &JsonLinesFile) -> Result<Option<Value>, String> {
     let action = payload.get("action").and_then(Value::as_str).unwrap_or("");
     match action {

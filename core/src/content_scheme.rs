@@ -2,8 +2,8 @@ use crate::byte_range::{parse_byte_range, ByteRangeRequest};
 use crate::path_resolver::resolve_content_path;
 use std::path::Path;
 
-/// スキームハンドラが返す応答。呼び出し側(Tauriのプロトコルハンドラ等)が
-/// これをそのままHTTPレスポンスに変換する。
+/// The response returned by the scheme handler. The caller converts it directly
+/// into an HTTP response.
 pub struct ContentResponse {
     pub status: u16,
     pub headers: Vec<(String, String)>,
@@ -25,15 +25,15 @@ fn mime_type_for(extension: &str) -> &'static str {
     }
 }
 
-/// 指定したルート配下の実ファイルを、Range 要求も踏まえて読み出す。
-/// root は app:// ならリポジトリルート、audio:// なら音声キャッシュを渡す。
-/// どちらの場合も resolve_content_path がルート外への脱出を拒否する。
+/// Reads a real file under the given root, taking any Range request into account.
+/// For root, pass the repository root for app:// and the audio cache for audio://.
+/// In both cases resolve_content_path rejects escapes outside the root.
 ///
-/// <audio> は音声ファイルを Range 要求で読む。全体を 200 で返し続けると
-/// 音声要素が networkState=3 (NETWORK_NO_SOURCE) に落ち、一切再生されない
-/// (詳しい経緯は byte_range.rs 参照)。
+/// <audio> reads audio files with Range requests. If the whole body keeps coming
+/// back as 200, the audio element drops to networkState=3 (NETWORK_NO_SOURCE) and
+/// never plays (see byte_range.rs for the details).
 ///
-/// ファイルが解決できない・読めない場合は None(呼び出し側で 404 にする)。
+/// Returns None when the file cannot be resolved or read (the caller makes it a 404).
 pub fn build_content_response(
     root: &Path,
     request_path: &str,

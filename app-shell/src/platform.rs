@@ -1,8 +1,7 @@
 use std::collections::HashMap;
 use std::path::{Path, PathBuf};
 
-/// `TOEFL_REPO_ROOT` が設定されていればそれを、なければ起動時のカレントディレクトリを
-/// 返す(既存Swift版 main.swift の起動時解決と同じ規約)。
+/// Returns `TOEFL_REPO_ROOT` if it is set, otherwise the current directory at startup.
 pub fn resolve_repo_root(env: &HashMap<String, String>, current_dir: &Path) -> PathBuf {
     match env.get("TOEFL_REPO_ROOT") {
         Some(value) if !value.is_empty() => PathBuf::from(value),
@@ -10,8 +9,9 @@ pub fn resolve_repo_root(env: &HashMap<String, String>, current_dir: &Path) -> P
     }
 }
 
-/// OSごとのデータディレクトリ既定値。Windows枝はこの開発環境ではビルド・検証されない
-/// (docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md 参照)。
+/// The default data directory for each OS. The Windows branch is not built or verified
+/// in this development environment
+/// (see docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md).
 #[cfg(target_os = "macos")]
 pub fn default_data_dir(home: &Path) -> PathBuf {
     home.join("Documents/TOEFLReading")

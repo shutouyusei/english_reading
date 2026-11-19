@@ -3,9 +3,9 @@ use std::fs;
 use std::io;
 use std::path::PathBuf;
 
-/// JSON Lines 形式のデータを1行ずつ解釈する。
-/// 壊れた行はその行だけを捨て、他の行は失わない。
-/// attempts.jsonl と essays.jsonl の両方がこれを使う。
+/// Parses JSON Lines data one line at a time.
+/// A broken line is dropped on its own; the other lines are not lost.
+/// Both attempts.jsonl and essays.jsonl use this.
 pub fn parse_json_lines(data: &[u8]) -> Vec<Map<String, Value>> {
     data.split(|&b| b == 0x0A)
         .filter_map(|line| match serde_json::from_slice::<Value>(line) {
@@ -15,9 +15,9 @@ pub fn parse_json_lines(data: &[u8]) -> Vec<Map<String, Value>> {
         .collect()
 }
 
-/// 追記専用の JSON Lines ファイル。
-/// 学習ログ(attempts.jsonl)とライティング(essays.jsonl)が同じ扱い方をするため、
-/// 読み書きの手順をここ1か所にまとめている。
+/// An append-only JSON Lines file.
+/// The study log (attempts.jsonl) and writing (essays.jsonl) are handled the same way,
+/// so the read and write steps are kept here in one place.
 pub struct JsonLinesFile {
     path: PathBuf,
 }
@@ -29,7 +29,8 @@ impl JsonLinesFile {
         }
     }
 
-    /// ファイルがまだ無い場合は空配列。読めないこと自体は異常ではない。
+    /// Returns an empty list when the file does not exist yet. Being unreadable is not
+    /// an error in itself.
     pub fn load_all(&self) -> Vec<Map<String, Value>> {
         match fs::read(&self.path) {
             Ok(data) => parse_json_lines(&data),
@@ -37,7 +38,7 @@ impl JsonLinesFile {
         }
     }
 
-    /// 既存行は一切読み書きせず、末尾に1行足すだけ。
+    /// Only adds one line at the end. Existing lines are never read or rewritten.
     pub fn append(&self, row: &Map<String, Value>) -> io::Result<()> {
         use std::io::Write;
 

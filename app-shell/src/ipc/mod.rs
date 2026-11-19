@@ -32,7 +32,7 @@ pub struct IpcRequest {
     pub payload: Map<String, Value>,
 }
 
-/// JS から届いた `{handler, requestId, ...payload}` を解析する。
+/// Parses the `{handler, requestId, ...payload}` message received from JS.
 pub fn parse_ipc_request(raw: &str) -> Result<IpcRequest, IpcParseError> {
     let value: Value = serde_json::from_str(raw).map_err(|_| IpcParseError::InvalidJson)?;
     let mut object = match value {
@@ -64,9 +64,9 @@ pub fn parse_ipc_request(raw: &str) -> Result<IpcRequest, IpcParseError> {
     Ok(IpcRequest { request_id, handler, payload: object })
 }
 
-/// `window.__toeflIpcResolve(requestId, result, error)` を呼ぶJSを組み立てる。
-/// `Value` の `Display` 実装がJSONエンコードするので、引用符・バックスラッシュ等の
-/// エスケープはここで手作業しない。
+/// Builds the JS that calls `window.__toeflIpcResolve(requestId, result, error)`.
+/// The `Display` impl of `Value` JSON-encodes, so quotes, backslashes and the like are
+/// not escaped by hand here.
 pub fn format_resolve_script(request_id: &str, result: Option<&Value>, error: Option<&str>) -> String {
     let request_id_json = Value::String(request_id.to_string());
     let result_json = result.cloned().unwrap_or(Value::Null);
@@ -81,10 +81,11 @@ use std::path::Path;
 use toefl_core::anki_client::AnkiClient;
 use toefl_core::jsonlines_log::JsonLinesFile;
 
-/// リクエストを実行し、`window.__toeflIpcResolve(...)` を呼ぶJS文字列を返す。
-/// grader/anki を含め全ハンドラがここで同期的に実行される想定 — 呼び出し側
-/// (main.rs)が必ずバックグラウンドスレッドから呼ぶことでUIスレッドを塞がない
-/// (docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md のエラー処理節)。
+/// Runs the request and returns the JS string that calls `window.__toeflIpcResolve(...)`.
+/// All handlers, including grader/anki, are expected to run synchronously here. The
+/// caller (main.rs) always calls this from a background thread, so the UI thread is not
+/// blocked (see the error handling section of
+/// docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md).
 pub fn dispatch(request: &IpcRequest, root: &Path, data_dir: &Path) -> String {
     let result = match request.handler {
         Handler::Store => {

@@ -2,19 +2,21 @@ use serde_json::Value;
 use std::fmt;
 use std::time::Duration;
 
-/// Anki への追加が失敗した理由。画面にそのまま出せる日本語を持たせる。
+/// Why adding to Anki failed. Each variant carries a Japanese message that can be
+/// shown on screen as is.
 ///
-/// 「繋がらない」を一括りにしないのが要点。ブラウザの fetch はネットワーク不達も
-/// CORS 拒否も同じ "Load failed" にしてしまい、利用者にも作者にも原因が分からなかった。
+/// The point is not to lump everything into "cannot connect". The browser's fetch turns
+/// both an unreachable network and a CORS rejection into the same "Load failed", so
+/// neither the user nor the author could tell the cause.
 #[derive(Debug)]
 pub enum AnkiError {
-    /// 接続そのものができない。Anki が起動していないか AnkiConnect が入っていない。
+    /// Could not connect at all. Anki is not running or AnkiConnect is not installed.
     NotRunning,
-    /// 繋がったが Anki 側がエラーを返した。文言は Anki のものをそのまま渡す。
+    /// Connected, but Anki returned an error. The message is passed on as Anki wrote it.
     AnkiReported(String),
-    /// 繋がったが応答を解釈できない。AnkiConnect 以外が同じポートを使っている場合など。
+    /// Connected, but the response could not be parsed, e.g. when something other than
+    /// AnkiConnect is using the same port.
     UnreadableResponse(String),
-    /// HTTP のステータスが 200 でない。
     BadStatus(u16),
 }
 
@@ -36,7 +38,7 @@ impl fmt::Display for AnkiError {
 
 impl std::error::Error for AnkiError {}
 
-/// AnkiConnect の HTTP API を叩く。
+/// Calls the AnkiConnect HTTP API.
 pub struct AnkiClient {
     endpoint: String,
     timeout: Duration,
@@ -56,7 +58,8 @@ impl AnkiClient {
         }
     }
 
-    /// 呼び出し側のスレッドを塞いで待つ。重いので必ずメインスレッド以外から呼ぶこと。
+    /// Blocks the calling thread while it waits. It is slow, so always call it from a
+    /// thread other than the main thread.
     pub fn request(&self, action: &str, params: Value) -> Result<Option<Value>, AnkiError> {
         let body = serde_json::json!({
             "action": action,
@@ -74,7 +77,7 @@ impl AnkiClient {
             .set("Content-Type", "application/json")
             .send_string(&body.to_string());
 
-        // 接続拒否もタイムアウトも、利用者にとっては「Anki が居ない」で同じ。
+        // To the user, a refused connection and a timeout both mean "Anki is not there".
         let response = match response {
             Ok(response) => response,
             Err(ureq::Error::Status(code, _)) => return Err(AnkiError::BadStatus(code)),
@@ -98,7 +101,8 @@ impl AnkiClient {
             return Err(AnkiError::UnreadableResponse(head));
         };
 
-        // AnkiConnect は成功時も error キーを null で返す。null と文字列を区別する。
+        // AnkiConnect returns the error key as null even on success, so null and a
+        // string are told apart.
         if let Some(Value::String(message)) = payload.get("error") {
             if !message.is_empty() {
                 return Err(AnkiError::AnkiReported(message.clone()));

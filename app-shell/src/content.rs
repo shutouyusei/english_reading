@@ -1,8 +1,8 @@
 use std::path::Path;
 use toefl_core::content_scheme::build_content_response;
 
-/// 純粋なロジック部分。wryの型に依存しないので単体テストしやすい。
-/// ファイルが見つからない・読めない場合は404を組み立てる。
+/// The pure logic part. It does not depend on wry types, so it is easy to unit test.
+/// Builds a 404 when the file cannot be found or read.
 pub fn respond(root: &Path, request_path: &str, range_header: Option<&str>) -> (u16, Vec<(String, String)>, Vec<u8>) {
     match build_content_response(root, request_path, range_header) {
         Some(response) => (response.status, response.headers, response.body),

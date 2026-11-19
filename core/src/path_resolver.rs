@@ -1,7 +1,7 @@
 use std::path::{Path, PathBuf};
 
-/// app:// への要求パスを、リポジトリルート配下の実ファイルへ解決する。
-/// ルートの外を指す場合は None を返す(ディレクトリ脱出の防止)。
+/// Resolves a request path to a real file under `root`.
+/// Returns None when it points outside the root (prevents directory traversal).
 pub fn resolve_content_path(root: &Path, request_path: &str) -> Option<PathBuf> {
     let relative = request_path.strip_prefix('/').unwrap_or(request_path);
     let target = lexically_normalize(&root.join(relative));
@@ -11,8 +11,9 @@ pub fn resolve_content_path(root: &Path, request_path: &str) -> Option<PathBuf> 
         return None;
     }
 
-    // 字句チェックを通っても、シンボリックリンクで外へ出られる場合がある。
-    // 実体のパスでもう一度確かめる(存在しないパスは symlink 脱出のしようがないため許可する)。
+    // Even when the lexical check passes, a symbolic link can still lead outside.
+    // Check once more with the real paths (a path that does not exist cannot escape
+    // through a symlink, so it is allowed).
     match (root.canonicalize(), target.canonicalize()) {
         (Ok(real_root), Ok(real_target)) => {
             if real_target != real_root && !real_target.starts_with(&real_root) {
@@ -25,7 +26,7 @@ pub fn resolve_content_path(root: &Path, request_path: &str) -> Option<PathBuf> 
     Some(target)
 }
 
-/// `..` や `.` を字句的に畳み込む(実ファイルの存在有無は問わない)。
+/// Collapses `..` and `.` lexically (whether the file actually exists does not matter).
 fn lexically_normalize(path: &Path) -> PathBuf {
     use std::path::Component;
 
@@ -44,10 +45,10 @@ fn lexically_normalize(path: &Path) -> PathBuf {
     result
 }
 
-/// 問題IDから問題JSONの実ファイルを解決する。
-/// ID は画面(JS)から来るため、リポジトリ配下に収まることを必ず確かめる。
-/// docs/data/writing/ 自体を「ルート」として resolve_content_path に渡すことで、
-/// .. を使って同フォルダの外(リポジトリ内の他ファイルも含む)へ出る経路を塞ぐ。
+/// Resolves a question ID to the real file of its question JSON.
+/// The ID comes from the UI (JS), so always make sure it stays inside the repository.
+/// Passing docs/data/writing/ itself as the "root" to resolve_content_path blocks any
+/// route that uses .. to leave that folder (including to other files in the repository).
 pub fn writing_prompt_path(root: &Path, prompt_id: &str) -> Option<PathBuf> {
     let writing_dir = root.join("docs/data/writing");
     resolve_content_path(&writing_dir, &format!("{prompt_id}.json"))

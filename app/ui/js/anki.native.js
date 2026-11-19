@@ -1,15 +1,15 @@
 "use strict";
 
-/* Anki 層(アプリ版)。Swift 側が AnkiConnect へ HTTP で問い合わせる。
+/* Anki layer (app build). The native side (app-shell) queries AnkiConnect over HTTP.
 
-   なぜ経由するのか: WKWebView から直接 fetch すると、ページの出自が app://local に
-   なり、AnkiConnect がその出自を許可リストに持たないため Access-Control-Allow-Origin
-   を返さない。応答はブラウザに遮断され、JS からは "Load failed" としか見えない。
-   ネイティブコードには同一生成元ポリシーが無いので、この経路なら Anki 側の設定に
-   依存せずに済む。 */
+   Why go through it: a fetch straight from the WebView has the page origin app://local,
+   which AnkiConnect does not have in its allow list, so it returns no
+   Access-Control-Allow-Origin. The browser blocks the response and JS only sees
+   "Load failed". Native code has no same-origin policy, so this route does not depend
+   on Anki's configuration. */
 
 window.AnkiBridge = {
-  /** AnkiConnect の action を実行して result を返す。失敗したら日本語の理由で throw。 */
+  /** Run an AnkiConnect action and return its result. Throws with a Japanese reason on failure. */
   async request(action, params) {
     const reply = await window.webkit.messageHandlers.anki.postMessage({
       action: "request",

@@ -8,7 +8,7 @@ use std::collections::HashMap;
 use std::path::Path;
 use std::time::Instant;
 
-/// ディスカッションの投稿群を、そのままプロンプトに貼れる平文にする。
+/// Turns the discussion posts into plain text that can be pasted into the prompt as is.
 pub fn describe_discussion(discussion: Option<&Value>) -> String {
     let Some(discussion) = discussion.and_then(Value::as_object) else {
         return String::new();
@@ -31,9 +31,9 @@ pub fn describe_discussion(discussion: Option<&Value>) -> String {
     lines.join("\n")
 }
 
-/// 問題文と採点用テンプレートを読み込み、claude -p を起動して採点する。
-/// promptId は JS から来るため、writing_prompt_path 経由でリポジトリ外や
-/// docs/data/writing の外を指せないことを確かめる。
+/// Loads the question and the grading template, then runs claude -p to grade.
+/// promptId comes from JS, so it goes through writing_prompt_path to make sure it
+/// cannot point outside the repository or outside docs/data/writing.
 pub fn grade_essay(
     root: &Path,
     prompt_id: &str,

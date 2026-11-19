@@ -1,8 +1,9 @@
 "use strict";
 
-/* リスニングの学習記録(アプリ版)。
-   Swift 側が ~/Documents/TOEFLReading/listening.jsonl に追記する。
-   読解の store.native.js と同じ形。キーが passageId ではなく listeningId である点だけが違う。 */
+/* Listening learning records (app build).
+   The native side (app-shell) appends to listening.jsonl in the data directory.
+   Same shape as store.native.js for reading. The only difference is that the key is
+   listeningId instead of passageId. */
 
 const _listeningAttempts = new Map();
 
@@ -19,7 +20,6 @@ window.ListeningStore = {
       list.push(attempt);
       _listeningAttempts.set(attempt.listeningId, list);
     }
-    // 新しい順に並べる
     for (const list of _listeningAttempts.values()) {
       list.sort((a, b) => String(b.finishedAt).localeCompare(String(a.finishedAt)));
     }

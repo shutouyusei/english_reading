@@ -1,9 +1,9 @@
 "use strict";
 
-/* HTML への差し込み前に特殊文字を無害化する。
-   公開サイトのリーディングと、ローカルアプリのライティングが共通で使う。
-   採点結果のように、内容を検査していないデータをそのまま埋め込む箇所があるため、
-   描画側は必ずこれを通す。 */
+/* Neutralizes special characters before insertion into HTML.
+   Shared by reading on the public site and writing in the local app.
+   Some places embed data whose content has not been checked, such as grading results,
+   so the rendering side must always pass it through this. */
 
 function escapeHtml(text) {
   return String(text).replace(/[&<>"']/g, (ch) => (

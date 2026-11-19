@@ -1,8 +1,8 @@
 "use strict";
 
-/* 執筆 → 採点中 → 結果 を1画面で切り替える。
-   「採点する」を押したらまずエッセイを保存し、それから採点を始める。
-   この順序により、採点中に落ちても書いた文章は残る。 */
+/* Switches between writing -> grading -> result on one screen.
+   Pressing the grade button saves the essay first, and only then starts grading.
+   With this order, the written text survives even if the app dies during grading. */
 
 const state = {
   prompt: null,
@@ -71,7 +71,7 @@ function promptHtml(prompt) {
     <ul>${prompt.must_include.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
 }
 
-// --- 執筆 ---
+// --- Writing ---
 
 function showWriting(initialText = "") {
   document.querySelector("#header-status").textContent = "";
@@ -89,11 +89,11 @@ function showWriting(initialText = "") {
   const syncCounter = () => {
     const words = countWords(input.value);
     document.querySelector("#word-count").textContent = words;
-    // 空文字を Claude に投げても意味のある採点は返らない。枠を無駄にしない。
+    // Sending empty text to Claude returns no meaningful grade. Do not waste the quota.
     button.disabled = words === 0;
   };
   input.addEventListener("input", syncCounter);
-  syncCounter(); // 下書き復元(書き直す)で埋まっているテキストにも反映する
+  syncCounter(); // also reflect text pre-filled by a draft restore (the rewrite button)
   button.addEventListener("click", () => submitEssay(input.value));
   input.focus();
   startTimer();
@@ -124,7 +124,7 @@ function formatMinSec(sec) {
   return `${Math.floor(sec / 60)}分${sec % 60}秒`;
 }
 
-// --- 送信と採点 ---
+// --- Submit and grade ---
 
 async function submitEssay(text) {
   stopTimer();
@@ -194,14 +194,15 @@ function showGrading() {
   }, 1000);
 }
 
-// --- 結果 ---
+// --- Result ---
 
-// 採点結果はグレーディングAIが返すJSONそのままで、どこでも型保証されていない
-// (essays.jsonlに逐語保存され、起動のたびに読み直される)。
-// innerHTMLに差し込む前に、必ずエスケープする。
-// overallは0〜5の有限数でなければ "?" 表示に倒す
-// (app/ui/js/writing-list.js の badgeHtml と同じ考え方)。
-// criteria/correctionsは配列である保証もないため、配列でなければ空配列扱いにする。
+// The grade is the JSON the grading AI returned, as is, and its types are guaranteed
+// nowhere (it is saved verbatim to essays.jsonl and re-read on every launch).
+// Always escape it before inserting it into innerHTML.
+// If overall is not a finite number from 0 to 5, fall back to showing "?"
+// (same idea as badgeHtml in app/ui/js/writing-list.js).
+// criteria/corrections are not guaranteed to be arrays either, so anything that is not
+// an array is treated as an empty array.
 function safeScore(value) {
   if (typeof value !== "number" || !Number.isFinite(value) || value < 0 || value > 5) return null;
   return value;
@@ -270,7 +271,7 @@ function showError(essay, message) {
     .addEventListener("click", () => runGrading(essay));
 }
 
-// HTML エスケープは docs/js/escape.js の escapeHtml を使う。
+// HTML escaping uses escapeHtml from docs/js/escape.js.
 const esc = (text) => escapeHtml(text);
 
 document.addEventListener("DOMContentLoaded", initEditor);

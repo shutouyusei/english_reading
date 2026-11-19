@@ -6,8 +6,8 @@ const playerState = {
   answers: [],
   startedAt: null,
   audioUrl: null,
-  retriedAudio: false,   // 壊れたキャッシュの作り直しは1回だけ
-  playbackDone: false,   // ended 後は audio 要素の error リスナを無害化する
+  retriedAudio: false,   // a broken cache is rebuilt only once
+  playbackDone: false,   // after ended, neutralizes the audio element's error listener
 };
 
 function qs(sel) {
@@ -19,8 +19,9 @@ function renderError(message) {
     `<p class="error">${escapeHtml(message)} <a href="listening.html">一覧に戻る</a></p>`;
 }
 
-/** 音声関連の失敗を画面に出す。黙って無視せず、常に解説モードへの導線を残す。
-    ヘッダの「中断して解説モードへ」と同じ行き先なので、文言もそちらへ揃える。 */
+/** Show audio-related failures on screen. Never ignore them silently; always leave a
+    way into study mode. It leads to the same place as the header's quit link
+    (#quit-link), so the wording follows that link. */
 function renderAudioFailure(message) {
   qs("#passage-pane").innerHTML = `
     <p class="error">${escapeHtml(message)}</p>
@@ -35,11 +36,12 @@ function formatElapsed(sec) {
   return `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`;
 }
 
-/** 台本を say に渡せる形にする。話者ごとに声が変わる。
-    連続する同じ話者の行は1つの発話に畳む。say の呼び出し回数と結合処理を
-    減らせるうえ、行と行の間に不要な無音(実測で1行あたり約0.2秒)が
-    入らなくなる。話者が交互に変わる会話では、隣り合う行の話者が異なる
-    ため畳まれずそのまま残る。 */
+/** Shape the script into the form passed to Speech.prepare(). The voice changes per
+    speaker. Consecutive lines by the same speaker are folded into one utterance.
+    This cuts the number of synthesis calls and the joining work, and keeps unneeded
+    silence out from between lines (about 0.2 s per line, measured with macOS say).
+    In a conversation where the speakers alternate, adjacent lines have different
+    speakers, so they are not folded and stay as they are. */
 function utterancesOf(item) {
   const voices = new Map(item.speakers.map((s) => [s.id, s.voice]));
   const utterances = [];
@@ -82,15 +84,16 @@ async function init() {
   if (mode === "study") startStudyMode(); else startSolveMode();
 }
 
-/* ---------- 解答モード ---------- */
+/* ---------- Solve mode ---------- */
 
-/** 解説モード中の再生を止める。stopSolvePlayback() と対称の理由:
-    startSolveMode() は #passage-pane を丸ごと作り直すが、renderReviewPlayer()
-    が挿入した <audio id="review-player"> を放置すると、外れた要素は
-    クロージャに掴まれたまま鳴り続けうる(下の stopSolvePlayback() のコメント
-    にある一般則と同じ)。解答は原則1回きりのセッションなので、その音が
-    かぶって聞こえるのは特に困る。#review-player が無い経路(音声の準備が
-    失敗した、またはまだ準備中)では何もしない。 */
+/** Stop playback in study mode. The reason mirrors stopSolvePlayback():
+    startSolveMode() rebuilds #passage-pane wholesale, but if the
+    <audio id="review-player"> inserted by renderReviewPlayer() is left alone, the
+    detached element can keep playing while a closure holds it (the same general
+    rule as in the stopSolvePlayback() comment below). A solve session is in
+    principle a one-time session, so hearing that audio on top of it is especially
+    bad. Does nothing on paths with no #review-player (audio preparation failed or
+    is still in progress). */
 function stopReviewPlayback() {
   const audio = qs("#review-player");
   if (!audio) return;
@@ -103,19 +106,19 @@ async function startSolveMode() {
   const item = playerState.item;
   playerState.current = 0;
   playerState.answers = item.questions.map(() => null);
-  // 前のセッションの再生状態を引き継がない。解説モードを経由して
-  // 戻ってきた場合(「もう一度解く」)は、playbackDone が立ったままだと
-  // 新しいセッションの本物の error まで renderPlayer() の error リスナに
-  // 握りつぶされる。retriedAudio も戻さないと、次のセッションで
-  // キャッシュ作り直しの機会が無くなる。
+  // Do not carry over the previous session's playback state. When coming back
+  // through study mode (the "solve again" link), a playbackDone left set would
+  // make the error listener in renderPlayer() swallow even real errors from the
+  // new session. retriedAudio must be reset too, or the next session gets no
+  // chance to rebuild the cache.
   playerState.playbackDone = false;
   playerState.retriedAudio = false;
   qs("#passage-pane").innerHTML =
     `<p class="hint">音声を準備しています…</p>`;
   qs("#right-pane").innerHTML = "";
-  // #q-status は renderQuestion が textContent だけを書き換える場所。
-  // innerHTML で丸ごと上書きすると quit-link ごと消えてしまうため、
-  // 中に空の入れ物を用意しておく。
+  // #q-status is the place where renderQuestion rewrites only textContent.
+  // Overwriting everything with innerHTML would wipe out quit-link too, so an
+  // empty container is put inside.
   qs("#header-status").innerHTML =
     `<span id="q-status"></span> <a href="#" id="quit-link">中断して解説モードへ</a>`;
   qs("#quit-link").addEventListener("click", (e) => {
@@ -127,7 +130,7 @@ async function startSolveMode() {
     const { url } = await Speech.prepare(item.id, utterancesOf(item));
     playerState.audioUrl = url;
   } catch (err) {
-    // 音声が用意できないことを黙って無視しない。解説モードへは進める。
+    // Do not silently ignore that the audio could not be prepared. Study mode is still reachable.
     renderAudioFailure(`音声を準備できませんでした: ${err.message}`);
     return;
   }
@@ -135,7 +138,7 @@ async function startSolveMode() {
 }
 
 function renderPlayer() {
-  // 本番と同じく再生は1回だけ。一時停止はできるが、巻き戻しはできない。
+  // As in the real test, the audio plays only once. Pausing is possible, rewinding is not.
   qs("#passage-pane").innerHTML = `
     <div class="audio-stage">
       <p class="hint">音声は一度だけ再生されます。メモを取りながら聴いてください。</p>
@@ -151,8 +154,8 @@ function renderPlayer() {
 
   button.addEventListener("click", () => {
     if (audio.paused) {
-      // play() は NotAllowedError などで reject しうる。拾わないと、
-      // ボタンを押しても何も起きないまま黙って失敗する経路になる。
+      // play() can reject, e.g. with NotAllowedError. If it is not caught, pressing
+      // the button fails silently with nothing happening.
       audio.play().catch((err) => {
         renderAudioFailure(`音声を再生できませんでした: ${err.message}`);
       });
@@ -170,9 +173,10 @@ function renderPlayer() {
     state.textContent = "一時停止中";
   });
   audio.addEventListener("ended", () => {
-    // 以後この audio 要素をいじらせない。error リスナは残り続けるため、
-    // 設問・結果画面に進んだ後に error が起きて renderPlayer() が
-    // 呼び直されると、二重状態(結果の上に再生画面が出る等)になりうる。
+    // Nothing may touch this audio element from here on. The error listener stays
+    // attached, so if an error fires after moving on to the question or result
+    // screen and renderPlayer() is called again, the UI can end up in a doubled
+    // state (e.g. the player showing on top of the result).
     playerState.playbackDone = true;
     button.disabled = true;
     button.textContent = "再生終了";
@@ -181,21 +185,22 @@ function renderPlayer() {
     audio.removeAttribute("src");
     renderQuestion();
   });
-  // キャッシュが壊れていることがある。1度だけ作り直してから諦める。
+  // The cache is sometimes broken. Rebuild it once, then give up.
   audio.addEventListener("error", async () => {
-    // この closure が捕まえている audio が、今まさに画面上で生きている
-    // #player と別物なら、renderPlayer() の再描画で既に差し替えられた
-    // 古い・外れた要素からの通知なので無視する。再試行成功後に
-    // renderPlayer() が新しい #player を作った後、この古い要素に遅れて
-    // 届く error が、新しく描画したばかりのプレイヤーを
-    // renderAudioFailure() で消してしまう事故を防ぐ。要素の同一性で
-    // 判定するため、フラグを介さず正確に「今の #player かどうか」だけを見る。
+    // If the audio captured by this closure is not the #player that is live on
+    // screen right now, the notification comes from an old, detached element that
+    // a renderPlayer() re-render already replaced, so ignore it. This prevents an
+    // error that arrives late on the old element, after a successful retry made
+    // renderPlayer() create a new #player, from wiping the freshly rendered player
+    // through renderAudioFailure(). The check is on element identity, so it tests
+    // exactly "is this the current #player" without going through a flag.
     if (audio !== qs("#player")) return;
-    // ここから先は同じ要素(まだ #player のまま)からの通知。
-    // 再生が既に終わっている(設問・結果画面に進んでいる)場合、ended
-    // リスナ(:176)の audio.removeAttribute("src") 自体が誘発する error を
-    // 無視したい。ended は要素を差し替えないため同一性チェックでは
-    // 弾けず、playbackDone フラグが要る。
+    // From here on the notification comes from the same element (still #player).
+    // When playback has already ended (we moved on to the question or result
+    // screen), the error triggered by the ended listener's own
+    // audio.removeAttribute("src") should be ignored. ended does not replace the
+    // element, so the identity check cannot filter it out and the playbackDone
+    // flag is needed.
     if (playerState.playbackDone) return;
     if (playerState.retriedAudio) {
       renderAudioFailure("音声を再生できませんでした。");
@@ -218,8 +223,8 @@ function renderQuestion() {
   const questions = playerState.item.questions;
   const question = questions[idx];
   const isLast = idx === questions.length - 1;
-  // innerHTML で書き換えると startSolveMode が入れた quit-link を消してしまうため、
-  // 中の span だけを書き換える(docs/js/reader.js の #q-pos と同じ形)。
+  // Rewriting with innerHTML would remove the quit-link that startSolveMode put in,
+  // so only the inner span is rewritten (same shape as #q-pos in docs/js/reader.js).
   const statusEl = qs("#q-status");
   if (statusEl) statusEl.textContent = `Question ${idx + 1} of ${questions.length}`;
   const choices = ["A", "B", "C", "D"].map((letter) => {
@@ -272,7 +277,7 @@ async function finishSolve() {
     answers: playerState.answers,
     finishedAt: new Date().toISOString(),
   };
-  // 保存を待ってから描画する。待たないと直後の復習で古い結果が出る。
+  // Wait for the save before rendering. Otherwise a review right after shows the old result.
   let saveError = null;
   try {
     await ListeningStore.saveAttempt(attempt);
@@ -292,25 +297,28 @@ async function finishSolve() {
   qs("#to-study").addEventListener("click", () => startStudyMode());
 }
 
-/* ---------- 解説モード ---------- */
+/* ---------- Study mode ---------- */
 
-/** 解答モード中の再生を止める。#quit-link は再生中も含めて解答フロー全体で
-    押せるが、renderStudy() が #passage-pane を丸ごと作り直しても、外れた
-    <audio id="player"> は(#passage-pane 配下の <audio> 全般と同様)
-    クロージャに掴まれたまま鳴り続けうる。#player はさらに ended/error の
-    リスナが付いているため、それらも生き残る。何もしないと、外れた要素が自然終了したときに
-    ended リスナが renderQuestion() を呼んで #right-pane を古い設問カードで
-    上書きしたり、error が起きて renderAudioFailure() が復習中の台本ごと
-    #passage-pane を消したりする。
-    #player が無い経路(一覧の「解説」から直接入るなど)では何もしない。
-    ここで playbackDone を立ててしまうと、解答セッションに一度も触れて
-    いないのに次の startSolveMode() まで立ったままになり、本物の再生
-    エラーまで renderPlayer() の error リスナに握りつぶされる
-    (startSolveMode() 側で毎回リセットしているので通常は起きないが、
-    無関係な画面遷移でフラグを触らないという原則を先に置いておく)。
-    #player がある場合は、audio.removeAttribute("src") 自体が error
-    イベントを起こしうるため、そのハンドラより先に立てて無害化しておく
-    (renderPlayer() の ended ハンドラと同じ考え方)。 */
+/** Stop playback in solve mode. #quit-link can be pressed throughout the solve
+    flow, including during playback, but even though renderStudy() rebuilds
+    #passage-pane wholesale, the detached <audio id="player"> (like any <audio>
+    under #passage-pane) can keep playing while a closure holds it. #player also
+    has ended/error listeners attached, so those survive as well. If nothing is
+    done, when the detached element ends naturally the ended listener calls
+    renderQuestion() and overwrites #right-pane with a stale question card, or an
+    error fires and renderAudioFailure() wipes #passage-pane together with the
+    script being reviewed.
+    Does nothing on paths with no #player (e.g. entering directly from the study
+    link in the list).
+    Setting playbackDone on that path would leave it set until the next
+    startSolveMode() even though no solve session was ever touched, and the error
+    listener in renderPlayer() would swallow even real playback errors
+    (startSolveMode() resets it every time, so this does not normally happen, but
+    the principle of not touching the flag on unrelated screen transitions is
+    put first).
+    When #player exists, audio.removeAttribute("src") itself can fire an error
+    event, so the flag is set before that handler runs to neutralize it
+    (same idea as the ended handler in renderPlayer()). */
 function stopSolvePlayback() {
   const audio = qs("#player");
   if (!audio) return;
@@ -319,7 +327,8 @@ function stopSolvePlayback() {
   audio.removeAttribute("src");
 }
 
-/** 台本から学習ソースを作る。語彙辞書は空なので、全語が辞書引きの経路に入る。 */
+/** Build the study source from the script. The vocab dictionary is empty, so every
+    word goes through the dictionary-lookup path. */
 function buildListeningSource(item) {
   const roles = new Map(item.speakers.map((s) => [s.id, s.role]));
   return {
@@ -350,7 +359,7 @@ async function startStudyMode() {
   await renderReviewPlayer(item);
 }
 
-/** 復習では自由に聴き直せる。既定のコントロールをそのまま出す。 */
+/** In review the audio can be replayed freely. The default controls are shown as they are. */
 async function renderReviewPlayer(item) {
   const pane = qs("#passage-pane");
   const bar = document.createElement("div");
@@ -362,7 +371,8 @@ async function renderReviewPlayer(item) {
     const { url } = await Speech.prepare(item.id, utterancesOf(item));
     bar.innerHTML = `<audio id="review-player" controls src="${url}"></audio>`;
   } catch (err) {
-    // 台本は既に出ている。音声だけが使えないことを伝えて、復習は続けられるようにする。
+    // The script is already shown. Say that only the audio is unavailable, so the
+    // review can continue.
     bar.innerHTML =
       `<p class="error">音声を準備できませんでした: ${escapeHtml(err.message)}</p>`;
   }

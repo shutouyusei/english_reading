@@ -1,11 +1,11 @@
 "use strict";
 
-/* リスニング一覧。docs/data/listening/index.json を読んでカードを並べる。 */
+/* Listening list. Reads docs/data/listening/index.json and lays out the cards. */
 
 const WORDS_PER_MINUTE = 150;
 const TYPE_LABELS = { lecture: "講義", conversation: "会話" };
 
-// word_count が欠けている・数値でない行が来ても「約NaN分」にならないようにする。
+// Keeps a row with a missing or non-numeric word_count from being shown as "about NaN minutes".
 function estimatedMinutes(wordCount) {
   if (typeof wordCount !== "number" || !Number.isFinite(wordCount) || wordCount < 0) {
     return null;
@@ -18,8 +18,8 @@ function minutesLabel(wordCount) {
   return minutes === null ? "分数不明" : `約${minutes}分`;
 }
 
-// スコアも学習記録側でスキーマ保証が無いデータのため、writing-list.js の
-// badgeHtml と同じ流儀で、検証済みの数値であっても escapeHtml を通す。
+// The score also comes from learning records with no schema guarantee, so, in the same
+// way as badgeHtml in writing-list.js, even validated numbers go through escapeHtml.
 function badgeHtml(latest) {
   if (!latest) return `<span class="badge">未着手</span>`;
   const score = latest.score;
@@ -55,7 +55,7 @@ async function initListeningList() {
     console.warn("学習記録を読み込めませんでした:", err);
   }
   try {
-    // 公開後に内容を訂正した場合も確実に反映させる
+    // Make sure content corrected after publishing is picked up
     const res = await fetch(`${window.DATA_BASE || ""}data/listening/index.json`,
                             { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);

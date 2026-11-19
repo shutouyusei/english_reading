@@ -14,7 +14,7 @@ pub fn handle_essays(payload: &Map<String, Value>, log: &JsonLinesFile) -> Resul
     }
 }
 
-/// `kind` は Rust 側で付ける。JS から渡させると付け忘れが起きうる(Swift版と同じ理由)。
+/// `kind` is added on the Rust side. If JS had to pass it, it could be left out.
 fn save_row(payload: &Map<String, Value>, kind: &str, log: &JsonLinesFile) -> Result<Option<Value>, String> {
     let mut row = payload
         .get(kind)

@@ -26,7 +26,8 @@ async function init() {
     return;
   }
   try {
-    // 公開後に内容を訂正した場合も確実に反映させる(理由は app.js の同種の記述を参照)。
+    // Makes sure corrections made after publishing also show up (for the reason, see the
+    // matching comment in app.js).
     const res = await fetch(`${window.DATA_BASE || ""}data/reading/${id}.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.passage = await res.json();
@@ -44,7 +45,7 @@ function renderError(message) {
     `<p class="error">${escapeHtml(message)} <a href="index.html">一覧に戻る</a></p>`;
 }
 
-/* ---------- 解答モード ---------- */
+/* ---------- Solve mode ---------- */
 
 function startSolveMode() {
   stopTimer();
@@ -169,8 +170,8 @@ async function finishSolve() {
     answers: state.answers,
     finishedAt: new Date().toISOString(),
   };
-  // 保存を待ってから結果を描画する。待たないと、直後に復習へ進んだとき
-  // Store.latest() がまだ古く「まだ解いていません」と表示されうる。
+  // Wait for the save before rendering the result. Otherwise, moving on to review right
+  // away can find Store.latest() still stale and show the "not solved yet" message.
   let saveError = null;
   try {
     await Store.saveAttempt(attempt);
@@ -190,7 +191,7 @@ async function finishSolve() {
   qs("#to-study").addEventListener("click", () => startStudyMode());
 }
 
-/* ---------- 解説モード ---------- */
+/* ---------- Study mode ---------- */
 
 function startStudyMode() {
   stopTimer();

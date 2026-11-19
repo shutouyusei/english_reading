@@ -5,23 +5,26 @@ use std::process::{Command, Stdio};
 use std::sync::mpsc;
 use std::time::Duration;
 
-/// unreadable_output の失敗箇所を区別する。
-/// 外側(Claude Code のラッパー自体)と内側(result 文字列の中身)は
-/// 原因がまったく異なるため、まとめて捨てずに区別できるようにしておく。
+/// Tells apart where an UnreadableOutput failure happened.
+/// The outer part (the Claude Code wrapper itself) and the inner part (the contents
+/// of the result string) fail for entirely different reasons, so they are kept
+/// distinguishable instead of being discarded together.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum UnreadableStage {
     OuterWrapper,
     InnerResult,
 }
 
-/// 採点に失敗しうる経路。すべて画面にそのまま出せる日本語の説明を持つ。
+/// The ways grading can fail. Each has a Japanese description that can be shown on
+/// screen as is.
 #[derive(Debug)]
 pub enum ClaudeRunnerError {
     BinaryNotFound,
     LaunchFailed(String),
     TimedOut { seconds: u64 },
     ClaudeReportedError(String),
-    /// excerpt: 読み取れなかった文字列の先頭最大200文字(診断用)。
+    /// excerpt: up to the first 200 characters of the string that could not be read
+    /// (for diagnosis).
     UnreadableOutput { stage: UnreadableStage, excerpt: String },
 }
 
@@ -59,9 +62,9 @@ impl ClaudeRunnerError {
     }
 }
 
-/// 実行ファイルの既定の探索先。
-/// Finder から起動した .app の PATH は /usr/bin:/bin:/usr/sbin:/sbin しか無く、
-/// claude はそこに存在しない。PATH 探索に頼らず明示的に探す。
+/// Default places to look for the executable.
+/// A .app launched from Finder has only /usr/bin:/bin:/usr/sbin:/sbin in its PATH,
+/// and claude is not there. Search explicitly instead of relying on PATH lookup.
 pub fn default_claude_binary_candidates() -> Vec<String> {
     let home = std::env::var("HOME").unwrap_or_default();
     vec![
@@ -72,13 +75,13 @@ pub fn default_claude_binary_candidates() -> Vec<String> {
     ]
 }
 
-/// claude の実行ファイルを見つける。
-/// TOEFL_CLAUDE_BIN が設定されていればそれだけを見る。設定されているのに
-/// 実在しない、または実行権限が無い場合、黙って別のものを使うと利用者が
-/// 誤った箇所を疑うため None を返す。file_exists には単なる存在確認では
-/// なく実行可能性の確認を渡すこと(存在だけ見ると、ディレクトリや実行権限の
-/// 無いファイルを「見つかった」と誤判定し、後続の spawn 失敗という分かり
-/// にくいエラーになる)。
+/// Finds the claude executable.
+/// If TOEFL_CLAUDE_BIN is set, only that path is checked. When it is set but does not
+/// exist or is not executable, this returns None, because silently using something
+/// else would make the user suspect the wrong place. For file_exists, pass a check
+/// for executability, not just existence (checking existence alone reports a
+/// directory or a file without execute permission as "found", which later shows up
+/// as a hard-to-understand spawn failure).
 pub fn resolve_claude_binary(
     environment: &HashMap<String, String>,
     file_exists: impl Fn(&str) -> bool,
@@ -92,9 +95,9 @@ pub fn resolve_claude_binary(
     candidates.iter().find(|c| file_exists(c)).cloned()
 }
 
-/// パスが実行可能な通常ファイルかどうかを調べる、resolve_claude_binary 用の
-/// 既定の判定。存在確認だけの std::fs::metadata(p).is_ok() と違い、
-/// 実行権限ビット(いずれかの owner/group/other の x)も確認する。
+/// The default check for resolve_claude_binary: whether the path is an executable
+/// regular file. Unlike std::fs::metadata(p).is_ok(), which only checks existence,
+/// this also checks the execute permission bits (x for any of owner/group/other).
 #[cfg(unix)]
 pub fn is_executable_file(path: &str) -> bool {
     use std::os::unix::fs::PermissionsExt;
@@ -104,14 +107,14 @@ pub fn is_executable_file(path: &str) -> bool {
     }
 }
 
-/// claude -p に渡す引数。
+/// The arguments passed to claude -p.
 ///
-/// --tools "" が最も重要。これが無いと Claude Code の既定ツール定義一式が
-/// 毎回プロンプトに載り、入力トークンが 613 から 44,984 へ 73 倍に膨らむ。
-/// 採点にツールは要らない。
+/// --tools "" matters most. Without it, Claude Code's full set of default tool
+/// definitions is put into the prompt every time, and input tokens grow 73x, from
+/// 613 to 44,984. Grading needs no tools.
 ///
-/// ユーザープロンプトはここに含めない。標準入力で渡す(エッセイ本文に
-/// 引用符・改行・バックスラッシュが入っても壊れないため)。
+/// The user prompt is not included here. It is passed on standard input (so that
+/// quotes, newlines and backslashes in the essay text do not break anything).
 pub fn claude_arguments(system_prompt: &str) -> Vec<String> {
     vec![
         "-p".to_string(),
@@ -127,7 +130,8 @@ pub fn claude_arguments(system_prompt: &str) -> Vec<String> {
     ]
 }
 
-/// プロンプトファイルを "---" だけの行で前後に分ける。前半がシステム、後半がユーザー。
+/// Splits a prompt file in two at a line that contains only "---". The first half is
+/// the system prompt, the second half the user prompt.
 pub fn split_prompt_file(text: &str) -> Option<(String, String)> {
     let lines: Vec<&str> = text.split('\n').collect();
     let separator = lines.iter().position(|l| l.trim() == "---")?;
@@ -140,13 +144,14 @@ pub fn split_prompt_file(text: &str) -> Option<(String, String)> {
     Some((system, user))
 }
 
-/// {{key}} を values の値で置き換える。
-/// 値の無いプレースホルダはテンプレートから取り除く。テンプレートを1回だけ
-/// 走査しながら置換結果を直接書き出すため、代入された値(エッセイなど利用者の
-/// 入力を含みうる)がその後の走査で再度プレースホルダとしてマッチされることは
-/// ない。逐次 String::replace を key ごとに繰り返す実装だと、本文中にたまたま
-/// 別キーの {{...}} 形の文字列が含まれていた場合、先に代入された値の中身を
-/// 後続キーの置換が書き換えてしまう(生徒の回答が無断で汚染される)ため避ける。
+/// Replaces {{key}} with the matching value in values.
+/// Placeholders that have no value are removed from the template. The template is
+/// scanned only once and the result is written out directly, so a substituted value
+/// (which may contain user input such as the essay) is never matched again as a
+/// placeholder later in the scan. Calling String::replace once per key is avoided:
+/// if the text happened to contain a {{...}} string for another key, the replacement
+/// for that later key would rewrite the contents of a value substituted earlier
+/// (silently corrupting the student's answer).
 pub fn render_template(template: &str, values: &HashMap<String, String>) -> String {
     let mut result = String::with_capacity(template.len());
     let mut rest = template;
@@ -166,7 +171,7 @@ pub fn render_template(template: &str, values: &HashMap<String, String>) -> Stri
             if let Some(value) = values.get(key) {
                 result.push_str(value);
             }
-            // 値が無いプレースホルダは何も書き出さず取り除く。
+            // A placeholder with no value is removed by writing nothing.
         } else {
             result.push_str(&rest[open..open + 2 + close_rel + 2]);
         }
@@ -176,8 +181,9 @@ pub fn render_template(template: &str, values: &HashMap<String, String>) -> Stri
     result
 }
 
-/// claude --output-format json の出力から採点結果を取り出す。
-/// 外側は Claude Code のラッパー。内側の result 文字列が採点結果の JSON。
+/// Extracts the grading result from the output of claude --output-format json.
+/// The outer layer is the Claude Code wrapper. The result string inside it is the
+/// grading result JSON.
 pub fn extract_grade_json(data: &[u8]) -> Result<Map<String, Value>, ClaudeRunnerError> {
     let wrapper: Map<String, Value> = match serde_json::from_slice(data) {
         Ok(Value::Object(map)) => map,
@@ -213,8 +219,8 @@ pub fn extract_grade_json(data: &[u8]) -> Result<Map<String, Value>, ClaudeRunne
     })
 }
 
-/// 採点結果の本文をパースする。実測ではフェンスは付かなかったが、
-/// 将来モデルが変わって ```json で囲む可能性があるので剥がせるようにしておく。
+/// Parses the body of the grading result. No fence appeared in measurements, but a
+/// future model may wrap the body in ```json, so the fence can be stripped.
 pub fn parse_grade_body(text: &str) -> Option<Map<String, Value>> {
     let trimmed = text.trim();
     if let Ok(Value::Object(direct)) = serde_json::from_str(trimmed) {
@@ -237,8 +243,8 @@ pub fn parse_grade_body(text: &str) -> Option<Map<String, Value>> {
     }
 }
 
-/// claude -p を起動して採点結果を得る。呼び出し側のスレッドを塞ぐので、
-/// 画面から呼ぶときはバックグラウンドキューで実行すること。
+/// Runs claude -p and returns the grading result. It blocks the calling thread, so
+/// when calling it from the UI, run it on a background thread.
 pub fn run_claude(
     binary: &str,
     system_prompt: &str,
@@ -256,20 +262,19 @@ pub fn run_claude(
     let mut stdin = child.stdin.take().expect("stdinをpipeで開いた");
     let mut stdout = child.stdout.take().expect("stdoutをpipeで開いた");
     let mut stderr = child.stderr.take().expect("stderrをpipeで開いた");
-    // kill 用にメインスレッドが握っておく共有ハンドル。wait はこの Mutex 越しに行う。
+    // A shared handle that the calling thread keeps for kill. wait goes through this Mutex.
     let child = std::sync::Arc::new(std::sync::Mutex::new(child));
     let child_kill = std::sync::Arc::clone(&child);
     let user_prompt = user_prompt.to_string();
     let writer = std::thread::spawn(move || {
         let _ = stdin.write_all(user_prompt.as_bytes());
-        // 書き終えたら閉じる。stdin がドロップされることで EOF が子プロセスに伝わる。
+        // Close it once writing is done. Dropping stdin sends EOF to the child process.
     });
 
-    // stdout と stderr は別スレッドでそれぞれ並行に読む。片方のパイプの
-    // バッファが満杯になっても、もう片方の読み出しがブロックされないように
-    // するため(同一スレッドで順に read_to_end すると、子プロセスが先に
-    // 書き込むのが後回しにされた側のパイプで、書き込みブロック→双方が
-    // 進めないデッドロックに陥りうる)。
+    // stdout and stderr are read concurrently, each on its own thread, so that a full
+    // buffer on one pipe does not block reading from the other (calling read_to_end on
+    // them in turn on one thread can deadlock: if the child first writes to the pipe
+    // that is read second, its write blocks and neither side can make progress).
     let stdout_reader = std::thread::spawn(move || {
         let mut out_buf = Vec::new();
         let _ = stdout.read_to_end(&mut out_buf);
@@ -310,9 +315,9 @@ pub fn run_claude(
             extract_grade_json(&out_buf)
         }
         Err(_) => {
-            // タイムアウトしても上のスレッドはプロセス終了を待ち続けるため、
-            // 放置するとハングした claude プロセスがバックグラウンドに残り続ける。
-            // 応答は諦めるが、プロセス自体はここで確実に終わらせる。
+            // Even after a timeout the thread above keeps waiting for the process to
+            // exit, so a hung claude process would stay in the background if left alone.
+            // The response is given up, but the process itself is ended here for sure.
             let _ = child_kill.lock().map(|mut c| c.kill());
             Err(ClaudeRunnerError::TimedOut {
                 seconds: timeout_seconds,

@@ -1,7 +1,7 @@
 #!/bin/sh
-# app-shell の release バイナリをビルドする。
-# .app バンドル化は別タスク(docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md
-# の「未確定事項」参照)。
+# Builds the app-shell release binary.
+# Bundling into a .app is a separate task (see the "open questions" section of
+# docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md).
 set -e
 cd "$(dirname "$0")/.."
 

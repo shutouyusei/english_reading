@@ -1,24 +1,27 @@
-/// Range 要求の解釈結果。
+/// The parsed form of a Range request.
 #[derive(Debug, PartialEq, Eq)]
 pub enum ByteRangeRequest {
-    /// 範囲指定なし。全体を 200 で返す。
+    /// No range given. Return the whole body with 200.
     Whole,
-    /// 両端を含むバイト範囲。206 と Content-Range で返す。
+    /// A byte range, inclusive at both ends. Return it with 206 and Content-Range.
     Partial { start: i64, end: i64 },
-    /// 形は正しいが満たせない範囲。416 で返す。
+    /// A well-formed range that cannot be satisfied. Return 416.
     Unsatisfiable,
 }
 
-/// HTTP の Range ヘッダを解釈する。
+/// Parses the HTTP Range header.
 ///
-/// これが要るのは音声のため。<audio> は音声ファイルを Range 要求で読む。
-/// 実測では、まず `bytes=0-1` で全体の長さを尋ね、続いて MP4 の先頭と
-/// 末尾(moov アトム)を飛び飛びに読みに来る。全体を 200 で返し続けると
-/// 音声要素は networkState=3 (NETWORK_NO_SOURCE) に落ち、一切再生されない。
+/// This is needed for audio. <audio> reads audio files with Range requests.
+/// As measured, it first asks for the total length with `bytes=0-1`, then reads
+/// the start and the end (the moov atom) of the MP4 in separate jumps. If the
+/// whole body keeps coming back as 200, the audio element drops to
+/// networkState=3 (NETWORK_NO_SOURCE) and never plays.
 ///
-/// 解釈できない指定は Whole にする。RFC 7233 は不正な Range を無視して
-/// 全体を返すことを求めており、中途半端に解釈して壊すより安全。
-/// 複数範囲(`bytes=0-1,5-6`)も、multipart で返す代わりに全体を返す。
+/// A range that cannot be parsed becomes Whole. RFC 7233 asks for an invalid Range
+/// to be ignored and the whole body returned, which is safer than half-interpreting
+/// it and breaking something.
+/// Multiple ranges (`bytes=0-1,5-6`) also get the whole body instead of a multipart
+/// response.
 pub fn parse_byte_range(header: Option<&str>, total_length: i64) -> ByteRangeRequest {
     use ByteRangeRequest::*;
 
@@ -27,7 +30,7 @@ pub fn parse_byte_range(header: Option<&str>, total_length: i64) -> ByteRangeReq
     let Some(value) = spec.strip_prefix("bytes=") else {
         return Whole;
     };
-    // 複数範囲は扱わない
+    // Multiple ranges are not handled.
     if value.contains(',') {
         return Whole;
     }
@@ -38,7 +41,7 @@ pub fn parse_byte_range(header: Option<&str>, total_length: i64) -> ByteRangeReq
     let first_text = &value[..dash];
     let last_text = &value[dash + 1..];
 
-    // 末尾からの指定(bytes=-N)
+    // Suffix range (bytes=-N)
     if first_text.is_empty() {
         let Ok(suffix) = last_text.parse::<i64>() else {
             return Unsatisfiable;

@@ -2,11 +2,11 @@
 
 const studyState = { selectedWord: null, history: [], activeTab: "vocab" };
 
-/* 学習ソース: 読解のパッセージとリスニングの台本の共通の形。
+/* Study source: the shape shared by reading passages and listening scripts.
    { id, title, lines: [{speaker, text}], vocab, questions, latestResult, solveUrl }
-   この層より下は「どちらの教材か」を知らない。 */
+   Nothing below this layer knows which kind of material it is. */
 
-/** 読解のパッセージから学習ソースを作る。 */
+/** Builds a study source from a reading passage. */
 function buildStudySource(passage, latestResult, solveUrl) {
   const lines = passage.body
     .split("\n\n")
@@ -106,7 +106,8 @@ function renderVocabTab(source) {
       <div id="dict-body"><p class="hint">辞書を調べています…</p></div>
       <p><a href="${weblio}" target="_blank" rel="noopener">Weblioで調べる ↗</a></p>
       ${historyHtml()}`;
-    // 収録語でなければ辞書が最後の頼み。引けなければ従来どおりの案内に戻す。
+    // For a word without a vocab entry the dictionary is the last resort. If nothing is
+    // found, fall back to the same notice as before.
     fillDictionary(word, `<p>未収録の単語です。</p>`);
     return;
   }
@@ -126,24 +127,26 @@ function renderVocabTab(source) {
     ${historyHtml()}`;
   qs("#anki-add").addEventListener("click", () => addToAnki(source, word, entry));
   qs("#anki-settings-open").addEventListener("click", () => openAnkiSettings());
-  // 収録語には既に解説がある。辞書は引けたときだけ足す。
+  // A word with a vocab entry already has an explanation. Add the dictionary only when
+  // the lookup returns something.
   fillDictionary(word, "");
 }
 
-/* ---------- システム辞書(アプリ版のみ) ---------- */
+/* ---------- Dictionary (app only) ---------- */
 
-/// 辞書引きは Swift 側への往復があるため、枠だけ先に出して後から埋める。
-/// 引けなかったときは emptyHtml に差し替える。
+/// A dictionary lookup is a round trip to the native side (app-shell), so only the frame
+/// is shown first and it is filled in later. When nothing is found it is replaced with
+/// emptyHtml.
 async function fillDictionary(word, emptyHtml) {
   let result = null;
   try {
     result = await Dict.define(word);
   } catch (err) {
-    // 辞書層そのものが読み込めていない場合もここに来る。
-    // 黙って諦めないと「調べています…」の表示が残り続ける。
+    // This is also reached when the dictionary layer itself was not loaded.
+    // Unless we give up quietly, the "looking up…" message would stay on screen.
     console.warn("辞書を引けませんでした:", err);
   }
-  // 待っている間に別の語へ移っていたら、古い結果を書き込まない
+  // If the user moved to another word while waiting, do not write the stale result
   if (studyState.selectedWord !== word || studyState.activeTab !== "vocab") return;
   const target = qs("#dict-body");
   if (!target) return;
@@ -156,9 +159,10 @@ function dictionaryHtml(result) {
     `<div class="dict-entry">${dictionaryBodyHtml(result.definition)}</div>`;
 }
 
-/// 辞書が返すのは改行を1つも含まない一続きのテキスト。dictformat.js が
-/// 見出し・品詞・語義・例文に切り分けたものを、ここで表示に組み直す。
-/// 整形層が読み込まれていなければ、そのまま1塊で出す(辞書は補助なので止めない)。
+/// A dictionary definition is one continuous text with no line breaks. dictformat.js
+/// splits it into headword, parts of speech, senses and examples; here they are put back
+/// together for display. If the formatting layer is not loaded, show it as one block (the
+/// dictionary is only an aid, so do not stop).
 function dictionaryBodyHtml(definition) {
   const format = window.DictFormat && window.DictFormat.formatDefinition;
   const blocks = format ? format(definition) : [{ kind: "text", text: definition }];

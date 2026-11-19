@@ -14,13 +14,13 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
-  /* ヘッダーとフッターの実高から本文領域が決まるようにする(固定値を持たない) */
+  /* Let the content area follow the actual header and footer heights (no fixed values) */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-/* リーダー画面のみビューポート高に固定する。min-height だけでは上限にならず、
-   #reader-main が内容分まで伸びてペインの overflow が発動しないため。 */
+/* Only the reader page is fixed to the viewport height. min-height alone is not an upper
+   bound: #reader-main grows to fit its content and the panes' overflow never kicks in. */
 body.reader-page { height: 100vh; overflow: hidden; }
 a { color: var(--accent); }
 
@@ -34,7 +34,7 @@ a { color: var(--accent); }
   padding: 16px 20px; border-top: 1px solid var(--border);
   font-size: .8em; color: var(--muted); text-align: center;
 }
-/* 免責フッターの折りたたみ(js/footer.js が組み立てる) */
+/* Collapsing of the disclaimer footer (built by js/footer.js) */
 .footer-full { position: relative; }
 .footer-toggle {
   position: absolute; top: -6px; right: 0;
@@ -52,7 +52,7 @@ a { color: var(--accent); }
 .site-footer.collapsed .footer-full { display: none; }
 .site-footer:not(.collapsed) .footer-mini { display: none; }
 
-/* 一覧・ガイド */
+/* List and guide pages */
 .page { max-width: 860px; margin: 0 auto; padding: 20px; flex: 1; width: 100%; }
 .prose { max-width: 720px; margin: 0 auto; padding: 20px; flex: 1; width: 100%; }
 .prose pre { background: #eef1f5; padding: 12px; border-radius: 8px; overflow-x: auto; }
@@ -67,7 +67,6 @@ a { color: var(--accent); }
 .badge { border: 1px solid var(--border); border-radius: 12px; padding: 1px 10px; font-size: .85em; }
 .badge.done { border-color: var(--accent-green); color: var(--accent-green); }
 
-/* ボタン */
 .button, button {
   font: inherit; padding: 6px 14px; border-radius: 8px; border: 1px solid var(--border);
   background: #fff; color: var(--text); cursor: pointer;
@@ -77,7 +76,7 @@ a { color: var(--accent); }
 button.anki { background: var(--accent-green); border-color: var(--accent-green); color: #fff; }
 button:disabled { opacity: .4; cursor: not-allowed; }
 
-/* リーダー左右分割 */
+/* Reader: left/right split */
 #reader-main { display: flex; flex: 1; min-height: 0; }
 #passage-pane, #prompt-pane {
   flex: 1.2; padding: 18px 24px; border-right: 1px solid var(--border);
@@ -86,7 +85,7 @@ button:disabled { opacity: .4; cursor: not-allowed; }
 #right-pane { flex: 1; overflow-y: auto; min-height: 0; }
 mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 
-/* 解答モード */
+/* Solve mode */
 .question-card { padding: 18px 20px; }
 .choices { display: flex; flex-direction: column; gap: 8px; margin: 12px 0; }
 .choice { text-align: left; }
@@ -95,11 +94,11 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 .result-card { padding: 30px 20px; text-align: center; }
 .result-card .score { font-size: 1.8em; font-weight: 700; margin: 0 0 8px; }
 
-/* 解説モード */
+/* Study mode */
 .w { cursor: pointer; }
 .w:hover { text-decoration: underline; }
 .w.vocab-word { border-bottom: 1px dotted rgba(46, 125, 50, .75); }
-/* 台本の話者名。本文と区別できれば十分なので色だけ変える。 */
+/* Speaker names in a script. Telling them apart from the text is enough: color only. */
 .speaker { color: var(--muted); }
 .w.active { outline: 2px solid var(--accent-green); background: rgba(46, 125, 50, .3); }
 .tabs { display: flex; border-bottom: 1px solid var(--border); }
@@ -112,11 +111,11 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
   color: var(--muted); margin-top: 10px;
 }
 .word { margin: 0 0 6px; font-size: 1.2em; }
-/* システム辞書。辞書が返すのは改行を1つも含まない一続きのテキストで、
-   語によっては2万字を超える(the=14,070字, set=15,910字, take=26,310字)。
-   dictformat.js が切り分けた塊をここで組み直す。
-   パネル全体を押し下げないよう、高さは止めて中でスクロールさせる。
-   #panel-body p が id を含むため、打ち消すにはクラス2つ分の詳細度が要る。 */
+/* Dictionary entry. A definition is one continuous text with no line breaks, over 20,000
+   characters for some words (the=14,070, set=15,910, take=26,310).
+   The blocks split by dictformat.js are put back together here.
+   The height is capped and the entry scrolls inside, so it does not push the whole panel down.
+   #panel-body p contains an id, so overriding it takes two classes' worth of specificity. */
 .dict-entry {
   max-height: 22em; overflow-y: auto;
   border-left: 2px solid var(--border); padding-left: 12px;
@@ -135,22 +134,22 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
   flex: 0 0 auto; min-width: 1.5em; text-align: right;
   color: var(--muted); font-weight: 700; font-variant-numeric: tabular-nums;
 }
-/* 例文の ▸ は切り分けのときに外している。目印はここで戻す。
-   折り返した2行目が ▸ の下に潜らないよう、ぶら下げインデントにする。 */
+/* The ▸ of an example is removed during splitting. The marker is put back here.
+   A hanging indent keeps a wrapped second line from running under the ▸. */
 #panel-body .dict-entry .dict-ex {
   margin: 2px 0 2px 26px; color: var(--muted); font-size: .95em;
   padding-left: 1.2em; text-indent: -1.2em;
 }
 #panel-body .dict-entry .dict-ex::before { content: "▸ "; }
-/* 枝番(a. b.)の中の例文は、枝番の字下げに合わせてもう一段下げる */
+/* An example inside a sub-sense (a. b.) is indented one more step to match the sub-sense */
 #panel-body .dict-entry .dict-ex.sub { margin-left: 44px; }
 #panel-body .dict-entry .dict-note { margin-top: 4px; color: var(--muted); }
 
-/* リスニングの再生画面。本文が無いので中央に寄せる。 */
+/* Listening playback screen. There is no body text, so center it. */
 .audio-stage { padding: 40px 20px; text-align: center; }
 .audio-stage audio { display: none; }
 
-/* 復習モードの音声バー。台本の上に固定して、スクロールしても届くようにする。 */
+/* Audio bar in review mode. Pinned above the script so it stays reachable while scrolling. */
 .review-audio {
   position: sticky; top: 0; z-index: 1;
   background: #fff; border-bottom: 1px solid var(--border);
@@ -166,7 +165,6 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 .quiz-review.ng { border-left: 3px solid var(--danger); }
 .explanation { color: var(--muted); font-size: .9em; }
 
-/* モーダル */
 .modal-backdrop {
   position: fixed; inset: 0; background: rgba(0, 0, 0, .4);
   display: flex; align-items: center; justify-content: center;
@@ -178,7 +176,7 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
 }
 
 @media (max-width: 800px) {
-  /* 縦積みでは各ペインを個別スクロールさせず、ページ全体をスクロールさせる */
+  /* When stacked vertically, scroll the whole page instead of each pane separately */
   body.reader-page { height: auto; overflow: visible; }
   #reader-main { flex-direction: column; flex: none; }
   #passage-pane, #prompt-pane, #right-pane { overflow-y: visible; }
@@ -186,7 +184,7 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
   .card { flex-direction: column; align-items: stretch; }
 }
 
-/* --- ライティング --- */
+/* --- Writing --- */
 #prompt-pane .post {
   background: #f7f7f5;
   border-left: 3px solid #ccc;

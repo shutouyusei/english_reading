@@ -9,9 +9,9 @@ async function initList() {
   }
   let index;
   try {
-    // GitHub Pages は max-age=600 を返すため、そのままだと新しいパッセージが
-    // 最大10分間表示されない。no-cache で毎回サーバーに更新を問い合わせる
-    // (変更が無ければ 304 が返るので転送量はほとんど増えない)。
+    // GitHub Pages returns max-age=600, so by default a new passage can stay hidden for up
+    // to 10 minutes. no-cache revalidates with the server every time (an unchanged file
+    // returns 304, so the transfer size barely grows).
     const res = await fetch(`${window.DATA_BASE || ""}data/reading/index.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     index = await res.json();

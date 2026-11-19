@@ -1,12 +1,15 @@
 "use strict";
 
-/* 辞書層(アプリ版)。macOS のシステム辞書(ウィズダム英和)を Swift 経由で引く。
-   公開版の dict.web.js と同じ口を提供するため、呼び出し側に分岐は要らない。 */
+/* Dictionary layer (app build). Meant to look words up through the native side
+   (app-shell). For now the app-shell handler is a placeholder that always returns an
+   error (app-shell/src/ipc/placeholder.rs).
+   Exposes the same interface as dict.web.js in the public build, so callers need no
+   branching. */
 
 const _definitions = new Map();
 
 window.Dict = {
-  /** 定義が見つかれば {word, definition, source}、無ければ null。例外は投げない。 */
+  /** Returns {word, definition, source} if a definition is found, otherwise null. Never throws. */
   async define(word) {
     const key = String(word == null ? "" : word).trim().toLowerCase();
     if (!key) return null;
@@ -19,8 +22,9 @@ window.Dict = {
         word: key,
       });
     } catch (err) {
-      // 辞書は本文読解の補助であって主役ではない。引けなくても本文と単語解説は出し続ける。
-      // ここで覚えないのは、一時的な失敗から次のクリックで回復できるようにするため。
+      // The dictionary is an aid to reading the passage, not the main feature. Even when a
+      // lookup fails, keep showing the passage and the vocabulary notes.
+      // The failure is not cached here so the next click can recover from a temporary one.
       console.warn("辞書を引けませんでした:", err);
       return null;
     }
@@ -28,7 +32,8 @@ window.Dict = {
     const result = reply && reply.definition
       ? { word: key, definition: reply.definition, source: reply.source || null }
       : null;
-    // 「辞書に無い」も結果のうち。覚えておけば同じ語で往復を繰り返さずに済む。
+    // "Not in the dictionary" is a result too. Caching it avoids repeated round trips
+    // for the same word.
     _definitions.set(key, result);
     return result;
   },

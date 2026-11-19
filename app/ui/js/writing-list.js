@@ -45,8 +45,9 @@ function promptCardHtml(meta) {
     ${pastAttemptsHtml(entries)}`;
 }
 
-// バッジ(badgeHtml)は最新の1回だけを要約する。過去の分は entries[1:] として
-// 一覧末尾に出す(新しい順)。要件: 問題一覧・過去のエッセイ一覧。
+// The badge (badgeHtml) summarizes only the latest attempt. Earlier ones are shown
+// below the card as entries[1:] (newest first). Requirement: question list and
+// past essay list.
 function pastAttemptsHtml(entries) {
   const past = entries.slice(1);
   if (!past.length) return "";
@@ -61,8 +62,8 @@ function attemptRowHtml(entry) {
   return `<li class="meta">${date} ・ ${attemptScoreLabel(entry.grade)} ・ ${attemptElapsedLabel(entry.essay)}</li>`;
 }
 
-// 採点結果はグレーディングAIが返すJSONそのままで型保証が無いため、
-// badgeHtml と同じく 0〜5 の有限数でなければ採点待ち扱いに倒す。
+// The grade is the JSON the grading AI returned, as is, with no type guarantee, so,
+// like badgeHtml, anything but a finite number from 0 to 5 is treated as awaiting grading.
 function attemptScoreLabel(grade) {
   if (!grade) return "⏳ 採点待ち";
   const overall = grade.overall;
@@ -83,8 +84,8 @@ function badgeHtml(entry, attempts) {
   if (!entry) return `<span class="badge">未着手</span>`;
   const count = attempts > 1 ? ` ・ ${attempts}回` : "";
   if (!entry.grade) return `<span class="badge">⏳ 採点待ち${count}</span>`;
-  // 採点はグレーディングAIが返すJSONそのままで型保証が無いため、
-  // 0〜5の有限数でなければ採点待ち扱いに倒す。
+  // The grade is the JSON the grading AI returned, as is, with no type guarantee, so
+  // anything but a finite number from 0 to 5 is treated as awaiting grading.
   const overall = entry.grade.overall;
   if (typeof overall !== "number" || !Number.isFinite(overall) || overall < 0 || overall > 5) {
     return `<span class="badge">⏳ 採点待ち${count}</span>`;

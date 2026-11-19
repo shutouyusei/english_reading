@@ -14,8 +14,7 @@ pub fn handle_anki(payload: &Map<String, Value>, client: &AnkiClient) -> Result<
         .ok_or_else(|| "ankiAction が含まれていません".to_string())?;
     let params = payload.get("params").cloned().unwrap_or_else(|| json!({}));
 
-    // JS 側で「結果なし」と「エラー」を区別できるよう、常に result キーを置く
-    // (Swift版 AnkiHandler と同じ)。
+    // Always include the result key so the JS side can tell "no result" from "error".
     client
         .request(anki_action, params)
         .map(|result| json!({ "result": result }))

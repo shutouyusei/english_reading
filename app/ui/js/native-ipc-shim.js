@@ -1,9 +1,10 @@
 "use strict";
 
-/* window.webkit.messageHandlers.<name>.postMessage() の呼び出し規約(Promiseを返す)を
-   崩さずに、wry の window.ipc.postMessage(一方向)の上に実装し直す薄い層。
-   既存の *.native.js は一切変更しない。app-shell 版でのみ読み込む。
-   (docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md 参照) */
+/* A thin layer that re-implements the window.webkit.messageHandlers.<name>.postMessage()
+   calling convention (returns a Promise), unchanged, on top of wry's one-way
+   window.ipc.postMessage.
+   The existing *.native.js files are not changed at all. Loaded only in the app-shell build.
+   (See docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md) */
 
 let _requestSeq = 0;
 const _pending = new Map();
@@ -29,12 +30,12 @@ window.__toeflIpcResolve = function (requestId, result, error) {
   }
 };
 
-/* wry は macOS(WKWebView)上で window.ipc.postMessage を、内部的に
-   window.webkit.messageHandlers.ipc 経由で実装している。window.webkit を
-   丸ごと上書きするとその内部チャンネルを壊し、window.ipc.postMessage の
-   呼び出しがここに回り込んで無限再帰になる(実際にこの不具合が起きた)。
-   既存のハンドラ(ipcなど)はそのまま素通しし、未知のハンドラ名だけ
-   合成する。 */
+/* On macOS (WKWebView), wry implements window.ipc.postMessage internally through
+   window.webkit.messageHandlers.ipc. Overwriting window.webkit wholesale breaks
+   that internal channel, and calls to window.ipc.postMessage loop back here into
+   infinite recursion (this bug actually happened).
+   Existing handlers (ipc and so on) are passed straight through, and only unknown
+   handler names are synthesized. */
 const _existingHandlers = (window.webkit && window.webkit.messageHandlers) || {};
 
 window.webkit = {

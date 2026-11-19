@@ -8,22 +8,22 @@ function ankiSettings() {
   try {
     const saved = JSON.parse(localStorage.getItem(ANKI_SETTINGS_KEY));
     if (saved && saved.deck) return saved;
-  } catch (_) { /* 破損データは無視してデフォルトへ */ }
+  } catch (_) { /* ignore corrupt data and fall back to the default */ }
   return { deck: DEFAULT_DECK };
 }
 
 function saveAnkiSettings(settings) {
   try {
     localStorage.setItem(ANKI_SETTINGS_KEY, JSON.stringify(settings));
-  } catch (_) { /* プライベートモード等では保存しない */ }
+  } catch (_) { /* cannot save in private mode etc.; ignore */ }
 }
 
-/* アプリ版では window.AnkiBridge(anki.native.js)が居る。そちらは Swift 経由で
-   AnkiConnect を叩く。ブラウザから直接 fetch すると、ページの出自(アプリ版では
-   app://local、公開版では https://…)を AnkiConnect が許可リストに持たないため
-   Access-Control-Allow-Origin が返らず、応答が遮断されて "Load failed" になる。
-   ネイティブ経由なら同一生成元ポリシーの外なので、Anki 側の設定に依存しない。
-   ブリッジが無い公開版は従来どおり fetch する。 */
+/* The app provides window.AnkiBridge (anki.native.js), which reaches AnkiConnect through
+   the native side (app-shell). With a direct fetch from the browser, AnkiConnect does not have
+   the page's origin (app://local in the app, https://… on the public site) in its allow list,
+   so no Access-Control-Allow-Origin comes back, the response is blocked, and the result is
+   "Load failed". Going through the native side is outside the same-origin policy, so it does
+   not depend on Anki's settings. The public site has no bridge and fetches as before. */
 async function ankiRequest(action, params) {
   if (window.AnkiBridge) {
     return window.AnkiBridge.request(action, params || {});

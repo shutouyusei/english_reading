@@ -2,13 +2,14 @@ use serde_json::{Map, Value};
 
 pub const UNAVAILABLE_MESSAGE: &str = "この機能はまだ利用できません";
 
-/// 辞書引きは将来対応(docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md
-/// のスコープ外)。今は常に失敗を返す。
+/// Dictionary lookup is left for the future (out of scope in
+/// docs/superpowers/specs/2026-09-03-cross-platform-shell-design.md).
+/// For now it always returns an error.
 pub fn handle_dictionary(_payload: &Map<String, Value>) -> Result<Value, String> {
     Err(UNAVAILABLE_MESSAGE.to_string())
 }
 
-/// 読み上げも同様に将来対応。
+/// Text-to-speech is likewise left for the future.
 pub fn handle_speech(_payload: &Map<String, Value>) -> Result<Value, String> {
     Err(UNAVAILABLE_MESSAGE.to_string())
 }

@@ -79,9 +79,9 @@ fn main() -> wry::Result<()> {
         .with_custom_protocol("app".into(), app_protocol)
         .with_custom_protocol("audio".into(), audio_protocol);
 
-    // Linux: tao のウィンドウは GTK なので、WebView も GTK ウィジェットとして
-    // 同じウィンドウに載せる。`build(&window)` は X11 の子ウィンドウ経路で、
-    // GTK ループを自前で回す前提のため、tao と組み合わせると何も描画されない。
+    // Linux: tao's window is GTK, so the WebView is also put in the same window as a
+    // GTK widget. `build(&window)` takes the X11 child-window path, which assumes you
+    // run the GTK loop yourself, so nothing is drawn when it is combined with tao.
     #[cfg(target_os = "linux")]
     let webview = {
         use tao::platform::unix::WindowExtUnix;
