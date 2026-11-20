@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f86f0"/>
+      <stop offset="1" stop-color="#1f3f9a"/>
+    </linearGradient>
+    <linearGradient id="rightPage" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d5e0f8"/>
+      <stop offset="0.25" stop-color="#f3f6fd"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="leftPage" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#dfe7fa"/>
+      <stop offset="0.25" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- macOS icon shape: 824px rounded square on a 1024px canvas -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+
+  <!-- book cover edge showing under the pages -->
+  <path d="M512 452 C 440 398, 322 386, 228 414 L228 742 C 322 714, 440 726, 512 780
+           C 584 726, 702 714, 796 742 L796 414 C 702 386, 584 398, 512 452 Z"
+        fill="#16307a" opacity="0.55"/>
+
+  <!-- pages -->
+  <path d="M512 430 C 440 376, 330 366, 246 392 L246 708 C 330 682, 440 692, 512 746 Z"
+        fill="url(#leftPage)"/>
+  <path d="M512 430 C 584 376, 694 366, 778 392 L778 708 C 694 682, 584 692, 512 746 Z"
+        fill="url(#rightPage)"/>
+
+  <!-- lines of text -->
+  <g fill="none" stroke="#8fa9e6" stroke-width="16" stroke-linecap="round">
+    <path d="M296 462 C 350 450, 410 456, 462 482"/>
+    <path d="M296 528 C 350 516, 410 522, 462 548"/>
+    <path d="M296 594 C 350 582, 410 588, 462 614"/>
+    <path d="M562 482 C 614 456, 674 450, 728 462"/>
+    <path d="M562 548 C 614 522, 674 516, 728 528"/>
+    <path d="M562 614 C 614 588, 660 583, 690 586"/>
+  </g>
+
+  <!-- four dots: reading, listening, writing, speaking -->
+  <g fill="#ffffff">
+    <circle cx="398" cy="292" r="26"/>
+    <circle cx="474" cy="292" r="26" opacity="0.85"/>
+    <circle cx="550" cy="292" r="26" opacity="0.7"/>
+    <circle cx="626" cy="292" r="26" opacity="0.55"/>
+  </g>
+</svg>
