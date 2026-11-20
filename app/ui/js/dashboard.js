@@ -1,11 +1,9 @@
 "use strict";
 
-/* Dashboard (app home). One card per skill with progress from the saved records, and
-   a list of recent attempts across skills.
-   The functions down to recentActivity are pure and exported for tests; the rest
-   loads the data and renders the page. */
-
-const RECENT_LIMIT = 8;
+/* Dashboard (app home). A score sheet with one row per skill, in the order of the
+   test, showing progress from the saved records.
+   The functions down to summarize are pure and exported for tests; the rest loads
+   the data and renders the page. */
 
 function isNumberInRange(value, max) {
   return typeof value === "number" && Number.isFinite(value) && value >= 0 && value <= max;
@@ -33,69 +31,72 @@ function essayRecord(entry) {
   };
 }
 
-/** Progress for one skill. recordsOf(id) returns that item's records, newest first. */
+/** Progress for one skill. recordsOf(id) returns that item's records, newest first.
+    states has one entry per item, in list order, for the row of blocks. */
 function summarize(items, recordsOf) {
   const ratios = [];
-  let done = 0;
+  const states = [];
   let lastAt = "";
   for (const item of items) {
     const records = recordsOf(item.id);
-    if (!records.length) continue;
-    done += 1;
+    if (!records.length) {
+      states.push({ title: item.title, status: "todo", label: "Not attempted" });
+      continue;
+    }
     if (records[0].at > lastAt) lastAt = records[0].at;
     const scored = records.find((record) => record.ratio !== null);
     if (scored) ratios.push(scored.ratio);
+    states.push({
+      title: item.title,
+      status: scored ? "done" : "pending",
+      label: (scored || records[0]).label,
+    });
   }
   const average = ratios.length ? ratios.reduce((sum, ratio) => sum + ratio, 0) / ratios.length : null;
-  return { total: items.length, done, average, lastAt: lastAt || null };
-}
-
-/** Every record of every skill as one list, newest first, cut to limit. */
-function recentActivity(skills, limit) {
-  const rows = [];
-  for (const skill of skills) {
-    for (const item of skill.items) {
-      for (const record of skill.recordsOf(item.id)) {
-        rows.push({ skill: skill.label, title: item.title, at: record.at, label: record.label });
-      }
-    }
-  }
-  rows.sort((a, b) => b.at.localeCompare(a.at));
-  return rows.slice(0, limit);
+  const done = states.filter((state) => state.status !== "todo").length;
+  return { total: items.length, done, average, lastAt: lastAt || null, states };
 }
 
 if (typeof module !== "undefined") {
-  module.exports = { attemptRecord, essayRecord, summarize, recentActivity };
+  module.exports = { attemptRecord, essayRecord, summarize };
 }
 
 const percentLabel = (ratio) => `${Math.round(ratio * 100)}%`;
-const outOfFiveLabel = (ratio) => `${(ratio * 5).toFixed(1)}/5`;
-const dateLabel = (at) => at.slice(0, 10);
+const outOfFiveLabel = (ratio) => (ratio * 5).toFixed(1);
 
+function dateLabel(at) {
+  const date = new Date(at);
+  if (Number.isNaN(date.getTime())) return at.slice(0, 10);
+  return date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+}
+
+// Rows follow the order of the sections in the test.
 function skillDefinitions() {
   return [
     {
-      label: "Reading", icon: "📖", href: "reading.html",
+      key: "reading", label: "Reading", href: "reading.html",
       indexUrl: "data/reading/index.json", listKey: "passages",
       store: Store, recordsOf: (id) => Store.attempts(id).map(attemptRecord),
-      averageLabel: percentLabel,
+      averageLabel: percentLabel, averageCaption: "average score",
     },
     {
-      label: "Listening", icon: "🎧", href: "listening.html",
+      key: "listening", label: "Listening", href: "listening.html",
       indexUrl: "data/listening/index.json", listKey: "items",
       store: ListeningStore, recordsOf: (id) => ListeningStore.attempts(id).map(attemptRecord),
-      averageLabel: percentLabel,
+      averageLabel: percentLabel, averageCaption: "average score",
     },
+    { key: "speaking", label: "Speaking", unavailable: true },
     {
-      label: "Writing", icon: "✍️", href: "writing.html",
+      key: "writing", label: "Writing", href: "writing.html",
       indexUrl: "data/writing/index.json", listKey: "prompts",
       store: Essays, recordsOf: (id) => Essays.forPrompt(id).map(essayRecord),
-      averageLabel: outOfFiveLabel,
+      averageLabel: outOfFiveLabel, averageCaption: "average out of 5",
     },
   ];
 }
 
 async function loadSkill(skill) {
+  if (skill.unavailable) return skill;
   try {
     await skill.store.init();
   } catch (err) {
@@ -106,60 +107,59 @@ async function loadSkill(skill) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const items = (await res.json())[skill.listKey];
     if (!Array.isArray(items)) throw new Error(`index.json has no ${skill.listKey} list`);
-    return { ...skill, items, error: null };
+    return { ...skill, summary: summarize(items, skill.recordsOf), error: null };
   } catch (err) {
-    return { ...skill, items: [], error: err.message };
+    return { ...skill, summary: null, error: err.message };
   }
 }
 
-function skillCardHtml(skill) {
-  const heading = `<h3>${skill.icon} ${escapeHtml(skill.label)}</h3>`;
-  const open = `<a class="button primary" href="${skill.href}">Open</a>`;
-  if (skill.error) {
+function blocksHtml(states) {
+  const blocks = states.map((state) =>
+    `<span class="block ${state.status}" title="${escapeHtml(`${state.title}: ${state.label}`)}"></span>`);
+  return `<div class="blocks">${blocks.join("")}</div>`;
+}
+
+function skillRowHtml(skill) {
+  const name = `<h2 class="skill-name">${escapeHtml(skill.label)}</h2>`;
+  if (skill.unavailable) {
     return `
-      <div class="card skill-card">
-        ${heading}
-        <p class="error">Could not load the list (${escapeHtml(skill.error)}).</p>
-        ${open}
+      <div class="skill-row skill-${skill.key} unavailable">
+        <div>${name}<p class="skill-note">Not built yet</p></div>
       </div>`;
   }
-  const summary = summarize(skill.items, skill.recordsOf);
-  const average = summary.average === null ? "No score yet" : `Average ${skill.averageLabel(summary.average)}`;
-  const last = summary.lastAt ? ` · last: ${escapeHtml(dateLabel(summary.lastAt))}` : "";
+  if (skill.error) {
+    return `
+      <a class="skill-row skill-${skill.key}" href="${skill.href}">
+        <div>${name}<p class="skill-note error">Could not load the list (${escapeHtml(skill.error)})</p></div>
+      </a>`;
+  }
+  const summary = skill.summary;
+  const last = summary.lastAt ? `, last on ${dateLabel(summary.lastAt)}` : "";
+  const figure = summary.average === null
+    ? `<p class="skill-figure empty">No score yet</p>`
+    : `<p class="skill-figure">${escapeHtml(skill.averageLabel(summary.average))}<small>${skill.averageCaption}</small></p>`;
   return `
-    <div class="card skill-card">
-      ${heading}
-      <p class="skill-progress">${summary.done} of ${summary.total} done</p>
-      <p class="meta">${escapeHtml(average)}${last}</p>
-      ${open}
-    </div>`;
+    <a class="skill-row skill-${skill.key}" href="${skill.href}">
+      <div>${name}<p class="skill-note">${summary.done} of ${summary.total} done${escapeHtml(last)}</p></div>
+      ${blocksHtml(summary.states)}
+      ${figure}
+    </a>`;
 }
 
-const SPEAKING_CARD_HTML = `
-    <div class="card skill-card disabled">
-      <h3>🎤 Speaking</h3>
-      <p class="skill-progress">Not available yet</p>
-      <p class="meta">Speaking questions have not been built.</p>
-    </div>`;
-
-function activityHtml(rows) {
-  if (!rows.length) return `<p class="hint">No attempts yet.</p>`;
-  const items = rows.map((row) => `
-      <li class="meta">
-        <span>${escapeHtml(dateLabel(row.at))}</span>
-        <span>${escapeHtml(row.skill)}</span>
-        <span class="activity-title">${escapeHtml(row.title)}</span>
-        <span>${escapeHtml(row.label)}</span>
-      </li>`);
-  return `<ul class="activity">${items.join("")}</ul>`;
+function headlineText(skills) {
+  const summaries = skills.map((skill) => skill.summary).filter(Boolean);
+  const done = summaries.reduce((sum, summary) => sum + summary.done, 0);
+  const total = summaries.reduce((sum, summary) => sum + summary.total, 0);
+  if (!total) return "No question sets yet.";
+  if (!done) return `${total} question sets are waiting. Pick a section to start.`;
+  if (done === total) return `All ${total} question sets done.`;
+  return `${done} of ${total} question sets done.`;
 }
 
 async function initDashboard() {
   const skills = await Promise.all(skillDefinitions().map(loadSkill));
-  document.querySelector("#skill-cards").innerHTML =
-    skills.map(skillCardHtml).join("") + SPEAKING_CARD_HTML;
-  document.querySelector("#recent-activity").innerHTML =
-    activityHtml(recentActivity(skills, RECENT_LIMIT));
+  document.querySelector("#dash-headline").textContent = headlineText(skills);
+  document.querySelector("#skill-rows").innerHTML = skills.map(skillRowHtml).join("");
 }
 
 if (typeof document !== "undefined") {

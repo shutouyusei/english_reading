@@ -197,11 +197,51 @@ mark { background: rgba(21, 101, 192, .25); padding: 0 2px; }
   line-height: 1.7;
 }
 
-/* Dashboard (app home) */
-.dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
-.skill-card { flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 0; }
-.skill-card.disabled { opacity: .55; }
-.skill-progress { margin: 0; font-size: 1.15em; font-weight: 600; }
-.activity { list-style: none; margin: 0 0 16px; padding: 0; }
-.activity li { display: flex; gap: 14px; padding: 6px 0; border-bottom: 1px solid var(--border); }
-.activity-title { flex: 1; color: var(--text); }
+/* Dashboard (app home): a score sheet with one row per skill. Each skill has its own
+   colour, used only for its blocks. */
+.dash-headline {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 2.1em; font-weight: 500; line-height: 1.2; letter-spacing: -.01em;
+  margin: 26px 0 24px;
+}
+.sheet {
+  background: #fff; border: 1px solid var(--border); border-radius: 14px;
+  overflow: hidden; margin-bottom: 14px;
+}
+.skill-row {
+  display: grid; grid-template-columns: 270px 1fr 130px; align-items: center; gap: 10px 28px;
+  padding: 24px 28px; color: inherit; text-decoration: none;
+  border-top: 1px solid var(--border);
+}
+.skill-row:first-child { border-top: none; }
+a.skill-row:hover { background: #f3f6fc; }
+a.skill-row:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+.skill-reading { --skill: #1f4fbf; }
+.skill-listening { --skill: #0b8577; }
+.skill-speaking { --skill: #b0711a; }
+.skill-writing { --skill: #7a3fb8; }
+.skill-name {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.7em; font-weight: 500; line-height: 1.2; margin: 0;
+}
+.skill-note { margin: 2px 0 0; font-size: .85em; color: var(--muted); }
+.skill-note.error { color: var(--danger); }
+.skill-row.unavailable .skill-name { color: var(--muted); }
+.blocks { display: flex; flex-wrap: wrap; gap: 6px; }
+.block { width: 20px; height: 32px; border-radius: 4px; background: #e7eaf0; }
+.block.done { background: var(--skill); }
+.block.pending { background: none; border: 2px solid var(--skill); }
+.skill-figure {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 2em; line-height: 1; font-variant-numeric: tabular-nums;
+  margin: 0; text-align: right;
+}
+.skill-figure small {
+  display: block; margin-top: 6px; font-size: .4em; color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.skill-figure.empty { font-family: inherit; font-size: .85em; color: var(--muted); }
+@media (max-width: 640px) {
+  .skill-row { grid-template-columns: 1fr; padding: 18px 20px; }
+  .skill-figure { text-align: left; }
+}

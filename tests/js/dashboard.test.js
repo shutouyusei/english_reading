@@ -2,7 +2,7 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-const { attemptRecord, essayRecord, summarize, recentActivity } =
+const { attemptRecord, essayRecord, summarize } =
   require("../../app/ui/js/dashboard.js");
 
 const ITEMS = [
@@ -25,6 +25,11 @@ test("summarize counts done items, averages the latest score of each, and keeps 
   });
   assert.deepEqual(summarize(ITEMS, recordsOf), {
     total: 3, done: 2, average: 0.7, lastAt: "2026-08-20T02:00:00.000Z",
+    states: [
+      { title: "Peat", status: "done", label: "4/5" },
+      { title: "Fresco", status: "done", label: "3/5" },
+      { title: "Paper", status: "todo", label: "Not attempted" },
+    ],
   });
 });
 
@@ -42,28 +47,6 @@ test("an ungraded essay counts as done but does not enter the average", () => {
   const summary = summarize(ITEMS, recordsFrom({ passage_001: [ungraded, graded], passage_002: [invalid] }));
   assert.equal(summary.done, 2);
   assert.equal(summary.average, 0.7);
+  assert.deepEqual(summary.states.map((state) => state.status), ["done", "pending", "todo"]);
   assert.equal(summarize(ITEMS, recordsFrom({})).average, null);
-});
-
-test("recentActivity merges every skill newest first and stops at the limit", () => {
-  const reading = {
-    label: "Reading", items: [ITEMS[0]],
-    recordsOf: recordsFrom({
-      passage_001: [attemptRecord({ score: 4, total: 5, finishedAt: "2026-08-20T02:00:00.000Z" })],
-    }),
-  };
-  const writing = {
-    label: "Writing", items: [{ id: "writing_001", title: "A charge" }],
-    recordsOf: recordsFrom({
-      writing_001: [
-        essayRecord({ essay: { writtenAt: "2026-08-21T00:00:00.000Z" }, grade: null }),
-        essayRecord({ essay: { writtenAt: "2026-08-01T00:00:00.000Z" }, grade: { overall: 2 } }),
-      ],
-    }),
-  };
-  const rows = recentActivity([reading, writing], 2);
-  assert.deepEqual(rows.map((row) => [row.skill, row.title, row.label]), [
-    ["Writing", "A charge", "Awaiting grading"],
-    ["Reading", "Peat", "4/5"],
-  ]);
 });
