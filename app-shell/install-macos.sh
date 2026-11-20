@@ -13,7 +13,17 @@ if [ ! -x "$BIN" ]; then
 fi
 
 rm -rf "$APP"
-mkdir -p "$APP/Contents/MacOS"
+mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
+
+# Build AppIcon.icns from icon.png (rendered from icon.svg; re-render it with
+# `rsvg-convert -w 1024 -h 1024 app-shell/icon.svg -o app-shell/icon.png`).
+ICONSET="$(mktemp -d)/AppIcon.iconset"
+mkdir "$ICONSET"
+for size in 16 32 128 256 512; do
+  sips -z "$size" "$size" app-shell/icon.png --out "$ICONSET/icon_${size}x${size}.png" >/dev/null
+  sips -z "$((size * 2))" "$((size * 2))" app-shell/icon.png --out "$ICONSET/icon_${size}x${size}@2x.png" >/dev/null
+done
+iconutil -c icns "$ICONSET" -o "$APP/Contents/Resources/AppIcon.icns"
 
 cat > "$APP/Contents/MacOS/launcher" <<EOF
 #!/bin/sh
@@ -31,6 +41,7 @@ cat > "$APP/Contents/Info.plist" <<'EOF'
   <key>CFBundleDisplayName</key><string>TOEFL Study</string>
   <key>CFBundleIdentifier</key><string>io.github.shutouyusei.toefl-study</string>
   <key>CFBundleExecutable</key><string>launcher</string>
+  <key>CFBundleIconFile</key><string>AppIcon</string>
   <key>CFBundlePackageType</key><string>APPL</string>
   <key>CFBundleShortVersionString</key><string>0.1.0</string>
   <key>NSHighResolutionCapable</key><true/>

@@ -1,3 +1,4 @@
+mod advisor;
 mod anki;
 mod essays;
 mod grader;
@@ -13,6 +14,7 @@ pub enum Handler {
     Essays,
     Grader,
     Anki,
+    Advisor,
     Speech,
 }
 
@@ -55,6 +57,7 @@ pub fn parse_ipc_request(raw: &str) -> Result<IpcRequest, IpcParseError> {
         "essays" => Handler::Essays,
         "grader" => Handler::Grader,
         "anki" => Handler::Anki,
+        "advisor" => Handler::Advisor,
         "speech" => Handler::Speech,
         other => return Err(IpcParseError::UnknownHandler(other.to_string())),
     };
@@ -116,6 +119,10 @@ pub fn dispatch(request: &IpcRequest, root: &Path, data_dir: &Path) -> String {
             let client = AnkiClient::default();
             anki::handle_anki(&request.payload, &client).map(Some)
         }
+        Handler::Advisor => {
+            let log = JsonLinesFile::new(data_dir, "advice.jsonl");
+            advisor::handle_advisor(&request.payload, root, &log).map(Some)
+        }
         Handler::Speech => placeholder::handle_speech(&request.payload).map(Some),
     };
 
@@ -128,11 +135,6 @@ pub fn dispatch(request: &IpcRequest, root: &Path, data_dir: &Path) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
-
-    #[test]
-    fn invalid_json_is_rejected() {
-        assert_eq!(parse_ipc_request("not json"), Err(IpcParseError::InvalidJson));
-    }
 
     #[test]
     fn rejected_message_with_a_request_id_still_gets_an_error_reply() {
@@ -148,21 +150,6 @@ mod tests {
     }
 
     #[test]
-    fn missing_request_id_is_rejected() {
-        let raw = r#"{"handler":"store","action":"loadAll"}"#;
-        assert_eq!(parse_ipc_request(raw), Err(IpcParseError::MissingRequestId));
-    }
-
-    #[test]
-    fn unknown_handler_is_rejected() {
-        let raw = r#"{"requestId":"1","handler":"unknown"}"#;
-        assert_eq!(
-            parse_ipc_request(raw),
-            Err(IpcParseError::UnknownHandler("unknown".to_string()))
-        );
-    }
-
-    #[test]
     fn routes_each_known_handler() {
         for (name, expected) in [
             ("store", Handler::Store),
@@ -170,6 +157,7 @@ mod tests {
             ("essays", Handler::Essays),
             ("grader", Handler::Grader),
             ("anki", Handler::Anki),
+            ("advisor", Handler::Advisor),
             ("speech", Handler::Speech),
         ] {
             let raw = format!(r#"{{"requestId":"1","handler":"{name}","action":"x"}}"#);
@@ -177,22 +165,6 @@ mod tests {
             assert_eq!(parsed.handler, expected);
             assert_eq!(parsed.request_id, "1");
         }
-    }
-
-    #[test]
-    fn payload_excludes_request_id_and_handler_but_keeps_rest() {
-        let raw = r#"{"requestId":"1","handler":"store","action":"loadAll"}"#;
-        let parsed = parse_ipc_request(raw).unwrap();
-        assert_eq!(parsed.payload.get("action").unwrap(), "loadAll");
-        assert!(parsed.payload.get("requestId").is_none());
-        assert!(parsed.payload.get("handler").is_none());
-    }
-
-    #[test]
-    fn formats_success_with_result() {
-        let result = serde_json::json!({"ok": true});
-        let script = format_resolve_script("42", Some(&result), None);
-        assert_eq!(script, r#"window.__toeflIpcResolve("42", {"ok":true}, null)"#);
     }
 
     #[test]

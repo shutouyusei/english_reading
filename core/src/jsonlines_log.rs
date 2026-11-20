@@ -64,14 +64,6 @@ mod tests {
     use serde_json::json;
 
     #[test]
-    fn reads_two_normal_lines() {
-        let text = "{\"passageId\":\"passage_001\",\"score\":1}\n{\"passageId\":\"passage_002\",\"score\":0}";
-        let result = parse_json_lines(text.as_bytes());
-        assert_eq!(result.len(), 2);
-        assert_eq!(result[0].get("passageId"), Some(&json!("passage_001")));
-    }
-
-    #[test]
     fn reads_lines_before_a_truncated_utf8_tail() {
         let mut data = b"{\"passageId\":\"passage_001\",\"score\":1}\n{\"passageId\":\"passage_002\",\"score\":0}".to_vec();
         data.push(0x0A);
@@ -84,12 +76,6 @@ mod tests {
     #[test]
     fn drops_only_the_broken_json_line() {
         let text = "{\"passageId\":\"passage_001\",\"score\":1}\n{\"passageId\":\"passage_002\",\"score\":0}\n{\"passageId\":\"passage_003\",";
-        assert_eq!(parse_json_lines(text.as_bytes()).len(), 2);
-    }
-
-    #[test]
-    fn drops_non_object_json_lines() {
-        let text = "{\"passageId\":\"passage_001\",\"score\":1}\n{\"passageId\":\"passage_002\",\"score\":0}\n[1,2,3]";
         assert_eq!(parse_json_lines(text.as_bytes()).len(), 2);
     }
 

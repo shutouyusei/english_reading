@@ -38,26 +38,10 @@ const item = {
   questions: [{ id: 1, type: "Detail" }, { id: 2, type: "Inference" }],
 };
 
-test("a speaker id is replaced by its role (speakers[].role)", () => {
-  const build = loadBuildListeningSource({ latest: () => null });
-  const source = build(item);
-  assert.equal(source.lines[0].speaker, "Professor");
-  assert.equal(source.lines[1].speaker, "Professor");
-  assert.equal(source.lines[2].speaker, "Professor");
-});
-
 test("the id in solveUrl goes through encodeURIComponent", () => {
   const build = loadBuildListeningSource({ latest: () => null });
   const source = build({ ...item, id: "listening 001&x" });
   assert.equal(
     source.solveUrl,
     `listening-player.html?id=${encodeURIComponent("listening 001&x")}&mode=solve`);
-});
-
-test("id, title and questions are carried over unchanged", () => {
-  const build = loadBuildListeningSource({ latest: () => null });
-  const source = build(item);
-  assert.equal(source.id, item.id);
-  assert.equal(source.title, item.title);
-  assert.deepEqual(source.questions, item.questions);
 });

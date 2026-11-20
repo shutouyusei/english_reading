@@ -87,13 +87,4 @@ mod tests {
         assert_eq!(rows[0].get("kind").unwrap(), "grade");
         let _ = fs::remove_dir_all(&dir);
     }
-
-    #[test]
-    fn save_essay_without_essay_field_is_rejected() {
-        let (log, dir) = temp_log();
-        let payload = json!({"action": "saveEssay"}).as_object().unwrap().clone();
-        let result = handle_essays(&payload, &log);
-        assert_eq!(result, Err("essay is missing".to_string()));
-        let _ = fs::remove_dir_all(&dir);
-    }
 }

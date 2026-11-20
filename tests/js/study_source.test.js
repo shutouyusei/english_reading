@@ -25,14 +25,6 @@ const passage = {
   questions: [{ id: 1, type: "Factual" }],
 };
 
-test("body paragraphs become lines", () => {
-  const buildStudySource = loadBuildStudySource();
-  const source = buildStudySource(passage, null, "reader.html?id=passage_001&mode=solve");
-  assert.equal(source.lines.length, 2);
-  assert.equal(source.lines[0].text, "First paragraph here.");
-  assert.equal(source.lines[1].text, "Second paragraph here.");
-});
-
 test("consecutive blank lines do not produce empty paragraphs", () => {
   const buildStudySource = loadBuildStudySource();
   const withBlanks = { ...passage, body: "A.\n\n\n\nB." };

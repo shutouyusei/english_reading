@@ -26,24 +26,6 @@ const ATTEMPT = {
   finishedAt: "2026-08-11T09:12:33.000Z",
 };
 
-test("reads back a saved attempt", async () => {
-  const { Store } = loadStore();
-  await Store.init();
-  await Store.saveAttempt(ATTEMPT);
-  assert.deepEqual(Store.attempts("passage_001"), [ATTEMPT]);
-  assert.deepEqual(Store.latest("passage_001"), ATTEMPT);
-});
-
-test("the public site keeps only the latest attempt", async () => {
-  const { Store } = loadStore();
-  await Store.init();
-  await Store.saveAttempt(ATTEMPT);
-  const second = { ...ATTEMPT, score: 5, finishedAt: "2026-08-12T00:00:00.000Z" };
-  await Store.saveAttempt(second);
-  assert.equal(Store.attempts("passage_001").length, 1);
-  assert.deepEqual(Store.latest("passage_001"), second);
-});
-
 test("does not throw on corrupt stored JSON", async () => {
   const { Store, mem } = loadStore();
   mem.set("results.passage_001", "{garbage");

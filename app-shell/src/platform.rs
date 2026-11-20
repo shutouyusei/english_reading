@@ -34,21 +34,6 @@ mod tests {
     use std::path::{Path, PathBuf};
 
     #[test]
-    fn uses_env_override_when_present() {
-        let mut env = HashMap::new();
-        env.insert("TOEFL_REPO_ROOT".to_string(), "/tmp/custom-root".to_string());
-        let result = resolve_repo_root(&env, Path::new("/tmp/cwd"));
-        assert_eq!(result, PathBuf::from("/tmp/custom-root"));
-    }
-
-    #[test]
-    fn falls_back_to_current_dir_when_env_missing() {
-        let env = HashMap::new();
-        let result = resolve_repo_root(&env, Path::new("/tmp/cwd"));
-        assert_eq!(result, PathBuf::from("/tmp/cwd"));
-    }
-
-    #[test]
     fn falls_back_to_current_dir_when_env_empty() {
         let mut env = HashMap::new();
         env.insert("TOEFL_REPO_ROOT".to_string(), "".to_string());

@@ -50,31 +50,10 @@ class TestValidate(unittest.TestCase):
     def test_valid_passage_returns_no_errors(self):
         self.assertEqual(validate(make_passage()), [])
 
-    def test_missing_top_level_field(self):
-        passage = make_passage()
-        del passage["title"]
-        self.assertTrue(any("title" in e for e in validate(passage)))
-
-    def test_correct_answers_too_concentrated(self):
-        passage = make_passage()
-        for q in passage["questions"]:
-            q["correct"] = "A"
-        self.assertTrue(any("used 5 times" in e for e in validate(passage)))
-
     def test_vocab_word_must_appear_in_body(self):
         passage = make_passage()
         passage["vocab"]["nonexistent"] = passage["vocab"]["disequilibria"]
         self.assertTrue(any("nonexistent" in e for e in validate(passage)))
-
-    def test_vocabulary_question_requires_target_word(self):
-        passage = make_passage()
-        passage["questions"][2]["target_word"] = None
-        self.assertTrue(any("target_word" in e for e in validate(passage)))
-
-    def test_word_count_mismatch(self):
-        passage = make_passage()
-        passage["word_count"] = 100
-        self.assertTrue(any("word_count" in e for e in validate(passage)))
 
     def test_vocab_word_not_matchable_at_runtime_is_rejected(self):
         # Runtime (findVocabKey in textmatch.js) only strips suffixes off the

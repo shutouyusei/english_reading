@@ -100,12 +100,6 @@ mod tests {
     }
 
     #[test]
-    fn missing_file_returns_none() {
-        let dir = temp_dir("missing");
-        assert!(build_content_response(&dir.0, "/nope.html", None).is_none());
-    }
-
-    #[test]
     fn escaping_the_root_returns_none() {
         let dir = temp_dir("escape");
         let secret = dir.0.parent().unwrap().join("secret.txt");

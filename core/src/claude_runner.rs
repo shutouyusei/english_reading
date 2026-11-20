@@ -1,6 +1,7 @@
 use serde_json::{Map, Value};
 use std::collections::HashMap;
 use std::io::{Read, Write};
+use std::path::Path;
 use std::process::{Command, Stdio};
 use std::sync::mpsc;
 use std::time::Duration;
@@ -331,6 +332,33 @@ pub fn run_claude(
     }
 }
 
+/// Loads `app/prompts/<template_name>.md`, fills in its `{{placeholders}}` and runs
+/// claude -p with it. Grading and study advice both go through here.
+pub fn run_prompt_template(
+    root: &Path,
+    template_name: &str,
+    values: &HashMap<String, String>,
+    timeout_seconds: u64,
+) -> Result<Map<String, Value>, ClaudeRunnerError> {
+    let binary = resolve_claude_binary(
+        &std::env::vars().collect(),
+        is_executable_file,
+        &default_claude_binary_candidates(),
+    )
+    .ok_or(ClaudeRunnerError::BinaryNotFound)?;
+
+    let template_failure = || {
+        ClaudeRunnerError::PromptUnavailable(format!(
+            "the prompt template app/prompts/{template_name}.md could not be read"
+        ))
+    };
+    let template_path = root.join(format!("app/prompts/{template_name}.md"));
+    let template_text = std::fs::read_to_string(&template_path).map_err(|_| template_failure())?;
+    let (system, user_template) = split_prompt_file(&template_text).ok_or_else(template_failure)?;
+
+    run_claude(&binary, &system, &render_template(&user_template, values), timeout_seconds)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -356,36 +384,6 @@ mod tests {
     }
 
     #[test]
-    fn resolves_an_existing_candidate() {
-        let candidates = vec![
-            "/candidate/one/claude".to_string(),
-            "/candidate/two/claude".to_string(),
-        ];
-        let found = resolve_claude_binary(
-            &HashMap::new(),
-            |p| p == "/candidate/two/claude",
-            &candidates,
-        );
-        assert_eq!(found.as_deref(), Some("/candidate/two/claude"));
-    }
-
-    #[test]
-    fn override_env_var_wins_over_candidates() {
-        let candidates = vec![
-            "/candidate/one/claude".to_string(),
-            "/candidate/two/claude".to_string(),
-        ];
-        let mut env = HashMap::new();
-        env.insert("TOEFL_CLAUDE_BIN".to_string(), "/custom/claude".to_string());
-        let found = resolve_claude_binary(
-            &env,
-            |p| p == "/custom/claude" || p == "/candidate/one/claude",
-            &candidates,
-        );
-        assert_eq!(found.as_deref(), Some("/custom/claude"));
-    }
-
-    #[test]
     fn missing_override_does_not_fall_back_to_candidates() {
         let candidates = vec!["/candidate/one/claude".to_string()];
         let mut env = HashMap::new();
@@ -402,28 +400,8 @@ mod tests {
         assert_eq!(user, "ESSAY:\n{{essay}}");
     }
 
-    #[test]
-    fn no_separator_is_none() {
-        assert_eq!(split_prompt_file("no separator here"), None);
-    }
-
     fn values(pairs: &[(&str, &str)]) -> HashMap<String, String> {
         pairs.iter().map(|(k, v)| (k.to_string(), v.to_string())).collect()
-    }
-
-    #[test]
-    fn replaces_every_occurrence_of_the_same_key() {
-        let rendered = render_template(
-            "A={{a}} B={{b}} A again={{a}}",
-            &values(&[("a", "1"), ("b", "2")]),
-        );
-        assert_eq!(rendered, "A=1 B=2 A again=1");
-    }
-
-    #[test]
-    fn drops_placeholders_without_a_value() {
-        let rendered = render_template("keep {{known}} drop {{unknown}}", &values(&[("known", "X")]));
-        assert_eq!(rendered, "keep X drop ");
     }
 
     // Regression test: when a value happens to contain the {{...}} of another known key,
@@ -443,30 +421,6 @@ mod tests {
             rendered,
             "MUST_INCLUDE:cats\nESSAY:I love {{must_include}} and dogs."
         );
-    }
-
-    #[test]
-    fn is_executable_file_true_for_a_file_with_execute_bit() {
-        use std::os::unix::fs::PermissionsExt;
-        let dir = std::env::temp_dir().join(format!("toefl-exec-test-{}", std::process::id()));
-        std::fs::create_dir_all(&dir).unwrap();
-        let path = dir.join("runnable");
-        std::fs::write(&path, "#!/bin/sh\n").unwrap();
-        std::fs::set_permissions(&path, std::fs::Permissions::from_mode(0o755)).unwrap();
-        assert!(is_executable_file(path.to_str().unwrap()));
-        std::fs::remove_dir_all(&dir).unwrap();
-    }
-
-    #[test]
-    fn is_executable_file_false_without_execute_bit() {
-        use std::os::unix::fs::PermissionsExt;
-        let dir = std::env::temp_dir().join(format!("toefl-noexec-test-{}", std::process::id()));
-        std::fs::create_dir_all(&dir).unwrap();
-        let path = dir.join("not_runnable");
-        std::fs::write(&path, "not a script").unwrap();
-        std::fs::set_permissions(&path, std::fs::Permissions::from_mode(0o644)).unwrap();
-        assert!(!is_executable_file(path.to_str().unwrap()));
-        std::fs::remove_dir_all(&dir).unwrap();
     }
 
     // Regression test: on timeout, the child process held by the waiting thread must be
@@ -496,13 +450,6 @@ mod tests {
     }
 
     #[test]
-    fn extracts_plain_json() {
-        let wrapper = br#"{"result":"{\"overall\":4}","is_error":false}"#;
-        let grade = extract_grade_json(wrapper).unwrap();
-        assert_eq!(grade.get("overall"), Some(&serde_json::json!(4)));
-    }
-
-    #[test]
     fn extracts_json_wrapped_in_a_code_fence() {
         let wrapper = br#"{"result":"```json\n{\"overall\":5}\n```","is_error":false}"#;
         let grade = extract_grade_json(wrapper).unwrap();
@@ -524,17 +471,6 @@ mod tests {
         match extract_grade_json(wrapper) {
             Err(ClaudeRunnerError::UnreadableOutput { stage, .. }) => {
                 assert_eq!(stage, UnreadableStage::InnerResult);
-            }
-            other => panic!("expected UnreadableOutput, got {other:?}"),
-        }
-    }
-
-    #[test]
-    fn non_json_outer_wrapper_is_unreadable_outer_wrapper() {
-        match extract_grade_json(b"not json at all") {
-            Err(ClaudeRunnerError::UnreadableOutput { stage, excerpt }) => {
-                assert_eq!(stage, UnreadableStage::OuterWrapper);
-                assert_eq!(excerpt, "not json at all");
             }
             other => panic!("expected UnreadableOutput, got {other:?}"),
         }

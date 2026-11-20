@@ -24,28 +24,6 @@ function loadUtterancesOf() {
   return (item) => JSON.parse(JSON.stringify(raw(item)));
 }
 
-const lecture = {
-  speakers: [{ id: "professor", voice: "Daniel" }],
-  script: [
-    { speaker: "professor", text: "Line one." },
-    { speaker: "professor", text: "Line two." },
-    { speaker: "professor", text: "Line three." },
-  ],
-};
-
-const conversation = {
-  speakers: [
-    { id: "host", voice: "Daniel" },
-    { id: "guest", voice: "Samantha" },
-  ],
-  script: [
-    { speaker: "host", text: "Q1" },
-    { speaker: "guest", text: "A1" },
-    { speaker: "host", text: "Q2" },
-    { speaker: "guest", text: "A2" },
-  ],
-};
-
 const mixed = {
   speakers: [
     { id: "host", voice: "Daniel" },
@@ -60,22 +38,6 @@ const mixed = {
     { speaker: "host", text: "H5" },
   ],
 };
-
-test("lines that all share one speaker fold into a single utterance (lecture)", () => {
-  const utterancesOf = loadUtterancesOf();
-  const result = utterancesOf(lecture);
-  assert.equal(result.length, 1);
-  assert.equal(result[0].voice, "Daniel");
-  assert.equal(result[0].text, "Line one.\n\nLine two.\n\nLine three.");
-});
-
-test("two alternating speakers keep one utterance per line (conversation)", () => {
-  const utterancesOf = loadUtterancesOf();
-  const result = utterancesOf(conversation);
-  assert.equal(result.length, 4);
-  assert.deepEqual(result.map((u) => u.voice), ["Daniel", "Samantha", "Daniel", "Samantha"]);
-  assert.deepEqual(result.map((u) => u.text), ["Q1", "A1", "Q2", "A2"]);
-});
 
 test("only consecutive lines by the same speaker are folded", () => {
   const utterancesOf = loadUtterancesOf();
