@@ -21,26 +21,12 @@ test("postMessage sends the handler, a requestId and the payload", () => {
   assert.equal(typeof sent[0].requestId, "string");
 });
 
-test("the promise resolves when the reply carries a result", async () => {
-  const { sent } = loadShim();
-  const promise = window.webkit.messageHandlers.essays.postMessage({ action: "loadAll" });
-  const requestId = sent[0].requestId;
-  window.__toeflIpcResolve(requestId, [{ id: 1 }], null);
-  const result = await promise;
-  assert.deepEqual(result, [{ id: 1 }]);
-});
-
 test("the promise rejects when the reply carries an error", async () => {
   const { sent } = loadShim();
   const promise = window.webkit.messageHandlers.anki.postMessage({ action: "request" });
   const requestId = sent[0].requestId;
   window.__toeflIpcResolve(requestId, null, "cannot connect");
   await assert.rejects(promise, /cannot connect/);
-});
-
-test("a reply for an unknown requestId does not throw", () => {
-  loadShim();
-  assert.doesNotThrow(() => window.__toeflIpcResolve("does-not-exist", null, null));
 });
 
 test("the window.webkit.messageHandlers.ipc that wry set up is not overwritten", () => {

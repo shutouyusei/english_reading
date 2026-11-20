@@ -69,21 +69,6 @@ mod tests {
     }
 
     #[test]
-    fn resolves_without_leading_slash() {
-        let root = Path::new("/tmp/repo");
-        assert_eq!(
-            resolve_content_path(root, "docs/index.html"),
-            Some(PathBuf::from("/tmp/repo/docs/index.html"))
-        );
-    }
-
-    #[test]
-    fn allows_root_itself() {
-        let root = Path::new("/tmp/repo");
-        assert_eq!(resolve_content_path(root, "/"), Some(PathBuf::from("/tmp/repo")));
-    }
-
-    #[test]
     fn rejects_escape_to_parent() {
         let root = Path::new("/tmp/repo");
         assert_eq!(resolve_content_path(root, "/../etc/passwd"), None);

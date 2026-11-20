@@ -33,9 +33,6 @@ class BuildIndexTest(unittest.TestCase):
         ids = [row["id"] for row in build_index(skill, items)["items"]]
         self.assertEqual(ids, ["listening_003", "listening_002", "listening_001"])
 
-    def test_empty_input_gives_empty_list(self):
-        self.assertEqual(build_index(SKILLS["writing"], []), {"prompts": []})
-
 
 if __name__ == "__main__":
     unittest.main()

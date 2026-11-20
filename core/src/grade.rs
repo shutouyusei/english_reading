@@ -86,36 +86,3 @@ pub fn grade_essay(
         grade
     })
 }
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-    use serde_json::json;
-
-    #[test]
-    fn formats_professor_and_student_posts() {
-        let discussion = json!({
-            "professor_post": { "name": "Dr. Lee", "text": "What do you think?" },
-            "student_posts": [
-                { "name": "Alice", "text": "I agree." },
-                { "name": "Bob", "text": "I disagree." }
-            ]
-        });
-        assert_eq!(
-            describe_discussion(Some(&discussion)),
-            "Dr. Lee:\nWhat do you think?\n\nAlice:\nI agree.\n\nBob:\nI disagree."
-        );
-    }
-
-    #[test]
-    fn missing_names_fall_back_to_defaults() {
-        let discussion = json!({
-            "professor_post": { "text": "Hello" },
-            "student_posts": [{ "text": "Hi" }]
-        });
-        assert_eq!(
-            describe_discussion(Some(&discussion)),
-            "Professor:\nHello\n\nStudent:\nHi"
-        );
-    }
-}

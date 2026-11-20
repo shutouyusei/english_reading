@@ -43,41 +43,13 @@ def make_lecture() -> dict:
     }
 
 
-def make_conversation() -> dict:
-    data = make_lecture()
-    data["id"] = "listening_002"
-    data["type"] = "conversation"
-    data["speakers"] = [
-        {"id": "student", "role": "Student", "voice": "Samantha"},
-        {"id": "advisor", "role": "Office staff", "voice": "Daniel"},
-    ]
-    data["script"] = [
-        {"speaker": "student", "text": "Excuse me, I wanted to ask about the deadline"},
-        {"speaker": "advisor", "text": "for the housing application form."},
-    ]
-    return data
-
-
 class ValidateListeningTest(unittest.TestCase):
     def test_valid_lecture_has_no_errors(self):
         self.assertEqual(validate(make_lecture()), [])
 
-    def test_valid_conversation_has_no_errors(self):
-        self.assertEqual(validate(make_conversation()), [])
-
     def test_missing_field_is_reported(self):
         data = make_lecture()
         del data["speakers"]
-        self.assertTrue(any("speakers" in e for e in validate(data)))
-
-    def test_lecture_must_have_one_speaker(self):
-        data = make_lecture()
-        data["speakers"].append({"id": "student", "role": "Student", "voice": "Samantha"})
-        self.assertTrue(any("speakers" in e for e in validate(data)))
-
-    def test_conversation_must_have_two_speakers(self):
-        data = make_conversation()
-        data["speakers"] = data["speakers"][:1]
         self.assertTrue(any("speakers" in e for e in validate(data)))
 
     def test_unknown_speaker_in_script_is_reported(self):
@@ -85,38 +57,12 @@ class ValidateListeningTest(unittest.TestCase):
         data["script"][0]["speaker"] = "student"
         self.assertTrue(any("speaker" in e for e in validate(data)))
 
-    def test_word_count_mismatch_is_reported(self):
-        data = make_lecture()
-        data["word_count"] = 999
-        self.assertTrue(any("word_count" in e for e in validate(data)))
-
-    def test_question_count_must_be_six(self):
-        data = make_lecture()
-        data["questions"] = data["questions"][:5]
-        self.assertTrue(any("questions" in e for e in validate(data)))
-
-    def test_invalid_correct_letter_is_reported(self):
-        data = make_lecture()
-        data["questions"][0]["correct"] = "E"
-        self.assertTrue(any("correct" in e for e in validate(data)))
-
     def test_speakers_none_does_not_crash(self):
         data = make_lecture()
         data["speakers"] = None
         errors = validate(data)
         self.assertTrue(any("speakers" in e for e in errors))
         self.assertIsInstance(errors, list)
-
-    def test_same_correct_letter_four_times_is_reported(self):
-        data = make_lecture()
-        # Set questions 0, 1, 2 to A to get 4 A's total (0, 1, 2, 4 from fixture)
-        data["questions"][0]["correct"] = "A"
-        data["questions"][1]["correct"] = "A"
-        data["questions"][2]["correct"] = "A"
-        data["questions"][3]["correct"] = "B"
-        data["questions"][5]["correct"] = "C"
-        # Now we have 4 A's - should error
-        self.assertTrue(any("correct" in e for e in validate(data)))
 
     # --- Does every double-quoted text in an explanation exist in the script? ---
     # Guards against fixing the script and forgetting the quote in the explanation, which

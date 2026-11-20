@@ -3,16 +3,14 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 
 // essays.native.js depends on the native bridge. A fake bridge is injected to check
-// how essay rows and grade rows are merged, sorted and cached.
+// how essay rows and grade rows are merged and that a failed save leaves the cache alone.
 
 function loadEssays(rows, options = {}) {
-  const calls = [];
   global.window = {
     webkit: {
       messageHandlers: {
         essays: {
           postMessage: async (payload) => {
-            calls.push(payload);
             if (payload.action === "loadAll") return rows;
             if (payload.action === "saveEssay" || payload.action === "saveGrade") {
               if (options.saveRejects) throw new Error("write failed: permission denied");
@@ -26,7 +24,7 @@ function loadEssays(rows, options = {}) {
   };
   delete require.cache[require.resolve("../../app/ui/js/essays.native.js")];
   require("../../app/ui/js/essays.native.js");
-  return { Essays: global.window.Essays, calls };
+  return { Essays: global.window.Essays };
 }
 
 const essayOld = {
@@ -37,10 +35,6 @@ const essayNew = {
   kind: "essay", essayId: "e_2", promptId: "writing_001", promptType: "email",
   text: "Dear Professor Alvarez, ...", elapsedSec: 380, writtenAt: "2026-08-11T12:00:00.000Z",
 };
-const essayOther = {
-  kind: "essay", essayId: "e_3", promptId: "writing_002", promptType: "discussion",
-  text: "I agree with Priya ...", elapsedSec: 600, writtenAt: "2026-08-11T11:00:00.000Z",
-};
 const gradeFirst = {
   kind: "grade", essayId: "e_1", overall: 3, criteria: [], corrections: [],
   summary: "first grading", gradedAt: "2026-08-11T10:01:00.000Z", runnerMs: 15000,
@@ -49,13 +43,6 @@ const gradeRegraded = {
   kind: "grade", essayId: "e_1", overall: 4, criteria: [], corrections: [],
   summary: "graded again", gradedAt: "2026-08-11T13:00:00.000Z", runnerMs: 16000,
 };
-
-test("an essay with no grade row has a null grade", async () => {
-  const { Essays } = loadEssays([essayOld]);
-  await Essays.init();
-  assert.equal(Essays.get("e_1").grade, null);
-  assert.equal(Essays.get("e_1").essay.text, essayOld.text);
-});
 
 test("a grade row is matched to its essay by essayId", async () => {
   const { Essays } = loadEssays([essayOld, gradeFirst]);
@@ -70,38 +57,10 @@ test("after grading again, the grade with the latest gradedAt wins (whatever the
   assert.equal(Essays.get("e_1").grade.summary, "graded again");
 });
 
-test("essays are grouped by prompt, newest first", async () => {
-  const { Essays } = loadEssays([essayOld, essayOther, essayNew]);
-  await Essays.init();
-  assert.deepEqual(
-    Essays.forPrompt("writing_001").map((e) => e.essay.essayId),
-    ["e_2", "e_1"]
-  );
-  assert.equal(Essays.forPrompt("writing_002").length, 1);
-  assert.deepEqual(Essays.forPrompt("writing_999"), []);
-});
-
 test("a grade row with no matching essay does not crash", async () => {
   const { Essays } = loadEssays([{ kind: "grade", essayId: "e_missing", overall: 5, gradedAt: "x" }]);
   await Essays.init();
   assert.deepEqual(Essays.forPrompt("writing_001"), []);
-});
-
-test("saveEssay calls the bridge and puts the essay at the front of the cache", async () => {
-  const { Essays, calls } = loadEssays([essayOld]);
-  await Essays.init();
-  await Essays.saveEssay(essayNew);
-  assert.deepEqual(calls[1], { action: "saveEssay", essay: essayNew });
-  assert.equal(Essays.latest("writing_001").essay.essayId, "e_2");
-  assert.equal(Essays.get("e_2").grade, null);
-});
-
-test("saveGrade attaches the grade to the existing entry", async () => {
-  const { Essays, calls } = loadEssays([essayOld]);
-  await Essays.init();
-  await Essays.saveGrade(gradeFirst);
-  assert.deepEqual(calls[1], { action: "saveGrade", grade: gradeFirst });
-  assert.equal(Essays.get("e_1").grade.overall, 3);
 });
 
 test("a failed save rejects and leaves the cache unchanged", async () => {

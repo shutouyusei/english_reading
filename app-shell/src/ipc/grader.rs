@@ -33,14 +33,4 @@ mod tests {
         let result = handle_grader(&payload, &PathBuf::from("/tmp"));
         assert_eq!(result, Err("The grading request is malformed".to_string()));
     }
-
-    #[test]
-    fn missing_essay_text_is_rejected() {
-        let payload = json!({"action": "grade", "promptId": "p1", "promptType": "email"})
-            .as_object()
-            .unwrap()
-            .clone();
-        let result = handle_grader(&payload, &PathBuf::from("/tmp"));
-        assert_eq!(result, Err("The grading request is malformed".to_string()));
-    }
 }

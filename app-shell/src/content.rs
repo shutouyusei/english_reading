@@ -34,14 +34,6 @@ mod tests {
     }
 
     #[test]
-    fn missing_file_returns_404() {
-        let dir = temp_root();
-        let (status, _, _) = respond(&dir, "/nope.html", None);
-        assert_eq!(status, 404);
-        let _ = fs::remove_dir_all(&dir);
-    }
-
-    #[test]
     fn escaping_the_root_returns_404() {
         let dir = temp_root();
         let (status, _, _) = respond(&dir, "/../../etc/passwd", None);

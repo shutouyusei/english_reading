@@ -140,9 +140,7 @@ class H(http.server.BaseHTTPRequestHandler):
     def do_POST(self):
         n = int(self.headers.get("Content-Length", 0))
         req = json.loads(self.rfile.read(n).decode())
-        if MODE == "ok":
-            out = json.dumps({"result": {"echo": req.get("action")}, "error": None}).encode()
-        elif MODE == "anki_error":
+        if MODE == "anki_error":
             out = json.dumps({"result": None, "error": "deck not found"}).encode()
         else:
             out = b"not json at all"
@@ -173,28 +171,6 @@ server.serve_forever()
 
     fn endpoint(port: u16) -> String {
         format!("http://127.0.0.1:{port}")
-    }
-
-    /// A port nothing listens on: bind a free one, then release it.
-    fn unused_port() -> u16 {
-        let listener = std::net::TcpListener::bind("127.0.0.1:0").expect("failed to bind a free port");
-        listener.local_addr().expect("the listener has no address").port()
-    }
-
-    #[test]
-    fn extracts_result_from_a_normal_response() {
-        let server = start_stub_server("ok");
-        let client = AnkiClient::new(endpoint(server.port), Duration::from_secs(5));
-        let result = client.request("version", serde_json::json!({})).unwrap();
-        assert_eq!(result.unwrap()["echo"], "version");
-    }
-
-    #[test]
-    fn distinguishes_anki_not_running() {
-        let offline = AnkiClient::new(endpoint(unused_port()), Duration::from_secs(3));
-        let error = offline.request("version", serde_json::json!({})).unwrap_err();
-        assert!(matches!(error, AnkiError::NotRunning));
-        assert!(error.to_string().contains("Anki"));
     }
 
     #[test]

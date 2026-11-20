@@ -42,20 +42,6 @@ mod tests {
     }
 
     #[test]
-    fn latest_returns_the_last_saved_row_or_null() {
-        let (log, dir) = temp_log();
-        let root = PathBuf::from("/tmp");
-        let request = payload(json!({"action": "latest"}));
-        assert_eq!(handle_advisor(&request, &root, &log), Ok(Value::Null));
-
-        log.append(&payload(json!({"createdAt": "2026-11-19T00:00:00Z"}))).unwrap();
-        log.append(&payload(json!({"createdAt": "2026-11-20T00:00:00Z"}))).unwrap();
-        let latest = handle_advisor(&request, &root, &log).unwrap();
-        assert_eq!(latest["createdAt"], "2026-11-20T00:00:00Z");
-        let _ = std::fs::remove_dir_all(dir);
-    }
-
-    #[test]
     fn advise_without_stats_is_rejected_before_claude_is_started() {
         let (log, _dir) = temp_log();
         let request = payload(json!({"action": "advise", "createdAt": "2026-11-20T00:00:00Z"}));

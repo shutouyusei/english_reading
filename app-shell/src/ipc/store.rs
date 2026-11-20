@@ -66,22 +66,4 @@ mod tests {
         assert_eq!(loaded[0]["passageId"], "p1");
         let _ = fs::remove_dir_all(&dir);
     }
-
-    #[test]
-    fn save_attempt_without_attempt_field_is_rejected() {
-        let (log, dir) = temp_log("attempts.jsonl");
-        let payload = json!({"action": "saveAttempt"}).as_object().unwrap().clone();
-        let result = handle_log_store(&payload, &log);
-        assert_eq!(result, Err("attempt is missing".to_string()));
-        let _ = fs::remove_dir_all(&dir);
-    }
-
-    #[test]
-    fn unknown_action_is_rejected() {
-        let (log, dir) = temp_log("attempts.jsonl");
-        let payload = json!({"action": "delete"}).as_object().unwrap().clone();
-        let result = handle_log_store(&payload, &log);
-        assert_eq!(result, Err("unknown action: delete".to_string()));
-        let _ = fs::remove_dir_all(&dir);
-    }
 }

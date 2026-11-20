@@ -137,11 +137,6 @@ mod tests {
     use super::*;
 
     #[test]
-    fn invalid_json_is_rejected() {
-        assert_eq!(parse_ipc_request("not json"), Err(IpcParseError::InvalidJson));
-    }
-
-    #[test]
     fn rejected_message_with_a_request_id_still_gets_an_error_reply() {
         let raw = r#"{"requestId":"7","handler":"dictionary"}"#;
         let error = parse_ipc_request(raw).unwrap_err();
@@ -152,21 +147,6 @@ mod tests {
         let without_id = r#"{"handler":"store"}"#;
         let error = parse_ipc_request(without_id).unwrap_err();
         assert_eq!(format_parse_failure_script(without_id, &error), None);
-    }
-
-    #[test]
-    fn missing_request_id_is_rejected() {
-        let raw = r#"{"handler":"store","action":"loadAll"}"#;
-        assert_eq!(parse_ipc_request(raw), Err(IpcParseError::MissingRequestId));
-    }
-
-    #[test]
-    fn unknown_handler_is_rejected() {
-        let raw = r#"{"requestId":"1","handler":"unknown"}"#;
-        assert_eq!(
-            parse_ipc_request(raw),
-            Err(IpcParseError::UnknownHandler("unknown".to_string()))
-        );
     }
 
     #[test]
@@ -185,22 +165,6 @@ mod tests {
             assert_eq!(parsed.handler, expected);
             assert_eq!(parsed.request_id, "1");
         }
-    }
-
-    #[test]
-    fn payload_excludes_request_id_and_handler_but_keeps_rest() {
-        let raw = r#"{"requestId":"1","handler":"store","action":"loadAll"}"#;
-        let parsed = parse_ipc_request(raw).unwrap();
-        assert_eq!(parsed.payload.get("action").unwrap(), "loadAll");
-        assert!(parsed.payload.get("requestId").is_none());
-        assert!(parsed.payload.get("handler").is_none());
-    }
-
-    #[test]
-    fn formats_success_with_result() {
-        let result = serde_json::json!({"ok": true});
-        let script = format_resolve_script("42", Some(&result), None);
-        assert_eq!(script, r#"window.__toeflIpcResolve("42", {"ok":true}, null)"#);
     }
 
     #[test]

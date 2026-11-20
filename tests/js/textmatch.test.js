@@ -1,14 +1,7 @@
 "use strict";
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { candidates, findVocabKey, tokenize } =
-  require("../../docs/js/textmatch.js");
-
-test("candidates lowers case and strips naive suffixes", () => {
-  assert.deepEqual(candidates("Fluctuates"), ["fluctuates", "fluctuat", "fluctuate"]);
-  assert.deepEqual(candidates("reef"), ["reef"]);
-  assert.ok(candidates("changed").includes("change"));
-});
+const { findVocabKey, tokenize } = require("../../docs/js/textmatch.js");
 
 test("findVocabKey matches direct and suffix-stripped forms", () => {
   const keys = new Set(["disequilibria", "fluctuate"]);

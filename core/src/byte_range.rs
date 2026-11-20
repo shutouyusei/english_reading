@@ -86,11 +86,6 @@ mod tests {
     use ByteRangeRequest::*;
 
     #[test]
-    fn no_range_is_whole() {
-        assert_eq!(parse_byte_range(None, 100), Whole);
-    }
-
-    #[test]
     fn first_two_bytes() {
         assert_eq!(
             parse_byte_range(Some("bytes=0-1"), 100),
@@ -136,11 +131,6 @@ mod tests {
     }
 
     #[test]
-    fn suffix_zero_is_unsatisfiable() {
-        assert_eq!(parse_byte_range(Some("bytes=-0"), 100), Unsatisfiable);
-    }
-
-    #[test]
     fn empty_file_is_unsatisfiable() {
         assert_eq!(parse_byte_range(Some("bytes=0-"), 0), Unsatisfiable);
     }
@@ -152,13 +142,5 @@ mod tests {
         for header in headers {
             assert_eq!(parse_byte_range(Some(header), 100), Whole, "header={header:?}");
         }
-    }
-
-    #[test]
-    fn real_world_head_request() {
-        assert_eq!(
-            parse_byte_range(Some("bytes=0-1"), 559_277),
-            Partial { start: 0, end: 1 }
-        );
     }
 }

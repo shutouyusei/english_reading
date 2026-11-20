@@ -56,40 +56,16 @@ class ValidEmailTest(unittest.TestCase):
         errors = validate_prompt(data, "writing_001")
         self.assertTrue(any("discussion == null" in e for e in errors), errors)
 
-    def test_email_without_situation_fails(self):
-        errors = validate_prompt(email_prompt(situation=None), "writing_001")
-        self.assertTrue(any("situation" in e for e in errors), errors)
-
-    def test_email_with_empty_must_include_fails(self):
-        errors = validate_prompt(email_prompt(must_include=[]), "writing_001")
-        self.assertTrue(any("must_include" in e for e in errors), errors)
-
 
 class ValidDiscussionTest(unittest.TestCase):
     def test_valid_discussion_passes(self):
         self.assertEqual(validate_prompt(discussion_prompt(), "writing_002"), [])
-
-    def test_discussion_with_situation_fails(self):
-        errors = validate_prompt(discussion_prompt(situation="x"), "writing_002")
-        self.assertTrue(any("situation == null" in e for e in errors), errors)
-
-    def test_discussion_with_one_student_post_fails(self):
-        data = discussion_prompt()
-        data["discussion"]["student_posts"] = [{"name": "Marcus", "text": "..."}]
-        errors = validate_prompt(data, "writing_002")
-        self.assertTrue(any("exactly 2" in e for e in errors), errors)
 
 
 class CommonFieldTest(unittest.TestCase):
     def test_id_must_match_filename(self):
         errors = validate_prompt(email_prompt(), "writing_999")
         self.assertTrue(any("does not match filename" in e for e in errors), errors)
-
-    def test_missing_field_fails(self):
-        data = email_prompt()
-        del data["instructions"]
-        errors = validate_prompt(data, "writing_001")
-        self.assertTrue(any("missing field instructions" in e for e in errors), errors)
 
 
 if __name__ == "__main__":

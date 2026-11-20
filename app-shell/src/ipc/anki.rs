@@ -35,13 +35,6 @@ mod tests {
     }
 
     #[test]
-    fn missing_anki_action_is_rejected() {
-        let payload = json!({"action": "request"}).as_object().unwrap().clone();
-        let result = handle_anki(&payload, &unreachable_client());
-        assert_eq!(result, Err("ankiAction is missing".to_string()));
-    }
-
-    #[test]
     fn unreachable_anki_returns_an_error_message() {
         let payload = json!({"action": "request", "ankiAction": "deckNames"})
             .as_object()

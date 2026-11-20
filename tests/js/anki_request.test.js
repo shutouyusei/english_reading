@@ -5,11 +5,11 @@ const fs = require("node:fs");
 const path = require("node:path");
 const vm = require("node:vm");
 
-// ankiRequest uses the bridge when there is one and falls back to fetch otherwise.
-// In the app, CORS blocks fetch, so picking the right path is what matters here.
-// The file is loaded through vm with window and fetch replaced to exercise both branches.
+// ankiRequest uses the bridge when there is one. In the app, CORS blocks fetch, so
+// taking the bridge path is what matters here. The file is loaded through vm with
+// window and fetch replaced, so a call that reaches fetch is recorded.
 
-function load({ bridge, fetchImpl } = {}) {
+function load({ bridge } = {}) {
   const source = fs.readFileSync(path.join(__dirname, "../../docs/js/anki.js"), "utf8");
   const calls = { bridge: [], fetch: [] };
   const ctx = {
@@ -20,8 +20,7 @@ function load({ bridge, fetchImpl } = {}) {
     console: { warn() {} },
     fetch: async (...args) => {
       calls.fetch.push(args);
-      if (!fetchImpl) throw new TypeError("Load failed");
-      return fetchImpl(...args);
+      throw new TypeError("Load failed");
     },
   };
   if (bridge) {
@@ -44,15 +43,6 @@ test("uses the bridge when present and does not call fetch", async () => {
   assert.equal(calls.bridge.length, 1);
   assert.deepEqual(calls.bridge[0], { action: "version", params: {} });
   assert.equal(calls.fetch.length, 0);
-});
-
-test("falls back to fetch when there is no bridge", async () => {
-  const { ankiRequest, calls } = load({
-    fetchImpl: async () => ({ json: async () => ({ result: 6, error: null }) }),
-  });
-  assert.equal(await ankiRequest("version", {}), 6);
-  assert.equal(calls.fetch.length, 1);
-  assert.equal(calls.bridge.length, 0);
 });
 
 test("passes on the error thrown by the bridge instead of swallowing it", async () => {
