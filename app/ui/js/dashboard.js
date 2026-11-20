@@ -1,8 +1,8 @@
 "use strict";
 
-/* Dashboard (app home). A score sheet with one row per skill, in the order of the
-   test, then an analysis of where points are lost (rules from analysis.js) and, on
-   request, written advice from Claude.
+/* Dashboard (app home), laid out to fit one window without scrolling: a score sheet
+   with one row per skill in the order of the test, an analysis of where points are
+   lost (rules from analysis.js) and, on request, written advice from Claude.
    The functions down to summarize are pure and exported for tests; the rest loads
    the data and renders the page. */
 
@@ -150,13 +150,13 @@ function skillRowHtml(skill) {
       </a>`;
   }
   const summary = skill.summary;
-  const last = summary.lastAt ? `, last on ${dateLabel(summary.lastAt)}` : "";
+  const last = summary.lastAt ? `Last attempt on ${dateLabel(summary.lastAt)}` : "No attempt yet";
   const figure = summary.average === null
     ? `<p class="skill-figure empty">No score yet</p>`
     : `<p class="skill-figure">${escapeHtml(skill.averageLabel(summary.average))}<small>${skill.averageCaption}</small></p>`;
   return `
-    <a class="skill-row skill-${skill.key}" href="${skill.href}">
-      <div>${name}<p class="skill-note">${summary.done} of ${summary.total} done${escapeHtml(last)}</p></div>
+    <a class="skill-row skill-${skill.key}" href="${skill.href}" title="${escapeHtml(last)}">
+      <div>${name}<p class="skill-note">${summary.done} of ${summary.total} done</p></div>
       ${blocksHtml(summary.states)}
       ${figure}
     </a>`;
@@ -252,35 +252,36 @@ function breakdownHtml(title, rows, unit) {
 function nextSetHtml(next) {
   const verb = next.skill === "Writing" ? "Write" : "Solve";
   const why = next.reason === "new" ? "not tried yet" : "your lowest score so far";
-  return `
-    <p class="next-set">
-      <a class="button primary" href="${next.url}">${verb} “${escapeHtml(next.title)}”</a>
-      <span class="meta">${escapeHtml(next.skill)}, ${why}</span>
-    </p>`;
+  return `<a class="button primary" href="${next.url}" title="${escapeHtml(`${next.skill}, ${why}`)}">${verb} “${escapeHtml(next.title)}”</a>`;
 }
 
-function analysisHtml(analysis) {
+function breakdownPanelHtml(analysis) {
   const breakdowns =
     breakdownHtml("Reading, by question type", analysis.readingRows, " correct") +
     breakdownHtml("Listening, by question type", analysis.listeningRows, " correct") +
     breakdownHtml("Writing, by criterion", analysis.writingRows, "");
+  // One short line; the exact rule is in the tooltip so the panel stays compact.
+  const rule = `Each set counts once, with your latest attempt. An attempt finished in under ${RUSHED_SECONDS_PER_QUESTION} seconds per question is left out.`;
+  const leftOut = analysis.rushed
+    ? `<p class="hint" title="${rule}">${analysis.rushed} very fast ${analysis.rushed === 1 ? "attempt is" : "attempts are"} left out.</p>`
+    : "";
+  return `
+    <h2 title="${rule}">Where you lose points</h2>
+    ${breakdowns || `<p class="hint">Finish a question set to see where you lose points.</p>`}
+    ${leftOut}`;
+}
+
+function nextPanelHtml(analysis) {
   const lines = adviceLines({
     reading: analysis.readingRows, listening: analysis.listeningRows,
     writing: analysis.writingRows, setsAnalysed: analysis.setsAnalysed,
   });
-  const basis = [];
-  if (breakdowns) basis.push("Each set counts once, with your latest attempt.");
-  if (analysis.rushed) {
-    const attempts = analysis.rushed === 1 ? "1 attempt" : `${analysis.rushed} attempts`;
-    basis.push(`${attempts} finished in under ${RUSHED_SECONDS_PER_QUESTION} seconds per question ${analysis.rushed === 1 ? "is" : "are"} left out.`);
-  }
   return `
-    <h2>Where you lose points</h2>
-    ${breakdowns || `<p class="hint">Finish a question set to see where you lose points.</p>`}
-    ${basis.length ? `<p class="hint">${basis.join(" ")}</p>` : ""}
     <h2>What to do next</h2>
     ${lines.length ? `<ul class="advice">${lines.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul>` : ""}
-    ${analysis.nextSets.map(nextSetHtml).join("") || `<p class="hint">Every set is done with a full score.</p>`}`;
+    ${analysis.nextSets.length
+      ? `<div class="next-sets">${analysis.nextSets.map(nextSetHtml).join("")}</div>`
+      : `<p class="hint">Every set is done with a full score.</p>`}`;
 }
 
 // ---- Advice from Claude -----------------------------------------------------------
@@ -318,25 +319,34 @@ function adviceBodyHtml(row) {
     <p>${text(advice.summary)}</p>
     ${focus.length ? `<ul class="advice">${focus.join("")}</ul>` : ""}
     ${text(advice.next_step) ? `<p><b>Next session</b> ${text(advice.next_step)}</p>` : ""}
-    <p class="hint">Written by Claude on ${escapeHtml(dateLabel(String(row.createdAt || "")))} from the numbers at that time. AI advice can be wrong.</p>`;
+    <p class="hint">Written by Claude on ${escapeHtml(dateLabel(String(row.createdAt || "")))}. AI advice can be wrong.</p>`;
+}
+
+const ASK_CLAUDE_TITLE =
+  "Sends your scores and set titles (no essay text) to Claude Code on this computer. Takes 10 to 20 seconds.";
+
+function advicePanelHtml(action, body) {
+  return `<div class="panel-heading"><h2>Advice from Claude</h2>${action}</div>${body}`;
 }
 
 function renderAdvicePanel(container, stats, row, errorMessage) {
   const hasData = stats.sets.length > 0 || stats.criteria.length > 0;
-  const body = row ? adviceBodyHtml(row) : "";
   const error = errorMessage ? `<p class="error">Could not get advice: ${escapeHtml(errorMessage)}</p>` : "";
-  const action = hasData
-    ? `<p><button id="ask-claude" class="primary">${row ? "Ask Claude again" : "Ask Claude for advice"}</button>
-         <span class="meta">Sends the numbers above to Claude Code on this computer. Usually takes about 20 seconds.</span></p>`
+  const saved = row ? adviceBodyHtml(row) : "";
+  const empty = hasData
+    ? `<p class="hint">Claude reads the numbers on this page and writes a short plan. It takes 10 to 20 seconds.</p>`
     : `<p class="hint">Finish a question set first; Claude needs some results to work from.</p>`;
-  container.innerHTML = `<h2>Advice from Claude</h2>${body}${error}${action}`;
+  const action = hasData
+    ? `<button id="ask-claude" class="primary" title="${ASK_CLAUDE_TITLE}">${row ? "Ask again" : "Ask Claude"}</button>`
+    : "";
+  container.innerHTML = advicePanelHtml(action, error + (saved || empty));
 
   const button = container.querySelector("#ask-claude");
   if (!button) return;
   button.addEventListener("click", async () => {
     const started = Date.now();
-    container.innerHTML = `<h2>Advice from Claude</h2>${body}
-      <p class="meta">Asking Claude… <span id="advice-elapsed">0</span>s elapsed</p>`;
+    container.innerHTML = advicePanelHtml(
+      `<span class="meta">Asking Claude… <span id="advice-elapsed">0</span>s</span>`, saved);
     const tick = setInterval(() => {
       const label = container.querySelector("#advice-elapsed");
       if (label) label.textContent = String(Math.floor((Date.now() - started) / 1000));
@@ -357,7 +367,8 @@ async function initDashboard() {
   document.querySelector("#skill-rows").innerHTML = skills.map(skillRowHtml).join("");
 
   const analysis = await buildAnalysis(skills);
-  document.querySelector("#analysis").innerHTML = analysisHtml(analysis);
+  document.querySelector("#analysis-breakdown").innerHTML = breakdownPanelHtml(analysis);
+  document.querySelector("#analysis-next").innerHTML = nextPanelHtml(analysis);
 
   let latest = null;
   try {

@@ -19,12 +19,13 @@ How to read them:
 
 Return ONLY a JSON object with exactly this shape:
 {
-  "summary": "<2-3 sentences: where the learner stands and the main pattern in the numbers>",
+  "summary": "<1-2 sentences: where the learner stands and the main pattern in the numbers>",
   "focus": [
-    {"area": "<a section or question type>", "advice": "<1-2 sentences: what to practise and how>"}
+    {"area": "<a section or question type>", "advice": "<1 sentence: what to practise and how>"}
   ],
-  "next_step": "<one concrete thing to do in the next session; name a set from next_sets when one fits>"
+  "next_step": "<1 sentence: one concrete thing to do in the next session; name a set from next_sets when one fits>"
 }
 
-Give 1 to 3 focus entries, weakest area first.
+Give 1 or 2 focus entries, weakest area first. Keep the whole answer under 90 words:
+it is shown in a small panel.
 Do not invent numbers, sets or sections that are not in the statistics.

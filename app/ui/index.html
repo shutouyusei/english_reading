@@ -5,17 +5,21 @@
   <title>TOEFL Study</title>
   <link rel="stylesheet" href="../../docs/css/style.css">
 </head>
-<body>
+<body class="dashboard-page">
   <header class="site-header">
     <a class="brand" href="index.html">TOEFL Study</a>
     <span>Local app</span>
   </header>
-  <main class="page">
+  <main class="page dashboard">
     <h1 id="dash-headline" class="dash-headline">Loading…</h1>
-    <div id="skill-rows" class="sheet"></div>
-    <section id="analysis" class="panel"></section>
-    <section id="ai-advice" class="panel"></section>
-    <p class="hint">Each block is one question set: filled when it has a score, outlined when it was tried but has no score yet (awaiting grading, or finished too fast to count). Records are saved in the app's data folder (<code>~/Documents/TOEFLReading/</code> on macOS, <code>~/.local/share/toefl-reading/</code> on Linux).</p>
+    <div class="dash-column">
+      <div id="skill-rows" class="sheet"></div>
+      <section id="analysis-next" class="panel"></section>
+    </div>
+    <div class="dash-column">
+      <section id="analysis-breakdown" class="panel"></section>
+      <section id="ai-advice" class="panel fill"></section>
+    </div>
   </main>
   <footer class="site-footer">
     <p>⚠️ All content is AI-generated. The author is not an English-teaching professional. Unofficial material, not affiliated with ETS or TOEFL.</p>
