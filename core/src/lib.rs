@@ -1,3 +1,4 @@
+pub mod advise;
 pub mod anki_client;
 pub mod byte_range;
 pub mod claude_runner;

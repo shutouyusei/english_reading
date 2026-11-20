@@ -1,7 +1,8 @@
 "use strict";
 
 /* Dashboard (app home). A score sheet with one row per skill, in the order of the
-   test, showing progress from the saved records.
+   test, then an analysis of where points are lost (rules from analysis.js) and, on
+   request, written advice from Claude.
    The functions down to summarize are pure and exported for tests; the rest loads
    the data and renders the page. */
 
@@ -70,20 +71,34 @@ function dateLabel(at) {
   return date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 }
 
+// A rushed attempt (see analysis.js) still shows the set as touched, but its score is
+// not counted, so the averages here agree with the analysis below.
+function countedRecord(attempt) {
+  const record = attemptRecord(attempt);
+  return isRushed(attempt) ? { ...record, ratio: null, label: "Too fast to count" } : record;
+}
+
 // Rows follow the order of the sections in the test.
 function skillDefinitions() {
   return [
     {
       key: "reading", label: "Reading", href: "reading.html",
       indexUrl: "data/reading/index.json", listKey: "passages",
-      store: Store, recordsOf: (id) => Store.attempts(id).map(attemptRecord),
+      store: Store, recordsOf: (id) => Store.attempts(id).map(countedRecord),
       averageLabel: percentLabel, averageCaption: "average score",
+      attemptsOf: (id) => Store.attempts(id),
+      detailUrl: (id) => `data/reading/${encodeURIComponent(id)}.json`,
+      solveUrl: (id) => `reader.html?id=${encodeURIComponent(id)}&mode=solve`,
     },
     {
       key: "listening", label: "Listening", href: "listening.html",
       indexUrl: "data/listening/index.json", listKey: "items",
-      store: ListeningStore, recordsOf: (id) => ListeningStore.attempts(id).map(attemptRecord),
+      store: ListeningStore, recordsOf: (id) => ListeningStore.attempts(id).map(countedRecord),
       averageLabel: percentLabel, averageCaption: "average score",
+      attemptsOf: (id) => ListeningStore.attempts(id),
+      detailUrl: (id) => `data/listening/${encodeURIComponent(id)}.json`,
+      // No solveUrl: the app cannot play listening audio yet, so no listening set is
+      // offered as the next thing to do.
     },
     { key: "speaking", label: "Speaking", unavailable: true },
     {
@@ -91,6 +106,7 @@ function skillDefinitions() {
       indexUrl: "data/writing/index.json", listKey: "prompts",
       store: Essays, recordsOf: (id) => Essays.forPrompt(id).map(essayRecord),
       averageLabel: outOfFiveLabel, averageCaption: "average out of 5",
+      solveUrl: (id) => `writing-editor.html?id=${encodeURIComponent(id)}`,
     },
   ];
 }
@@ -107,9 +123,9 @@ async function loadSkill(skill) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const items = (await res.json())[skill.listKey];
     if (!Array.isArray(items)) throw new Error(`index.json has no ${skill.listKey} list`);
-    return { ...skill, summary: summarize(items, skill.recordsOf), error: null };
+    return { ...skill, items, summary: summarize(items, skill.recordsOf), error: null };
   } catch (err) {
-    return { ...skill, summary: null, error: err.message };
+    return { ...skill, items: [], summary: null, error: err.message };
   }
 }
 
@@ -156,10 +172,200 @@ function headlineText(skills) {
   return `${done} of ${total} question sets done.`;
 }
 
+// ---- Analysis (rules) -------------------------------------------------------------
+
+/** Reading and listening: pairs the latest real attempt at each set with that set's
+    questions. A set whose question file cannot be loaded is left out. */
+async function collectAnswered(skill) {
+  const result = { sets: [], candidates: [], rushed: 0 };
+  for (const item of skill.items) {
+    const attempts = skill.attemptsOf(item.id);
+    const usable = latestUsableAttempt(attempts);
+    result.rushed += attempts.filter((attempt) => attempt !== usable && isRushed(attempt)).length;
+    result.candidates.push({ item, ratio: usable ? usable.score / usable.total : null });
+    if (!usable) continue;
+    try {
+      const res = await fetch(`${window.DATA_BASE || ""}${skill.detailUrl(item.id)}`, { cache: "no-cache" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const detail = await res.json();
+      result.sets.push({
+        title: item.title, topic: item.topic, questions: detail.questions,
+        answers: usable.answers || [], score: usable.score, total: usable.total,
+        seconds: usable.elapsedSec,
+      });
+    } catch (err) {
+      console.warn(`Could not load the questions of ${item.id}:`, err);
+    }
+  }
+  return result;
+}
+
+/** Writing: the latest valid grade of each prompt. An essay still awaiting grading
+    counts as tried, so it is not offered again as "new". */
+function collectWriting(skill) {
+  const grades = [];
+  const candidates = [];
+  for (const item of skill.items) {
+    const entries = Essays.forPrompt(item.id);
+    const graded = entries.find((entry) => essayRecord(entry).ratio !== null);
+    if (graded) grades.push(graded.grade);
+    const ratio = graded ? essayRecord(graded).ratio : (entries.length ? 1 : null);
+    candidates.push({ item, ratio });
+  }
+  return { grades, candidates };
+}
+
+async function buildAnalysis(skills) {
+  const bySkill = Object.fromEntries(skills.map((skill) => [skill.key, skill]));
+  const reading = await collectAnswered(bySkill.reading);
+  const listening = await collectAnswered(bySkill.listening);
+  const writing = collectWriting(bySkill.writing);
+
+  const nextSets = [];
+  for (const [skill, candidates] of [[bySkill.reading, reading.candidates], [bySkill.writing, writing.candidates]]) {
+    const next = nextSet(candidates);
+    if (next) nextSets.push({ skill: skill.label, title: next.item.title, reason: next.reason, url: skill.solveUrl(next.item.id) });
+  }
+  return {
+    readingRows: typeBreakdown(reading.sets),
+    listeningRows: typeBreakdown(listening.sets),
+    writingRows: criteriaBreakdown(writing.grades),
+    readingSets: reading.sets,
+    listeningSets: listening.sets,
+    setsAnalysed: reading.sets.length + listening.sets.length,
+    rushed: reading.rushed + listening.rushed,
+    nextSets,
+  };
+}
+
+function breakdownHtml(title, rows, unit) {
+  if (!rows.length) return "";
+  const items = rows.map((row) => `
+      <li>
+        <span class="breakdown-name">${escapeHtml(row.name)}</span>
+        <span class="bar"><span style="width:${Math.round((row.value / row.max) * 100)}%"></span></span>
+        <span class="breakdown-count">${escapeHtml(row.value)} of ${escapeHtml(row.max)}${unit}</span>
+      </li>`);
+  return `<h3>${title}</h3><ul class="breakdown">${items.join("")}</ul>`;
+}
+
+function nextSetHtml(next) {
+  const verb = next.skill === "Writing" ? "Write" : "Solve";
+  const why = next.reason === "new" ? "not tried yet" : "your lowest score so far";
+  return `
+    <p class="next-set">
+      <a class="button primary" href="${next.url}">${verb} “${escapeHtml(next.title)}”</a>
+      <span class="meta">${escapeHtml(next.skill)}, ${why}</span>
+    </p>`;
+}
+
+function analysisHtml(analysis) {
+  const breakdowns =
+    breakdownHtml("Reading, by question type", analysis.readingRows, " correct") +
+    breakdownHtml("Listening, by question type", analysis.listeningRows, " correct") +
+    breakdownHtml("Writing, by criterion", analysis.writingRows, "");
+  const lines = adviceLines({
+    reading: analysis.readingRows, listening: analysis.listeningRows,
+    writing: analysis.writingRows, setsAnalysed: analysis.setsAnalysed,
+  });
+  const basis = [];
+  if (breakdowns) basis.push("Each set counts once, with your latest attempt.");
+  if (analysis.rushed) {
+    const attempts = analysis.rushed === 1 ? "1 attempt" : `${analysis.rushed} attempts`;
+    basis.push(`${attempts} finished in under ${RUSHED_SECONDS_PER_QUESTION} seconds per question ${analysis.rushed === 1 ? "is" : "are"} left out.`);
+  }
+  return `
+    <h2>Where you lose points</h2>
+    ${breakdowns || `<p class="hint">Finish a question set to see where you lose points.</p>`}
+    ${basis.length ? `<p class="hint">${basis.join(" ")}</p>` : ""}
+    <h2>What to do next</h2>
+    ${lines.length ? `<ul class="advice">${lines.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul>` : ""}
+    ${analysis.nextSets.map(nextSetHtml).join("") || `<p class="hint">Every set is done with a full score.</p>`}`;
+}
+
+// ---- Advice from Claude -----------------------------------------------------------
+
+/** What is sent to Claude: numbers and titles only, never the learner's essays. */
+function statsForClaude(skills, analysis) {
+  const typeRows = (rows) => rows.map((row) => ({ type: row.name, correct: row.value, answered: row.max }));
+  const setRows = (skill, sets) => sets.map((set) => ({
+    skill, title: set.title, topic: set.topic, score: set.score, total: set.total, seconds: set.seconds,
+  }));
+  return {
+    skills: skills.filter((skill) => skill.summary)
+      .map((skill) => ({ skill: skill.label, done: skill.summary.done, total: skill.summary.total })),
+    question_types: { reading: typeRows(analysis.readingRows), listening: typeRows(analysis.listeningRows) },
+    criteria: analysis.writingRows.map((row) => ({ name: row.name, average_out_of_5: row.value })),
+    sets: [...setRows("Reading", analysis.readingSets), ...setRows("Listening", analysis.listeningSets)],
+    skipped_rushed_attempts: analysis.rushed,
+    not_available_yet: ["Listening practice (the app cannot play audio yet)", "Speaking"],
+    next_sets: analysis.nextSets.map((next) => ({ skill: next.skill, title: next.title, reason: next.reason })),
+  };
+}
+
+// The advice is whatever JSON Claude returned, with no type guarantee, so only strings
+// are shown and everything goes through escapeHtml.
+function adviceBodyHtml(row) {
+  const advice = row && row.advice ? row.advice : {};
+  const text = (value) => (typeof value === "string" ? escapeHtml(value) : "");
+  const focus = (Array.isArray(advice.focus) ? advice.focus : [])
+    .filter((entry) => entry && typeof entry.area === "string" && typeof entry.advice === "string")
+    .map((entry) => `<li><b>${escapeHtml(entry.area)}</b> ${escapeHtml(entry.advice)}</li>`);
+  if (!text(advice.summary) && !focus.length && !text(advice.next_step)) {
+    return `<p class="error">Claude's answer could not be read. Ask again.</p>`;
+  }
+  return `
+    <p>${text(advice.summary)}</p>
+    ${focus.length ? `<ul class="advice">${focus.join("")}</ul>` : ""}
+    ${text(advice.next_step) ? `<p><b>Next session</b> ${text(advice.next_step)}</p>` : ""}
+    <p class="hint">Written by Claude on ${escapeHtml(dateLabel(String(row.createdAt || "")))} from the numbers at that time. AI advice can be wrong.</p>`;
+}
+
+function renderAdvicePanel(container, stats, row, errorMessage) {
+  const hasData = stats.sets.length > 0 || stats.criteria.length > 0;
+  const body = row ? adviceBodyHtml(row) : "";
+  const error = errorMessage ? `<p class="error">Could not get advice: ${escapeHtml(errorMessage)}</p>` : "";
+  const action = hasData
+    ? `<p><button id="ask-claude" class="primary">${row ? "Ask Claude again" : "Ask Claude for advice"}</button>
+         <span class="meta">Sends the numbers above to Claude Code on this computer. Usually takes about 20 seconds.</span></p>`
+    : `<p class="hint">Finish a question set first; Claude needs some results to work from.</p>`;
+  container.innerHTML = `<h2>Advice from Claude</h2>${body}${error}${action}`;
+
+  const button = container.querySelector("#ask-claude");
+  if (!button) return;
+  button.addEventListener("click", async () => {
+    const started = Date.now();
+    container.innerHTML = `<h2>Advice from Claude</h2>${body}
+      <p class="meta">Asking Claude… <span id="advice-elapsed">0</span>s elapsed</p>`;
+    const tick = setInterval(() => {
+      const label = container.querySelector("#advice-elapsed");
+      if (label) label.textContent = String(Math.floor((Date.now() - started) / 1000));
+    }, 1000);
+    try {
+      renderAdvicePanel(container, stats, await Advisor.advise(stats), null);
+    } catch (err) {
+      renderAdvicePanel(container, stats, row, err && err.message ? err.message : String(err));
+    } finally {
+      clearInterval(tick);
+    }
+  });
+}
+
 async function initDashboard() {
   const skills = await Promise.all(skillDefinitions().map(loadSkill));
   document.querySelector("#dash-headline").textContent = headlineText(skills);
   document.querySelector("#skill-rows").innerHTML = skills.map(skillRowHtml).join("");
+
+  const analysis = await buildAnalysis(skills);
+  document.querySelector("#analysis").innerHTML = analysisHtml(analysis);
+
+  let latest = null;
+  try {
+    latest = await Advisor.latest();
+  } catch (err) {
+    console.warn("Could not load the saved advice:", err);
+  }
+  renderAdvicePanel(document.querySelector("#ai-advice"), statsForClaude(skills, analysis), latest, null);
 }
 
 if (typeof document !== "undefined") {

@@ -13,7 +13,9 @@
   <main class="page">
     <h1 id="dash-headline" class="dash-headline">Loading…</h1>
     <div id="skill-rows" class="sheet"></div>
-    <p class="hint">Each block is one question set: filled when done, outlined while it awaits grading. Records are saved in the app's data folder (<code>~/Documents/TOEFLReading/</code> on macOS, <code>~/.local/share/toefl-reading/</code> on Linux).</p>
+    <section id="analysis" class="panel"></section>
+    <section id="ai-advice" class="panel"></section>
+    <p class="hint">Each block is one question set: filled when it has a score, outlined when it was tried but has no score yet (awaiting grading, or finished too fast to count). Records are saved in the app's data folder (<code>~/Documents/TOEFLReading/</code> on macOS, <code>~/.local/share/toefl-reading/</code> on Linux).</p>
   </main>
   <footer class="site-footer">
     <p>⚠️ All content is AI-generated. The author is not an English-teaching professional. Unofficial material, not affiliated with ETS or TOEFL.</p>
@@ -25,6 +27,8 @@
   <script src="js/listening.native.js"></script>
   <script src="js/essays.native.js"></script>
   <script>window.DATA_BASE = "../../docs/";</script>
+  <script src="js/advisor.native.js"></script>
+  <script src="js/analysis.js"></script>
   <script src="js/dashboard.js"></script>
 </body>
 </html>

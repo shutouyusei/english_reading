@@ -1,3 +1,4 @@
+mod advisor;
 mod anki;
 mod essays;
 mod grader;
@@ -13,6 +14,7 @@ pub enum Handler {
     Essays,
     Grader,
     Anki,
+    Advisor,
     Speech,
 }
 
@@ -55,6 +57,7 @@ pub fn parse_ipc_request(raw: &str) -> Result<IpcRequest, IpcParseError> {
         "essays" => Handler::Essays,
         "grader" => Handler::Grader,
         "anki" => Handler::Anki,
+        "advisor" => Handler::Advisor,
         "speech" => Handler::Speech,
         other => return Err(IpcParseError::UnknownHandler(other.to_string())),
     };
@@ -116,6 +119,10 @@ pub fn dispatch(request: &IpcRequest, root: &Path, data_dir: &Path) -> String {
             let client = AnkiClient::default();
             anki::handle_anki(&request.payload, &client).map(Some)
         }
+        Handler::Advisor => {
+            let log = JsonLinesFile::new(data_dir, "advice.jsonl");
+            advisor::handle_advisor(&request.payload, root, &log).map(Some)
+        }
         Handler::Speech => placeholder::handle_speech(&request.payload).map(Some),
     };
 
@@ -170,6 +177,7 @@ mod tests {
             ("essays", Handler::Essays),
             ("grader", Handler::Grader),
             ("anki", Handler::Anki),
+            ("advisor", Handler::Advisor),
             ("speech", Handler::Speech),
         ] {
             let raw = format!(r#"{{"requestId":"1","handler":"{name}","action":"x"}}"#);

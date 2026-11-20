@@ -1,6 +1,7 @@
 use serde_json::{Map, Value};
 use std::collections::HashMap;
 use std::io::{Read, Write};
+use std::path::Path;
 use std::process::{Command, Stdio};
 use std::sync::mpsc;
 use std::time::Duration;
@@ -329,6 +330,33 @@ pub fn run_claude(
             })
         }
     }
+}
+
+/// Loads `app/prompts/<template_name>.md`, fills in its `{{placeholders}}` and runs
+/// claude -p with it. Grading and study advice both go through here.
+pub fn run_prompt_template(
+    root: &Path,
+    template_name: &str,
+    values: &HashMap<String, String>,
+    timeout_seconds: u64,
+) -> Result<Map<String, Value>, ClaudeRunnerError> {
+    let binary = resolve_claude_binary(
+        &std::env::vars().collect(),
+        is_executable_file,
+        &default_claude_binary_candidates(),
+    )
+    .ok_or(ClaudeRunnerError::BinaryNotFound)?;
+
+    let template_failure = || {
+        ClaudeRunnerError::PromptUnavailable(format!(
+            "the prompt template app/prompts/{template_name}.md could not be read"
+        ))
+    };
+    let template_path = root.join(format!("app/prompts/{template_name}.md"));
+    let template_text = std::fs::read_to_string(&template_path).map_err(|_| template_failure())?;
+    let (system, user_template) = split_prompt_file(&template_text).ok_or_else(template_failure)?;
+
+    run_claude(&binary, &system, &render_template(&user_template, values), timeout_seconds)
 }
 
 #[cfg(test)]

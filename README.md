@@ -92,6 +92,21 @@ Confirmed to work on GNOME in an X11 session (Wayland is untested).
 
 The public site (GitHub Pages) has reading only, and its records stay inside the browser.
 
+## Dashboard and study analysis
+
+The local app opens on a dashboard: one row per section (Reading, Listening, Speaking,
+Writing) with the sets done and the average score, then an analysis of where points are
+lost.
+
+- **By rules, instantly:** correct answers per question type for reading and listening,
+  the average per writing criterion, a short tip for the weakest type, and one set to do
+  next. Each set counts once, with its latest attempt; an attempt finished in under 15
+  seconds per question is treated as a trial click and left out
+- **By Claude, on request:** the "Ask Claude for advice" button sends those numbers (no
+  essay text) to the `claude` CLI and shows a short written plan. The prompt is
+  `app/prompts/advise.md`. Each answer is appended to `advice.jsonl` in the data directory,
+  and the latest one is shown the next time the app opens
+
 ## Writing
 
 Local app only. There are 2 formats: an email task (TOEFL Essentials style: read a
