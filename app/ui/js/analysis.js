@@ -3,10 +3,6 @@
 /* Study analysis for the dashboard. Pure functions only: no DOM, no storage, no network.
    The dashboard collects the records and question data and passes them in. */
 
-// An attempt finished faster than this cannot have been read and answered for real
-// (trial clicks while testing the app, for example), so it is left out of the analysis.
-const RUSHED_SECONDS_PER_QUESTION = 15;
-
 const TYPE_TIPS = {
   reading: {
     "Factual": "Find the sentence the question points to and check each choice against it; wrong choices often change one detail.",
@@ -23,16 +19,6 @@ const TYPE_TIPS = {
     "Inference": "The answer is implied, not stated: pick the choice the speakers' words force to be true.",
   },
 };
-
-function isRushed(attempt) {
-  return typeof attempt.elapsedSec === "number" && typeof attempt.total === "number" &&
-         attempt.total > 0 && attempt.elapsedSec < RUSHED_SECONDS_PER_QUESTION * attempt.total;
-}
-
-/** attempts is newest first. Returns the latest one that was not rushed, or null. */
-function latestUsableAttempt(attempts) {
-  return attempts.find((attempt) => !isRushed(attempt)) || null;
-}
 
 function sortWeakestFirst(rows) {
   return rows.sort((a, b) => a.value / a.max - b.value / b.max || a.name.localeCompare(b.name));
@@ -127,6 +113,6 @@ function adviceLines({ reading, listening, writing, setsAnalysed }) {
 
 if (typeof module !== "undefined") {
   module.exports = {
-    latestUsableAttempt, typeBreakdown, criteriaBreakdown, weakestRows, nextSet, adviceLines,
+    typeBreakdown, criteriaBreakdown, weakestRows, nextSet, adviceLines,
   };
 }

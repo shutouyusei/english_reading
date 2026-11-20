@@ -2,8 +2,9 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-const { latestUsableAttempt, typeBreakdown, weakestRows, nextSet, adviceLines } =
+const { typeBreakdown, weakestRows, nextSet, adviceLines } =
   require("../../app/ui/js/analysis.js");
+const { latestUsableAttempt } = require("../../app/ui/js/records.js");
 
 const QUESTIONS = [
   { type: "Factual", correct: "B" },

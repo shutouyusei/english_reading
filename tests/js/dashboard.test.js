@@ -2,8 +2,8 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-const { attemptRecord, essayRecord, summarize } =
-  require("../../app/ui/js/dashboard.js");
+const { summarize } = require("../../app/ui/js/dashboard.js");
+const { attemptRecord, essayRecord } = require("../../app/ui/js/records.js");
 
 const ITEMS = [
   { id: "passage_001", title: "Peat" },

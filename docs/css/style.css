@@ -277,6 +277,33 @@ a.skill-row:focus-visible { outline: 3px solid var(--accent); outline-offset: -3
 .advice li { margin: 1px 0; }
 .next-sets { display: flex; flex-wrap: wrap; gap: 8px; }
 
+/* Section pages (app): one line per problem, grouped by what there is to do. The block
+   at the start of a line is the same mark the dashboard uses for that problem. */
+.page.wide { max-width: 1100px; }
+.list-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.9em; font-weight: 500; line-height: 1.2; margin: 8px 0 4px;
+}
+.problem-group { font-size: .95em; font-weight: 600; margin: 20px 0 6px; }
+.problem-group span { color: var(--muted); font-weight: 400; margin-left: 4px; }
+.problems {
+  list-style: none; margin: 0; padding: 0;
+  background: #fff; border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+}
+.problems > li { border-top: 1px solid var(--border); }
+.problems > li:first-child { border-top: none; }
+.problem-row {
+  display: grid; align-items: center; gap: 14px; padding: 7px 16px;
+  grid-template-columns: 12px minmax(0, 1fr) 110px 190px 150px 150px;
+}
+.problem-row .block { width: 12px; height: 20px; border-radius: 3px; }
+.problem-title { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.problem-detail, .problem-result { font-size: .88em; color: var(--muted); }
+.problem-result { color: var(--text); font-variant-numeric: tabular-nums; }
+.problem-actions { display: flex; gap: 6px; justify-content: flex-end; }
+.problem-actions .button { padding: 3px 12px; }
+.problems .attempts { margin: -4px 0 8px; padding: 0 16px 0 42px; }
+
 /* A narrow window stacks the panels; there the page scrolls as usual. */
 @media (max-width: 820px) {
   body.dashboard-page { height: auto; overflow: visible; }

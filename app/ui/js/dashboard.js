@@ -3,34 +3,8 @@
 /* Dashboard (app home), laid out to fit one window without scrolling: a score sheet
    with one row per skill in the order of the test, an analysis of where points are
    lost (rules from analysis.js) and, on request, written advice from Claude.
-   The functions down to summarize are pure and exported for tests; the rest loads
-   the data and renders the page. */
-
-function isNumberInRange(value, max) {
-  return typeof value === "number" && Number.isFinite(value) && value >= 0 && value <= max;
-}
-
-// Saved records have no schema guarantee, so a record without a usable score keeps its
-// date (it still counts as done) but gets ratio null and is left out of the average.
-function attemptRecord(attempt) {
-  const valid = isNumberInRange(attempt.total, Infinity) && attempt.total > 0 &&
-                isNumberInRange(attempt.score, attempt.total);
-  return {
-    at: String(attempt.finishedAt || ""),
-    ratio: valid ? attempt.score / attempt.total : null,
-    label: valid ? `${attempt.score}/${attempt.total}` : "No score",
-  };
-}
-
-function essayRecord(entry) {
-  const overall = entry.grade ? entry.grade.overall : null;
-  const valid = isNumberInRange(overall, 5);
-  return {
-    at: String(entry.essay.writtenAt || ""),
-    ratio: valid ? overall / 5 : null,
-    label: valid ? `${overall}/5` : "Awaiting grading",
-  };
-}
+   summarize is pure and exported for tests; the rest loads the data and renders the
+   page. Record helpers come from records.js. */
 
 /** Progress for one skill. recordsOf(id) returns that item's records, newest first.
     states has one entry per item, in list order, for the row of blocks. */
@@ -59,7 +33,7 @@ function summarize(items, recordsOf) {
 }
 
 if (typeof module !== "undefined") {
-  module.exports = { attemptRecord, essayRecord, summarize };
+  module.exports = { summarize };
 }
 
 const percentLabel = (ratio) => `${Math.round(ratio * 100)}%`;
@@ -69,13 +43,6 @@ function dateLabel(at) {
   const date = new Date(at);
   if (Number.isNaN(date.getTime())) return at.slice(0, 10);
   return date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
-}
-
-// A rushed attempt (see analysis.js) still shows the set as touched, but its score is
-// not counted, so the averages here agree with the analysis below.
-function countedRecord(attempt) {
-  const record = attemptRecord(attempt);
-  return isRushed(attempt) ? { ...record, ratio: null, label: "Too fast to count" } : record;
 }
 
 // Rows follow the order of the sections in the test.
